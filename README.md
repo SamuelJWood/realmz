@@ -36,9 +36,9 @@ On Windows, extract the `.zip` file to your Program Files directory.
 # Cross-compiling for Windows from Mac
 
 - Install [llvm-mingw](https://github.com/mstorsjo/llvm-mingw)
-  - Download latest llvm-mingw-<date>-ucrt-macos-universal.tar.xz
-  - Extract
-  - `sudo mv ~/Downloads/llvm-mingw-<date>-ucrt-macos-universal.tar.xz /opt/llvm-mingw`
+  - Download latest llvm-mingw-$DATE-ucrt-macos-universal.tar.xz
+  - Extract the archive
+  - `sudo mv ~/Downloads/llvm-mingw-$DATE-ucrt-macos-universal /opt/llvm-mingw`
 - Create a [toolchain file](https://cmake.org/cmake/help/book/mastering-cmake/chapter/Cross%20Compiling%20With%20CMake.html#toolchain-files)
 - Clone and build phosg, resource_dasm, and zlib dependencies and install to ~/mingw-install
   - `cmake --fresh -B build -D CMAKE_TOOLCHAIN_FILE=~/workspace/TC-mingw.cmake -D CMAKE_INSTALL_PREFIX=~/mingw-install -D CMAKE_BUILD_TYPE=Debug`
