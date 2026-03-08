@@ -155,6 +155,7 @@ set(SOURCES
     src/realmz_orig/orderform.c
     src/realmz_orig/partyloss.c
     src/realmz_orig/partyselect.c
+    src/realmz_orig/partyselect-helpers.cpp
     src/realmz_orig/placemonster.c
     src/realmz_orig/ploticon.c
     src/realmz_orig/plus-minus.c
@@ -294,14 +295,6 @@ set_source_files_properties(${DATA_RESOURCE_FILES} PROPERTIES
     MACOSX_PACKAGE_LOCATION "Resources/Data\ Files"
 )
 
-# Installed in Contents/Resources/Character Files
-set(CHARACTER_RESOURCE_FILES
-    "base/Realmz/Character Files/Data CD"
-)
-set_source_files_properties(${CHARACTER_RESOURCE_FILES} PROPERTIES
-    MACOSX_PACKAGE_LOCATION "Resources/Character\ Files"
-)
-
 # All the sources besides the executable source files with main functions should
 # be shared as if they were a library to enable test executables
 add_library(realmz_lib STATIC ${SOURCES})
@@ -390,7 +383,6 @@ if(APPLE)
     # Install data files to <bundle_root>/Resources
     install(FILES ${RESOURCE_FILES} DESTINATION ".")
     install(FILES ${DATA_RESOURCE_FILES} DESTINATION "Data Files")
-    install(FILES ${CHARACTER_RESOURCE_FILES} DESTINATION "Character Files")
     install(DIRECTORY "${CMAKE_SOURCE_DIR}/base/Realmz/Scenarios" DESTINATION ".")
     install(FILES ${CHARACTER_DATA_FILES} DESTINATION "Character Files")
 
@@ -411,7 +403,6 @@ elseif(WIN32)
     install(TARGETS Realmz DESTINATION ${CMAKE_INSTALL_BINDIR})
     install(FILES ${RESOURCE_FILES} DESTINATION ${CMAKE_INSTALL_BINDIR})
     install(FILES ${DATA_RESOURCE_FILES} DESTINATION "${CMAKE_INSTALL_BINDIR}/Data Files")
-    install(FILES ${CHARACTER_RESOURCE_FILES} DESTINATION "${CMAKE_INSTALL_BINDIR}/Character Files")
     install(DIRECTORY "base/Realmz/Scenarios" DESTINATION ${CMAKE_INSTALL_BINDIR})
     install(FILES ${CHARACTER_DATA_FILES} DESTINATION "${CMAKE_INSTALL_BINDIR}/Character Files")
 

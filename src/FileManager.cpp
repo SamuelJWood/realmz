@@ -36,9 +36,7 @@ std::string normalize_mac_path(const std::string& mac_path, bool implicitly_loca
 }
 
 std::string userdata_filename_for_mac_filename(const std::string& mac_path, bool implicitly_local = false) {
-  std::string ret = normalize_mac_path(mac_path, implicitly_local);
-
-  return user_basepath + ret;
+  return user_basepath + normalize_mac_path(mac_path, implicitly_local);
 }
 
 std::string
@@ -183,4 +181,26 @@ FILE* mac_fopen(const char* filename, const char* mode) {
 
   fm_log.info_f("Opening file {} (host: {}) with mode {}", filename, host_filename, mode);
   return fopen(host_filename.c_str(), mode);
+}
+
+std::vector<std::string> mac_list_directory(const std::string& mac_path) {
+  std::string user_filename = userdata_filename_for_mac_filename(mac_path);
+  SDL_CreateDirectory(user_filename.c_str());
+
+  if (!std::filesystem::is_directory(user_filename)) {
+    fm_log.info_f("Cannot list directory {} (host: {}) because it is not a directory", mac_path, user_filename);
+    return {};
+  }
+
+  std::vector<std::string> ret;
+  for (const auto& item : std::filesystem::directory_iterator{user_filename}) {
+    ret.emplace_back(item.path().filename().string());
+  }
+  fm_log.info_f("Listing directory {} (host: {}) yielded {} items", mac_path, user_filename, ret.size());
+  return ret;
+}
+
+std::unique_ptr<FILE, void (*)(FILE*)> mac_fopen_unique(const std::string& mac_path, const std::string& mode) {
+  return std::unique_ptr<FILE, void (*)(FILE*)>{
+      mac_fopen(mac_path.c_str(), mode.c_str()), +[](FILE* f) -> void { fclose(f); }};
 }

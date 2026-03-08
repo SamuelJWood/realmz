@@ -213,6 +213,12 @@ void Copy_Part_Of_String(Str255 dst, Str255 src, short start_char, short end_cha
 void printstat(short dlog_item, short text_y);
 void orderform(void);
 void partyselect(short mode);
+/* NOTE(fuzziqersoftware): The following 4 functions were added to eliminate
+ * the Data CD file. They are implemented in partyselect-helpers.cpp. */
+void hide_character_from_list(const char* name);
+void unhide_character_from_list(const char* name);
+void update_character_files_list(void);
+void get_character_info_from_list(unsigned long index, const char** name, short* level);
 void viewrestrictions(void);
 void partyloss(short mode);
 void placemonster(short x, short y, short monsterup);

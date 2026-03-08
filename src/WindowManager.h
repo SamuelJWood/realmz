@@ -84,7 +84,6 @@ void GetDialogItem(DialogPtr theDialog, int16_t itemNo, int16_t* itemType, Handl
 void GetDialogItemText(Handle item, Str255 text);
 void SetDialogItemText(Handle item, ConstStr255Param text);
 int16_t StringWidth(ConstStr255Param s);
-void SetDialogItemText(Handle item, ConstStr255Param text);
 DialogPtr GetNewDialog(uint16_t dialogID, void* dStorage, WindowPtr behind);
 WindowPtr GetNewCWindow(int16_t windowID, void* wStorage, WindowPtr behind);
 void SizeWindow(WindowPtr theWindow, uint16_t w, uint16_t h, Boolean fUpdate);

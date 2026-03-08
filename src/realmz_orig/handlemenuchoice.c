@@ -88,7 +88,11 @@ short DoQuitRealmz(void) {
       save(0);
   }
 
-  setfileinfo("CDat", ":Character Files:Data CD");
+  /* *** CHANGED FROM ORIGINAL IMPLEMENTATION ***
+   * NOTE(fuzziqersoftware): We no longer use the Data CD file to keep track
+   * of character files; instead, we enumerate the Character Files directory.
+   */
+  /* setfileinfo("CDat", ":Character Files:Data CD"); */
 
   DoFreeBeforeQuit();
   return (1);

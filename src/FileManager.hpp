@@ -12,7 +12,14 @@
 
 #include "FileManager.h"
 
+#include <stdio.h>
+
+#include <memory>
 #include <string>
+#include <vector>
 
 std::string host_filename_for_mac_filename(const std::string& mac_path, bool implicitly_local);
 std::string host_filename_for_FSSpec(const FSSpec* fsp);
+
+std::vector<std::string> mac_list_directory(const std::string& mac_path);
+std::unique_ptr<FILE, void (*)(FILE*)> mac_fopen_unique(const std::string& mac_path, const std::string& mode);

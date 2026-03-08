@@ -6,6 +6,10 @@
 
 #include "structs.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 // We need slow swap routines for misaligned structs.
 #ifdef __BIG_ENDIAN__
 #define SLOWSWAP_BIG16(x)
@@ -152,5 +156,9 @@ static inline void CvtTabMapStatToPc(struct mapstats* x, unsigned int count) {
 // These are just arrays of shorts.
 #define CvtFieldToPc(x) CvtTabShortToPc(x, 90 * 90)
 #define CvtLayoutToPc(x) CvtTabShortToPc(x, 8 * 16)
+
+#ifdef __cplusplus
+} // extern "C"
+#endif
 
 #endif // CONVERT_H

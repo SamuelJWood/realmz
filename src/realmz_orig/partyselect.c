@@ -31,6 +31,9 @@ void partyselect(short mode) {
   MoveWindow(GetDialogWindow(party), GlobalLeft + (leftshift / 2), GlobalTop + (downshift / 2), FALSE);
   ShowWindow(GetDialogWindow(party));
 
+  /* *** CHANGED FROM ORIGINAL IMPLEMENTATION ***
+  * NOTE(fuzziqersoftware): We no longer use the Data CD file to keep track
+  * of character files; instead, we enumerate the Character Files directory.
   if ((fp = MyrFopen(":Character Files:Data CD", "rb")) == NULL) {
     if ((fp = MyrFopen(":Character Files:Data CD", "w+b")) == NULL)
       scratch2(10);
@@ -40,6 +43,8 @@ void partyselect(short mode) {
     flashmessage((StringPtr) "To IMPORT your characters just click 'IMPORT' and locate your characters files.", 15, 60, 0, 6000);
   } else
     fclose(fp);
+  */
+
   GetMenuItemText(gGame, currentscenario, myString);
   PtoCstr(myString);
   getfilename((Ptr)myString);
@@ -175,30 +180,27 @@ shortupdate:
 
   percent /= 100;
 
-  if ((fp = MyrFopen(":Character Files:Data CD", "rb")) == NULL)
-    scratch(131);
-  fseek(fp, index * 32, SEEK_SET);
-  for (t = 2; t < 14; t++) {
-    if (t == filepick)
-      ForeColor(yellowColor);
-    else
-      ForeColor(cyanColor);
-    fread(&name, 30, 1, fp);
-    fread(&level, sizeof level, 1, fp);
-    CvtShortToPc(&level);
-    CtoPstr(name);
-    if (!feof(fp)) {
-      MyrPascalDiStr(t, (StringPtr)name);
-      if (StringWidth((StringPtr)name))
-        DialogNum(t + 40, level);
-      else
-        MyrCDiStr(t + 40, (StringPtr) "");
+  /* *** CHANGED FROM ORIGINAL IMPLEMENTATION ***
+   * NOTE(fuzziqersoftware): We no longer use the Data CD file to keep track
+   * of character files; instead, we enumerate the Character Files directory.
+   */
+  update_character_files_list();
+  for (size_t z = 0; z < 12; z++) {
+    const char* name;
+    short level;
+    get_character_info_from_list(index + z, &name, &level);
+    short name_item_id = z + 2;
+    short level_item_id = z + 42;
+    if (name) {
+      ForeColor((name_item_id == filepick) ? yellowColor : cyanColor);
+      MyrCDiStr(name_item_id, (StringPtr)name);
+      DialogNum(level_item_id, level);
     } else {
-      MyrCDiStr(t, (StringPtr) "");
-      MyrCDiStr(t + 40, (StringPtr) "");
+      MyrCDiStr(name_item_id, (StringPtr) "");
+      MyrCDiStr(level_item_id, (StringPtr) "");
     }
   }
-  fclose(fp);
+  /* *** END CHANGES *** */
 
   ForeColor(yellowColor);
 

@@ -3,6 +3,9 @@
 
 /******************************************* plus **********************/
 void plus(char charactername[30], short level) {
+  /* *** CHANGED FROM ORIGINAL IMPLEMENTATION ***
+   * NOTE(fuzziqersoftware): We no longer use the Data CD file to keep track
+   * of character files; instead, we enumerate the Character Files directory.
   short t;
   FILE* op;
   char name[30];
@@ -16,31 +19,37 @@ void plus(char charactername[30], short level) {
   for (t = 0; t < 500; t++) {
     strcpy(name, (StringPtr) "");
     fread(&name, 30, 1, op);
-    fread(&temp, 2, 1, op); /***** level placeholder ****/
+    fread(&temp, 2, 1, op); // level placeholder
     CvtShortToPc(&temp);
     if (!strlen(name)) {
       fseek(op, t * 32, SEEK_SET);
       fwrite(charactername, 30, 1, op);
       CvtShortToPc(&level);
-      fwrite(&level, sizeof level, 1, op); /***** level placeholder ****/
+      fwrite(&level, sizeof level, 1, op); // level placeholder
       CvtShortToPc(&level);
       fclose(op);
       return;
     }
   }
   fclose(op);
+  */
+  unhide_character_from_list(charactername);
+  /* *** END CHANGES *** */
 }
 
 /******************************************* minus **********************/
 void minus(char name[30], short mode) {
-  short t, temp = 0;
-  FILE* op;
-  char name2[30];
-
   strcpy(filename, ":Character Files:");
   strcat((StringPtr)filename, name);
   if (!mode)
     MyrRemove(filename);
+
+  /* *** CHANGED FROM ORIGINAL IMPLEMENTATION ***
+   * NOTE(fuzziqersoftware): We no longer use the Data CD file to keep track
+   * of character files; instead, we enumerate the Character Files directory.
+  short t, temp = 0;
+  FILE* op;
+  char name2[30];
 
   if ((op = MyrFopen(":Character Files:Data CD", "r+b")) == NULL) {
     if ((op = MyrFopen(":Character Files:Data CD", "w+b")) == NULL)
@@ -51,14 +60,14 @@ void minus(char name[30], short mode) {
     strcpy(name2, (StringPtr) "");
     fseek(op, t * 32, SEEK_SET);
     if (fread(&name2, 30, 1, op)) {
-      fread(&temp, 2, 1, op); /***** level placeholder ****/
+      fread(&temp, 2, 1, op); // level placeholder
       CvtShortToPc(&temp);
       if (!strcmp(name2, name)) {
         strcpy(name2, (StringPtr) "");
         fseek(op, t * 32, SEEK_SET);
         fwrite(&name2, 30, 1, op);
         CvtShortToPc(&temp);
-        fwrite(&temp, 2, 1, op); /***** level placeholder ****/
+        fwrite(&temp, 2, 1, op); // level placeholder
         CvtShortToPc(&temp);
         fclose(op);
         return;
@@ -69,4 +78,7 @@ void minus(char name[30], short mode) {
     }
   }
   fclose(op);
+  */
+  hide_character_from_list(name);
+  /* *** END CHANGES *** */
 }

@@ -89,6 +89,10 @@ over:
           } else
             goto tryagain;
         } else {
+          /* *** CHANGED FROM ORIGINAL IMPLEMENTATION ***
+           * NOTE(fuzziqersoftware): We no longer use the Data CD file to keep track
+           * of character files; instead, we enumerate the Character Files directory.
+
           if ((fp = MyrFopen(":Character Files:Data CD", "r+b")) == NULL) {
             if ((fp = MyrFopen(":Character Files:Data CD", "w+b")) == NULL)
               scratch2(10);
@@ -97,20 +101,21 @@ over:
           for (t = 0; t < 5000; t++) {
             strcpy(name, (StringPtr) "");
             fread(&name, 30, 1, fp);
-            fread(&temp, 2, 1, fp); /***** level placeholder ****/
+            fread(&temp, 2, 1, fp); // level placeholder
             if (!strcmp(name, (StringPtr) "")) {
               gStop = 1;
               sound(6001);
               fseek(fp, t * 32, SEEK_SET);
               fwrite(characterl.name, 30, 1, fp);
               CvtCharacterToPc(&characterl);
-              fwrite(&characterl.level, 2, 1, fp); /***** level placeholder ****/
+              fwrite(&characterl.level, 2, 1, fp); // level placeholder
               CvtCharacterToPc(&characterl);
               fclose(fp);
               setfileinfo("CDat", (Ptr) ":Character Files:Data CD");
               goto out;
             }
           }
+          */
         }
       } else {
         sound(6000);
