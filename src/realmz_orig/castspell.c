@@ -481,18 +481,18 @@ back:
           if ((type > -1) && (type < 6)) {
 
             if ((type > -1) && (type < 2)) {
-              typerect.top = 293 + 19 * type;
-              typerect.left = 134;
+              typerect.top = 341 + 19 * type;
+              typerect.left = 159;
             }
 
             if ((type > 1) && (type < 4)) {
-              typerect.top = 255 + 19 * type;
-              typerect.left = 209;
+              typerect.top = 303 + 19 * type;
+              typerect.left = 234;
             }
 
             if ((type > 3) && (type < 6)) {
-              typerect.top = 217 + 19 * type;
-              typerect.left = 273;
+              typerect.top = 265 + 19 * type;
+              typerect.left = 298;
             }
 
             typerect.right = typerect.left + 9;
