@@ -116,6 +116,9 @@ over:
             }
           }
           */
+          gStop = 1;
+          sound(6001);
+          goto out;
         }
       } else {
         sound(6000);
