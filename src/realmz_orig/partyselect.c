@@ -395,15 +395,24 @@ shortupdate:
       strncat(filename, myString, 30);
 
       if ((fp = MyrFopen(filename, "rb")) == NULL) {
+        /* *** CHANGED FROM ORIGINAL IMPLEMENTATION ***
+         * NOTE(chromancer): Bug in original code hides selected character
+         * when fopen fails, which vanishes the selected on an empty-slot
+         * click. Fix: guard on the clicked slot having had a name. warn()
+         * overwrites global myString, so capture check before warn().
+         */
+        short clicked_empty = !strlen(myString);
         SetPortDialogPort(party);
         ForeColor(blackColor);
         BackColor(whiteColor);
         warn(38);
         warn(143);
-        GetDialogItem(party, filepick, &itemType, &itemHandle, &itemRect);
-        GetDialogItemText(itemHandle, myString);
-        PtoCstr(myString);
-        minus((Ptr)myString, 1);
+        if (!clicked_empty) {
+          GetDialogItem(party, filepick, &itemType, &itemHandle, &itemRect);
+          GetDialogItemText(itemHandle, myString);
+          PtoCstr(myString);
+          minus((Ptr)myString, 1);
+        }
         goto bigupdate;
       }
 
