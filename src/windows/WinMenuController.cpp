@@ -195,7 +195,7 @@ int WinCreatePopupMenu(SDL_Window* sdl_window, std::shared_ptr<WinMenu> menu) {
   for (const auto& item : menu->items) {
     i++;
     auto name = item.name.c_str();
-    AppendMenu(popupMenu, (item->enabled ? MF_ENABLED : 0) | MF_STRING, i, name);
+    AppendMenu(popupMenu, (item.enabled ? MF_ENABLED : 0) | MF_STRING, i, name);
   }
 
   // TrackPopupMenu displays the menu in screen coordinates, not window coordinates. Rather
