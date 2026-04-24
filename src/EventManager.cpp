@@ -518,7 +518,7 @@ protected:
 EventManager em;
 
 uint32_t TickCount(void) {
-  return (clock() * 60) / CLOCKS_PER_SEC;
+  return (SDL_GetTicks() * 60) / SDL_MS_PER_SECOND;
 }
 
 uint32_t GetDblTime(void) {
