@@ -61,6 +61,7 @@ endif()
 add_subdirectory(vendored/SDL EXCLUDE_FROM_ALL)
 add_subdirectory(vendored/SDL_ttf EXCLUDE_FROM_ALL)
 add_subdirectory(vendored/SDL_image EXCLUDE_FROM_ALL)
+add_subdirectory(vendored/libxmp EXCLUDE_FROM_ALL)
 
 # Executable definition
 set(REALMZ_EXECUTABLE_SRC src/realmz_orig/main.c)
@@ -227,6 +228,7 @@ set(SOURCES
     src/QuickDraw.cpp
     src/ResourceManager.cpp
     src/SDLHelpers.cpp
+    src/MusicManager.cpp
     src/SoundManager.cpp
     src/WindowManager.cpp
 )
@@ -238,6 +240,7 @@ set(realmz_lib_LINK_LIBRARIES
     z
     phosg::phosg
     resource_file::resource_file
+    xmp_static
 )
 
 if(APPLE)

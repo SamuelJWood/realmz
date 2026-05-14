@@ -7,3 +7,6 @@
 [submodule "vendored/SDL_image"]
 	path = vendored/SDL_image
 	url = https://github.com/libsdl-org/SDL_image
+[submodule "vendored/libxmp"]
+	path = vendored/libxmp
+	url = https://github.com/libxmp/libxmp.git
