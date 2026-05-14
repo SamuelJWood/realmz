@@ -23,6 +23,22 @@
       "description": "Generate a macOS build (debug configuration).",
       "inherits": "base",
       "binaryDir": "${sourceDir}/build_mac"
+    },
+    {
+      "name": "Windows",
+      "description": "Cross-compile for Windows using llvm-mingw (from WSL2 or macOS).",
+      "generator": "Unix Makefiles",
+      "binaryDir": "${sourceDir}/build_win",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": {"value": "Release"},
+        "CMAKE_VERBOSE_MAKEFILE": {"value": "ON", "type": "BOOL"},
+        "SDLTTF_VENDORED": {"value": "ON", "type": "BOOL"},
+        "CMAKE_TOOLCHAIN_FILE": {"value": "${sourceDir}/cmake/TC-mingw.cmake"},
+        "ZLIB_LIBRARY": {"value": "$env{HOME}/mingw-install/lib/libz.dll.a"},
+        "ZLIB_INCLUDE_DIR": {"value": "$env{HOME}/mingw-install/include"},
+        "phosg_DIR": {"value": "$env{HOME}/mingw-install/lib/cmake/phosg"},
+        "resource_file_DIR": {"value": "$env{HOME}/mingw-install/lib/cmake/resource_file"}
+      }
     }
   ],
   "buildPresets": [
@@ -30,6 +46,10 @@
       "name": "macOS",
       "configurePreset": "macOS",
       "targets": ["package"]
+    },
+    {
+      "name": "Windows",
+      "configurePreset": "Windows"
     }
   ]
 }

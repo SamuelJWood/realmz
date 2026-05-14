@@ -25,6 +25,10 @@ Makefile
 # Finder files
 .DS_Store
 
+# Build directories
+build_win/
+build_mac/
+
 # Other stuff
 divinity.out
 realmz.out
