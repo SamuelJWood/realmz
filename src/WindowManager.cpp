@@ -34,6 +34,7 @@ static constexpr bool ENABLE_DIALOG_RECOMPOSITE_DEBUG = false;
 bool enable_translucent_window_debug = false;
 static size_t debug_number = 1;
 
+
 inline size_t unwrap_opaque_handle(Handle h) {
   static_assert(sizeof(size_t) == sizeof(Handle));
   return reinterpret_cast<size_t>(h);
@@ -940,13 +941,26 @@ void WindowManager::create_sdl_window() {
 
   static constexpr size_t w = 800;
   static constexpr size_t h = 600;
-  this->sdl_window = sdl_make_shared(SDL_CreateWindow("Realmz", w, h, 0));
+  this->sdl_window = sdl_make_shared(SDL_CreateWindow("Realmz", w, h, SDL_WINDOW_RESIZABLE));
   if (!this->sdl_window) {
     throw std::runtime_error(std::format("Could not create SDL window: {}", SDL_GetError()));
   }
-  if (!SDL_CreateRenderer(this->sdl_window.get(), nullptr)) {
+  auto* renderer = SDL_CreateRenderer(this->sdl_window.get(), nullptr);
+  if (!renderer) {
     throw std::runtime_error(std::format("Could not create window renderer: {}", SDL_GetError()));
   }
+  this->source_texture = sdl_make_unique(SDL_CreateTexture(renderer, SDL_PIXELFORMAT_RGBA8888,
+      SDL_TEXTUREACCESS_STREAMING, w, h));
+  if (!this->source_texture) {
+    throw std::runtime_error(std::format("Could not create source texture: {}", SDL_GetError()));
+  }
+  SDL_SetTextureScaleMode(this->source_texture.get(), SDL_SCALEMODE_NEAREST);
+  this->intermediate_texture = sdl_make_unique(SDL_CreateTexture(renderer, SDL_PIXELFORMAT_RGBA8888,
+      SDL_TEXTUREACCESS_TARGET, 2 * w, 2 * h));
+  if (!this->intermediate_texture) {
+    throw std::runtime_error(std::format("Could not create intermediate texture: {}", SDL_GetError()));
+  }
+  // intermediate uses default SDL_SCALEMODE_LINEAR
   this->screen_port.resize(w, h);
   this->recomposite_all();
 }
@@ -1171,25 +1185,33 @@ void WindowManager::recomposite(std::shared_ptr<Window> updated_window) {
     if (!renderer) {
       wm_log.error_f("Could not get window renderer: {}", SDL_GetError());
     } else {
-
-      auto w = this->screen_port.data.get_width();
-      auto h = this->screen_port.data.get_height();
       if (ENABLE_RECOMPOSITE_DEBUG) {
         wm_log.info_f("Writing debug{}.bmp", debug_number);
         phosg::save_file(std::format("debug{}.bmp", debug_number++), this->screen_port.data.serialize(phosg::ImageFormat::WINDOWS_BITMAP));
       }
-      auto surface = sdl_make_unique(SDL_CreateSurfaceFrom(
-          w, h, SDL_PIXELFORMAT_RGBA8888, this->screen_port.data.get_data(), 4 * this->screen_port.data.get_width()));
-      if (!surface) {
-        wm_log.error_f("Could not create surface: {}", SDL_GetError());
-      } else {
-        auto texture = sdl_make_unique(SDL_CreateTextureFromSurface(renderer, surface.get()));
-        if (!texture) {
-          wm_log.error_f("Could not create texture: {}", SDL_GetError());
-        } else {
-          SDL_RenderTexture(renderer, texture.get(), nullptr, nullptr);
-        }
-      }
+
+      // Compute letterbox content rect in physical window pixels.
+      int pw, ph;
+      SDL_GetWindowSizeInPixels(this->sdl_window.get(), &pw, &ph);
+      float scale = std::min(static_cast<float>(pw) / 800.0f, static_cast<float>(ph) / 600.0f);
+      float cw = 800.0f * scale;
+      float ch = 600.0f * scale;
+      this->content_rect = {(static_cast<float>(pw) - cw) / 2.0f, (static_cast<float>(ph) - ch) / 2.0f, cw, ch};
+
+      // Upload 800×600 framebuffer to source texture.
+      SDL_UpdateTexture(this->source_texture.get(), nullptr,
+          this->screen_port.data.get_data(),
+          static_cast<int>(4 * this->screen_port.data.get_width()));
+
+      // Pass 1: GPU NN 2× upscale — render source (800×600, NEAREST) into intermediate (1600×1200).
+      SDL_SetRenderTarget(renderer, this->intermediate_texture.get());
+      SDL_RenderTexture(renderer, this->source_texture.get(), nullptr, nullptr);
+      SDL_SetRenderTarget(renderer, nullptr);
+
+      // Pass 2: GPU linear downsample — render intermediate (LINEAR) to letterbox rect on screen.
+      SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
+      SDL_RenderClear(renderer);
+      SDL_RenderTexture(renderer, this->intermediate_texture.get(), nullptr, &this->content_rect);
 
       SDL_RenderPresent(renderer);
       SDL_SyncWindow(this->sdl_window.get());
@@ -1226,6 +1248,20 @@ void WindowManager::recomposite_from_window(std::shared_ptr<Window> updated_wind
 }
 void WindowManager::recomposite_all() {
   this->recomposite(nullptr);
+}
+
+void WindowManager::window_to_logical(float wx, float wy, float& lx, float& ly) const {
+  lx = std::clamp((wx - this->content_rect.x) * 800.0f / this->content_rect.w, 0.0f, 800.0f);
+  ly = std::clamp((wy - this->content_rect.y) * 600.0f / this->content_rect.h, 0.0f, 600.0f);
+}
+
+void WindowManager::toggle_fullscreen() {
+  this->m_fullscreen = !this->m_fullscreen;
+  SDL_SetWindowFullscreen(this->sdl_window.get(), this->m_fullscreen);
+}
+
+bool WindowManager::fullscreen_active() const {
+  return this->m_fullscreen;
 }
 
 void WindowManager::on_debug_signal() {
@@ -1931,6 +1967,14 @@ int WindowManager_SetEnableRecomposite(int enable) {
 void WindowManager_RecompositeAlways() {
   auto& wm = WindowManager::instance();
   wm.set_enable_recomposite(wm.set_enable_recomposite(true));
+}
+
+void WindowManager_ToggleFullscreen(void) {
+  WindowManager::instance().toggle_fullscreen();
+}
+
+int WindowManager_IsFullscreen(void) {
+  return WindowManager::instance().fullscreen_active() ? 1 : 0;
 }
 
 TEHandle TENew(const Rect* destRect, const Rect* viewRect) {

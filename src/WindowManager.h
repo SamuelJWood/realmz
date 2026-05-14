@@ -149,6 +149,8 @@ void TEScroll(int16_t dh, int16_t dv, TEHandle hTE);
 // this function are part of the original source.
 int WindowManager_SetEnableRecomposite(int enable);
 void WindowManager_RecompositeAlways();
+void WindowManager_ToggleFullscreen(void);
+int WindowManager_IsFullscreen(void);
 
 #ifdef __cplusplus
 } // extern "C"

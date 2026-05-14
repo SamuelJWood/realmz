@@ -101,6 +101,14 @@ private:
   sdl_window_shared sdl_window;
   bool text_editing_active = false;
   bool recomposite_enabled = true;
+  bool m_fullscreen = false;
+
+  // GPU scaling textures
+  sdl_texture_ptr source_texture;       // 800×600, STREAMING, NEAREST — pixel upload target
+  sdl_texture_ptr intermediate_texture; // 1600×1200, TARGET, LINEAR — NN 2× upscale output
+
+  // Letterbox content rect in physical window pixels (updated each recomposite)
+  SDL_FRect content_rect = {0, 0, 800, 600};
 
   WindowManager();
 
@@ -142,6 +150,11 @@ public:
   inline sdl_window_shared get_sdl_window() const {
     return this->sdl_window;
   }
+
+  void window_to_logical(float wx, float wy, float& lx, float& ly) const;
+
+  void toggle_fullscreen();
+  bool fullscreen_active() const;
 
   void on_debug_signal();
 
