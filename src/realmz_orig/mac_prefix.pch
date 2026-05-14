@@ -23,7 +23,7 @@
 #define GetQDGlobalsScreenBits(x) (*(x) = qd.screenBits)
 #define GetPortBitMapForCopyBits(x) ((BitMap *)&(((GrafPtr)(x))->portBits))
 #define GetDialogFromWindow(x) (DialogPtr)(x)
-#define GetPortPixMap(x) &(((CGrafPtr)(x))->portPixMap);
+#define GetPortPixMap(x) (((CGrafPtr)(x))->portPixMap)
 #define GetDialogPort(x) ((CGrafPtr)&(((DialogPeek)(x))->window.port))
 
 #define QDFlushPortBuffer

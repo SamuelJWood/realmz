@@ -74,6 +74,12 @@ public:
     }
   }
 
+  void register_new_menu(Handle handle, std::shared_ptr<Menu> menu) {
+    this->res_id_to_menu.emplace(menu->menu_id, menu);
+    this->handle_to_menu.emplace(handle, menu);
+    this->menu_id_to_handle.emplace(menu->menu_id, handle);
+  }
+
   void insert_submenu(MenuHandle handle) {
     auto menu = this->get_menu(handle);
     for (auto& existing : this->cur_menu_list->submenus) {
@@ -249,6 +255,26 @@ void CheckItem(MenuHandle theMenu, uint16_t item, Boolean checked) {
   mm.sync();
 }
 
+void SetItemIcon(MenuHandle theMenu, int16_t item, int16_t iconIndex) {
+  auto menu = mm.get_menu(theMenu);
+  if (item < 1 || item > static_cast<int16_t>(menu->items.size())) {
+    return;
+  }
+  auto& menu_item = menu->items.at(item - 1);
+  menu_item.icon_number = static_cast<uint8_t>(iconIndex);
+  if (iconIndex != 0) {
+    int16_t cicn_id = iconIndex + 256;
+    auto handle = GetResource(ResourceDASM::RESOURCE_TYPE_cicn, cicn_id);
+    if (handle) {
+      auto cicn = ResourceFile::decode_cicn(*handle, GetHandleSize(handle));
+      menu_item.icon_image = std::make_shared<phosg::ImageRGBA8888N>(std::move(cicn.image));
+    }
+  } else {
+    menu_item.icon_image = nullptr;
+  }
+  mm.sync();
+}
+
 void AppendMenu(MenuHandle menu, ConstStr255Param data) {
   auto m = mm.get_menu(menu);
   // TODO: Parse menu item format string (Macintosh Toolbox Essentials, 3-65)
@@ -292,4 +318,59 @@ int16_t CountMItems(MenuHandle theMenu) {
 
 int32_t MenuKey(int16_t ch) {
   return 0;
+}
+
+MenuHandle Realmz_NewMenu(int16_t menuID, ConstStr255Param menuTitle) {
+  auto menu = std::make_shared<Menu>();
+  menu->menu_id = menuID;
+  menu->title = string_for_pstr<256>(menuTitle);
+  menu->enabled = true;
+  Handle handle = NewHandle(0);
+  mm.register_new_menu(handle, menu);
+  return handle;
+}
+
+void SetItemMark(MenuHandle theMenu, int16_t item, int16_t markChar) {
+  auto menu = mm.get_menu(theMenu);
+  if (item < 1 || item > static_cast<int16_t>(menu->items.size())) {
+    return;
+  }
+  menu->items.at(item - 1).checked = (markChar != 0);
+  mm.sync();
+}
+
+void GetItemMark(MenuHandle theMenu, int16_t item, int16_t* markChar) {
+  auto menu = mm.get_menu(theMenu);
+  if (item < 1 || item > static_cast<int16_t>(menu->items.size())) {
+    *markChar = 0;
+    return;
+  }
+  *markChar = menu->items.at(item - 1).checked ? 19 : 0;
+}
+
+void SetItemStyle(MenuHandle theMenu, int16_t item, int16_t style) {
+  auto menu = mm.get_menu(theMenu);
+  if (item < 1 || item > static_cast<int16_t>(menu->items.size())) {
+    return;
+  }
+  menu->items.at(item - 1).style_flags = static_cast<uint8_t>(style);
+  mm.sync();
+}
+
+void Realmz_InsertMenuItem(MenuHandle theMenu, ConstStr255Param itemString, int16_t afterItem) {
+  auto menu = mm.get_menu(theMenu);
+  Menu::Item item;
+  item.name = string_for_pstr<256>(itemString);
+  item.enabled = true;
+  menu->items.insert(menu->items.begin() + afterItem, item);
+}
+
+void Realmz_InsertSubmenuItem(MenuHandle theMenu, ConstStr255Param title, int16_t subMenuID, int16_t afterItem) {
+  auto menu = mm.get_menu(theMenu);
+  Menu::Item item;
+  item.name = string_for_pstr<256>(title);
+  item.key_equivalent = '\x1B';
+  item.mark_character = static_cast<char>(subMenuID);
+  item.enabled = true;
+  menu->items.insert(menu->items.begin() + afterItem, item);
 }

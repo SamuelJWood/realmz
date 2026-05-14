@@ -29,6 +29,7 @@ short showcondition(short start, short stop, short type, short showonly, short w
       PtoCstr((StringPtr)c[tt].name);
       index++;
       SetItemIcon(popup, index, c[tt].pictid);
+      SetItemStyle(popup, index, 1);
     }
 
     switch (type) {

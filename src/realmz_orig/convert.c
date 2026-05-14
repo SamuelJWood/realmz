@@ -200,14 +200,14 @@ void CvtDoorToPc(struct door* x) {
 
 void CvtMapsToPc(struct maps* x) {
   // This is all shorts except for the big Str255 at the end.
-  CvtTabShortToPc(x, (sizeof(*x) - 256) / 2);
+  CvtTabShortToPc((int16_t*)x, (sizeof(*x) - 256) / 2);
 }
 
 void CvtThiefToPc(struct thief* x) {
   CvtTabBoolToPc(x->type, 10);
-  CvtTabShortToPc(x->modifer, 8);
-  CvtTabShortToPc(x->codes, 8);
-  CvtTabShortToPc(x->codef, 8);
+  CvtTabShortToPc((int16_t*)x->modifer, 8);
+  CvtTabShortToPc((int16_t*)x->codes, 8);
+  CvtTabShortToPc((int16_t*)x->codef, 8);
   CvtTabShortToPc(x->texts, 8);
   CvtTabShortToPc(x->textf, 8);
   CvtTabShortToPc(x->sounds, 8);

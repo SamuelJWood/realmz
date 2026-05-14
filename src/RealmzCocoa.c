@@ -79,9 +79,6 @@ int16_t DIBadMount(Point where, int32_t evtMessage) {
 void HiliteMenu(int16_t menuID) {
 }
 
-void SetItemIcon(MenuHandle theMenu, int16_t item, int16_t iconIndex) {
-}
-
 void SelectDialogItemText(DialogPtr theDialog, int16_t itemNo, int16_t strtSel, int16_t endSel) {
 }
 
@@ -103,10 +100,6 @@ void ExitToShell(void) {
 
 int16_t OpenDeskAcc(ConstStr255Param deskAccName) {
   return 0;
-}
-
-void SetItemMark(MenuHandle theMenu, int16_t item, int16_t markChar) {
-  // TODO
 }
 
 void EndUpdate(WindowPtr theWindow) {
@@ -142,9 +135,6 @@ void SysBeep(uint16_t duration) {
 }
 
 void UnlockPixels(PixMapHandle pm) {
-}
-
-void GetItemMark(MenuHandle theMenu, int16_t item, int16_t* markChar) {
 }
 
 void LMSetMBarHeight(int16_t h) {

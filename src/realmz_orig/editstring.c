@@ -349,7 +349,7 @@ void warp(void) {
         CvtTabDoorToPc(door, 100);
         sound(141);
         fread(&field, sizeof field, 1, fp2);
-        CvtFieldToPc(&field);
+        CvtFieldToPc((int16_t*)field);
         fread(&randlevel, sizeof randlevel, 1, fp3);
         CvtRandLevelToPc(&randlevel);
 
@@ -358,10 +358,10 @@ void warp(void) {
           scratch(18);
         CvtTabDoorToPc(door, 100);
 
-        CvtFieldToPc(&field);
+        CvtFieldToPc((int16_t*)field);
         if (!fwrite(&field, sizeof field, 1, op))
           scratch(19);
-        CvtFieldToPc(&field);
+        CvtFieldToPc((int16_t*)field);
 
         CvtRandLevelToPc(&randlevel);
         if (!fwrite(&randlevel, sizeof randlevel, 1, op))
@@ -517,7 +517,7 @@ void warp(void) {
         CvtTabDoorToPc(door, 100);
         sound(141);
         fread(&field, sizeof field, 1, fp2);
-        CvtFieldToPc(&field);
+        CvtFieldToPc((int16_t*)field);
 
         fread(&randlevel, sizeof randlevel, 1, fp3);
         CvtRandLevelToPc(&randlevel);
@@ -527,10 +527,10 @@ void warp(void) {
           scratch(25);
         CvtTabDoorToPc(door, 100);
 
-        CvtFieldToPc(&field);
+        CvtFieldToPc((int16_t*)field);
         if (!fwrite(&field, sizeof field, 1, op))
           scratch(26);
-        CvtFieldToPc(&field);
+        CvtFieldToPc((int16_t*)field);
 
         CvtRandLevelToPc(&randlevel);
         if (!fwrite(&randlevel, sizeof randlevel, 1, op))
@@ -560,7 +560,7 @@ void warp(void) {
         CvtTabDoorToPc(door, 100);
         sound(141);
         fread(&field, sizeof field, 1, fp2);
-        CvtFieldToPc(&field);
+        CvtFieldToPc((int16_t*)field);
 
         fread(&randlevel, sizeof randlevel, 1, fp3);
         CvtRandLevelToPc(&randlevel);
@@ -570,10 +570,10 @@ void warp(void) {
           scratch(32);
         CvtTabDoorToPc(door, 100);
 
-        CvtFieldToPc(&field);
+        CvtFieldToPc((int16_t*)field);
         if (!fwrite(&field, sizeof field, 1, op))
           scratch(33);
-        CvtFieldToPc(&field);
+        CvtFieldToPc((int16_t*)field);
 
         CvtRandLevelToPc(&randlevel);
         if (!fwrite(&randlevel, sizeof randlevel, 1, op))

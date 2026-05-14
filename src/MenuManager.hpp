@@ -1,6 +1,8 @@
 #pragma once
 
 #include <list>
+#include <memory>
+#include <phosg/Image.hh>
 #include <resource_file/ResourceFile.hh>
 
 struct Menu {
@@ -12,6 +14,7 @@ struct Menu {
     uint8_t style_flags = 0; // See TextStyleFlag
     bool enabled = true;
     bool checked = false;
+    std::shared_ptr<phosg::ImageRGBA8888N> icon_image;
 
     Item() = default;
     ~Item() = default;

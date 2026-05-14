@@ -140,7 +140,7 @@ short load(void) {
   CvtShortToPc(&fat);
 
   fread(&partycondition, sizeof partycondition, 1, fp);
-  CvtTabShortToPc(&partycondition, 10);
+  CvtTabShortToPc(partycondition, 10);
 
   fread(&percent, sizeof percent, 1, fp);
   CvtFloatToPc(&percent);
@@ -149,10 +149,10 @@ short load(void) {
   CvtFloatToPc(&hardpercent);
 
   fread(&c, sizeof c, 1, fp);
-  CvtTabCharacterToPc(&c, 6);
+  CvtTabCharacterToPc(c, 6);
 #else
   fread(&c, sizeof c, 1, fp);
-  CvtTabCharacterToPc(&c, 6);
+  CvtTabCharacterToPc(c, 6);
 
   fread(&currentscenario, sizeof currentscenario, 1, fp);
   CvtShortToPc(&currentscenario);
@@ -164,7 +164,7 @@ short load(void) {
   CvtShortToPc(&fat);
 
   fread(&partycondition, sizeof partycondition, 1, fp);
-  CvtTabShortToPc(&partycondition, 10);
+  CvtTabShortToPc(partycondition, 10);
 
   fread(&percent, sizeof percent, 1, fp);
   CvtFloatToPc(&percent);
@@ -263,7 +263,7 @@ short load(void) {
   CvtLongToPc(&floory);
 
   fread(&moneypool, sizeof(int32_t), 3, fp);
-  CvtTabLongToPc(&moneypool, 3);
+  CvtTabLongToPc(moneypool, 3);
 
   // Myriad The tm struct is 9xshort on macintosh
   fread(&n, sizeof(short), 1, fp);
@@ -325,7 +325,7 @@ short load(void) {
   fread(&blanksavegamevariables, sizeof(char), 8, fp); //*** fantasoft v7.1b  broke it up so work on PC side
 
   fread(&holdover, sizeof holdover, 1, fp);
-  CvtTabMonsterToPc(&holdover, 20);
+  CvtTabMonsterToPc(holdover, 20);
 
   fread(&heldover, sizeof heldover, 1, fp);
   CvtShortToPc(&heldover);
@@ -345,12 +345,12 @@ short load(void) {
   fread(&canpriestturn, sizeof canpriestturn, 1, fp);
 
   fread(&musictoggle, sizeof musictoggle, 1, fp);
-  CvtTabShortToPc(&musictoggle, 20);
+  CvtTabShortToPc(musictoggle, 20);
 
   fread(&doauto, sizeof doauto, 1, fp);
 
   fread(&definespells, sizeof definespells, 1, fp);
-  CvtTabShortToPc(&definespells, 6 * 10 * 4);
+  CvtTabShortToPc((int16_t*)definespells, 6 * 10 * 4);
 
   fread(&notes, sizeof notes, 1, fp);
 
@@ -366,7 +366,7 @@ short load(void) {
   /* *** END CHANGES *** */
 
   fread(&storage, sizeof storage, 1, fp);
-  CvtTabItemToPc(&storage, 6);
+  CvtTabItemToPc((struct item*)storage, 6);
 
   if (use_extended_long_format) {
     int64_t wealthstore64[3];
@@ -377,7 +377,7 @@ short load(void) {
   } else {
     fread(&wealthstore, sizeof wealthstore, 1, fp);
   }
-  CvtTabLongToPc(&wealthstore, 3);
+  CvtTabLongToPc(wealthstore, 3);
 
   fread(&registrationname, sizeof registrationname, 1, fp);
   if (use_extended_long_format) {

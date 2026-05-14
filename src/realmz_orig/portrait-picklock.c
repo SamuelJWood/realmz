@@ -10,6 +10,9 @@ void portrait(short mode) {
   short recindex = 0;
   Boolean rollover = 0;
 
+  int initial_load = 1;
+  int saved_recomposite = WindowManager_SetEnableRecomposite(0);
+
   compactheap();
 
   GetPort(&oldport);
@@ -141,6 +144,12 @@ updatelight:
       downbutton(FALSE);
       lastclick = t;
     }
+  }
+
+  if (initial_load) {
+    initial_load = 0;
+    WindowManager_RecompositeAlways();
+    WindowManager_SetEnableRecomposite(saved_recomposite);
   }
 
   BeginUpdate(GetDialogWindow(portrait));

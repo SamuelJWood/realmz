@@ -21,7 +21,7 @@ void loadland(int32_t id, short mode) {
   CvtTabDoorToPc(door, 100);
 
   fread(&field, sizeof field, 1, fp);
-  CvtFieldToPc(&field);
+  CvtFieldToPc((int16_t*)field);
   fread(&randlevel, sizeof randlevel, 1, fp);
   CvtRandLevelToPc(&randlevel);
   if (!indung) {
@@ -130,7 +130,7 @@ retry:
     scratch(412);
   } else {
     fread(&mapstats, (sizeof mapstats) / 2, 1, fp); /****** load in combat tile build data ***/
-    CvtTabMapStatToPc(&mapstats, 402 / 2);
+    CvtTabMapStatToPc(mapstats, 402 / 2);
     fread(&basetile[id], sizeof basetile[id], 1, fp);
     CvtShortToPc(&basetile[id]);
     fread(&basescale[id], sizeof basescale[id], 1, fp);

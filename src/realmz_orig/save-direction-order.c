@@ -206,9 +206,9 @@ void save(short mode) {
   fwrite(&fat, sizeof fat, 1, fp);
   CvtShortToPc(&fat);
 
-  CvtTabShortToPc(&partycondition, 10);
+  CvtTabShortToPc(partycondition, 10);
   fwrite(&partycondition, sizeof partycondition, 1, fp);
-  CvtTabShortToPc(&partycondition, 10);
+  CvtTabShortToPc(partycondition, 10);
 
   CvtFloatToPc(&percent);
   fwrite(&percent, sizeof percent, 1, fp);
@@ -218,13 +218,13 @@ void save(short mode) {
   fwrite(&hardpercent, sizeof hardpercent, 1, fp);
   CvtFloatToPc(&hardpercent);
 
-  CvtTabCharacterToPc(&c, 6);
+  CvtTabCharacterToPc(c, 6);
   fwrite(&c, sizeof c, 1, fp);
-  CvtTabCharacterToPc(&c, 6);
+  CvtTabCharacterToPc(c, 6);
 #else
-  CvtTabCharacterToPc(&c, 6);
+  CvtTabCharacterToPc(c, 6);
   fwrite(&c, sizeof c, 1, fp);
-  CvtTabCharacterToPc(&c, 6);
+  CvtTabCharacterToPc(c, 6);
 
   CvtShortToPc(&currentscenario);
   fwrite(&currentscenario, sizeof currentscenario, 1, fp);
@@ -238,9 +238,9 @@ void save(short mode) {
   fwrite(&fat, sizeof fat, 1, fp);
   CvtShortToPc(&fat);
 
-  CvtTabShortToPc(&partycondition, 10);
+  CvtTabShortToPc(partycondition, 10);
   fwrite(&partycondition, sizeof partycondition, 1, fp);
-  CvtTabShortToPc(&partycondition, 10);
+  CvtTabShortToPc(partycondition, 10);
 
   CvtFloatToPc(&percent);
   fwrite(&percent, sizeof percent, 1, fp);
@@ -354,9 +354,9 @@ void save(short mode) {
   fwrite(&floory, sizeof(int32_t), 1, fp);
   CvtLongToPc(&floory);
 
-  CvtTabLongToPc(&moneypool, 3);
+  CvtTabLongToPc(moneypool, 3);
   fwrite(&moneypool, sizeof(int32_t), 3, fp);
-  CvtTabLongToPc(&moneypool, 3);
+  CvtTabLongToPc(moneypool, 3);
 
   // Myriad The tm struct is 9xshort on macintosh
   n = tyme.tm_sec;
@@ -405,9 +405,9 @@ void save(short mode) {
   fwrite(&xydisplayflag, sizeof(char), 1, fp); //*** fantasoft v7.1b  broke it up so work on PC side
   fwrite(&blanksavegamevariables, sizeof(char), 8, fp); //*** fantasoft v7.1b  broke it up so work on PC side
 
-  CvtTabMonsterToPc(&holdover, 20);
+  CvtTabMonsterToPc(holdover, 20);
   fwrite(&holdover, sizeof holdover, 1, fp);
-  CvtTabMonsterToPc(&holdover, 20);
+  CvtTabMonsterToPc(holdover, 20);
 
   CvtShortToPc(&heldover);
   fwrite(&heldover, sizeof heldover, 1, fp);
@@ -423,15 +423,15 @@ void save(short mode) {
 
   fwrite(&canpriestturn, sizeof canpriestturn, 1, fp);
 
-  CvtTabShortToPc(&musictoggle, 20);
+  CvtTabShortToPc(musictoggle, 20);
   fwrite(&musictoggle, sizeof musictoggle, 1, fp);
-  CvtTabShortToPc(&musictoggle, 20);
+  CvtTabShortToPc(musictoggle, 20);
 
   fwrite(&doauto, sizeof doauto, 1, fp);
 
-  CvtTabShortToPc(&definespells, 6 * 10 * 4);
+  CvtTabShortToPc((int16_t*)definespells, 6 * 10 * 4);
   fwrite(&definespells, sizeof definespells, 1, fp);
-  CvtTabShortToPc(&definespells, 6 * 10 * 4);
+  CvtTabShortToPc((int16_t*)definespells, 6 * 10 * 4);
 
   fwrite(&notes, sizeof notes, 1, fp);
 
@@ -448,13 +448,13 @@ void save(short mode) {
   CvtTabShortToPc(&cancamp, 1); // Myriad ????
   /* *** END CHANGES *** */
 
-  CvtTabItemToPc(&storage, 6);
+  CvtTabItemToPc((struct item*)storage, 6);
   fwrite(&storage, sizeof storage, 1, fp);
-  CvtTabItemToPc(&storage, 6);
+  CvtTabItemToPc((struct item*)storage, 6);
 
-  CvtTabLongToPc(&wealthstore, 3);
+  CvtTabLongToPc(wealthstore, 3);
   fwrite(&wealthstore, sizeof wealthstore, 1, fp);
-  CvtTabLongToPc(&wealthstore, 3);
+  CvtTabLongToPc(wealthstore, 3);
 
   fwrite(&registrationname, sizeof registrationname, 1, fp);
 
@@ -555,9 +555,9 @@ void saveland(int32_t id) {
   CvtTabDoorToPc(door, 100);
   fwrite(&door, sizeof door, 1, fp);
   CvtTabDoorToPc(door, 100);
-  CvtFieldToPc(&field);
+  CvtFieldToPc((int16_t*)field);
   fwrite(&field, sizeof field, 1, fp);
-  CvtFieldToPc(&field);
+  CvtFieldToPc((int16_t*)field);
   CvtRandLevelToPc(&randlevel);
   fwrite(&randlevel, sizeof randlevel, 1, fp);
   CvtRandLevelToPc(&randlevel);

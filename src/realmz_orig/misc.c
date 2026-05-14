@@ -320,7 +320,7 @@ void loadextracode(short id) {
     scratch(118);
   fseek(fp, id * sizeof extracode, SEEK_SET);
   fread(&extracode, sizeof extracode, 1, fp);
-  CvtTabShortToPc(&extracode, 5);
+  CvtTabShortToPc(extracode, 5);
   fclose(fp);
 }
 
@@ -1768,13 +1768,13 @@ void updatemapmenu(void) {
   if ((fp = MyrFopen(filename, "rb")) == NULL)
     scratch(104);
   fread(&allsupply, sizeof allsupply, 1, fp);
-  CvtTabItemAttrToPc(&allsupply, 200);
+  CvtTabItemAttrToPc(allsupply, 200);
   fclose(fp);
 
   if (quickshow)
-    CheckItem(prefer, 7, 1);
+    CheckItem(prefer, 9, 1);
   else
-    CheckItem(prefer, 7, 0);
+    CheckItem(prefer, 9, 0);
 }
 
 /****************************** Startlevel **********************************/

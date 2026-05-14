@@ -88,6 +88,16 @@ NSMenu* MCCreateSubMenu(NSString* title, const Menu& menuRes, const std::list<st
         id menuIdentifier = [[MCMenuItemIdentifier alloc] initWithRawIds:menu.menu_id itemId:itemId];
         [subMenuItem setRepresentedObject:menuIdentifier];
         subMenuItem.enabled = subMenuItemRes.enabled;
+        if (subMenuItemRes.icon_image) {
+          const auto& img = *subMenuItemRes.icon_image;
+          auto png_bytes = img.serialize(phosg::ImageFormat::PNG);
+          NSData* ns_data = [NSData dataWithBytes:png_bytes.data() length:png_bytes.size()];
+          NSImage* icon = [[NSImage alloc] initWithData:ns_data];
+          if (icon) {
+            [icon setSize:NSMakeSize(16, 16)];
+            [subMenuItem setImage:icon];
+          }
+        }
         if (subMenuItemRes.checked) {
           subMenuItem.state = NSControlStateValueOn;
         }
@@ -158,6 +168,15 @@ NSMenu* MCCreateSubMenu(NSString* title, const Menu& menuRes, const std::list<st
     id menuIdentifier = [[MCMenuItemIdentifier alloc] initWithRawIds:menu->menu_id itemId:itemId];
     [menuItem setRepresentedObject:menuIdentifier];
     menuItem.enabled = item.enabled;
+    if (item.checked) {
+      menuItem.state = NSControlStateValueOn;
+    }
+    if (item.style_flags & 1) {
+      NSFont* bold_font = [NSFont boldSystemFontOfSize:[NSFont systemFontSize]];
+      NSDictionary* attrs = @{NSFontAttributeName: bold_font};
+      NSAttributedString* bold_name = [[NSAttributedString alloc] initWithString:name attributes:attrs];
+      [menuItem setAttributedTitle:bold_name];
+    }
     [_contextualMenu addItem:menuItem];
   }
 

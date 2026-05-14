@@ -830,9 +830,9 @@ backup:
 out:
 
   if (quickshow)
-    CheckItem(prefer, 7, 1);
+    CheckItem(prefer, 9, 1);
   else
-    CheckItem(prefer, 7, 0);
+    CheckItem(prefer, 9, 0);
 // Myriad no desktop on the pc side
 #ifndef PC
   if (hidedesktop) {

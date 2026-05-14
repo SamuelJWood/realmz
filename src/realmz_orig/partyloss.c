@@ -15,7 +15,7 @@ void partyloss(short mode) {
   getfilename("Global"); /******** run global death macro *****/
   if ((fp = MyrFopen(filename, "rb")) != NULL) {
     fread(&globalmacro, sizeof globalmacro, 1, fp);
-    CvtTabShortToPc(&globalmacro, 30);
+    CvtTabShortToPc(globalmacro, 30);
     fclose(fp);
     incombat = 0;
     if (globalmacro[1]) {

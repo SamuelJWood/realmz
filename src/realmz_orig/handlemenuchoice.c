@@ -1,5 +1,6 @@
 #include "realmzbuild.h"
 #include "variables.h"
+#include "../MusicManager.h"
 
 /*************************************************************
                                 RedrawAllRealmz
@@ -367,23 +368,33 @@ short HandleMenuChoice(void) {
         volume = theItem - 2;
         SetSoundVol(volume);
         sound(642);
-      } else if (twixt(theItem, 12, 19)) //** set music volume
-      {
-        SetItemMark(gSound, musicvolume + 12, 0);
-        SetItemMark(gSound, theItem, 19);
-
-        musicvolume = theItem - 12;
-        // MADDriver->VolGlobal = musicvolume * 9;
       }
 
       savepref();
 
       break;
 
+    case 147: /********* music volume menu **********/
+
+      if (twixt(theItem, 2, 9)) {
+        CheckItem(gMusicVol, musicvolume + 2, FALSE);
+        musicvolume = theItem - 2;
+        CheckItem(gMusicVol, musicvolume + 2, TRUE);
+        MusicManager_SetVolume(musicvolume);
+        savepref();
+      }
+
+      break;
+
     case 137: /*********  preferences **************/
 
       switch (theItem) {
-        case 3: /****** Get Prefs *********/
+        case 1: /****** Toggle Fullscreen *********/
+          WindowManager_ToggleFullscreen();
+          CheckItem(prefer, 1, WindowManager_IsFullscreen());
+          break;
+
+        case 5: /****** Get Prefs *********/
 
           in();
 
@@ -401,11 +412,11 @@ short HandleMenuChoice(void) {
           }
           break;
 
-        case 4: /****** Refresh Screen *********/
+        case 6: /****** Refresh Screen *********/
           RedrawAllRealmz();
           break;
 
-        case 5: /****** Edit Spell Names *********/
+        case 7: /****** Edit Spell Names *********/
           in();
 
           editspellnames();
@@ -424,7 +435,7 @@ short HandleMenuChoice(void) {
             updatemain(FALSE, -1);
           break;
 
-        case 6: /****** Edit Race/Caste Names *********/
+        case 8: /****** Edit Race/Caste Names *********/
           in();
 
           editracecaste();
@@ -443,14 +454,14 @@ short HandleMenuChoice(void) {
             updatemain(FALSE, -1);
           break;
 
-        case 7: /****** Toggle Hurry Spell Resolution *********/
+        case 9: /****** Toggle Hurry Spell Resolution *********/
 
           if (quickshow)
             quickshow = FALSE;
           else
             quickshow = TRUE;
 
-          CheckItem(prefer, 7, quickshow);
+          CheckItem(prefer, 9, quickshow);
           break;
       }
 
@@ -982,7 +993,7 @@ short HandleMenuChoice(void) {
             getfilename("Global"); /******** run global start macro *****/
             if ((fp = MyrFopen(filename, "rb")) != NULL) {
               fread(&globalmacro, sizeof globalmacro, 1, fp);
-              CvtTabShortToPc(&globalmacro, 30);
+              CvtTabShortToPc(globalmacro, 30);
               fclose(fp);
             }
 
@@ -1005,7 +1016,7 @@ short HandleMenuChoice(void) {
           getfilename("Global"); /******** run global quit macro *****/
           if ((fp = MyrFopen(filename, "rb")) != NULL) {
             fread(&globalmacro, sizeof globalmacro, 1, fp);
-            CvtTabShortToPc(&globalmacro, 30);
+            CvtTabShortToPc(globalmacro, 30);
             fclose(fp);
 
             if (globalmacro[2]) {

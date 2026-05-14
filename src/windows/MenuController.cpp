@@ -8,6 +8,7 @@ WinMenu::Item win_menu_item_from_menu_item(const Menu::Item& item) {
   return WinMenu::Item{
       .name = item.name,
       .icon_number = item.icon_number,
+      .icon_image = item.icon_image,
       .key_equivalent = item.key_equivalent,
       .mark_character = item.mark_character,
       .style_flags = item.style_flags,
@@ -35,10 +36,16 @@ void MCSync(std::shared_ptr<MenuList> menuList, void (*callback)(int16_t, int16_
 
   auto win_menu_list = std::make_shared<WinMenuList>();
 
-  auto menus = std::transform(
+  std::transform(
       menuList->menus.begin(),
       menuList->menus.end(),
       std::back_inserter(win_menu_list->menus),
+      win_menu_from_menu);
+
+  std::transform(
+      menuList->submenus.begin(),
+      menuList->submenus.end(),
+      std::back_inserter(win_menu_list->submenus),
       win_menu_from_menu);
 
   WinMenuSync(sdl_window.get(), win_menu_list, callback);

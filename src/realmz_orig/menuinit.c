@@ -30,9 +30,30 @@ void MenuInit(void) {
 
   gSound = GetMenu(135);
   InsertMenu(gSound, -1);
+  SetMenuItemText(gSound, 2, "\p0 (Let's hunt wabbits.)");
+  SetMenuItemText(gSound, 9, "\p7 (Wake the neighbors!)");
+  SetItemIcon(gSound, 2, 124); /* cicn #380: speaker off */
+  SetItemIcon(gSound, 9, 125); /* cicn #381: speaker on  */
 
   gSpeed = GetMenu(134);
   InsertMenu(gSpeed, -1);
+
+  gMusicVol = NewMenu(147, "\pMusic Volume");
+  AppendMenu(gMusicVol, "\p>>> Music Volume <<<");
+  AppendMenu(gMusicVol, "\p0 (Let me listen to my hard drive spin.)");
+  AppendMenu(gMusicVol, "\p1");
+  AppendMenu(gMusicVol, "\p2");
+  AppendMenu(gMusicVol, "\p3");
+  AppendMenu(gMusicVol, "\p4");
+  AppendMenu(gMusicVol, "\p5");
+  AppendMenu(gMusicVol, "\p6");
+  AppendMenu(gMusicVol, "\p7 (Damage my eardrums, I'm an impetuous youth!)");
+  SetItemIcon(gMusicVol, 2, 124); /* cicn #380: speaker off */
+  SetItemIcon(gMusicVol, 9, 125); /* cicn #381: speaker on  */
+  InsertMenu(gMusicVol, -1);
+
+  InsertMenuItem(prefer, "\pToggle Fullscreen", 0);
+  InsertSubmenuItem(prefer, "\pMusic Volume", 147, 2);
 
   for (t = 1; t < 22; t++) /******** fill in maps menu with blank titles *****/
   {
@@ -60,9 +81,10 @@ void MenuInit(void) {
   updatescenarioavail();
 
   DisableItem(gScenario, 0);
+  CheckItem(prefer, 1, WindowManager_IsFullscreen());
   SetItemMark(gSpeed, oldspeed, 19);
   SetItemMark(gSound, volume + 2, 19);
-  SetItemMark(gSound, musicvolume + 12, 19);
+  CheckItem(gMusicVol, musicvolume + 2, TRUE);
 
   for (t = 0; t < 20; t++)
     SetItemMark(musicmenu, t + 8, 19);
@@ -84,18 +106,18 @@ void MenuInit(void) {
   // Display versions of Realmz, Items, Spells, Castes, Races, Character editor
   //***************************************************************************
 
-  GetMenuItemText(prefer, 10, myString); /***** Realmz *********/
+  GetMenuItemText(prefer, 12, myString); /***** Realmz *********/
   PtoCstr(myString);
   GetVersStr(1, Appl_Rsrc_Fork_Ref_Num); /*** load in version of Realmz ***/
   PtoCstr(theString);
   strcat(myString, theString);
   CtoPstr((Ptr)myString);
-  SetMenuItemText(prefer, 10, myString);
+  SetMenuItemText(prefer, 12, myString);
 
   //***************************************************************************
 
   itemrefnum = MyrOpenResFile((Ptr) "\p:Data Files:Data ID"); /* open items resource for item names strings ****/
-  GetMenuItemText(prefer, 11, myString); /***** Items  *********/
+  GetMenuItemText(prefer, 13, myString); /***** Items  *********/
   GetVersStr(5, 0);
   PtoCstr(myString);
   PtoCstr(theString);
@@ -104,45 +126,13 @@ void MenuInit(void) {
   else
     strcat(myString, (StringPtr) "Unknown");
   CtoPstr((Ptr)myString);
-  SetMenuItemText(prefer, 11, myString);
+  SetMenuItemText(prefer, 13, myString);
 
   //***************************************************************************
 
   temp = MyrOpenResFile((Ptr) "\p:Data Files:Data S"); /* open spells resource for item names strings ****/
-  GetMenuItemText(prefer, 12, myString); /***** spells  *********/
+  GetMenuItemText(prefer, 14, myString); /***** spells  *********/
   GetVersStr(6, 0);
-  PtoCstr(myString);
-  PtoCstr(theString);
-  if (temp != -1)
-    strcat(myString, theString);
-  else
-    strcat(myString, (StringPtr) "Unknown");
-  CtoPstr((Ptr)myString);
-  SetMenuItemText(prefer, 12, myString);
-  if (temp != -1)
-    CloseResFile(temp);
-
-  //***************************************************************************
-
-  temp = MyrOpenResFile((Ptr) "\p:Data Files:Data Race"); /* open races resource  ****/
-  GetMenuItemText(prefer, 13, myString); /***** races  *********/
-  GetVersStr(7, 0);
-  PtoCstr(myString);
-  PtoCstr(theString);
-  if (temp != -1)
-    strcat(myString, theString);
-  else
-    strcat(myString, (StringPtr) "Unknown");
-  CtoPstr((Ptr)myString);
-  SetMenuItemText(prefer, 13, myString);
-  if (temp != -1)
-    CloseResFile(temp);
-
-  //***************************************************************************
-
-  temp = MyrOpenResFile((Ptr) "\p:Data Files:Data Caste"); /* open castes resource ****/
-  GetMenuItemText(prefer, 14, myString); /***** castes  *********/
-  GetVersStr(8, 0);
   PtoCstr(myString);
   PtoCstr(theString);
   if (temp != -1)
@@ -156,15 +146,47 @@ void MenuInit(void) {
 
   //***************************************************************************
 
-  GetMenuItemText(prefer, 15, myString); /***** The Family Jewels  *********/
+  temp = MyrOpenResFile((Ptr) "\p:Data Files:Data Race"); /* open races resource  ****/
+  GetMenuItemText(prefer, 15, myString); /***** races  *********/
+  GetVersStr(7, 0);
+  PtoCstr(myString);
+  PtoCstr(theString);
+  if (temp != -1)
+    strcat(myString, theString);
+  else
+    strcat(myString, (StringPtr) "Unknown");
+  CtoPstr((Ptr)myString);
+  SetMenuItemText(prefer, 15, myString);
+  if (temp != -1)
+    CloseResFile(temp);
+
+  //***************************************************************************
+
+  temp = MyrOpenResFile((Ptr) "\p:Data Files:Data Caste"); /* open castes resource ****/
+  GetMenuItemText(prefer, 16, myString); /***** castes  *********/
+  GetVersStr(8, 0);
+  PtoCstr(myString);
+  PtoCstr(theString);
+  if (temp != -1)
+    strcat(myString, theString);
+  else
+    strcat(myString, (StringPtr) "Unknown");
+  CtoPstr((Ptr)myString);
+  SetMenuItemText(prefer, 16, myString);
+  if (temp != -1)
+    CloseResFile(temp);
+
+  //***************************************************************************
+
+  GetMenuItemText(prefer, 17, myString); /***** The Family Jewels  *********/
   GetVersStr(9, jewelsrefnum);
   PtoCstr(myString);
   PtoCstr(theString);
   strcat(myString, theString);
   CtoPstr((Ptr)myString);
-  SetMenuItemText(prefer, 15, myString);
+  SetMenuItemText(prefer, 17, myString);
 
-  GetMenuItemText(prefer, 16, myString); /***** PC Editor *********/
+  GetMenuItemText(prefer, 18, myString); /***** PC Editor *********/
   PtoCstr(myString);
   temp = -1;
 
@@ -186,7 +208,7 @@ void MenuInit(void) {
     strcat(myString, (StringPtr) "Unknown");
 
   CtoPstr((Ptr)myString);
-  SetMenuItemText(prefer, 16, myString);
+  SetMenuItemText(prefer, 18, myString);
 }
 
 /**************************** updatemonstermenu *************/
@@ -213,7 +235,7 @@ updatenewfile:
       fclose(fp);
       goto neednewfile;
     }
-    CvtTabShortToPc(&menupos, 251);
+    CvtTabShortToPc(menupos, 251);
     quickload = TRUE;
     fclose(fp);
   }
@@ -307,9 +329,9 @@ neednewfile:
       getfilename("Data MENU");
       if ((fp = MyrFopen(filename, "w+b")) == NULL)
         scratch(117);
-      CvtTabShortToPc(&menupos, 251);
+      CvtTabShortToPc(menupos, 251);
       fwrite(&menupos, sizeof menupos, 1, fp);
-      CvtTabShortToPc(&menupos, 251);
+      CvtTabShortToPc(menupos, 251);
       fclose(fp);
       setfileinfo("scen", filename);
       flashmessage((StringPtr) "", 50, 70, -1, 0);

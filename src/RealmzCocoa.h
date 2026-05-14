@@ -41,7 +41,7 @@
 #define GetQDGlobalsThePort() ((CGrafPtr)qd.thePort)
 #define GetQDGlobalsScreenBits(x) (*(x) = qd.screenBits)
 #define QDFlushPortBuffer(x, y)
-#define GetPortPixMap(x) &(((CGrafPtr)(x))->portPixMap);
+#define GetPortPixMap(x) (((CGrafPtr)(x))->portPixMap)
 #define GetPortTextFont(x) ((x)->txFont)
 #define GetPortTextFace(x) ((x)->txFace)
 #define GetPortTextSize(x) ((x)->txSize)
@@ -155,7 +155,6 @@ PixMapHandle GetGWorldPixMap(GWorldPtr offscreenGWorld);
 Size MaxMem(Size* grow);
 void BackPixPat(PixPatHandle ppat);
 void TextMode(int16_t mode);
-void SetItemIcon(MenuHandle theMenu, int16_t item, int16_t iconIndex);
 void OffsetRect(Rect* r, uint16_t dh, uint16_t dv);
 
 typedef struct OpaqueGammaInfo** GammaRef;
@@ -183,8 +182,6 @@ int16_t DIBadMount(Point where, int32_t evtMessage);
 #define GetWindowPort(x) (x)
 #define BitAnd(x, y) ((x) & (y))
 int16_t OpenDeskAcc(ConstStr255Param deskAccName);
-void SetItemMark(MenuHandle theMenu, int16_t item, int16_t markChar);
-void GetItemMark(MenuHandle theMenu, int16_t item, int16_t* markChar);
 #define GetMBarHeight() 20
 void LMSetMBarHeight(int16_t h);
 void CopyRgn(RgnHandle srcRgn, RgnHandle dstRgn);

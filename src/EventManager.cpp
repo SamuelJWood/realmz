@@ -434,6 +434,22 @@ protected:
         this->set_modifier_value(EVMOD_SHIFT_KEY_DOWN, e.key.mod & SDL_KMOD_LSHIFT);
         this->set_modifier_value(EVMOD_COMMAND_KEY_DOWN, e.key.mod & SDL_KMOD_GUI);
 
+        if (e.type == SDL_EVENT_KEY_DOWN) {
+          auto sym = e.key.key;
+          auto mod = e.key.mod;
+          bool ctrl = (mod & SDL_KMOD_CTRL) != 0;
+          bool alt = (mod & SDL_KMOD_ALT) != 0;
+          bool gui = (mod & SDL_KMOD_GUI) != 0;
+          bool shift = (mod & SDL_KMOD_SHIFT) != 0;
+          if ((sym == SDLK_F11 && !ctrl && !alt && !shift && !gui) ||
+              (sym == SDLK_F && ctrl && !alt && !gui) ||
+              (sym == SDLK_RETURN && alt && !ctrl && !gui) ||
+              (sym == SDLK_F && gui && !ctrl)) {
+            this->push_menu_event(137, 1);
+            break;
+          }
+        }
+
         uint32_t message = mac_message_for_sdl_key_code(e.key.key, this->modifier_flags);
         bool enqueue = true;
         if (message != 0) {
@@ -465,12 +481,15 @@ protected:
         }
         break;
       }
-      case SDL_EVENT_MOUSE_MOTION:
+      case SDL_EVENT_MOUSE_MOTION: {
         // Classic Mac OS doesn't have a mouse motion event, so we just track
         // the location and ignore it otherwise
-        this->mouse_loc.h = e.motion.x;
-        this->mouse_loc.v = e.motion.y;
+        float lx, ly;
+        WindowManager::instance().window_to_logical(e.motion.x, e.motion.y, lx, ly);
+        this->mouse_loc.h = static_cast<int16_t>(lx);
+        this->mouse_loc.v = static_cast<int16_t>(ly);
         break;
+      }
       case SDL_EVENT_MOUSE_BUTTON_DOWN:
       case SDL_EVENT_MOUSE_BUTTON_UP:
         em_log.info_f("{} {} {} {:g} {:g}",
@@ -478,8 +497,10 @@ protected:
             e.button.button, e.button.clicks, e.button.x, e.button.y);
         // Ignore events for all mouse buttons except the primary (left) button
         if (e.button.button == 1) {
-          this->mouse_loc.h = e.button.x;
-          this->mouse_loc.v = e.button.y;
+          float lx, ly;
+          WindowManager::instance().window_to_logical(e.button.x, e.button.y, lx, ly);
+          this->mouse_loc.h = static_cast<int16_t>(lx);
+          this->mouse_loc.v = static_cast<int16_t>(ly);
           this->set_modifier_value(EVMOD_MOUSE_BUTTON_UP, (e.type == SDL_EVENT_MOUSE_BUTTON_UP));
           auto window = WindowManager::instance().window_for_point(this->mouse_loc.h, this->mouse_loc.v);
           this->enqueue_event((e.type == SDL_EVENT_MOUSE_BUTTON_DOWN) ? mouseDown : mouseUp, 0, window ? &window->get_port() : nullptr, "");
@@ -495,6 +516,9 @@ protected:
         // TODO: Do keyboard events always go to the front window, or is
         // there some notion of keyboard focus in Classic Mac OS?
         this->enqueue_event(app4Evt, 0, FrontWindow(), e.text.text);
+        break;
+      case SDL_EVENT_WINDOW_RESIZED:
+        WindowManager::instance().recomposite_all();
         break;
       default:
         em_log.debug_f("Unhandled SDL event type 0x{:X}", e.type);

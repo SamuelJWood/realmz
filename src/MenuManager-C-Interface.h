@@ -2,11 +2,13 @@
 
 #include "Types.h"
 
-// Due to a link conflict with the DrawMenuBar and GetMenu functions from libuser32.a when
-// compiling for Windows targets, we have to rename uses of our classic Mac DrawMenuBar and
-// GetMenu implementations.
+// Due to link conflicts with functions from Windows headers, we rename uses of our
+// classic Mac implementations.
 #define DrawMenuBar Realmz_DrawMenuBar
 #define GetMenu Realmz_GetMenu
+#define NewMenu Realmz_NewMenu
+#define InsertMenuItem Realmz_InsertMenuItem
+#define InsertSubmenuItem Realmz_InsertSubmenuItem
 
 #ifdef __cplusplus
 extern "C" {
@@ -31,6 +33,13 @@ int32_t PopUpMenuSelect(MenuHandle menu, int16_t top, int16_t left, int16_t popU
 void AppendMenu(MenuHandle menu, ConstStr255Param data);
 int16_t CountMItems(MenuHandle theMenu);
 int32_t MenuKey(int16_t ch);
+MenuHandle NewMenu(int16_t menuID, ConstStr255Param menuTitle);
+void InsertMenuItem(MenuHandle theMenu, ConstStr255Param itemString, int16_t afterItem);
+void InsertSubmenuItem(MenuHandle theMenu, ConstStr255Param title, int16_t subMenuID, int16_t afterItem);
+void SetItemIcon(MenuHandle theMenu, int16_t item, int16_t iconIndex);
+void SetItemMark(MenuHandle theMenu, int16_t item, int16_t markChar);
+void GetItemMark(MenuHandle theMenu, int16_t item, int16_t* markChar);
+void SetItemStyle(MenuHandle theMenu, int16_t item, int16_t style);
 
 #ifdef __cplusplus
 }

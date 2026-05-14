@@ -154,7 +154,7 @@ extern struct Player gPlayer;
 extern Boolean usescroll, innotes;
 extern char viewtype;
 extern char smallreply;
-extern MenuHandle copy, prefer, gApple, gFile, gGame, gOptions, gSpelldelay, gSpeed, gSound, gParty, gBeast, popup, gScenario;
+extern MenuHandle copy, prefer, gApple, gFile, gGame, gOptions, gSpelldelay, gSpeed, gSound, gMusicVol, gParty, gBeast, popup, gScenario;
 extern Rect buttons;
 extern char currentDepth, undox, undoy;
 extern short resetvolume;

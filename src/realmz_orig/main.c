@@ -213,7 +213,7 @@ int32_t myrmagic_gPlayer = MYRMAGIC;
 Boolean usescroll, innotes;
 char viewtype = 1;
 char smallreply;
-MenuHandle copy, prefer, gApple, gFile, gGame, gOptions, gSpelldelay, gSpeed, gSound, gParty, gBeast, popup, gScenario;
+MenuHandle copy, prefer, gApple, gFile, gGame, gOptions, gSpelldelay, gSpeed, gSound, gMusicVol, gParty, gBeast, popup, gScenario;
 Rect buttons;
 char currentDepth, undox, undoy;
 short resetvolume;
@@ -241,7 +241,7 @@ Handle sndhandle[4];
 CCrsrHandle sword, ask, stop, mouse, nokeys, notecursor;
 PicHandle battlepict, grey, gen, showpict, on, non, off, marker, mainpict;
 Boolean forcesmall;
-short delayspeed, oldspeed, musicvolume, volume;
+short delayspeed, oldspeed, musicvolume, volume = 7;
 char defaultspell, showcast, usehashmarks, numchannel, lastgame, horseicon, dropitemprotection, forgettreasure;
 char fasttrade, autocash, autojoin, autoid, usedefaultfont, colormenus, showcaste, reducesound, showdescript, quickshow, hidedesktop, manualbandage, showbleedmessage, shownextroundmessage;
 char auto256, iteminfo, autoweapswitch, nomusic, usenpc, castonfriends, allowfumble, allowunique;
@@ -693,7 +693,7 @@ void centercursor(void) {
 
 /****************************** ToolBoxInit **********************/
 void ToolBoxInit(void) {
-  InitGraf(&qd.thePort);
+  InitGraf(&qd);
   InitWindows();
 #ifdef REALMZ_CLASSIC
   GetDateTime((unsigned int32_t*)&qd.randSeed);
@@ -938,19 +938,19 @@ keepmoving:
   if ((fp = MyrFopen(":Data Files:Data ID", "rb")) == NULL)
     scratch2(1);
   fread(&allweapons, sizeof allweapons, 1, fp);
-  CvtTabItemAttrToPc(&allweapons, 200);
+  CvtTabItemAttrToPc(allweapons, 200);
   fread(&allarmor, sizeof allarmor, 1, fp);
-  CvtTabItemAttrToPc(&allarmor, 200);
+  CvtTabItemAttrToPc(allarmor, 200);
   fread(&allhelms, sizeof allhelms, 1, fp);
-  CvtTabItemAttrToPc(&allhelms, 200);
+  CvtTabItemAttrToPc(allhelms, 200);
   fread(&allmagic, sizeof allmagic, 1, fp);
-  CvtTabItemAttrToPc(&allmagic, 200);
+  CvtTabItemAttrToPc(allmagic, 200);
   fclose(fp);
 
   if ((fp = MyrFopen(":Scenarios:City of Bywater:Data NI", "rb")) == NULL)
     scratch2(14);
   fread(&allsupply, sizeof allsupply, 1, fp);
-  CvtTabItemAttrToPc(&allsupply, 200);
+  CvtTabItemAttrToPc(allsupply, 200);
 
   fclose(fp); /************* load these in to start so New Character Torches/castes work ********/
 

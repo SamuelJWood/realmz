@@ -1,8 +1,34 @@
 #include "prototypes.h"
 #include "variables.h"
+#include "../MusicManager.h"
+
+#include <SDL3/SDL.h>
+#include <stdio.h>
+
+extern char nomusic;
+extern short musicvolume;
+extern Boolean indung;
+extern char viewtype;
 
 /*********************** updatemusic *****************/
 void updatemusic(void) {
+  if (nomusic) return;
+  if (incombat) return; // combat.c calls music(11) directly; don't override
+
+  const char* name;
+  if (!indung) {
+    name = basescale[lastpix] ? "Indoor Music" : "Outdoor Music";
+  } else if (viewtype == 1) {
+    name = "Dungeon Music";
+  } else {
+    name = "Indoor Music";
+  }
+  MusicManager_SetVolume(musicvolume);
+
+  const char* base = SDL_GetBasePath();
+  char path[1024];
+  snprintf(path, sizeof(path), "%sRealmz Music/%s", base ? base : "", name);
+  MusicManager_PlayIfDifferent(path);
 }
 
 /*********************** centerpict *****************************/

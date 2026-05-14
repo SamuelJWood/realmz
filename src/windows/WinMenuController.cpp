@@ -1,7 +1,10 @@
 #include "errhandlingapi.h"
 #include "windef.h"
+#include "wingdi.h"
 #include "winuser.h"
 #include <memory>
+#include <unordered_map>
+#include <phosg/Image.hh>
 #include <phosg/Strings.hh>
 
 #include "./WinMenuController.hpp"
@@ -111,6 +114,128 @@ HWND get_window_handle(SDL_Window* sdl_window) {
       NULL));
 }
 
+static std::unordered_map<uint8_t, HBITMAP> icon_hbm_cache;
+
+static HBITMAP make_icon_hbitmap(const phosg::ImageRGBA8888N& img) {
+  int w = static_cast<int>(img.get_width());
+  int h = static_cast<int>(img.get_height());
+
+  BITMAPINFOHEADER bmi = {};
+  bmi.biSize        = sizeof(bmi);
+  bmi.biWidth       = w;
+  bmi.biHeight      = -h;
+  bmi.biPlanes      = 1;
+  bmi.biBitCount    = 24;
+  bmi.biCompression = BI_RGB;
+
+  void* bits = nullptr;
+  HBITMAP hbm = CreateDIBSection(nullptr, reinterpret_cast<BITMAPINFO*>(&bmi),
+      DIB_RGB_COLORS, &bits, nullptr, 0);
+  if (!hbm || !bits) {
+    return nullptr;
+  }
+
+  // Composite the icon against the system menu background color so that
+  // transparent pixels blend cleanly (hbmpItem uses BitBlt, not AlphaBlend).
+  COLORREF bg = GetSysColor(COLOR_MENU);
+  uint8_t bg_r = GetRValue(bg);
+  uint8_t bg_g = GetGValue(bg);
+  uint8_t bg_b = GetBValue(bg);
+
+  // phosg RGBA8888N: 0xRRGGBBAA (R in the most-significant byte).
+  // 24-bit DIB rows are DWORD-aligned, stored as BGR bytes.
+  const uint32_t* src = static_cast<const uint32_t*>(static_cast<const void*>(img.get_data()));
+  int row_bytes = (w * 3 + 3) & ~3;
+  uint8_t* dst = static_cast<uint8_t*>(bits);
+  for (int y = 0; y < h; y++) {
+    for (int x = 0; x < w; x++) {
+      uint32_t p = src[y * w + x];
+      uint8_t r = (p >> 24) & 0xFF;
+      uint8_t g = (p >> 16) & 0xFF;
+      uint8_t b = (p >>  8) & 0xFF;
+      uint8_t a = (p      ) & 0xFF;
+      uint8_t* out = dst + y * row_bytes + x * 3;
+      out[0] = static_cast<uint8_t>((b * a + bg_b * (255 - a)) / 255);
+      out[1] = static_cast<uint8_t>((g * a + bg_g * (255 - a)) / 255);
+      out[2] = static_cast<uint8_t>((r * a + bg_r * (255 - a)) / 255);
+    }
+  }
+  return hbm;
+}
+
+static HMENU build_win_menu_items(const std::shared_ptr<WinMenuList>& menu_list, const std::shared_ptr<WinMenu>& menu) {
+  HMENU hmenu = CreatePopupMenu();
+  uint16_t i = 1;
+  for (const auto& item : menu->items) {
+    bool is_separator = (item.name == "-" || item.name == "(-" ||
+        (item.name.size() >= 2 && item.name[0] == '(' && item.name[1] == '-'));
+
+    if (is_separator) {
+      MENUITEMINFO sep_info = MENUITEMINFO{
+          .cbSize = sizeof(MENUITEMINFO),
+          .fMask = MIIM_FTYPE | MIIM_ID,
+          .fType = MFT_SEPARATOR,
+          .wID = PackMenuIdentifier(menu->menu_id, i)};
+      InsertMenuItem(hmenu, i++, TRUE, &sep_info);
+      continue;
+    }
+
+    if (item.key_equivalent == '\x1B') {
+      int16_t sub_id = static_cast<uint8_t>(item.mark_character);
+      HMENU sub_hmenu = NULL;
+      for (const auto& sub : menu_list->submenus) {
+        if (sub->menu_id == sub_id) {
+          sub_hmenu = build_win_menu_items(menu_list, sub);
+          break;
+        }
+      }
+      std::string name = item.name;
+      MENUITEMINFO item_info = MENUITEMINFO{
+          .cbSize = sizeof(MENUITEMINFO),
+          .fMask = MIIM_FTYPE | MIIM_ID | MIIM_STATE | MIIM_STRING | MIIM_SUBMENU,
+          .fType = MFT_STRING,
+          .fState = static_cast<UINT>(item.enabled ? MFS_ENABLED : MFS_DISABLED),
+          .wID = PackMenuIdentifier(menu->menu_id, i),
+          .hSubMenu = sub_hmenu,
+          .dwTypeData = const_cast<char*>(name.c_str()),
+          .cch = static_cast<UINT>(name.length())};
+      InsertMenuItem(hmenu, i++, TRUE, &item_info);
+      continue;
+    }
+
+    UINT enabled_state = item.enabled ? MFS_ENABLED : MFS_DISABLED;
+    UINT checked_state = item.checked ? MFS_CHECKED : MFS_UNCHECKED;
+    std::string name = item.name;
+    if (item.key_equivalent) {
+      name += std::format("\tCtrl+{:c}", toupper(item.key_equivalent));
+    }
+    MENUITEMINFO item_info = MENUITEMINFO{
+        .cbSize = sizeof(MENUITEMINFO),
+        .fMask = MIIM_FTYPE | MIIM_ID | MIIM_STATE | MIIM_STRING,
+        .fType = MFT_STRING,
+        .fState = enabled_state | checked_state,
+        .wID = PackMenuIdentifier(menu->menu_id, i),
+        .dwTypeData = const_cast<char*>(name.c_str()),
+        .cch = static_cast<UINT>(name.length())};
+    if (item.icon_image) {
+      HBITMAP hbm = nullptr;
+      auto it = icon_hbm_cache.find(item.icon_number);
+      if (it != icon_hbm_cache.end()) {
+        hbm = it->second;
+      } else {
+        hbm = make_icon_hbitmap(*item.icon_image);
+        icon_hbm_cache[item.icon_number] = hbm;
+      }
+      if (hbm) {
+        item_info.fMask |= MIIM_BITMAP;
+        item_info.hbmpItem = hbm;
+      }
+    }
+    InsertMenuItem(hmenu, i++, TRUE, &item_info);
+  }
+  return hmenu;
+}
+
 void WinMenuSync(SDL_Window* sdl_window, std::shared_ptr<WinMenuList> menu_list, void (*callback)(int16_t, int16_t)) {
   // Update current menu click callback function
   menuCallback = callback;
@@ -126,30 +251,8 @@ void WinMenuSync(SDL_Window* sdl_window, std::shared_ptr<WinMenuList> menu_list,
       .fMask = MIM_APPLYTOSUBMENUS | MIM_STYLE};
   SetMenuInfo(win_menu, &win_menu_info);
 
-  uint16_t i;
   for (auto menu : menu_list->menus) {
-    auto submenu = CreateMenu();
-
-    i = 1;
-    for (const auto& submenu_item : menu->items) {
-      UINT enabled_state = submenu_item.enabled ? MFS_ENABLED : MFS_DISABLED;
-      UINT checked_state = submenu_item.checked ? MFS_CHECKED : MFS_UNCHECKED;
-
-      std::string name = submenu_item.name;
-      if (submenu_item.key_equivalent) {
-        name += std::format("\tCtrl+{:c}", toupper(submenu_item.key_equivalent));
-      }
-      MENUITEMINFO submenu_info = MENUITEMINFO{
-          .cbSize = sizeof(MENUITEMINFO),
-          .fMask = MIIM_FTYPE | MIIM_ID | MIIM_STATE | MIIM_STRING,
-          .fType = MFT_STRING,
-          .fState = enabled_state | checked_state,
-          .wID = PackMenuIdentifier(menu->menu_id, i),
-          .dwTypeData = const_cast<char*>(name.c_str()),
-          .cch = static_cast<UINT>(name.length())};
-
-      InsertMenuItem(submenu, i++, TRUE, &submenu_info);
-    }
+    auto submenu = build_win_menu_items(menu_list, menu);
 
     MENUITEMINFO item_info = MENUITEMINFO{
         .cbSize = sizeof(MENUITEMINFO),
@@ -191,15 +294,26 @@ int WinCreatePopupMenu(SDL_Window* sdl_window, std::shared_ptr<WinMenu> menu) {
 
   HMENU popupMenu = CreatePopupMenu();
 
-  int i{0};
+  int i = 0;
   for (const auto& item : menu->items) {
     i++;
-    auto name = item.name.c_str();
-    AppendMenu(popupMenu, (item.enabled ? MF_ENABLED : 0) | MF_STRING, i, name);
+    UINT state = (item.enabled ? MFS_ENABLED : MFS_DISABLED)
+               | (item.checked ? MFS_CHECKED : MFS_UNCHECKED)
+               | ((item.style_flags & 1) ? MFS_DEFAULT : 0);
+    std::string name = item.name;
+    MENUITEMINFO item_info = MENUITEMINFO{
+        .cbSize = sizeof(MENUITEMINFO),
+        .fMask = MIIM_FTYPE | MIIM_ID | MIIM_STATE | MIIM_STRING,
+        .fType = MFT_STRING,
+        .fState = state,
+        .wID = static_cast<UINT>(i),
+        .dwTypeData = const_cast<char*>(name.c_str()),
+        .cch = static_cast<UINT>(name.length())};
+    InsertMenuItem(popupMenu, i, TRUE, &item_info);
   }
 
   // TrackPopupMenu displays the menu in screen coordinates, not window coordinates. Rather
-  // thank require the caller to convert the mouse position from local to global coordinates,
+  // than require the caller to convert the mouse position from local to global coordinates,
   // it's easier to just get the mouse position fresh right here.
   POINT pt;
   GetCursorPos(&pt);

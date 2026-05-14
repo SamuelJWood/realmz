@@ -1,5 +1,7 @@
 #include "SDL3/SDL_video.h"
 #include <list>
+#include <memory>
+#include <phosg/Image.hh>
 #include <string>
 #include <vector>
 
@@ -8,6 +10,7 @@ struct WinMenu {
   struct Item {
     std::string name;
     uint8_t icon_number;
+    std::shared_ptr<phosg::ImageRGBA8888N> icon_image;
     char key_equivalent;
     char mark_character; // In MacRoman; use decode_mac_roman if needed
     uint8_t style_flags; // See TextStyleFlag
