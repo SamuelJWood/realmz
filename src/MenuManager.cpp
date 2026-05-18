@@ -263,7 +263,7 @@ void SetItemIcon(MenuHandle theMenu, int16_t item, int16_t iconIndex) {
   auto& menu_item = menu->items.at(item - 1);
   menu_item.icon_number = static_cast<uint8_t>(iconIndex);
   if (iconIndex != 0) {
-    int16_t cicn_id = iconIndex + 256;
+    int16_t cicn_id = static_cast<uint8_t>(iconIndex) + 256;
     auto handle = GetResource(ResourceDASM::RESOURCE_TYPE_cicn, cicn_id);
     if (handle) {
       auto cicn = ResourceFile::decode_cicn(*handle, GetHandleSize(handle));

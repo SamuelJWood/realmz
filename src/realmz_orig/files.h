@@ -11,5 +11,6 @@ char* dialog_save_file(const char* prompt, const char* default_name);
 
 int mac_OpenResFile(const Str255 filename);
 FILE* mac_fopen(const char* filename, const char* mode);
+void mac_remove(const char* filename);
 
 #endif /* FILES_H */

@@ -864,7 +864,6 @@ short HandleMenuChoice(void) {
         } else {
           fseek(fp, abs(journalindex2) * sizeof myString, SEEK_SET);
           fread(myString, sizeof myString, 1, fp);
-          MyrStrPtoC((Ptr)myString); // Myriad
           MyrPascalDiStr(2, myString);
           DialogNum(6, journalindex2 + 1);
         }
@@ -914,7 +913,6 @@ short HandleMenuChoice(void) {
           GetIndString(myString, 3, 1);
           fseek(fp, abs(journalindex2) * sizeof myString, SEEK_SET);
           fread(myString, sizeof myString, 1, fp);
-          MyrStrPtoC((Ptr)myString);
           MyrPascalDiStr(2, myString);
           DialogNum(6, journalindex2 + 1);
 
@@ -953,8 +951,10 @@ short HandleMenuChoice(void) {
             SetPortDialogPort(background);
             BackColor(blackColor);
             DrawDialog(background);
-            if (charnum < 0)
+            if (charnum < 0) {
+              DisableItem(gScenario, 0);
               return (0);
+            }
             EnableItem(gBeast, 0);
             EnableItem(gScenario, 0);
             EnableItem(gParty, 0);

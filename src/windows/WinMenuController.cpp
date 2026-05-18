@@ -258,7 +258,7 @@ void WinMenuSync(SDL_Window* sdl_window, std::shared_ptr<WinMenuList> menu_list,
         .cbSize = sizeof(MENUITEMINFO),
         .fMask = MIIM_FTYPE | MIIM_ID | MIIM_STATE | MIIM_STRING | MIIM_SUBMENU,
         .fType = MFT_STRING,
-        .fState = MFS_ENABLED,
+        .fState = static_cast<UINT>(menu->enabled ? MFS_ENABLED : MFS_DISABLED),
         .wID = static_cast<UINT>(menu->menu_id),
         .hSubMenu = submenu,
         .hbmpChecked = NULL,
@@ -309,6 +309,20 @@ int WinCreatePopupMenu(SDL_Window* sdl_window, std::shared_ptr<WinMenu> menu) {
         .wID = static_cast<UINT>(i),
         .dwTypeData = const_cast<char*>(name.c_str()),
         .cch = static_cast<UINT>(name.length())};
+    if (item.icon_image) {
+      HBITMAP hbm = nullptr;
+      auto it = icon_hbm_cache.find(item.icon_number);
+      if (it != icon_hbm_cache.end()) {
+        hbm = it->second;
+      } else {
+        hbm = make_icon_hbitmap(*item.icon_image);
+        icon_hbm_cache[item.icon_number] = hbm;
+      }
+      if (hbm) {
+        item_info.fMask |= MIIM_BITMAP;
+        item_info.hbmpItem = hbm;
+      }
+    }
     InsertMenuItem(popupMenu, i, TRUE, &item_info);
   }
 

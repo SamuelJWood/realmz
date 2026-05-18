@@ -18,6 +18,8 @@ void MenuInit(void) {
   myMenuBar = GetNewMBar(128);
   SetMenuBar(myMenuBar);
   gScenario = GetMenuHandle(200);
+  SetItemIcon(gScenario, 1, 126); /* cicn #382: note keeper */
+  SetItemIcon(gScenario, 2, 127); /* cicn #383: journal     */
   gApple = GetMenuHandle(128);
   gFile = GetMenuHandle(129);
   gGame = GetMenuHandle(130);

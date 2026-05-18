@@ -207,6 +207,12 @@ std::vector<std::string> mac_list_directory(const std::string& mac_path) {
   return ret;
 }
 
+void mac_remove(const char* filename) {
+  std::string user_filename = userdata_filename_for_mac_filename(filename);
+  fm_log.info_f("Removing file {} (host: {})", filename, user_filename);
+  std::filesystem::remove(user_filename);
+}
+
 std::unique_ptr<FILE, void (*)(FILE*)> mac_fopen_unique(const std::string& mac_path, const std::string& mode) {
   return std::unique_ptr<FILE, void (*)(FILE*)>{
       mac_fopen(mac_path.c_str(), mode.c_str()), +[](FILE* f) -> void { fclose(f); }};

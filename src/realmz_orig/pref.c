@@ -13,8 +13,32 @@ Open a preference file in the preferences folder
 6 divinity
 10 effacement
 */
-void EraseFilePref(char* nom);
-FILE* OpenFilePref(char* nom, char* attr);
+static void pref_nom_to_cstr(char* nom, char* out, int out_size) {
+  // nom may be a Pascal string (length byte followed by chars) from GetIndString,
+  // or a plain C string literal. Pascal strings have a non-printable length byte
+  // (< 0x20) for any reasonable filename; C string literals start with a printable char.
+  if ((unsigned char)nom[0] < 0x20) {
+    int len = (unsigned char)nom[0];
+    if (len >= out_size) len = out_size - 1;
+    memcpy(out, nom + 1, len);
+    out[len] = '\0';
+  } else {
+    strncpy(out, nom, out_size - 1);
+    out[out_size - 1] = '\0';
+  }
+}
+
+FILE* OpenFilePref(char* nom, char* attr) {
+  char cname[256];
+  pref_nom_to_cstr(nom, cname, sizeof(cname));
+  return mac_fopen(cname, attr);
+}
+
+void EraseFilePref(char* nom) {
+  char cname[256];
+  pref_nom_to_cstr(nom, cname, sizeof(cname));
+  mac_remove(cname);
+}
 
 short openpref(short mode) {
   Str255 pref_file_name;
@@ -735,6 +759,9 @@ backup:
 
   GetDialogItem(preferwindow, 29, &itemType, &itemHandle, &itemRect);
   usenpc = GetControlValue((ControlHandle)itemHandle);
+
+  GetDialogItem(preferwindow, 30, &itemType, &itemHandle, &itemRect);
+  castonfriends = GetControlValue((ControlHandle)itemHandle);
 
   GetDialogItem(preferwindow, 31, &itemType, &itemHandle, &itemRect);
   allowfumble = GetControlValue((ControlHandle)itemHandle);

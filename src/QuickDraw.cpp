@@ -179,7 +179,7 @@ bool CCGrafPort::draw_text_ttf(TTF_Font* font, const std::string& processed_text
   size_t h = rect.bottom - rect.top;
   auto sdl_color = sdl_color_for_rgb_color(this->rgbFgColor);
   auto text_surface = sdl_make_unique(TTF_RenderText_Blended_Wrapped(
-      font, processed_text.data(), processed_text.size(), sdl_color, w + 50));
+      font, processed_text.data(), processed_text.size(), sdl_color, w));
   if (!text_surface) {
     this->log.error_f("Failed to create surface when rendering text: {}", SDL_GetError());
     return false;
@@ -189,7 +189,8 @@ bool CCGrafPort::draw_text_ttf(TTF_Font* font, const std::string& processed_text
     // target rect, we trim off some of the top rows to center it vertically. This isn't exactly correct (some text
     // appears to be off by 1 or 2 pixels sometimes) but it will do for now. There aren't good metrics provided by
     // SDL_ttf for this (ascent/height don't match the actual amount we need to trim) so we have to do this instead.
-    size_t y_offset = (img.get_height() > h) ? ((img.get_height() - h) / 2) : 0;
+    bool has_newlines = (processed_text.find('\n') != std::string::npos);
+    size_t y_offset = (!has_newlines && img.get_height() > h) ? ((img.get_height() - h) / 2) : 0;
     data.copy_from_with_blend(img, rect.left, rect.top, w, h, 0, y_offset);
     return true;
   }
