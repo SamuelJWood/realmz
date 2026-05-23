@@ -170,6 +170,7 @@ void RGBForeColor(const RGBColor* color);
 CIconHandle GetCIcon(uint16_t iconID);
 OSErr DisposeCIcon(CIconHandle handle);
 OSErr PlotCIcon(const Rect* theRect, CIconHandle theIcon);
+OSErr PlotCIconAspectFit(const Rect* theRect, CIconHandle theIcon); // Extension (scales icon to fit within rect while preserving aspect ratio)
 OSErr PlotCIconBitmap(const Rect* theRect, CIconHandle theIcon); // Extension (draws monochrome bitmap instead of color icon)
 void BackPixPat(PixPatHandle ppat);
 void MoveTo(int16_t h, int16_t v);
@@ -204,6 +205,7 @@ void LocalToGlobal(Point* pt);
 CCrsrHandle GetCCursor(uint16_t crsrID);
 void SetCCursor(CCrsrHandle cCrsr);
 void DisposeCCursor(CCrsrHandle cCrsr);
+void SetCursorToIcon(int16_t icon_id);
 void ObscureCursor(void);
 void HideCursor(void);
 void ShowCursor(void);

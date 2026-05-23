@@ -8,6 +8,7 @@
 struct Menu {
   struct Item {
     std::string name;
+    std::string description;
     uint8_t icon_number = 0;
     char key_equivalent = 0;
     char mark_character = 0; // In MacRoman; use decode_mac_roman if needed
@@ -21,6 +22,7 @@ struct Menu {
 
     Item(ResourceDASM::ResourceFile::DecodedMenu::Item& item)
         : name{item.name},
+          description{},
           icon_number{item.icon_number},
           key_equivalent{item.key_equivalent},
           mark_character{item.mark_character},

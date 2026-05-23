@@ -698,8 +698,10 @@ short seeshop(short mode) {
             case inContent:
               reply = choice(0);
               if (reply) {
-                DisposeWindow(itemswindow);
-                itemswindow = NIL;
+                if (itemswindow) {
+                  DisposeWindow(itemswindow);
+                  itemswindow = NIL;
+                }
                 return (reply);
               }
               break;
@@ -733,8 +735,16 @@ short seeshop(short mode) {
         case (app2Evt):
           break;
 
-        case (app3Evt):
+        case (app3Evt): {
+          /* Mouse wheel scroll: message 1 = up, 0 = down */
+          short ctl_part = (gTheEvent.message == 1) ? kControlUpButtonPart : kControlDownButtonPart;
+          theControl = (gTheEvent.where.h <= 320 + (leftshift / 2)) ? charitemsvert : shopitemsvert;
+          curControlValue = GetControlValue(theControl);
+          maxControlValue = GetControlMaximum(theControl);
+          minControlValue = GetControlMinimum(theControl);
+          ScrollProc(NIL, ctl_part);
           break;
+        }
 
         case (keyUp):
           break;
@@ -744,8 +754,10 @@ short seeshop(short mode) {
           theControl = NIL;
           reply = choice(0);
           if (reply) {
-            DisposeWindow(itemswindow);
-            itemswindow = NIL;
+            if (itemswindow) {
+              DisposeWindow(itemswindow);
+              itemswindow = NIL;
+            }
             return (reply);
           }
           break;

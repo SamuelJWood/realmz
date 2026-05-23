@@ -515,33 +515,52 @@ public:
         GetBackColor(&prev_bg_color);
 
         auto r = this->rect;
-
-        auto bg_color = RGBColor{.red = 0x6666, .green = 0x6666, .blue = 0x6666};
-        RGBBackColor(&bg_color);
-        port.erase_rect(r);
-
-        ForeColor(blackColor);
         auto w = get_width();
-        auto h = get_height();
 
-        auto top_arrow = r;
-        top_arrow.bottom = r.top + w;
-        port.fill_rect(top_arrow);
+        // Track — fill explicitly to avoid bkPixPat painting over it
+        auto track_gray = RGBColor{.red = 0xAAAA, .green = 0xAAAA, .blue = 0xAAAA};
+        RGBForeColor(&track_gray);
+        port.fill_rect(r);
 
-        auto bottom_arrow = r;
-        bottom_arrow.top = r.bottom - w;
-        port.fill_rect(bottom_arrow);
+        // Arrow button backgrounds (darker gray)
+        auto btn_gray = RGBColor{.red = 0x5555, .green = 0x5555, .blue = 0x5555};
+        RGBForeColor(&btn_gray);
+        Rect top_btn{r.top, r.left, static_cast<int16_t>(r.top + w), r.right};
+        Rect bot_btn{static_cast<int16_t>(r.bottom - w), r.left, r.bottom, r.right};
+        port.fill_rect(top_btn);
+        port.fill_rect(bot_btn);
 
-        auto slider_offset = get_slider_offset();
-        if (slider_offset > 0) {
-          ForeColor(yellowColor);
+        // White arrow triangles
+        auto arrow_white = RGBColor{.red = 0xEEEE, .green = 0xEEEE, .blue = 0xEEEE};
+        RGBForeColor(&arrow_white);
+        int cx = r.left + w / 2;
+        int margin = 3;
+        int arrow_rows = w / 2 - margin + 1; // for w=16: 5 rows
+        for (int i = 0; i < arrow_rows; i++) {
+          // Up arrow: apex at top
+          int y_up = top_btn.top + margin + i;
+          port.draw_line(
+              Point{.v = static_cast<int16_t>(y_up), .h = static_cast<int16_t>(cx - i)},
+              Point{.v = static_cast<int16_t>(y_up), .h = static_cast<int16_t>(cx + i)});
+          // Down arrow: apex at bottom
+          int y_dn = bot_btn.bottom - margin - 1 - i;
+          port.draw_line(
+              Point{.v = static_cast<int16_t>(y_dn), .h = static_cast<int16_t>(cx - i)},
+              Point{.v = static_cast<int16_t>(y_dn), .h = static_cast<int16_t>(cx + i)});
         }
 
+        // Filled slider indicator
+        auto slider_offset = get_slider_offset();
+        auto slider_gray = RGBColor{.red = 0x7777, .green = 0x7777, .blue = 0x7777};
+        RGBForeColor(&slider_gray);
         Rect slider_rect{
-            .top = static_cast<int16_t>(r.top + w + slider_offset),
-            .left = r.left,
-            .bottom = static_cast<int16_t>(r.top + 2 * w + slider_offset),
-            .right = r.right};
+            static_cast<int16_t>(r.top + w + slider_offset),
+            r.left,
+            static_cast<int16_t>(r.top + 2 * w + slider_offset),
+            r.right};
+        port.fill_rect(slider_rect);
+        auto slider_border = RGBColor{.red = 0x2222, .green = 0x2222, .blue = 0x2222};
+        RGBForeColor(&slider_border);
         port.draw_rect_outline(slider_rect);
 
         RGBForeColor(&prev_color);
@@ -820,15 +839,16 @@ void Window::set_focused_item(std::shared_ptr<DialogItem> item) {
 void Window::handle_text_input(const std::string& text, std::shared_ptr<DialogItem> item) {
   this->log.debug_f("Window::handle_text_input(\"{}\", {})", text, item->str());
   item->append_text(text);
-  item->render_in_port(this->port, true);
-  WindowManager::instance().recomposite_from_window(this->port);
+  // Re-render the full dialog so the PICT background is restored beneath the text
+  // before drawing. Without this, erase_rect fills with PixPat and the font's
+  // baseline serif pixels appear as visible dots on the dark textured background.
+  this->erase_and_render();
 }
 
 void Window::delete_char(std::shared_ptr<DialogItem> item) {
   this->log.debug_f("Window::delete_char({})", item->str());
   item->delete_char();
-  item->render_in_port(this->port, true);
-  WindowManager::instance().recomposite_from_window(this->port);
+  this->erase_and_render();
 }
 
 void Window::erase_and_render() {
@@ -1739,17 +1759,42 @@ void ModalDialog(ModalFilterProcPtr filterProc, short* itemHit) {
   // Retrieve the current window to only process events within that window
   CGrafPtr port = qd.thePort;
 
-  // Skip all events until we get one that's within the current window
-  // (condition 1) and not handled as part of the dialog abstraction
-  // (conditions 2 & 3). DialogSelect will fill in `item`, which we then return
+  // Process events until we get one handled by the dialog. Global events such
+  // as fullscreen toggle and the Enter/Return key are handled here directly so
+  // they work even while a modal dialog is blocking the main event loop.
   EventRecord e;
   DialogPtr dialog;
   short item;
-  do {
+  while (true) {
     WaitNextEvent(everyEvent, &e, 1, NULL);
-  } while (e.window_port != port || !IsDialogEvent(&e) || !DialogSelect(&e, &dialog, &item));
 
-  *itemHit = item;
+    // Menu events are encoded as mouseDown with both coordinates negative
+    // (see EventManager::push_menu_event). Handle them here so that shortcuts
+    // like F11 / Alt+Enter (fullscreen toggle) remain responsive in modal dialogs.
+    if (e.what == mouseDown && e.where.v < 0 && e.where.h < 0) {
+      int16_t menu_id = static_cast<int16_t>(-e.where.v);
+      int16_t menu_item = static_cast<int16_t>(-e.where.h);
+      if (menu_id == 137 && menu_item == 1) {
+        WindowManager_ToggleFullscreen();
+      }
+      continue;
+    }
+
+    // Treat Return / Enter as clicking the default button (item 1), matching
+    // the Classic Mac OS ModalDialog convention.
+    if (e.what == keyDown) {
+      uint8_t char_code = static_cast<uint8_t>(e.message & 0xFF);
+      if (char_code == '\r' || char_code == '\003') {
+        *itemHit = 1;
+        return;
+      }
+    }
+
+    if (e.window_port == port && IsDialogEvent(&e) && DialogSelect(&e, &dialog, &item)) {
+      *itemHit = item;
+      return;
+    }
+  }
 }
 
 ControlHandle GetNewControl(int16_t cntl_id, WindowPtr window) {

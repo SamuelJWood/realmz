@@ -9,6 +9,7 @@
 struct WinMenu {
   struct Item {
     std::string name;
+    std::string description;
     uint8_t icon_number;
     std::shared_ptr<phosg::ImageRGBA8888N> icon_image;
     char key_equivalent;
@@ -31,4 +32,4 @@ struct WinMenuList {
 };
 
 void WinMenuSync(SDL_Window* sdl_window, std::shared_ptr<WinMenuList> menu_list, void (*callback)(int16_t, int16_t));
-int WinCreatePopupMenu(SDL_Window* sdl_window, std::shared_ptr<WinMenu> menu);
+int WinCreatePopupMenu(SDL_Window* sdl_window, std::shared_ptr<WinMenu> menu, std::shared_ptr<WinMenuList> submenus = nullptr);

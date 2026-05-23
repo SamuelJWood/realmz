@@ -311,6 +311,43 @@ backup:
         GlobalToLocal(&(dclick));
         break;
 
+      case (app3Evt): {
+        /* Mouse wheel: message 1 = scroll up, 0 = scroll down */
+        if (gTheEvent.message == 0 && incr + 11 < c[charselectnew].numitems) {
+          /* scroll down one step */
+          incr++;
+          box.top = 10;
+          box.bottom = 458;
+          box.left = 10;
+          box.right = 284 + leftshift;
+          EraseRect(&box3);
+          TextSize(15);
+          for (t = 0; t < 4; t++)
+            ScrollRect(&box, 0, -10, NIL);
+          theControl = tempdummy;
+          updateitems(10, 10);
+          quickinfo(charselectnew, itemselectnew + incr, c[charselectnew].items[itemselectnew + incr].id, 0);
+          DrawPicture(marker, &box3);
+        } else if (gTheEvent.message == 1 && incr > 0) {
+          /* scroll up one step */
+          incr--;
+          box.top = 0;
+          box.bottom = 450;
+          box.left = 10;
+          box.right = 284 + leftshift;
+          EraseRect(&box3);
+          TextSize(15);
+          for (t = 0; t < 4; t++)
+            ScrollRect(&box, 0, 10, NIL);
+          theControl = tempdummy;
+          updateitems(0, 0);
+          quickinfo(charselectnew, itemselectnew + incr, c[charselectnew].items[itemselectnew + incr].id, 0);
+          DrawPicture(marker, &box3);
+        }
+        goto tryagain;
+        break;
+      }
+
       case (diskEvt):
         if (HiWord(gTheEvent.message) != noErr) /* if MountVol had err */
         { /* then initialize disk */

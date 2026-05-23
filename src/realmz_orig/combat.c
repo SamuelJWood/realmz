@@ -37,13 +37,16 @@ void combat(short suprise, short mode) {
   if (battle.messagebefore)
     textbox(-1, battle.messagebefore, 0, 0, textrect);
 
-  textbox(3, 53, 0, 0, textrect); /**** building map message ***/
   incombat = combatround = 1;
   for (t = 0; t <= charnum; t++)
     if (c[t].stamina < 1)
       updatepictbox(t, TRUE, 0);
 
   switch (suprise) {
+    case 0:
+      flashmessage((StringPtr) "Click to begin combat.", 30, 100, 0, 6001);
+      break;
+
     case 1:
       flashmessage((StringPtr) "You have suprise on your side!            You move first.  (Click Mouse)", 30, 100, 0, 6001);
       break;
@@ -62,6 +65,7 @@ void combat(short suprise, short mode) {
 
   updatefat(FALSE, FALSE, TRUE);
 
+  textbox(3, 53, 0, 0, textrect); /**** building map message ***/
   combatmap();
 
   combatsetup(0, suprise, mode);
@@ -965,7 +969,7 @@ void combat(short suprise, short mode) {
 
         case mouseDown:
 
-          if ((gTheEvent.modifiers & cmdKey) && (PtInRect(point, &lookrect))) {
+          if (((gTheEvent.modifiers & cmdKey) || (gTheEvent.modifiers & rightMouseButton)) && (PtInRect(point, &lookrect))) {
             combatinfo(charup);
             goto backfromrange;
           }

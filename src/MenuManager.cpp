@@ -1,16 +1,20 @@
 #include "MenuManager.hpp"
 #include "EventManager.h"
+#include "FileManager.h"
 #include "MemoryManager.hpp"
 #include "MenuController.h"
 #include "MenuManager-C-Interface.h"
 #include "ResourceManager.h"
 #include "StringConvert.hpp"
 #include "WindowManager.hpp"
+#include <algorithm>
+#include <cctype>
 #include <functional>
 #include <list>
 #include <phosg/Strings.hh>
 #include <resource_file/ResourceFile.hh>
 #include <stdexcept>
+#include <unordered_map>
 
 using ResourceDASM::ResourceFile;
 
@@ -95,6 +99,10 @@ public:
     if (this->cur_menu_list != nullptr) {
       MCSync(this->cur_menu_list, &PushMenuEvent);
     }
+  }
+
+  std::shared_ptr<MenuList> get_current_menu_list() {
+    return this->cur_menu_list;
   }
 
   void remove(int16_t menu_id) {
@@ -275,12 +283,35 @@ void SetItemIcon(MenuHandle theMenu, int16_t item, int16_t iconIndex) {
   mm.sync();
 }
 
+void SetItemIconByCicnId(MenuHandle theMenu, int16_t item, int16_t cicnId) {
+  auto menu = mm.get_menu(theMenu);
+  if (item < 1 || item > static_cast<int16_t>(menu->items.size())) {
+    return;
+  }
+  auto& menu_item = menu->items.at(item - 1);
+  if (cicnId != 0) {
+    auto handle = GetResource(ResourceDASM::RESOURCE_TYPE_cicn, cicnId);
+    if (handle) {
+      auto cicn = ResourceFile::decode_cicn(*handle, GetHandleSize(handle));
+      menu_item.icon_image = std::make_shared<phosg::ImageRGBA8888N>(std::move(cicn.image));
+    }
+  } else {
+    menu_item.icon_image = nullptr;
+  }
+}
+
 void AppendMenu(MenuHandle menu, ConstStr255Param data) {
   auto m = mm.get_menu(menu);
   // TODO: Parse menu item format string (Macintosh Toolbox Essentials, 3-65)
   auto s = string_for_pstr<256>(data);
   auto& item = m->items.emplace_back();
   item.name = s;
+}
+
+void AppendMenuCStr(MenuHandle menu, const char* data) {
+  auto m = mm.get_menu(menu);
+  auto& item = m->items.emplace_back();
+  item.name = std::string(data);
 }
 
 // Ugh, have to use global variable for the callback to be able to modify it
@@ -300,7 +331,7 @@ int32_t PopUpMenuSelect(MenuHandle menu, int16_t top, int16_t left, int16_t popU
   auto nsWindow = SDL_GetPointerProperty(properties, SDL_PROP_WINDOW_COCOA_WINDOW_POINTER, NULL);
 
   result = -1;
-  MCCreatePopupMenu(nsWindow, m, {top, left}, &popupCallback);
+  MCCreatePopupMenu(nsWindow, m, mm.get_current_menu_list(), {top, left}, &popupCallback);
 
   // Wait for either an item to be selected and fire the callback to modify result, or for
   // the menu to be closed without a selection, which will fire the callback with 0 as the result.
@@ -355,6 +386,144 @@ void SetItemStyle(MenuHandle theMenu, int16_t item, int16_t style) {
   }
   menu->items.at(item - 1).style_flags = static_cast<uint8_t>(style);
   mm.sync();
+}
+
+void SetItemDescription(MenuHandle theMenu, int16_t item, const char* description) {
+  auto menu = mm.get_menu(theMenu);
+  if (item < 1 || item > static_cast<int16_t>(menu->items.size())) {
+    return;
+  }
+  menu->items.at(item - 1).description = description ? description : "";
+}
+
+// === Description file loader ===
+
+static std::unordered_map<std::string, std::string> g_desc_cache;
+static bool g_desc_cache_loaded = false;
+
+static std::string desc_normalize_key(const std::string& name) {
+  std::string key = name;
+  if (!key.empty() && key.back() == ':')
+    key.pop_back();
+  std::transform(key.begin(), key.end(), key.begin(),
+      [](unsigned char c) { return static_cast<char>(std::tolower(c)); });
+  return key;
+}
+
+static bool desc_is_entry_name(const std::string& line) {
+  if (line.empty())
+    return false;
+  // UTF-8 bullet U+2022 = \xE2\x80\xA2
+  if (line.size() >= 3 &&
+      static_cast<unsigned char>(line[0]) == 0xE2 &&
+      static_cast<unsigned char>(line[1]) == 0x80 &&
+      static_cast<unsigned char>(line[2]) == 0xA2)
+    return false;
+  if (std::isdigit(static_cast<unsigned char>(line[0])))
+    return false;
+  if (line.length() > 40)
+    return false;
+  std::string lower = line;
+  std::transform(lower.begin(), lower.end(), lower.begin(),
+      [](unsigned char c) { return static_cast<char>(std::tolower(c)); });
+  static const char* const skip_prefixes[] = {
+      "typical", "note", "height", "life", "examples", nullptr};
+  for (int i = 0; skip_prefixes[i]; i++) {
+    if (lower.rfind(skip_prefixes[i], 0) == 0)
+      return false;
+  }
+  return true;
+}
+
+static void load_descriptions_file() {
+  FILE* f = mac_fopen(":Data Files:Caste and Race descriptions.txt", "r");
+  if (!f) {
+    mm_log.warning_f("Could not open Caste and Race descriptions.txt");
+    return;
+  }
+
+  std::string current_key;
+  std::string current_body;
+  bool prev_blank = true;
+  char buf[2048];
+
+  auto flush = [&]() {
+    if (!current_key.empty()) {
+      while (!current_body.empty() && current_body.back() == '\n')
+        current_body.pop_back();
+      if (!current_body.empty())
+        g_desc_cache.emplace(current_key, std::move(current_body));
+      current_key.clear();
+      current_body.clear();
+    }
+  };
+
+  while (fgets(buf, sizeof(buf), f)) {
+    std::string line(buf);
+    while (!line.empty() && (line.back() == '\n' || line.back() == '\r'))
+      line.pop_back();
+    bool is_blank = line.empty() ||
+        std::all_of(line.begin(), line.end(),
+            [](unsigned char c) { return static_cast<bool>(std::isspace(c)); });
+    if (!is_blank && prev_blank && desc_is_entry_name(line)) {
+      flush();
+      current_key = desc_normalize_key(line);
+    } else if (!current_key.empty()) {
+      current_body += line + "\n";
+    }
+    prev_blank = is_blank;
+  }
+  flush();
+  fclose(f);
+}
+
+const char* GetDescriptionFromFile(const char* item_name) {
+  if (!g_desc_cache_loaded) {
+    load_descriptions_file();
+    g_desc_cache_loaded = true;
+  }
+
+  std::string key = desc_normalize_key(item_name);
+
+  auto try_key = [&](const std::string& k) -> const std::string* {
+    auto it = g_desc_cache.find(k);
+    return (it != g_desc_cache.end()) ? &it->second : nullptr;
+  };
+
+  if (auto* r = try_key(key))
+    return r->c_str();
+  // plural +s (Orc → Orcs, Human → Humans)
+  if (auto* r = try_key(key + "s"))
+    return r->c_str();
+  // plural +es
+  if (auto* r = try_key(key + "es"))
+    return r->c_str();
+  // f → ves (Elf → Elves, Dwarf → Dwarves)
+  if (!key.empty() && key.back() == 'f') {
+    if (auto* r = try_key(key.substr(0, key.size() - 1) + "ves"))
+      return r->c_str();
+  }
+  // man → men (Lizard Man → Lizard Men)
+  if (key.size() >= 3 && key.substr(key.size() - 3) == "man") {
+    if (auto* r = try_key(key.substr(0, key.size() - 3) + "men"))
+      return r->c_str();
+  }
+  // space ↔ hyphen, with optional plural (Half Elf → Half-Elf, Half-Elfs; Half Orc → Half-Orc, Half-Orcs)
+  for (char from : {' ', '-'}) {
+    char to = (from == ' ') ? '-' : ' ';
+    std::string alt = key;
+    bool changed = false;
+    for (auto& c : alt) {
+      if (c == from) { c = to; changed = true; }
+    }
+    if (changed) {
+      if (auto* r = try_key(alt)) return r->c_str();
+      if (auto* r = try_key(alt + "s")) return r->c_str();
+      if (auto* r = try_key(alt + "es")) return r->c_str();
+    }
+  }
+
+  return "";
 }
 
 void Realmz_InsertMenuItem(MenuHandle theMenu, ConstStr255Param itemString, int16_t afterItem) {

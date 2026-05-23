@@ -11,6 +11,7 @@
 #include <deque>
 #include <filesystem>
 #include <memory>
+#include <optional>
 #include <phosg/Filesystem.hh>
 #include <phosg/Strings.hh>
 #include <resource_file/BitmapFontRenderer.hh>
@@ -810,7 +811,15 @@ void RGBForeColor(const RGBColor* color) {
 }
 
 CIconHandle GetCIcon(uint16_t iconID) {
-  auto data_handle = GetResource(ResourceDASM::RESOURCE_TYPE_cicn, iconID);
+  Handle data_handle;
+  try {
+    data_handle = GetResource(ResourceDASM::RESOURCE_TYPE_cicn, iconID);
+  } catch (const std::out_of_range&) {
+    return nullptr;
+  }
+  if (!data_handle) {
+    return nullptr;
+  }
   auto decoded_cicn = ResourceDASM::ResourceFile::decode_cicn(*data_handle, GetHandleSize(data_handle));
 
   CIconHandle h = NewHandleTyped<CIcon>();
@@ -841,6 +850,32 @@ OSErr PlotCIcon(const Rect* r, CIconHandle icon) {
   auto& port = current_port();
   port.log.debug_f("PlotCIcon({{x0={}, y0={}, x1={}, y1={}}}, {:p})", r->left, r->top, r->right, r->bottom, static_cast<void*>(icon));
   port.draw_rgba8888_data(*((*icon)->iconData), w, h, *r);
+  WindowManager::instance().recomposite_from_window(port);
+  return noErr;
+}
+
+OSErr PlotCIconAspectFit(const Rect* r, CIconHandle icon) {
+  auto bounds = (*icon)->iconPMap.bounds;
+  int sw = bounds.right - bounds.left;
+  int sh = bounds.bottom - bounds.top;
+  auto& port = current_port();
+  port.log.debug_f("PlotCIconAspectFit({{x0={}, y0={}, x1={}, y1={}}}, {:p})", r->left, r->top, r->right, r->bottom, static_cast<void*>(icon));
+
+  int dw = r->right - r->left;
+  int dh = r->bottom - r->top;
+
+  float scale = std::min(static_cast<float>(dw) / sw, static_cast<float>(dh) / sh);
+  int nw = static_cast<int>(sw * scale);
+  int nh = static_cast<int>(sh * scale);
+
+  Rect fit_rect = {
+      static_cast<int16_t>(r->top + (dh - nh) / 2),
+      static_cast<int16_t>(r->left + (dw - nw) / 2),
+      static_cast<int16_t>(r->top + (dh - nh) / 2 + nh),
+      static_cast<int16_t>(r->left + (dw - nw) / 2 + nw),
+  };
+
+  port.draw_rgba8888_data(*((*icon)->iconData), sw, sh, fit_rect);
   WindowManager::instance().recomposite_from_window(port);
   return noErr;
 }
@@ -1213,7 +1248,45 @@ void HideCursor(void) {
 }
 
 void ShowCursor(void) {
-  cursor_hide_level--;
+  if (cursor_hide_level > 0) {
+    cursor_hide_level--;
+    if (cursor_hide_level == 0) {
+      SDL_ShowCursor();
+    }
+  }
+}
+
+static struct {
+  std::optional<ResourceDASM::ResourceFile::DecodedColorIconResource> decoded;
+  sdl_surface_ptr surface;
+  sdl_cursor_ptr cursor;
+} s_icon_drag_cursor;
+
+void SetCursorToIcon(int16_t icon_id) {
+  Handle data_handle;
+  try {
+    data_handle = GetResource(ResourceDASM::RESOURCE_TYPE_cicn, icon_id);
+  } catch (...) {
+    return;
+  }
+  if (!data_handle) {
+    return;
+  }
+  s_icon_drag_cursor.decoded.emplace(
+      ResourceDASM::ResourceFile::decode_cicn(*data_handle, GetHandleSize(data_handle)));
+  auto& img = s_icon_drag_cursor.decoded->image;
+  s_icon_drag_cursor.surface = sdl_make_unique(SDL_CreateSurfaceFrom(
+      img.get_width(),
+      img.get_height(),
+      SDL_PIXELFORMAT_RGBA8888,
+      const_cast<uint32_t*>(img.get_data()),
+      4 * static_cast<int>(img.get_width())));
+  s_icon_drag_cursor.cursor = sdl_make_unique(SDL_CreateColorCursor(
+      s_icon_drag_cursor.surface.get(), 0, 0));
+  // Clear current_cursor_handle so the next SetCCursor call will actually
+  // update the SDL cursor rather than seeing a stale match and returning early.
+  current_cursor_handle = nullptr;
+  SDL_SetCursor(s_icon_drag_cursor.cursor.get());
   if (cursor_hide_level == 0) {
     SDL_ShowCursor();
   }

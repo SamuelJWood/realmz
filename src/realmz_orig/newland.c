@@ -1437,7 +1437,7 @@ startover:
           pict(203, itemRect);
         }
 
-        textbox(-1, id, 0, 0, textrect);
+        textbox(-1, abs(id), 0, 0, textrect);
 
         break;
 

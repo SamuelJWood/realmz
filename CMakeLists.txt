@@ -253,6 +253,7 @@ elseif(WIN32)
     list(APPEND SOURCES src/windows/MenuController.cpp src/windows/WinMenuController.cpp)
     list(APPEND realmz_lib_LINK_LIBRARIES
         bcrypt # Used by phosg::phosg during compilation for windows targets
+        msimg32 # AlphaBlend
     )
 endif()
 
@@ -293,6 +294,7 @@ set(DATA_RESOURCE_FILES
     "base/Realmz/Data Files/Data SUB BD"
     "base/Realmz/Data Files/Data Snow BD"
     "base/Realmz/Data Files/Data Swamp BD"
+    "base/Realmz/Data Files/Caste and Race descriptions.txt"
 )
 set_source_files_properties(${DATA_RESOURCE_FILES} PROPERTIES
     MACOSX_PACKAGE_LOCATION "Resources/Data\ Files"

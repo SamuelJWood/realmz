@@ -7,6 +7,7 @@
 WinMenu::Item win_menu_item_from_menu_item(const Menu::Item& item) {
   return WinMenu::Item{
       .name = item.name,
+      .description = item.description,
       .icon_number = item.icon_number,
       .icon_image = item.icon_image,
       .key_equivalent = item.key_equivalent,
@@ -54,10 +55,22 @@ void MCSync(std::shared_ptr<MenuList> menuList, void (*callback)(int16_t, int16_
 void MCCreatePopupMenu(
     void* nsWindow, // unused
     std::shared_ptr<Menu> menu,
+    std::shared_ptr<MenuList> submenus,
     std::pair<int16_t, int16_t> loc,
     void (*callback)(int16_t, int16_t)) {
   auto sdl_window = WindowManager::instance().get_sdl_window();
   auto m = win_menu_from_menu(menu);
-  auto result = WinCreatePopupMenu(sdl_window.get(), m);
+
+  std::shared_ptr<WinMenuList> win_submenus;
+  if (submenus) {
+    win_submenus = std::make_shared<WinMenuList>();
+    std::transform(
+        submenus->submenus.begin(),
+        submenus->submenus.end(),
+        std::back_inserter(win_submenus->submenus),
+        win_menu_from_menu);
+  }
+
+  auto result = WinCreatePopupMenu(sdl_window.get(), m, win_submenus);
   callback(m->menu_id, result);
 }

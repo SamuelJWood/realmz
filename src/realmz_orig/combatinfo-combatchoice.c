@@ -805,7 +805,7 @@ void combatchoice(void) {
 
         case mouseDown:
         testforinfo:
-          if (gTheEvent.modifiers & cmdKey) {
+          if ((gTheEvent.modifiers & cmdKey) || (gTheEvent.modifiers & rightMouseButton)) {
             if (inspell)
               centerfield(5 + (2 * screensize), 5 + screensize); //   Fantasoft 7.1
             combatinfo(charup);

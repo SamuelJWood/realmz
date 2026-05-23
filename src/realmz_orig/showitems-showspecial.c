@@ -154,7 +154,7 @@ void Showitems(short mode) {
     theControl = rightarrow;
     change(0, 0);
 
-    quickinfo(cl, 0, c[cl].items[0].id, 0);
+    quickinfo(cl, 0, c[cl].items[0].id, 1);
   }
   WindowManager_SetEnableRecomposite(enable_recomposite);
 }

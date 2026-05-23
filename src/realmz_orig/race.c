@@ -1,6 +1,10 @@
 #include "prototypes.h"
 #include "variables.h"
 
+// Race descriptions are loaded at runtime from
+// "Data Files/Caste and Race descriptions.txt" via GetDescriptionFromFile.
+
+
 /***************************** Race ********************************/
 void Race(short mode) {
   char castecan[30][30];
@@ -177,6 +181,9 @@ moveon:
     }
 
     if ((itemHit == 57) || (itemHit == 74)) {
+      short item_count = 0;
+      char name_cstr[256];
+
       popup = GetMenu(131);
       InsertMenu(popup, -1);
 
@@ -184,10 +191,15 @@ moveon:
         GetIndString(myString, 129, t);
 
         if (StringWidth(myString)) {
+          memcpy(name_cstr, myString + 1, (unsigned char)myString[0]);
+          name_cstr[(unsigned char)myString[0]] = '\0';
+
+          item_count++;
           AppendMenu(popup, myString);
-          SetItemIcon(popup, t, 251 + 6 * (popupcons[t - 1]));
+          SetItemIcon(popup, item_count, 251 + 6 * (popupcons[t - 1]));
+          SetItemDescription(popup, item_count, GetDescriptionFromFile(name_cstr));
           if (!castecan[t - 1][characterl.caste - 1]) {
-            DisableItem(popup, t);
+            DisableItem(popup, item_count);
           }
         }
       }
@@ -195,6 +207,7 @@ moveon:
       GetMouse(&point);
       LocalToGlobal(&point);
       itemHit = PopUpMenuSelect(popup, point.v, point.h, 0);
+
       DeleteMenu(131);
       ReleaseResource((Handle)popup);
 

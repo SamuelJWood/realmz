@@ -20,6 +20,7 @@ static constexpr uint16_t EVMOD_CAPS_LOCK_ENABLED = 0x0400;
 static constexpr uint16_t EVMOD_SHIFT_KEY_DOWN = 0x0200;
 static constexpr uint16_t EVMOD_COMMAND_KEY_DOWN = 0x0100;
 static constexpr uint16_t EVMOD_MOUSE_BUTTON_UP = 0x0080;
+static constexpr uint16_t EVMOD_RIGHT_MOUSE_BUTTON_DOWN = 0x0040;
 static constexpr uint16_t EVMOD_WINDOW_ACTIVATED = 0x0001;
 
 static const std::unordered_map<SDL_Keycode, uint16_t> mac_vk_code_for_sdl_keycode({
@@ -341,6 +342,7 @@ public:
 
   void reset_mouse_state() {
     this->modifier_flags |= EVMOD_MOUSE_BUTTON_UP;
+    this->modifier_flags &= ~EVMOD_RIGHT_MOUSE_BUTTON_DOWN;
   }
 
   inline const Point& get_mouse_loc() const {
@@ -352,7 +354,8 @@ public:
     // events between those calls. In our implementation, we must process
     // events to detect any state change in the mouse button, so we do so here
     this->enqueue_pending_events(0);
-    return !(this->modifier_flags & EVMOD_MOUSE_BUTTON_UP);
+    return !(this->modifier_flags & EVMOD_MOUSE_BUTTON_UP) ||
+        (this->modifier_flags & EVMOD_RIGHT_MOUSE_BUTTON_DOWN);
   }
   bool any_mouse_events_pending() const {
     for (const auto& ev : this->event_queue) {
@@ -495,7 +498,6 @@ protected:
         em_log.info_f("{} {} {} {:g} {:g}",
             (e.type == SDL_EVENT_MOUSE_BUTTON_UP) ? "SDL_EVENT_MOUSE_BUTTON_UP" : "SDL_EVENT_MOUSE_BUTTON_DOWN",
             e.button.button, e.button.clicks, e.button.x, e.button.y);
-        // Ignore events for all mouse buttons except the primary (left) button
         if (e.button.button == 1) {
           float lx, ly;
           WindowManager::instance().window_to_logical(e.button.x, e.button.y, lx, ly);
@@ -504,6 +506,16 @@ protected:
           this->set_modifier_value(EVMOD_MOUSE_BUTTON_UP, (e.type == SDL_EVENT_MOUSE_BUTTON_UP));
           auto window = WindowManager::instance().window_for_point(this->mouse_loc.h, this->mouse_loc.v);
           this->enqueue_event((e.type == SDL_EVENT_MOUSE_BUTTON_DOWN) ? mouseDown : mouseUp, 0, window ? &window->get_port() : nullptr, "");
+        } else if (e.button.button == 3) {
+          float lx, ly;
+          WindowManager::instance().window_to_logical(e.button.x, e.button.y, lx, ly);
+          this->mouse_loc.h = static_cast<int16_t>(lx);
+          this->mouse_loc.v = static_cast<int16_t>(ly);
+          this->set_modifier_value(EVMOD_RIGHT_MOUSE_BUTTON_DOWN, (e.type == SDL_EVENT_MOUSE_BUTTON_DOWN));
+          if (e.type == SDL_EVENT_MOUSE_BUTTON_DOWN) {
+            auto window = WindowManager::instance().window_for_point(this->mouse_loc.h, this->mouse_loc.v);
+            this->enqueue_event(mouseDown, 0, window ? &window->get_port() : nullptr, "");
+          }
         }
         break;
       case SDL_EVENT_TEXT_EDITING:
@@ -517,6 +529,14 @@ protected:
         // there some notion of keyboard focus in Classic Mac OS?
         this->enqueue_event(app4Evt, 0, FrontWindow(), e.text.text);
         break;
+      case SDL_EVENT_MOUSE_WHEEL: {
+        // Encode direction in message: 1 = scroll up (toward user), 0 = scroll down
+        if (e.wheel.y != 0.0f) {
+          uint32_t message = (e.wheel.y > 0.0f) ? 1 : 0;
+          this->enqueue_event(app3Evt, message, nullptr, "");
+        }
+        break;
+      }
       case SDL_EVENT_WINDOW_RESIZED:
         WindowManager::instance().recomposite_all();
         break;

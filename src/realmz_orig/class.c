@@ -1,6 +1,10 @@
 #include "prototypes.h"
 #include "variables.h"
 
+// Caste descriptions are loaded at runtime from
+// "Data Files/Caste and Race descriptions.txt" via GetDescriptionFromFile.
+
+
 /***************************** Caste ********************************/
 void Caste(short mode) /********** if mode == 1 then view only **********/
 {
@@ -182,6 +186,9 @@ moveon:
     ModalDialog(0L, &itemHit);
 
     if ((itemHit == 57) || (itemHit == 74)) {
+      short item_count = 0;
+      char name_cstr[256];
+
       popup = GetMenu(131);
       InsertMenu(popup, -1);
 
@@ -189,8 +196,13 @@ moveon:
         GetIndString(myString, 131, t);
 
         if (StringWidth(myString)) {
+          memcpy(name_cstr, myString + 1, (unsigned char)myString[0]);
+          name_cstr[(unsigned char)myString[0]] = '\0';
+
+          item_count++;
           AppendMenu(popup, myString);
-          SetItemIcon(popup, t, popupcons[t - 1]);
+          SetItemIcon(popup, item_count, popupcons[t - 1]);
+          SetItemDescription(popup, item_count, GetDescriptionFromFile(name_cstr));
         }
       }
 
@@ -199,6 +211,7 @@ moveon:
       itemHit = PopUpMenuSelect(popup, point.v, point.h, 0);
       if (itemHit)
         characterl.pictid = popupcons[itemHit - 1];
+
       DeleteMenu(131);
       ReleaseResource((Handle)popup);
 

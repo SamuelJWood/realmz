@@ -13,17 +13,144 @@ NSMenu* MCCreateSubMenu(NSString* title, const Menu& menuRes, const std::list<st
 
 @property(readonly) int16_t menuID;
 @property(readonly) int16_t itemID;
+@property(readonly, nullable) NSString* itemDescription;
 
 @end
 
 @implementation MCMenuItemIdentifier
 
 - (id)initWithRawIds:(int16_t)menu_id itemId:(int16_t)item_id {
+  return [self initWithRawIds:menu_id itemId:item_id description:nil];
+}
+
+- (id)initWithRawIds:(int16_t)menu_id itemId:(int16_t)item_id description:(nullable NSString*)desc {
   if (self = [super init]) {
     _menuID = menu_id;
     _itemID = item_id;
+    _itemDescription = [desc copy];
   }
   return self;
+}
+
+@end
+
+// === Description hover popup delegate ===
+
+@interface MCDescriptionPanel : NSObject
+- (void)showWithText:(NSString*)text;
+- (void)hide;
+@end
+
+@implementation MCDescriptionPanel {
+  NSWindow* _window;
+  NSTextView* _textView;
+}
+
+- (instancetype)init {
+  if (self = [super init]) {
+    NSRect frame = NSMakeRect(0, 0, 380, 100);
+    _window = [[NSWindow alloc]
+        initWithContentRect:frame
+                  styleMask:NSWindowStyleMaskBorderless
+                    backing:NSBackingStoreBuffered
+                      defer:YES];
+    [_window setLevel:NSPopUpMenuWindowLevel + 1];
+    [_window setIgnoresMouseEvents:YES];
+    [_window setHasShadow:YES];
+    [_window setOpaque:NO];
+    [_window setBackgroundColor:[NSColor colorWithRed:1.0 green:0.99 blue:0.82 alpha:1.0]];
+
+    _window.contentView.wantsLayer = YES;
+    _window.contentView.layer.borderColor = [[NSColor grayColor] CGColor];
+    _window.contentView.layer.borderWidth = 1.0;
+    _window.contentView.layer.cornerRadius = 3.0;
+
+    NSScrollView* sv = [[NSScrollView alloc] initWithFrame:NSMakeRect(0, 0, 380, 100)];
+    sv.hasVerticalScroller = NO;
+    sv.hasHorizontalScroller = NO;
+    sv.borderType = NSNoBorder;
+    sv.drawsBackground = NO;
+    sv.autoresizingMask = NSViewWidthSizable | NSViewHeightSizable;
+
+    _textView = [[NSTextView alloc] initWithFrame:NSMakeRect(0, 0, 380, 100)];
+    _textView.editable = NO;
+    _textView.selectable = NO;
+    _textView.drawsBackground = NO;
+    _textView.textContainer.lineFragmentPadding = 8.0;
+    _textView.textContainerInset = NSMakeSize(4.0, 8.0);
+    [_textView setFont:[NSFont systemFontOfSize:12.0]];
+    [sv setDocumentView:_textView];
+    [_window.contentView addSubview:sv];
+  }
+  return self;
+}
+
+- (void)showWithText:(NSString*)text {
+  [_textView setString:text];
+  [_textView.layoutManager ensureLayoutForTextContainer:_textView.textContainer];
+
+  const CGFloat popup_width = 360.0;
+  NSRect used = [_textView.layoutManager
+      usedRectForTextContainer:_textView.textContainer];
+  CGFloat height = ceil(used.size.height) + 20.0;
+  height = MAX(height, 40.0);
+  height = MIN(height, 500.0);
+
+  NSPoint mouse = [NSEvent mouseLocation];
+  NSScreen* screen = [NSScreen mainScreen];
+  NSRect sf = screen.visibleFrame;
+
+  CGFloat x = mouse.x + 25.0;
+  CGFloat y = mouse.y - height / 2.0;
+  if (x + popup_width + 20.0 > NSMaxX(sf))
+    x = mouse.x - popup_width - 45.0;
+  if (y < sf.origin.y)
+    y = sf.origin.y;
+  if (y + height > NSMaxY(sf))
+    y = NSMaxY(sf) - height;
+
+  NSRect wf = NSMakeRect(x, y, popup_width + 20.0, height);
+  [_window setFrame:wf display:NO];
+  [_textView setFrame:NSMakeRect(0, 0, popup_width + 20.0, height)];
+  [_window orderFrontRegardless];
+}
+
+- (void)hide {
+  [_window orderOut:nil];
+}
+
+@end
+
+@interface MCPopupMenuDelegate : NSObject <NSMenuDelegate>
+@property(nonatomic, strong) MCDescriptionPanel* descPanel;
+@end
+
+@implementation MCPopupMenuDelegate
+
+- (instancetype)init {
+  if (self = [super init]) {
+    _descPanel = [[MCDescriptionPanel alloc] init];
+  }
+  return self;
+}
+
+- (void)menu:(NSMenu*)menu willHighlightItem:(nullable NSMenuItem*)item {
+  if (!item) {
+    [_descPanel hide];
+    return;
+  }
+  MCMenuItemIdentifier* ident =
+      (MCMenuItemIdentifier*)[item representedObject];
+  NSString* desc = [ident itemDescription];
+  if (!desc || [desc length] == 0) {
+    [_descPanel hide];
+    return;
+  }
+  [_descPanel showWithText:desc];
+}
+
+- (void)menuDidClose:(NSMenu*)menu {
+  [_descPanel hide];
 }
 
 @end
@@ -129,6 +256,7 @@ NSMenu* MCCreateSubMenu(NSString* title, const Menu& menuRes, const std::list<st
 
 @property(readonly) NSMenu* contextualMenu;
 @property(nonatomic) void (*callback)(int16_t, int16_t);
+@property(nonatomic, strong) MCPopupMenuDelegate* menuDelegate;
 
 @end
 
@@ -165,7 +293,10 @@ NSMenu* MCCreateSubMenu(NSString* title, const Menu& menuRes, const std::list<st
     NSMenuItem *menuItem = [[NSMenuItem alloc] initWithTitle:name action:NULL keyEquivalent:@""];
     [menuItem setTarget:self];
     [menuItem setAction:@selector(MCHandlePopupMenuClick:)];
-    id menuIdentifier = [[MCMenuItemIdentifier alloc] initWithRawIds:menu->menu_id itemId:itemId];
+    NSString* desc = item.description.empty() ? nil
+        : [NSString stringWithCString:item.description.c_str() encoding:NSUTF8StringEncoding];
+    id menuIdentifier = [[MCMenuItemIdentifier alloc]
+        initWithRawIds:menu->menu_id itemId:itemId description:desc];
     [menuItem setRepresentedObject:menuIdentifier];
     menuItem.enabled = item.enabled;
     if (item.checked) {
@@ -179,6 +310,9 @@ NSMenu* MCCreateSubMenu(NSString* title, const Menu& menuRes, const std::list<st
     }
     [_contextualMenu addItem:menuItem];
   }
+
+  _menuDelegate = [[MCPopupMenuDelegate alloc] init];
+  [_contextualMenu setDelegate:_menuDelegate];
 
   // In the Cocoa framework, the origin is the bottom left. The point p is passed to us as (top, left).
   NSWindow* window = (NSWindow*)nsWindow;
@@ -212,6 +346,6 @@ void MCSync(std::shared_ptr<MenuList> menuList, void (*callback)(int16_t, int16_
   application.mainMenu = [currentMenuBar menuObject];
 }
 
-void MCCreatePopupMenu(void *nsWindow, std::shared_ptr<Menu> menu, std::pair<int16_t, int16_t> loc, void (*callback)(int16_t, int16_t)) {
+void MCCreatePopupMenu(void *nsWindow, std::shared_ptr<Menu> menu, std::shared_ptr<MenuList> submenus, std::pair<int16_t, int16_t> loc, void (*callback)(int16_t, int16_t)) {
   [[MCPopupMenu alloc] initWithWindow:nsWindow menu:menu loc:loc callback:callback];
 }

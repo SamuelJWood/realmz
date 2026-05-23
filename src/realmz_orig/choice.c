@@ -273,6 +273,10 @@ short choice(short key) {
     } else
       moneypool[0] = moneypool[1] = moneypool[2] = 0;
 
+    if (itemswindow) {
+      DisposeWindow(itemswindow);
+      itemswindow = NIL;
+    }
     DisposeWindow(gshop);
     gshop = NIL;
     inshop = FALSE;

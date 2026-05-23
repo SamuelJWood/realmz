@@ -239,7 +239,7 @@ void moveicon(void) {
     SetCCursor(stop);
     sound(674);
   } else {
-    HideCursor();
+    SetCursorToIcon(lookupicon(item.iconid, lg));
     sound(130);
   }
 
@@ -247,7 +247,6 @@ void moveicon(void) {
 
   if ((theshop.inflation == 0) && (item.charge > -1) && (cr == -1) && (point.h <= (320 + (leftshift / 2)))) /********* warhouse takes no charged weapons ****/
   {
-    ShowCursor();
     warn(80);
     RGBBackColor(&greycolor);
     ForeColor(yellowColor);
@@ -267,35 +266,9 @@ void moveicon(void) {
     goto fastmove;
   }
 
-  iconop = iconpict;
-  OffsetRect(&iconpict, GlobalLeft, GlobalTop);
-
-  CopyBits(src, dst, &iconpict, &store, 0, NIL);
   do {
     GetMouse(&point);
-
-    if ((point.h != oldpoint.h) || (point.v != oldpoint.v)) {
-      iconnp.top = point.v;
-      iconnp.left = point.h;
-      iconnp.bottom = iconnp.top + 32;
-      iconnp.right = iconnp.left + 32;
-
-      OffsetRect(&iconnp, GlobalLeft, GlobalTop);
-      OffsetRect(&iconop, GlobalLeft, GlobalTop);
-
-      CopyBits(dst, src, &store, &iconop, 0, NIL);
-      CopyBits(src, dst, &iconnp, &store, 0, NIL);
-      CopyBits(src, src, &iconpict, &iconnp, 39, NIL);
-      OffsetRect(&iconnp, -GlobalLeft, -GlobalTop);
-
-      iconop = iconnp;
-      oldpoint = point;
-    }
   } while (StillDown());
-
-  OffsetRect(&iconop, GlobalLeft, GlobalTop);
-  CopyBits(dst, src, &store, &iconop, 0, NIL);
-  /* *** END CHANGES *** */
 
 fastmove:
 

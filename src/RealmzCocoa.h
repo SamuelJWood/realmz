@@ -201,6 +201,7 @@ void InitWindows(void);
 #define alphaLock 1024
 #define optionKey 2048
 #define controlKey 4096
+#define rightMouseButton 0x0040
 
 void GetPortBounds(CGrafPtr port, Rect* rect);
 void ErasePortRect(void);

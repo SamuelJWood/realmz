@@ -46,6 +46,18 @@ over:
     DoCorrectBugMADRepeat();
 #endif
 
+    /* Handle menu events (e.g. F11 / Alt+Enter fullscreen toggle) that arrive
+     * while this dialog is blocking the main event loop. */
+    if (gTheEvent.what == mouseDown && gTheEvent.where.v < 0 && gTheEvent.where.h < 0) {
+      short menu_id = -gTheEvent.where.v;
+      short menu_itm = -gTheEvent.where.h;
+      if (menu_id == 137 && menu_itm == 1) {
+        WindowManager_ToggleFullscreen();
+        CheckItem(prefer, 1, WindowManager_IsFullscreen());
+      }
+      continue;
+    }
+
     if (IsDialogEvent(&gTheEvent)) {
       if (DialogSelect(&gTheEvent, &dummy, &itemHit))
         goto out;
@@ -53,6 +65,8 @@ over:
 
     if (gTheEvent.what == keyDown) {
       switch (gTheEvent.message & charCodeMask) {
+        case '\r': /**** Return — confirm Yes ****/
+        case '\003': /**** Enter — confirm Yes ****/
         case 'y': /**** yes ****/
         case 'Y': /**** yes ****/
           itemHit = 3;

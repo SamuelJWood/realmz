@@ -31,15 +31,19 @@ void EnableItem(MenuHandle theMenu, uint16_t item);
 void CheckItem(MenuHandle theMenu, uint16_t item, Boolean checked);
 int32_t PopUpMenuSelect(MenuHandle menu, int16_t top, int16_t left, int16_t popUpItem);
 void AppendMenu(MenuHandle menu, ConstStr255Param data);
+void AppendMenuCStr(MenuHandle menu, const char* data);
 int16_t CountMItems(MenuHandle theMenu);
 int32_t MenuKey(int16_t ch);
 MenuHandle NewMenu(int16_t menuID, ConstStr255Param menuTitle);
 void InsertMenuItem(MenuHandle theMenu, ConstStr255Param itemString, int16_t afterItem);
 void InsertSubmenuItem(MenuHandle theMenu, ConstStr255Param title, int16_t subMenuID, int16_t afterItem);
 void SetItemIcon(MenuHandle theMenu, int16_t item, int16_t iconIndex);
+void SetItemIconByCicnId(MenuHandle theMenu, int16_t item, int16_t cicnId);
 void SetItemMark(MenuHandle theMenu, int16_t item, int16_t markChar);
 void GetItemMark(MenuHandle theMenu, int16_t item, int16_t* markChar);
 void SetItemStyle(MenuHandle theMenu, int16_t item, int16_t style);
+void SetItemDescription(MenuHandle theMenu, int16_t item, const char* description);
+const char* GetDescriptionFromFile(const char* item_name);
 
 #ifdef __cplusplus
 }

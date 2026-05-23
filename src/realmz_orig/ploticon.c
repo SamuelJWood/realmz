@@ -59,7 +59,10 @@ void ploticon(short tempid, short showcurse) {
     iconhand = GetCIcon(lookupicon(item.iconid, lg));
 
     if (iconhand) {
-      PlotCIcon(&icon, iconhand);
+      if (initems)
+        PlotCIconAspectFit(&icon, iconhand);
+      else
+        PlotCIcon(&icon, iconhand);
       DisposeCIcon(iconhand);
     }
     ForeColor(blackColor);

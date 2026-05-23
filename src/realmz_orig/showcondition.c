@@ -58,6 +58,7 @@ short showcondition(short start, short stop, short type, short showonly, short w
             else
               GetIndString(myString, tempselection + c[tt].items[t].ident, item.itemid - tempselection + 1);
             AppendMenu(popup, myString);
+            SetItemIconByCicnId(popup, index, lookupicon(item.iconid, c[tt].items[t].ident));
             if (c[tt].items[t].equip)
               SetItemMark(popup, index, 19);
           }
