@@ -1,12 +1,7 @@
 #include "prototypes.h"
 #include "variables.h"
-#include "../MusicManager.h"
-
-#include <SDL3/SDL.h>
-#include <stdio.h>
 
 extern char nomusic;
-extern short musicvolume;
 extern Boolean indung;
 extern char viewtype;
 
@@ -23,12 +18,7 @@ void updatemusic(void) {
   } else {
     name = "Indoor Music";
   }
-  MusicManager_SetVolume(musicvolume);
-
-  const char* base = SDL_GetBasePath();
-  char path[1024];
-  snprintf(path, sizeof(path), "%sRealmz Music/%s", base ? base : "", name);
-  MusicManager_PlayIfDifferent(path);
+  music_play_by_name(name);
 }
 
 /*********************** centerpict *****************************/

@@ -183,6 +183,7 @@ short Startlevel(void);
 void memout(void);
 void quiet(short id);
 void updatemusic(void);
+void music_play_by_name(const char* name);
 void sound(short id);
 void updatemain(short center, short who);
 void mainscreen(short who);

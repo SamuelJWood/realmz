@@ -1,3 +1,6 @@
+#define MINIMP3_IMPLEMENTATION
+#include "minimp3.h"
+
 #include "MusicManager.h"
 
 #include <xmp.h>
@@ -7,9 +10,12 @@
 #include <atomic>
 #include <chrono>
 #include <condition_variable>
+#include <cstdio>
+#include <cstring>
 #include <mutex>
 #include <string>
 #include <thread>
+#include <vector>
 
 static phosg::PrefixedLogger mm_log("[MusicManager] ");
 
@@ -20,6 +26,13 @@ static int xmp_volume_for_game(int level) {
   return level * 200 / 7;
 }
 
+static bool is_mp3_path(const std::string& path) {
+  if (path.size() < 4) return false;
+  std::string ext = path.substr(path.size() - 4);
+  for (auto& c : ext) c = (char)std::tolower((unsigned char)c);
+  return ext == ".mp3";
+}
+
 class MusicManager {
   xmp_context ctx = nullptr;
   SDL_AudioDeviceID device_id = 0;
@@ -27,14 +40,20 @@ class MusicManager {
   std::thread decode_thread;
   std::mutex mtx;
   std::condition_variable cv;
-  std::string pending_path;  // guarded by mtx; set by play(), consumed by thread
-  std::string current_path;  // guarded by mtx; tracks what's loaded
+  std::string pending_path;   // guarded by mtx
+  std::string current_path;   // guarded by mtx
   std::atomic<bool> running{false};
-  std::atomic<int> volume_pct{100};
+  std::atomic<int> volume_pct{100};  // 0-200 scale
+
+  // MP3 decoder state (accessed only from decode thread)
+  std::vector<uint8_t> mp3_data;
+  size_t mp3_pos{0};
+  mp3dec_t mp3_dec{};
 
   void decode_loop() {
     std::string loaded_path;
     bool loaded = false;
+    bool playing_mp3 = false;
 
     while (this->running) {
       std::string next_path;
@@ -49,22 +68,80 @@ class MusicManager {
       }
 
       if (!next_path.empty()) {
+        // Unload previous track
         if (loaded) {
-          xmp_end_player(this->ctx);
-          xmp_release_module(this->ctx);
+          if (!playing_mp3) {
+            xmp_end_player(this->ctx);
+            xmp_release_module(this->ctx);
+          }
+          this->mp3_data.clear();
           loaded = false;
         }
         SDL_ClearAudioStream(this->stream);
 
-        if (xmp_load_module(this->ctx, next_path.c_str()) == 0) {
-          xmp_start_player(this->ctx, MUSIC_SAMPLE_RATE, 0);
-          xmp_set_player(this->ctx, XMP_PLAYER_VOLUME, this->volume_pct.load());
-          loaded = true;
-          loaded_path = next_path;
-          mm_log.info_f("Playing: {}", next_path);
+        playing_mp3 = is_mp3_path(next_path);
+
+        if (playing_mp3) {
+          // Read the file into memory
+          FILE* f = fopen(next_path.c_str(), "rb");
+          if (f) {
+            fseek(f, 0, SEEK_END);
+            long sz = ftell(f);
+            fseek(f, 0, SEEK_SET);
+            if (sz > 0) {
+              this->mp3_data.resize((size_t)sz);
+              fread(this->mp3_data.data(), 1, (size_t)sz, f);
+            }
+            fclose(f);
+          }
+
+          if (!this->mp3_data.empty()) {
+            // Probe the first frame to determine sample rate and channels
+            mp3dec_t probe;
+            mp3dec_init(&probe);
+            mp3d_sample_t probe_pcm[MINIMP3_MAX_SAMPLES_PER_FRAME];
+            mp3dec_frame_info_t info;
+            mp3dec_decode_frame(&probe, this->mp3_data.data(), (int)this->mp3_data.size(), probe_pcm, &info);
+
+            if (info.frame_bytes > 0 && info.hz > 0) {
+              // Configure stream input to match MP3 format
+              SDL_AudioSpec mp3_spec;
+              mp3_spec.format = SDL_AUDIO_S16LE;
+              mp3_spec.channels = info.channels;
+              mp3_spec.freq = info.hz;
+              SDL_SetAudioStreamFormat(this->stream, &mp3_spec, nullptr);
+
+              // Initialize the actual playback decoder from the beginning
+              this->mp3_pos = 0;
+              mp3dec_init(&this->mp3_dec);
+              loaded = true;
+              loaded_path = next_path;
+              mm_log.info_f("Playing MP3: {} ({}Hz, {}ch)", next_path, info.hz, info.channels);
+            } else {
+              mm_log.warning_f("Failed to probe MP3: {}", next_path);
+              this->mp3_data.clear();
+            }
+          } else {
+            mm_log.warning_f("Failed to read MP3 file: {}", next_path);
+          }
+
         } else {
-          mm_log.warning_f("Failed to load module: {}", next_path);
-          loaded_path.clear();
+          // XMP module track — reset stream input format to standard XMP output
+          SDL_AudioSpec xmp_spec;
+          xmp_spec.format = SDL_AUDIO_S16LE;
+          xmp_spec.channels = 2;
+          xmp_spec.freq = MUSIC_SAMPLE_RATE;
+          SDL_SetAudioStreamFormat(this->stream, &xmp_spec, nullptr);
+
+          if (xmp_load_module(this->ctx, next_path.c_str()) == 0) {
+            xmp_start_player(this->ctx, MUSIC_SAMPLE_RATE, 0);
+            xmp_set_player(this->ctx, XMP_PLAYER_VOLUME, this->volume_pct.load());
+            loaded = true;
+            loaded_path = next_path;
+            mm_log.info_f("Playing module: {}", next_path);
+          } else {
+            mm_log.warning_f("Failed to load module: {}", next_path);
+          }
         }
 
         {
@@ -76,31 +153,71 @@ class MusicManager {
       if (!this->running) break;
       if (!loaded) continue;
 
-      // Update volume in case it changed
-      xmp_set_player(this->ctx, XMP_PLAYER_VOLUME, this->volume_pct.load());
+      // Keep stream buffer filled (~200ms ahead)
+      const int target_bytes = MUSIC_SAMPLE_RATE * 4 / 5;
 
-      // Keep stream buffer filled (target ~200ms ahead)
-      const int target_bytes = MUSIC_SAMPLE_RATE * 4 / 5; // 200ms of stereo 16-bit
-      while (this->running && SDL_GetAudioStreamAvailable(this->stream) < target_bytes) {
-        struct xmp_frame_info fi;
-        int ret = xmp_play_frame(this->ctx);
-        if (ret != 0) {
-          // End of module — loop back
-          xmp_restart_module(this->ctx);
-          continue;
+      if (playing_mp3) {
+        while (this->running && SDL_GetAudioStreamAvailable(this->stream) < target_bytes) {
+          if (this->mp3_pos >= this->mp3_data.size()) {
+            // Loop: reset to beginning
+            this->mp3_pos = 0;
+            mp3dec_init(&this->mp3_dec);
+          }
+
+          mp3d_sample_t pcm[MINIMP3_MAX_SAMPLES_PER_FRAME];
+          mp3dec_frame_info_t frame_info;
+          int samples = mp3dec_decode_frame(
+              &this->mp3_dec,
+              this->mp3_data.data() + this->mp3_pos,
+              (int)(this->mp3_data.size() - this->mp3_pos),
+              pcm,
+              &frame_info);
+
+          if (frame_info.frame_bytes > 0) {
+            this->mp3_pos += (size_t)frame_info.frame_bytes;
+          }
+
+          if (samples > 0) {
+            // Apply volume scaling
+            int vol = this->volume_pct.load();
+            if (vol != 200) {
+              int n = samples * frame_info.channels;
+              for (int i = 0; i < n; i++) {
+                pcm[i] = (mp3d_sample_t)((int)pcm[i] * vol / 200);
+              }
+            }
+            SDL_PutAudioStreamData(this->stream, pcm,
+                samples * frame_info.channels * (int)sizeof(mp3d_sample_t));
+          } else if (frame_info.frame_bytes == 0) {
+            // No decodable frame found — end of stream, loop
+            this->mp3_pos = 0;
+            mp3dec_init(&this->mp3_dec);
+          }
         }
-        xmp_get_frame_info(this->ctx, &fi);
-        if (fi.buffer_size > 0) {
-          SDL_PutAudioStreamData(this->stream, fi.buffer, fi.buffer_size);
-        } else {
-          break;
+
+      } else {
+        // XMP decode
+        xmp_set_player(this->ctx, XMP_PLAYER_VOLUME, this->volume_pct.load());
+        while (this->running && SDL_GetAudioStreamAvailable(this->stream) < target_bytes) {
+          struct xmp_frame_info fi;
+          int ret = xmp_play_frame(this->ctx);
+          if (ret != 0) {
+            xmp_restart_module(this->ctx);
+            continue;
+          }
+          xmp_get_frame_info(this->ctx, &fi);
+          if (fi.buffer_size > 0) {
+            SDL_PutAudioStreamData(this->stream, fi.buffer, fi.buffer_size);
+          } else {
+            break;
+          }
         }
       }
 
       std::this_thread::sleep_for(std::chrono::milliseconds(20));
     }
 
-    if (loaded) {
+    if (loaded && !playing_mp3) {
       xmp_end_player(this->ctx);
       xmp_release_module(this->ctx);
     }
@@ -165,9 +282,21 @@ public:
     if (!this->stream) return;
     std::lock_guard lk(this->mtx);
     const std::string new_path = path ? path : "";
-    // Skip if this path is already queued or currently playing
     if (new_path == this->pending_path || new_path == this->current_path) return;
     this->pending_path = new_path;
+    this->cv.notify_all();
+  }
+
+  void play_if_different_group(const char* path, const char* group_prefix) {
+    if (!this->stream) return;
+    std::lock_guard lk(this->mtx);
+    const std::string prefix = group_prefix ? group_prefix : "";
+    // Don't switch if the pending or current track is already in this group
+    if (!prefix.empty()) {
+      if (!this->pending_path.empty() && this->pending_path.find(prefix) == 0) return;
+      if (!this->current_path.empty() && this->current_path.find(prefix) == 0) return;
+    }
+    this->pending_path = path ? path : "";
     this->cv.notify_all();
   }
 
@@ -177,7 +306,6 @@ public:
 
   void set_volume(int level) {
     this->volume_pct = xmp_volume_for_game(level);
-    // The decode loop applies the new volume on next iteration
   }
 };
 
@@ -189,6 +317,10 @@ void MusicManager_Play(const char* path) {
 
 void MusicManager_PlayIfDifferent(const char* path) {
   MusicManager::instance().play_if_different(path);
+}
+
+void MusicManager_PlayIfDifferentGroup(const char* path, const char* group_prefix) {
+  MusicManager::instance().play_if_different_group(path, group_prefix);
 }
 
 void MusicManager_Stop(void) {
