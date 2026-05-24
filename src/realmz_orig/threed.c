@@ -775,13 +775,16 @@ void updatewalls(int32_t x, int32_t y) {
 
     {
       CGrafPtr qdp = GetQDGlobalsThePort();
-      // Fill the look window with black so the area outside the dungeon view is black
+      int enable_recomposite = WindowManager_SetEnableRecomposite(0);
+      // lookrect covers {0,0,...} in local pixel coords; portRect starts at y=20 so
+      // PaintRect(&portRect) would leave the top 20 rows stale (gray strip).
       ForeColor(blackColor);
-      PaintRect(&look->portRect);
-      // Blit the dungeon view shifted 80px right and 48px down
-      Rect dest_rect = {lookrect.top + 48, lookrect.left + 80, lookrect.bottom + 48, lookrect.right + 80};
-      MyrCopyScreen((CGrafPtr)gbuff2, (CGrafPtr)qdp, &lookrect, &dest_rect, srcCopy); // Myriad
-      // Draw a 2px dark gray frame around the shifted view
+      PaintRect(&lookrect);
+      // Blit only the 320x320 dungeon tile area, shifted 80px right and 48px down
+      Rect src_rect = {0, 0, 320, 320};
+      Rect dest_rect = {48, 80, 368, 400};
+      MyrCopyScreen((CGrafPtr)gbuff2, (CGrafPtr)qdp, &src_rect, &dest_rect, srcCopy); // Myriad
+      // Draw a dark gray frame around the shifted view
       RGBColor darkgray = {0x5555, 0x5555, 0x5555};
       RGBForeColor(&darkgray);
       PenSize(2, 2);
@@ -789,6 +792,8 @@ void updatewalls(int32_t x, int32_t y) {
       FrameRect(&frame);
       PenSize(1, 1);
       ForeColor(blackColor);
+      WindowManager_SetEnableRecomposite(enable_recomposite);
+      WindowManager_RecompositeAlways();
     }
   }
   xy(0);
