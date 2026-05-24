@@ -108,11 +108,8 @@ void showmap(short mapnumber) {
     xy(1);
 
     SetPort(GetWindowPort(look));
-
-    BackColor(blackColor);
-    ErasePortRect();
-
     ForeColor(blackColor);
+    PaintRect(&lookrect);
     BackColor(whiteColor);
 
     temprect.top = 48;
@@ -212,9 +209,9 @@ void showmap(short mapnumber) {
   ErasePortRect();
   TextMode(1);
 
+  ClearDialogFocus(show);
   DrawDialog(show);
   MyrPascalDiStr(2, themap.note);
-  ClearDialogFocus(show);
 
   indung = tempisdung;
 
