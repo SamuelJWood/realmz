@@ -102,6 +102,7 @@ void NumToString(int32_t num, Str255 str);
 void StringToNum(ConstStr255Param str, int32_t* num);
 void ModalDialog(ModalFilterProcPtr filterProc, short* itemHit);
 void DrawDialog(DialogPtr theDialog);
+void ClearDialogFocus(DialogPtr theDialog);
 void DisposeDialog(DialogPtr theDialog);
 
 ControlHandle GetNewControl(int16_t ctl_id, WindowPtr window);

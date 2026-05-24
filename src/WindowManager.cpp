@@ -459,6 +459,15 @@ public:
         if (!port.draw_text(text, this->rect)) {
           wm_log.error_f("Error when rendering editable text item {}: {}", resource_id, SDL_GetError());
         }
+
+        // Draw caret if this item is focused
+        auto window = this->owner_window.lock();
+        if (window && window->get_focused_item().get() == this) {
+          int16_t caret_x = this->rect.left + port.measure_text(text) + 1;
+          Point caret_top = {.h = caret_x, .v = this->rect.top};
+          Point caret_bottom = {.h = caret_x, .v = this->rect.bottom};
+          port.draw_line(caret_top, caret_bottom);
+        }
         break;
       }
       case ResourceFile::DecodedDialogItem::Type::CHECKBOX:
@@ -1537,6 +1546,11 @@ void SetDialogItemText(DialogItemHandle item_handle, ConstStr255Param text) {
   } else {
     wm_log.warning_f("SetDialogItemText({}, \"{}\") cannot re-render window because owner_window is not set", item->str(), str);
   }
+}
+
+void ClearDialogFocus(DialogPtr dialog) {
+  auto window = WindowManager::instance().window_for_port(reinterpret_cast<WindowPtr>(dialog));
+  window->set_focused_item(nullptr);
 }
 
 int16_t StringWidth(ConstStr255Param s) {

@@ -109,6 +109,9 @@ void showmap(short mapnumber) {
 
     SetPort(GetWindowPort(look));
 
+    BackColor(blackColor);
+    ErasePortRect();
+
     ForeColor(blackColor);
     BackColor(whiteColor);
 
@@ -202,7 +205,7 @@ void showmap(short mapnumber) {
   SetPortDialogPort(show);
   BackPixPat(base);
   TextFont(defaultfont);
-  MoveWindow(GetDialogWindow(show), GlobalLeft - 1 + (leftshift / 2), GlobalTop + 321 + (downshift / 2), FALSE);
+  MoveWindow(GetDialogWindow(show), GlobalLeft + 6 + (leftshift / 2), GlobalTop + 326 + (downshift / 2), FALSE);
   ForeColor(yellowColor);
   gCurrent = show;
   ShowWindow(GetDialogWindow(show));
@@ -211,6 +214,7 @@ void showmap(short mapnumber) {
 
   DrawDialog(show);
   MyrPascalDiStr(2, themap.note);
+  ClearDialogFocus(show);
 
   indung = tempisdung;
 
