@@ -125,18 +125,22 @@ move:
 
         } else {
           /**** 2D cursors ****/
+          /* The dungeon view is shifted 80px right and 48px down, so the quadrant
+           * diagonals are offset to intersect at the center of the content (240, 208):
+           *   main diagonal offset:  leftshift/2 - downshift/2 = 32
+           *   anti-diagonal constant: 320 + leftshift/2 + downshift/2 = 448 */
           cursor = 142;
 
-          if ((point.h >= point.v) && (point.h <= 320 + (leftshift / 2) - point.v))
+          if ((point.h >= point.v + 32) && (point.h + point.v <= 448))
             cursor = 139;
 
-          if ((point.h <= point.v) && (point.v <= 320 + (leftshift / 2) - point.h))
+          if ((point.h <= point.v + 32) && (point.h + point.v <= 448))
             cursor = 141;
 
-          if ((point.v >= 320 + (downshift / 2) - point.h) && (point.v >= point.h))
+          if ((point.h + point.v >= 448) && (point.v >= point.h - 32))
             cursor = 145;
 
-          if ((point.h >= 320 + (downshift / 2) - point.v) && (point.v <= point.h))
+          if ((point.h + point.v >= 448) && (point.v <= point.h - 32))
             cursor = 143;
 
           if (cursor != oldcursor) {
