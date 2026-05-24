@@ -44,6 +44,7 @@ class MusicManager {
   std::string current_path;   // guarded by mtx
   std::atomic<bool> running{false};
   std::atomic<int> volume_pct{100};  // 0-200 scale
+  std::string current_group;         // guarded by mtx
 
   // MP3 decoder state (accessed only from decode thread)
   std::vector<uint8_t> mp3_data;
@@ -274,6 +275,7 @@ public:
   void play(const char* path) {
     if (!this->stream) return;
     std::lock_guard lk(this->mtx);
+    this->current_group = "";
     this->pending_path = path ? path : "";
     this->cv.notify_all();
   }
@@ -291,11 +293,8 @@ public:
     if (!this->stream) return;
     std::lock_guard lk(this->mtx);
     const std::string prefix = group_prefix ? group_prefix : "";
-    // Don't switch if the pending or current track is already in this group
-    if (!prefix.empty()) {
-      if (!this->pending_path.empty() && this->pending_path.find(prefix) == 0) return;
-      if (!this->current_path.empty() && this->current_path.find(prefix) == 0) return;
-    }
+    if (!prefix.empty() && this->current_group == prefix) return;
+    this->current_group = prefix;
     this->pending_path = path ? path : "";
     this->cv.notify_all();
   }
