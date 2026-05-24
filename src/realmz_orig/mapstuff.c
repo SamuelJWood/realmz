@@ -112,8 +112,10 @@ void showmap(short mapnumber) {
     ForeColor(blackColor);
     BackColor(whiteColor);
 
-    temprect.top = temprect.left = 0;
-    temprect.right = temprect.bottom = themap.iconsize;
+    temprect.top = 48;
+    temprect.left = 80;
+    temprect.right = 80 + themap.iconsize;
+    temprect.bottom = 48 + themap.iconsize;
 
     if (!indung) {
       for (t = themap.starty; t < temp + themap.starty; t++) {
@@ -140,11 +142,11 @@ void showmap(short mapnumber) {
         if (!themap.iconsize)
           themap.iconsize = 32;
         temp = themap.icon[t][2];
-        temprect.top = temp * themap.iconsize;
+        temprect.top = temp * themap.iconsize + 48;
         temprect.bottom = temprect.top + themap.iconsize;
 
         temp = themap.icon[t][1];
-        temprect.left = temp * themap.iconsize;
+        temprect.left = temp * themap.iconsize + 80;
         temprect.right = temprect.left + themap.iconsize;
 
         iconhand = NIL;
@@ -186,8 +188,8 @@ void showmap(short mapnumber) {
     if (((themap.isdungeon) && (themap.level == dunglevel)) || ((!themap.isdungeon) && (themap.level == landlevel))) {
       if (PtInRect(point, &itemRect)) /***** show you are here ****/
       {
-        icon.left = (point.h - themap.startx) * themap.iconsize - 20;
-        icon.top = (point.v - themap.starty) * themap.iconsize - 24;
+        icon.left = (point.h - themap.startx) * themap.iconsize - 20 + 80;
+        icon.top = (point.v - themap.starty) * themap.iconsize - 24 + 48;
         icon.right = icon.left + 64;
         icon.bottom = icon.top + 64;
 
@@ -217,7 +219,7 @@ void showmap(short mapnumber) {
   else
     loadland(dunglevel, TRUE);
 
-  flashmessage((StringPtr) "Click Mouse", 350, 100, 0, 30005);
+  flashmessage((StringPtr) "Click to close map", 440, 100, 0, 30005);
 
   xy(0);
   DisposeDialog(show);

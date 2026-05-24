@@ -459,15 +459,6 @@ public:
         if (!port.draw_text(text, this->rect)) {
           wm_log.error_f("Error when rendering editable text item {}: {}", resource_id, SDL_GetError());
         }
-
-        // Draw caret if this item is focused
-        auto window = this->owner_window.lock();
-        if (window && window->get_focused_item().get() == this) {
-          int16_t caret_x = this->rect.left + port.measure_text(text) + 1;
-          Point caret_top = {.h = caret_x, .v = this->rect.top};
-          Point caret_bottom = {.h = caret_x, .v = this->rect.bottom};
-          port.draw_line(caret_top, caret_bottom);
-        }
         break;
       }
       case ResourceFile::DecodedDialogItem::Type::CHECKBOX:
