@@ -771,7 +771,20 @@ void updatewalls(int32_t x, int32_t y) {
 
     {
       CGrafPtr qdp = GetQDGlobalsThePort();
-      MyrCopyScreen((CGrafPtr)gbuff2, (CGrafPtr)qdp, &lookrect, &lookrect, srcCopy); // Myriad
+      // Fill the look window with black so the area outside the dungeon view is black
+      ForeColor(blackColor);
+      PaintRect(&look->portRect);
+      // Blit the dungeon view shifted 80px right and 48px down
+      Rect dest_rect = {lookrect.top + 48, lookrect.left + 80, lookrect.bottom + 48, lookrect.right + 80};
+      MyrCopyScreen((CGrafPtr)gbuff2, (CGrafPtr)qdp, &lookrect, &dest_rect, srcCopy); // Myriad
+      // Draw a 2px dark gray frame around the shifted view
+      RGBColor darkgray = {0x5555, 0x5555, 0x5555};
+      RGBForeColor(&darkgray);
+      PenSize(2, 2);
+      Rect frame = {dest_rect.top - 2, dest_rect.left - 2, dest_rect.bottom + 2, dest_rect.right + 2};
+      FrameRect(&frame);
+      PenSize(1, 1);
+      ForeColor(blackColor);
     }
   }
   xy(0);
