@@ -76,9 +76,10 @@ void SDLMenuBar::init(TTF_Font* f) {
 
 void SDLMenuBar::sync(std::shared_ptr<MenuList> ml) {
   this->menu_list = ml;
+  this->cached_menus.assign(ml->menus.begin(), ml->menus.end());
   this->title_layout_win_w = 0; // force rebuild
   this->destroy_icon_cache();
-  this->destroy_text_cache();
+  this->destroy_text_cache(); // also clears text_width_cache
   this->open_menu_idx = -1;
   this->hovered_item_idx = -1;
   this->submenu_open_item_idx = -1;
@@ -135,9 +136,8 @@ void SDLMenuBar::update(float dt, int cursor_y, bool fullscreen) {
 
 // ── Layout ────────────────────────────────────────────────────────────────────
 
-std::vector<std::shared_ptr<Menu>> SDLMenuBar::get_top_menus() const {
-  if (!this->menu_list) return {};
-  return {this->menu_list->menus.begin(), this->menu_list->menus.end()};
+const std::vector<std::shared_ptr<Menu>>& SDLMenuBar::get_top_menus() const {
+  return this->cached_menus;
 }
 
 std::shared_ptr<Menu> SDLMenuBar::find_submenu(int16_t menu_id) const {
@@ -324,8 +324,11 @@ void SDLMenuBar::draw_text(SDL_Renderer* r, const std::string& text, int x, int 
 
 int SDLMenuBar::measure_text_width(const std::string& text) const {
   if (!this->font || text.empty()) return 0;
+  auto it = this->text_width_cache.find(text);
+  if (it != this->text_width_cache.end()) return it->second;
   int w = 0, h = 0;
   TTF_GetStringSize(this->font, text.c_str(), text.size(), &w, &h);
+  const_cast<SDLMenuBar*>(this)->text_width_cache[text] = w;
   return w;
 }
 
@@ -366,6 +369,7 @@ void SDLMenuBar::destroy_text_cache() {
     if (tex) SDL_DestroyTexture(tex);
   }
   this->text_cache.clear();
+  this->text_width_cache.clear();
 }
 
 // Draw a dropdown panel for 'menu' at (panel_x, panel_y), width panel_w.
@@ -472,8 +476,7 @@ void SDLMenuBar::draw_bar_strip(SDL_Renderer* r, int win_w) {
       fill_frect(r, (float)tl.x, bt + 1.0f, (float)tl.width, (float)(MENUBAR_HEIGHT - 2));
     }
 
-    int tw = this->measure_text_width(menu->title);
-    int tx = tl.x + (tl.width - tw) / 2;
+    int tx = tl.x + TITLE_HPAD; // tl.width == tw + 2*TITLE_HPAD, so center is always tl.x + TITLE_HPAD
     int ty = (int)(bt + (MENUBAR_HEIGHT - 16) / 2.0f);
     SDL_SetRenderDrawBlendMode(r, SDL_BLENDMODE_BLEND);
     SDL_Color col = menu->enabled ? COLOR_WHITE : COLOR_GRAY;

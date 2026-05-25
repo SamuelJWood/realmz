@@ -48,6 +48,7 @@ private:
   };
 
   std::shared_ptr<MenuList> menu_list;
+  std::vector<std::shared_ptr<Menu>> cached_menus; // rebuilt on sync()
   TTF_Font* font = nullptr;
 
   int open_menu_idx = -1;
@@ -64,6 +65,8 @@ private:
   std::unordered_map<const phosg::ImageRGBA8888N*, SDL_Texture*> icon_cache;
   // Text texture cache: "text\xFFrrggbb" → SDL_Texture*
   std::unordered_map<std::string, SDL_Texture*> text_cache;
+  // Text width cache: text string → pixel width (font size 16, cleared on sync)
+  std::unordered_map<std::string, int> text_width_cache;
   SDL_Renderer* cached_renderer = nullptr;
 
   // Submenu state (cascade panel from a hovered submenu item)
@@ -92,8 +95,8 @@ private:
   void destroy_icon_cache();
   void destroy_text_cache();
 
-  // Returns the menu list as an indexable vector (constructed per-draw from list).
-  std::vector<std::shared_ptr<Menu>> get_top_menus() const;
+  // Returns the cached top-level menu vector (populated on sync()).
+  const std::vector<std::shared_ptr<Menu>>& get_top_menus() const;
   // Returns the submenu (from menu_list->submenus) for a submenu item, or nullptr.
   std::shared_ptr<Menu> find_submenu(int16_t menu_id) const;
   int dropdown_x(int menu_idx, int win_w) const;
