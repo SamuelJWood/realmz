@@ -16,6 +16,8 @@
 
 static phosg::PrefixedLogger smb_log("[SDLMenuBar] ");
 
+Uint32 SDLMenuBar::s_anim_event_type = 0;
+
 // ── Colors ────────────────────────────────────────────────────────────────────
 
 static constexpr SDL_Color COLOR_BAR_BG    = {0x2D, 0x2D, 0x2D, 0xFF};
@@ -72,6 +74,9 @@ SDLMenuBar& SDLMenuBar::instance() {
 
 void SDLMenuBar::init(TTF_Font* f) {
   this->font = f;
+  if (s_anim_event_type == 0) {
+    s_anim_event_type = SDL_RegisterEvents(1);
+  }
 }
 
 void SDLMenuBar::sync(std::shared_ptr<MenuList> ml) {
@@ -131,6 +136,15 @@ void SDLMenuBar::update(float dt, int cursor_y, bool fullscreen) {
     } else {
       this->y_offset = std::max(this->y_offset - step, this->y_target);
     }
+  }
+
+  // If animation is still in progress, push a user event so the event loop
+  // wakes up and calls redraw_menu_bar_only() for the next frame.
+  if (this->y_offset != this->y_target && !this->anim_event_pending && s_anim_event_type != 0) {
+    SDL_Event ev{};
+    ev.type = s_anim_event_type;
+    SDL_PushEvent(&ev);
+    this->anim_event_pending = true;
   }
 }
 
@@ -576,6 +590,13 @@ bool SDLMenuBar::handle_event(const SDL_Event& e, bool fullscreen, int win_w, in
   }
 
   this->rebuild_title_layouts(win_w);
+
+  // Animation frame event: clear pending flag and drive next frame.
+  if (s_anim_event_type != 0 && e.type == s_anim_event_type) {
+    this->anim_event_pending = false;
+    WindowManager::instance().redraw_menu_bar_only();
+    return true;
+  }
 
   // Snapshot visible state so we can detect changes that require a redraw.
   auto state_snapshot = [this] {

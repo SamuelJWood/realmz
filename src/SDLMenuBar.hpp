@@ -14,7 +14,7 @@ class SDLMenuBar {
 public:
   static constexpr int MENUBAR_HEIGHT = 24;
   static constexpr int TRIGGER_ZONE_PX = 10;
-  static constexpr float AUTO_HIDE_DELAY_S = 1.5f;
+  static constexpr float AUTO_HIDE_DELAY_S = 0.7f;
   static constexpr float ANIM_DURATION_S = 0.15f;
   static constexpr int TITLE_HPAD = 10;
   static constexpr int ITEM_VPAD = 4;
@@ -57,6 +57,10 @@ private:
   float y_offset = 0.0f;
   float y_target = 0.0f;
   float auto_hide_timer = 0.0f;
+
+  // Animation event: registered once, used to self-drive slide animation frames.
+  static Uint32 s_anim_event_type;
+  bool anim_event_pending = false;
 
   std::vector<TitleLayout> title_layouts;
   int title_layout_win_w = 0;
