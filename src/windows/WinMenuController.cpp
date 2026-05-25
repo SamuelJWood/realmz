@@ -587,6 +587,11 @@ static HMENU build_win_menu_items(const std::shared_ptr<WinMenuList>& menu_list,
   return hmenu;
 }
 
+extern "C" void MCInstallWindowHook(SDL_Window* sdl_window, void (*callback)(int16_t, int16_t)) {
+  menuCallback = callback;
+  HookWndProc(get_window_handle(sdl_window));
+}
+
 void WinMenuSync(SDL_Window* sdl_window, std::shared_ptr<WinMenuList> menu_list, void (*callback)(int16_t, int16_t)) {
   // Update current menu click callback function
   menuCallback = callback;

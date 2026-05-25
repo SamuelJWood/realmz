@@ -349,3 +349,7 @@ void MCSync(std::shared_ptr<MenuList> menuList, void (*callback)(int16_t, int16_
 void MCCreatePopupMenu(void *nsWindow, std::shared_ptr<Menu> menu, std::shared_ptr<MenuList> submenus, std::pair<int16_t, int16_t> loc, void (*callback)(int16_t, int16_t)) {
   [[MCPopupMenu alloc] initWithWindow:nsWindow menu:menu loc:loc callback:callback];
 }
+
+void MCInstallWindowHook(SDL_Window* /*sdl_window*/, void (* /*callback*/)(int16_t, int16_t)) {
+  // No-op on macOS — Cocoa handles owner-draw natively.
+}

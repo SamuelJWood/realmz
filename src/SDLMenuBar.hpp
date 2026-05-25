@@ -62,7 +62,13 @@ private:
 
   // Icon texture cache: raw pointer key → SDL_Texture*
   std::unordered_map<const phosg::ImageRGBA8888N*, SDL_Texture*> icon_cache;
+  // Text texture cache: "text\xFFrrggbb" → SDL_Texture*
+  std::unordered_map<std::string, SDL_Texture*> text_cache;
   SDL_Renderer* cached_renderer = nullptr;
+
+  // Submenu state (cascade panel from a hovered submenu item)
+  int submenu_open_item_idx = -1;   // item index in open_menu_idx's dropdown that has a submenu open
+  int submenu_hovered_item_idx = -1; // hovered item index inside that submenu panel
 
   void rebuild_title_layouts(int win_w);
   float bar_top() const { return this->y_offset; }
@@ -74,17 +80,25 @@ private:
 
   void draw_bar_strip(SDL_Renderer* r, int win_w);
   void draw_dropdown(SDL_Renderer* r, int win_w, int win_h);
+  int draw_panel(SDL_Renderer* r, const std::shared_ptr<Menu>& menu,
+      float panel_x, float panel_y, int panel_w, int highlight_item, int win_w, int win_h);
   void draw_text(SDL_Renderer* r, const std::string& text, int x, int y, SDL_Color color) const;
   int measure_text_width(const std::string& text) const;
   SDL_Texture* get_icon_texture(SDL_Renderer* r, const phosg::ImageRGBA8888N* img);
 
   void dispatch_item(int menu_idx, int item_idx);
+  void dispatch_submenu_item(int menu_idx, int submenu_item_idx, int item_idx);
 
   void destroy_icon_cache();
+  void destroy_text_cache();
 
   // Returns the menu list as an indexable vector (constructed per-draw from list).
   std::vector<std::shared_ptr<Menu>> get_top_menus() const;
+  // Returns the submenu (from menu_list->submenus) for a submenu item, or nullptr.
+  std::shared_ptr<Menu> find_submenu(int16_t menu_id) const;
   int dropdown_x(int menu_idx, int win_w) const;
   int dropdown_width(int menu_idx) const;
   int dropdown_height(int menu_idx) const;
+  int submenu_panel_x(int parent_dropdown_x, int parent_dropdown_w, int submenu_w, int win_w) const;
+  int submenu_panel_y(int parent_dropdown_y, int submenu_item_idx_in_panel, int win_h) const;
 };

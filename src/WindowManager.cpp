@@ -23,6 +23,7 @@
 #include "QuickDraw.h"
 #include "QuickDraw.hpp"
 #include "ResourceManager.h"
+#include "MenuController.h"
 #include "SDLMenuBar.hpp"
 #include "StringConvert.hpp"
 #include "Types.hpp"
@@ -1449,6 +1450,7 @@ void WindowManager_Init(void) {
 
   init_fonts();
   SDLMenuBar::instance().init(get_chicago_font());
+  MCInstallWindowHook(WindowManager::instance().get_sdl_window().get(), PushMenuEvent);
 }
 
 WindowPtr WindowManager_CreateNewWindow(int16_t res_id, bool is_dialog, WindowPtr behind) {
