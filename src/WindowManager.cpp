@@ -1287,6 +1287,33 @@ void WindowManager::recomposite_all() {
   this->recomposite(nullptr);
 }
 
+void WindowManager::redraw_menu_bar_only() {
+  if (!this->sdl_window) return;
+  auto renderer = SDL_GetRenderer(this->sdl_window.get());
+  if (!renderer || !this->intermediate_texture) return;
+
+  int pw, ph;
+  SDL_GetWindowSizeInPixels(this->sdl_window.get(), &pw, &ph);
+
+  // Re-render the game frame from the already-uploaded intermediate texture
+  // (already on the GPU — no CPU framebuffer work at all).
+  SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
+  SDL_RenderClear(renderer);
+  SDL_RenderTexture(renderer, this->intermediate_texture.get(), nullptr, &this->content_rect);
+
+  // Draw menu bar overlay.
+  float cursor_x, cursor_y;
+  SDL_GetMouseState(&cursor_x, &cursor_y);
+  uint64_t now_ms = SDL_GetTicks();
+  float dt = std::min((now_ms - this->last_recomposite_ms) / 1000.0f, 0.1f);
+  this->last_recomposite_ms = now_ms;
+  SDLMenuBar::instance().update(dt, static_cast<int>(cursor_y), this->m_fullscreen);
+  SDLMenuBar::instance().draw(renderer, pw, ph, this->m_fullscreen);
+
+  SDL_RenderPresent(renderer);
+  // Note: no SDL_SyncWindow here — menu bar updates don't need to block the caller.
+}
+
 void WindowManager::window_to_logical(float wx, float wy, float& lx, float& ly) const {
   lx = std::clamp((wx - this->content_rect.x) * 800.0f / this->content_rect.w, 0.0f, 800.0f);
   ly = std::clamp((wy - this->content_rect.y) * 600.0f / this->content_rect.h, 0.0f, 600.0f);

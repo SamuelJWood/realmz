@@ -577,14 +577,21 @@ bool SDLMenuBar::handle_event(const SDL_Event& e, bool fullscreen, int win_w, in
 
   this->rebuild_title_layouts(win_w);
 
+  // Snapshot visible state so we can detect changes that require a redraw.
+  auto state_snapshot = [this] {
+    return std::make_tuple(this->open_menu_idx, this->hovered_item_idx,
+        this->submenu_open_item_idx, this->submenu_hovered_item_idx);
+  };
+
   switch (e.type) {
     case SDL_EVENT_MOUSE_MOTION: {
+      auto before = state_snapshot();
       float px = e.motion.x;
       float py = e.motion.y;
 
       // Check if cursor is over a submenu panel
       if (this->open_menu_idx >= 0 && this->submenu_open_item_idx >= 0) {
-        auto menus = this->get_top_menus();
+        const auto& menus = this->get_top_menus();
         if (this->open_menu_idx < (int)menus.size()) {
           const auto& menu = menus[this->open_menu_idx];
           if (this->submenu_open_item_idx < (int)menu->items.size()) {
@@ -605,6 +612,7 @@ bool SDLMenuBar::handle_event(const SDL_Event& e, bool fullscreen, int win_w, in
                 int hi = hit_test_submenu_panel(px, py, submenu, sub_x, sub_y, sub_w);
                 if (hi >= 0) {
                   this->submenu_hovered_item_idx = hi;
+                  if (state_snapshot() != before) WindowManager::instance().redraw_menu_bar_only();
                   return false;
                 }
               }
@@ -624,9 +632,8 @@ bool SDLMenuBar::handle_event(const SDL_Event& e, bool fullscreen, int win_w, in
         int old_hovered = this->hovered_item_idx;
         this->hovered_item_idx = this->hit_test_dropdown(px, py, win_w, win_h);
         if (this->hovered_item_idx != old_hovered) {
-          // If hovering a new item, update submenu state
           if (this->hovered_item_idx >= 0) {
-            auto menus = this->get_top_menus();
+            const auto& menus = this->get_top_menus();
             if (this->open_menu_idx < (int)menus.size()) {
               const auto& menu = menus[this->open_menu_idx];
               if (this->hovered_item_idx < (int)menu->items.size()) {
@@ -641,24 +648,24 @@ bool SDLMenuBar::handle_event(const SDL_Event& e, bool fullscreen, int win_w, in
               }
             }
           } else {
-            // Not hovering any item in main dropdown — close submenu only if
-            // not hovering the submenu panel (handled above)
             this->submenu_open_item_idx = -1;
             this->submenu_hovered_item_idx = -1;
           }
         }
       }
+      if (state_snapshot() != before) WindowManager::instance().redraw_menu_bar_only();
       return false;
     }
 
     case SDL_EVENT_MOUSE_BUTTON_DOWN: {
       if (e.button.button != SDL_BUTTON_LEFT) return false;
+      auto before = state_snapshot();
       float px = e.button.x;
       float py = e.button.y;
 
       // Click in submenu panel?
       if (this->open_menu_idx >= 0 && this->submenu_open_item_idx >= 0) {
-        auto menus = this->get_top_menus();
+        const auto& menus = this->get_top_menus();
         if (this->open_menu_idx < (int)menus.size()) {
           const auto& menu = menus[this->open_menu_idx];
           if (this->submenu_open_item_idx < (int)menu->items.size()) {
@@ -683,6 +690,7 @@ bool SDLMenuBar::handle_event(const SDL_Event& e, bool fullscreen, int win_w, in
                   this->hovered_item_idx = -1;
                   this->submenu_open_item_idx = -1;
                   this->submenu_hovered_item_idx = -1;
+                  WindowManager::instance().redraw_menu_bar_only();
                   return true;
                 }
               }
@@ -702,25 +710,24 @@ bool SDLMenuBar::handle_event(const SDL_Event& e, bool fullscreen, int win_w, in
         }
         this->submenu_open_item_idx = -1;
         this->submenu_hovered_item_idx = -1;
+        WindowManager::instance().redraw_menu_bar_only();
         return true;
       }
 
       if (this->open_menu_idx >= 0) {
         int item_idx = this->hit_test_dropdown(px, py, win_w, win_h);
         if (item_idx >= 0) {
-          // Don't dispatch submenu items on click — hovering opens them
-          auto menus = this->get_top_menus();
+          const auto& menus = this->get_top_menus();
           bool sub = (this->open_menu_idx < (int)menus.size() &&
                       item_idx < (int)menus[this->open_menu_idx]->items.size() &&
                       is_submenu(menus[this->open_menu_idx]->items[item_idx]));
           if (!sub) {
             this->dispatch_item(this->open_menu_idx, item_idx);
-          }
-          if (!sub) {
             this->open_menu_idx = -1;
             this->hovered_item_idx = -1;
             this->submenu_open_item_idx = -1;
             this->submenu_hovered_item_idx = -1;
+            WindowManager::instance().redraw_menu_bar_only();
           }
           return true;
         }
@@ -729,6 +736,7 @@ bool SDLMenuBar::handle_event(const SDL_Event& e, bool fullscreen, int win_w, in
         this->hovered_item_idx = -1;
         this->submenu_open_item_idx = -1;
         this->submenu_hovered_item_idx = -1;
+        if (state_snapshot() != before) WindowManager::instance().redraw_menu_bar_only();
         return false;
       }
       return false;
@@ -743,6 +751,7 @@ bool SDLMenuBar::handle_event(const SDL_Event& e, bool fullscreen, int win_w, in
           this->open_menu_idx = -1;
           this->hovered_item_idx = -1;
         }
+        WindowManager::instance().redraw_menu_bar_only();
         return true;
       }
 

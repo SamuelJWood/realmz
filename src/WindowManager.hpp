@@ -147,6 +147,9 @@ public:
   void recomposite_from_window(CCGrafPort& updated_port);
   void recomposite_from_window(std::shared_ptr<Window> updated_window);
   void recomposite_all();
+  // Re-render from the already-uploaded intermediate texture + menu bar only.
+  // Much cheaper than recomposite_all() — no CPU framebuffer work, pure GPU.
+  void redraw_menu_bar_only();
 
   inline sdl_window_shared get_sdl_window() const {
     return this->sdl_window;
