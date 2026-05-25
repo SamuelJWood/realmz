@@ -5,6 +5,7 @@
 #include "MenuController.h"
 #include "MenuManager-C-Interface.h"
 #include "ResourceManager.h"
+#include "SDLMenuBar.hpp"
 #include "StringConvert.hpp"
 #include "WindowManager.hpp"
 #include <algorithm>
@@ -97,7 +98,8 @@ public:
 
   void sync(void) {
     if (this->cur_menu_list != nullptr) {
-      MCSync(this->cur_menu_list, &PushMenuEvent);
+      SDLMenuBar::instance().sync(this->cur_menu_list);
+      // MCSync no longer needed — SDLMenuBar handles all menu display
     }
   }
 
@@ -542,4 +544,8 @@ void Realmz_InsertSubmenuItem(MenuHandle theMenu, ConstStr255Param title, int16_
   item.mark_character = static_cast<char>(subMenuID);
   item.enabled = true;
   menu->items.insert(menu->items.begin() + afterItem, item);
+}
+
+int32_t MenuManager_FindItemByKeyEquivalent(char ch) {
+  return mm.find_item_by_key_equivalent(ch);
 }

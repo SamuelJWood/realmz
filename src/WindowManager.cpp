@@ -23,6 +23,7 @@
 #include "QuickDraw.h"
 #include "QuickDraw.hpp"
 #include "ResourceManager.h"
+#include "SDLMenuBar.hpp"
 #include "StringConvert.hpp"
 #include "Types.hpp"
 
@@ -961,7 +962,7 @@ void WindowManager::create_sdl_window() {
 
   static constexpr size_t w = 800;
   static constexpr size_t h = 600;
-  this->sdl_window = sdl_make_shared(SDL_CreateWindow("Realmz", w, h, SDL_WINDOW_RESIZABLE));
+  this->sdl_window = sdl_make_shared(SDL_CreateWindow("Realmz", w, h + SDLMenuBar::MENUBAR_HEIGHT, SDL_WINDOW_RESIZABLE));
   if (!this->sdl_window) {
     throw std::runtime_error(std::format("Could not create SDL window: {}", SDL_GetError()));
   }
@@ -1213,10 +1214,14 @@ void WindowManager::recomposite(std::shared_ptr<Window> updated_window) {
       // Compute letterbox content rect in physical window pixels.
       int pw, ph;
       SDL_GetWindowSizeInPixels(this->sdl_window.get(), &pw, &ph);
-      float scale = std::min(static_cast<float>(pw) / 800.0f, static_cast<float>(ph) / 600.0f);
+      int menu_reserve = SDLMenuBar::reserved_top_pixels(this->m_fullscreen);
+      float available_h = static_cast<float>(ph - menu_reserve);
+      float scale = std::min(static_cast<float>(pw) / 800.0f, available_h / 600.0f);
       float cw = 800.0f * scale;
       float ch = 600.0f * scale;
-      this->content_rect = {(static_cast<float>(pw) - cw) / 2.0f, (static_cast<float>(ph) - ch) / 2.0f, cw, ch};
+      float cx = (static_cast<float>(pw) - cw) / 2.0f;
+      float cy = static_cast<float>(menu_reserve) + (available_h - ch) / 2.0f;
+      this->content_rect = {cx, cy, cw, ch};
 
       // Upload 800×600 framebuffer to source texture.
       SDL_UpdateTexture(this->source_texture.get(), nullptr,
@@ -1232,6 +1237,17 @@ void WindowManager::recomposite(std::shared_ptr<Window> updated_window) {
       SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
       SDL_RenderClear(renderer);
       SDL_RenderTexture(renderer, this->intermediate_texture.get(), nullptr, &this->content_rect);
+
+      // Drive menu bar animation and draw overlay.
+      {
+        float cursor_x, cursor_y;
+        SDL_GetMouseState(&cursor_x, &cursor_y);
+        uint64_t now_ms = SDL_GetTicks();
+        float dt = std::min((now_ms - this->last_recomposite_ms) / 1000.0f, 0.1f);
+        this->last_recomposite_ms = now_ms;
+        SDLMenuBar::instance().update(dt, static_cast<int>(cursor_y), this->m_fullscreen);
+        SDLMenuBar::instance().draw(renderer, pw, ph, this->m_fullscreen);
+      }
 
       SDL_RenderPresent(renderer);
       SDL_SyncWindow(this->sdl_window.get());
@@ -1278,6 +1294,10 @@ void WindowManager::window_to_logical(float wx, float wy, float& lx, float& ly) 
 void WindowManager::toggle_fullscreen() {
   this->m_fullscreen = !this->m_fullscreen;
   SDL_SetWindowFullscreen(this->sdl_window.get(), this->m_fullscreen);
+  SDLMenuBar::instance().on_fullscreen_changed(this->m_fullscreen);
+  if (!this->m_fullscreen) {
+    SDL_SetWindowSize(this->sdl_window.get(), 800, 600 + SDLMenuBar::MENUBAR_HEIGHT);
+  }
 }
 
 bool WindowManager::fullscreen_active() const {
@@ -1428,6 +1448,7 @@ void WindowManager_Init(void) {
   TTF_Init();
 
   init_fonts();
+  SDLMenuBar::instance().init(get_chicago_font());
 }
 
 WindowPtr WindowManager_CreateNewWindow(int16_t res_id, bool is_dialog, WindowPtr behind) {

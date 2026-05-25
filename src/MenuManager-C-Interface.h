@@ -44,6 +44,8 @@ void GetItemMark(MenuHandle theMenu, int16_t item, int16_t* markChar);
 void SetItemStyle(MenuHandle theMenu, int16_t item, int16_t style);
 void SetItemDescription(MenuHandle theMenu, int16_t item, const char* description);
 const char* GetDescriptionFromFile(const char* item_name);
+// Returns (menu_id << 16) | item_idx_0based, or 0 if not found.
+int32_t MenuManager_FindItemByKeyEquivalent(char ch);
 
 #ifdef __cplusplus
 }

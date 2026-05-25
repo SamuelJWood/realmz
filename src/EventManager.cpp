@@ -6,6 +6,7 @@
 #include <deque>
 #include <phosg/Strings.hh>
 
+#include "SDLMenuBar.hpp"
 #include "Types.hpp"
 #include "WindowManager.hpp"
 
@@ -417,6 +418,15 @@ protected:
   }
 
   void enqueue_sdl_event(const SDL_Event& e) {
+    // Give the SDL menu bar first refusal on all events.
+    {
+      bool fs = WindowManager::instance().fullscreen_active();
+      int win_w = 0, win_h = 0;
+      SDL_GetWindowSizeInPixels(WindowManager::instance().get_sdl_window().get(), &win_w, &win_h);
+      if (SDLMenuBar::instance().handle_event(e, fs, win_w, win_h)) {
+        return;
+      }
+    }
     switch (e.type) {
       // TODO: Handle any cleanup of specific window that was closed
       //  case SDL_EVENT_WINDOW_CLOSE_REQUESTED:

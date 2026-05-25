@@ -56,6 +56,10 @@ Font load_font(int16_t font_id) {
   }
 }
 
+TTF_Font* get_chicago_font() {
+  return tt_fonts_by_id.at(CHICAGO_FONT_ID);
+}
+
 void set_font_style(TTF_Font* font, int16_t face) {
   TTF_FontStyleFlags styles{TTF_STYLE_NORMAL};
 

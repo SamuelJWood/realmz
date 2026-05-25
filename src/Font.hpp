@@ -19,3 +19,4 @@ void init_fonts();
 Font load_font(int16_t font_id);
 void set_font_style(TTF_Font* font, int16_t face);
 std::string replace_param_text(const std::string& text);
+TTF_Font* get_chicago_font();

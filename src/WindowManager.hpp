@@ -109,6 +109,7 @@ private:
 
   // Letterbox content rect in physical window pixels (updated each recomposite)
   SDL_FRect content_rect = {0, 0, 800, 600};
+  uint64_t last_recomposite_ms = 0;
 
   WindowManager();
 

@@ -228,6 +228,7 @@ set(SOURCES
     src/QuickDraw.cpp
     src/ResourceManager.cpp
     src/SDLHelpers.cpp
+    src/SDLMenuBar.cpp
     src/MusicManager.cpp
     src/SoundManager.cpp
     src/WindowManager.cpp
