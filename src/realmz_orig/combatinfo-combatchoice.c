@@ -38,8 +38,7 @@ void combatinfo(short tempold) {
   }
   bodyground(tempold, 0);
   drawbody(tempold, 0, 0);
-  if (inspell)
-    combatupdate2(charup); /*** snaps back to char ****/
+  combatupdate2(charup); /*** snaps back to char ****/
   infocombat = FALSE;
   FlushEvents(everyEvent, 0);
 
