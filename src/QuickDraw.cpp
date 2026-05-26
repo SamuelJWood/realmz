@@ -822,6 +822,26 @@ CIconHandle GetCIcon(uint16_t iconID) {
   }
   auto decoded_cicn = ResourceDASM::ResourceFile::decode_cicn(*data_handle, GetHandleSize(data_handle));
 
+  // Apply the 1-bit icon bitmap as a transparency mask.
+  // Only do this when the bitmap has data and matches the image dimensions;
+  // portraits and other icons without a bitmap section have a 0×0 bitmap, and
+  // reading from it produces vertical transparency stripes due to row_bytes=0.
+  {
+    int iw = static_cast<int>(decoded_cicn.image.get_width());
+    int ih = static_cast<int>(decoded_cicn.image.get_height());
+    int bw = static_cast<int>(decoded_cicn.bitmap.get_width());
+    int bh = static_cast<int>(decoded_cicn.bitmap.get_height());
+    if (bw == iw && bh == ih && bw > 0) {
+      for (int y = 0; y < ih; y++) {
+        for (int x = 0; x < iw; x++) {
+          if (phosg::get_a(decoded_cicn.bitmap.read(x, y)) == 0) {
+            decoded_cicn.image.write(x, y, 0x00000000);
+          }
+        }
+      }
+    }
+  }
+
   CIconHandle h = NewHandleTyped<CIcon>();
   (*h)->iconData = NewHandleWithData(decoded_cicn.image.get_data(), decoded_cicn.image.get_data_size());
   (*h)->bitmapData = NewHandleWithData(decoded_cicn.bitmap.get_data(), decoded_cicn.bitmap.get_data_size());
