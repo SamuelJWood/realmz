@@ -33,7 +33,7 @@ Huge iron doors loom in front of you.  Seemingly impenetrable, these massive iro
 One guard steps forward, "Please greet the mayor at the town hall at your earliest convenience.  The town hall is a large building due north of here.  He will be waiting for you."  They close the massive doors behind you.
 
 ### SD2:9
-The town guards peer through the slits crafted into the door and after mutual agreement that you pose little threat to them,  open the door.
+The town guards peer through the slits crafted into the door and after mutual agreement that you pose little threat to them, open the door.
 
 ### SD2:10
 A massive battle is raging in front of you.  Two groups of humans are having it out in an all out melee.  Who will you join?
@@ -42,7 +42,7 @@ A massive battle is raging in front of you.  Two groups of humans are having it 
 The battle rages on and on.  One by one men scream and die.  The carnage is unbearable.  But as life goes, so does death.  The shorter group prevails, and the lone survivor speaks to you.
 
 ### SD2:12
-"Cowards.  How could you let us die at the hands of the evil Griloch!  Have you no honor?  My men died valiently fighting to defeat this disgusting band of roaming death.  This was a small victory, for our force is weak and theirs is growing..."
+"Cowards.  How could you let us die at the hands of the evil Griloch!  Have you no honor?  My men died valiantly fighting to defeat this disgusting band of roaming death.  This was a small victory, for our force is weak and theirs is growing..."
 
 ### SD2:13
 ...in strength.  Why did you not help us?"
@@ -57,7 +57,7 @@ You have defeated the taller humanoids.
 You have defeated the shorter humanoids.
 
 ### SD2:17
-You have defeated the mish mash of humanoids and have the pick of their collective equipment.
+You have defeated the mish-mash of humanoids and have the pick of their collective equipment.
 
 ### SD2:18
 A cleric of Berhune approaches and speaks, "Welcome to the holy temple of Berhune travelers.  You are welcome to partake of our healing skills if you wish.  May peace and harmony guide your course."
@@ -81,7 +81,7 @@ You prevail over your taller adversaries.  The commander of the shorter group ap
 You have defeated the shorter group.  The leader of the taller group approaches you.  "I am Granshuk of the Griloch.  You weak people make me ill.  We do not need or want your help.  Why you joined us is a mystery.  Still, you proved yourself in...
 
 ### SD2:25
-...battle and for that you are to be praised.  I personally thought you would get in the way of our easy destruction of the Berhune.  HA!  You are a mangy bunch.  Take this medallion so all will know where your allegience lies."  Granshuk stalks off.
+...battle and for that you are to be praised.  I personally thought you would get in the way of our easy destruction of the Berhune.  HA!  You are a mangy bunch.  Take this medallion so all will know where your allegiance lies."  Granshuk stalks off.
 
 ### SD2:26
 "All right.  Thank you for your help and may Berhune bless your every thought."  The smallish humanoid walks away, visibly disappointed.
@@ -126,7 +126,7 @@ You are weak at best.  You fail in your attempt to smash open the box.
 The box is still closed (and still locked.)
 
 ### SD2:40
-The lock pops open, revealing teasure.
+The lock pops open, revealing treasure.
 
 ### SD2:41
 Who will attempt this?
@@ -153,7 +153,7 @@ The stench of this place is overwhelming.  Bones and offal fill this room.  You 
 Do you want to go back up the narrow passage?
 
 ### SD2:49
-An immense wrought iron door looms between you and what lies beyond.  The door is barred on this side.  Faint growlings can be heard from beyond.  Would you like to open the door now?
+An immense wrought iron door looms between you and what lies beyond.  The door is barred on this side.  Faint growling can be heard from beyond.  Would you like to open the door now?
 
 ### SD2:50
 The passage beyond the door is even more disgusting than the room you just came from.  You are barely able to breathe.
@@ -171,7 +171,7 @@ A huge pile of dung displays an unusual bulge.  Would you like to investigate?
 After digging through the offal for what seems an eternity, you discover a locked box.
 
 ### SD2:55
-This door is unlocked and open.  Dark passages extend in both directins from it.
+This door is unlocked and open.  Dark passages extend in both directions from it.
 
 ### SD2:56
 You enter the guard house and find ten men-at arms playing cards.  It seems the cards are not being too kind to the guard you met at the town hall, Riter.  He yells, "Marnin, you cheat!  There is no way you can have five skulls in one hand!"....
@@ -207,7 +207,7 @@ The "Rotting Corpse Inn".  As the name suggests, it does not look at all invitin
 Inside the Rotting Corpse is spectacular.  Dark oaken woodwork is highlighted by a roaring fireplace set deep into the far wall.  The place is packed with customers, all of which are either stuffing their face or swilling the local brew....
 
 ### SD2:67
-A waitress aproaches.  "Hello, my name is Tresandra and I will help you with whatever you desire.  Do you need menus?"
+A waitress approaches.  "Hello, my name is Tresandra and I will help you with whatever you desire.  Do you need menus?"
 
 ### SD2:68
 "No, okay.  Then you must be ready to order.  What will you have?"
@@ -237,7 +237,7 @@ worry even myself.  I have the finest guard in the land and yet we cannot guaran
 "Promise me you will report back to me anything strange that you have found.  Will you promise me that?"
 
 ### SD2:77
-Hodar's face relaxes just a bit.  "Good, I hope your travels are safe and fortuitus.  Remember your oath.  Report back to me upon your return to Mountain View."  He sits down and lights his favorite pipe, puffing away pensively.
+Hodar's face relaxes just a bit.  "Good, I hope your travels are safe and fortuitous.  Remember your oath.  Report back to me upon your return to Mountain View."  He sits down and lights his favorite pipe, puffing away pensively.
 
 ### SD2:78
 "I am sorry to hear that.  I hope your journey brings you what you seek.  Good day."  Hodar's face is heavy as he sits down and pours himself a tall glass of ale.
@@ -252,7 +252,7 @@ A man of large girth and equally large smile invites you into his store.  "Come 
 The guards wish you good luck on your travels as the gate swings shut behind you.  You hear a smattering of well wishers as you leave the city behind.
 
 ### SD2:82
-The guards try and act casual but you easily percieve they are glad to see you again.  "Welcome back."  It is Riter.  He is very glad to see you.  "The mayor is waiting to hear of your adventures.  Would you like to see him now?"
+The guards try and act casual but you easily perceive they are glad to see you again.  "Welcome back."  It is Riter.  He is very glad to see you.  "The mayor is waiting to hear of your adventures.  Would you like to see him now?"
 
 ### SD2:83
 "That's all right, he will be there workin' hard per usual.  See ya 'round.  I'm gonna go catch up on me readin'."  Riter wanders off to make a feeble attempt at improving himself.
@@ -270,7 +270,7 @@ One of the mayor's aides greets you.  "Do you wish to register with the mayor an
 Tresandra approaches.  "Back again?  You just can't get enough of my company, can you?"  Do you need menus of today's special?
 
 ### SD2:88
-"Here you are."  She hurries off to handle some complaint about orc hair in the lamb plate.  The menu contains many  tempting dishes.  Leg of lamb, roasted chicken with spiced potatos, charred trout with lemon sauce, to name a few.....
+"Here you are."  She hurries off to handle some complaint about orc hair in the lamb plate.  The menu contains many  tempting dishes.  Leg of lamb, roasted chicken with spiced potatoes, charred trout with lemon sauce, to name a few.....
 
 ### SD2:89
 You turn the page to investigate the desert section when a piece of paper falls out of the menu and onto your lap.  It is from Tresandra.  "Please help.  Meet me at the island as soon as you can.  I can't explain now, but I need your help."
@@ -306,10 +306,10 @@ You hear a man reading from a letter as he writes it.  "Dear Safeera, Thank you 
 Serene and quiet lake Shobe is pleasing to the eyes.  Clean clear water laps at the sandy beach as you find nothing much to do here except relax.
 
 ### SD2:100
-"Excellent choice!  All meals are served for the entire table and come with spiced potatos and mixed vegetables.  I will be back with you shortly."  Tresandra looks you over as she leaves with a worried look on her face.
+"Excellent choice!  All meals are served for the entire table and come with spiced potatoes and mixed vegetables.  I will be back with you shortly."  Tresandra looks you over as she leaves with a worried look on her face.
 
 ### SD2:101
-Tresandra returns quickly.  "Here you are good people.  Please pay me when you are through."  She stuffs your table with lamb, mixed veggies, white wine and spiced potatos which fill your noses with delight.  The meal is excellent.  Well worth the price.
+Tresandra returns quickly.  "Here you are good people.  Please pay me when you are through."  She stuffs your table with lamb, mixed veggies, white wine, and spiced potatoes which fill your noses with delight.  The meal is excellent.
 
 ### SD2:102
 After the meal you summon Tresandra to settle up.  "Thank you good people for stopping in.  Who will be accepting the check?"
@@ -318,28 +318,28 @@ After the meal you summon Tresandra to settle up.  "Thank you good people for st
 "Thank you again!  I hope to see you again very soon!"  Tresandra bids you good day and quickly returns to her work.
 
 ### SD2:104
-Tresandra returns quickly.  "Here you are good people.  Please pay me when you are through."  She stuffs your table with ribs, mixed veggies, ale and spiced potatos which fill your noses with delight.  The meal is excellent.  Well worth the price.
+Tresandra returns quickly.  "Here you are good people.  Please pay me when you are through."  She stuffs your table with ribs, mixed veggies, ale, and spiced potatoes which fill your noses with delight.  The meal is excellent.  Well worth the price.
 
 ### SD2:105
-Tresandra returns quickly.  "Here you are good people.  Please pay me when you are through."  She stuffs your table with fresh trout, mixed veggies, mead and spiced potatos which fill your noses with delight.  The meal is excellent.  Well worth the price.
+Tresandra returns quickly.  "Here you are good people.  Please pay me when you are through."  She stuffs your table with fresh trout, mixed veggies, mead, and spiced potatoes which fill your noses with delight.  The meal is excellent.
 
 ### SD2:106
-Tresandra returns quickly.  "Here you are good people.  Please pay me when you are through."  She stuffs your table with chicken, mixed veggies, ale and spiced potatos which fill your noses with delight.  The meal is excellent.  Well worth the price.
+Tresandra returns quickly.  "Here you are good people.  Please pay me when you are through."  She stuffs your table with chicken, mixed veggies, ale, and spiced potatoes which fill your noses with delight.  The meal is excellent.  Well worth the price.
 
 ### SD2:107
-Tresandra is here, obviosly rushed.  "My father.  You must help my father.  He is a good man, but the Griloch are too powerful.  They say they will take everything he has if he does not help them.  So he pays them.  He does bad things.......
+Tresandra is here, obviously rushed.  "My father.  You must help my father.  He is a good man, but the Griloch are too powerful.  They say they will take everything he has if he does not help them.  So he pays them.  He does bad things.......
 
 ### SD2:108
 Please.  I know where one group of the Griloch are hiding.  Take this map and kill them all.  Please kill all of them and my father may have a chance."  Will you agree to help Tresandra?
 
 ### SD2:109
-"Thank you, thank you.  Meet me back at the bar when you are done with them.  Here, take ths map.  And good luck!"  She trots off happily, having nothing but hope to hang on to.
+"Thank you, thank you.  Meet me back at the bar when you are done with them.  Here, take this map.  And good luck!"  She trots off happily, having nothing but hope to hang on to.
 
 ### SD2:110
-"No?  You people disgust me.  This town is living in quiet fear and you do nothing?  What kind of people are you?"  She runs off crying.  I do not think you will be so warmly received at the Rotting Corpse Inn when you are hungry next.
+"No?  You people disgust me.  This town is living in quiet fear and you do nothing?  What kind of people are you?"  She runs off crying.  You don't think you will be so warmly received at the Rotting Corpse Inn the next time you are hungry.
 
 ### SD2:111
-Tresandra barely acknowledges your existance.  She forces a smile and seats you.  "You don't need menus, so what do you want?"
+Tresandra barely acknowledges your existence.  She forces a smile and seats you.  "You don't need menus, so what do you want?"
 
 ### SD2:112
 "Excellent choice.  I will return shortly."  As soon as she leaves she is back again.  "Here you are.  I will see you later.  Call me when you are finished."  The meal is excellent as usual.  You finish it off and call over Tresandra.......
@@ -348,13 +348,13 @@ Tresandra barely acknowledges your existance.  She forces a smile and seats you.
 "I hope you enjoyed it."  She winks at you, "This one is on the house."
 
 ### SD2:114
-You don't know the specials so here, take these menus and read them carefully.  Make sure and look at the desert section as well.  I will return shortly."  She scurries off.
+You don't know the specials so here, take these menus and read them carefully.  Make sure and look at the dessert section as well.  I will return shortly."  She scurries off.
 
 ### SD2:115
-You grab the menus and start looking.  Tasty fare tempts you.  Lamb shank, charred trout with lemon sauce are but a couple of the delicious selections available.
+You grab the menus and start looking.  Tasty fare tempts you.  Lamb shank and charred trout with lemon sauce are but a couple of the delicious selections available.
 
 ### SD2:116
-Tresandra throws the food on the table.  All dishes come with water....just for you. I will return when you are through."  She stalks off.  You done the bland selection and she returns.  "Who is paying for this?"
+Tresandra throws the food on the table.  All dishes come with water....just for you. I will return when you are through."  She stalks off.  You down the bland selection and she returns.  "Who is paying for this?"
 
 ### SD2:117
 "Good day."
@@ -366,7 +366,7 @@ A waitress approaches.  "My name is Bertrase.  I will help you today.  Tresandra
 "Okay.  Be right back."  She rushes off.  What seems like an eternity passes and she finally returns.  The meal is cold, having sat around a while.  You miss Tresandra's service.  You down the stuff and call her back.
 
 ### SD2:120
-"Who will be paying? "
+"Who will be paying?"
 
 ### SD2:121
 "Thank you and have a good day."  You head out wishing Tresandra was here and you suddenly remember she is waiting to meet you at the island.
@@ -384,7 +384,7 @@ The mood in the bar has changed.  No longer are there happy patrons laughing and
 You spot a small patrol of Griloch in the distance.  Would you like to attack them?
 
 ### SD2:126
-Tresandra intrcepts you at the door.  "I see you have not yet finished your quest.  Keep up the good work.  My father is becomming suspicious so please hurry."
+Tresandra intercepts you at the door.  "I see you have not yet finished your quest.  Keep up the good work.  My father is becoming suspicious so please hurry."
 
 ### SD2:127
 Tresandra heads you off at the door.  "I hope all is going well.  My father is getting deeper and deeper in this mess.  Please hurry, time is running out."
@@ -408,7 +408,7 @@ Two guards spot you and attack.  But not before sounding the alarm!
 She can barely thank you as grief overcomes her.  "I will await your return here when you find and rescue them."
 
 ### SD2:134
-"You will not!?!  You are the reason they have been lost.  It is all yur fault.  You are not welcome here and I will see to it that you are not welcome in this town!"  She slams the door shut in your face.
+"You will not!?!  You are the reason they have been lost.  It is all your fault.  You are not welcome here and I will see to it that you are not welcome in this town!"  She slams the door shut in your face.
 
 ### SD2:135
 Dolora notices you before you can get in the door and slams it shut in your face.  "You have not returned my daughter and husband!  You will not even try.  You are worthless!  Stay out!"  She slams the door again.
@@ -438,7 +438,7 @@ You easily dispatch the two sentries.  Hopefully no one will answer the alarm to
 This position has been reinforced with a larger contingent of guards.  They attack!
 
 ### SD2:144
-Hopefully the next bunch will be of lessor numbers!
+Hopefully the next bunch will be of lesser numbers!
 
 ### SD2:145
 Bodies have been removed, but the stains of battle remain.  The guards have not been replaced yet.
@@ -453,7 +453,7 @@ You cannot hear anything.
 ...may not be able to write you again.  I am including a map of where I believe the main Griloch stronghold to be.                 Godspeed,                                                        Thyrr
 
 ### SD2:149
-"Apology accepted.  Please, come in."  The huge man introduces himself, "I am Thyrr, Slayer of Blue dragons.  I was once an adventurer like yourselves, but now I am called higher.  I serve my God, and no one else.  So what brings you to our city?"
+"Apology accepted.  Please, come in."  The huge man introduces himself, "I am Thyrr, Slayer of Blue Dragons.  I was once an adventurer like yourselves, but now I am called higher.  I serve my God, and no one else.  So what brings you to our city?"
 
 ### SD2:150
 The shoreline is too cluttered to continue.  You must turn back.
@@ -507,10 +507,10 @@ An empty storage room.  Dust covers the floor.  Someone forgot to lock the door.
 Several types of weapons and shields are stored here.  A sign on the wall reads, "REMEMBER to LOCK THE DOOR!!!"
 
 ### SD2:167
-There was a reason this door was doubly protected.  The captains treasure is stored here.
+There was a reason this door was doubly protected.  The captain's treasure is stored here.
 
 ### SD2:168
-You have set off a trap!  Your hair stands on end as you smell more than hear the crackling of lightning!
+You have set off a trap!  Your hair stands on end as you smell, more than hear, the crackling of lightning!
 
 ### SD2:169
 This ornate door is locked.  No keyhole is present, but a horizontal slit is visible about 2 inches below the doorknob.  The slit is 1/4" thick and 3" in length.  You sense a strong aura of magic from this door.
@@ -549,7 +549,7 @@ Thyrr exclaims, "You have done it!  All is now ready."  Retyu, Cindred, Zulea, L
 "A very unwise decision.  I thought you were the men of valor and honor sent by my gods to help these people.  But now I see you are but a test of my mettle and dedication to good.  For who would attack a man in his own doorway?!"
 
 ### SD2:181
-Thyrr is defeated.  In his dying breaths he whispers something.  The sky grows dark and you wonder what curse he has put upon you.  You then realize the sun is blotted out by the immense wings of Thyrr's allies, the gold dragons!  They attack!
+Thyrr is defeated.  In his dying breaths he whispers something.  The sky grows dark and you wonder what curse he has put upon you.  You then realize the sun is blotted out by the immense wings of Thyrr's allies, the Gold Dragons!  They attack!
 
 ### SD2:182
 Having defeated Thyrr's allies, the gods frown on you as evil and disgusting.  A booming voice erupts through the clouds, "You shall pay for this sacrilege.  None of you will benefit from this.  You will remain cursed as long as you walk this plane."
@@ -588,7 +588,7 @@ A dark cave heads off in a southerly direction, but it does not smell very good.
 A large cave is to the north, a tight, smaller cave is to the south.
 
 ### SD2:194
-You discover the reason for the stench.  A couple of immense creatures loom out of the dark in front of you.  They sniff the air, get your scent and attack immedietly.
+You discover the reason for the stench.  A couple of immense creatures loom out of the dark in front of you.  They sniff the air, get your scent and attack immediately.
 
 ### SD2:195
 Three big but dead bodies are here amongst the filth they once lived in.
@@ -618,7 +618,7 @@ Finally, fresh air.  Having defeated the monsters in their lair you gain some co
  Two rocks slightly overlapping with one three feet in front of the other offered an interesting illusion.  You discover that the trail branches off to the west, and the smell gets stronger and the darkness seems darker.
 
 ### SD2:204
-A trail heads off west and a trail heads northeat.
+A trail heads off west and a trail heads northeast.
 
 ### SD2:205
 A medium sized cave opens to the south and a narrow cave winds its way to the east.  A very strong smell wafts to your nostrils from the south.
@@ -654,7 +654,7 @@ Thyrr follows you out of the doorway and eyes you carefully.  His long look make
 "My name is Thyrr.  I have heard of you people.  It has been told to me that you would come.  But curiosity gnaws at me.  If you pardon my asking, what brings you to Mountain View?"
 
 ### SD2:216
-Thyrr is a mighty opponent.  You realize as his sword falls upon you that you may have made a grievous error in judgement.
+Thyrr is a mighty opponent.  You realize as his sword falls upon you that you may have made a grievous error in judgment.
 
 ### SD2:217
 A staircase is well hidden behind a rockface.  Would you like to descend?
@@ -666,7 +666,7 @@ Marnin gladly takes Riter's money and deals another hand of cards.  The other gu
 You call Marnin on his obvious cheating.  He is obviously offended.  "Who are you to  interrupt a friendly game of cards?  I suggest you all leave before I get upset with this intrusion."  Do you wish to leave?
 
 ### SD2:220
-"A wise choice.  Think twice before you make another foolish decision that may cost you more than embarrasement."  The other guards have a good laugh at your expense as Marnin closes the door to the guardhouse.
+"A wise choice.  Think twice before you make another foolish decision that may cost you more than embarrassment."  The other guards have a good laugh at your expense as Marnin closes the door to the guardhouse.
 
 ### SD2:221
 "A foolish choice.  Since you choose not to leave, I must teach you a lesson.  I am a gentleman.  Therefore, I  challenge you to a battle of honor as laid out in Mountain View law.  I will even sweeten the offer.  If you win I will give you....
@@ -705,10 +705,10 @@ Well, if you wanted to try it!
 Ooooh, you sneak up on the landslide.  You do have mighty skills.
 
 ### SD2:233
-What a grizzly sight.  Behind this group of rocks rests the remains of a party of adventurers.  Six in total, their hollow cheeks still covered with patches of yellowish flesh.  The remaining flesh is so tight on the bones it loooks as though....
+What a grizzly sight.  Behind this group of rocks rests the remains of a party of adventurers.  Six in total, their hollow cheeks still covered with patches of yellowish flesh.  The remaining flesh is so tight on the bones it looks as though....
 
 ### SD2:234
-....all the fluid has been drained from the bodies.  Some of this parties supplies, weapons and armor is still intact.  It is old and uncomfortable, but will do in a pinch.
+....all the fluid has been drained from the bodies.  Some of this party's supplies, weapons and armor is still intact.  It is old and uncomfortable, but will do in a pinch.
 
 ### SD2:235
 Deep in the heart of the Bnoren jungle you hear something.  Not sure at first if it is just the breeze.  No, it is a definite whisper.  "If you are believers in Berhune, follow my voice to your salvation."  The voice is coming from the south.
@@ -747,7 +747,7 @@ You have completed quest 2.
 ...all of Riter's 100 gold back.  Do you accept the challenge and take on Marnin and his men?
 
 ### SD2:247
-Riter comes up to you and speaks, "Thank you for defending me.  Some people say I ain't thebrightest guy in the place, but I am one of the most loyal.  You have my loyalty always."  You return the 100 g.p. and move on.
+Riter comes up to you and speaks, "Thank you for defending me.  Some people say I ain't the brightest guy in the place, but I am one of the most loyal.  You have my loyalty always."  You return the 100 g.p. and move on.
 
 ### SD2:248
 Riter looks shocked.  "You don't have my gold?  How could you lose it?  I guess you do not deserve my loyalty after all.  Good day."  Riter wanders away.
@@ -759,7 +759,7 @@ Riter looks shocked.  "You don't have my gold?  How could you lose it?  I guess 
 On the back of the tombstone someone has scribbled, "Hodar wears women's perfume."
 
 ### SD2:251
-This area is guarded by three Griloch fighters and a lieutenent.  They are much bigger than the other Griloch you have encountered before.  They fight vigorously defending this part of the complex.
+This area is guarded by three Griloch fighters and a lieutenant.  They are much bigger than the other Griloch you have encountered before.  They fight vigorously defending this part of the complex.
 
 ### SD2:252
 Beyond the bodies you see a huge iron door.  The slits in the door allow you to note a long hallway with heavy iron doors running the length of both sides.  More guards are on the other side.
@@ -792,13 +792,13 @@ Tremendous creatures lumber out of a nearby cave.  They attack!
 A tremendous roar is bellowed as these beasts go meet their maker!
 
 ### SD2:262
-A dank and empty cave.  Your light receals that this is the obvious home to some very large creatures.  Luckily, they are not here.
+A dank and empty cave.  Your light reveals that this is obviously the home of some very large creatures.  Luckily, they are not here.
 
 ### SD2:263
-A maurauding pack of wild animals gets your scent and attacks.
+A marauding pack of wild animals gets your scent and attacks.
 
 ### SD2:264
-A short guard approaches you.  He looks quite different from the taller looking humans you have seen to date.  "You do not bear the necklace of Berhune!  Infidels!  Traitors!  Sabatours!"  He and his men attack.
+A short guard approaches you.  He looks quite different from the taller looking humans you have seen to date.  "You do not bear the necklace of Berhune!  Infidels!  Traitors!  Saboteurs!"  He and his men attack.
 
 ### SD2:265
 A Berhune guard approaches, "Hurry up, hurry up.  Get in here and close the door.  I see by the necklace you bear that you are followers of Berhune.  You may rest here anytime you wish.  We also have a well stocked supply room which you...
@@ -813,10 +813,10 @@ The Berhune sleeping quarters.  A few cots are here and there, but you can tell 
 The captains quarters and office.  Two guards flank the doorway to the left and right.  The captain is seated directly across from you behind a huge oaken desk.  He barely acknowledges your presence.  One of the guards clears...
 
 ### SD2:269
-...his throat and the captain looks up.  "Oh, excuse me gentlemen.  So much to do these days.  My name is Terderas.  I am the captain in commmand of this secret garrison.  Our mission is to monitor the Griloch movements and discover if they...
+...his throat and the captain looks up.  "Oh, excuse me gentlemen.  So much to do these days.  My name is Terderas.  I am the captain in command of this secret garrison.  Our mission is to monitor the Griloch movements and discover if they...
 
 ### SD2:270
-...are acting alone or not.  Some of us beleive they are actually being ordered by someone higher.  Others beleive they are a loose band of thugs bent on following the Griloch Shaman Klorenz.  I am not sure as of yet, but I will find out.  Our second...
+...are acting alone or not.  Some of us believe they are actually being ordered by someone higher.  Others believe they are a loose band of thugs bent on following the Griloch Shaman Klorenz.  I am not sure as of yet, but I will find out.  Our second...
 
 ### SD2:271
 ...objective is to quietly dispose of as many Griloch as we can without being detected.  As a matter of fact, I am sending our men to eliminate a storeroom full of Griloch right now.  Pay is 3000gp.  Care to join them?
@@ -837,7 +837,7 @@ You meet the Captains men here as you promised.  The largest of the small men sp
 The two guards at this post attack, as does the captain who was sitting across from you behind a large desk.  You overhear the captain as he rushes toward you, "We've been found out!  Men, we need help in here!"  His men respond.
 
 ### SD2:277
-...attrocities against good people like those at Mountain View.  We will prevail in this battle!"  His men rally at his speech.  You too are moved by his sincerity.  You move against the Griloch.
+...atrocities against good people like those at Mountain View.  We will prevail in this battle!"  His men rally at his speech.  You too are moved by his sincerity.  You move against the Griloch.
 
 ### SD2:278
 "Guards, Guards!  We have been discovered!  Attack!"  More guards rush to attack you.
@@ -849,7 +849,7 @@ You spot a patrol of wandering Griloch.  They have not spotted you.  Would you l
 A group of guards nod at you as you pass them in the hallway.
 
 ### SD2:281
-A large contigent of Berhune are here.  There are several stockpiles of equipment and food, all of which is being checked in by one of the guards.
+A large contingent of Berhune are here.  There are several stockpiles of equipment and food, all of which is being checked in by one of the guards.
 
 ### SD2:282
 A Cleric of Berhune greets you warmly, "Friends.  Welcome to our temple.  What may I help you with?"
@@ -873,13 +873,13 @@ A tiny cave entrance is here.  You hear loud human discussions coming from withi
 You hear the discussion change from that of which town this group of thugs is going to attack next to that of how they will dispatch of you.  You discover they are going to set up an ambush in a nearby meadow and catch you off guard.
 
 ### SD2:289
-Would you like to spoil there plans and attack them, or leave this place?
+Would you like to spoil their plans and attack them, or leave this place?
 
 ### SD2:290
 You follow them quietly to the meadow where you foil the ambush!
 
 ### SD2:291
-The battle is on.  The thieves are in total dissarray and confused.  Some ambush!
+The battle is on.  The thieves are in total disarray and confused.  Some ambush!
 
 ### SD2:292
 You hear nothing.
@@ -894,7 +894,7 @@ On the now dead body of the monk you find a map.
 A beautiful meadow just happens to be littered with dead, mauled bodies.
 
 ### SD2:296
-The snake pass.  Rumor has it that this winding passage is home to some rather inhospitible beasts.  People avoid it at all costs.
+The snake pass.  Rumor has it that this winding passage is home to some rather inhospitable beasts.  People avoid it at all costs.
 
 ### SD2:297
 Sleeping quarters.  Presently no one is here.
@@ -912,7 +912,7 @@ A lone guard attacks with all of his gusto!  Too bad for him it isn't very much.
 "Friends, you may move on."  A lone guard lets you pass seeing you wear the Necklace of Griloch.
 
 ### SD2:302
-The lieutenents sleeping room.  He is currently not here.  There is a roll-top desk, bed, chair, and chest in the room.
+The lieutenants sleeping room.  He is currently not here.  There is a roll-top desk, bed, chair, and chest in the room.
 
 ### SD2:303
 Success.  When you twist and pull on the handle of the right bottom drawer, the entire handle slides out like a tube.  Twisting the handle further removes the lid.  Inside the tube are some papers and a map.
@@ -927,7 +927,7 @@ The papers are hand written notes.  They read, "Brinham,  Things are proceeding 
 ...trying to figure out what we are up to and destroy us.  What foolishness.  That old man has taken one too many head blows!  We will crush anyone who attempts to get in our way.  Continue your good work.  Regards,  Salieus"  The rest of the...
 
 ### SD2:307
-...papers are shedules of deliveries and other mundane things.
+...papers are schedules of deliveries and other mundane things.
 
 ### SD2:308
 You do not discover anything unusual.
@@ -963,7 +963,7 @@ The booming voice returns, "Fools.  I allowed you to pass just to be witness to 
 This door hangs open.  Beyond are piles and pile of gems and jewels and gold.  Help yourself.
 
 ### SD2:319
-The stash.  You sense a powerful magical aura from the treasure.  There is a seperate pile which contains 1000 g.p. with a note on it which reads, "Payment to Monks."  Which pile would you like to pilfer?
+The stash.  You sense a powerful magical aura from the treasure.  There is a separate pile which contains 1000 g.p. with a note on it which reads, "Payment to Monks."  Which pile would you like to pilfer?
 
 ### SD2:320
 "Ah, friends."  The guards let you pass seeing you bear the Necklace of Griloch.
@@ -975,7 +975,7 @@ Would you like to search the room?
 Your rummaging around has drawn some attention.  Guards show up to investigate.  They find you tearing apart the room and attack at once.
 
 ### SD2:323
-You have interrupted a meeting of some sort.  There are 3 griloch fighters, 2 captains, 3 mages, a couple of clerics, a lieutenent, a general and several very large fighters.  Tresandra's father is also here!  One of the mages sees you, ...
+You have interrupted a meeting of some sort.  There are 3 Griloch fighters, 2 captains, 3 mages, a couple of clerics, a lieutenant, a general and several very large fighters.  Tresandra's father is also here!  One of the mages sees you, ...
 
 ### SD2:324
 ...and yells out some very strange words.  All of a sudden there is a blinding flash.  When you regain your vision, the general and Tresandra's father are gone!  The remaining entourage attack quite heartily.
@@ -990,7 +990,7 @@ This run down old shanty is hardly fit even for this dirty soul.  The smell of r
 ...I got to git me sum food an women ya know so I needs coinz.  I'll give ya dis map fer 750gp.  Deal?"  What will you do?
 
 ### SD2:328
-"You boyz tryin to take old Hasse for a chump? Ya ain't got da coinz needed to enter into dis tranzaction.  I'll sell dis map to zomeone wit doe."  With that he stomps off and disappears into the streets.
+"You boyz tryin' to take old Hasse for a chump? Ya ain't got da coinz needed to enter into dis tranzaction.  I'll sell dis map to zomeone wit doe."  With that he stomps off and disappears into the streets.
 
 ### SD2:329
 This run down old shack is empty, except for a note.  It reads, "If ya still want to deal, see me at the Herring Bone Inn.  -Hasse"
@@ -1008,22 +1008,22 @@ This run down old shack is empty, except for a note.  It reads, "If ya still wan
 "I'll be here when ya change yer mind.  I know ya will 'cause I'm da only one who has dis map.  You'll be back.  Yip, sure will be.  Back sooner dan ya tink."  His ramblings continue until you are out of earshot.
 
 ### SD2:334
-Hasse backs himself into a corner, obviously shaken by his upcomming death.  But he is a crafty old man.  Before you can get a hold of him he ducks out a secret back door and down the street.  Now you might never get that map.
+Hasse backs himself into a corner, obviously shaken by his upcoming death.  But he is a crafty old man.  Before you can get a hold of him he ducks out a secret back door and down the street.  Now you might never get that map.
 
 ### SD2:335
 An odd looking rock is all that distinguishes this from any other mountain face.  Pushing down on the rock opens a stone door into a tunnel.
 
 ### SD2:336
-The guards on station here notice you are not carrying the Necklace of Griloch and immediatly attack.
+The guards on station here notice you are not carrying the Necklace of Griloch and immediately attack.
 
 ### SD2:337
 The passage ahead is clear and opens into a small glade full of sunshine.
 
 ### SD2:338
-The guards scream, "They are wearing the Necklace of Berhune.....Attack.....Attack them."  The guards attack on sight.
+The guards scream, "They are wearing the Necklace of Berhune.....Attack!.....Attack them!"  The guards attack on sight.
 
 ### SD2:339
-The guards eye you suspiciously.  "You are not supposed to be here.  No one is allowed to be here let alone is to know of this place.  Even though you wear our Necklace, you must leave or pay the price." The guard tightens his grip around his...
+The guards eye you suspiciously.  "You are not supposed to be here.  No one is allowed to be here or even know of this place!  Even though you wear our Necklace, you must leave or pay the price." The guard tightens his grip around his...
 
 ### SD2:340
 ...weapon.  Will you leave this place or stay and fight?
@@ -1035,10 +1035,10 @@ In the middle of this grove of trees you discover a trap door covered by sod.  W
 Above your head you see a trap door.  Would you like to go up?
 
 ### SD2:343
-You find what you are looking for.  Tresandra and Ropol are tied to the wall, bleeding and unconcious.  Tresandra is doing worse than Ropol, as her eyes are glassy and still.  Ropol's soft moaning lets you know he is in rough shape as well.
+You find what you are looking for.  Tresandra and Ropol are tied to the wall, bleeding and unconscious.  Tresandra is doing worse than Ropol, as her eyes are glassy and still.  Ropol's soft moaning lets you know he is in rough shape as well.
 
 ### SD2:344
-You see no sign of food or water, and the conditions are not fit for animals.  You do not look for details as you feel squimish just thinking about it.  You quickly untie them both and make good your escape.
+You see no sign of food or water, and the conditions are not fit for animals.  You do not look for details as you feel squeamish just thinking about it.  You quickly untie them both and make good your escape.
 
 ### SD2:345
 Suddenly through the sod trap door bursts the Griloch.  They are not going to let you out of here alive!
@@ -1056,7 +1056,7 @@ Slowly but surely they both regain consciousness.  Tresandra blinks her eyes and
 ...choices in my life.  For these I will pay my due.  I owe you my life as well as that of my daughter.  As soon as we reach Mountain View I will turn myself into the Mayor and confess my crimes.  I fear I have given the Griloch too much...
 
 ### SD2:350
-...information already.  I will make ammends.  Here, take this map.  I have been saving this equipment for my first born son, but since I have not been blessed with one yet it is fitting that it go to people such as yourselves."
+...information already.  I will make amends.  Here, take this map.  I have been saving this equipment for my first born son, but since I have not been blessed with one yet it is fitting that it go to people such as yourselves."
 
 ### SD2:351
 After giving you the map he tells you that if you go along with him and act like you are with him in league with the Griloch, he should be able to get you back to Mountain View without trouble.  Do you agree to the plan?
@@ -1065,7 +1065,7 @@ After giving you the map he tells you that if you go along with him and act like
 "Good.  Just listen to me and follow along.  You head for Mountain View."
 
 ### SD2:353
-Enable doors to get past griloch.
+Enable doors to get past Griloch.
 
 ### SD2:354
 "I understand your reservations.  Please understand that when they see us, they might try and get us back.  That would mean through you."  You continue on.
@@ -1083,7 +1083,7 @@ A Griloch patrol spots you.  Ropol steps forward.  "Men, I have been charged by 
 ...Brinham.  They let you pass.  Ropol's plan is working.
 
 ### SD2:359
-A disturbing sight is before you.  A torture room has been set up as evidenced by the shackles attatched to the wall and the various instruments of torture hanging next to them.  If anyone ever gets put here, it would surely mean their doom.
+A disturbing sight is before you.  A torture room has been set up as evidenced by the shackles attached to the wall and the various instruments of torture hanging next to them.  If anyone ever gets put here, it would surely mean their doom.
 
 ### SD2:360
 The stone reads, "L. Ryndall Lieghe...without his constant efforts, Mountain View would not be here today.  Too bad he smoked a pipe, he might still be around today."
@@ -1095,7 +1095,7 @@ Tresandra is failing fast.  She is beyond hope.  She heaves a last sigh and dies
 ...of this is my fault.  I can never....."  He fades away into unconsciousness.
 
 ### SD2:363
-Miracle of miracles, it works.  A steady heartbeat again returns to Tresandra's once lifeless body.  You all feel touched by the sight.  She is still unconcious but she will make it home safely and probably pull through.
+Miracle of miracles, it works.  A steady heartbeat again returns to Tresandra's once lifeless body.  You all feel touched by the sight.  She is still unconscious but she will make it home safely and probably pull through.
 
 ### SD2:364
 You try and bring Tresandra back from the dead.  Alas, you choose the right magic but her frail body cannot take the shock.  She has forever shuffled off this mortal coil.
@@ -1113,16 +1113,16 @@ Tresandra's eyes open as she has been brought back from the dead.  Although the 
 Tresandra reacts calmly as you explain that you have misplaced your gold.  "That's no problem," she exclaims.  "We've got plenty of dishes to wash.  You may leave when you are through with those dishes."  She points out a stack of dishes covered...
 
 ### SD2:369
-...with the type of filth and grime you didn't know existed.  You do your best and finish off the dishes.  With your tail between your legs you exit through the back door as to spare yourself any more embarrasement.
+...with a type of filth and grime you didn't know existed.  You do your best and finish off the dishes.  With your tail between your legs you exit through the back door as to spare yourself any more embarrassment.
 
 ### SD2:370
-Bertrase looks upset.  "Alright then, head into the kitchen and start those dishes.  When you are through with those, you can leave....by the front door so everybody can see you."  You feel like a scolded child and do as told.  When you are finished with.
+Bertrase looks upset.  "Alright then, head into the kitchen and start those dishes.  When you are through, you can leave....by the front door so everybody can see you."  You feel like a scolded child and do as you are told.  When you are finished with...
 
 ### SD2:371
 ...the dishes you feel the snickers of the bar crowd when you leave covered in soap and grime.
 
 ### SD2:372
-It appears some of these newer graves still hold some live (or semi-llive) corpses.  They rise up out of the ground and attack.
+It appears some of these newer graves still hold some live (or semi-live) corpses.  They rise up out of the ground and attack.
 
 ### SD2:373
 A neatly kept farmhouse is the home of Lluellyn.  He sees you approach and greets you at the front porch.  "Hello, friends.  I have already made the preparations for travel.  You can count on me to help in this worthy cause."  You feel confident he...
@@ -1164,7 +1164,7 @@ The drinks burn a hole right through the back of your throat.  The only word whi
 The bartender removes the drinks from in front of you and pours the contents back into the dirty bottle they came from.  "Come back for drinks when you have some money, wretches!"  He tosses you from the bar stools...roughly.
 
 ### SD2:386
-"A bunch of crazy monks have holed themselves up in the mountains.  Uncle Pete says the do everything half-cocked and never get organized.  Pete says if they did get organized, they would be tough!"
+"A bunch of crazy monks have holed themselves up in the mountains.  Uncle Pete says they do everything half-cocked and never get organized.  Pete says if they did get organized, they would be tough!"
 
 ### SD2:387
 "Death is imminent, stay in bed today."
@@ -1230,7 +1230,7 @@ A man pulls back the blinds and peeks out his window as you walk by his house.
 The man brightens.  "Yessss, yessss, come in.  Help yourself.  All salesss are final."
 
 ### SD2:408
-The man looks at you oddly and shuts his blinds.  You see him occasionally peek out to see if you wierdo's have left yet.
+The man looks at you oddly and shuts his blinds.  You see him occasionally peek out to see if you wierdos have left yet.
 
 ### SD2:409
 No one answers the door.  You still see the man peaking out of the window.
@@ -1257,7 +1257,7 @@ The sign on this shop proudly proclaims, "Circular Route Mapmakers - where the s
 A Griloch Patrol!!!
 
 ### SD2:417
-Tears stream down Doloras face as she rushes to embrace Ropol and Tresandra.  "What a heavenly day!  Thank you all so very much!  You are indeed good people!  You will eat here for free for the rst of your life!  You may also use our....
+Tears stream down Doloras face as she rushes to embrace Ropol and Tresandra.  "What a heavenly day!  Thank you all so very much!  You are indeed good people!  You will eat here for free for the rest of your life!  You may also use our....
 
 ### SD2:418
 ...exclusive guest room to rest in peace and quite whenever you need to.  We will make sure the Mayor hears about this!"  The happy family runs off to celebrate their reunion.  Ropol looks over his shoulder at you and simply nods his head...
@@ -1311,7 +1311,7 @@ Dolores looks stunned.  "Go back there and do the dishes and then you can go.  A
 A sign is posted here : "Green dragon spotted here.  Do Not Enter, unless it is death that you seek."
 
 ### SD2:435
-It looks like there used to be a sign here, but it is melted and burned beyond belief.  The strong smell of burnt hair eminates from this cave.  Will you enter?
+It looks like there used to be a sign here, but it is melted and burned beyond belief.  The strong smell of burnt hair emanates from this cave.  Will you enter?
 
 ### SD2:436
 A cave winds it's way to the surface.  Would you like to enter the cave?
@@ -1320,10 +1320,10 @@ A cave winds it's way to the surface.  Would you like to enter the cave?
 A group of young green dragons spot you.  They let out an almost gleeful squeal. You  pick up intense feelings of joy from them as they attack.  Your body tenses as Dragonfear overtakes you.
 
 ### SD2:438
-A ghastly sight attracts your attention.  The crunch beneath your feet gives away the burial sight of some poor adventurers.  All that is left of them are their crispy, chemically charred remains.  It looks as if they were running, as they are facing you.
+A ghastly sight attracts your attention.  The crunch beneath your feet gives away the burial site of some poor adventurers.  All that is left of them are their crispy, chemically charred remains.  It looks as if they were running, as they are facing you.
 
 ### SD2:439
-You spot what you were looking for.  But wait, there are TWO dragons, and three young ones.  It looks as if they elder has found a mate, and they have bred.  They have not seen you yet.  Attack now, or come back later?
+You spot what you were looking for.  But wait, there are TWO dragons, and three young ones.  It looks as if the elder has found a mate, and they have bred.  They have not seen you yet.  Attack now, or come back later?
 
 ### SD2:440
 They were sitting on some treasure.  You are certain this would be a safe place to rest.
@@ -1344,10 +1344,10 @@ An empty cell.
 You note that all of the cell doors lock on the outside by the bar across the door method.  No keys are needed.
 
 ### SD2:446
-An old man in flowing robes is mumbling something about barrels and horses.  You are completely confused by this mans rambling.  He introduces himself.  "I am Zulea.  A powerful cleric I am.  I would have freed myself if it wasn't for the....
+An old man in flowing robes is mumbling something about barrels and horses.  You are completely confused by this man's rambling.  He introduces himself.  "I am Zulea.  A powerful cleric I am.  I would have freed myself if it wasn't for the....
 
 ### SD2:447
-...large dwarf that has been sleeping in the warhorses barrel over there.  Snores too loud."  What would Thyrr want with this man?  You explain to him that he is needed and he agrees to meet you at Thyrrs house.
+...large dwarf that has been sleeping in the warhorse's barrel over there.  Snores too loud."  What would Thyrr want with this man?  You explain to him that he is needed and he agrees to meet you at Thyrr's house.
 
 ### SD2:448
 An older man is asleep on the floor.  He looks roughed up, but in fine health for his age.  He awakes and springs to his feet, "So, you are here to save us all?  Good.  That is good.  Thyrr is up to this, isn't he?  Good man.  Anyway, I must warn him.....
@@ -1386,7 +1386,7 @@ A large Minotaur approaches you.  "Stop this bloodshed."  You are surprised he c
 ...come with me and discuss this at my castle, no harm will come to you even though you have killed four of my best men after you ruthlessly invaded my homeland.  If you choose not to discuss this matter with me, I will destroy you ...
 
 ### SD2:460
-...and your pitiful band of adventurers.  No one will ever hear from you again.  So, which will it be?  Discussions or war?"  The Minotaur commmander patiently awaits your answer.
+...and your pitiful band of adventurers.  No one will ever hear from you again.  So, which will it be?  Discussions or war?"  The Minotaur commander patiently awaits your answer.
 
 ### SD2:461
 This door is too tough for you guys!
@@ -1398,10 +1398,10 @@ This door is too tough for you guys!
 "A wise choice.  Follow me."  With that the Minotaur commander takes you into his castle.  He walks across the long hall and seats himself at the huge table against the east wall.  He waves you over.
 
 ### SD2:464
-The commander sits you around a large cherrywood table.  You feel very tiny sitting in such large seats.  The commander speaks, "My name is Kayvon.  My men have not brought harm to you human kind yet you are determined to...
+The commander sits you around a large cherrywood table.  You feel very tiny sitting in such large seats.  The commander speaks, "My name is Kayvon.  My men have not brought harm to your kind, yet you are determined to...
 
 ### SD2:465
-A tremendous fireball rolls by you but does not detinate.
+A tremendous fireball rolls by you but does not detonate.
 
 ### SD2:466
 Large hail stones thunder toward you but dissipate inches from your head into harmless puffs of vapor.
@@ -1443,7 +1443,7 @@ The guards activity room.  Cards and dice litter the room along with left over f
 Two guards wander in to catch a nap.  Are they surprised to see you!  But they are ready to fight!!!
 
 ### SD2:479
-Two captains and thier escort run into the room to grab some equipment.  You are surprised at their preparedness, even in small numbers.
+Two captains and their escort run into the room to grab some equipment.  You are surprised at their preparedness, even in small numbers.
 
 ### SD2:480
 The contingent of guards looks you over, but lets you pass.
@@ -1500,7 +1500,7 @@ A large pack of rats attack with madness.
 A large pack of rats attacks.  Many of its members are foaming at the mouth.
 
 ### SD2:498
-Rats, Rats, Rats everywhere!  They attack.
+Rats, rats, rats everywhere!  They attack.
 
 ### SD2:499
 Other sewer creatures rise up and attack!
@@ -1560,7 +1560,7 @@ A patch of vines covered this small opening.  But there is nothing inside, just 
 ...situation.  The Griloch have approached us with an invitation to help them overthrow the city of Mountain View and become the dominant power in this part of the country.  We do not want war, but always like to improve ourselves.  You.....
 
 ### SD2:518
-...humans have us penned into this measly parcel of land which serves my people no use.  The Griloch offer us land, money, power.  An intoxicating mix.  The Griloch are not trustworthy so I am reluctant to aggree to the treaty.  Now....
+...humans have us penned into this measly parcel of land which serves my people no use.  The Griloch offer us land, money, power.  An intoxicating mix.  The Griloch are not trustworthy so I am reluctant to agree to the treaty.  Now....
 
 ### SD2:519
 ...you have agreed to talk with me.  This is an excellent first step."  Some of the other minotaurs seated around the table with you growl and leer in your direction.  Kayvon whips towards them, "Silence!  The time for hatred is over!"  They....
@@ -1587,7 +1587,7 @@ Kayvon stands.  "Superb.  I understand you must convince Hodar of this treaty.  
 "How unfortunate.  I am sorry this was not agreeable to you.  Please leave now, as I cannot guarantee your safety here much longer.  You will meet us again in battle."  Kayvon hangs his head in defeat, for his people will now be under the Griloch.
 
 ### SD2:527
-"Traitors!  How dare you.  You will pay for this!"  Kayvon and his men attack with a vengance.
+"Traitors!  How dare you.  You will pay for this!"  Kayvon and his men attack with a vengeance.
 
 ### SD2:528
 Two guards are standing here.  They attack you on sight.
@@ -1674,7 +1674,7 @@ The gates are locked.  A note reads, "Celebrating peace with humankind, a one mo
 You let the shorter man know how you feel.  He tells you to stay out of his way, for he has no time for such weaklings with dark hearts.  He leaves to fight again.
 
 ### SD2:556
-"Yes, yes they did!  Those were good men.  Their lives need not be forfit if you had done the right thing!  Do the right thing now.  Join us in our fight to rid Mountain View of the Griloch scourge.  Will you join us?"
+"Yes, yes they did!  Those were good men.  Their lives need not have been forfeited had you done the right thing!  Do the right thing now.  Join us in our fight to rid Mountain View of the Griloch scourge.  Will you join us?"
 
 ### SD2:557
 One of Kayvons men escorts you out of the minotaur village.  The heavy door swings shut on the minotaurs last hope of peace with the humans.
@@ -1695,7 +1695,7 @@ Kayvon's office.
 A Lieutenant is trying to rally some argumentative troops.  Your presence has given them something to rally around!  They attack!
 
 ### SD2:563
-A lieutenant is barking at some lazy troops.  He looks in your direction and tells his men, "If you don't shape up, you lackies will end up just like this bunch!"  He turns back to you.  "Get on your way, men.  We are in training here!"
+A lieutenant is barking at some lazy troops.  He looks in your direction and tells his men, "If you don't shape up, you lackeys will end up just like this bunch!"  He turns back to you.  "Get on your way, men.  We are in training here!"
 
 ### SD2:564
 This room is now empty.
@@ -1728,7 +1728,7 @@ The kitchen.  Plenty of food to go around!
 Three guards are beating up two crazy men who have somehow escaped from the prison.  Will you give the crazy men a hand?
 
 ### SD2:574
-The guards turn their attention to you, and the crazy men make good there escape!
+The guards turn their attention to you, and the crazy men make good their escape!
 
 ### SD2:575
 An empty room.
@@ -1752,7 +1752,7 @@ As the wizard is struck down, the body swirls into the bluish flame and flows ba
 "We must act quickly.  Do not delay much longer, or all may be lost."  Thyrr is very serious.
 
 ### SD2:582
-Thyrr closes his eyes and looks skyward.  The clouds darken and you feel nautious.  Thunder rolls in your ears, lightning flashes before your eyes as all goes black and you fade into unconsciousness.
+Thyrr closes his eyes and looks skyward.  The clouds darken and you feel nauseous.  Thunder rolls in your ears, lightning flashes before your eyes as all goes black and you fade into unconsciousness.
 
 ### SD2:583
 When you awake, Thyrr is over you.  "The time has come to stop this scourge.  We are now in the secret Griloch camp where Griloch himself is rumored to be.  Do not try and fool these Griloch with necklaces, as they are not fools.  You should not.....
@@ -1779,10 +1779,10 @@ The Griloch army is destroyed!  A whispery voice enters your ear.  "You have des
 As Griloch falls, a voice enters your ear again.  It is Griloch.  "You may have beaten me here, but I will be back with my army of undead to rule this land once and for all."  Congratulations!  You have defeated Griloch and saved Mountain View.
 
 ### SD2:591
-You return to Mountain View without trouble.  With the Griloch threat gone for now, a huge party is thrown in your honor.  The entire village pours out to meet and thank you.  You are knee deep in revelry when Hodar pulls you aside.  "I Thank you..
+You return to Mountain View without trouble.  With the Griloch threat gone for now, a huge party is thrown in your honor.  The entire village pours out to meet and thank you.  You are knee deep in revelry when Hodar pulls you aside.  "I thank you..
 
 ### SD2:592
-...for giving my peple hope.  I pray I will not have to call upon you again, but I fear I might.  Thank you for saving my people this day."  You return to the party and receive the adoration of all of Mountain View for days on end.
+...for giving my people hope.  I pray I will not have to call upon you again, but I fear I might.  Thank you for saving my people this day."  You return to the party and receive the adoration of all of Mountain View for days on end.
 
 ### SD2:593
 Would you like to return to the surface?
@@ -1812,7 +1812,7 @@ As you may have expected, some pretty nasty creatures are after you.
 The lair of the Shantiles provides some needed cash!
 
 ### SD2:602
-No luck.  You have been out-played!  You lose 100 gp.
+No luck.  You have been out-played!  You lose 100 cold.
 
 ### SD2:603
 So close.  4 skulls!  You lose 100 gold.
@@ -1842,7 +1842,7 @@ You collect 5 skulls.  Collect 100 gold.
 Collect 100 gold.  5 Skulls.
 
 ### SD2:612
-A stately man answers the door.  Dressed in a dark green cloak, adorned with the crest of roses.  Fully bearded with a thick moustache, this mans strength flows from him.  He speaks, "Welcome, my name is Retyu.  Thyrr has told me you will come....
+A stately man answers the door.  Dressed in a dark green cloak, adorned with the crest of roses.  Fully bearded with a thick mustache, this mans strength flows from him.  He speaks, "Welcome, my name is Retyu.  Thyrr has told me you will come....
 
 ### SD2:613
 ....to summon me to your aid.  I will be there when I am needed."  He shuts the door and you go on your way.
@@ -1899,7 +1899,7 @@ A guardian awaits here.  He attacks.
 After killing the beast, you can scoop up his weapon.
 
 ### SD2:631
-Leaving the castle now would disgrace the  minotaurs and leave them no choice but to join with the Griloch.  Are you going to leave the castle?
+Leaving the castle now would disgrace the minotaurs and leave them no choice but to join with the Griloch.  Are you going to leave the castle?
 
 ### SD2:632
 You have disgraced the Minotaurs by accepting to talk peace and then leaving them at the table.  They escort you out the door and throw you into the wilderness.  They will now be with the Griloch.
@@ -1908,16 +1908,16 @@ You have disgraced the Minotaurs by accepting to talk peace and then leaving the
 You stop short of the stairs and look over your shoulder.  You see Kayvon waving you over toward a large table against the east wall.
 
 ### SD2:634
-This deep cave is very forboding.  Will you enter?
+This deep cave is very foreboding.  Will you enter?
 
 ### SD2:635
-Well, I warned you.  Several ugly beasts scurry around in front of you.  Atop a book of reddish hue lounges a black spider with a red underbelly.  These creatures of ill temperment attack on sight, with the black spider leading the charge.
+Well, I warned you.  Several ugly beasts scurry around in front of you.  Atop a book of reddish hue lounges a black spider with a red underbelly.  These creatures of ill temperament attack on sight, with the black spider leading the charge.
 
 ### SD2:636
 After defeating the spider guardians, you retrieve the reddish book.
 
 ### SD2:637
-An empty cave, littered with the carcases of spiders.
+An empty cave, littered with the carcasses of spiders.
 
 ### SD2:638
 "You are not yet ready for salvation, but then again, no one ever is.  You do not need me to save this town.  I will be with you as time progresses for this matter is not going to be resolved by simply dispatching the evil Griloch....."
@@ -1938,7 +1938,7 @@ Mayor Hodar is sitting at his desk.  He listens to your story of adventure and l
 Mayor Hodar is currently not here.
 
 ### SD2:644
-Hodar is in a meetng with the Berhune clerics at the present.  He can see no visitors.
+Hodar is in a meeting with the Berhune clerics at the present.  He can see no visitors.
 
 ### SD2:645
 Mayor Hodar shows you in.  "Good people.  It pains me that my people are living in fear.  We must do something.  I have discovered that the Griloch are the ones behind this.  Seek them out!!!!"  He ushers you out.
@@ -1959,7 +1959,7 @@ Hodar sits back and laughs.  "You are a gutsy bunch.  I like that."  He walks of
 The inner compound of the minotaurs.
 
 ### SD2:651
-Please register your copy of Prelude To Pestilence.  I know you hate this part, but I gotta make a living.  Thank you for supporting Fantasoft and the shareware idea!  -Sean Sayrs, Author of Prelude To Pestilence.
+(Registration check)
 
 ### SD2:652
 A hole has been dug in the earth.  Would you like to investigate?
@@ -1989,7 +1989,7 @@ A large covered wagon pulls up next to you.  A burly man of considerable girth w
 Congratulations on defeating the Griloch.  You may wander around if you wish.  I'm sure they would like to see you back in Mountain View!  There is a portal here.  Would you like to step into it?
 
 ### SD2:661
-Thank you for playing Prelude To Pestilence.  Only by receiving support from people like you who took the time to register can we at Fantasoft continue to produce products such as this.  Please watch for the next Prelude To..................
+Thank you for playing Prelude To Pestilence.  Please watch for the next Prelude To..................
 
 ### SD2:662
 ...Pestilence scenario.  It should be out by October of '95.    Thanks for playing! -------Sean Sayrs, author.
@@ -2004,16 +2004,16 @@ An eerie feeling befalls you as you pass by this area.
 A dragons den is in front of you.
 
 ### SD2:666
-You surprise a large patrol of Griloch Guards.  "Have at you.....the Berhune raiders attack violently."  You join them!
+You surprise a large patrol of Griloch Guards.  "Charge!"  The Berhune raiders attack violently.  You join them!
 
 ### SD2:667
-"Excellent work men!  We have prevailed.  This has been a great victory for our cause!"  The Berhune men sneak back to the camp.  "We will meet with you back at the commanders office!"  They leave.
+"Excellent work men!  We have prevailed.  This has been a great victory for our cause!"  The Berhune men sneak back to the camp.  "We will meet with you back at the commander's office!"  They leave.
 
 ### SD2:668
 Terderas is hard at work.  He mutters something about "Die, Griloch!" and continues with his work.  He is obviously too busy to speak with you.
 
 ### SD2:669
-Terderas looks indifferent.  He nods, then speaks in a monotone voice, "Fine.  I understand.  You have reservations.  Please, enjoy our hospitality while my men (his voice is no longer monotone) risk thier lives to (he is screaming) save the...
+Terderas looks indifferent.  He nods, then speaks in a monotone voice, "Fine.  I understand.  You have reservations.  Please, enjoy our hospitality while my men (his voice is no longer monotone) risk their lives to (he is screaming) save the...
 
 ### SD2:670
 ...city from (he is now a very interesting shade of bright crimson) the evil Griloch!"  He turns and leaves.
@@ -2052,7 +2052,7 @@ A man dressed in flowing white and light blue robes is studying over a candle.  
 A sign on the door reads, "The hall of hope(lessness)."  Will you enter?
 
 ### SD2:682
-The door swings open at the sliightest touch.  A blast of stale, dry air annoys your senses as you peer into the hall.  Untouched for countless years, dust is a full quarter inch thick.
+The door swings open at the slightest touch.  A blast of stale, dry air annoys your senses as you peer into the hall.  Untouched for countless years, dust is a full quarter inch thick.
 
 ### SD2:683
 "You have chosen.....wisely."
@@ -2073,7 +2073,7 @@ The walls start crumbling around you.  You have not made it out in time.  The en
 A pair of cleric apparitions dressed in white and light blue robes float down the hallway, and pass right through you.
 
 ### SD2:689
-A small child carrying an inscense burner seemingly walks out of the wall in front of you.  She turns to you, winks and walks into the other wall.
+A small child carrying an incense burner seemingly walks out of the wall in front of you.  She turns to you, winks and walks into the other wall.
 
 ### SD2:690
 A man appears in flowing white and light blue robes points west.  "Seek the correct path."  He fades away into the stone.
@@ -2118,7 +2118,7 @@ The lieutenants sleeping room.  He is currently not here.  There is a roll-top d
 Success.  When you twist and pull on the handle of the right bottom drawer, the entire handle slides out like a tube.  Twisting the handle further removes the lid.  Inside the tube are some papers and a map.
 
 ### SD2:704
-Welcome to Prelude to Pestilence, Have fun and please support Fantasoft by registering this product.  See chapter 3 of the manual for an order form.
+Welcome to Prelude to Pestilence, Have fun!
 
 ### SD2:705
 You discover a small child huddled and coughing in some tall grass.  She looks up at you with tears in her eyes.  "I'm hungry."  Do you feed her?
@@ -2163,10 +2163,10 @@ The father rushes to the door, "You have found her?  She is okay?"  Seeing you d
 The father of the little girl gives you an inspirational speech and goes back inside.
 
 ### SD2:719
-The man is very understanding.  "You are but strangers.  I would not count on you to take care of one of our own.  Thank you." As you leave you notice the old man don his armor and sword and get ready to search himself for his lost daughter.
+The man is very understanding.  "You are but strangers.  I would not count on you to take care of one of our own.  Thank you." As you leave you notice the old man don his armor and sword and get ready to search for his lost daughter himself.
 
 ### SD2:720
-A lady answers the door.  I haven't seen my husband since he left.  I hope he is okay.  She shuts the door.
+A lady answers the door.  "I haven't seen my husband since he left.  I hope he is okay."  She shuts the door.
 
 ### SD2:721
 Laughter reigns as the little girl engages her father in a hearty game of swords.  She looks like she has the upper hand!
@@ -2211,28 +2211,28 @@ Though they are not difficult to kill, take care.  Their bite is most poisonous.
 Large, slow, stupid.  Put it all together and you have a four footed eating machine with sharp teeth.
 
 ### DES:6
-A mindless larva.  Nobody knows what this thing will turn into for noone has ever found one in a cocoon state.
+A mindless larva.  Nobody knows what this thing will turn into for no one has ever found one in a cocoon state.
 
 ### DES:7
 Capable of launching a multitude of attacks, this critter is extremely deadly.
 
 ### DES:8
-Strongest of the good dragons.  This race of dragon kind devotes there entire lives to the destructin of there evil kin.
+Strongest of the good dragons.  This race of dragon kind devotes their entire lives to the destruction of their evil kin.
 
 ### DES:9
-A gaping maw of immense size makes this mindless foe one to best avoided.
+A gaping maw of immense size makes this mindless foe one best to be avoided.
 
 ### DES:10
-Sickly in appearance, these fould creatures blend in the very surrounding and pounce on the unsuspecting.
+Sickly in appearance, these foul creatures blend into the very surrounding and pounce on the unsuspecting.
 
 ### DES:11
-A truely fearsom arachnid.  Avoid contact with this 8-legged monstrosity if at all possable.
+A truly fearsome arachnid.  Avoid contact with this 8-legged monstrosity if at all possible.
 
 ### DES:14
-Minotaurs have a stout body that would make even an ogre quake with fright.   These powerfull creatures love to engage in combat.
+Minotaurs have a stout body that would make even an ogre quake with fright.   These powerful creatures love to engage in combat.
 
 ### DES:15
-Minotaurs have a stout body that would make even an ogre quake with fright.   These powerfull creatures love to engage in combat.
+Minotaurs have a stout body that would make even an ogre quake with fright.   These powerful creatures love to engage in combat.
 
 ### DES:16
 A larger version of the ordinary troll.  The physical strength of these beasts is near god-like.
@@ -2247,10 +2247,10 @@ A mountainous man-fish.
 Though they look fierce, they are not as deadly as one might think.
 
 ### DES:22
-Large and deadly.  There saliva containes a strange chemical that causes those that do not save to become deathly afraid.
+Large and deadly.  Their saliva contains a strange chemical that causes those that do not save to become deathly afraid.
 
 ### DES:23
-An odd sight indeed.  There appearance would be laughable if they were not so deadly.  They favor the occasional orc to dine on.
+An odd sight indeed.  Their appearance would be laughable if they were not so deadly.  They favor the occasional orc to dine on.
 
 ### DES:24
 A strange cross between a Hyena and a tiger.  Nobody knows if it was spawned from magic or nature.
@@ -2259,13 +2259,13 @@ A strange cross between a Hyena and a tiger.  Nobody knows if it was spawned fro
 Large but stupid.  These reptiles have been known to trample a full grown ogre without even slowing down.
 
 ### DES:27
-Do not get too close.  If it get's you in a bear hug you are doomed for sure.
+Do not get too close.  If it gets you in a bear hug you are doomed for sure.
 
 ### DES:29
 Older and stronger than your average bear. (But not any smarter!)
 
 ### DES:32
-Be careful not to fall victim to a bite from one of these.  There bite has been known to cause paralysis.
+Be careful not to fall victim to a bite from one of these.  Their bite has been known to cause paralysis.
 
 ### DES:33
 A poisonous bite may be the least of your worries if you meet up with one of these vermin.
@@ -2292,7 +2292,7 @@ One of the weaker races of dragon kind.  A sly mind and a taste for blood make g
 Large and heavily armored with a bony back plate and horns.  Only a fool would back one of these things into a corner.
 
 ### DES:48
-Large and brutish.  These simple minded humanoids survive due to there shear size.
+Large and brutish.  These simple minded humanoids survive due to their shear size.
 
 ### DES:49
 A hardy warrior trained for combat.  A true asset to the king.
@@ -2304,7 +2304,7 @@ A true leader of men.  Trusted with the task of keeping the troops in line and l
 A smaller dinosaur that must hunt in packs in order to bring down larger prey.
 
 ### DES:53
-Standing 8 feet tall or more these large brutes love to bully those weaker than themselves.  They are often emplyed as troops in mercinary armies.
+Standing 8 feet tall or more these large brutes love to bully those weaker than themselves.  They are often employed as troops in mercenary armies.
 
 ### DES:54
 A strong family structure allows these giant reptiles to survive in a hostile environment.
@@ -2316,22 +2316,22 @@ Young and weak when compared to a full grown giant.  Still more than a match for
 Extremely strong for their size, these beasts make excellent warriors.
 
 ### DES:57
-Niether very fast nor powerful, these nasty reptiles do have one advantage.  A poison bite.
+Neither very fast nor powerful, these nasty reptiles do have one advantage.  A poison bite.
 
 ### DES:58
-Hailing from some unknown plane, these beasts are often summoned by powerfull enchanters to do their bidding.
+Hailing from some unknown plane, these beasts are often summoned by powerful enchanters to do their bidding.
 
 ### DES:59
 Though not native to the nine planes of hell, they populate large regions of that foul area.
 
 ### DES:60
-These creatures favored attack is to lower there armored head and charge.  Hint:  Don't stand in front of it when it does.
+These creatures favored attack is to lower their armored head and charge.  Hint:  Don't stand in front of it when it does.
 
 ### DES:61
 True to her word, this little critter will suck your soul.
 
 ### DES:63
-These minor devils live there lives as servents to those more powerfull than themselvs.
+These minor devils live their lives as servants to those more powerful than themselves.
 
 ### DES:64
 This beast has lost his master and will do anything to find him.
@@ -2340,7 +2340,7 @@ This beast has lost his master and will do anything to find him.
 A powerful creature of the undead.  These creatures drain your very life force.
 
 ### DES:67
-These creatures are almost indestructable.
+These creatures are almost indestructible.
 
 ### DES:70
 The race of giants can also become undead, as this creature will attest.  Slow and mindless, this zombie can still pack a punch.
@@ -2376,7 +2376,7 @@ A giant boar.  Not much else to tell.
 Human Mage
 
 ### DES:83
-Completly mindless.  They are used as shock troops and as food by just about any other demon.
+Completely mindless.  They are used as shock troops and as food by just about any other demon.
 
 ### DES:89
 Found in the land beyond the Fingertip mountains, this little girl needs help getting home.
@@ -2385,13 +2385,13 @@ Found in the land beyond the Fingertip mountains, this little girl needs help ge
 A common orc who claims to have some skill with weapons.
 
 ### DES:92
-Small and weak, goblins band together in large tribes for there own protection.
+Small and weak, goblins band together in large tribes for their own protection.
 
 ### DES:101
 A blaze of claw and fang.  The speed of these nether-world creatures is almost without compare.
 
 ### DES:102
-Normaly they feed on only the dead, but in times of hunger they will hunt prey.
+Normally they feed on only the dead, but in times of hunger they will hunt prey.
 
 ### DES:103
 Abused as a youngster.  These ill tempered men are but common thugs for hire.
@@ -2409,10 +2409,10 @@ Half man, half fish, all bad temper.
 A small but deadly version of your everyday troll.
 
 ### DES:114
-An stange critter.  It will inflict great mental damage from time time.
+A strange critter.  It will inflict great mental damage from time time.
 
 ### DES:123
-Only slightly less primative than a cave man.  These humanoids are all but animal.
+Only slightly less primitive than a cave man.  These humanoids are all but animal.
 
 ### DES:132
 A mighty paladin in his day, Thyrr is still a most worthy opponent.
