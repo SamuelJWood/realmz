@@ -1246,7 +1246,7 @@ void WindowManager::recomposite(std::shared_ptr<Window> updated_window) {
         uint64_t now_ms = SDL_GetTicks();
         float dt = std::min((now_ms - this->last_recomposite_ms) / 1000.0f, 0.1f);
         this->last_recomposite_ms = now_ms;
-        SDLMenuBar::instance().update(dt, static_cast<int>(cursor_y), this->m_fullscreen);
+        SDLMenuBar::instance().update(dt, static_cast<int>(cursor_y), this->m_fullscreen, ph);
         SDLMenuBar::instance().draw(renderer, pw, ph, this->m_fullscreen);
       }
 
@@ -1307,7 +1307,7 @@ void WindowManager::redraw_menu_bar_only() {
   uint64_t now_ms = SDL_GetTicks();
   float dt = std::min((now_ms - this->last_recomposite_ms) / 1000.0f, 0.1f);
   this->last_recomposite_ms = now_ms;
-  SDLMenuBar::instance().update(dt, static_cast<int>(cursor_y), this->m_fullscreen);
+  SDLMenuBar::instance().update(dt, static_cast<int>(cursor_y), this->m_fullscreen, ph);
   SDLMenuBar::instance().draw(renderer, pw, ph, this->m_fullscreen);
 
   SDL_RenderPresent(renderer);

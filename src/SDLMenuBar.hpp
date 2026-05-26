@@ -23,6 +23,8 @@ public:
   static constexpr int ITEM_H = 22;
   static constexpr int SEP_H = 8;
   static constexpr int DROPDOWN_MIN_W = 160;
+  static constexpr int SCROLL_ARROW_H = 16;
+  static constexpr float SCROLL_SPEED_PPS = 400.0f;
 
   static SDLMenuBar& instance();
 
@@ -31,7 +33,7 @@ public:
 
   void draw(SDL_Renderer* r, int win_w, int win_h, bool fullscreen);
   bool handle_event(const SDL_Event& e, bool fullscreen, int win_w, int win_h);
-  void update(float dt, int cursor_y, bool fullscreen);
+  void update(float dt, int cursor_y, bool fullscreen, int win_h);
   void on_fullscreen_changed(bool now_fullscreen);
 
   // Returns MENUBAR_HEIGHT in windowed mode, 0 in fullscreen (bar overlaps).
@@ -53,6 +55,9 @@ private:
 
   int open_menu_idx = -1;
   int hovered_item_idx = -1;
+  float dropdown_scroll_px = 0.0f;
+  bool scroll_up_active = false;
+  bool scroll_down_active = false;
 
   float y_offset = 0.0f;
   float y_target = 0.0f;
@@ -88,7 +93,9 @@ private:
   void draw_bar_strip(SDL_Renderer* r, int win_w);
   void draw_dropdown(SDL_Renderer* r, int win_w, int win_h);
   int draw_panel(SDL_Renderer* r, const std::shared_ptr<Menu>& menu,
-      float panel_x, float panel_y, int panel_w, int highlight_item, int win_w, int win_h);
+      float panel_x, float panel_y, int panel_w, int highlight_item, int win_w, int win_h,
+      int scroll_px = 0, int visible_h = 0);
+  int dropdown_visible_h(float drop_y, int natural_h, int win_h) const;
   void draw_text(SDL_Renderer* r, const std::string& text, int x, int y, SDL_Color color) const;
   int measure_text_width(const std::string& text) const;
   SDL_Texture* get_icon_texture(SDL_Renderer* r, const phosg::ImageRGBA8888N* img);

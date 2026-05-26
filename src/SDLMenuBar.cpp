@@ -89,6 +89,9 @@ void SDLMenuBar::sync(std::shared_ptr<MenuList> ml) {
   this->hovered_item_idx = -1;
   this->submenu_open_item_idx = -1;
   this->submenu_hovered_item_idx = -1;
+  this->dropdown_scroll_px = 0.0f;
+  this->scroll_up_active = false;
+  this->scroll_down_active = false;
 }
 
 int SDLMenuBar::reserved_top_pixels(bool fullscreen) {
@@ -104,47 +107,69 @@ void SDLMenuBar::on_fullscreen_changed(bool now_fullscreen) {
   this->hovered_item_idx = -1;
   this->submenu_open_item_idx = -1;
   this->submenu_hovered_item_idx = -1;
+  this->dropdown_scroll_px = 0.0f;
+  this->scroll_up_active = false;
+  this->scroll_down_active = false;
   this->auto_hide_timer = 0.0f;
 }
 
-void SDLMenuBar::update(float dt, int cursor_y, bool fullscreen) {
+void SDLMenuBar::update(float dt, int cursor_y, bool fullscreen, int win_h) {
   if (!fullscreen) {
     this->y_offset = 0.0f;
     this->y_target = 0.0f;
-    return;
-  }
-
-  bool cursor_in_trigger = (cursor_y < TRIGGER_ZONE_PX);
-  bool cursor_in_bar = (cursor_y >= 0 && (float)cursor_y <= MENUBAR_HEIGHT + this->y_offset);
-  bool menu_open = (this->open_menu_idx >= 0);
-
-  if (cursor_in_trigger || cursor_in_bar || menu_open) {
-    this->y_target = 0.0f;
-    this->auto_hide_timer = 0.0f;
   } else {
-    this->auto_hide_timer += dt;
-    if (this->auto_hide_timer >= AUTO_HIDE_DELAY_S) {
-      this->y_target = (float)-MENUBAR_HEIGHT;
-    }
-  }
+    bool cursor_in_trigger = (cursor_y < TRIGGER_ZONE_PX);
+    bool cursor_in_bar = (cursor_y >= 0 && (float)cursor_y <= MENUBAR_HEIGHT + this->y_offset);
+    bool menu_open = (this->open_menu_idx >= 0);
 
-  if (this->y_offset != this->y_target) {
-    float speed = (float)MENUBAR_HEIGHT / ANIM_DURATION_S;
-    float step = speed * dt;
-    if (this->y_target > this->y_offset) {
-      this->y_offset = std::min(this->y_offset + step, this->y_target);
+    if (cursor_in_trigger || cursor_in_bar || menu_open) {
+      this->y_target = 0.0f;
+      this->auto_hide_timer = 0.0f;
     } else {
-      this->y_offset = std::max(this->y_offset - step, this->y_target);
+      this->auto_hide_timer += dt;
+      if (this->auto_hide_timer >= AUTO_HIDE_DELAY_S) {
+        this->y_target = (float)-MENUBAR_HEIGHT;
+      }
+    }
+
+    if (this->y_offset != this->y_target) {
+      float speed = (float)MENUBAR_HEIGHT / ANIM_DURATION_S;
+      float step = speed * dt;
+      if (this->y_target > this->y_offset) {
+        this->y_offset = std::min(this->y_offset + step, this->y_target);
+      } else {
+        this->y_offset = std::max(this->y_offset - step, this->y_target);
+      }
+    }
+
+    // If slide animation is in progress, push a user event for the next frame.
+    if (this->y_offset != this->y_target && !this->anim_event_pending && s_anim_event_type != 0) {
+      SDL_Event ev{};
+      ev.type = s_anim_event_type;
+      SDL_PushEvent(&ev);
+      this->anim_event_pending = true;
     }
   }
 
-  // If animation is still in progress, push a user event so the event loop
-  // wakes up and calls redraw_menu_bar_only() for the next frame.
-  if (this->y_offset != this->y_target && !this->anim_event_pending && s_anim_event_type != 0) {
-    SDL_Event ev{};
-    ev.type = s_anim_event_type;
-    SDL_PushEvent(&ev);
-    this->anim_event_pending = true;
+  // Drive dropdown scroll animation when cursor is in an arrow zone.
+  if (this->open_menu_idx >= 0 && (this->scroll_up_active || this->scroll_down_active)) {
+    float drop_y = this->bar_top() + (float)MENUBAR_HEIGHT;
+    int natural_h = this->dropdown_height(this->open_menu_idx);
+    int vis_h = this->dropdown_visible_h(drop_y, natural_h, win_h);
+    int max_scroll = natural_h - vis_h;
+    if (max_scroll > 0) {
+      float delta = SCROLL_SPEED_PPS * dt;
+      if (this->scroll_down_active)
+        this->dropdown_scroll_px = std::min(this->dropdown_scroll_px + delta, (float)max_scroll);
+      else
+        this->dropdown_scroll_px = std::max(this->dropdown_scroll_px - delta, 0.0f);
+    }
+    if (!this->anim_event_pending && s_anim_event_type != 0) {
+      SDL_Event ev{};
+      ev.type = s_anim_event_type;
+      SDL_PushEvent(&ev);
+      this->anim_event_pending = true;
+    }
   }
 }
 
@@ -241,6 +266,12 @@ static int item_y_in_dropdown(const std::shared_ptr<Menu>& menu, int item_idx) {
   return y;
 }
 
+int SDLMenuBar::dropdown_visible_h(float drop_y, int natural_h, int win_h) const {
+  int available = win_h - (int)drop_y - 4;
+  int min_h = SCROLL_ARROW_H * 2 + ITEM_H;
+  return std::min(natural_h, std::max(available, min_h));
+}
+
 // ── Hit testing ───────────────────────────────────────────────────────────────
 
 int SDLMenuBar::hit_test_bar(float px, float py) const {
@@ -258,15 +289,26 @@ int SDLMenuBar::hit_test_dropdown(float px, float py, int win_w, int win_h) cons
   float bt = this->y_offset;
   float dx = (float)this->dropdown_x(this->open_menu_idx, win_w);
   float dw = (float)this->dropdown_width(this->open_menu_idx);
-  float drop_y = bt + MENUBAR_HEIGHT;
+  float drop_y = bt + (float)MENUBAR_HEIGHT;
 
-  if (py < drop_y || py >= drop_y + this->dropdown_height(this->open_menu_idx)) return -1;
+  int natural_h = this->dropdown_height(this->open_menu_idx);
+  int vis_h = this->dropdown_visible_h(drop_y, natural_h, win_h);
+  bool scrollable = (natural_h > vis_h);
+  int scroll_px = scrollable ? (int)this->dropdown_scroll_px : 0;
+
+  if (py < drop_y || py >= drop_y + (float)vis_h) return -1;
   if (px < dx || px >= dx + dw) return -1;
+
+  // Exclude arrow zones from item hit-testing.
+  if (scrollable) {
+    if (scroll_px > 0 && py < drop_y + SCROLL_ARROW_H) return -1;
+    if (scroll_px < natural_h - vis_h && py >= drop_y + (float)vis_h - SCROLL_ARROW_H) return -1;
+  }
 
   auto menus = this->get_top_menus();
   if (this->open_menu_idx >= (int)menus.size()) return -1;
   const auto& menu = menus[this->open_menu_idx];
-  float iy = drop_y + 2.0f;
+  float iy = drop_y + 2.0f - (float)scroll_px;
   for (int i = 0; i < (int)menu->items.size(); i++) {
     float item_h = is_separator(menu->items[i]) ? (float)SEP_H : (float)ITEM_H;
     if (py >= iy && py < iy + item_h) {
@@ -394,27 +436,53 @@ int SDLMenuBar::draw_panel(
     const std::shared_ptr<Menu>& menu,
     float panel_x, float panel_y, int panel_w,
     int highlight_item,
-    int win_w, int win_h) {
+    int win_w, int win_h,
+    int scroll_px, int visible_h) {
 
-  int dh = 4;
-  for (const auto& item : menu->items) dh += is_separator(item) ? SDLMenuBar::SEP_H : SDLMenuBar::ITEM_H;
+  int natural_h = 4;
+  for (const auto& item : menu->items) natural_h += is_separator(item) ? SDLMenuBar::SEP_H : SDLMenuBar::ITEM_H;
+
+  bool scrolling = (visible_h > 0 && natural_h > visible_h);
+  int draw_h = scrolling ? visible_h : natural_h;
 
   SDL_SetRenderDrawBlendMode(r, SDL_BLENDMODE_BLEND);
   set_draw_color(r, COLOR_SHADOW);
-  fill_frect(r, panel_x + 3, panel_y + 3, (float)panel_w, (float)dh);
+  fill_frect(r, panel_x + 3, panel_y + 3, (float)panel_w, (float)draw_h);
 
   SDL_SetRenderDrawBlendMode(r, SDL_BLENDMODE_NONE);
   set_draw_color(r, COLOR_DROP_BG);
-  fill_frect(r, panel_x, panel_y, (float)panel_w, (float)dh);
+  fill_frect(r, panel_x, panel_y, (float)panel_w, (float)draw_h);
   set_draw_color(r, COLOR_DROP_BDR);
-  draw_frect_outline(r, panel_x, panel_y, (float)panel_w, (float)dh);
+  draw_frect_outline(r, panel_x, panel_y, (float)panel_w, (float)draw_h);
+
+  // Pre-compute arrow presence so the clip rect can exclude them and the border.
+  int max_scroll = scrolling ? (natural_h - visible_h) : 0;
+  bool can_up   = scrolling && (scroll_px > 0);
+  bool can_down = scrolling && (scroll_px < max_scroll);
+
+  if (scrolling) {
+    int clip_x  = (int)panel_x + 1;
+    int clip_y  = (int)panel_y + 1 + (can_up   ? SCROLL_ARROW_H : 0);
+    int clip_w  = panel_w - 2;
+    int clip_h  = draw_h  - 2 - (can_up ? SCROLL_ARROW_H : 0) - (can_down ? SCROLL_ARROW_H : 0);
+    if (clip_h < 0) clip_h = 0;
+    SDL_Rect clip = {clip_x, clip_y, clip_w, clip_h};
+    SDL_SetRenderClipRect(r, &clip);
+  }
 
   TTF_SetFontSize(this->font, 16);
   TTF_SetFontStyle(this->font, TTF_STYLE_NORMAL);
 
-  float iy = panel_y + 2.0f;
+  float iy = panel_y + 2.0f - (float)scroll_px;
   for (int i = 0; i < (int)menu->items.size(); i++) {
     const auto& item = menu->items[i];
+    float item_h_f = is_separator(item) ? (float)SDLMenuBar::SEP_H : (float)SDLMenuBar::ITEM_H;
+    // Skip items entirely outside the visible region.
+    if (iy + item_h_f <= panel_y || iy >= panel_y + (float)draw_h) {
+      iy += item_h_f;
+      continue;
+    }
+
     if (is_separator(item)) {
       SDL_SetRenderDrawBlendMode(r, SDL_BLENDMODE_NONE);
       set_draw_color(r, COLOR_SEP);
@@ -461,7 +529,45 @@ int SDLMenuBar::draw_panel(
     iy += SDLMenuBar::ITEM_H;
   }
 
-  return dh;
+  if (scrolling) {
+    SDL_SetRenderClipRect(r, nullptr);
+
+    auto draw_triangle = [&](float cx, float cy, bool point_up) {
+      float hw = 5.0f, hh = 5.0f;
+      SDL_FColor wh = {1.0f, 1.0f, 1.0f, 1.0f};
+      SDL_Vertex verts[3];
+      if (point_up) {
+        verts[0] = {SDL_FPoint{cx,      cy - hh}, wh, SDL_FPoint{0, 0}};
+        verts[1] = {SDL_FPoint{cx - hw, cy + hh}, wh, SDL_FPoint{0, 0}};
+        verts[2] = {SDL_FPoint{cx + hw, cy + hh}, wh, SDL_FPoint{0, 0}};
+      } else {
+        verts[0] = {SDL_FPoint{cx - hw, cy - hh}, wh, SDL_FPoint{0, 0}};
+        verts[1] = {SDL_FPoint{cx + hw, cy - hh}, wh, SDL_FPoint{0, 0}};
+        verts[2] = {SDL_FPoint{cx,      cy + hh}, wh, SDL_FPoint{0, 0}};
+      }
+      SDL_RenderGeometry(r, nullptr, verts, 3, nullptr, 0);
+    };
+
+    if (can_up) {
+      SDL_SetRenderDrawBlendMode(r, SDL_BLENDMODE_NONE);
+      set_draw_color(r, COLOR_DROP_BG);
+      fill_frect(r, panel_x + 1, panel_y + 1, (float)(panel_w - 2), (float)SCROLL_ARROW_H);
+      float cx = panel_x + (float)panel_w / 2.0f;
+      float cy = panel_y + (float)SCROLL_ARROW_H / 2.0f;
+      draw_triangle(cx, cy, true);
+    }
+    if (can_down) {
+      float ay = panel_y + (float)draw_h - (float)SCROLL_ARROW_H;
+      SDL_SetRenderDrawBlendMode(r, SDL_BLENDMODE_NONE);
+      set_draw_color(r, COLOR_DROP_BG);
+      fill_frect(r, panel_x + 1, ay, (float)(panel_w - 2), (float)(SCROLL_ARROW_H - 1));
+      float cx = panel_x + (float)panel_w / 2.0f;
+      float cy = ay + (float)SCROLL_ARROW_H / 2.0f;
+      draw_triangle(cx, cy, false);
+    }
+  }
+
+  return draw_h;
 }
 
 void SDLMenuBar::draw_bar_strip(SDL_Renderer* r, int win_w) {
@@ -507,9 +613,14 @@ void SDLMenuBar::draw_dropdown(SDL_Renderer* r, int win_w, int win_h) {
   float bt = this->y_offset;
   int dx = this->dropdown_x(this->open_menu_idx, win_w);
   int dw = this->dropdown_width(this->open_menu_idx);
-  float drop_y = bt + MENUBAR_HEIGHT;
+  float drop_y = bt + (float)MENUBAR_HEIGHT;
 
-  this->draw_panel(r, menu, (float)dx, drop_y, dw, this->hovered_item_idx, win_w, win_h);
+  int natural_h = this->dropdown_height(this->open_menu_idx);
+  int vis_h = this->dropdown_visible_h(drop_y, natural_h, win_h);
+  int scroll_px = (int)std::max(0.0f, std::min(this->dropdown_scroll_px, (float)(natural_h - vis_h)));
+
+  this->draw_panel(r, menu, (float)dx, drop_y, dw, this->hovered_item_idx, win_w, win_h,
+      scroll_px, (vis_h < natural_h) ? vis_h : 0);
 
   // Draw submenu cascade panel if an item with a submenu is hovered
   if (this->submenu_open_item_idx >= 0 && this->submenu_open_item_idx < (int)menu->items.size()) {
@@ -527,7 +638,7 @@ void SDLMenuBar::draw_dropdown(SDL_Renderer* r, int win_w, int win_h) {
         }
         int item_y_off = item_y_in_dropdown(menu, this->submenu_open_item_idx);
         int sub_x = this->submenu_panel_x(dx, dw, sub_w, win_w);
-        int sub_y = this->submenu_panel_y((int)drop_y, item_y_off, win_h);
+        int sub_y = (int)drop_y + 2 + item_y_off - scroll_px;
         this->draw_panel(r, submenu, (float)sub_x, (float)sub_y, sub_w, this->submenu_hovered_item_idx, win_w, win_h);
       }
     }
@@ -629,7 +740,7 @@ bool SDLMenuBar::handle_event(const SDL_Event& e, bool fullscreen, int win_w, in
                 }
                 int item_y_off = item_y_in_dropdown(menu, this->submenu_open_item_idx);
                 int sub_x = this->submenu_panel_x(dx, dw, sub_w, win_w);
-                int sub_y = this->submenu_panel_y((int)(this->y_offset + MENUBAR_HEIGHT), item_y_off, win_h);
+                int sub_y = (int)(this->y_offset + MENUBAR_HEIGHT) + 2 + item_y_off - (int)this->dropdown_scroll_px;
                 int hi = hit_test_submenu_panel(px, py, submenu, sub_x, sub_y, sub_w);
                 if (hi >= 0) {
                   this->submenu_hovered_item_idx = hi;
@@ -644,10 +755,16 @@ bool SDLMenuBar::handle_event(const SDL_Event& e, bool fullscreen, int win_w, in
 
       int bar_idx = this->hit_test_bar(px, py);
       if (this->open_menu_idx >= 0 && bar_idx >= 0 && bar_idx != this->open_menu_idx) {
-        this->open_menu_idx = bar_idx;
-        this->hovered_item_idx = -1;
-        this->submenu_open_item_idx = -1;
-        this->submenu_hovered_item_idx = -1;
+        const auto& menus = this->get_top_menus();
+        if (bar_idx < (int)menus.size() && menus[bar_idx]->enabled) {
+          this->open_menu_idx = bar_idx;
+          this->hovered_item_idx = -1;
+          this->submenu_open_item_idx = -1;
+          this->submenu_hovered_item_idx = -1;
+          this->dropdown_scroll_px = 0.0f;
+          this->scroll_up_active = false;
+          this->scroll_down_active = false;
+        }
       }
       if (this->open_menu_idx >= 0) {
         int old_hovered = this->hovered_item_idx;
@@ -672,6 +789,31 @@ bool SDLMenuBar::handle_event(const SDL_Event& e, bool fullscreen, int win_w, in
             this->submenu_open_item_idx = -1;
             this->submenu_hovered_item_idx = -1;
           }
+        }
+
+        // Detect cursor in scroll arrow zones.
+        float drop_y = this->bar_top() + (float)MENUBAR_HEIGHT;
+        int nat_h = this->dropdown_height(this->open_menu_idx);
+        int vis_h = this->dropdown_visible_h(drop_y, nat_h, win_h);
+        if (nat_h > vis_h) {
+          float fdx = (float)this->dropdown_x(this->open_menu_idx, win_w);
+          float fdw = (float)this->dropdown_width(this->open_menu_idx);
+          bool in_x = (px >= fdx && px < fdx + fdw);
+          int max_scroll = nat_h - vis_h;
+          this->scroll_up_active = in_x && (int)this->dropdown_scroll_px > 0
+              && py >= drop_y && py < drop_y + (float)SCROLL_ARROW_H;
+          this->scroll_down_active = in_x && (int)this->dropdown_scroll_px < max_scroll
+              && py >= drop_y + (float)vis_h - (float)SCROLL_ARROW_H && py < drop_y + (float)vis_h;
+          if ((this->scroll_up_active || this->scroll_down_active)
+              && !this->anim_event_pending && s_anim_event_type != 0) {
+            SDL_Event aev{};
+            aev.type = s_anim_event_type;
+            SDL_PushEvent(&aev);
+            this->anim_event_pending = true;
+          }
+        } else {
+          this->scroll_up_active = false;
+          this->scroll_down_active = false;
         }
       }
       if (state_snapshot() != before) WindowManager::instance().redraw_menu_bar_only();
@@ -703,7 +845,7 @@ bool SDLMenuBar::handle_event(const SDL_Event& e, bool fullscreen, int win_w, in
                 }
                 int item_y_off = item_y_in_dropdown(menu, this->submenu_open_item_idx);
                 int sub_x = this->submenu_panel_x(dx, dw, sub_w, win_w);
-                int sub_y = this->submenu_panel_y((int)(this->y_offset + MENUBAR_HEIGHT), item_y_off, win_h);
+                int sub_y = (int)(this->y_offset + MENUBAR_HEIGHT) + 2 + item_y_off - (int)this->dropdown_scroll_px;
                 int hi = hit_test_submenu_panel(px, py, submenu, sub_x, sub_y, sub_w);
                 if (hi >= 0) {
                   this->dispatch_submenu_item(this->open_menu_idx, this->submenu_open_item_idx, hi);
@@ -711,6 +853,9 @@ bool SDLMenuBar::handle_event(const SDL_Event& e, bool fullscreen, int win_w, in
                   this->hovered_item_idx = -1;
                   this->submenu_open_item_idx = -1;
                   this->submenu_hovered_item_idx = -1;
+                  this->dropdown_scroll_px = 0.0f;
+                  this->scroll_up_active = false;
+                  this->scroll_down_active = false;
                   WindowManager::instance().redraw_menu_bar_only();
                   return true;
                 }
@@ -722,7 +867,9 @@ bool SDLMenuBar::handle_event(const SDL_Event& e, bool fullscreen, int win_w, in
 
       int bar_idx = this->hit_test_bar(px, py);
       if (bar_idx >= 0) {
-        if (this->open_menu_idx == bar_idx) {
+        const auto& click_menus = this->get_top_menus();
+        bool enabled = bar_idx < (int)click_menus.size() && click_menus[bar_idx]->enabled;
+        if (this->open_menu_idx == bar_idx || !enabled) {
           this->open_menu_idx = -1;
           this->hovered_item_idx = -1;
         } else {
@@ -731,11 +878,31 @@ bool SDLMenuBar::handle_event(const SDL_Event& e, bool fullscreen, int win_w, in
         }
         this->submenu_open_item_idx = -1;
         this->submenu_hovered_item_idx = -1;
+        this->dropdown_scroll_px = 0.0f;
+        this->scroll_up_active = false;
+        this->scroll_down_active = false;
         WindowManager::instance().redraw_menu_bar_only();
         return true;
       }
 
       if (this->open_menu_idx >= 0) {
+        // Consume clicks in scroll arrow zones without closing the menu.
+        float drop_y_f = this->bar_top() + (float)MENUBAR_HEIGHT;
+        int nat_h = this->dropdown_height(this->open_menu_idx);
+        int vis_h = this->dropdown_visible_h(drop_y_f, nat_h, win_h);
+        if (nat_h > vis_h) {
+          float fdx = (float)this->dropdown_x(this->open_menu_idx, win_w);
+          float fdw = (float)this->dropdown_width(this->open_menu_idx);
+          if (px >= fdx && px < fdx + fdw && py >= drop_y_f && py < drop_y_f + (float)vis_h) {
+            int max_scroll = nat_h - vis_h;
+            if ((int)this->dropdown_scroll_px > 0 && py < drop_y_f + (float)SCROLL_ARROW_H)
+              return true;
+            if ((int)this->dropdown_scroll_px < max_scroll
+                && py >= drop_y_f + (float)vis_h - (float)SCROLL_ARROW_H)
+              return true;
+          }
+        }
+
         int item_idx = this->hit_test_dropdown(px, py, win_w, win_h);
         if (item_idx >= 0) {
           const auto& menus = this->get_top_menus();
@@ -748,6 +915,9 @@ bool SDLMenuBar::handle_event(const SDL_Event& e, bool fullscreen, int win_w, in
             this->hovered_item_idx = -1;
             this->submenu_open_item_idx = -1;
             this->submenu_hovered_item_idx = -1;
+            this->dropdown_scroll_px = 0.0f;
+            this->scroll_up_active = false;
+            this->scroll_down_active = false;
             WindowManager::instance().redraw_menu_bar_only();
           }
           return true;
@@ -757,6 +927,9 @@ bool SDLMenuBar::handle_event(const SDL_Event& e, bool fullscreen, int win_w, in
         this->hovered_item_idx = -1;
         this->submenu_open_item_idx = -1;
         this->submenu_hovered_item_idx = -1;
+        this->dropdown_scroll_px = 0.0f;
+        this->scroll_up_active = false;
+        this->scroll_down_active = false;
         if (state_snapshot() != before) WindowManager::instance().redraw_menu_bar_only();
         return false;
       }
@@ -771,6 +944,9 @@ bool SDLMenuBar::handle_event(const SDL_Event& e, bool fullscreen, int win_w, in
         } else {
           this->open_menu_idx = -1;
           this->hovered_item_idx = -1;
+          this->dropdown_scroll_px = 0.0f;
+          this->scroll_up_active = false;
+          this->scroll_down_active = false;
         }
         WindowManager::instance().redraw_menu_bar_only();
         return true;
