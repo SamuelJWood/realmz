@@ -229,6 +229,11 @@ OSErr SndPlay(SndChannelPtr chan, Handle data_handle, Boolean async) {
   return noErr;
 }
 
+Boolean SndChannelDone(SndChannelPtr chan) {
+  if (!chan || !chan->sdlAudioStream) return 1;
+  return SDL_GetAudioStreamQueued(chan->sdlAudioStream) == 0 ? 1 : 0;
+}
+
 OSErr SetDefaultOutputVolume(uint32_t level) {
   // level is apparently a number in the range [0, 7], where 0 is silent and 7 is full volume.
   if (level < 0 || level > 7) {

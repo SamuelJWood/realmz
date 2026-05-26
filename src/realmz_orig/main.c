@@ -387,6 +387,8 @@ Handle itemHandle;
 char track[maxloop], spellrange, numoftar, targetnum, aimindex, numenemy;
 char castcaste, castlevel, castnum, powerlevel, size, charselectold, charup, attackloop, range[maxloop + 2];
 SndChannelPtr cool[4];
+SndChannelPtr ambient_cool = NIL;
+Handle ambient_sndhandle = NIL;
 short sampledSynth = 5;
 int32_t initMono = 0x0080;
 int32_t initNoDrop = 0x0008;
@@ -770,6 +772,7 @@ void ToolBoxInit(void) {
       cool[t]->qLength = 128;
     }
   }
+  SndNewChannel(&ambient_cool, sampledSynth, initMono + initNoDrop, NIL);
 
   if (numchannel < 3) {
     MyrParamText((Ptr) "Could not allocate all the requested sound channels.  Sounds may backlog or play out of sequence.  This is not fatal however.", (Ptr) "", (Ptr) "", (Ptr) "");
@@ -1215,6 +1218,7 @@ void MainLoop(void) {
   SetMenuBar(myMenuBar);
   InsertMenu(gSound, -1);
   InsertMenu(gSpeed, -1);
+  DisableItem(gNPC, 0);
 
   DrawMenuBar();
   FlushEvents(everyEvent, 0);
@@ -1229,16 +1233,37 @@ void MainLoop(void) {
       if (flamestage2 > 7)
         flamestage2 = 0;
 
-      if (!reducesound) {
-        t = Rand(100);
-        if (t < 5)
-          sound(615);
-        if (t > 95)
-          sound(645);
-        if (twixt(t, 10, 15))
-          sound(642);
-        if (twixt(t, 30, 45))
-          sound(10090);
+      if (!reducesound && ambient_cool) {
+        static const short amb_ids[] = {615, 645, 642, 10090};
+        static short amb_state = 0;       /* 0=idle, 1=playing, 2=silent */
+        static int32_t amb_silent_end = 0;
+        SndCommand qcmd = {quietCmd, 0, 0L};
+
+        if (amb_state == 0) {
+          /* Pick and start a random ambient sound. */
+          HUnlock(ambient_sndhandle);
+          ambient_sndhandle = GetResource('snd ', amb_ids[Rand(4) - 1]);
+          HLock(ambient_sndhandle);
+          if (ambient_sndhandle) {
+            SndDoImmediate(ambient_cool, &qcmd);
+            SndPlay(ambient_cool, (SndListHandle)ambient_sndhandle, TRUE);
+          }
+          amb_state = 1;
+        } else if (amb_state == 1) {
+          /* Wait for the sound to finish playing. */
+          if (SndChannelDone(ambient_cool)) {
+            if (Rand(10) <= 2) {  /* 20%: play another sound immediately */
+              amb_state = 0;
+            } else {              /* 80%: silence for ~1 second (60 ticks) */
+              amb_silent_end = TickCount() + 60;
+              amb_state = 2;
+            }
+          }
+        } else {
+          /* Wait out the silence window. */
+          if (TickCount() >= amb_silent_end)
+            amb_state = 0;
+        }
       }
     }
 #endif

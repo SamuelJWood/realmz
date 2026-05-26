@@ -33,6 +33,8 @@ typedef SndChannel* SndChannelPtr;
 OSErr SndNewChannel(SndChannelPtr* chan, uint16_t synth, int32_t init, void* userRoutine);
 OSErr SndDoImmediate(SndChannelPtr chan, const SndCommand* cmd);
 OSErr SndPlay(SndChannelPtr chan, Handle sndHdl, Boolean async);
+// Returns true when the channel has no more audio queued (sound has finished).
+Boolean SndChannelDone(SndChannelPtr chan);
 
 OSErr SetDefaultOutputVolume(uint32_t level);
 #define SetSoundVol SetDefaultOutputVolume
