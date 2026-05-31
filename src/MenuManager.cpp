@@ -1,6 +1,7 @@
 #include "MenuManager.hpp"
 #include "EventManager.h"
 #include "FileManager.h"
+#include "FileManager.hpp"
 #include "MemoryManager.hpp"
 #include "MenuController.h"
 #include "MenuManager-C-Interface.h"
@@ -8,8 +9,10 @@
 #include "SDLMenuBar.hpp"
 #include "StringConvert.hpp"
 #include "WindowManager.hpp"
+#include <SDL3_image/SDL_image.h>
 #include <algorithm>
 #include <cctype>
+#include <filesystem>
 #include <functional>
 #include <list>
 #include <phosg/Strings.hh>
@@ -208,6 +211,7 @@ void GetMenuItemText(MenuHandle theMenu, uint16_t item, Str255 itemString) {
 
 void DrawMenuBar() {
   mm.sync();
+  WindowManager::instance().redraw_menu_bar_only();
 }
 
 void DeleteMenu(int16_t menuID) {
@@ -300,6 +304,61 @@ void SetItemIconByCicnId(MenuHandle theMenu, int16_t item, int16_t cicnId) {
   } else {
     menu_item.icon_image = nullptr;
   }
+}
+
+void SetItemIconFromScenarioPng(MenuHandle theMenu, int16_t item, const char* scenario_name) {
+  auto menu = mm.get_menu(theMenu);
+  if (item < 1 || item > static_cast<int16_t>(menu->items.size())) {
+    return;
+  }
+  auto& menu_item = menu->items.at(item - 1);
+
+  // Find a .png file in the scenario's directory.
+  std::string dir_mac = std::string(":Scenarios:") + scenario_name;
+  auto files = mac_list_directory(dir_mac);
+  std::string png_host;
+  for (const auto& fname : files) {
+    if (fname.size() > 4 &&
+        fname.substr(fname.size() - 4) == ".png") {
+      std::string mac_path = dir_mac + ":" + fname;
+      png_host = host_filename_for_mac_filename(mac_path, false);
+      break;
+    }
+  }
+
+  if (png_host.empty()) {
+    mm_log.warning_f("No PNG icon found for scenario '{}'", scenario_name);
+    menu_item.icon_image = nullptr;
+    return;
+  }
+
+  SDL_Surface* surf = IMG_Load(png_host.c_str());
+  if (!surf) {
+    mm_log.warning_f("Failed to load PNG '{}': {}", png_host, SDL_GetError());
+    menu_item.icon_image = nullptr;
+    return;
+  }
+
+  SDL_Surface* rgba = SDL_ConvertSurface(surf, SDL_PIXELFORMAT_ARGB8888);
+  SDL_DestroySurface(surf);
+  if (!rgba) {
+    mm_log.warning_f("Failed to convert PNG surface: {}", SDL_GetError());
+    menu_item.icon_image = nullptr;
+    return;
+  }
+
+  int w = rgba->w, h = rgba->h;
+  auto img = std::make_shared<phosg::ImageRGBA8888N>(w, h);
+  for (int y = 0; y < h; y++) {
+    const uint32_t* row = reinterpret_cast<const uint32_t*>(
+        static_cast<const uint8_t*>(rgba->pixels) + y * rgba->pitch);
+    for (int x = 0; x < w; x++) {
+      img->write(x, y, phosg::rgba8888_for_argb8888(row[x]));
+    }
+  }
+  SDL_DestroySurface(rgba);
+
+  menu_item.icon_image = std::move(img);
 }
 
 void AppendMenu(MenuHandle menu, ConstStr255Param data) {
@@ -548,4 +607,74 @@ void Realmz_InsertSubmenuItem(MenuHandle theMenu, ConstStr255Param title, int16_
 
 int32_t MenuManager_FindItemByKeyEquivalent(char ch) {
   return mm.find_item_by_key_equivalent(ch);
+}
+
+int PopulateScenarioMenu(MenuHandle theMenu) {
+  auto menu = mm.get_menu(theMenu);
+
+  // Strip any pre-existing scenario items (positions 5+; indices 4+).
+  while (menu->items.size() > 4) {
+    menu->items.pop_back();
+  }
+
+  // Traditional Fantasoft scenario ordering — unlisted entries sort alphabetically after these.
+  static const std::vector<std::string> kOrder = {
+      "City of Bywater",
+      "Prelude to Pestilence",
+      "Assault on Giant Mountain",
+      "Destroy the Necronomicon",
+      "Castle in the Clouds",
+      "Grilochs Revenge",
+      "White Dragon",
+      "Mithril Vault",
+      "Twin Sands of Time",
+      "Trouble in the Sword Lands",
+      "War in the Sword Lands",
+      "Wrath of the Mind Lords",
+      "Half Truth",
+  };
+
+  // Scan only the bundled :Scenarios: directory so that user-installed scenarios
+  // from the userdata path (e.g. Kalypso's Island) are never shown.
+  std::string scenarios_host = host_filename_for_mac_filename(":Scenarios:", false);
+
+  std::vector<std::string> valid;
+  if (std::filesystem::is_directory(scenarios_host)) {
+    for (const auto& entry : std::filesystem::directory_iterator{scenarios_host}) {
+      if (!entry.is_directory()) {
+        continue;
+      }
+      std::string name = entry.path().filename().string();
+      // A valid scenario directory contains a file with the same name as the folder.
+      if (!std::filesystem::exists(entry.path() / name)) {
+        continue;
+      }
+      valid.push_back(name);
+    }
+  }
+
+  // Sort: known scenarios in traditional order first, then the rest alphabetically.
+  auto order_idx = [&](const std::string& s) -> int {
+    for (int i = 0; i < (int)kOrder.size(); i++) {
+      if (s == kOrder[i]) return i;
+    }
+    return (int)kOrder.size();
+  };
+  std::sort(valid.begin(), valid.end(), [&](const std::string& a, const std::string& b) {
+    int ia = order_idx(a), ib = order_idx(b);
+    if (ia != ib) return ia < ib;
+    std::string la = a, lb = b;
+    std::transform(la.begin(), la.end(), la.begin(), ::tolower);
+    std::transform(lb.begin(), lb.end(), lb.begin(), ::tolower);
+    return la < lb;
+  });
+
+  for (const auto& name : valid) {
+    auto& item = menu->items.emplace_back();
+    item.name = name;
+    item.enabled = false;
+  }
+
+  mm.sync();
+  return (int)valid.size();
 }
