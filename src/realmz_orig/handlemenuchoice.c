@@ -198,7 +198,22 @@ short HandleMenuChoice(void) {
 
         case 5: /********** new character **********/
           characterl.race = characterl.caste = characterl.gender = 0;
+          DisableItem(gApple, 0);
+          DisableItem(gFile, 0);
+          DisableItem(gGame, 0);
+          DisableItem(gParty, 0);
+          DisableItem(gBeast, 0);
+          DisableItem(gNPC, 0);
+          DisableItem(gScenario, 0);
+          DisableItem(prefer, 0);
+          DrawMenuBar();
           CharacterGen();
+          EnableItem(gApple, 0);
+          EnableItem(gFile, 0);
+          EnableItem(gGame, 0);
+          EnableItem(gParty, 0);
+          EnableItem(prefer, 0);
+          DrawMenuBar();
           break;
 
         case 7: /********** alter party **********/
@@ -249,76 +264,60 @@ short HandleMenuChoice(void) {
           aboutrealmz();
           break;
 
-        case 2: /**** order form *****/
-          orderform();
-          break;
-
-        case 3: /**** show contact info *****/
+        case 2: /**** show contact info *****/
           showcontactinfo();
           break;
 
-        case 4: /**** About Fantasoft *****/
+        case 3: /**** About Fantasoft *****/
           movie(1128, 129, 1);
           break;
 
-        case 5: /**** About Prelude *****/
+        case 4: /**** About Prelude *****/
           movie(1130, 129, 0);
           break;
 
-        case 6: /**** About Assault *****/
+        case 5: /**** About Assault *****/
           movie(1129, 129, 0);
           break;
 
-        case 7: /**** About Destroy *****/
+        case 6: /**** About Destroy *****/
           movie(1132, 129, 0);
           break;
 
-        case 8: /**** About Castle *****/
+        case 7: /**** About Castle *****/
           movie(1131, 129, 0);
           break;
 
-        case 9: /**** About Grilochs Dragon *****/
+        case 8: /**** About Grilochs Dragon *****/
           movie(1134, 129, 0);
           break;
 
-        case 10: /**** About White Dragon *****/
+        case 9: /**** About White Dragon *****/
           movie(1133, 129, 0);
           break;
 
-        case 11: /**** About Mithril Vault *****/
+        case 10: /**** About Mithril Vault *****/
           movie(1136, 129, 0);
           break;
 
-        case 12: /**** Twin Sands of Time *****/
+        case 11: /**** Twin Sands of Time *****/
           movie(1138, 129, 0);
           break;
 
-        case 13: /**** Trouble in the Sword Lands *****/
+        case 12: /**** Trouble in the Sword Lands *****/
           movie(1135, 129, 0);
           break;
 
-        case 14: /**** War in the Sword Lands *****/
+        case 13: /**** War in the Sword Lands *****/
           movie(1137, 129, 0);
           break;
 
-        case 15: /**** Dagger of Silences *****/
+        case 14: /**** Dagger of Silences *****/
           movie(1139, 129, 0);
           break;
 
-        case 16: /**** About Half Truth *****/
+        case 15: /**** About Half Truth *****/
           movie(1140, 128, 0);
-          break;
-
-        case 17: /**** About Unused *****/
-          movie(1141, 128, 0);
-          break;
-
-        case 19: /**** About PC Editor *****/
-          movie(1150, 128, 0);
-          break;
-
-        case 20: /**** About Divinity *****/
-          movie(1151, 128, 0);
           break;
 
         default: /*** launch something from apple menu ***/
@@ -412,56 +411,14 @@ short HandleMenuChoice(void) {
           }
           break;
 
-        case 6: /****** Refresh Screen *********/
-          RedrawAllRealmz();
-          break;
-
-        case 7: /****** Edit Spell Names *********/
-          in();
-
-          editspellnames();
-
-          if ((indung) && (viewtype == 1)) {
-            updatemain(FALSE, 0);
-            UpdateWindow(FALSE);
-          }
-
-          if (incombat) {
-            out();
-            centerstage(0);
-            combatupdate2(lastshown);
-            updatecontrols();
-          } else if (FrontWindow() != GetDialogWindow(background))
-            updatemain(FALSE, -1);
-          break;
-
-        case 8: /****** Edit Race/Caste Names *********/
-          in();
-
-          editracecaste();
-
-          if ((indung) && (viewtype == 1)) {
-            updatemain(FALSE, 0);
-            UpdateWindow(FALSE);
-          }
-
-          if (incombat) {
-            out();
-            centerstage(0);
-            combatupdate2(lastshown);
-            updatecontrols();
-          } else if (FrontWindow() != GetDialogWindow(background))
-            updatemain(FALSE, -1);
-          break;
-
-        case 9: /****** Toggle Hurry Spell Resolution *********/
+        case 6: /****** Toggle Hurry Spell Resolution *********/
 
           if (quickshow)
             quickshow = FALSE;
           else
             quickshow = TRUE;
 
-          CheckItem(prefer, 9, quickshow);
+          CheckItem(prefer, 6, quickshow);
           break;
       }
 
@@ -935,10 +892,10 @@ short HandleMenuChoice(void) {
           fat = 4;
           reply = TRUE;
 
-          if (currentscenario < 7)
-            currentscenario = 10;
+          if (currentscenario < 5)
+            currentscenario = 5;
 
-          if (currentscenario == 10)
+          if (currentscenario == 5)
             reply = FALSE;
 
           GetMenuItemText(gGame, currentscenario, myString);
@@ -1028,14 +985,6 @@ short HandleMenuChoice(void) {
 
           break;
 
-        case 5: /*********** Install 3rd party scenario ***************/
-          adddelscen(1);
-          break;
-
-        case 6: /*********** Uninstall 3rd party scenario ***************/
-          adddelscen(0);
-          break;
-
         default:
           if (FrontWindow() != GetDialogWindow(background)) {
             SetPort(GetWindowPort(look));
@@ -1043,7 +992,7 @@ short HandleMenuChoice(void) {
             return (0);
           }
 
-          if (theItem > 5) {
+          if (theItem > 4) {
             GetMenuItemText(gGame, theItem, myString);
             PtoCstr(myString);
             strcpy(filename, myString);

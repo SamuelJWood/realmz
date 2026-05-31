@@ -1772,9 +1772,9 @@ void updatemapmenu(void) {
   fclose(fp);
 
   if (quickshow)
-    CheckItem(prefer, 9, 1);
+    CheckItem(prefer, 6, 1);
   else
-    CheckItem(prefer, 9, 0);
+    CheckItem(prefer, 6, 0);
 }
 
 /****************************** Startlevel **********************************/
@@ -1901,6 +1901,7 @@ void sound(short id) {
 /********************* updatemain **************************/
 void updatemain(short center, short who) {
   Rect mainrect;
+  int enable_recomposite = WindowManager_SetEnableRecomposite(0);
 
   SetMenuBar(myMenuBar);
   InsertMenu(gSound, -1);
@@ -1973,11 +1974,14 @@ void updatemain(short center, short who) {
       tickcheck();
       updatecontrols();
       timeclick(0, FALSE);
-      if (revertgame)
+      if (revertgame) {
+        WindowManager_SetEnableRecomposite(enable_recomposite);
         return;
+      }
     }
     SetPort(GetWindowPort(screen));
   }
+  WindowManager_SetEnableRecomposite(enable_recomposite);
 }
 
 /********************** mainscreen ************************/
@@ -2312,7 +2316,7 @@ void updatescenarioavail(void) {
   short t;
   short start, stop;
 
-  start = 7;
+  start = 5;
   stop = topfantasoftsceanrio; //  Fantasoft v7.1
   if (divine) {
     start = topfantasoftsceanrio + 1; /*** v7.1 ****/
@@ -2321,13 +2325,12 @@ void updatescenarioavail(void) {
   }
 
   for (t = start; t < stop; t++) {
-    GetIndString(myString, 3, 1);
     GetMenuItemText(gGame, t, myString);
     PtoCstr(myString); // Myriad
-    // if (StringWidth(myString)) Myriad
     if (strlen(myString)) {
       if (selectscenario((Ptr)myString, 0)) {
         EnableItem(gGame, t);
+        SetItemIconFromScenarioPng(gGame, t, myString);
         GetMenuItemText(gGame, t, myString); /***** scenarios version  *********/
         GetVersStr(2, 0);
         PtoCstr(myString);
@@ -2339,13 +2342,17 @@ void updatescenarioavail(void) {
           strcat(myString, (StringPtr) "Unknown");
         CtoPstr((Ptr)myString);
         AppendMenu(prefer, myString);
+      } else {
+        DisableItem(gGame, t);
       }
     }
   }
 
-  GetMenuItemText(gGame, 10 - 3 * divine, myString);
-  PtoCstr(myString);
-  selectscenario((Ptr)myString, 0);
+  if (CountMItems(gGame) >= 5) {
+    GetMenuItemText(gGame, 5 - 3 * divine, myString);
+    PtoCstr(myString);
+    selectscenario((Ptr)myString, 0);
+  }
 }
 
 /***************************** selectscenario **********************/
@@ -2366,7 +2373,7 @@ short selectscenario(char tempfilename[256], short mode) {
     aboutrealmz();
     return (0);
   }
-  if (!doreg() && (currentscenario > 10)) {
+  if (!doreg() && (currentscenario > 5)) {
     if (mode)
       warn(65);
     return (0);

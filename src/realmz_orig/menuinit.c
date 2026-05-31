@@ -70,7 +70,7 @@ void MenuInit(void) {
       GetIndString(myString, -6003 - divine, menucounter);
       if (StringWidth(myString)) {
         AppendMenu(gGame, myString);
-        DisableItem(gGame, menucounter + 23);
+        DisableItem(gGame, menucounter + 18);
       }
     }
 
@@ -78,6 +78,13 @@ void MenuInit(void) {
   } else if (!seenit) {
     aboutrealmz();
     seenit = 1;
+  }
+
+  // Populate Adventure menu from the bundled Scenarios/ folder.  Runs after the
+  // doreg() block so that any Divinity names appended above are stripped first.
+  {
+    int scen_count = PopulateScenarioMenu(gGame);
+    topfantasoftsceanrio = 5 + scen_count;
   }
 
   updatescenarioavail();
@@ -94,123 +101,17 @@ void MenuInit(void) {
   CheckItem(musicmenu, 1, 1 - nomusic);
 
   if (!divine) {
-    currentscenario = 10;
-    if (currentscenariohold > 10)
+    currentscenario = 5;
+    if (currentscenariohold > 5)
       currentscenario = currentscenariohold;
     CheckItem(gGame, currentscenario, 1);
   } else {
-    currentscenario = 7;
-    if (currentscenariohold > 20)
+    currentscenario = 2;
+    if (currentscenariohold > 15)
       currentscenario = currentscenariohold;
     CheckItem(gGame, currentscenario, 1);
   }
 
-  // Display versions of Realmz, Items, Spells, Castes, Races, Character editor
-  //***************************************************************************
-
-  GetMenuItemText(prefer, 12, myString); /***** Realmz *********/
-  PtoCstr(myString);
-  GetVersStr(1, Appl_Rsrc_Fork_Ref_Num); /*** load in version of Realmz ***/
-  PtoCstr(theString);
-  strcat(myString, theString);
-  CtoPstr((Ptr)myString);
-  SetMenuItemText(prefer, 12, myString);
-
-  //***************************************************************************
-
-  itemrefnum = MyrOpenResFile((Ptr) "\p:Data Files:Data ID"); /* open items resource for item names strings ****/
-  GetMenuItemText(prefer, 13, myString); /***** Items  *********/
-  GetVersStr(5, 0);
-  PtoCstr(myString);
-  PtoCstr(theString);
-  if (itemrefnum != -1)
-    strcat(myString, theString);
-  else
-    strcat(myString, (StringPtr) "Unknown");
-  CtoPstr((Ptr)myString);
-  SetMenuItemText(prefer, 13, myString);
-
-  //***************************************************************************
-
-  temp = MyrOpenResFile((Ptr) "\p:Data Files:Data S"); /* open spells resource for item names strings ****/
-  GetMenuItemText(prefer, 14, myString); /***** spells  *********/
-  GetVersStr(6, 0);
-  PtoCstr(myString);
-  PtoCstr(theString);
-  if (temp != -1)
-    strcat(myString, theString);
-  else
-    strcat(myString, (StringPtr) "Unknown");
-  CtoPstr((Ptr)myString);
-  SetMenuItemText(prefer, 14, myString);
-  if (temp != -1)
-    CloseResFile(temp);
-
-  //***************************************************************************
-
-  temp = MyrOpenResFile((Ptr) "\p:Data Files:Data Race"); /* open races resource  ****/
-  GetMenuItemText(prefer, 15, myString); /***** races  *********/
-  GetVersStr(7, 0);
-  PtoCstr(myString);
-  PtoCstr(theString);
-  if (temp != -1)
-    strcat(myString, theString);
-  else
-    strcat(myString, (StringPtr) "Unknown");
-  CtoPstr((Ptr)myString);
-  SetMenuItemText(prefer, 15, myString);
-  if (temp != -1)
-    CloseResFile(temp);
-
-  //***************************************************************************
-
-  temp = MyrOpenResFile((Ptr) "\p:Data Files:Data Caste"); /* open castes resource ****/
-  GetMenuItemText(prefer, 16, myString); /***** castes  *********/
-  GetVersStr(8, 0);
-  PtoCstr(myString);
-  PtoCstr(theString);
-  if (temp != -1)
-    strcat(myString, theString);
-  else
-    strcat(myString, (StringPtr) "Unknown");
-  CtoPstr((Ptr)myString);
-  SetMenuItemText(prefer, 16, myString);
-  if (temp != -1)
-    CloseResFile(temp);
-
-  //***************************************************************************
-
-  GetMenuItemText(prefer, 17, myString); /***** The Family Jewels  *********/
-  GetVersStr(9, jewelsrefnum);
-  PtoCstr(myString);
-  PtoCstr(theString);
-  strcat(myString, theString);
-  CtoPstr((Ptr)myString);
-  SetMenuItemText(prefer, 17, myString);
-
-  GetMenuItemText(prefer, 18, myString); /***** PC Editor *********/
-  PtoCstr(myString);
-  temp = -1;
-
-  if (temp == -1)
-    temp = MyrOpenResFile((Ptr) "\p:Character Editor 10.0 DEMO");
-  if (temp == -1)
-    temp = MyrOpenResFile((Ptr) "\p:Character Editor 10.1 DEMO");
-  if (temp == -1)
-    temp = MyrOpenResFile((Ptr) "\p:Character Editor 10.0.1 DEMO");
-
-  if (temp != -1) {
-    GetVersStr(1, temp);
-    if (temp > 0)
-      CloseResFile(temp);
-    temp = -1;
-    PtoCstr(theString);
-    strcat(myString, theString);
-  } else
-    strcat(myString, (StringPtr) "Unknown");
-
-  CtoPstr((Ptr)myString);
-  SetMenuItemText(prefer, 18, myString);
 }
 
 /**************************** updatemonstermenu *************/
