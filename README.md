@@ -8,6 +8,7 @@ Here are the main changes from the upstream version of Realmz (realmz-castle/rea
 
 -Graphics
     -Fullscreen mode has been added.
+    
     -The window can be resized arbitrarily.
     -Maps shown in game are now centered.
     -The overhead dungeon view is centered.
