@@ -6,31 +6,31 @@ Realmz is a classic, turn-based RPG, originally developed for early Macintosh co
 
 Here are the main changes from the upstream version of Realmz (realmz-castle/realmz):
 
--Graphics
-    -Fullscreen mode has been added.
-    -The window can be resized arbitrarily.
-    -Maps shown in game are now centered.
-    -The overhead dungeon view is centered.
-    -The overhead dungeon view no longer causes flickering.
-    -Animations showing damage to party members when outside of combat are now visible over the characters' portraits as in the original Realmz.
-    -Closing various screens/dialogs no longer causes buttons and selected player character indicator to flicker.
+Graphics  
+    -Fullscreen mode has been added.  
+    -The window can be resized arbitrarily.  
+    -Maps shown in game are now centered.  
+    -The overhead dungeon view is centered.  
+    -The overhead dungeon view no longer causes flickering.  
+    -Animations showing damage to party members when outside of combat are now visible over the characters' portraits as in the original Realmz.  
+    -Closing various screens/dialogs no longer causes buttons and selected player character indicator to flicker.  
 
--Music
-    -All original music files play in game (the Outdoor Music file was converted from a Mac only tracker format to MOD)
-    -MP3 can also be used
-    -The game will randomly select tracks to play if there are multiple similarly named files (e.g., "Outdoor Music", "Outdoor Music 2.mp3" "Outdoor Music files.mod").
+Music  
+    -All original music files play in game (the Outdoor Music file was converted from a Mac only tracker format to MOD)  
+    -MP3 can also be used  
+    -The game will randomly select tracks to play if there are multiple similarly named files (e.g., "Outdoor Music", "Outdoor Music 2.mp3" "Outdoor Music files.mod").  
 
--Scenario Bugfixes
-    -All scenarios have had spelling mistakes fixed (hundreds of spelling mistakes in total).
-    -Prelude to Pestilence's bugs with missing items in the potion shop, errors of allegiance, etc. have been fixed.
+Scenario Bugfixes  
+    -All scenarios have had spelling mistakes fixed (hundreds of spelling mistakes in total).  
+    -Prelude to Pestilence's bugs with missing items in the potion shop, errors of allegiance, etc. have been fixed.  
 
--User interface
-    -A new menu system has been created that shows scenario icons, descriptions of Caste and Race, etc.
-    -The "Esc" key can be used instead of "A" to Abort targeting.
-    -Most screens can be closed by pressing "Esc" - Items screen, Encounter, Trade, etc.
-    -The anomalous sound bug when moving the cursor over the right side of the screen in the after battle rewards screen has been fixed.
-    -Right clicking on characters in combat will show their information.
-    -Pressing "T" to target in combat will attempt to automatically switch to a ranged weapon first.
+User interface  
+    -A new menu system has been created that shows scenario icons, descriptions of Caste and Race, etc.  
+    -The "Esc" key can be used instead of "A" to Abort targeting.  
+    -Most screens can be closed by pressing "Esc" - Items screen, Encounter, Trade, etc.  
+    -The anomalous sound bug when moving the cursor over the right side of the screen in the after battle rewards screen has been fixed.  
+    -Right clicking on characters in combat will show their information.  
+    -Pressing "T" to target in combat will attempt to automatically switch to a ranged weapon first.  
 
 # License
 
