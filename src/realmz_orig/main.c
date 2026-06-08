@@ -789,10 +789,8 @@ void ToolBoxInit(void) {
   charnum = -1;
 
   getpref();
-#ifdef PC
-  if (fullscreen_pref)
+  if (fullscreen_pref != 2)
     WindowManager_ToggleFullscreen();
-#endif
 
   FlushEvents(everyEvent, 0);
   SystemTask();

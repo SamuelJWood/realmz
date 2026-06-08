@@ -115,7 +115,7 @@ void savepref(void) {
     (**(PrefHandle)new_data_handle).autonote = autonote;
     (**(PrefHandle)new_data_handle).portraitchoice = portraitchoice;
     (**(PrefHandle)new_data_handle).currentscenariohold = currentscenario;
-    (**(PrefHandle)new_data_handle).fullscreen_pref = (char)WindowManager_IsFullscreen();
+    (**(PrefHandle)new_data_handle).fullscreen_pref = WindowManager_IsFullscreen() ? 1 : 2;
     (**(PrefHandle)new_data_handle).journalindex2 = 0;
     (**(PrefHandle)new_data_handle).blank5 = 0;
     (**(PrefHandle)new_data_handle).blank6 = 0;
@@ -313,7 +313,7 @@ void savepref(void) {
   prefs->autonote = autonote;
   prefs->portraitchoice = portraitchoice;
   prefs->currentscenariohold = currentscenario;
-  prefs->fullscreen_pref = 0;
+  prefs->fullscreen_pref = WindowManager_IsFullscreen() ? 1 : 2;
   prefs->journalindex2 = 0;
   prefs->blank5 = 0;
   prefs->blank6 = 0;
