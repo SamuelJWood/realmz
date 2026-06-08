@@ -118,7 +118,7 @@ backup:
       goto over;
     }
 
-    if ((itemHit == 12) || (itemHit == 1)) {
+    if ((itemHit == 12) || (itemHit == 1) || (itemHit == 0) /* Escape */) {
       ploticon3(129, buttonrect);
       sound(141);
       inspell = 0;

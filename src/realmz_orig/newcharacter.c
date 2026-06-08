@@ -68,7 +68,11 @@ void NewCharacter(short level) {
   characterl.prestigepenelty = (10 * (level * level));
 
   gGeneration = GetNewDialog(128, 0L, (WindowPtr)-1L);
-  MoveWindow(GetDialogWindow(gGeneration), GlobalLeft, GlobalTop, FALSE);
+  {
+    Rect pb;
+    GetPortBounds((CGrafPtr)GetDialogWindow(gGeneration), &pb);
+    MoveWindow(GetDialogWindow(gGeneration), (800 - (pb.right - pb.left)) / 2, (600 - (pb.bottom - pb.top)) / 2, FALSE);
+  }
   ShowWindow(GetDialogWindow(gGeneration));
   gCurrent = gGeneration;
   SetPortDialogPort(gGeneration);
@@ -338,7 +342,7 @@ waynew:
       aging = GetNewDialog(191, 0L, (WindowPtr)-1L);
       SetPortDialogPort(aging);
       gCurrent = aging;
-      MoveWindow(GetDialogWindow(aging), GlobalLeft, GlobalTop, FALSE);
+      WindowManager_CenterWindow(GetDialogWindow(aging));
       ShowWindow(GetDialogWindow(aging));
       ErasePortRect();
 

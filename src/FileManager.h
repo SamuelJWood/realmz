@@ -26,7 +26,11 @@ enum {
 typedef struct {
   int16_t vRefNum;
   int32_t parID;
-  Str63 name;
+  // On Classic Mac OS this is a Str63 leaf name, but this port stores the full
+  // relative path here (see FSMakeFSSpec / mac_GetRelativeFSSpec). Paths to files
+  // in nested scenario folders (e.g. ":Scenarios:3rd Party Scenarios:<name>:Scenario")
+  // can exceed 63 characters, so the buffer is widened to hold a full path.
+  Str255 name;
 } FSSpec;
 typedef FSSpec* FSSpecPtr;
 typedef FSSpecPtr* FSSpecHandle;

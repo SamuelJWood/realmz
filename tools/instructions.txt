@@ -1,0 +1,15 @@
+  To apply corrections after editing the txt file:
+  python3 tools/scenario_text.py inject \
+    "base/Realmz/Scenarios/Prelude to Pestilence/scenario_text.txt" \
+    "base/Realmz/Scenarios/Prelude to Pestilence"
+
+  Constraints to be aware of while editing:
+  - SD2/DES entries: max 255 characters
+  - OD entries: max 24 characters (these are short choice labels)
+  - Don't modify the ### TAG:INDEX lines themselves
+
+✻ Brewed for 9m 12s
+
+※ recap: Working on improving the Realmz game port, most recently replacing the native OS menu bar with a custom SDL
+  overlay and fixing its performance and fullscreen behavior. The scenario text for Prelude to Pestilence has been
+  extracted to a .txt file ready for the user to spell-check and edit.

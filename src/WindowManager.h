@@ -18,8 +18,6 @@ struct _TextEditOpaque {
 };
 typedef struct _TextEditOpaque* TEHandle;
 
-typedef Ptr ModalFilterProcPtr;
-
 typedef struct {
   // We don't use style scrap records, so this is unimplemented. The format is
   // ResourceDASM::StyleResourceCommand, but that's defined in C++ and can't be
@@ -76,11 +74,14 @@ typedef CWindowPtr WindowPtr, DialogPtr, WindowRef;
 
 typedef Handle ControlHandle, DialogItemHandle;
 
+typedef Boolean (*ModalFilterProcPtr)(DialogPtr theDialog, EventRecord* theEvent, short* itemHit);
+
 void WindowManager_Init(void);
 WindowPtr WindowManager_CreateNewWindow(int16_t res_id, bool is_dialog, WindowPtr behind);
 void WindowManager_DrawDialog(WindowPtr theWindow);
 void WindowManager_DisposeWindow(WindowPtr theWindow);
 void GetDialogItem(DialogPtr theDialog, int16_t itemNo, int16_t* itemType, Handle* item, Rect* box);
+void WindowManager_SetDialogItemRect(DialogPtr dialog, short item_id, const Rect* box);
 void GetDialogItemText(Handle item, Str255 text);
 void SetDialogItemText(Handle item, ConstStr255Param text);
 int16_t StringWidth(ConstStr255Param s);
@@ -152,6 +153,8 @@ int WindowManager_SetEnableRecomposite(int enable);
 void WindowManager_RecompositeAlways();
 void WindowManager_ToggleFullscreen(void);
 int WindowManager_IsFullscreen(void);
+// Center a window within the 800×600 virtual screen.
+void WindowManager_CenterWindow(WindowPtr win);
 
 #ifdef __cplusplus
 } // extern "C"

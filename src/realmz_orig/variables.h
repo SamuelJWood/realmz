@@ -136,7 +136,7 @@ extern short fumque[20], fumtotal, fumloop;
 extern int32_t appnum;
 extern Boolean physical, battlemacro, doingque, macro, cycle, nologo, nofade;
 
-extern char autonote, portraitchoice, currentscenariohold, blank3; /****** additional preference varialbles *******/
+extern char autonote, portraitchoice, currentscenariohold, fullscreen_pref; /****** additional preference varialbles *******/
 extern short journalindex2, blank5, blank6, blank7, blank8, blank9, blank10;
 
 extern Handle data_handle;
@@ -241,7 +241,7 @@ extern short blankround;
 extern int32_t mouseuptime;
 extern Handle myMenuBar, copywright;
 extern int32_t templong;
-extern short select[6];
+extern short charselected[6];
 extern Boolean needupdate, shortupdateneed, putup;
 extern short mapshiftx, mapshifty, divineref, itemrefnum, refnum, jewelsrefnum, portraitrefnum;
 extern short tacticalrefnum;

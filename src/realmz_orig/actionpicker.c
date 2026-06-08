@@ -82,8 +82,9 @@ short actionpicker(void) {
       }
     }
 
-    if (itemHit == 18) {
-      ploticon3(129, buttonrect);
+    if ((itemHit == 18) || (itemHit == 0) /* Escape */) {
+      if (itemHit != 0)
+        ploticon3(129, buttonrect);
       reply = FALSE;
       goto out;
     } else {

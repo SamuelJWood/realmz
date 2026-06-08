@@ -16,7 +16,13 @@ tryagain:
   TextFont(defaultfont);
   ForeColor(yellowColor);
   gStop = 0;
-  MoveWindow(GetDialogWindow(namewindow), GlobalLeft + 132, GlobalTop + 125, FALSE);
+  {
+    Rect pb;
+    GetPortBounds((CGrafPtr)GetDialogWindow(namewindow), &pb);
+    short dlgW = pb.right - pb.left;
+    short dlgH = pb.bottom - pb.top;
+    MoveWindow(GetDialogWindow(namewindow), (800 - dlgW) / 2, (600 - dlgH) / 2, FALSE);
+  }
   ShowWindow(GetDialogWindow(namewindow));
   ErasePortRect();
 

@@ -1115,6 +1115,7 @@ void combatchoice(void) {
               goto ipl;
               break;
 
+            case 0x1b: /* Escape: abort, same as 'a' */
             case 'a': /************ a ** abort spell ******************/
               buttonrect.top = 327 + downshift;
               buttonrect.bottom = buttonrect.top + 18;

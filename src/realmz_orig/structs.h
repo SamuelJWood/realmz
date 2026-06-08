@@ -16,7 +16,7 @@ typedef struct {
   short defaultfont;
   int32_t serial;
   Str255 name_str;
-  char autonote, portraitchoice, currentscenariohold, blank3;
+  char autonote, portraitchoice, currentscenariohold, fullscreen_pref;
   short journalindex2, blank5, blank6, blank7, blank8, blank9, blank10;
 } PrefRecord, *PrefPtr, **PrefHandle;
 

@@ -115,7 +115,7 @@ void savepref(void) {
     (**(PrefHandle)new_data_handle).autonote = autonote;
     (**(PrefHandle)new_data_handle).portraitchoice = portraitchoice;
     (**(PrefHandle)new_data_handle).currentscenariohold = currentscenario;
-    (**(PrefHandle)new_data_handle).blank3 = 0;
+    (**(PrefHandle)new_data_handle).fullscreen_pref = (char)WindowManager_IsFullscreen();
     (**(PrefHandle)new_data_handle).journalindex2 = 0;
     (**(PrefHandle)new_data_handle).blank5 = 0;
     (**(PrefHandle)new_data_handle).blank6 = 0;
@@ -142,6 +142,7 @@ void savepref(void) {
 void getpref(void) {
   Handle data_handle;
   int32_t magic = 0L;
+  int first_launch = 0;
 
   openpref(0);
 
@@ -157,6 +158,7 @@ void getpref(void) {
     closepref();
   }
   if (magic != MAGIC) {
+    first_launch = 1;
     // No pref file get default
     data_handle = GetResource('PRFN', PREF_RES_ID);
     DetachResource(data_handle);
@@ -210,7 +212,7 @@ void getpref(void) {
   autonote = (**(PrefHandle)data_handle).autonote;
   portraitchoice = (**(PrefHandle)data_handle).portraitchoice;
   currentscenariohold = (**(PrefHandle)data_handle).currentscenariohold;
-  blank3 = (**(PrefHandle)data_handle).blank3;
+  fullscreen_pref = first_launch ? 1 : (**(PrefHandle)data_handle).fullscreen_pref;
   journalindex2 = (**(PrefHandle)data_handle).journalindex2;
   blank5 = (**(PrefHandle)data_handle).blank5;
   blank6 = (**(PrefHandle)data_handle).blank6;
@@ -311,7 +313,7 @@ void savepref(void) {
   prefs->autonote = autonote;
   prefs->portraitchoice = portraitchoice;
   prefs->currentscenariohold = currentscenario;
-  prefs->blank3 = 0;
+  prefs->fullscreen_pref = 0;
   prefs->journalindex2 = 0;
   prefs->blank5 = 0;
   prefs->blank6 = 0;
@@ -412,7 +414,7 @@ void getpref(void) {
   autonote = prefs->autonote;
   portraitchoice = prefs->portraitchoice;
   currentscenariohold = prefs->currentscenariohold;
-  blank3 = prefs->blank3;
+  fullscreen_pref = prefs->fullscreen_pref;
   journalindex2 = prefs->journalindex2;
   blank5 = prefs->blank5;
   blank6 = prefs->blank6;

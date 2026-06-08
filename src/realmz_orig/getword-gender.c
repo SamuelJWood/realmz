@@ -37,6 +37,16 @@ void getword(void) {
   }
 }
 
+static Boolean Gender_filter(DialogPtr dlg, EventRecord* ev, short* hit) {
+  (void)dlg;
+  if (ev->what == keyDown) {
+    uint8_t vkey = (uint8_t)((ev->message >> 8) & 0xFF);
+    if (vkey == 0x7B) { *hit = 2; return TRUE; } /* Left arrow  → Male   */
+    if (vkey == 0x7C) { *hit = 3; return TRUE; } /* Right arrow → Female */
+  }
+  return FALSE;
+}
+
 /***************************** Gender ********************************/
 void Gender(void) {
   DialogRef gGeneration;
@@ -50,7 +60,13 @@ void Gender(void) {
   TextFont(font);
   gStop = FALSE;
 
-  MoveWindow(GetDialogWindow(gGeneration), GlobalLeft + 90, GlobalTop + 125, FALSE);
+  {
+    Rect pb;
+    GetPortBounds((CGrafPtr)GetDialogWindow(gGeneration), &pb);
+    short dlgW = pb.right - pb.left;
+    short dlgH = pb.bottom - pb.top;
+    MoveWindow(GetDialogWindow(gGeneration), (800 - dlgW) / 2, (600 - dlgH) / 2, FALSE);
+  }
   ShowWindow(GetDialogWindow(gGeneration));
   ErasePortRect();
 
@@ -68,7 +84,7 @@ void Gender(void) {
 
   while (gStop == FALSE) {
     FlushEvents(everyEvent, 0);
-    ModalDialog(0L, &itemHit);
+    ModalDialog(Gender_filter, &itemHit);
 
     if ((itemHit != 6) && (itemHit != 1)) {
       GetDialogItem(gGeneration, itemHit + 5, &itemType, &itemHandle, &buttonrect);

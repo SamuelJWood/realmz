@@ -58,7 +58,7 @@ void updatechar(short who, short mode) {
 
   int enable_recomposite = WindowManager_SetEnableRecomposite(0);
 
-  ydist = rect.top + 41;
+  ydist = rect.top + 40;
   if (mode)
     updatepictbox(who, 1, 0); /******* no initial box ******/
   ForeColor(yellowColor);

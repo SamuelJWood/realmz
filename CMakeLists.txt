@@ -63,6 +63,13 @@ add_subdirectory(vendored/SDL_ttf EXCLUDE_FROM_ALL)
 add_subdirectory(vendored/SDL_image EXCLUDE_FROM_ALL)
 add_subdirectory(vendored/libxmp EXCLUDE_FROM_ALL)
 
+# Optional developer tool: export tilesets to PNG for the Tiled scenario editor.
+# Off by default; enable with -DREALMZ_BUILD_TILESET_DUMP=ON.
+option(REALMZ_BUILD_TILESET_DUMP "Build the tileset_dump helper for the Tiled editor" OFF)
+if(REALMZ_BUILD_TILESET_DUMP)
+    add_subdirectory(tools/tileset_dump)
+endif()
+
 # Executable definition
 set(REALMZ_EXECUTABLE_SRC src/realmz_orig/main.c)
 set(SOURCES
@@ -229,6 +236,7 @@ set(SOURCES
     src/ResourceManager.cpp
     src/SDLHelpers.cpp
     src/SDLMenuBar.cpp
+    src/StuffItArchive.cpp
     src/MusicManager.cpp
     src/SoundManager.cpp
     src/WindowManager.cpp
@@ -244,17 +252,11 @@ set(realmz_lib_LINK_LIBRARIES
     xmp_static
 )
 
-if(APPLE)
-    list(APPEND SOURCES src/macos/MenuController.mm)
-    list(APPEND realmz_lib_LINK_LIBRARIES
-        "-framework Foundation"
-        "-framework Cocoa"
-    )
-elseif(WIN32)
-    list(APPEND SOURCES src/windows/MenuController.cpp src/windows/WinMenuController.cpp)
+# All platforms use the SDL menu controller.
+list(APPEND SOURCES src/sdl/MenuController.cpp)
+if(WIN32)
     list(APPEND realmz_lib_LINK_LIBRARIES
         bcrypt # Used by phosg::phosg during compilation for windows targets
-        msimg32 # AlphaBlend
     )
 endif()
 
@@ -296,6 +298,8 @@ set(DATA_RESOURCE_FILES
     "base/Realmz/Data Files/Data Snow BD"
     "base/Realmz/Data Files/Data Swamp BD"
     "base/Realmz/Data Files/Caste and Race descriptions.txt"
+    "base/Realmz/Data Files/Scenario Descriptions.txt"
+    "base/Realmz/Data Files/Background Texture.bmp"
 )
 set_source_files_properties(${DATA_RESOURCE_FILES} PROPERTIES
     MACOSX_PACKAGE_LOCATION "Resources/Data\ Files"
@@ -322,15 +326,25 @@ target_link_libraries(realmz_lib
     ${realmz_lib_LINK_LIBRARIES}
 )
 
+if(WIN32)
+    # Generate an RC file with an absolute path so windres can find the ICO
+    # regardless of which directory it is invoked from.
+    set(WIN_ICO_PATH "${CMAKE_SOURCE_DIR}/bundle/realmz.ico")
+    set(WIN_RC_FILE  "${CMAKE_CURRENT_BINARY_DIR}/realmz_icon.rc")
+    file(WRITE "${WIN_RC_FILE}" "IDI_ICON1 ICON \"${WIN_ICO_PATH}\"\n")
+    set_source_files_properties("${WIN_RC_FILE}" PROPERTIES LANGUAGE RC)
+endif()
+
 add_executable(Realmz
     ${REALMZ_EXECUTABLE_SRC}
     ${RESOURCE_FILES}
     ${DATA_RESOURCE_FILES}
+    $<$<BOOL:${WIN32}>:${WIN_RC_FILE}>
 )
 
 target_compile_definitions(Realmz PUBLIC REALMZ_COCOA=1)
 target_compile_options(Realmz PUBLIC -fpascal-strings)
-target_include_directories(Realmz PUBLIC ${SDL3_INCLUDE_DIRS} src src/realmz_orig src/macos)
+target_include_directories(Realmz PUBLIC ${SDL3_INCLUDE_DIRS} src src/realmz_orig)
 target_link_libraries(Realmz
     PUBLIC
     realmz_lib
@@ -350,7 +364,7 @@ foreach(TEST_EXECUTABLE ${TEST_EXECUTABLES})
     )
     target_compile_definitions(${TEST_EXECUTABLE} PUBLIC REALMZ_COCOA=1)
     target_compile_options(${TEST_EXECUTABLE} PUBLIC -fpascal-strings)
-    target_include_directories(${TEST_EXECUTABLE} PUBLIC ${SDL3_INCLUDE_DIRS} src src/realmz_orig src/macos)
+    target_include_directories(${TEST_EXECUTABLE} PUBLIC ${SDL3_INCLUDE_DIRS} src src/realmz_orig)
     target_link_libraries(${TEST_EXECUTABLE}
         PUBLIC
         realmz_lib
@@ -411,6 +425,26 @@ elseif(WIN32)
     install(FILES ${DATA_RESOURCE_FILES} DESTINATION "${CMAKE_INSTALL_BINDIR}/Data Files")
     install(DIRECTORY "base/Realmz/Scenarios" DESTINATION ${CMAKE_INSTALL_BINDIR})
     install(FILES ${CHARACTER_DATA_FILES} DESTINATION "${CMAKE_INSTALL_BINDIR}/Character Files")
+elseif(UNIX)
+    # SDL_GetBasePath() returns the exe's directory, so data files must live alongside the binary.
+    install(TARGETS Realmz DESTINATION ${CMAKE_INSTALL_BINDIR})
+    install(FILES ${RESOURCE_FILES} DESTINATION ${CMAKE_INSTALL_BINDIR})
+    install(FILES ${DATA_RESOURCE_FILES} DESTINATION "${CMAKE_INSTALL_BINDIR}/Data Files")
+    install(DIRECTORY "base/Realmz/Scenarios" DESTINATION ${CMAKE_INSTALL_BINDIR})
+    install(FILES ${CHARACTER_DATA_FILES} DESTINATION "${CMAKE_INSTALL_BINDIR}/Character Files")
+    install(TARGETS SDL3-shared SDL3_ttf-shared SDL3_image-shared
+            DESTINATION ${CMAKE_INSTALL_LIBDIR})
+    install(FILES bundle/Realmz.desktop
+            DESTINATION share/applications)
+    install(FILES bundle/realmz-16.png  RENAME realmz.png DESTINATION share/icons/hicolor/16x16/apps)
+    install(FILES bundle/realmz-32.png  RENAME realmz.png DESTINATION share/icons/hicolor/32x32/apps)
+    install(FILES bundle/realmz-48.png  RENAME realmz.png DESTINATION share/icons/hicolor/48x48/apps)
+    install(FILES bundle/realmz-128.png RENAME realmz.png DESTINATION share/icons/hicolor/128x128/apps)
+    install(FILES bundle/realmz.png                       DESTINATION share/icons/hicolor/256x256/apps)
+    set_target_properties(Realmz PROPERTIES
+        INSTALL_RPATH "$ORIGIN:$ORIGIN/../lib"
+        BUILD_WITH_INSTALL_RPATH TRUE
+    )
 
     # CMake's RUNTIME_DEPENDENCIES argument to install should work to include necessary
     # runtime dlls alongside the Realmz executable, but unfortunately (as of 4.1.1) it does
@@ -462,5 +496,26 @@ elseif(APPLE)
     set(CPACK_BUNDLE_PLIST "${PROJECT_BINARY_DIR}/Info.plist")
     set(CPACK_BUNDLE_ICON "${PROJECT_SOURCE_DIR}/bundle/AppIcon.icns")
     set(CPACK_BUNDLE_STARTUP_COMMAND Realmz)
+elseif(UNIX)
+    set(CPACK_GENERATOR "TGZ")
 endif()
 include(CPack)
+
+# Linux AppImage target — requires linuxdeploy in the build directory or PATH.
+# Download once: wget -P build_linux/ https://github.com/linuxdeploy/linuxdeploy/releases/download/continuous/linuxdeploy-x86_64.AppImage && chmod +x build_linux/linuxdeploy-x86_64.AppImage
+if(UNIX AND NOT APPLE)
+    set(LINUXDEPLOY "${CMAKE_BINARY_DIR}/linuxdeploy-x86_64.AppImage"
+        CACHE FILEPATH "Path to the linuxdeploy binary")
+    add_custom_target(appimage
+        COMMAND ${CMAKE_COMMAND} -E make_directory AppDir
+        COMMAND ${CMAKE_COMMAND} --install .
+                --prefix AppDir/usr
+        COMMAND ${CMAKE_COMMAND} -E env
+                "LD_LIBRARY_PATH=AppDir/usr/lib"
+                ${LINUXDEPLOY} --appdir AppDir --output appimage
+        DEPENDS Realmz
+        WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
+        COMMENT "Assembling AppImage (requires linuxdeploy-x86_64.AppImage in build dir)..."
+        VERBATIM
+    )
+endif()

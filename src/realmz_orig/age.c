@@ -39,7 +39,11 @@ void showageupdate(short who, short agegroup, short backup) {
   ForeColor(yellowColor);
   TextFont(defaultfont);
 
-  MoveWindow(GetDialogWindow(ageupdate), GlobalLeft + leftshift / 2, GlobalTop + downshift / 2, FALSE);
+  {
+    Rect pb;
+    GetPortBounds((CGrafPtr)GetDialogWindow(ageupdate), &pb);
+    MoveWindow(GetDialogWindow(ageupdate), (800 - (pb.right - pb.left)) / 2, (600 - (pb.bottom - pb.top)) / 2, FALSE);
+  }
   ShowWindow(GetDialogWindow(ageupdate));
   ErasePortRect();
   DrawDialog(ageupdate);

@@ -31,9 +31,9 @@ void updatecharshort(short who, short forcebox) {
 
   ForeColor(yellowColor);
   if (c[who].ac > -1)
-    MoveTo(605 + leftshift, box.top + 11);
+    MoveTo(605 + leftshift, box.top + 10);
   else
-    MoveTo(600 + leftshift, box.top + 11);
+    MoveTo(600 + leftshift, box.top + 10);
   MyrNumToString(c[who].ac, myString);
   EraseRect(&box);
   MyrDrawCString((Ptr)myString);
@@ -49,7 +49,7 @@ void updatecharshort(short who, short forcebox) {
     TextSize(12);
 
   MyrNumToString(c[who].stamina, myString);
-  MoveTo((444 - TextWidth(myString, 0, strlen(myString))) + leftshift, box.top + 12);
+  MoveTo((444 - TextWidth(myString, 0, strlen(myString))) + leftshift, box.top + 11);
   EraseRect(&box);
   if (c[who].stamina < c[who].staminamax)
     ForeColor(whiteColor);
@@ -66,7 +66,7 @@ void updatecharshort(short who, short forcebox) {
     if (c[who].spellpoints < c[who].spellpointsmax)
       ForeColor(whiteColor);
     MyrNumToString(c[who].spellpoints, myString);
-    MoveTo((593 - TextWidth(myString, 0, strlen(myString))) + leftshift, box.top + 12);
+    MoveTo((593 - TextWidth(myString, 0, strlen(myString))) + leftshift, box.top + 11);
     EraseRect(&box);
     MyrDrawCString((Ptr)myString);
   }

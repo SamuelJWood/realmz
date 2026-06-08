@@ -39,13 +39,28 @@ void InsertMenuItem(MenuHandle theMenu, ConstStr255Param itemString, int16_t aft
 void InsertSubmenuItem(MenuHandle theMenu, ConstStr255Param title, int16_t subMenuID, int16_t afterItem);
 void SetItemIcon(MenuHandle theMenu, int16_t item, int16_t iconIndex);
 void SetItemIconByCicnId(MenuHandle theMenu, int16_t item, int16_t cicnId);
+void SetItemIconFromScenarioPng(MenuHandle theMenu, int16_t item, const char* scenario_name);
+// Clears items ≥5 from theMenu, scans :Scenarios: for subdirectories, and appends
+// each as a disabled menu item.  Returns the number of scenarios added.
+int PopulateScenarioMenu(MenuHandle theMenu);
 void SetItemMark(MenuHandle theMenu, int16_t item, int16_t markChar);
+// Marks item as a non-clickable, non-hoverable header with inverted colors.
+void SetMenuItemIsHeader(MenuHandle theMenu, int16_t item);
 void GetItemMark(MenuHandle theMenu, int16_t item, int16_t* markChar);
 void SetItemStyle(MenuHandle theMenu, int16_t item, int16_t style);
 void SetItemDescription(MenuHandle theMenu, int16_t item, const char* description);
+// Sets the freeform shortcut label shown right-aligned in the dropdown (e.g. "F11").
+// Overrides the auto-generated "Ctrl+X" label from key_equivalent.
+void SetMenuItemShortcutText(MenuHandle theMenu, int16_t item, const char* shortcut_text);
 const char* GetDescriptionFromFile(const char* item_name);
 // Returns (menu_id << 16) | item_idx_0based, or 0 if not found.
 int32_t MenuManager_FindItemByKeyEquivalent(char ch);
+// Creates a new menu bar handle from an array of already-registered menu IDs.
+Handle Realmz_NewMBarFromMenus(const int16_t* menu_ids, int count);
+// Sets the keyboard shortcut character for a menu item (1-based).
+void SetMenuItemKey(MenuHandle theMenu, int16_t item, char key);
+// Appends a submenu item referencing the given subMenuID.
+void AppendSubmenuItemCStr(MenuHandle theMenu, const char* title, int16_t subMenuID);
 
 #ifdef __cplusplus
 }

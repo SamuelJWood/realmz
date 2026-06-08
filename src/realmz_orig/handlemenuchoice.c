@@ -264,59 +264,55 @@ short HandleMenuChoice(void) {
           aboutrealmz();
           break;
 
-        case 2: /**** show contact info *****/
-          showcontactinfo();
-          break;
-
-        case 3: /**** About Fantasoft *****/
+        case 2: /**** About Fantasoft *****/
           movie(1128, 129, 1);
           break;
 
-        case 4: /**** About Prelude *****/
+        case 3: /**** About Prelude *****/
           movie(1130, 129, 0);
           break;
 
-        case 5: /**** About Assault *****/
+        case 4: /**** About Assault *****/
           movie(1129, 129, 0);
           break;
 
-        case 6: /**** About Destroy *****/
+        case 5: /**** About Destroy *****/
           movie(1132, 129, 0);
           break;
 
-        case 7: /**** About Castle *****/
+        case 6: /**** About Castle *****/
           movie(1131, 129, 0);
           break;
 
-        case 8: /**** About Grilochs Dragon *****/
+        case 7: /**** About Grilochs Dragon *****/
           movie(1134, 129, 0);
           break;
 
-        case 9: /**** About White Dragon *****/
+        case 8: /**** About White Dragon *****/
           movie(1133, 129, 0);
           break;
 
-        case 10: /**** About Mithril Vault *****/
+        case 9: /**** About Mithril Vault *****/
           movie(1136, 129, 0);
           break;
 
-        case 11: /**** Twin Sands of Time *****/
+        case 10: /**** Twin Sands of Time *****/
           movie(1138, 129, 0);
           break;
 
-        case 12: /**** Trouble in the Sword Lands *****/
+        case 11: /**** Trouble in the Sword Lands *****/
           movie(1135, 129, 0);
           break;
 
-        case 13: /**** War in the Sword Lands *****/
+        case 12: /**** War in the Sword Lands *****/
           movie(1137, 129, 0);
           break;
 
-        case 14: /**** Dagger of Silences *****/
+        case 13: /**** Wrath of the Mind Lords *****/
           movie(1139, 129, 0);
           break;
 
-        case 15: /**** About Half Truth *****/
+        case 14: /**** About Half Truth *****/
           movie(1140, 128, 0);
           break;
 
@@ -393,32 +389,14 @@ short HandleMenuChoice(void) {
           CheckItem(prefer, 1, WindowManager_IsFullscreen());
           break;
 
-        case 5: /****** Get Prefs *********/
-
-          in();
-
-          preference();
-          if ((indung) && (viewtype == 1)) {
-            updatemain(FALSE, 0);
-            UpdateWindow(FALSE);
-          }
-
-          if (incombat) {
-            out();
-            centerstage(0);
-            combatupdate2(lastshown);
-            updatecontrols();
-          }
-          break;
-
-        case 6: /****** Toggle Hurry Spell Resolution *********/
+        case 5: /****** Toggle Hurry Spell Resolution *********/
 
           if (quickshow)
             quickshow = FALSE;
           else
             quickshow = TRUE;
 
-          CheckItem(prefer, 6, quickshow);
+          CheckItem(prefer, 5, quickshow);
           break;
       }
 

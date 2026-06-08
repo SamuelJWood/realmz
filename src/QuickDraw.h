@@ -155,7 +155,12 @@ void SetPort(CGrafPtr port);
 void GetPort(GrafPtr* port);
 PixPatHandle GetPixPat(uint16_t patID);
 void DisposePixPat(PixPatHandle ppat);
+// Load an image file and use it as a non-tiling fill for the given ppat handle.
+// mac_path uses the Mac-style colon-separated path (e.g. ":Data Files:Background Texture.bmp").
+void SetLargeBackgroundTexture(PixPatHandle ppat, const char* mac_path);
 PicHandle GetPicture(int16_t picID);
+// Returns the natural (unscaled) pixel dimensions of a PICT resource without drawing it.
+bool GetPictureNaturalSize(int16_t picID, int* out_width, int* out_height);
 void ForeColor(int32_t color);
 void GetBackColor(RGBColor* color);
 void GetForeColor(RGBColor* color);
@@ -205,6 +210,9 @@ void LocalToGlobal(Point* pt);
 CCrsrHandle GetCCursor(uint16_t crsrID);
 void SetCCursor(CCrsrHandle cCrsr);
 void DisposeCCursor(CCrsrHandle cCrsr);
+CCrsrHandle GetCurrentCCursor(void);
+void LockCursorTo(CCrsrHandle handle);
+void UnlockCursor(void);
 void SetCursorToIcon(int16_t icon_id);
 void ObscureCursor(void);
 void HideCursor(void);

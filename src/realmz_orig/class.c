@@ -172,7 +172,14 @@ update:
   for (t = 0; t < 40; t++) {
     if (caste.conditions[t]) {
       GetIndString(myString, 133, t + 1);
+      {
+        Rect condRect;
+        GetDialogItem(gGeneration, 52 + conditionindex, &itemType, &itemHandle, &condRect);
+        if (StringWidth(myString) > condRect.right - condRect.left)
+          TextSize(11);
+      }
       MyrPascalDiStr(52 + conditionindex, myString);
+      TextSize(14);
       DialogNum(100 + conditionindex++, caste.conditions[t]);
       if (conditionindex == 4)
         goto moveon;

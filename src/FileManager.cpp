@@ -69,9 +69,9 @@ std::string host_filename_for_FSSpec(const FSSpec* fsp) {
   // we want to use the userdata folder for storing preferences. Otherwise, we should
   // use the base directory of the executable to load game resource files.
   if (fsp->parID == 1) {
-    return userdata_filename_for_mac_filename(string_for_pstr<64>(fsp->name), true);
+    return userdata_filename_for_mac_filename(string_for_pstr<256>(fsp->name), true);
   } else {
-    return host_filename_for_mac_filename(string_for_pstr<64>(fsp->name), false);
+    return host_filename_for_mac_filename(string_for_pstr<256>(fsp->name), false);
   }
 }
 
@@ -86,7 +86,7 @@ OSErr GetVInfo(int16_t drvNum, StringPtr volName, int16_t* vRefNum, int32_t* fre
 }
 
 void GetFInfo(const Str63 fName, int16_t vRefNum, FInfo* fInfo) {
-  auto filename = string_for_pstr<64>(fName);
+  auto filename = string_for_pstr<256>(fName);
   fm_log.info_f("Finder info requested for file {} (on volume {})", filename, vRefNum);
 
   // Return fake Finder info (Realmz doesn't use it anyway)
@@ -99,14 +99,14 @@ void GetFInfo(const Str63 fName, int16_t vRefNum, FInfo* fInfo) {
 }
 
 OSErr FSpGetFInfo(const FSSpec* spec, FInfo* fndrInfo) {
-  auto filename = string_for_pstr<64>(spec->name);
+  auto filename = string_for_pstr<256>(spec->name);
   fm_log.info_f("Finder info requested for file {} (on volume {}) via FSSpec", filename, spec->vRefNum);
   GetFInfo(spec->name, spec->vRefNum, fndrInfo);
   return 0;
 }
 
 OSErr FSpSetFInfo(const FSSpec* spec, const FInfo* fndrInfo) {
-  auto filename = string_for_pstr<64>(spec->name);
+  auto filename = string_for_pstr<256>(spec->name);
   fm_log.info_f("Skipping Finder info write for file {} (on volume {}): type={:08X} creator={:08X} flags={:04X} loc.h={} loc.v={} folder={}",
       filename,
       spec->vRefNum,
@@ -121,7 +121,7 @@ OSErr FSpSetFInfo(const FSSpec* spec, const FInfo* fndrInfo) {
 }
 
 OSErr FSpDelete(const FSSpec* spec) {
-  auto filename = string_for_pstr<64>(spec->name);
+  auto filename = string_for_pstr<256>(spec->name);
   fm_log.info_f("Skipping delete of file {} (on volume {})", filename, spec->vRefNum);
   // TODO: We probably should have an allow-list of files that can be safely
   // deleted, instead of just ignoring all deletes.

@@ -52,5 +52,5 @@ void heal(short who, short howmuch, short show) {
   if (killparty > charnum)
     partyloss(0);
   if (initems)
-    select[who] = -1;
+    charselected[who] = -1;
 }

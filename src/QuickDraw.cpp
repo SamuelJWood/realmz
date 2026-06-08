@@ -24,6 +24,7 @@
 #include <stdexcept>
 #include <unordered_map>
 
+#include "FileManager.hpp"
 #include "Font.hpp"
 #include "MemoryManager.hpp"
 #include "ResourceManager.h"
@@ -485,6 +486,41 @@ void CCGrafPort::draw_line_to(const Point& end) {
   this->pnLoc = end;
 }
 
+// ── Large background texture (replaces ppat 131 tiling) ──────────────────
+static PixPatHandle g_large_bg_ppat = nullptr;
+static std::optional<phosg::ImageRGB888> g_large_bg_tex;
+
+void SetLargeBackgroundTexture(PixPatHandle ppat, const char* mac_path) {
+  g_large_bg_ppat = ppat;
+  std::string host_path = host_filename_for_mac_filename(mac_path, false);
+  SDL_Surface* surf = IMG_Load(host_path.c_str());
+  if (!surf) {
+    fprintf(stderr, "[QuickDraw] SetLargeBackgroundTexture: failed to load '%s': %s\n",
+        host_path.c_str(), SDL_GetError());
+    g_large_bg_tex.reset();
+    return;
+  }
+  SDL_Surface* rgb = SDL_ConvertSurface(surf, SDL_PIXELFORMAT_RGB24);
+  SDL_DestroySurface(surf);
+  if (!rgb) {
+    fprintf(stderr, "[QuickDraw] SetLargeBackgroundTexture: convert failed: %s\n", SDL_GetError());
+    g_large_bg_tex.reset();
+    return;
+  }
+  int w = rgb->w, h = rgb->h;
+  g_large_bg_tex = phosg::ImageRGB888(w, h);
+  for (int row = 0; row < h; row++) {
+    const uint8_t* src = static_cast<const uint8_t*>(rgb->pixels) + row * rgb->pitch;
+    for (int col = 0; col < w; col++) {
+      g_large_bg_tex->write(col, row, phosg::rgba8888(src[0], src[1], src[2], 0xFF));
+      src += 3;
+    }
+  }
+  SDL_DestroySurface(rgb);
+  fprintf(stderr, "[QuickDraw] Large background texture loaded: %dx%d from '%s'\n",
+      w, h, host_path.c_str());
+}
+
 void CCGrafPort::draw_background_ppat() {
   auto ppat = reference_image_for_ppat(this->bkPixPat);
   for (size_t y = 0; y < this->data.get_height(); y += ppat.get_height()) {
@@ -495,14 +531,31 @@ void CCGrafPort::draw_background_ppat() {
 }
 
 void CCGrafPort::draw_background_ppat(const Rect& rect) {
+  ssize_t rx = rect.left, ry = rect.top, rw = rect.right - rect.left, rh = rect.bottom - rect.top;
+  this->data.clamp_rect(rx, ry, rw, rh);
+
+  // If this port is using the "base" ppat and a large texture is loaded, sample from
+  // it at globally-aligned screen coordinates so it never tiles within the 800x600 screen.
+  if (g_large_bg_tex && this->bkPixPat == g_large_bg_ppat) {
+    int tw = (int)g_large_bg_tex->get_width();
+    int th = (int)g_large_bg_tex->get_height();
+    int ox = this->portRect.left;
+    int oy = this->portRect.top;
+    for (ssize_t y = ry; y < ry + rh; y++) {
+      for (ssize_t x = rx; x < rx + rw; x++) {
+        this->data.write(x, y, g_large_bg_tex->read(
+            (x + ox) % tw, (y + oy) % th));
+      }
+    }
+    return;
+  }
+
   PixMapHandle pmap = (*this->bkPixPat)->patMap;
   Rect bounds = (*pmap)->bounds;
   int w = bounds.right - bounds.left;
   int h = bounds.bottom - bounds.top;
   auto pattern = phosg::ImageRGB888::from_data_reference(*(*this->bkPixPat)->patData, w, h);
 
-  ssize_t rx = rect.left, ry = rect.top, rw = rect.right - rect.left, rh = rect.bottom - rect.top;
-  this->data.clamp_rect(rx, ry, rw, rh);
   for (ssize_t y = ry; y < ry + rh; y++) {
     for (ssize_t x = rx; x < rx + rw; x++) {
       this->data.write(x, y, pattern.read(x % pattern.get_width(), y % pattern.get_height()));
@@ -742,6 +795,16 @@ PicHandle GetPicture(int16_t id) {
   return reinterpret_cast<PicHandle>(data_handle);
 }
 
+bool GetPictureNaturalSize(int16_t picID, int* out_width, int* out_height) {
+  auto handle = GetPicture(picID);
+  if (!handle) return false;
+  auto r = read_from_handle(reinterpret_cast<Handle>(handle));
+  const auto& header = r.get<DecodedPICTHeader>();
+  *out_width  = header.bounds.right  - header.bounds.left;
+  *out_height = header.bounds.bottom - header.bounds.top;
+  return true;
+}
+
 void ForeColor(int32_t color) {
   qd.thePort->fgColor = color;
   qd.thePort->rgbFgColor = color_const_to_rgb(color);
@@ -834,7 +897,16 @@ CIconHandle GetCIcon(uint16_t iconID) {
     if (bw == iw && bh == ih && bw > 0) {
       for (int y = 0; y < ih; y++) {
         for (int x = 0; x < iw; x++) {
-          if (phosg::get_a(decoded_cicn.bitmap.read(x, y)) == 0) {
+          uint32_t bm = decoded_cicn.bitmap.read(x, y);
+          uint32_t img = decoded_cicn.image.read(x, y);
+          // Make transparent where the mask says so (original behavior), or where the
+          // 1-bit bitmap marks a pixel as background (bitmap=0, mask=1) AND the image
+          // pixel is near-white — this removes the white rectangular backgrounds that
+          // classic Mac icon resources include for drawing on fixed-color backgrounds.
+          bool mask_transparent = (phosg::get_a(bm) == 0);
+          bool bitmap_background_white = (bm == 0xFFFFFFFF) &&
+              (phosg::get_r(img) > 200 && phosg::get_g(img) > 200 && phosg::get_b(img) > 200);
+          if (mask_transparent || bitmap_background_white) {
             decoded_cicn.image.write(x, y, 0x00000000);
           }
         }
@@ -1202,6 +1274,7 @@ struct ColorCursor {
 };
 
 static ColorCursor** current_cursor_handle = nullptr;
+static ColorCursor** locked_cursor_handle = nullptr;
 static ssize_t cursor_hide_level = 0;
 
 CCrsrHandle GetCCursor(uint16_t resource_id) {
@@ -1237,8 +1310,31 @@ void DisposeCCursor(CCrsrHandle handle) {
   }
 }
 
+CCrsrHandle GetCurrentCCursor() {
+  return reinterpret_cast<CCrsrHandle>(current_cursor_handle);
+}
+
+void LockCursorTo(CCrsrHandle handle) {
+  ColorCursor** cursor = reinterpret_cast<ColorCursor**>(handle);
+  locked_cursor_handle = cursor;
+  if (current_cursor_handle == cursor) return;
+  if (current_cursor_handle && (*current_cursor_handle)->is_orphaned) {
+    DisposeHandleTyped(current_cursor_handle);
+  }
+  current_cursor_handle = cursor;
+  SDL_SetCursor((*cursor)->sdl_cursor.get());
+}
+
+void UnlockCursor() {
+  locked_cursor_handle = nullptr;
+}
+
 void SetCCursor(CCrsrHandle handle) {
   ColorCursor** cursor = reinterpret_cast<ColorCursor**>(handle);
+  // If the cursor is locked to a specific handle, block all other changes.
+  if (locked_cursor_handle && cursor != locked_cursor_handle) {
+    return;
+  }
   if (current_cursor_handle == cursor) {
     return;
   }
@@ -1246,7 +1342,6 @@ void SetCCursor(CCrsrHandle handle) {
     DisposeHandleTyped(current_cursor_handle);
   }
   current_cursor_handle = cursor;
-
   SDL_SetCursor((*cursor)->sdl_cursor.get());
 }
 

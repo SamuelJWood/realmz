@@ -388,7 +388,7 @@ void resolvespell(void) {
               if ((c[t].stamina < 0) && (damage > 0))
                 continue; /***** dont do damage to unconsious characters *****/
               c[t].stamina -= damage;
-              select[t] = -1;
+              charselected[t] = -1;
               if (damage > 0)
                 c[t].beenattacked = TRUE;
               if ((c[t].stamina <= 0) && (c[t].stamina + damage > 0)) /**** make sure he just went under ***/

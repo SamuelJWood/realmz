@@ -230,7 +230,7 @@ void swap(void) {
       ploticon3(130, buttonrect);
     }
 
-    if ((itemHit == 1) || (itemHit == 59)) {
+    if ((itemHit == 1) || (itemHit == 59) || (itemHit == 0) /* Escape */) {
       sound(141);
       ploticon3(133, buttonrect);
       DisposeDialog(gswap);

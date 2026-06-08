@@ -1,0 +1,3517 @@
+# Realmz scenario text — Prelude to Pestilence
+# -----------------------------------------------
+# Edit the text between the ### header lines.
+# Do NOT modify the ### lines themselves.
+# Max lengths: SD2/DES = 255 chars, OD = 24 chars.
+# Empty entries are omitted; inject will not touch them.
+
+### SD2:0
+Do Not Use
+
+### SD2:1
+You finally arrived at the gates of McBane City after a long journey.  You were told that McBane City is peaceful and free of bandits.  You look forward to some rest and relaxation after your recent exploits.
+
+### SD2:2
+The guards at the gate wave you through and ask you what your business is in McBane.  When you tell the guards you are looking for a warm bed and good food they smile and tell you that McBane has the best Inns and shops in the land.
+
+### SD2:3
+Before you leave, a large burly guard reminds you that the penalty for stealing is death.  You look at the smirking guard and realize that he must have carried out the death sentence more than a few times.
+
+### SD2:4
+You are at the McBane City well and you notice something shiny at the bottom.
+
+### SD2:5
+This is the local blacksmith.  Do you wish to have your weapons sharpened for 50 gold?
+
+### SD2:6
+This is the local McBane shop.  The shop doesn't have much, but the prices are fair.
+
+### SD2:7
+Who will climb down?
+
+### SD2:8
+Who will jump down?
+
+### SD2:9
+You land on a slippery rock and twist your ankle pretty good.
+
+### SD2:10
+You find the shiny object you saw from above and find out that it is just a piece of glass.  You climb out of the well wishing you would have just let it be.
+
+### SD2:11
+You are at the east gate of McBane City.
+
+### SD2:12
+This is an Inn were you can stay and rest for the low cost of 50 gold.  Do you stay?
+
+### SD2:13
+The weathered sign on the door says  "Best Ales in the Land!"
+
+### SD2:14
+Do you enter to try some of the fine ales?
+
+### SD2:15
+A man, who looks like he belongs in armor instead of an apron, comes over when you ask about the ownership of this small but cozy bar.
+
+### SD2:16
+I'm the owner of this place.  "The name is Thufor Savage. I hope you try some of my fine brew and enjoy your stay here in McBane City."
+
+### SD2:17
+No one pays you any attention and longer you stand there, the more you feel like a fool.
+
+### SD2:18
+The stout has a creamy head and distinct malty taste.  A fine stout indeed!
+
+### SD2:19
+The lager is deep red in color and the hop aroma is very evident.   You sip the lager waiting to be blasted with a bitter aftertaste, but to your surprise the red is  quite smooth and tasty.
+
+### SD2:20
+This ale does not live up to its name since the ale has no body and tastes a little funny.
+
+### SD2:21
+The Pilsner is ok, but in your humble opinion, it could be better .
+
+### SD2:22
+"I thought I got rid of that stuff!" yells Thufor.  "I won't charge you for that round.  Why don't you try one of my other brews."
+
+### SD2:23
+While drinking your brew, you overhear one of the other customers talking.
+
+### SD2:24
+"I heard Lord McBane has a big problem with thieves west of town.  One of the guards said that they expect an attack any day now."
+
+### SD2:25
+"That is just hog wash.  I never seen the castle, and I don't think it ever existed!  Oh yeah, I saw Zukar and I know he exists!"
+
+### SD2:26
+"What part of 'NO' don't you understand?!"
+
+### SD2:27
+"The caves west of town are full of danger, but full of gold too!"
+
+### SD2:28
+"Wow! This brew is great, I think I'll have another!"
+
+### SD2:29
+"I swear that I saw a great deer in the great woods!  It must have been a thirty pointer."
+
+### SD2:30
+This is a small temple.
+
+### SD2:31
+McBane Guards come up to you and check to see if you are bandits.   Do you resist their search of your possessions?
+
+### SD2:32
+That was not a wise decision.  Blades seem to come from everywhere and your party is hit repeatedly.  You are moved out of town and never allowed to enter ever again.
+
+### SD2:33
+North gate of McBane City
+
+### SD2:34
+"Bandits are NOT allowed in McBane City!" A volley of arrows hits you!!
+
+### SD2:35
+"Visitors are not allowed.  Go away!"
+
+### SD2:36
+You get to the end of the tunnel and find a small pouch partially covered with dirt.
+
+### SD2:37
+Looks like you have found some buried gold!
+
+### SD2:38
+You don't detect anything unusual.
+
+### SD2:39
+You find more underneath the small pouch!
+
+### SD2:40
+What are you going to do?
+
+### SD2:41
+Looks like you found a den of angry cave bears instead of a den of thieves!
+
+### SD2:42
+Thief's Trap!  Those that don't dodge the arrows get hurt.
+
+### SD2:43
+It hits those that didn't see it and can't get out of the way!
+
+### SD2:44
+You come to the end of the cave and wonder why the cave was protected with a trap since there seems to be nothing here!
+
+### SD2:45
+You find nothing of value.
+
+### SD2:46
+You here a click and the rumbling of boulders tumbling down!  Those that don't get out of the way in time are hurt.
+
+### SD2:47
+Along with the boulders comes a stash of money!
+
+### SD2:48
+You have stumbled upon some guards playing cards.   There's an empty chair.  One of the guards asks if one of your party would like to join them.
+
+### SD2:49
+Who will play cards with the guards?
+
+### SD2:50
+The guards tell you the rules and tell you that they are not just playing to pass the time.
+
+### SD2:51
+You lose that round.
+
+### SD2:52
+The guards accuse you of cheating!
+
+### SD2:53
+Try to bet within your means.
+
+### SD2:54
+Please come back when you have some money.
+
+### SD2:55
+You come to the end of the tunnel and find a large door.
+
+### SD2:56
+Who will try to bust it open?
+
+### SD2:57
+The door opens and some eight legged creatures are there to meet you!
+
+### SD2:58
+Nothing happens.
+
+### SD2:59
+At the end of the tunnel there is a straw mat that looks like it's used for bedding.  The person or creature that has been staying here appears to be gone.  Do you stay and look around?
+
+### SD2:60
+While poking through the bedding you accidentally break a vile hidden within it.  A cloud of dense vapor billows forth from the vile.
+
+### SD2:61
+Amidst your hacking and coughing you see that the resident of this cave has returned.  It looks like he has brought friends!!
+
+### SD2:62
+You don't find any secret doors, but you do find a potion of some sort.
+
+### SD2:63
+The resident of the cave is back and he is not very happy you're here.   Neither are his friends!
+
+### SD2:64
+You step on a false floor!  All those that can't jump to the other side fall and get hurt.
+
+### SD2:65
+You see the false floor and jump over the gap.
+
+### SD2:66
+At the end of this cave you found a meeting place for Ogres plotting attacks on unsuspecting travelers.  You know this since you stumbled upon their meeting in progress.
+
+### SD2:67
+There is a sizable group of thieves here looking over a map of the area.  It appears that, before you entered the room, they were planning to sneak into McBane and steal anything not nailed down.
+
+### SD2:68
+The guards tell you that "Lord McBane has heard of your eradication of the thieves planning to plunder McBane City.  Lord McBane would like to thank you personally and wishes that you visit him in his castle."
+
+### SD2:69
+There is a big stone wall in front of you.  If it wasn't for the footprints  you would swear that it's a dead end.
+
+### SD2:70
+The door doesn't move.
+
+### SD2:71
+Nothing seems to happen.
+
+### SD2:72
+The door opens!
+
+### SD2:73
+"Lord McBane is waiting for you in the castle."
+
+### SD2:74
+The guards tell you that Lord McBane is waiting for you and that you should go to the castle right away.
+
+### SD2:75
+You enter the  stately manor of Lord McBane.  The tapestries and various works  of art adorning the walls of the main audience chambers fill you with awe.  You should have cleaned up a little before your audience with Lord McBane.
+
+### SD2:76
+"Ahh, these are the people who have quelled the plot to plunder McBane City.  I am in your debt, but alas I don't have  much gold to give a just reward.  I have spent just about all I can afford on my guards to keep the thieves out.
+
+### SD2:77
+"It must be a sign of the dark times overcoming the land.  I heard of a city in the north, the name escapes me, but thieves are so rampant that terrible beasts protect the castle and the law abiding people have moved elsewhere.
+
+### SD2:78
+"I have heard of towns completely overtaken by  death.  It seems the forces of evil are taking over the land.  In days gone by when the forces of Evil showed their ugly face the Great Wizard Zukar would come down from his castle and defeat them.
+
+### SD2:79
+"I fear Zukar has been taken captive by the forces of Evil.  Zukar must be found. This evil tide must be turned." Will you try to find Zukar and help him banish the evil from the land?
+
+### SD2:80
+You reach the end of the tunnel and see various supplies and useless articles strewn around.
+
+### SD2:81
+I had hoped you would take this quest.  See my guards just outside the castle and take any items you find useful for your quest.
+
+### SD2:82
+The great wizard Zukar must be found!  The forces of evil gain strength ever moment that you waste.
+
+### SD2:83
+You find an extremely well hidden secret door under some supplies.
+
+### SD2:84
+You set off a trap that was protecting a hidden door!
+
+### SD2:85
+What now?
+
+### SD2:86
+Who will open the door?
+
+### SD2:87
+The person opening the door sets off a trap hitting the others.
+
+### SD2:88
+You find what the trap was protecting.
+
+### SD2:89
+You have come to the end of the tunnel and find some monsters waiting for their dinner.
+
+### SD2:90
+You find a small locked box on the ground.
+
+### SD2:91
+The box seems to be locked.
+
+### SD2:92
+You don't find any visible traps.
+
+### SD2:93
+The box busts open and you find a rolled piece of paper.
+
+### SD2:94
+ You come upon some thieves fighting some McBane guards. Do you help the guards out?
+
+### SD2:95
+You find a McBane guard here tied up; he is almost lifeless due to the apparent torturing he received.  You nudge him and, out of his bloodied eyes, he sees that you are not thieves.
+
+### SD2:96
+You run into a group of Orcs.  They think you're easy pickings.
+
+### SD2:97
+East Gate of McBane City.
+
+### SD2:98
+The front gates of this city are wide open and seem unguarded.
+
+### SD2:99
+There are two guards at this gate with similar armor, but one wears a red sash while the other wears a purple sash.  They both look at you with less than appealing looks.  They allow you to pass.  You can tell they don't like each other.
+
+### SD2:100
+Some village guards wearing red sashes come up to you and ask you to pledge allegiance to Lord Keto.
+
+### SD2:101
+The guards are happy that you chose to join the Just Lord Keto.
+
+### SD2:102
+Some village guards wearing purple sashes come up to you and ask you to pledge allegiance to Lady Keto.
+
+### SD2:103
+The guards are happy that you have chosen to join the Fair Lady Keto's alliance.
+
+### SD2:104
+This is a shop that sides with Lady Keto.
+
+### SD2:105
+This is a shop that sides with Lord Keto.
+
+### SD2:106
+An old woman comes up to you and says, "Beware of Lord Keto for he is wicked and evil."
+
+### SD2:107
+Someone cloaked so the face is not visible says to you, "Beware of Lady Keto, because she is an evil witch."
+
+### SD2:108
+This shop doesn't seem to be open even though there's a light on inside.
+
+### SD2:109
+"This is Lady Keto's gate.  All followers of Lord Keto must enter through Lord Keto's gate."
+
+### SD2:110
+"We asked you nicely and those that are not with us are against us.  Prepare to die."
+
+### SD2:111
+This shop seems to be closed even though you can see people inside.
+
+### SD2:112
+"This is the gate for Lord Keto. Followers of Lady Keto must enter through the other gate."
+
+### SD2:113
+Guards wearing red sashes are here. They allow you to pass.
+
+### SD2:114
+Guards wearing purple sashes are here. They allow you to pass.
+
+### SD2:115
+This is a small shop. The owner doesn't pledge his allegiance to either Lord or Lady Keto.
+
+### SD2:116
+These are the local stables and they are run by an odd character.  He mumbles something that you think has to do with the Lord and the Lady of this town, but you are not sure.  Do you ask for more information?
+
+### SD2:117
+"Well, it didn't always used to be this way you know.  A while back, yup just a few, well actually more like several years ago they used to be happy together.  I guess the old noggin isn't as sharp as she use to be."
+
+### SD2:118
+"Now the city is divided and there is no peace.  People are killing each other over what color they are wearing.  Some people call me mad.  What do they know.   If I were you I would leave this town and not get involved.  Leave town while you still can."
+
+### SD2:119
+Lord Keto's guards see that you are not allies and attack.
+
+### SD2:120
+Lady's Keto's guards see that you are not allies and attack.
+
+### SD2:121
+Lady Keto's guards see that you are allies of the lady and let you pass.
+
+### SD2:122
+Lord Keto's guards see that you are allies of the lord and let you pass.
+
+### SD2:123
+"You must be allies of Lord Keto if you don't wish to join us."  The guards attack.
+
+### SD2:124
+Looks like you found some hidden treasure.
+
+### SD2:125
+The person who hid the treasure here is back to get it and he's brought some friends.
+
+### SD2:126
+A roving band of monsters finds you.
+
+### SD2:127
+You find some Knolls that are not too happy that you have wandered into their cave.
+
+### SD2:128
+You see a small pouch in the middle of this cave.  Do you approach it.
+
+### SD2:129
+The residents of this cave use the pouch as bait to catch their prey.  That would be you.
+
+### SD2:130
+Judging from the size of the pile of gold dumped in the corner of the cave it would                                                                                                                          appear that a lot of unwary travelers have fallen
+
+### SD2:131
+Looks like trouble found you.
+
+### SD2:132
+You here someone yell out "There are the murderers of Lord Keto's guards!"
+
+### SD2:133
+You are suddenly surrounded by more of Lady Keto's guards and they are not here to ask any more questions.
+
+### SD2:134
+"You will see how we deal with traitors of Lady Keto!"
+
+### SD2:135
+Lord Keto doesn't want any allies of Lady Keto to live.  So you must die!
+
+### SD2:136
+An old man comes out of the largest of what can only be described as shacks and greets you.  "Good people, I am Lothshor and I am the leader of these people."   As he is talking people cautiously start coming out of their shacks.
+
+### SD2:137
+"We have left the Town of Ketonia, because of the war between Lord Keto and Lady Keto.  Many of the people have lost close relatives to the ludicrous fighting." Lothshor gazes at you and tells you that you are welcome to stay as long as you want."
+
+### SD2:138
+Do you tell Lothshor of your mighty victory over the evil sorcerer, Ulmac and the witch Ambersair and that they were controlling Ketonia?
+
+### SD2:139
+"I wish what you're saying  were true, but I can't believe such a story.  If there was such a sorcerer, how could your small party defeat this Ulmac?"
+
+### SD2:140
+You explain again and Lothshor decides to test your abilities with a quest to find Aristan.  "Aristan was chosen to sneak back into Ketonia and see if things have changed.  He has not returned and we assume he is lost.
+
+### SD2:141
+"If you are as powerful and just as you say you are then you can find Aristan and return him to us."  Do you take the quest to find Aristan?
+
+### SD2:142
+"I will take you to the cave that we use to get to the forest of Lukia trees.
+
+### SD2:143
+"Beware, the forest is populated with fierce beasts, but they should be of no match for such warriors."
+
+### SD2:144
+You come across a ghastly sight.  You determine it to be what is left of a human body.   There are appendages which have been gnawed on fingers here and there.  Do you look for any useful items?
+
+### SD2:145
+You sift through decaying tissue and the piles of maggots feeding upon bits of flesh and bone.  After some time you find a small pouch.
+
+### SD2:146
+You enter a dark cave that slopes steeply.  After many times of the cave leveling off and then continuing down, you reach the bottom of the cave.  You swear you must be in Hades itself.
+
+### SD2:147
+There are some Dragons here that don't like being intruded upon.
+
+### SD2:148
+Some of Lord Keto's guards meet you here and take you to Lord Keto's audience room.
+
+### SD2:149
+Do you enter Lord Keto's Castle?
+
+### SD2:150
+A bunch of guards tell you that Lord Keto would like to see you in his chambers. Before you can say anything you are teleported to Lord Keto's audience chambers.
+
+### SD2:151
+You are in front of Lord Keto's Throne and you are surrounded by Lord Keto's guards.
+
+### SD2:152
+An iron gate prevents you from going up the stairs.
+
+### SD2:153
+Nothing special happen.
+
+### SD2:154
+What now?
+
+### SD2:155
+No apparent effect.
+
+### SD2:156
+What is it that you would like to do?
+
+### SD2:157
+"How dare you enter my castle! I will end your alliance with Lady Keto with your death!"
+
+### SD2:158
+Lord Keto is impressed to see such powerful warriors.  "You must go to Lady Keto's castle and destroy her.  She is an evil witch determined to destroy Ketonia."  Do you agree to destroy Lady Keto?
+
+### SD2:159
+"Step towards my throne!"
+
+### SD2:160
+"You will die then!"
+
+### SD2:161
+There are some guards and priests here waiting to get you.
+
+### SD2:162
+The door opens slowly and a rush of stale air comes out.
+
+### SD2:163
+The door doesn't budge.
+
+### SD2:164
+You find a small box in the corner of this dusty room.
+
+### SD2:165
+The box opens easily and you find some parchment with the following written on it:  "Great Wizard Zukar, I wish you could come to my fair city to meet with me.  My invitation is not one of social nature, but of grave importance to the survival of Ketonia.
+
+### SD2:166
+"I am willing to give you anything within my worldly belongings to get your services.  Your presence is needed urgently since time is not on our side.  My messenger is one of my best guards and he will now serve you as a gesture of good will."-Lord Keto
+
+### SD2:167
+The box breaks up into small bits and pieces of wood and metal.   Fishing through the debris you find small pieces of parchment that you can make out the following words:  "Great Wizard Zuk... fair city to meet...grave importan...urgently since time...
+
+### SD2:168
+"...best guards...esture of good wil...Lord Keto."
+
+### SD2:169
+On the floor is what is left of a great warrior.  His armor and weapons are a little dirty, but look serviceable.
+
+### SD2:170
+You are teleported somewhere else!
+
+### SD2:171
+The entrance is blocked by an iron gate and a guard on the other side says to you, "Lord Keto has given you orders, so be gone!!"
+
+### SD2:172
+Tied to chair is a man in worn and tattered clothing.  He looks like he is going to die.  Do you heal him?
+
+### SD2:173
+The man would have surely died without your help.  He is still a little groggy, but he speaks to you.
+
+### SD2:174
+"Who are you good people?  You can't be part of Ulmac's plot to destroy my city."  With these words, you realize that this must be the real Lord Keto imprisoned here.
+
+### SD2:175
+"Good people, I beg of you to find Lady Keto.  I fear she was killed by the impostor that has taken her place, but I must know.  I can not help you in my present condition, but please, find Lady Keto and destroy the Wicked Ulmac."  Lord Keto falls asleep.
+
+### SD2:176
+You see a ring on his finger that has the official seal of Ketonia.  You realize that this must be the real Lord Keto and you bandage his wounds.
+
+### SD2:177
+The door is of a heavy make, suitable for imprisoning the largest of fighters, however, the door is ajar.  Do you enter?
+
+### SD2:178
+An ornate throne is in front of you.  Will one of you sit in it?
+
+### SD2:179
+Who will sit on the throne?
+
+### SD2:180
+Looks like you have triggered some sort of trap or self protection scheme.
+
+### SD2:181
+This looks like some sort of storage room with a very stout door.  It appears like you can barricade the door with some of the supplies and rest in here.
+
+### SD2:182
+This looks like a food storage room as there are some iron rations and some wine.
+
+### SD2:183
+In this corner of the room, under some boxes, is a rolled piece of paper.
+
+### SD2:184
+This is a large closet holding various robes and other useless items.
+
+### SD2:185
+What you find here is a gruesome sight.  There is a half decomposing body in a very clever trap.  Looks like the person who set this trap hasn't been here lately to reset it.
+
+### SD2:186
+There is a table here with all kinds of bubbling potions and concoctions.  Do you destroy the experiment that appears to be going on here?
+
+### SD2:187
+That may not have been the wisest decision. The mixing of two solutions creates a brown noxious cloud that causes everyone in your party to cough.  All the noise has alerted the owners of the experiment.
+
+### SD2:188
+While you were contemplating your next move, the occupants of the lab come back.
+
+### SD2:189
+There is a robe here, do you take it?
+
+### SD2:190
+This looks like a great dinning hall.  There are numerous tables and chairs with a head table at the west end of the room.  There are still bits and pieces of bone and food scattered about the floor.
+
+### SD2:191
+These ants are glad to see fresh food come their way!
+
+### SD2:192
+There is a piece of parchment here on the floor.
+
+### SD2:193
+These are the castles barracks.  There are a few guards here that don't appreciate your presence.
+
+### SD2:194
+You walk into the midst of some magi perfecting their art.  Now they have you to practice on!
+
+### SD2:195
+There is a small stand with an strange orb on it.
+
+### SD2:196
+Who will touch the orb?
+
+### SD2:197
+Who will smash the orb?
+
+### SD2:198
+The orb breaks into many pieces, unleashing a destructive power! Right before your eyes, pieces of the broken orb magically turn into creatures from another world!!
+
+### SD2:199
+The room you just entered has an evil glow everywhere.
+
+### SD2:200
+Suddenly, there is a flash of light and you realize that you are no longer alone!
+
+### SD2:201
+This room appears to be completely empty.
+
+### SD2:202
+After you cast the spell, you briefly see what looks like a table across the room.
+
+### SD2:203
+You detect a large amount of magic in this room.
+
+### SD2:204
+The illusion is dispelled that was protecting a table full of goodies.
+
+### SD2:205
+The orb is very magical.
+
+### SD2:206
+A deep and powerful voice comes from within the orb and thanks you for releasing him from his magical prison.
+
+### SD2:207
+Under a some dust is a gem or two.
+
+### SD2:208
+This room seems to be empty.
+
+### SD2:209
+There is a very small hole that one of you might be able to squeeze through.  Will one of you try to go through the hole?
+
+### SD2:210
+Who will try to go through the hole?
+
+### SD2:211
+This is a small room, but the door is very stout and you think you can barricade the door so you can rest.
+
+### SD2:212
+This room doesn't seem to be empty.
+
+### SD2:213
+The floor is flooded with water ahead of you.  However, it looks like you can wade through it.
+
+### SD2:214
+You find a small hole in the wall here.
+
+### SD2:215
+You have found a room where some wild beasts are kept as pets.
+
+### SD2:216
+There is a lot of hay and food stuff, but nothing fit for humans.
+
+### SD2:217
+This looks like a room the guards on duty use, but it is empty at the moment.
+
+### SD2:218
+This room houses some beasts that most wouldn't want to tangle with.
+
+### SD2:219
+You have entered a room meant to keep these beasts happy.
+
+### SD2:220
+There are some creatures that are kept here. They want to get out and YOU are in THEIR way!!
+
+### SD2:221
+This room appears to be completely empty  except for the cobwebs that fill every nook and cranny.
+
+### SD2:222
+You hear strange noises from the rooms around you.
+
+### SD2:223
+There are a bunch of cots strewn about the room.  Some of them look like they have been used lately.  Other than that, there isn't much here.
+
+### SD2:224
+There are guards here arguing over who is going to get to sleep next.  When they see you, they rush to attack.
+
+### SD2:225
+Guards come into the room and attack!
+
+### SD2:226
+There is a statue of Lord Keto here.
+
+### SD2:227
+There is a pile of old junk here.  There are some worthless paintings of what you think is Ketonia in the past.  It looks a lot more cheerful and bright.  There are also some small, rickety boxes.  In one of them you find some treasure!
+
+### SD2:228
+This room appears to be completely empty.
+
+### SD2:229
+You have found a cleverly hidden false floor the hard way.
+
+### SD2:230
+There is a small table here, but there is nothing on it.
+
+### SD2:231
+This room is completely empty, but it looks to be well used.
+
+### SD2:232
+You tell Lothshor of your find of the half eaten body in the forest of Lukia trees.  Lothshor says that must be Aristan.  "I know his parents well, and it will be hard for me to tell them of his fate.  Thank you good people now I must be off."
+
+### SD2:233
+You find a small shiny pebble and as soon as you touch it, you are teleported somewhere!
+
+### SD2:234
+You see what looks to be a large buck bounding through the woods, but it is gone before you know it.
+
+### SD2:235
+You see a large buck in a small clearing ahead of you.  You haven't had fresh meat in a while; do you try to shoot the deer?
+
+### SD2:236
+Who will try to shoot the deer?
+
+### SD2:237
+The deer goes down and you will eat well, as it is the biggest buck you have ever seen.
+
+### SD2:238
+The arrow misses and the deer bounds off.
+
+### SD2:239
+The sign says "Local Tannery & Leather Goods".
+
+### SD2:240
+The sign says, "Local Tannery & Leather Goods"; but the shop looks to be closed.
+
+### SD2:241
+An old man comes out of this shack and wonders why you have come to this forsaken place.  "The damn wasps will take over the place", he says.  "I am going inside before they come again.  You're welcome to stay here if you would like."
+
+### SD2:242
+An old man comes out of this old shack and yells at you.  "What in name of Nufack are you doing in this god forsaken place.  There is famine in this village, and giant wasps are everywhere."
+
+### SD2:243
+On this old, but readable gravestone it says, "As luck would have it, I had no luck at all and that is why I am here."
+
+### SD2:244
+You find a small passage way that you can go single through file.  Will you enter the small dank passage way?
+
+### SD2:245
+Who will go first?
+
+### SD2:246
+After a long swim you, exit out of the water.
+
+### SD2:247
+What would you like to try now?
+
+### SD2:248
+After swimming to different openings and grabbing more air, you finally exit the water in this cavern.
+
+### SD2:249
+This iron clad door seems to be unlocked and can be easily opened.
+
+### SD2:250
+You have found the lair of some Blue Dragons and they look very very hungry!
+
+### SD2:251
+Some inhabitants that you didn't kill come back and find that you have killed their brethren.
+
+### SD2:252
+You enter this shack and find various utensils and chairs made from natural materials found in the cave.  You also find a pile of bones that must have belonged to the inhabitant of this shack.
+
+### SD2:253
+You also find what must have been the journal of the past resident.  You read the following:  "It has been more days than I can count here trapped in this cave.  I can't seem to find my way out of this endless cave.
+
+### SD2:254
+"I have been lucky enough to find a creature here and there to feed upon and I don't know how long I can stay alive.  I don't know if anyone will ever read this, or for that matter help since they will also be doomed.
+
+### SD2:255
+"What I do know is that the monsters to the south should be avoided or it will be certain death."
+
+### SD2:256
+You have entered the lair of some very large snakes that are happy to see some prey.
+
+### SD2:257
+The ground seems to fall out from underneath your feet. You fall helplessly down into a subterranean cave.
+
+### SD2:258
+You come across an old man in ragged and dirty clothing.  He warns you not to go near the iron gate in the north.  "Full of evil it is.  Stay away or even the mighty Zukar will not be able to save you!"  He leaves before you can ask more.
+
+### SD2:259
+The gate to this city is ajar and falling apart.  The door is rotting and it looks like repairs haven't been done for years.  Do you enter?
+
+### SD2:260
+You get near the bottom of the well and you see that it opens up into a very large cavern.  Do you go all the way to the bottom of the well, knowing you may not be able to make your way back to the surface?
+
+### SD2:261
+You speak Zukar's name down the well and you here it echo.  Then after a very long silence you here a very loud noise!
+
+### SD2:262
+"Who dares speak that name in my house of ill repute!"
+
+### SD2:263
+This must be the town well, it's showing signs of wear from not having been kept up.
+
+### SD2:264
+This looks like it used to be the town's City Hall.  There are a lot of chairs and a few tables.  You find some parchment on one of the tables.  It states that the undead have started to take over the city and all citizens are encourage to move.
+
+### SD2:265
+There is a very large hole here that seems to go down quite a few feet.
+
+### SD2:266
+All of a sudden the ground gives way; you and your party plummet to an underground cavern.
+
+### SD2:267
+This is very large hole in the ground.
+
+### SD2:268
+This is a very old boat and has many holes in it.  It hasn't seen service for quite a while and will probably never see service again.
+
+### SD2:269
+You enter the largest of shacks and find some haggard old people trying to warm themselves by a small but cozy fire.  The old man cries out. "What do you want?  We have nothing, you and your bandits have taken everything!"
+
+### SD2:270
+Suddenly you see a change in the old mans eyes from a look of fear to one of confusion.  "Who are you people and why do you bother old people who are down on their luck?"  You explain you are not going to harm the old man and his wife.
+
+### SD2:271
+The old man says, "My wife and I used to live in Merdonis before those bandits stole all of our belongings.  We moved out here like the others, in order to live in peace.
+
+### SD2:272
+The guards at the gate ask rudely, "What is your business with Lord Voltan?"
+
+### SD2:273
+The guards laugh at your begging and pleading to get in.  They think you are so funny that they end up on the ground rolling in an uncontrollable laughter.  Do you try to slip by the guards?
+
+### SD2:274
+After a few minutes, the guards recover from their laughing at you. Teary eyed, they tell you to be gone.
+
+### SD2:275
+Before you get too far, one of the guards grabs you and says to you, "Not so fast!!"
+
+### SD2:276
+The guards tell you to drop a pouch of 100 gold through the door's window.  Do you do as your told?
+
+### SD2:277
+The guards laugh and thank you for your donation to their cause.
+
+### SD2:278
+"You people are so funny we will let you pass.  Lord Voltan could use some entertainment."
+
+### SD2:279
+An unshaven guard whose face could scare a dead man tells says, "All the information you need is that you are not wanted here.  Go away!"
+
+### SD2:280
+A very ugly guard says to his comrades, "I haven't seen such a stupid group since those orcs came to town.  You will see what happened to those orcs!"
+
+### SD2:281
+In this small, but clean hut is an old lady sitting by a fire.  She sees you near her door and she motions for you to come in.  Do you enter the small hut?
+
+### SD2:282
+"Come in and sit by my fire.  I don't get much company these days since most of my family has been killed by thieves near McBane City."  You realize that this woman may have information. Do you sit for a while and talk to the old woman?
+
+### SD2:283
+You see light ahead, do you head towards it?
+
+### SD2:284
+You have never heard of Merdonis before.  Do you ask for more information about this mysterious Merdonis?
+
+### SD2:285
+The old man looks at you trying to see if you are truly ignorant or just playing dumb for some personal gain.  He sees the truth in your eyes and eases his suspicions.  "I will tell you, he says, but I can't help you.  It is too dangerous for me.
+
+### SD2:286
+"Merdonis is hidden deep within the mountains to the north.  I can't take you there and I can't draw you a map since we were guided through by a good friend of ours who has passed on.  Beware Merdonis is ruled by the cruel Lorodan!!"
+
+### SD2:287
+You accidentally step in a large pile of dung.  You should really watch where you are walking.  Then you notice a small piece of paper that says, "The graveyard holds secrets to the future!".
+
+### SD2:288
+The door is locked.  What would you like to do?
+
+### SD2:289
+The cave you have entered opens up into a large cavern.  The cavern is unusually warm since it is the home of some very large Red Dragons.
+
+### SD2:290
+While you're looking around the cave at the remains of Red Dragons everywhere, another group of Red dragons swoops down on your party from above, intent on making you pay for your actions!  You have help on your side, since a Gold Dragon follows them.
+
+### SD2:291
+A group of Lady Keto's guards are here. They tell you that you are to go north to the Lady's visitation chambers immediately!  Then the guards move your party down the hall.
+
+### SD2:292
+An iron gate prevents you from continuing.
+
+### SD2:293
+You enter the large and beautiful chambers of Lady Keto.  There are guards everywhere as well as what appear to be priests and magic users.
+
+### SD2:294
+Lady Keto is dark skinned and very beautiful.  So much so that you are almost mesmerized by here presence.  She speaks to you as if you've known her for a long time. "Welcome to my castle great warriors.  I am glad you have come to see me.
+
+### SD2:295
+"I could use the services of such courageous adventurers.  You see, my husband has gone crazy and he thinks I am a witch destined to destroy him.   I think he has been deceived by his advisor Ulmac.  I wish the city could be at peace again.
+
+### SD2:296
+Unfortunately, I don't think I have any choice but to lock up Lord Keto and destroy Ulmac.  I need you to go to Lord Keto's castle and take it over."  Will you do what Lady Keto asks?
+
+### SD2:297
+"How dare you enter my castle wearing the colors of the crazy Lord Keto.  I will show you how I deal with traitors under my rule!"   A cloud of smoke rises from the floor and Lady Keto disappears as her guards attack!
+
+### SD2:298
+Lady Keto frowns in disapproval. With a wave of her had she disappears into a cloud of smoke.  Her guards immediately attack!
+
+### SD2:299
+More of Lady Keto's come into the chambers and attack!
+
+### SD2:300
+Some of Lady Keto's Minions are here waiting for you!!
+
+### SD2:301
+This door is ajar, inviting you to enter.  Will you enter?
+
+### SD2:302
+It appears that the door was a trap.
+
+### SD2:303
+The door slams shut unleashing some sort of power that hits your party.
+
+### SD2:304
+The door appears to be magically locked as there are no handles or locking mechanisms.
+
+### SD2:305
+The spell doesn't work.  The door must be locked with a very high spell.
+
+### SD2:306
+Who will try to bust down the door?
+
+### SD2:307
+The door goes down with a large "THUD".
+
+### SD2:308
+The door doesn't budge.
+
+### SD2:309
+There is a very large and ornate candle holder here. The wall to the west has a very expensive tapestry on it.
+
+### SD2:310
+From the surroundings you can tell these are the private chambers of Lady Keto.  A very ugly woman, wearing Lady Keto's clothes, is here with some of her helpers.  The woman is not so friendly when she talks to you.  "You should not have crossed me!!"
+
+### SD2:311
+This must have been Lady Keto's Library and work room.  There seems to be a few fairly new items in the room.  You can tell because they don't seem to fit in.  There is a table with various potions boiling and frothing.
+
+### SD2:312
+There are also bits and pieces of animals either partially cut up or in strange looking jars.  You would swear you were in the chambers of a witch and not a lady.  There also seems to be someone or something tied up on a smaller table across the room.
+
+### SD2:313
+Here you find the lifeless body of a woman strapped to a table.  If it weren't for the dark eye sockets and white pale face you might think she is very beautiful.  It seems like all her life blood has been extracted out of her.
+
+### SD2:314
+You can't even imagine what caused such a sight, but you know it must have been very powerful black magic.
+
+### SD2:315
+Your prayers seem to go unanswered since nothing seems to happen.
+
+### SD2:316
+The women's body starts to move as she moans out in pain.  "Release me!  Release Me!"  Do you release her from her bonds?
+
+### SD2:317
+After releasing the women from her bonds she exhales a cloud of gas into the face of the person who freed her.  She then attacks the party with a wild abandon.
+
+### SD2:318
+Who will free the woman from her bonds?
+
+### SD2:319
+The gods were on your side and the woman comes back from the dead.  She looks at you with a very strange look and asks you where is Lord Keto.  "You must find Lord Keto and not that impostor that Ulmac must surely be controlling."
+
+### SD2:320
+Lady Keto tells you about Ketonia. It used to be peaceful and prosperous.  Then Ulmac came and deceived Lord Keto and took power through an impostor that he somehow conjured up with the help of that witch, Ambersair.
+
+### SD2:321
+From the look on Lady Keto's face, you can tell she has only pure hatred in her heart for Ambersair.
+
+### SD2:322
+You tell Lady Keto of your victory over the evil witch, Ambersair. She thanks you for destroying her nemesis, but she urges you to find Lord Keto.  "I will look for help from a special friend and come to help if I can.  Go now for time is short!"
+
+### SD2:323
+"You must first find Ambersair and destroy her.  I will seek the help of a good friend of Ketonia.  May the gods be on your side."  Lady Keto slips off into the shadows.
+
+### SD2:324
+The gods were on your side and the women comes back to life.  She gives you a strange look and thanks you for your kindness.
+
+### SD2:325
+You tell lady Keto that you have found Lord Keto and that he's doing well and looking forward to seeing his Lady again.
+
+### SD2:326
+Lady Keto asks you if you have destroyed the evil wizard Ulmac. When she hears that you haven't, she frowns in despair.  She tells you that he must be destroyed.  She also tells you that she will meet you at the local stables once you have killed Ulmac.
+
+### SD2:327
+You tell Lord Keto that you have found Lady Keto and she is now well.  Lord Keto thanks you.
+
+### SD2:328
+Lord Keto asks if you have found Ulmac and destroyed him.  When you tell him that you haven't, he grimaces.   He tells you that you must kill Ulmac or Ketonia can never be free again.  Lord Keto collapses from exhaustion and falls asleep.
+
+### SD2:329
+Lord Keto asks you if you have killed the witch Ambersair. When you tell him that you haven't, he tells you that she must be killed.  "You must go and find her. I will seek the help of a friend."
+
+### SD2:330
+You leave the castle. As you do, the walls surrounding the castles magically disappear.
+
+### SD2:331
+You leave the castle. As you do, the walls around the castles magically crumble to the ground.
+
+### SD2:332
+The old man in the stables comes out and mumbles something like, "Fighting over colors just doesn't seem right.  Just doesn't seem right."
+
+### SD2:333
+This room seems to be the main thoroughfare out of the Lady's audience chambers.  The floor is well worn from traffic of untold numbers of soles.
+
+### SD2:334
+There are some guards here and they are waiting in ambush for you.
+
+### SD2:335
+This door opens with a eerie creek.
+
+### SD2:336
+There is a strange looking lantern here illuminating some tapestries on the wall.
+
+### SD2:337
+A door suddenly opens and some hungry looking monsters come to get your party!
+
+### SD2:338
+You enter a large room with a floor that seems to be mostly dirt with some evidence of bone fragments and pieces of hide.  When you look up, you see seats overlooking the room you are in.
+
+### SD2:339
+You now realize that this room is some sort of arena for watching battles.  There are various spikes and sharp objects on the ceiling and on the walls that would cause fatal damage to anyone trying to jump, fly or climb to a higher perch.
+
+### SD2:340
+Here, half buried in the dirt, is what looks like a sword handle.  Do you try to dig it up to see if there is more?
+
+### SD2:341
+After some digging and prying, you pull a sword from the densely packed floor.
+
+### SD2:342
+From the looks of this room, it must be a pen for holding some large animal or animals, but it appears empty right now.
+
+### SD2:343
+This room appears to be a holding pen for some disgusting monster as there are piles of dung and other excretions scattered about the room.
+
+### SD2:344
+The odor in this room is almost unbearable, and you have awaken the source of the odor by your milling around!
+
+### SD2:345
+This room is quite damp and there are parts of claws and some pieces of sea food on the floor.  The smell or rotting fish is so pungent that your eyes well up with tears, but, before you can leave, the inhabitants of this smelly abode attack.
+
+### SD2:346
+This room must accommodate creatures that are almost human since there are crude chairs and sleeping mats strewn around the room.  You also notice a couple of human like forms sleeping soundly in the back of the room.  Do you cut their throats?
+
+### SD2:347
+Which two of you will do the dirty deed?
+
+### SD2:348
+A twig is broken and the sleeping Bugbears jump up and attack!
+
+### SD2:349
+The gods of fair play smile upon you, but the Bugbears that were sleeping are now awake and they don't care who likes you.
+
+### SD2:350
+You find a burlap sack hidden behind a poorly fitted stone in the wall.  It contains some nice looking items.
+
+### SD2:351
+The bugbears that were sleeping here will no longer wake.
+
+### SD2:352
+This room is very clean for a holding cell.
+
+### SD2:353
+This room has strange looking piles of mud or dung.  You are not quite sure which, but what you are sure of is what created it since there are some very slimy giant worms looking at you, trying to determine why their diet has been changed.
+
+### SD2:354
+The worms are very hungry and one worm, drooling large amounts of mucus, moves to attack.
+
+### SD2:355
+This room appears to be some sort of storage area for tools and other crude weapons used in the arena.  None of the weapons seem to be of any use as most are rotting or in need of some serious repair.
+
+### SD2:356
+Here in the corner, under some other weapons, is a flail that seems to be in extremely good shape compared to the other shoddy weapons laying around the room.
+
+### SD2:357
+This room has the smell of death in it.  There is a pile of half decayed flesh across the room and a large fireplace that looks like it was made to cremate losers in the arena.
+
+### SD2:358
+The combination of rotting and burnt flesh is almost unbearable here.  Even though you barely breath in the acrid odor, your party still has to choke down urges to be sick.  Near the fireplace are some pokers as well as large pieces of wood.
+
+### SD2:359
+The fireplace is cold now, but you can imagine the use it must have seen since the creosote is very thick on the big iron door and surrounding brick.  Do you search around the fireplace even, though you feel you could be sick at any moment?
+
+### SD2:360
+While searching around, you find a bunch of maggots feeding on a piece of flesh that must not have made it into the fireplace.  You think your stomach is about to leave your body when you see a handle of some sort of weapon under the maggots.
+
+### SD2:361
+Does one of your party have the courage to plunge their hand down between various rods and tools to find out what the weapon might be?
+
+### SD2:362
+Who will do the disgusting deed?
+
+### SD2:363
+You reach down into the small opening and grab the handle of the weapon along with half decaying flesh and squirming maggots.  After wiping away the maggots and flesh you see what looks to be a very nice weapon.
+
+### SD2:364
+When you enter this room, you see several of Lady Keto's guards here, sharpening and  oiling their weapons.  One of them looks at your weapons and your purses full of gold.  The large guard speaks and tells you that he has orders to kill all intruders.
+
+### SD2:365
+"I might think about looking the other way if you would lighten your purse for my favorite cause.  Me!"  The other guards laugh and sneer at you.
+
+### SD2:366
+What do you do with these overconfident, but well trained guards?
+
+### SD2:367
+The guards just about roll over with laughter, but then they become deadly serious and attack.
+
+### SD2:368
+The large guard smiles in anticipation of the large amount of money coming his way.  He tells you that he wants 1000 gold pieces.  Do you pay the amount asked for?
+
+### SD2:369
+The guards tell you that you should carry more money for just these cases.  "Now we will have to kill you to take your weapons!"
+
+### SD2:370
+The guards tell you that you should carry more money for just these cases.  "Now we will have to kill you to take your weapons!"
+
+### SD2:371
+The guards are very happy that you have lightened your purse for them.
+
+### SD2:372
+The guards laugh at you and tell you to get out or they will kill you just for fun.  Do you take their advise and leave?
+
+### SD2:373
+The guards thank you for your donation, but now they want your weapons and your armor.  They plan on taking them from your cold dead hands.
+
+### SD2:374
+The guards tell you that you should have left.  "We know your purses were full, but how are your fighting skills?"
+
+### SD2:375
+The guards see you and one says, "So, you have come back to play!?"
+
+### SD2:376
+There are some crude chairs here surrounding a well worn table where the guards have undoubtedly played a lot of cards.
+
+### SD2:377
+While looking around the table in the room you find a large skeleton key  hidden in a small crevice in one of the table legs.
+
+### SD2:378
+The iron door in front of you is very solid and has a small view window with iron bars across it.
+
+### SD2:379
+You use the key that you found and the door opens easily.
+
+### SD2:380
+After more searching, you find a brass key hidden on a small ledge out of plain sight.
+
+### SD2:381
+By inspection of this door you can tell that it is made of some very heavy, hard wood and that it is locked.
+
+### SD2:382
+This door is has seen a lot of use, but it is still very sturdy and locked.
+
+### SD2:383
+The handle on this door has been repaired a few times from the looks of it.   Pulling on the handle you see that the door is locked.
+
+### SD2:384
+This door looks almost brand new, as if someone had recently replaced it.  The door is solidly locked.
+
+### SD2:385
+This door is a bit charred, as if there was an intense fire near it.  Even though the door is charred, it is still serviceable and locked tight.
+
+### SD2:386
+The door opens with the use of the brass key.
+
+### SD2:387
+The door opens.
+
+### SD2:388
+Entering this cell might have been a mistake since the occupant of this cell is quite mad and attacks you on sight.
+
+### SD2:389
+When you enter this cell you find a lifeless body chained to the wall.  From the look of the body as well as the stench, you guess that this person has be dead for a few days due to malnutrition.  Do you investigate the body?
+
+### SD2:390
+Investigating the rotting body, you find some creatures that have been eating well on the carrion of the poor soul who's chained here.
+
+### SD2:391
+Hearing the noise, more slimy beast seem to come from nowhere anticipating fresh flesh. to dine on.
+
+### SD2:392
+This cell is packed tight with minotaurs that want desperately to get out!
+
+### SD2:393
+This cell has some straw mats laying on the floor and not much else.
+
+### SD2:394
+This cell has an old blind man sitting in the corner.  His head props up when he hears you enter the room.  He begs for food. Do you give him some?
+
+### SD2:395
+From the manner in which he stuffs the food in his mouth, it's obvious that the man hasn't eaten in a while.  After some time of gobbling and munching, the man gives out a gasp and keels over much to your surprise.  At least he died with a full belly.
+
+### SD2:396
+This cell has a couple of dead bodies in it.  They are not alone as there are numerous rats feasting on what is left of whatever creatures where kept here.
+
+### SD2:397
+More rats rush out to attack, anticipating fresh food.
+
+### SD2:398
+This appears to be a barracks room since there are cots and personal items around the room.  There are also several guards here that jump up as soon as they see you.
+
+### SD2:399
+This door is locked tight.  The lock mechanism looks like it has been used many times.
+
+### SD2:400
+This room is full of supplies and other preserved food items.
+
+### SD2:401
+There are various types of weapons and armor strewn around the room. With some cleaning up and care, most of the items could be serviceable.
+
+### SD2:402
+After entering the room, you see that it is full of old, rotting tapestries and other useless items.
+
+### SD2:403
+Some of Lady Keto's guards see you and attack.
+
+### SD2:404
+This room appears to be the castle's main kitchen.  There are large pots and pans and various stoves in this room.  From the smell of the room, you can tell that the cook must be a good one.
+
+### SD2:405
+This must be some sort of food storage room.  The room is full of various vegetables and sacks of flour.
+
+### SD2:406
+Looks like you found the home for some very large spiders; and they are mad that you have disturbed them.
+
+### SD2:407
+This room is full of large mushrooms growing in well kept large rectangular pots.  Some of the mushrooms are well over three feet tall.  They must be grown here by the Lady's head cook.
+
+### SD2:408
+Something is wrong with some of the mushrooms in this area.  They look very sickly as though eaten by a pest of some type. The bite marks are very large and you wonder what could have done this to these mushrooms.
+
+### SD2:409
+While inspecting the mushrooms, some very large insects burrow out of the soil looking for some food to fill their stomachs.
+
+### SD2:410
+This room is mostly empty except for various pieces of cloth and leather.  It looks like the scraps of material used to make clothing for the Lady and her guards.  It appears this room isn't used much.
+
+### SD2:411
+You decide that you can use your iron spikes to nail the door shut and keep others out of the room, enabling you to rest easily. The piles of clothing scraps make comfortable beds to rest on.
+
+### SD2:412
+You wish you had some iron spikes to nail the door shut so you could at least be warned if someone was trying to get in while you were resting.
+
+### SD2:413
+This room is full of water from an obvious leak in the ceiling.  The leak has been there for quite a while since the stone is worn away and moss and fungi have over taken the room.  Do you want to look around the room?
+
+### SD2:414
+In this corner of the room, you find what is left of what could be a desk.  Your not quite sure since the moss and fungi have totally engulfed the desk.  Do you prod the heap of moss and rotting furniture to see if you can find anything of value?
+
+### SD2:415
+You find something, but it doesn't look to be anything of value.  You break what could be some sort of egg or pouch.  You here an eerie screech and turn around to find some very unhappy parents of the offspring you have just killed.
+
+### SD2:416
+A strange looking bottle has been unearthed during the battle with the mushmen.  Do you pick it up?
+
+### SD2:417
+This room is well kept and full of books.  Most of the books are placed neatly on the various shelves around the room, but there are also large stacks of books on tables in the middle of the room.
+
+### SD2:418
+The table in front of you is full of old books in various states of wear.  Do you rummage through the books to look for anything of use?
+
+### SD2:419
+After looking for several minutes, you don't find any books that look to be of any use unless you plan on cooking dragon eggs for breakfast.
+
+### SD2:420
+After several minutes of looking you find a book entitled "The Lost Art of Weapons Making", but you can't make sense of the language that it was written in, so you don't know if it is worth anything.
+
+### SD2:421
+After several minutes of looking, you find a book entitled, "How to Make Your Mount Mind You in Battle."
+
+### SD2:422
+After several minutes of looking you find a book entitled "Ten Ways to Make Your Wife Mind", by Porter I. Grepton.
+
+### SD2:423
+After several minutes of looking you find a book entitled "Ten Ways to Make Your Wife Mind", by Porter I. Grepton.
+
+### SD2:424
+After several minutes of searching you find a book entitled, "How to Properly Quench Your Steel".  You see pictures of red hot blades being driven into slaves.
+
+### SD2:425
+After several minutes of searching you find a book entitled, "How to Turn Gold into Lead".
+
+### SD2:426
+After several minutes of looking you find a book entitled, "How to Remove Unsightly Stains from Your Armor".
+
+### SD2:427
+After several minutes of searching you find a book entitled, "How Best to Get and Keep a Suitable Mate".  Thumbing through the book you see pictures of things you never thought of before, like the use of clubs and ropes.
+
+### SD2:428
+After several minutes of searching you find a book entitled, "How to Find Your Way Through the Wilderness".
+
+### SD2:429
+After several minutes of searching you find a book entitled, "The History of Ketonia".    Do you keep the book?
+
+### SD2:430
+In the rich and ornate book that you have found you read about the life and times of Ketonia before the blight took over the land.  You read passages describing past fairs and celebrations held in the city of Ketonia.
+
+### SD2:431
+Pleasant thoughts of your childhood fill your mind as you read and look at the crude, but illustrative pictures.  That was the last time you remember when things were so nice.  Those memories are so distant that you wonder if they are even real.
+
+### SD2:432
+The hard times that have befallen the land have somehow erased any memory that you had of when the land wasn't full of despair.  With that thought you even wonder if it is even possible to feel good about the future and what it has in store for you.
+
+### SD2:433
+You think of Zukar and why he hasn't stopped the disease that has spread across the land.   Then you turn the page and find a map with an inscription at the bottom saying "The path to the castle starts by crossing to the Cross Island."
+
+### SD2:434
+Do you keep the book?
+
+### SD2:435
+You enter this room and from the tapestries and lit candles in the room you decide that this must be some sort of temple.  There is a stone altar on the other side of the room.
+
+### SD2:436
+The stone altar in front of you is unlike any that you have seen before.  It has a few small draped cloths that look to be some sort of decoration.  There are also two small circular depressions about a foot apart.  They are about the size of your hand.
+
+### SD2:437
+This looks to be the chambers of some sort of mage or magic user as there are a couple of books and some old parchment laying near the small, but comfortable bed across the room.
+
+### SD2:438
+The bed in front of you is small, but looks to be very comfortable since it has a very thick and warm wool blanket on it.  Do you look under and around the bed for any personal items?
+
+### SD2:439
+Looking around and under the bed you don't find anything of any value.
+
+### SD2:440
+This seems to be some sort of lab as there are various boiling potions and glass jars on a very large table in the middle of the room.  There is a pipe smoking on the corner of the table as though it were freshly lit.  Do you wish to investigate?
+
+### SD2:441
+You look around the room and don't see anyplace where someone can hide.  Moving up next to the table you find some small vials and potions that may be of some use.
+
+### SD2:442
+It looks like you entered the pen of the lab owners special pet.  In front of you is a very large animal that has surely been altered to make it so large and strong.  The large cat is gnawing on what could have been a dwarf.
+
+### SD2:443
+The cat looks at you and snarls, showing her large yellowish teeth, dripping with blood.  The cat pins her ears back and gives another ear shattering growl as she attacks.
+
+### SD2:444
+From the equipment and mess in this hallway you can tell that this part of the castle is undergoing some extensive remodeling.  The dust and rubble is so extensive that even normal walking is dangerous.
+
+### SD2:445
+There are no fresh footprints in the dust and it looks like nobody has been down this hallway for quite a while.
+
+### SD2:446
+You stumble and fall on the debris.
+
+### SD2:447
+While walking around the room, you encounter some creatures that are happy to see you.  They haven't had fresh meat in a while.
+
+### SD2:448
+While walking around the room, you encounter some creatures that are happy to see you.  They haven't had fresh meat in a while.
+
+### SD2:449
+The room in front of you is very different from anything you have ever seen before.  It is filled with flora and fauna and the roof has openings to the outside that allow the sunlight and rain to come in.
+
+### SD2:450
+You can't believe the size of the trees growing inside the castle.  The foliage is so thick that you can't see the wall on the other side of the room.  Every once in a while you hear strange animal noises coming from various places in the room.
+
+### SD2:451
+You stumble upon a poorly hidden box here on the ground.  It contains some items.
+
+### SD2:452
+This room is full of long tables and crude chairs.  This must be the main chow hall for the Lady's guards.  The hall is empty right now and looks like it has been for a while.
+
+### SD2:453
+This room has a desk, a nice bed and some personal items.  There is an open book on the desk.   Do you investigate what is in the book?
+
+### SD2:454
+You leaf through the first couple of pages and there are some strange words on the book.  Will one of you read the words out loud?
+
+### SD2:455
+After reading the book, a strange glow overcomes the reader and bursts of fire seem to come from everywhere.  Devilish beasts spring forth from the fire.  Before you know it, they begin attacking you!
+
+### SD2:456
+Strange words are uttered by the reader, but nothing happens.  Do you want to keep the book?
+
+### SD2:457
+Do you keep the book for possible future use?
+
+### SD2:458
+This room must be the private residence of a very messy person.  There are pieces of parchment, partially eaten fruits and empty bottles of wine all over the general area of the desk in this room.  There is a stack of books next to what could be the bed.
+
+### SD2:459
+Most of the bed is covered with books, clothing and more parchment.  The smell in this room is less than fresh since some of the unattended garbage is starting to grow mold.
+
+### SD2:460
+This room is just as messy as the last one.  This room must be some type of workshop or lab.  There are some spilled jars and various broken vials.  From this distance, you can tell if there is anything useful.
+
+### SD2:461
+Now that you are closer to the table, you  can see the mess first hand.  It looks as though someone intentionally destroyed the experiments that were being run here.  Nothing appears to be intact anymore.
+
+### SD2:462
+This room seems to be empty and you can't see anything from where you are standing.
+
+### SD2:463
+The person in this room heard you coming and blasts you as soon as you enter.
+
+### SD2:464
+This room looks like it recently had a fire in it.  The furniture and other items are burnt to a crisp.
+
+### SD2:465
+This room contains a table and some chairs with nothing but some half eaten food on it.  There is a small bed in the corner that appears to have been slept in lately.  You also feel a cool breeze coming from somewhere, but you can not tell where.
+
+### SD2:466
+This door is locked and there doesn't seem to be a lock mechanism.
+
+### SD2:467
+Do you enter Lady Keto's Castle?
+
+### SD2:468
+You are teleported back towards the throne.
+
+### SD2:469
+Lord Keto pulls a small amulet from a pouch and you are transported outside.
+
+### SD2:470
+The Keto's see each other and run to embrace.  You have brought peace to Ketonia again.   The Keto's wish you luck with your exploits.
+
+### SD2:471
+"I really wish you would stay and talk a while."  Do you change your mind and stay and talk?
+
+### SD2:472
+What topic do you ask the old lady about?
+
+### SD2:473
+Do you enter Lord Voltan's castle?
+
+### SD2:474
+Some aquatic monsters find you.
+
+### SD2:475
+Some mushmen find you and think they might be able to add you to their diet.
+
+### SD2:476
+You see some monsters in the distance that make this underground stream a home.  Do you attack them?
+
+### SD2:477
+You see some monsters in the distance.  Do you attack?
+
+### SD2:478
+A patrol of very evil looking creatures finds you.
+
+### SD2:479
+While walking around this secluded underground area you are discovered by a hideous monster.  The smell of rotting and decaying flesh is almost overwhelming.  Just when you can muster some courage you see the beast is not alone.
+
+### SD2:480
+The other residents of this cave are here to investigate since they think there might be leftovers from the gazers.
+
+### SD2:481
+A large chest appears in the corner of the cave.  A magical spell must have been hiding it.
+
+### SD2:482
+The chest does not have a lock.  Do you open the chest?
+
+### SD2:483
+The area fills with undead crawling from the shadows.
+
+### SD2:484
+Before you is a very old and strange castle.   The castle seems to have a strange glow that exudes pure evil.   Do you enter the castle?
+
+### SD2:485
+You see a group of McBane guards that are in the middle of fighting some Hell Beasts.  Do you run to their aid?
+
+### SD2:486
+The Hell Beasts easily dispatch the McBane guards and are now after you.
+
+### SD2:487
+A voice tells you that, by defeating the Red Dragons, you have done a great service to the land.
+
+### SD2:488
+The stairs in front of you go up.  Do you ascend them?
+
+### SD2:489
+The stairs in front of you go down.  Do you descend them?
+
+### SD2:490
+This door leads outside.  Do you go outside?
+
+### SD2:491
+There are no guards in sight and it looks like you have the run of the castle.
+
+### SD2:492
+At the end of the hallway are some very dusty items.  There are various old leather goods, but none of them seem to be of any use.
+
+### SD2:493
+Then you find a set of gloves that seem to be in pretty good shape.
+
+### SD2:494
+There is a statue of a strange looking person.  On the bottom of the statue is a plaque with the name "Lord Voltan" inscribed on it.
+
+### SD2:495
+You are teleported to a hidden room above.
+
+### SD2:496
+It looks like you cast the wrong spell at the wrong time.  You seem to have opened up a portal to Hell and, before you can shut it, you are surrounded by evil creatures.
+
+### SD2:497
+Entering this room, you see a few of the Lord's guards here sleeping.  Do you wake them for a fair fight or do you slit their throats as they sleep?
+
+### SD2:498
+Here in the corner, under some personal items, is a stash of weapons.  Do you investigate the stash?
+
+### SD2:499
+You walk through this door and, before you know it, you are rushed by some sort of beast!
+
+### SD2:500
+The passage on your left is, or was, what once was a door, but it is now in pieces.  No doubt the mad troll you encountered must have beat it down.
+
+### SD2:501
+This room is a mess with dung and straw strewn all around.  There is also a stench of rotten meat hanging in the air.  You figure this room must have originally been a storage room that was made into a jail cell.
+
+### SD2:502
+When you enter, you can see a desk and a meager bed across the room.  There is a lamp burning next to the desk, but nobody is in the room.
+
+### SD2:503
+On the desk is a letter someone was writing.  Do you take a look at the letter?
+
+### SD2:504
+"Oh Great One, things are going as planned.  Lord Voltan is becoming more evil every day and his men are becoming lazy.  Soon this castle will be in my grasp to do your bidding.
+
+### SD2:505
+"The gift you have supplied the Lord must be doing its job of bleeding the goodness from Lord Voltan and his men."  The letter is unfinished, leaving you to wonder who was writing it and what gift the writer was talking about.
+
+### SD2:506
+You kill the guards easily, but you feel very strange after you do the deed.
+
+### SD2:507
+This room contains various mock weapons and archery targets against the wall. It appears to be a training room for Lord Voltan's guards.  From the dust and dirt you can tell it hasn't seen much use lately.
+
+### SD2:508
+There are some arrows here in a target.  Do you want to take a look at them?
+
+### SD2:509
+In this room, some of Lord Voltan's guards are playing cards.  They didn't see you come in the room as they are preoccupied with their card game.  Then one of the guards looks up from his cards and asks, "What the hell do you want?"
+
+### SD2:510
+How do you respond to the guard?
+
+### SD2:511
+The guard yells something that you don't understand, but you can tell he wants you to leave when he waves you off. On your way out the door, he mumbles  something about pathetic mercenaries.
+
+### SD2:512
+The guard yells, "Well he isn't here!" and all of the other guards start laughing.  "Go away, before we have to cut your heads off for fun."  Do you leave?
+
+### SD2:513
+The guards get angry quickly after what you said about their mothers and they move to attack.  One of the guards stumbles over the stool he was setting on.  Looks like he had too much grog.
+
+### SD2:514
+As you run for the door you here one of the guards complain about mercenaries being dumber than a box of rocks.  The guards don't follow you and go back to their game.
+
+### SD2:515
+Which one of your group will pick the fight?
+
+### SD2:516
+One guard says, "Why do these mercenaries have to be so stupid?" Then the guards attack, angry that you have disturbed their card game.
+
+### SD2:517
+One of the guards pulls a dagger and throws it at the person in your party that picked the fight.  The dagger hits right between the eyes and kills them instantly.  The rest of the guards attack while you watch your friend fall to the ground.
+
+### SD2:518
+Here is the table the guards were playing at. It contains some gold, gems and  a small, yet ornate dagger.
+
+### SD2:519
+You walk into this room and you see a few guards hunched over plotting some sort of  attack.  When they see you, they don't go for their swords, but instead start pleading for your help.  "Oh, great warriors, the gods have answered us.
+
+### SD2:520
+"We don't want to be in the service of Lord Voltan anymore, but our captain will not let us leave.  We need your help to kill the captain so we can leave this wretched castle."  Will you help the guards?
+
+### SD2:521
+The guards lead you down the hall to the chambers of the captain.
+
+### SD2:522
+The guards decide that they are dead if the captain knows of their plan so they attack.
+
+### SD2:523
+You walk in and see the captain that the guards spoke of.  He sees you with the rebelling guards and orders his men to attack and kill the traitors.
+
+### SD2:524
+You walk in and see a lot of guards listening to a very large and muscular person in decorative armor.  Before you know it, he is barking out orders for them to surround and attack your party.
+
+### SD2:525
+You walk into this room and find the bodies of 6 dead guards.  It looks like they were plotting to attack someone.  Whoever they were plotting to attack must have found them before they could carry out their plans.
+
+### SD2:526
+This room appears to be empty except for some old rags and other useless items.
+
+### SD2:527
+In this corner, under a pile of rags, you find some items that might be useful.
+
+### SD2:528
+Here is a table with some food items and a small amount of gold.
+
+### SD2:529
+This room is full of weapons.  The weapons are in various states and some seem to be usable.
+
+### SD2:530
+Here, standing against the wall, is a weapon that you missed when you first walked in.
+
+### SD2:531
+Here are some vials of oil that may come in handy.
+
+### SD2:532
+All of sudden you are jumped by some trolls that were locked in this room.
+
+### SD2:533
+This door is locked.  What would you like to do?
+
+### SD2:534
+All of sudden you see a flash of light and you are under attack by giant skeletons that appear before you.
+
+### SD2:535
+The Giant Skeletons magically reform and attack.
+
+### SD2:536
+You enter this room and see who was trying to keep you out of his resting place.  A powerful vampire is here with some of his undead minions.
+
+### SD2:537
+This room is in need of some major repair.  There is a gaping hole in the outside wall directly across from you.  Part of the floor is also crumbling.  Some bats have taken advantage of the hole and made this room their home.
+
+### SD2:538
+The floor gives way as you get close to the hole in the wall.  Those that don't move fast enough from the castle to their death.
+
+### SD2:539
+Since your party in under the effect of a feather fall spell, nobody falls to a horrible death.
+
+### SD2:540
+You are met by a group of Lord Voltan's guards along with some magic users.  They are led by a very powerful magic user who speaks to you.  "I am Songam and I speak for Lord Voltan when he is unavailable.
+
+### SD2:541
+"Unfortunately Lord Voltan is resting and can not see visitors at this time.  Please come back at a later time."  Do you do as Songam wishes?
+
+### SD2:542
+As you turn to leave, Songam conjures up a fireball and blasts the party.  Then his minions attack.
+
+### SD2:543
+Songam looks at you very sternly and then yells out "Kill them!  Kill them immediately!"
+
+### SD2:544
+This room glows with a strange color that you can't describe.  In the center of the room is what looks like the source of the strange glow.    A very small pin point source of light floating about eye level.
+
+### SD2:545
+Songam looks at you very sternly and then yells out "Kill them!  Kill them immediately!"
+
+### SD2:546
+You walk in and a very large and strange looking man turns around.  He was about to speak, but he saw that you are not who he thought you were.  Before you know, it he is shouting in a very strange language.
+
+### SD2:547
+Beasts from beyond start appearing all around you.  They do Lord Voltan's bidding and attack you.
+
+### SD2:548
+The hallway to the West contains the skeletal remains of a very unfortunate party.
+
+### SD2:549
+On what is left of a once great warrior, you find a piece of paper. "I fear that I am stuck here to die from starvation."
+
+### SD2:550
+"You will never find me!"
+
+### SD2:551
+It looks like the destruction of Lord Voltan has set something off as the whole castle seems to be falling apart around you.  You run out of the castle with the walls crashing down on you.
+
+### SD2:552
+You enter the largest of the shacks and find a Orc warrior sitting by a fire.  The Orc asks, "Why do I have the pleasure of a visit from such powerful warriors?"  You tell the warrior that you are looking for information about Zukar the Great.
+
+### SD2:553
+The Orc smiles and shakes his head.  "I wish I could tell you.  All I know is that Zukar would come down from his castle high in the mountains and fight off evil no matter where it reared its ugly head.
+
+### SD2:554
+"I have heard that there is a Lord in the West that may have information about Zukar, but I have stayed here to protect my people from thieves.  Even though the trip is perilous, I think such warriors as yourself could make the journey.
+
+### SD2:555
+"You may stay here as long as you want to heal your wounds and prepare for your journey."
+
+### SD2:556
+This largest of shacks seems to be empty at the moment.
+
+### SD2:557
+The large iron double doors in front of you are locked tight.
+
+### SD2:558
+The large iron doors are unlocked and you can enter the city.
+
+### SD2:559
+Luckily you make it out of the building more or less unharmed.
+
+### SD2:560
+Need to put information here yet.
+
+### SD2:561
+The floor of the room you just entered is made from a deep black marble.  You can see a path worn in the floor leading to the door on the left.
+
+### SD2:562
+The floor of the room you just entered is made from a deep black marble.  You can see a path worn in the floor leading to the door on the right.
+
+### SD2:563
+While walking through the graveyard of the small nearby village you find a parchment tube.  On a piece of parchment is some writing with an unknown origin or purpose, but you feel the information may be important.
+
+### SD2:564
+The writing reads as follows:  Those that seek greatness must first find despair and evil.  There, hidden amongst the vile and unclean you will find a symbol of good.  The symbol is in itself a weapon for all things good.
+
+### SD2:565
+When you have gone to the highest level of despair and the symbol of good is nowhere to be found.  Move yourself to a higher level magically.  Then and only then will you be able to look for the real symbol of good.
+
+### SD2:566
+"Here you will find many choices, but there is only one real symbol.  You must chose the right one and not the wrong.  Look to the direction of the sun light that removes all darkness with its very presence.  There you will find the truth."
+
+### SD2:567
+The overwhelming feeling of fear is thick in the air as you enter the castle.  You grip your weapons a little tighter and hope your weapons and spells will not fail you during the inevitable battles ahead.
+
+### SD2:568
+This room is full of coffins of various sizes and states of decay.  Some are propped up against the wall and look like they were just moved since they don't have any dust on them.
+
+### SD2:569
+Here is a very ornate coffin made of very fine hard wood and brass fittings.   The coffin seems out of place when compared to the others in the room.
+
+### SD2:570
+Then, before your eyes, the lid of the coffin opens with an eerie creek and the inhabitant of the coffin sits up  and hisses at you before he turns into a bat attacking with the help of some other undead that seemingly come from nowhere.
+
+### SD2:571
+Entering this room, you see flickering flames atop black candles adorning the walls.  Hung on the walls are tapestries with strange looking symbols on them.  Looking forward you can see a massive stone altar.
+
+### SD2:572
+You are right in front of the stone altar that you saw when you entered the room.  A large portion of the altar is stained a deep red from all the blood that has been shed upon it.
+
+### SD2:573
+You can tell the altar has been used recently since there are a couple of puddles of congealing blood in the middle of the altar.  You can only imagine the horrific rituals that had to have taken place in this room.
+
+### SD2:574
+While you were looking at the altar the evil beasts that use this room have entered without your knowing it, blocking your escape.
+
+### SD2:575
+Monsters that make this castle their home have found you.
+
+### SD2:576
+You find yourself surrounded by many guards.  Some of them wearing red sashes and the others purple.  You are right in the middle of what surely is going to be a large fight.  Leaders from both sides are urging you choose a side or die.
+
+### SD2:577
+It looks like you have to pick a side or everyone will attack you before they resume their battle with each other.  Do you pick a side?
+
+### SD2:578
+You realize that was probably not the smartest choice you have ever made as you are now surrounded on both sides and they want to dispatch you quickly so they can get on with their original business.
+
+### SD2:579
+You join Lady Keto's side and a battle ensues.
+
+### SD2:580
+One of Lady Keto's guards says that you have fought well and that Lady Keto could use your services.  She urges you to see the Lady.
+
+### SD2:581
+You join Lord Keto's side and a battle ensues.
+
+### SD2:582
+One of Lord Keto's guards tells you that you have fought well and that Lord Keto could use such warriors.  He urges you to see Lord Keto.
+
+### SD2:583
+You made it through the fight that time, but you realize that you are not making many friends here in Ketonia.
+
+### SD2:584
+You realize that, in this situation, that was probably your best choice, but now who do you side with?
+
+### SD2:585
+An iron gate just came down behind you.  It looks like you walked into a trap.   The bars are very thick and heavy.  You can barely see through them.
+
+### SD2:586
+The gate opens and you can leave.
+
+### SD2:587
+Your party turns into a large gaseous cloud and you can easily move through the  gate.
+
+### SD2:588
+You here a hissing sound from nearby.
+
+### SD2:589
+This room is very dark.  You can barely see your way around.
+
+### SD2:590
+You back away from the fight. As you are leaving, you can here that the McBane guards are not doing too well.
+
+### SD2:591
+This large room is home to some very vile creatures.  They sensed your presence and hid in the shadows waiting for your party to enter the room before attacking.
+
+### SD2:592
+Before you realize the battle is over the rebelling guards disappear.
+
+### SD2:593
+You find a scroll case with a piece of parchment on what is left of Songam.  "Songam, I will leave it up to you to take over Lord Voltan's castle.  I do not tolerate failure.   The amulet that I gave to you should help you turn Lord Voltan to our side."
+
+### SD2:594
+You bend the very solid bars with your bare hands.  You must surely have had the gods on your side.
+
+### SD2:595
+From the other side of the wall in the middle of the room, you can hear some chanting.  Do you investigate the source of the chanting?
+
+### SD2:596
+You have interrupted some type of strange ceremony.  The participants turn around and see that you are not one of them.  These magi, warriors, and clerics are clearly undead as their bodies are in variuos states of decay.
+
+### SD2:597
+Now there are pieces of undead every where.
+
+### SD2:598
+To your, surprise the pieces of the undead grow new bodies and an even greater number of undead attack you!!
+
+### SD2:599
+You have hacked the undead into even smaller pieces, but you see signs that the pieces are growing again.  Do you leave  now while you can? Or do you fight again?
+
+### SD2:600
+Entering this room again you find a very large amount of undead are here. They attack immediately since they were waiting for you to return.
+
+### SD2:601
+Here on a small table are a few potions.
+
+### SD2:602
+Upon entering this room you can see a very large table filled with gold and other various treasures.    Do you enter this room and investigate the treasure?
+
+### SD2:603
+After taking what you wanted from the hoard, you realize that you are no longer alone.
+
+### SD2:604
+You have defeated the people who must have been keeping this hoard, but you are sure that more will come if you stay around.
+
+### SD2:605
+Entering this room you are overcome by the smell of incense and perfume.  This room has a very large bed adorned with fine silks.  The bed fills almost half the room.  On the bed are scantily clad human forms and they are motioning for you to move closer.
+
+### SD2:606
+Do you move towards the beds and see what they want?
+
+### SD2:607
+The human forms sense your uneasiness and move slowly towards you.  When they get closer, you can see that they are very beautiful females.  Do you ready your weapons or do you let them get a little closer?
+
+### SD2:608
+The females move forward very graceful. Almost as if they are floating on air.  When they get close they stare into your eyes.
+
+### SD2:609
+The female forms in front of you suddenly grow wings and horns and attack you.   Those that don't save against charm are helpless.
+
+### SD2:610
+The female forms suddenly stop when you ready your weapons and give out an evil hiss.   They grow wings and horns and attack.  You were right to be on the defensive.
+
+### SD2:611
+In this smaller cave you find a very large pile of gold and gems!
+
+### SD2:612
+It looks like one of your party has set off a trap.  The entrance to this cave is collapsing.  Do you run for the exit?
+
+### SD2:613
+You run for the exit and those that can't move fast enough are killed by falling boulders.
+
+### SD2:614
+The cave entrance completely fills up with large boulders.  Your party has to run backwards to escape getting hurt by falling boulders. Those that can't move fast enough are killed by falling boulders.
+
+### SD2:615
+Your spell worked and you can now move through a small hole to get out of the cave.
+
+### SD2:616
+The stone in front of you turns to flesh and then comes to life.
+
+### SD2:617
+You have killed the Flesh Golems, and now there is a path where you can squeeze through.
+
+### SD2:618
+You find a piece of parchment here.
+
+### SD2:619
+This door doesn't open all the way as it is blocked by something on the other side.  Do you enter the room?
+
+### SD2:620
+The reason the door was partially blocked is due to the large purple worm resting on the other side.
+
+### SD2:621
+Entering this room you find several undead clerics praying in a very strange language.  Before they attack, a portal opens up and some Hell Beasts charge out to help them.  Looks like you were interrupting some sort of summoning.
+
+### SD2:622
+This seems to be some sort of storage room for the clerics' items.  Some of them look usable.
+
+### SD2:623
+Entering this room you see a very strange sight.  There are undead warriors practicing fencing while others are watching.  One of the fencing warriors loses concentration when he sees you and the other warrior lops off his arm.
+
+### SD2:624
+The warrior that lost his arm picks up the sword with the other arm and attacks with the rest of the undead warriors.
+
+### SD2:625
+This room seems to be mostly full of old rotting armor and rotted and broken weapons.  Do you want to root around the piles to see if you can find anything of use?
+
+### SD2:626
+You don't find anything useful. Do you want to look around again?
+
+### SD2:627
+After an exhausting search you don't find anything of use.
+
+### SD2:628
+This must be where the warriors keep the good items as there is some fairly nice looking equipment in here.  There are also some undead warriors fighting over a piece of equipment that they both want.  They turn their anger towards you.
+
+### SD2:629
+Entering this room you find several undead magic users murmuring strange things.  Each seems to ignore the other until you walk in and then they all start concentrating on your party.
+
+### SD2:630
+Entering this room you can hear a very strange noise.  You realize it is the breathing of some sort of creatures. But, before you can do anything, the creatures are upon you.
+
+### SD2:631
+The creatures you destroyed are like no other that you have seen.  They must have been the outcome of an experiment that went very wrong.
+
+### SD2:632
+Entering this room you are blown back by the heat.  The whole room seems to be on fire.  You can see what looks like a stone table across the room.
+
+### SD2:633
+This door feels very hot.
+
+### SD2:634
+Flames rises up and burn you.
+
+### SD2:635
+You finally make your way to the stone table and the items that seemed to be on it are just an illusion.
+
+### SD2:636
+Here, hidden amongst the flames, is a very powerful weapon.
+
+### SD2:637
+From here you can see some items on the stone table.  They are glowing with some sort of magic.
+
+### SD2:638
+This room is lined with hideous life-size statues.  There is a lone lit torch floating in the middle of the room.
+
+### SD2:639
+Here is where the torch is floating.  As you come near it, the flame gets larger.  Soon, the flame is so large that it completely illuminates the ceiling.  The whole ceiling seems to be on fire!  Do you run from the room?
+
+### SD2:640
+You start running for the door, but, before you get there, you realize that the statues are no longer immobile.
+
+### SD2:641
+Just when you decide to stay, you start seeing strange shadows made by the statues and the flames.   Soon, you notice that the shadows are moving  because the statues are moving!!
+
+### SD2:642
+When you enter this, room you see a gruesome site.  There are some fire crabs attacking and eating some giant rats.  Blood and guts are everywhere as the crabs tear apart the rat carcasses.  The crabs see your party and attack.
+
+### SD2:643
+Entering this room, you get the strange feeling that someone is watching you.
+
+### SD2:644
+You have found the reason for your uneasiness you felt when you walked into the room.
+
+### SD2:645
+This room seems to be completely empty.
+
+### SD2:646
+It looks you set off a trap letting out some horrible beasts from their hidden cage.
+
+### SD2:647
+This room is filled with a very long oak table.  There are thirteen chairs around the table.
+
+### SD2:648
+This door is locked tight and their doesn't seem to be a way to open it.
+
+### SD2:649
+The door closes behind you with an eerie creak.
+
+### SD2:650
+This seems to be some sort of guard room   as it is full of Hell Beasts.
+
+### SD2:651
+Someone must of heard the commotion of the battle and put out a general alarm.
+
+### SD2:652
+The guards in this room have heard the general alarm and are ready when you enter the room.
+
+### SD2:653
+Entering this room you are a bit overcome by the amount of soot and cinders flying around this room.  There is a very large fire giant pounding on a red hot piece of steel.  It would appear to be a blacksmith's room where very deadly weapons are made.
+
+### SD2:654
+The fire giant does not notice you right away, since the hammering is quite loud and he was not expecting any visitors.  Do you stay in the room?
+
+### SD2:655
+The fire giant is chained to the wall by a very large chain.  Do you approach the fire giant or do you attack?
+
+### SD2:656
+The fire giant stops his forging and looks at you intently.  In a very deep and boisterous voice the fire giant says, "You don't look like slaves for blade quenching.  Even if you were, I am not ready for you yet...."
+
+### SD2:657
+You tell the giant that you have no intentions of being run through with a red hot blade just so the Hell Beasts can have a new sword.  The giant gives out a very loud and deep laugh.  "My name is Olmsted the Mighty.
+
+### SD2:658
+"I have been imprisoned here to make armor and weapons for the Hell Beasts and the Skeletal Knights.  I would be very grateful if you would release me from my bonds."  Do you release Olmsted from the chain that holds him?
+
+### SD2:659
+How will you free Olmsted from the chain?
+
+### SD2:660
+Who will lead the attack?
+
+### SD2:661
+The giant sees you running toward him. He picks up a very large battle ax and swings it at the leader of your attack.
+
+### SD2:662
+You don't have a gaseous cloud potion.
+
+### SD2:663
+You give Olmsted a gaseous cloud potion and he becomes a cloud of gas for a brief moment.  The size of potion was meant for a small human and not a large giant, but it serves its purpose and Olmsted is free from the chain.
+
+### SD2:664
+Olmsted tells you that he knows of a place where there is a very good long sword that he has made.  He tells you that is protected by  some very powerful undead creatures, but he would be willing to help you defeat them.
+
+### SD2:665
+Do you take Olmsted up on his offer?
+
+### SD2:666
+Olmsted thanks you again for releasing him.  He tells you to beware of the Skeletal Knights.  "They rule this castle and they do not like guests.  My friends tell me that they mainly keep to themselves on the third floor."
+
+### SD2:667
+Who will try breaking the chains with a weapon?
+
+### SD2:668
+It's no use, the chain will not break.  Olmsted laughs, and says, "Don't you think I would have already tried that?"
+
+### SD2:669
+Who will be so brave to hack off Olmsted's leg?
+
+### SD2:670
+Olmsted bonks you on the head three times telling you that he does not approve of your decision to hack off his leg.
+
+### SD2:671
+Who will pick the lock?
+
+### SD2:672
+Since the lock mechanism was made to keep large giant fingers from picking the lock and not small hands you easily pick the lock.
+
+### SD2:673
+Olmsted, finds some fire giant friends of his and you move downstairs to attack the party of undead that Olmsted knew of.  Olmsted and his fellow fire giants burst through the door and attack the waiting undead.
+
+### SD2:674
+You thank the fire giants and before you can say much, they leave, fearing that they might be found again by the Hell Beasts.
+
+### SD2:675
+Your efforts to pick the lock fail.
+
+### SD2:676
+Olmsted looks at you and says, "Very well, but I can't let you out of here alive.  You might tell the Hell Beasts I was trying to escape."  Before you know it, there is a very large ax being swung at you. Those that don't duck are decapitated.
+
+### SD2:677
+After you have killed the blacksmith you here a very loud alarm.  Surely everyone in this castle now knows there are intruders.
+
+### SD2:678
+Against the wall are some very large shackles and chains.  Large enough to hold fire giants, but they are empty now.
+
+### SD2:679
+Against the wall are four very large fire giants.  They are chained to the wall.  Do you approach them?
+
+### SD2:680
+As you move towards them, they start to grumble a little.  One of them speaks with a deep bellowing voice. He tells you that he is glad to see you since he hasn't had fresh meat in a while.  Then he laughs very loudly.
+
+### SD2:681
+He tells you that you should get out of here before the Hell beasts find you and take you to the Skeletal Knights for some hellish games.  When you tell the fire giant that you are not afraid of the Hell beasts the giant laughs again.
+
+### SD2:682
+Then the giant gets serious again.  "Such courageous warriors should have no problem freeing us from our bonds."  Do you free the fire giants from there bonds?
+
+### SD2:683
+The fire giant tells you that there are keys for the shackles on the wall.  You go over to the keys and release the fire giants.  The fire giants stand and the size of these giants is made even more apparent.
+
+### SD2:684
+One of the fire giants moves towards the door and peers out while the others gather their weapons.  Before you know it, a bunch of Hell Beasts burst through the door.
+
+### SD2:685
+The largest of the fire giants thanks you and tells you that they must flee to get help to free their chief, Olmsted.  They bid you farewell and good luck.
+
+### SD2:686
+While you weren't looking, one of the fire giants grabs one of your party.  The fire giants demand that you free them or they will kill the hostage.  Do you free them?
+
+### SD2:687
+One of the fire giants yells, "Every man for themselves!!" and a battle ensues.
+
+### SD2:688
+Before you know it, you are alone again, except for the dead bodies.
+
+### SD2:689
+"That wasn't too smart",  said one of the fire giants. But, before you can attack the fire giants, a group of Hell Beasts burst into the room and attack.  Looks like you got yourself in a big mess.
+
+### SD2:690
+When you walk into this room, you find a bunch of Hell Beasts torturing a fire giant.  The sight is somewhat funny since six or seven Hell Beasts are using all there might to control the fire giant, while other Hell Beasts poke and prod at the giant.
+
+### SD2:691
+A Hell Beast commander sees you and orders his other minions to attack.
+
+### SD2:692
+The fire giant that you helped free is now free forever since he received a fatal wound during the battle.
+
+### SD2:693
+Before he left this world, he begged you to find someone named "Olmsted" and free him.
+
+### SD2:694
+The giant thanks you before he expires.
+
+### SD2:695
+Walking into this room you find that you are greatly outnumbered by Hell Beasts and other fierce beasts.  Do you bolt for the door and hope to escape?
+
+### SD2:696
+One of the Hell Beast commanders speaks some foreign tongue and the door closes in front of you.  Other beasts are soon upon you.
+
+### SD2:697
+ One of the Hell Beast commanders says, "Such foolish people, entering our home!"  and then yells, "Take them!" !
+
+### SD2:698
+You are glad that you survived that battle.
+
+### SD2:699
+Entering this room you are overwhelmed by the sight in front of you.  There are large puddles of blood on the floor along will very large glass containers full of blood.  The sources of the blood are obviously the fire giants hanging from the ceiling.
+
+### SD2:700
+The four fire giants hanging by large hooks are very pale and no longer have their characteristic reddish hue.  Their eye sockets are empty and very black.  It is hard to imagine what use the Hell Beasts could have for all this blood.
+
+### SD2:701
+There is a table across the room with  vials and various organs and body parts.
+
+### SD2:702
+Here, next to the table, you see the vials of blood and organs in the light of a torch hanging from the wall.  You can also see some pots of dark liquid boiling.  When you take a closer look at them, you can see solid objects moving about with the boil.
+
+### SD2:703
+You surmise that the solid pieces are parts that were cut from the fire giants.  Further searching reveals nothing useful.
+
+### SD2:704
+You just entered a very deep puddle of blood and the floor is very slippery from the congealing of the blood.  Your party starts to fall and those that don't regain there footing fall and get covered in the blood.
+
+### SD2:705
+Entering this room you see some cacodemons warriors pushing red hot pokers in the body of a long dead fire giant.  They seem to be enjoying just mutilating the dead body.  When they see you, they drool in anticipation of new victims!!
+
+### SD2:706
+Those demons will never cause harm again!
+
+### SD2:707
+This must be some sort of Hell Beast headquarters since there are many Hell Beast commanders here snorting and yelling at each other... until they see you.
+
+### SD2:708
+Those Hell Beast commanders should have been more worried about you than their petty fights.
+
+### SD2:709
+This must be some type of meeting place for the cacodemons as there are a lot of them here.
+
+### SD2:710
+This room is full of coal and there are a few shovels, but that is about it.
+
+### SD2:711
+The room is full of pillars with no apparent use.
+
+### SD2:712
+You have entered a very large holding pen for fire crabs.  They are kept very hungry, making them quite ferocious!!
+
+### SD2:713
+When you enter this room, you see a very large Red Dragon being teased and tortured by some Hell Beasts and other hellish creatures.  The Hell Beasts stop their fun and turn their attention towards you.
+
+### SD2:714
+Even though the Red Dragon was being tortured by the Hell Beasts, he still sides with them since he thinks you are no match for the Hell Beasts.
+
+### SD2:715
+The Red Dragon was wrong to side with the Hell Beasts.  His loss is your gain since he can not stop you from taking the small treasure he was trying to protect.
+
+### SD2:716
+You hear some very strange noises on the other side of the door.  Are you certain you want to enter this room?
+
+### SD2:717
+Upon entering the room you see the reason for all the strange noises.  There are a bunch of slime demons being herded towards the door by some winged devils.  The devils yell at the slime demons to attack.
+
+### SD2:718
+A bunch of Hell Beasts enter the room screaming.  They must have been wondering where the winged devils were with the slime demons.
+
+### SD2:719
+After hearing all of the commotion, more Hell Beasts enter the room.
+
+### SD2:720
+You have interrupted a conference between some Hell Beast commanders and a Skeletal Knights.  They are not very happy with your intrusion.
+
+### SD2:721
+This room is full of old bones.  There are so many that you can't easily move across them.  You can see a glitter of light reflecting off of something shiny across the room.  Do you investigate?
+
+### SD2:722
+Making your way across the room you see that the cause for the glitter is a fairly ornate piece of jewelry.  Before you can reach it though, skeletons begin to rise from the piles of bones.
+
+### SD2:723
+More skeletons appear from the piles of bones.
+
+### SD2:724
+You seem to have defeated all of the skeletons.  You grab the piece of jewelry and make your way towards the door before more skeletons form.
+
+### SD2:725
+There are a couple of Hell Beast guards here.
+
+### SD2:726
+This room is almost completely empty except for the large sword hanging on the wall at the other end of the room.
+
+### SD2:727
+You have fallen victim to a diabolical trap.  An extremely well hidden trap door opens up and drops you several feet.  The opening of the trap doors triggers the rotation of two very large spiked cylinders that chew up anyone who can't jump in time.
+
+### SD2:728
+You can now see that the sword was just an illusion.
+
+### SD2:729
+Entering this level of the castle, you hear numerous beasts shrieking and scurrying about in the darkness ahead.
+
+### SD2:730
+Out of the shadows, numerous Hell Beasts and other hellish creatures surround you, but they do not attack.  Before they attack, you hear a voice that surrounds you.  "Surely you don't think you can defeat our minions...?"
+
+### SD2:731
+Before you can say anything the beasts attack.
+
+### SD2:732
+You here the voice again.  "You have defeated them, but we are not done with you yet."  Some very large undead come your way.
+
+### SD2:733
+You don't hear a word after defeating the undead creatures.  Maybe you have surprised whomever they served.
+
+### SD2:734
+Here, engraved on the wall is a picture a very powerful cleric or magician casting a spell.  The spell seems to be some sort of gate, blink or teleport spell since the picture also depicts numerous monsters coming through a magic hole.
+
+### SD2:735
+Here you see the owners of this hellish castle.  In front of you are several Skeletal Knights in a semi-circle formation.  The Skeletal Knights directly in front of you says, "You should not have entered our castle."
+
+### SD2:736
+With that, the ominous knights ready their weapons and attack.
+
+### SD2:737
+This is the local temple.
+
+### SD2:738
+The gates of the city are open and the guard room is empty.
+
+### SD2:739
+This seems to be the main guard room.  There are several guards laying in their bunks just passing the time.  One of the guards tells the other guards that he thought it would be a slow day.  He commands the others to attack your party.
+
+### SD2:740
+After defeating these lackluster guards you search the barracks and find some hidden items stashed away amongst one of the guards belongings.
+
+### SD2:741
+You run into some wild creatures searching for food.
+
+### SD2:742
+In the distance you see some wild creatures searching for food, do you attack?
+
+### SD2:743
+You run into a small band of Merdonis guards and they don't feel like talking.
+
+### SD2:744
+You see some Merdonis guards in the distance.  Do you want to attack them?
+
+### SD2:745
+You walk into this small, but clean hut and find an old man huddled over a small candle for warmth.  When he sees your party he starts to speak nervously.  "What do you want?  All I have has been stolen by the Merdonis guards."
+
+### SD2:746
+When you tell him that he has nothing to fear from you, he eases up a bit.  He says, "I wish that I could leave this place, but I don't have the 10 gold required by the guides to take me through the secret passages out of Merdonis."
+
+### SD2:747
+Do you have pity for the old man and give him the 10 gold he needs to leave Merdonis?
+
+### SD2:748
+The man thanks you and tells you that you should be able to stay in his hut and rest since the guards have been leaving him alone since he has nothing.  The man picks up a small bundle of belongings and leaves to start a new life.
+
+### SD2:749
+The old man continues to look wantonly at you until you notice he is looking over your shoulder.  When you turn around you see what he was looking at.  There are several Merdonis guards approaching with weapons drawn.  Do you leave the hut to fight?
+
+### SD2:750
+The guards fan out and attack.
+
+### SD2:751
+The old man caught an arrow in the heart during the fracas.  Looks like no amount of money can help the old man now.  Other guards will surely come soon once these guards do not return.
+
+### SD2:752
+You don't have enough gold to give the old man.
+
+### SD2:753
+The guards stop and the archers pull some flaming arrows and launch them on the small thatched hut.  Do you run out of the hut now?
+
+### SD2:754
+The archers have reloaded and you run out into a hail of falling arrows.
+
+### SD2:755
+The thatched hut becomes engulfed in flames almost immediately.  Everyone in the party is severely burnt.
+
+### SD2:756
+You run out of the burning hut and are hit with a hail of arrows but that is the least of your worries.
+
+### SD2:757
+The old man did not make it out of the burning hut.  No amount of money will help him now.
+
+### SD2:758
+The sign on top of the entrance gate says Merdonis Graveyard.
+
+### SD2:759
+Here, hidden beneath some small vegetation, is a small pouch of gems.
+
+### SD2:760
+In front of you is a partially dug up grave.  There are several shovels laying on the ground, but no one is around.  Do you investigate the partially dug grave?
+
+### SD2:761
+Moving closer to the grave you see that it is not a new grave, but the grave of someone who had past on several years ago.  Someone must have been digging it up to steal any valuables this person might of had.
+
+### SD2:762
+All of sudden arrows come flying at you.  They were poorly aimed and all of them miss, but the archers who shot the arrows are reloading.
+
+### SD2:763
+Those bandits will never rob a grave again.
+
+### SD2:764
+Looking around you see movement in the distance around some of the larger grave markers.  You are not alone!
+
+### SD2:765
+Here, at the base of the tree you find a small pouch.  Inside is a crumbled map of a secret treasure cave!
+
+### SD2:766
+You have walked in on someone taking a bath.  You should probably leave right away.
+
+### SD2:767
+This small hut has quite a few Merdonis guards here eating.  They are not too happy that you have interrupted their meal.
+
+### SD2:768
+The town's well is here and it appears to be in good shape.  Do you try some water from the well?
+
+### SD2:769
+The water tastes good and you are refreshed.
+
+### SD2:770
+Here you find a very hungry dog wagging his tail.  The dog must not have been fed for a very long time since his ribs are showing.  Do you give the dog some food?
+
+### SD2:771
+The dog eagerly gulps down the food you gave him.  The dog then goes to a hole he was digging and you can see something shiny showing through the dirt.
+
+### SD2:772
+The dog you saw here before is now dead and rotting.
+
+### SD2:773
+The dog runs off looking for food.
+
+### SD2:774
+There are a lot of Merdonis guards here at the gate.  You are certain of this because you can see quite a few arrows coming towards you.
+
+### SD2:775
+Luckily for you they all missed.
+
+### SD2:776
+More guards come from the castle.
+
+### SD2:777
+Just when you thought you the last of the guards were killed, more storm out from the castle.
+
+### SD2:778
+No more guards come out of the castle.
+
+### SD2:779
+Guards come from the castle and attack.
+
+### SD2:780
+Here you are met by Loradan himself.  He also has quite a few of his guards with him.  He tells you that he is not pleased that you have bothered him.  He tells his guards that he wants your heads or he will have theirs.
+
+### SD2:781
+The Evil Loradan has been defeated and now this city can flourish again.
+
+### SD2:782
+You hear a voice, but the source is nowhere to be seen.
+
+### SD2:783
+"Brave warriors, there is trouble in McBane City and it is hidden in the mountains near the city. You must find it before peace can be restored in the land"
+
+### SD2:784
+Great warriors, there is trouble to the North.  Hidden in the mountains is a once great city, but it is now ruled by a bandit.  You must cleanse the city of these bandits before life can restart again."
+
+### SD2:785
+"Good people, there is trouble in the castle of Lord Voltan.  He has grown lax and evil.  Prosperity can not fill the land unless he is turned around."
+
+### SD2:786
+"Powerful warriors, there is still evil and it is hiding in the darkness.  You must fight your fears and find the powerful weapon of good."
+
+### SD2:787
+"Righteous warriors, you must help a city regain the love they have lost for themselves.  This alone is the only thing stopping you from finding what you seek in life."
+
+### SD2:788
+"Great and Powerful warriors, the end of your journey is near.  You must look for paths that were not open to you in the past."
+
+### SD2:789
+"Lord Voltan is the Lord of this city.  He used to be a very generous and a good nobleman, Then he received a magical gift from some unknown magic user.  The rumor is that it has caused him to become evil.
+
+### SD2:790
+His guards have become lax and have lost all sense of duty and discipline.  If things continue I don't know if I will be safe to stay here much longer.
+
+### SD2:791
+"I wish I could give you more information, but the towns people have been kept out of the castle for quite some time now."
+
+### SD2:792
+When you ask the old women about the Castle in the Clouds her eyes light up.   "I know of the Castle in the Clouds" she says. "A very long time ago I traveled there to see the great Zukar with my parents.
+
+### SD2:793
+"I was very young then and I don't remember the way.  I wish I could help you more, but alas, my memory is not as good as it used to be.  Although, I do remember traveling to a magical island.
+
+### SD2:794
+"I remember the island, because it was shaped like an X or a small cross.  That was so long ago..." she says and then she sips her drink and starts rocking.
+
+### SD2:795
+The old women repeats your question and then looks at you surprisingly.  "You don't know who Zukar is?  He is only the most powerful wizard in these parts.  He is also and very kind and gentle wizard.
+
+### SD2:796
+"He used his powers to protect the land and the people who made it their home.  He lives in the Castle in the Clouds, but it won't be easy to find him since the entrance to the castle is hidden.  I don't know what else I can tell you."
+
+### SD2:797
+"I don't know much about Diamond Lake.  I have heard that it has magical powers, but I don't know what they are."
+
+### SD2:798
+Would you like to go back to Cross Island?
+
+### SD2:799
+You are met here by an older man.  He sees your party and guesses that you are in search for the Castle in the Clouds.  "We haven't had visitors here for quite some time.  I guess there isn't much interest in seeing Zukar any more."
+
+### SD2:800
+When you tell the old man that you seek Zukar and would like to know the way the man grins.  "I know the way" he says, "but I can only take you to the front gates.  After that, you are on your own."
+
+### SD2:801
+The man tells you that the castle is protected by a vast maze with monsters.  He also tells you that many of those that he has taken to the front gates have never returned.
+
+### SD2:802
+The man asks you if you would like to go to the castle gates now?
+
+### SD2:803
+The man takes you up a very long and winding path.  The path is hidden by the green growth on either side.  You would have never made your way alone.  Finally, you reach the front gates of the Castle in the Clouds.  The man bids you farewell and leaves.
+
+### SD2:804
+The old man tells you that you are welcome to rest here in town as long as you want.  "When you are ready to leave go to the well and I will take you to the front gates."   The man leaves you to rest.
+
+### SD2:805
+The old man greets you and says to you, "We will go now."
+
+### SD2:806
+You see some monsters in the distance.  Do you want to attack?
+
+### SD2:807
+Some Minotaurs who make this maze their home attack.
+
+### SD2:808
+Some wild creatures that make this wilderness area their home attack.
+
+### SD2:809
+Here you find the remains of a not so fortunate party.  From the looks of the bodies and the rusted swords stuck in some of the bodies they did not die of natural causes.
+
+### SD2:810
+You find some gold and gems along with a nice looking robe.
+
+### SD2:811
+Here, next to an old dead tree, is a quiver of arrows.  Do you take closer look?
+
+### SD2:812
+The wall nearby magically turns into a door.
+
+### SD2:813
+You are teleported to somewhere else when you get near this strange bush.
+
+### SD2:814
+A stiff breeze comes up from the south with the smell of roasted beast.
+
+### SD2:815
+The ground in front of you is very wet and soggy.
+
+### SD2:816
+A large bird flies over your head.
+
+### SD2:817
+You think you can hear something in towards the West.
+
+### SD2:818
+You notice that the walls are showing their age.
+
+### SD2:819
+The ground in front of you has been disturbed.
+
+### SD2:820
+You hear a strange sound to the North.
+
+### SD2:821
+The last person in your party gets a strange feeling as if you are being followed.
+
+### SD2:822
+A small rabbit crosses your path, but before you know it is gone under the wall.
+
+### SD2:823
+You can hear something moving nearby.
+
+### SD2:824
+Some fog is moving in ahead of you.
+
+### SD2:825
+Something flies over your head very quickly heading Southwest.
+
+### SD2:826
+Would you like to leave?
+
+### SD2:827
+Here, at the base of the tree, you find a map.
+
+### SD2:828
+You also find a map of the area.
+
+### SD2:829
+Here you find a very gruesome sight.  There is a small elf that is half eaten and rotting.  There are no traces of weapons or armor, but there is a map.
+
+### SD2:830
+Here you find a very nice sword sticking out of the water.
+
+### SD2:831
+There is a very large piece of lumber here that could serve to barricade the door so you can rest.
+
+### SD2:832
+Some thieves jump out and steal some of your gold.  They are gone before you can do anything about it.
+
+### SD2:833
+A magic mouth appears before you and speaks.  "Good people, if you seek the Great Wizard Zukar, then you are near.  The route is not straight, but you must head towards the Southwest."
+
+### SD2:834
+A ray of sun comes over the wall and you feel better.
+
+### SD2:835
+Here you find a necklace half buried in the ground.
+
+### SD2:836
+Here you find a very large pile of gold and gems.
+
+### SD2:837
+A stiff breeze comes up from nowhere and then it is gone.
+
+### SD2:838
+Here you find the grave of a poor unfortunate soul.  Whomever buried this person here put their sword on top of the grave.  Do you take it?
+
+### SD2:839
+You see a very majestic castle in the distance.
+
+### SD2:840
+Entering this castle you are greeted by an eloquently dressed enchanter at the far end of the large entrance hall.  The enchanter asks how he can be of assistance to you.
+
+### SD2:841
+When you ask if he is Zukar the enchanter loses his peaceful demeanor expression for a second.  Then he says, "Yes, yes I am Zukar."  You tell him that the people of the land need him to rid the country of the evil that is overtaking the land.
+
+### SD2:842
+The enchanter laughs and says, "I know, I know.  I, Nufack, am the cause of the evil.  You have caused me great trouble.  Now I will have to deal with you myself."  Large warriors come into the room and are ready to attack.
+
+### SD2:843
+The walls of the castle start to shake and rumble.  Do you leave the castle?
+
+### SD2:844
+You run out of the castle unharmed.
+
+### SD2:845
+Pieces of the roof start falling nearby, smashing some of the vases that adorn the room.   Do you leave the castle now?
+
+### SD2:846
+A very large piece of the roof falls and squashes your party.
+
+### SD2:847
+In the distance you see a very large castle.
+
+### SD2:848
+Entering this very large and beautiful castle you are amazed by the bright tapestries hanging on the walls.  They are only dulled by the dust of time.  In front of you is a throne with a very old man sitting in it.
+
+### SD2:849
+When you move closer to the throne you can tell that the man is not alive anymore since there is only a skeleton left.  On the man's lap is a piece of parchment.  It is addressed to:  "Whomever finds this note, I am Zukar the Great.
+
+### SD2:850
+"I must not seem so great if you are reading this note, since I must have passed on to other realmz.  Alas, even I can not stop the hands of time.  I fear that the land will befall great evil with my absence.
+
+### SD2:851
+"It is imperative that whoever finds this note seek out the White Dragon.  She is very wise and will know what to do."  The letter is signed Zukar the Great.  You are left with the feeling of loss.  Your long journey was not supposed to end like this.
+
+### SD2:852
+Then you realize that during your search for Zukar you have battled the evil that Zukar feared and destroyed it.  You know in your heart that the evil will grow again if it is left unchecked.  You decide you must search for the White Dragon.
+
+### SD2:853
+Thank You for playing Castle in the Clouds.  I hope you have enjoyed it and I hope you will continue to enjoy Realmz.  I would like to thank all the people at Fantasoft, especially Tim, for making a great game.
+
+### SD2:854
+This scenario is dedicated to the memory of my brother, Edward W. Foley (1969-1991).
+
+### SD2:855
+Do you want to talk to the old women about any other subjects?
+
+### SD2:856
+Here you find a sword of superior make.  Do you take it?
+
+### SD2:857
+You see some thieves in the distance.  Do you attack?
+
+### SD2:858
+You see some Orcs in the distance.  Do you attack?
+
+### SD2:859
+You see some monsters in the distance.  Do you want to attack?
+
+### SD2:860
+There are some beasts in the distance.  Do you attack?
+
+### SD2:861
+Some flying creatures are in the distance.  Do you attack them?
+
+### SD2:862
+You can see some monsters approaching.  Do you attack them?
+
+### SD2:863
+Some undead are making their way towards you.  Do you attack?
+
+### SD2:864
+You see some aquatic monsters that are searching for food.  Do you attack?
+
+### SD2:865
+You can see some of Lord Keto's guards in the distance.  Do you attack?
+
+### SD2:866
+You see some creatures moving ahead.  Do you attack?
+
+### SD2:867
+You see some of Lady Keto's guards.  Do you attack?
+
+### SD2:868
+You can see some evil creatures are moving around ahead.  Do you attack?
+
+### SD2:869
+You can see some Hell Beasts in the distance.  Do you attack?
+
+### SD2:870
+Do you want to transport out of this room?
+
+### SD2:871
+Here you find a glowing gem.  Do you touch it?
+
+### SD2:872
+Here you find a shiny cross.  Do you touch it?
+
+### SD2:873
+In front of you is a glowing scepter.  Do you attempt to take it?
+
+### SD2:874
+To the East you can see a shiny sword on a stone pedestal.
+
+### SD2:875
+To the South you can see a scepter on a stone pedestal.
+
+### SD2:876
+To the West you can see a shiny cross on a stone pedestal.
+
+### SD2:877
+To the North you can see a glowing gem on a stone pedestal.
+
+### SD2:878
+You set the trap off!
+
+### SD2:879
+Some thugs jump you for your gold!
+
+### SD2:880
+Here you find the dead bodies of the McBane guards you did not help.  They have been stripped of all their worthy belongings.  If only you had helped them, this would not have happened.
+
+### SD2:881
+You find a necklace on the remains of the body.  the charm bears the seal of Ketonia.  This must have been the body of the real Lady Keto.  Before you can react, though, the body vaporizes into a wisp of smoke.
+
+### SD2:882
+Here you find some magical items.
+
+### SD2:883
+The ground beneath you gives way.  The levitating magic that surrounds your party prevents you from falling.  Below your feet you can see a deep cavern below.
+
+### SD2:884
+He mumbles with all his energy, "You have to stop them, you have to stop.."  He is gone before he can finish his words.
+
+### SD2:885
+After touching it, all of your equipment disappears.
+
+### SD2:886
+Who will touch the cross?
+
+### SD2:887
+You see that the cross is just an illusion, but after touching the cross you feel different.
+
+### SD2:888
+Touching the scepter unleashes a powerful spell that kills everyone in the party.
+
+### SD2:889
+Looks like you have found a very powerful magical sword.
+
+### SD2:890
+The blacksmith did a good job on your daggers, but he did a horrible job on some of your swords.
+
+### SD2:891
+The permanent teleport spell you ran into must have been an escape route for somebody.
+
+### SD2:892
+Lady Keto, or who you thought was Lady Keto, sees you and motions for her minions to attack while she slips away.
+
+### SD2:893
+When you walk into Lord Keto's throne room you are immediately attacked by who you thought was Lord Keto and his guards.
+
+### SD2:894
+Right then the room lights up with a magical glow.  You hear a voice from beyond.  "Good people, please take these items in your quest for the White Dragon.  They are on no use to me now."  Zukar has given you some very powerful magical items.
+
+### SD2:895
+The Search for the White Dragon will be the title of my next scenario.  -Jim Foley
+
+### SD2:896
+Do you want to be teleported to McBane City?
+
+### SD2:897
+You are free to wander since there are things you probably haven't found yet.  If you have problems getting back, you can come here and teleport back to McBane City.
+
+### SD2:898
+Do you want to go back to McBane City?
+
+### SD2:899
+Before you can leave the room you are attacked.
+
+### SD2:900
+Please come back when you have some money.
+
+### SD2:901
+Here you find a very magical treasure amongst the rocks.
+
+### SD2:902
+You find a very large bag of gold here.
+
+### SD2:903
+You find some items here and some of them look to be worth something.
+
+### SD2:904
+The island seems to be completely empty.
+
+### SD2:905
+The old woman starts squirming and twisting until she frees herself from the straps that held her down.  After releasing  herself she moves to attack.
+
+### SD2:906
+This room appears to be completely empty except for the ornate decorations on the walls.
+
+### SD2:907
+Through the open door of this house, you can see a young man studying amongst piles of books.  Do you enter the house?
+
+### SD2:908
+As you enter you see that their are more books in his house than one might find in a king's private collection.  Having heard you enter, the young man turns to greet you.
+
+### SD2:909
+"Hello, I'm Brother Daniel.  I rarely have visitors.  Come, stay for a bit of food and drink."  He then proceeds to serve an incredible amount of food and lager.
+
+### SD2:910
+He begins to tell you wonderful stories about his days of a Paladin and how, at the young age of fourteen, he would slay dragons with his father.
+
+### SD2:911
+He also tells you how he has taken up studies of martial arts, and is planning on becoming a monk in a rather liberal order.  "One", he says with emphasis "that allows marriage..".
+
+### SD2:912
+"Please", he continues "my lover has gone North to minister to the needs of those who have been displaced by the Evil that is sweeping this country.  If you would, deliver this letter to her."
+
+### SD2:913
+Do you agree to deliver the letter?
+
+### SD2:914
+"Thank you!!  I have not seen her since the onset of these vile happenings.  She has gone to the large lake up North.  Pass through the mountain ranges and wander the shores.  She moves about the lake helping anyone she can find."
+
+### SD2:915
+The gods of love smile upon you for your generosity.
+
+### SD2:916
+"Fine then.  I shall continue on with my studies.  Please leave.  I have no need for people who don't respect my hospitality.  Good day!"
+
+### SD2:917
+The gods frown on you for your being so inconsiderate!!
+
+### SD2:918
+Near the lake shore, you see a beautiful red haired woman.  She is helping a very poor family repair their worn shack.  Certainly she must be Daniel's lover.  As if by magic, she senses your presence and walks towards you.
+
+### SD2:919
+When she arrives, you tell her of the letter that you have for her.  She smiles and you hand her the letter.  As she reads it, she begins to laugh aloud.
+
+### SD2:920
+"Ahh, yes, My lover.  He has quite a sense of humor.  Please, tell him I love him and that I'll be home as soon as the Evil has left his land."
+
+### SD2:921
+"Unfortunately, I have little money.  Please, allow me to heal you of any wounds"  She speaks in a soft voice and your party is restored.
+
+### SD2:922
+Lady Eva returns to helping the family.  Surely she is a dedicated woman.  The gods smile upon you with favor.
+
+### SD2:923
+There are some people here fixing up shacks after a nasty storm.  Nothing else.
+
+### SD2:924
+Daniel comes to the door to welcome you.  He is delighted to hear that you were able to find Eva and that she's doing well.
+
+### SD2:925
+"When my father passed away, he left me this shield.  Please take it as a token of my gratitude.  As a monk, I have no use for it."
+
+### SD2:926
+Inside you see Daniel studying his books.  Periodically he looks up at a painting of Eva, sighs, then goes back to studying.
+
+### SD2:927
+Through the window you can see Daniel and Eva holding each other and kissing.  Chances are, they don't want to be disturbed!!
+
+### SD2:928
+Entering this castle you are greeted by an eloquently dressed enchanter at the far end of the large entrance hall.  The enchanter asks how he can be of assistance to you.
+
+### SD2:929
+When you tell the enchanter that Evil is taking over the land, the enchanter interrupts you and laughs.   He then says, "I know, I know.  I, Nufack, am the cause of the Evil.  You have caused me great trouble.
+
+### SD2:930
+"Now I will have to deal with you myself".  Large warriors come into the room and are ready to attack.
+
+### SD2:931
+Judging from the size of the pile of gold dumped in the corner of the cave, it would appear that a lot of unwary travelers have fallen victim to their trap.
+
+### SD2:932
+Lothshor, is here working on something.  He looks like he does not want to be disturbed.
+
+### SD2:933
+It looks like you have destroyed the real Lady Keto, by not using too weak of magic.  Ketonia, can never be as it was without Lady Keto!
+
+### SD2:934
+Entering this room you see that there is an alter at the far end.  The room is glowing from the candles sitting on the alter.  Before you appears you a ghost like image that speaks to you.
+
+### SD2:935
+"You have killed the fair and just Lady Keto!  You are not worthy to appear before my holy place."  Do you beg the being to help you?
+
+### SD2:936
+The being booms out to you, "You think you can just beg and things will change so they are right?" Before you can say anything the being continues saying, "You must sacrifice all your gold and gems for Lady Keto's life."
+
+### SD2:937
+Do you sacrifice all your gold and gems in the hopes you can right your wrong?
+
+### SD2:938
+The being becomes very angry with you and blasts your party.
+
+### SD2:939
+The being tells you that Lady Keto is now safe and before you know it the being disappears.
+
+### SD2:940
+The first person has a huge axe swung at them and takes a huge amount of damage.
+
+### SD2:941
+Suddenly the floor opens up underneath you.  The magic that prevents your party from falling kept everyone from falling to a sure death in the rotating spiked wheels below.
+
+### SD2:942
+The Demon leaves this existence with a blast of fire!
+
+### SD2:943
+The Skeletal Knight moves to a different existence with a flash of fire!
+
+### SD2:944
+This looks like Lord Keto's private room.
+
+### SD2:945
+The guard's tell you, "Sorry to to bother you, but we are expecting trouble from a group of thieves that are hiding out west of town."
+
+### SD2:946
+Here on this small island you find a man in a long beard.  He is wearing what is left of his leather armor and carrying his war axe.  He tells you that his name is Jonue and he has been left here on this island to die.
+
+### SD2:947
+When you inquire about why he was imprisoned here, Jonue tells you a sad tale about Merdonis and how he couldn't stand what Loradan what was doing.
+
+### SD2:948
+During the telling of the tale you could tell that Jonue had gone a little crazy during his stay on this island.  He tells you that he will serve you until you release him if you bring him off the island.  Do you take him up on his offer?
+
+### SD2:949
+When you inquire about why he was imprisoned here, Jonue tells you a sad tale about Merdonis and people Loradan ran out of town.  Jonue tells you that he wants to get Loradan and vows to serve you as long as you desire if you take him off this island.
+
+### SD2:950
+Do you help Jonue and take him off this island?
+
+### SD2:951
+Jonue thanks you and gives you a map off a secret entrance to Merdonis.
+
+### SD2:952
+Jonue tells you that he would rather die than stay here any more.  He attacks the party to get the ship.
+
+### SD2:953
+You find a piece of paper hidden in the guards armor.  It is a map showing a secret entrance to a cave.
+
+### SD2:954
+Here on the ground you find a parchment tube.  On a piece of parchment is some writing with an unknown origin or purpose, but you feel the information may be important.
+
+### SD2:955
+The person you thought was Lord Keto speaks.  "I see you have returned and by the way you look I can tell you don't want to talk!"  The guards attack.
+
+### SD2:956
+iE-#*@dé≥…Àª°Ürf\PD@Mmí≠º≈ «∞ÄH%"9Vlt{ç´Ã€Ã†g;,:]|áÄyÉ†≈◊»ùi>((7NiÖù¨¥µ±¶îz_I>AVwòÆµÆüìãÉvfXR[oÜö´∏Ω∑£ÖgTNS^hoxå©»÷√í]?C^zÜ|mjwë¨ª∂ù{YB;BUoÜïù©Ω—
+
+### SD2:957
+ •j3&JpäêåãóØƒ¡úd6*Ew¢Æòu`eÑ≠ÃÕ™q@-7N`eftë¥ÃÃ±àcPRd{àÑtffxî©Ø¶ñÜxiWE<BXzú≤∏≤ßúìàv`NFQiÇèêéèñûüïÅiSGFPc{èöû£ß®ùÇ`HDPe{ãëèáÄÉî≠∫®x?#Fsñ°öèçò•ßílH9Fgàóë~nl|ò≤º≠ÜV3+Ajê¢ûîï•≤™ÖW9<Xû®ûÑhZhñ ‰—òZ3.A\râï°¨≠°âlZ
+
+### SD2:958
+ó¥Ω¢j34l®À»¶vH-2WèæÀ±}I.0Joí´≥•ÑZ=<`öŒﬁ¿~5*fú∑∂†ÅdPISkå≠¬øú_%"^§”⁄∫ÑN*)Pí–ÈŒä?3n§ƒÃΩõnB*;u¿ÙÛæo+Dz™∆«≠ÉX@Gl†«–∏å
+
+### SD2:959
+ãhD7PÅ∞¬¥ñ~zÖéàt^SVbox~Éáääçï†£ó{[GGVl~ÜÑ}x}äóûöçzi\W[gtzvpp|í™∑∞ñpRHVoÑâsoxã†≠Æ§ê{ontxvpmuáõ¶°ëÄz~âèäzjabl|çôûõîãÇ{tolklnpt}ÖäåèïòìcQRdw~xlhqÇíü¶§ípOAMh
+
+### SD2:960
+lyâóû£®®õÄdW\jsrováô¢†úúûóÑncfmoherå§Ø´†òêÇpaamz|qglÄò©Ø¨§ìvXHNhÖìãymqÉó•¶öÉgQIQe|åèåçñ¢§îw^Vbu~uheqÑó§¨∞¨
+
+### SD2:961
+qpu{Éè°≥∂ûpD0@jíûãl^lç©©ëtcafhhmxÇÜàë§∏∏öh?4IpèîÄg_mä•±´òfQHOfÇìêÑÅê•©ímVYpÖáub]jÑù∞∏≤õuP>Ijéûëudpí±≥ós^ap|}xuxÄâó´
+
+### SD2:962
+æ≤é`BB^Ñùùâqj}õ¨£É`OUi{Ç~xuyáòß©òxVACZ}ö°ètjzó¶ósRJZtÜâÉ~Åçõ£ûåvcXV^nÑñôã}Äñ≠´äZ<@]ÄìëÑz|ãõ†ìy`SS\fp}ãìíèî†®õuH.8_ä°öÉuÅû≤®ÇYFM`orrzâó†ß¨≠¢ábD:HeÅçà|~î≤æ©zL7DcÄäÉxxÜú¨´öÑqd[UVdxáåç
+
+### SD2:963
+qôπ∏òr_drxvwÄåêëô≠¡¿†pJAUuèñã{wà•∏∞éhV\mxxtxÉêòû•©£énRHVsçïä}ÄóØ≤òqVTcrxvrt{áóß∞¨ò{_NN[qÖåÖ{Åò∞±
+
+### SD2:964
+qvâù†åp^`mvtlmzåö†ûñã~qhefmzáåáÑçü™û{WIXvçëÇstá°Ø¢Å_QWk}ÇÄ|~Öêû®©ûÖhRO]tàèÜ}Çô≤∑úoLEYyìóäzvÑùØ™êsa_elnt~áåíü∞π¨ÜX=A\óñÉtzï
+
+### SD2:965
+êùß≠©ïsRBKc}ãáxq|ñ≠¨çbGG]xáÑzwÇñß™òzbWZclqw}Çàì¢≠´îqQDK_uÖáÄ|Üõ≠©á[?@ZzäÖwoxè¶´ów]SW_cdjtäó•¨•äfJBMdzÖÄutÜ£π±âY>DbÑîåzqzíß¶çlTR
+
+### SD2:966
+≥≤ö{hhs||vtzÉèù´≤≠ñu[T^tàåÅuzî¥¬ÆÇ\ScxÄwjiyí®≤´öáyplknu}~zzã©√¡õfDEbÑïåxmvíØ∫ßÇcZeu|wqpwÑî•≥≥†{UBHaëé~tùπ∫ñeEF_}ãÑtksã§Ø£àl\Y^cir{ÄÉäú±π§vH4BdÑèÑqjzô¥≤êdGH_
+
+### SD2:967
+étYP^zìöåvkwèùëqUOdÇóïÖuq~ëûúé|ofbcjyàçÜÄâ°∂±è`CHiê•ùÅhhÉ¶≥†|`[i|ÜáÖÜåíóòñëâ~riivâñîàÅçßπÆà^ITsêôé{q|ñ´¨ïvbbn|ÇÅ~Åäö¨∂¨éhOMbÇú°í|r~öØ¨êlWZrèûôâ|Äí§•íwd_
+
+### SD2:968
+`p|ÅÇÖàâáÇ}yxvrmjo}âãÉ~áö¶òrK;Kqî†êvhtè°ñqL@U|ú£íyjoÇìïÑl\W\eo}çòñä}ÇÜÄo]V]qáíçÇãúúÉ[?
+
+### SD2:969
+Äá°ø»¨tA/Fv¢∞û~myõªºôfBA]ÇôöçÇÖì£®ùáp^VZfváëíëó§±≠ëgF=OpéôêÄ~ë¨∑£vK<Ntïùéytá•∂®Ñ_NTh|ÑÉÑäîû†ñÜwolkklr}áéîõ¢§ò~_JJ[táâÄ{á†∂≥é\:;YÅöï}hjÉ¢
+
+### SD2:970
+tvxy|ÉäèêéãÜzj\XbväëãÇÉí§•égHD]É†§êvl{ô´†}XGUyú©úÑtzë§¶ï|h`ajvÜîõöñìïóìávlnxÑååâàéù©•ålUUhÄçâÄ}àú™•ãjVZvò´§áhZjêπÕ
+
+### SD2:971
+jU^Ä°´ópMBQnàññéáÇ~wngfnÄêîã|txÑåÜvf\Z\^dpÇïûöãxichtÄÜÜÄzx~àíñè|aJDQkÖìêÑç§±°vG2Bpü¥¶Ä`[vô™öuSFOdxÖåêîïëÖtc\cwë°†è|wÇíòåu_TTZdrÅéïòù¶≠•ãjUWnå
+
+### SD2:972
+en}äîööìàÄ~ÅÇ}rhhuãû•°õñíâyg]`oÑïöîâÖãîìÖmYVe}êìåÑáîûò~\FJgå•§ãpiyï©ßêoSHN`vàîòóêÜzpikváóùïá}}Ñäà|hULR
+
+### SD2:973
+|usrstyÑèïìèëöüîxWGOiÅåäÖå†∏ø¨ÅS;Hv´ ¬öp_t†≈ ®q@+:aå¶ßîÅÄó≥æßzQCWÄ§±§âvuÜöüåhIAWÅ•±§íåò¶£äeKNlî∞≤õÇ{å¶µ™äfQP_uâïôôóôû°ôápabqÑëîçÑÑê°¶ñx
+
+### SD2:974
+g~ãäÜâêêÑnYPXnÜóòâthqáôòÇcLDL\m~åñòëÉrc\bwèüúáso~ëòçu^ST[fq{Éäéîõõçt]Uaxçìå}qp
+
+### SD2:975
+û¶¢êw^MHRjå™π≥úÄmho~éôöê}mhtàõ†óÇjZU[hu}ÄÜí•±®àaIKcÉöûèvdf}ûµ≥ònJ7:Qrì®ßñÄpls}ÑáääÜ~urv~ÖààÇvfVKMZnÉï§Æ´înL?Kiáñê{dZbzï°öÅePKSdzêûûíneekuÜÖx
+
+### SD2:976
+ãëå}nmüΩ»∂ç^BAWsÜá~{åÆÀÕ´uKB_ë∑∫ùsZeèºŒπäW88QsêüöåÇå•º∫õpSRiâúôâ{~ï≥ƒ∑ìiKBMbxãö¶¨´°ê~uwÅéïëá~}âù≠≠úaRVewáèéãéõ™Æúz\Q_zëñâxtÖ
+
+### SD2:977
+àåååäÜ}rigkrx~ÅÉÖÜàäà|jXOSbtÅâíü¨≠ôtQBPnåòéxiqéØΩ¨ÇV<9J`sÄâéêêèäqhl|çëázv~äëã}l_XYalvÄÜçõÆ∫≤ëeEAY}óõâslÄ¶∆«¶uPFPbp{Üêñö†®™ûÉh\
+
+### SD2:978
+îub^dif^[dwí∞À’¬ëU-,OûûÜj`nè≥∆ºòe:)5UxíùôëèîúöänVP^yî†ùëÖÇâéâx_H=D[zö¥¡∫ûuQCPmâìáp`cyòØØöz\G=>J^wäíìñû†îwVEMhÖîìÜyqtÉò¶ûT1(:]Ñ§∑∫¨ër]Yeyäëä}qpzâëèÑyl_ODF\~õ•†ñçÖxh_ewáçàxut
+
+### SD2:979
+éúüöèÖÉãóüùîÖr`RN\{ô©´®©©ùÇcT`|ôß§òä~xë¢¶ïtUFNgÜ•ª¿¥õ~ibhwâòõìàÇáîü†ñã~p_PNbÇù¶§¶∞µ§|TCQsï¶§îÄppÇú´£ÜbIDQkã©∫∑§å|wwwvx{
+
+### SD2:980
+ãì®∂©ÄO4;Z}ïòå{s{ê¢†ÜbHF[vÜäãèïôïâwg_bsÜèâ}yÑñùîl`YSOUkáöùöú£¶ñvXO[rÖåàÉÑåô•ßöÅeRMVh~î¶∞Æ£ìÉytu|ÜãÜ~|àù´¶ëzmigb]aràóû©ºÕ∆ûf><Xöùé~~ë∞«ƒ§xVHO
+
+### SD2:981
+aY_lv{äô§°èu]S[së°ò}b\pè°öÅgY\jxÄÇÑÖàãåÜzj^arÖäroxÜéåÜ|p`SO[uèöîÉo_WXcyñ™´öÄfUR]tè°ùÄV;?^Öú¢ùñåzaNM`{íû†ôãv_QTf}ãäzja
+
+### SD2:982
+Y<:Xá´∞õÑÑûπºöe<2Jtö≠´ùíî¢´£ÜdMOdëòú¢®•òÇmdgtÜíîçäí•∑ª≠írWFEToè¶™†óú™ÆõtPFY|ô§ûèÖáî†úÄV99Yá®≠ûêëù¢ënPGWtéöîâÜî®≤¢zQ>HfÜñìäâï£
+
+### SD2:983
+NR_nzÉåñû†òÉhRITpèüöÜrn|ëúñÉkYQTayï™Ø§èwe[]mÖú•úávvÜö§†èw^KBMkè•ßüú¢§îtXPbÄò°ûóåÄy|âîíeV\
+
+### SD2:984
+]U`vãëàzt~ëúóÖo_WSQTawèû°üüúérTEMf}Ñ~tsÄï§£éoQ@AQhyÑäî¢¨•âaB>W}ïîmpà•∞û{WB@M_n{ÖéóúöêÇqbYX^huÄÜàâçñûñ|X>8HfÇêêäåöß†
+
+### SD2:985
+Ñãïöêu\Zw†∫∏®öëÉgMNpû∫∂ùÖ{}Ñë¢±Æê^62Sü®¶¶©ßó|dVWe|ñ©Æüàyv}áäÇp_QN^Å¶Ωº´î~gRGSrî¶ûây|éüß°ètV:0Bhç†£°§™•ãdC:LnéûùëÑ~Éåêã|ePFMbò
+
+### SD2:986
+{otÑîöí{[=0>däùúóú™ØönE7Hnì£õÜtsä¨ƒæô`01WÄû®°ïìü∞≤òjFCaé¨´ëvpÉ§Ω∏ïd9(9aä°®ß©≠©ìoQI\†´üåÅâü±Æóx]LGLZqèß≤µ∫øª§zRDW|ô°ìÄzÖò≠∏ØìlF29V}ü∂√ƒª¢}XGSsñ
+
+### SD2:987
+I?PoãôóåÄxyÄàåá~rbN:3Cfå¢ß™≤≥úl9"2\Öúùè|lfrä†¢à]8*8YÅ¶æ¿®Ç_NWnÇãâÑÉÜåéäÄrjoz~pVAGhè©∞∞Æ•ãe@6Jnãòîà|sr~ëüóxN5<
+
+### SD2:988
+OgÖú´º’„œóU-3\ä£õÉrsâ´∆ ¥àZ:6JhÑö¶™®§ûïâ|nd`bjwÑî¢©™§òÖqZHAJ_vàûπ’‹¡áM.;dçùèuf
+
+### SD2:989
+º…∏è`?9Mg{Öçó§±≥¢ánaesÄ||áù±µ¶åte^[XYdvàó®Ω”ÿΩÑJ+4XÄîíÖÄä§æ≈±â`FDSeuÑî†™≥µØüÖl\\gsáëú©≥µ´òÄl]WW\gwé´…€’¥ÉZGSqèôåxpÄ†º¿™âmZNHI[yíöõ•√ﬁ⁄®a-%BmãìãÉÜñØ¬¿¶Ä[C>H
+
+### SD2:990
+-4Qo{}Öï•©õÅeNA=?I`Äõ¨µπ∑©äaB>RmÅÄÇéù¶•òÄdH7@`Çîîì†∏√™u@+9]ÄåÖ{xÉõ±∂
+
+### SD2:991
+_Äüπ  πñoRJVmÉçäÉÄÜíúõìäÄrZ@1=cåß≤ª«ÃªäP**Kvó•†îÜÄÖï¶™ù~X:/<aé≤ø∏™üó
+
+### SD2:992
+pò√“∫ÜO.,DeÑõ§†õ£¥¿≤àW8<_ã®•éyxå©πØèkM<;IcÜ©ø¡≤ûåÇ}tkfipyÅàêû´≥∞†àq_RKKXrî∂ÃÃ∏ô{e`j~ëóåylsç≠√ø•~T
+
+### SD2:993
+µùpD0>aÜôèzp|ò±±ñpRDFO]mÅñ¢•¶™¨°É\AAUnÄâåéãÄspzÅ|fNJcáü¢ü†•üÄT31IjÅãâÜäèïòëhUP]uÜååí°∞±ôsOBOnåôìÜÉê§ÆùwTFTnÅÅxyãßæ¡™ÜbJGXtäêäÑáñ£•óÄjYOLReÄó†°•±æ∏ëZ/)Gvô¢ñàäú±∏£~ZJRgzÄäù±Ω∫ßår[R
+
+### SD2:994
+kÄíü™∑»ÀØzD(3YÄìêÉÄç•∑≤ìjKCUqÜäÑÅç£µ≤òuXMVhw~ÄÖì¶≥Æô~g\XVRUe~î£≠∂ª¥ïiA/8SqÇÖÉÜñ´∂ßÄW<?\~èäyq
+
+### SD2:995
+yó≤¬√¥ïoN@Kjéß´üçÉÉçóûõãpP:8Qy†∂∏∞©©ßïrJ48XÅ£Øßñââò¨≥§ÄT2,Bjì±º¥•öñìàuaVZlÖö£üóëèêêàxdSJObû
+
+### SD2:996
+ár`[ewÖáÅÄÜìõñÉpdacgilsÅñ¶©õÄeW[lÄååÖÄÜíôí}cSSbzéïèÜàó¶£ábIJ_wÉÑÇáî¢´¶ï{_MOdÄëîëì°≠®åjRRdyÉÉÇáï•Æ¨öÄcOHP^lyÉëû´≥≤•äiPHTjàäãëù©≠°ÖgOIVqáíííö´∑∞ñrVLUizÉ
+
+### SD2:997
+áî•≠•çr^UZdnwÇë°™•ízjglvzzwzÇèù£ùåzja][^fuÑêòü•§ñ{^NSdvÄ}yzÖñ¢†ämUNXkz~z}ä°∞®äcIH]{êíÑwvÖùßùÅgYY`fkuÉêïòù§§êpSL\tÖâÜÅÄ}ÉàÑu`U^sÜê
+
+### SD2:998
+Ø•òã}pe_bhsâëô°®™ßöÖp^SPQYkâ¶πº∂¨°íz\GFWpâõ££†ôìéáreZW`ráû∞∏≥£ãubVRXgyâó£¨Ø©î}mkooeYZmà†≠µ∫¥úrG2=_Äîóêãéñöóàr`Zap~ÇÄÅâó®∞´ínH39Uxíü¢üúñåÄunjhgip}Öåï§≤≥úrF3=\|êîééñ°§ó}aT[mÄâÉzyá
+
+### SD2:999
+{yx}å£µµüyR::LhÅíïëèó§®òvR?F`êêÖáúØ±ù~]F@I[vë®¥±£èÄskikry}}~áóß¨•ïÄkWE=D\yï©∂Ωº¨ãhPLYn|Ä~ÄÖë°Æ≥™èiJ@Og}Üáãô≠æ¿©R:@_
+
+### SD2:1000
+~âèï†Æµ®Ü_CBXwåèÑ|~åü¶úÑkZSSW_pÇêòû™∂∂öj<(6Y~ëíäÑáî†üét[OR_ku~äô¶≠¨§íwV=8GbÄï°§ùé{oox~xi\_säû™±∞£Ü`A8D\sÄÜç
+
+### SD2:1001
+Æ©öÜtcYUWarÑñ¶≥ª∑¢]LQf|ÜÖ~Üó™¥ØõcOLUakrxà°∫≈∫òpRK[táä~qp~ó´≠üâxld]X\kÄí°¨µ∑©àaFH]zåêàÅÅàñ•™°ås\NJO\râúß´¨®ô~^IJ\tÑâÜÉÜçïôñä{j[TWcsÑíú£®®öÄ`F?Kbxàèêíñú¢†îÄlZNHLZrè§™
+
+### SD2:1002
+óßÆ®ìuXHJZoÅâäãò™∏µù{^PR\ekr~é¢±µ´ñ~i]Z\dn|âîù§ß£ïfXWbp{ÄÉçú´≥©èmQGOezÉÉÉåû≤∑ßãp`[]ahsÇèóû´∫ºßÄWAF_yáäáâí°¨®ís[UbwÑÉ{wí®¥Æòy[IGVmÄãçéî†®§
+
+### SD2:1003
+ïêâÉÉäñûòÄ`HCPhéñú°•¢ìy[HH\{ñ£üè~uzâöüìy]NO\m|áëõ£¶ûåt`X^oÉëíä~x|áîöóå|k^WW]ixàó†°óÖshhp~äëéÖ{uv~ÖââÖvld`dpÄí†¶£ïi_duàóôêÉyv{ÖçêéäÅvh[Xatäõ£°öé
+
+### SD2:1004
+ÖÅwi]\fzèü§ûíâÉÅ}wpmpwÉÜáâàâåçäÅrc\crÑîúùöîéáÄwohfjsâëîïïôúòåzeUPVh}éóïïú®¨ù~\IL`vÉÉÄáîü†ïÉqbXW]iyÜêîö§¨¶çhF;G`zâççêò°¶ùär]SS\gsÄ
+
+### SD2:1005
+ÜÅ{qiekvÉèô°§†îÇrgcflrv|áò™≤ßälZ]l}É~ut{äô¢üë~j\X\gwÉåëò£ØÆöx[Q\rÖãÜÄÄâò£†ê}mginruzÅãòßµ∏®ádNPcyáãàÜÖÜàãëññèÇujb`fuäü¨≠¢éyichqz~ÄÉÜäçêêêëìí
+
+### SD2:1006
+ÅàâáàåëëãÄsg``ep~àéëìññêÅna_eq~ÜâàÉÄÅãô†ñ|\IL`yåíéàáçîñäuaX`rÑåâvu~çú°ôÉiUQ]tàìêããîúóÇiYZjÄêñêÇskså©∑≠çkUS]lyÄÖãíò
+
+### SD2:1007
+ÅÇÅÄÉâìü™≠°ájUQYgs~áíõ†üôêàÄwpllpxÄáäçèóü£ùè~pf_Z]h{èù¢°ùúöïã}oeacn}áãäâêû®•ì|fZY]ep~àèëíóû°õäuaVT\ixÅÉÇÖë°¨¶ë{mntuma\bs
+
+### SD2:1008
+åù¢üòêÑyswÉ~rko{Öàáàëù°òÜq^RPYmÇêíåàãó°°ïÉrf_^co~áääêö£ûäuktÑãÅkZYjÉô•§õíåâÑznffpâãàÉÄÑçïúüûîÅjULTgìùùòêãâàÖÇÅÅ
+
+### SD2:1009
+èÖypqì£¢èsYMQc{êûûëÇ|Ääã~j`fuÄÄysu}Ñåîú†óÄgUS]iqxÄãëëééíïç|j`bhlmqzÑääâçñõìÅoc`bfkwÜïöñåÇ~zwxÄåìåxaXbyåïëáÄÄÖâásifn~äçÑxorÄî¢•öÑm\V[ixÉãêíìêãÖÅÄ|v
+
+### SD2:1010
+¢§¢ï|bV_r~{qo{çú†ûùúê{d\du}vvÄèöü¢£üét]Wbryvs|çù¢üòíä|jcläÖr`^mÖú¶£óâÄ~~ype`fuÖèêåááÜÅ{yÄäéÖq\VaxéõúîãÜáäÜyh^bsÑçäÄz{ÉåèçããàÄo]SYi}çîîêééèäÄoc`gt~zwzÇéññëà
+
+### SD2:1011
+ûúíÑysrsvwyzxutyÉëúüòçÄwqoopprwÄãììéàÖÖÑÅÄÇÜÜÅ{yÄÖÇxnqÅñüïÄlel|åõ•£ïÄokt~Ä}wvzÄÄÄÉâèìïñòñäwcY\epxÄãñõôïñù†óÅnehmmjn}çòôòù•§íu]ZjÅêèÇunmsÅó´ØüÑnflwÅÑàåã
+
+### SD2:1012
+vphdk}éîã{mhnzáíôöíÉvkgkuÄâàsmp{áèëèçâÇ|skgfhkpwÄáãåéëîîçÄtljmty{xuwÄèöùôêá}pd]`kyÅÇÄÄàï††í~nhnxÅÑÄ{vw|ÇÜÜÇÄ~zxzÇèòïáugc
+
+### SD2:1013
+ÇÇÄ{xzÇèöùöéoc_cmw~Ñçóü°ùïâ~urw~ÄxgZ[nâ£Æ™ùêàÑÄwkb^`hs~ÜèìîìëèãÉxmhmyÑáÄrhk|êû†óãÄzvstw{{uonuÅåìïòúúê|f]ao~ÑÑÄ|vrtÄí†ûçxjiqyÄÇ
+
+### SD2:1014
+Çéíâ{leiuÅçîóíâÄ~ÄÖÜÅyqllot}âïùüùóéÉte]`l|áåãÜÄ~Äáîüûèw`U\pÜóúîÑshiuÖíòîäÄyyÜçéá}qiglyÜêìííñöòå{mhjllpyÜêíèëô†òÅg]hÄ
+
+### SD2:1015
+ÑsedràôúîäÑÄ{qhgnzÄÄ~~ÇàãäàààÉylcclyÑäåãäãååâÄuljowzywyÅäêíëëéá{ninyÅÇz{ÄàçåÑ~yx|ÄÇÇÅÄÇÖÉ~unms}ÜåèíîïêÇrfdlyÑäåâÇ{vyÖïúìÇtpv}ÄÄÄ{sovÅåêèéèê
+
+### SD2:1016
+ÅÜèòúïÑo_]izàåáyy}ÜëòòêÇvpprqppu}ÑàâäåççäÖ~xqnou~ÖÜÇ}yyÄàéçÜyy|ÄÇÑÉÅ}unlpyÑçëéäàääÜ}pijs}ÅÅ}{|ÄâëòòèÄpeaemu}ÉàäâáàãäÑ}utzÄÇ}tmo
+
+### SD2:1017
+qsv{Çãìòôìâ~usv}ÇÑÄ}z|ÄÅÅÉâèíéÇtjisÉëóêÉtihrÇíöñâ|uwÄááÅ}}ÅÖÄuifqÑó¢ûíÑ{wxz{zxwvwzÄàëïïêãáÑÄwmiktÜâàÖÇÇÜçëèÖwli
+
+### SD2:1018
+nkpzÉÜÉÄ~Çâéèà~slknu{ÄÜãççéèèäqiiov{}ÄÖãéèèêéÜzolpvwvv|Öåçãåëìã{kgo}ÑÑÄ{xxyÄãòõëÄsrzÇÉ~wuy~ÉáääÖÄ~Ççñóç|kbcm{áééáÄ~ÑêóìÜy
+
+### SD2:1019
+tvttyÅâåçëîìâ{potxvqot}Öãêîñíá|uvywqkozáéçããåà~rnuÄááÄxsqtzÖëóíÜztu{ÄÇÑÑÉ~tlksäêêåÜÅÄÄÄ}xttyÄÇvpr}åóôìâÄ{wt
+
+### SD2:1020
+pvÖààÖÄ}yy}ÇÜÜÑÇÅÑÜááÑÄ}xttvy~ÅÜäéêèåÖ}upszÄÇ~wtxÇçïïèâÑÅÄ}xutvyzz}ÇàåçéêêãÄrhjtÄÖÑzx{ÅàéêåÑ|~ÄÄ|wtuxz|~Çáããâ
+
+### SD2:1021
+ÅÖÑÄ}|~Éåììä}qkoxÅÖÖÅÅÜãäÖ}vw~ÜãâÄvpqyÉåêçÖ}xzÄÜáÇ{vv{ÅÖÖÇ}~ÇàããÜyx|ÅÖÉ~wtwÜãéééçàÄwrruy{}ÄÖãèèäÉ|wvyÉÉÄ~ÉàâÖÄ{y|ÅÑ
+
+### SD2:1022
+ÜÇ~~ÅÜâÖ~wsuy|{z{ÄÜãççäÉ{rnrzÅÑÇ{z{ÉàãâÉ}wwzÇÑÉÄ|yx{ÄáääÜÅ|ywuv{ÄÇÉÑÑÉÄ~}ÄÉÖÇ~{{ÄÄ|{}ÄÉÇÄÄÅÅÄ}|ÄÖÜÇ}yz~ÄÄÄÇÑÑÅ~}ÄÉÖÅ}z{}}{{ÑááÖÉÑ
+
+### SD2:1023
+ÖÅ}ywxz~ÄÉÖÜÖÖÖÖÖÉÄ|yxy{~ÄÅÉÖàäâÖÄzxx|ÄÄÄÄÇÑÜáÖÅ~zyy|ÅÉÑÖÑÑÇÄ}||}~ÄÄÅÅÇÑàääÑ}vrsvz~ÄÉÑÖÑÜàãâÉ{utwyzz}ÇàåãàÑÇÄ|xuwz~ÄÇÑÜÜÖÇÄ}||||}~ÄÅ
+
+### SD2:1024
+àáÖÖááÇ}wwy||{}ÄÖáÖÑÖáàÑ~ywy{zz}ÅÜâààâäávru|ÄÄÄÉàãâÖÅ~|{|ÅÇÅ~ÄÇÑÑÇÄ~~ÇÜáÜÇÄ}|{|}ÄÄÅÑááÖÇÅÅÅÄ}|zxxzÑàáÜÖáâàÉ}ywwxx{ÄÖàáÜÜàäàÇ|
+
+### SD2:1025
+áààÜÇ~xvwz}~|{~ÇÖáÜÜÜÖÄzvw|~zy}ÉááÖÑÖÑÄ{xzÄyvy~ÉÖÜÖÖÖÑÅÄ~}|{|||{{|ÄÑàâáÑÇÇÅÄ~{zyyyz}ÄÖááÜÑÑÜÜÑÄzutuz~ÅÉÉÉÉÖááÜÇ~{zz{||}~ÄÇÖááÜÖÑÅ~
+
+### SD2:1026
+|}}|}ÅÉÉÇÇÑÜÖÇ|{|}}~~~ÄÅÉÑÖÜÜÜÉÄ{z{}~}{|ÄÑÜÖÑÑÑÇzx{ÅÄ~}~ÄÅÇÇÇÉÉÅÄ~~~~~}|}ÄÇÖÜÑÇÅÅÅÅÄ|zz{}~ÄÅÉÑÖÑÉÉÇÄ~{z{}}||~ÄÉÑÉÉÑ
+
+### SD2:1027
+{z|}~ÄÅÉÑÑÑÖÖÑÄ}zz|~~}~ÄÉÖÑÉÉÖÖÇ{{}}|}ÄÇÑÖÜÖÑÉÅÄ}|||}}~ÄÇÑÖÑÉÇÉÉÉÅ~|{{|}~ÄÄÅÇÉÑÑÑÑÑÇÄ}{{|}~ÄÄÇÉÑÑÖÖÑÇÄ~|{|~~ÄÅÉÑÑÑÉÉÇ
+
+### SD2:1028
+ÅÅÄÄ~}}}~~ÄÅÇÇÇÅÅÅÅÅÅÄ~|{|~ÄÅÉÉÉÇÇÅÄÄ~}||}~ÄÄÅÇÇÉÉÉÇÅÄ~}}~ÄÄÄÅÇÉÑÉÇÅÄÄ~||}ÄÄÄÇÉÉÇÅÅÅÄÄ~~ÄÄÅÇÇÇÇÇÅÅÄÄ~~~~ÄÄÄÅÇÇÇ
+
+### SD2:1029
+ÄÄÄÄÄÄÄÅÅÅÅÅÅÄÄÄÄÄÅÄÄÄÅÅÄÄÄÄÄÄÄÄÄÄÄÅÅÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+### SD2:1030
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ  “    Ä@     @ @         H   H                             @ @  
+
+### SD2:1032
+ ˇﬂˇˇˇˇÄ ˇﬂˇˇˇˇ  ˇˇˇˇˇÄ ¸ˇˇˇˇ‡ ¸ˇˇˇˇ ˇ«ˇˇˇˇ¸ ˇˇˇˇˇˇ¯ ˇˇˇˇˇ ?ˇˇˇˇˇ‡ ˇˇˇˇˇüÄ ˇˇˇˇ  ˇˇˇ˛    ?ˇˇ¸    ˇˇ‡                                         .  ˇˇˇˇˇˇ      ÓÓÓÓÓÓ DDDDDD 
+
+### SD2:1034
+ -›››››› ˇ                                                          
+
+### SD2:1043
+˚˚ˇ       ˇ¸¸˝˝˚˚˚˚˚˚˚˙˙˙¯¯ˆ¯˚˝˚˙˚ˇ       ˇ¸¸˝ˇ˚˚˚˚˚˚˚˙˙˙¯¯ˆ¯˚˝˚˙˙ˇ       ˇ¸˝˝ˇ˚˚˚˚˚˚˚˚˙¯¯¯¯˚˚ˇˇ˝˙ˇ       ˇ¸ˇˇˇˇˇˇ˚˚˚˚˙˙¯˚˚ˇˇˇˇˇˇ˚ˇ       ˇˇ˚˚¯¯¯ˇˇˇ˚˚˙˙˚ˇˇˇ˚˚¯¯¯ˇˇ       ˇ˚˚ˇˇˇ¯¯ˆˇˇ˚˚˚ˇˇ˚˚˚ˇˇˇˆˆˇ      ˇ˚˚ˇˇˇˇˇˇˆˆˇˇ˚ˇˇ˚˚ˇˇˇˇˇˇˆ¯ˇ     ˇ˚ˇˇˇˇ◊ˇˇˇ¯¯˚˚¯˚˚
+
+### SD2:1044
+ˇˇ¯ˇ     ˇ˚ˇˇˇ◊◊ˇˇˇ˚˚˚¯˚ˇˇˇ◊◊ˇˇˇ˚ˇ     ˇ˚ˇˇˇˇˇˇˇˇ˚˚˚ˇˆˆ˚ˇˇˇˇˇˇˇˇ˚ˇ     ˇ˚˚˚ˇˇˇˇˇ˚˚˚ˇˇˇˆ¯˚ˇˇˇˇˇ˚˚˚ˇ      ˇ˚˚˚˚˚˚˚˚˚ˇˇˇˇˇ¯˚˚˚˚˚˚˚˚ˇ       ˇˇ˚˚˚˚˚˚ˇ˚ˇˇ˚ˇˇ˚ˇ˚˚˚˚˚˚ˇ         ˇˇˇˇˇˇˇ˚˚ˇ˚˚˚ˇ˚˚ˇˇˇˇˇˇ             ˇˇˇˇ˚˚˚˚¯˚˚˚˚ˇˇˇˇ                ˇˇ¸˚˚˚˚¯˚¯˚˚ˇˇˇ 
+
+### SD2:1047
+ˇÃÓŒÔˇ?ˇ¸  ˛ˇÛ#ˇ˛ÓŒˇÛ#ˇ˛  ˛ˇˇˇˇÓÔÃÔˇˇˇ˛  ˛Óˇˇ˛Óˇ¸Œˇˇ˛Ó  ÓÓ
+
+### SD2:1049
+ˇ     ˇˇˇ˚˚˚˚ˇˇ       ˇˇ¸˚˚˚˚ˇˇ       ˇˇˇ˚˚˚˚ˇˇ       ˇˇˇˇˇ¯ˇˇˇ        ˇ ˇˇˇˇˇ        Ä  ˇˇ    ˇÓÓˇ   ˇÓÓ‹Ó ˙ÓÓ› Ô ÔÓÓ‹ Ô ˇˇÓﬁˇˇ ˇˇ˛ˇˇˇ ˇˇˇˇˇˇˇˇˇÔˇˇÔˇˇ˛ˇˇˇˇˇˇˇˇ  ˇÓÓˇ   ˛ÓÓˇ   ˇÓÓˇ   ˇˇœˇ    ˇˇ       	ÿ  ÿ   ñÊ˘<    ñ ICN#   2ic
+
+### SD2:1050
+8   >icl4   Jics#   Vics8   bics4   nøπˇˇ        øπˇˇ      øπˇˇ      øπˇˇ      øπˇˇ  P    øπˇˇ  T ¬
+
+### SD2:1121
+q                íäKd              ˛q                ë∆Id              ˛q                ÉE$d        '˛o íìîïñ 0  ç=d 	   (      - ö   Ê     Ë Á    xŸ%	d               π                y¢&d               π             
+
+### SD2:1127
+ˇˇˇ  d                                ˇˇˇˇ  d            ˇö * ,          ˇˇˇˇ  d                                ˇˇˇˇ  d                                ˇˇˇˇ  d                                ˇˇˇˇ  d                                ˇˇˇˇ  d    
+
+### SD2:1131
+≠ %            ˇˇˇˇ  d             ˇ≠ %            ˇˇˇˇ  d             ˇ≠ %            ˇˇˇˇ  d            ˇÆ & ' (        ˇˇˇˇ  d   
+         c d  e        ˇˇˇˇ  d               g             ˇˇˇˇ  d            ˇö * +          
+
+### SD2:1132
+ˇˇˇ  d 	 	           ˝fõ x          ˇˇˇˇ  d  	 	        ˇá˝eö         ˇˇˇˇ  d                ~              ˇˇˇˇ  d               /              ˇˇˇˇ  d               /              ˇˇˇˇ  d               /              ˇˇˇˇ  d      
+
+### SD2:1155
+A large mob forces you to flee.  Unable to  redeem yourselves, remaining in the city would mean certain death.
+
+### DES:0
+Long ago a wizard's experiment had gone afoul and this is the result.
+
+### DES:1
+Though they are not difficult to kill, take care.  Their bite is most poisonous.
+
+### DES:2
+Large, slow, stupid.  Put it all together and you have a four footed eating machine with sharp teeth.
+
+### DES:3
+A strange cross between an ogre and a bear.  These creatures were born of magic long ago but have developed into a race unto themselves.
+
+### DES:5
+Not a true dragon, but named after there ilk for it is the only beast known that can rival them for brute strength.
+
+### DES:6
+A mindless larva.  Nobody knows what this thing will turn into for no one has ever found one in a cocoon state.
+
+### DES:7
+Capable of launching a multitude of attacks, this critter is extremely deadly.
+
+### DES:8
+Strongest of the good dragons.  This race of dragon kind devotes there entire lives to the destruction of there evil kin.
+
+### DES:9
+A gaping maw of immense size makes this mindless foe one best avoided.
+
+### DES:10
+Sickly in appearance, these foul creatures blend in the very surrounding and pounce on the unsuspecting.
+
+### DES:11
+A truly fearsome arachnid.  Avoid contact with this 8-legged monstrosity if at all possible.
+
+### DES:14
+Minotaurs have a stout body that would make even an ogre quake with fright.   These powerful creatures love to engage in combat.
+
+### DES:15
+Minotaurs have a stout body that would make even an ogre quake with fright.   These powerful creatures love to engage in combat.
+
+### DES:16
+A larger version of the ordinary troll.  The physical strength of these beasts is near god-like.
+
+### DES:18
+Often used to guard magical treasure or some important location.
+
+### DES:20
+A mountainous man-fish.
+
+### DES:21
+Though they look fierce, they are not as deadly as one might think.
+
+### DES:22
+Large and deadly.  There saliva contains a strange chemical that causes those that do not save to become deathly afraid.
+
+### DES:23
+An odd sight indeed.  There appearance would be laughable if they were not so deadly.  They favor the occasional orc to dine on.
+
+### DES:24
+A strange cross between a Hyena and a tiger.  Nobody knows if it was spawned from magic or nature.
+
+### DES:26
+Large but stupid.  These reptiles have been known to trample a full grown ogre without even slowing down.
+
+### DES:27
+Do not get too close.  If it gets you in a bear hug you are doomed for sure.
+
+### DES:32
+Be careful not to fall victim to a bite from one of these.  There bite has been known to cause paralysis.
+
+### DES:33
+A poisonous bite may be the least of your worries if you meet up with one of these vermin.
+
+### DES:34
+Sporting a nasty bite, these critters are more dangerous than they look.
+
+### DES:36
+A powerful cousin to the modern day mountain lion.
+
+### DES:38
+Strongest of the evil dragons.  Few are those that have met with one, and LIVED!
+
+### DES:39
+Woe are the fools that find themselves in lonely company with one of this ilk.
+
+### DES:40
+One of the weaker races of dragon kind.  A sly mind and a taste for blood make green dragons a force to be feared.
+
+### DES:43
+Animated creature of bones and armor.  Can be deadly in large numbers.
+
+### DES:44
+These knights are pure evil.  They can suck the life out of their adversaries in a blink of an eye.
+
+### DES:45
+These beasts are a mixture of everything evil.
+
+### DES:47
+Large and heavily armored with a bony back plate and horns.  Only a fool would back one of these things into a corner.
+
+### DES:48
+Large and brutish.  These simple minded humanoids survive due to there shear size.
+
+### DES:49
+A hardy warrior trained for combat.  A true asset to Lord Keto.
+
+### DES:50
+A true leader of men.  Trusted with the task of keeping the troops in line and loyal to Lady Keto.
+
+### DES:51
+A smaller dinosaur that must hunt in packs in order to bring down larger prey.
+
+### DES:52
+Minotaurs have a stout body that would make even an ogre quake with fright.   These powerful creatures love to engage in combat.
+
+### DES:53
+Standing 8 feet tall or more these large brutes love to bully those weaker than themselves.  They are often employed as troops in mercenary armies.
+
+### DES:54
+A strong family structure allows these giant reptiles to survive in a hostile environment.
+
+### DES:55
+Young and weak when compared to a full grown giant.  Still more than a match for any full grown human or orc.
+
+### DES:56
+Extremely strong for their size, these beasts make excellent warriors.
+
+### DES:57
+Neither very fast nor powerful, these nasty reptiles do have one advantage.  A poison bite.
+
+### DES:58
+Hailing from some unknown plane, these beasts are often summoned by powerful enchanters to do their bidding.
+
+### DES:59
+Though not native to hell, they populate large regions of that foul area.
+
+### DES:60
+These creatures favored attack is to lower there armored head and charge.  Hint:  Don't stand in front of it when it does.
+
+### DES:61
+These Hell Beasts are larger and smarter than a normal Hell Beast.
+
+### DES:63
+These minor devils live there lives as servants to those more powerful than themselves.
+
+### DES:65
+A powerful creature of the undead.  These creatures drain your very life force.
+
+### DES:66
+This creature was once a Lady of her own castle, but is now doomed to a existence of despair.
+
+### DES:67
+These creatures are almost indestructible.
+
+### DES:72
+Vampire.  A very Evil undead creature indeed.
+
+### DES:75
+A creature of the undead.  The bite of these foul creatures is capable of causing disease.
+
+### DES:76
+A storm of claws and fangs.  Your basic garden variety of giant spider.
+
+### DES:78
+A humanoid raised from the dead to become one of the cursed undead.
+
+### DES:80
+A small reptilian race.  They are extremely evil and travel in large groups.
+
+### DES:83
+Completely mindless.  They are used as shock troops and as food by just about any other demon.
+
+### DES:88
+The backbone of anyone's army.
+
+### DES:91
+A common orc who claims to have some skill with weapons.
+
+### DES:92
+Small and weak, goblins band together in large tribes for there own protection.
+
+### DES:101
+A blaze of claw and fang.  The speed of these nether-world creatures is almost without compare.
+
+### DES:102
+Normally they feed on only the dead, but in times of hunger they will hunt there prey.
+
+### DES:103
+Abused as a youngster.  These ill tempered men are but common thugs for hire.
+
+### DES:108
+Often found in large packs, these small demons can be a strong force in large numbers.
+
+### DES:109
+Avoid the paralyzing bite of these large insects.
+
+### DES:110
+Half man, half fish, all bad temper.
+
+### DES:112
+A small, but deadly version of your every day troll.
+
+### DES:114
+An strange critter.  It will inflict great mental damage from time time.
+
+### DES:117
+Prefer to feed on the dead.  However, they will not hesitate to add a little fresh meat when only that is available.
+
+### DES:123
+Only slightly less primitive than a cave man.  These humanoids are all but animal.
+
+### DES:155
+With a shell as dark as soot, this crab is a mindless machine with powerful pincers.
+
+### DES:156
+With a hard carapace as tough as steel plating.  This crab is like a knight in armor.
+
+### DES:157
+Large glands in the pincers inject victims with a powerful chemical that bursts into flame when it comes in contact with air.
+
+### DES:158
+Thousands of tiny spots gives this crab its name.  Though nowhere near as fast as a leopard, it is just as deadly.
+
+### DES:167
+A beast that came from an experiment that went horribly wrong.
+
+### DES:174
+  
+
+### DES:179
+End of List
+
+### DES:180
+End of List
+
+### DES:184
+  d
+
+### DES:194
+No Special Attacks
+
+### DES:195
+No Special Attacks
+
+### OD:1
+Attack your friend
+
+### OD:2
+Do not attack
+
+### OD:3
+Enter now
+
+### OD:4
+Come back later
+
+### OD:5
+Stay and Fight
+
+### OD:6
+Run Away
+
+### OD:7
+Kill him quickly
+
+### OD:8
+Set him free
+
+### OD:9
+Let it pass
+
+### OD:10
+Ambush them
+
+### OD:11
+Leave them alone
+
+### OD:12
+Fight them fair
+
+### OD:13
+Extra crispy please!
+
+### OD:14
+Feel pity and accept
+
+### OD:15
+Kill the slobs
+
+### OD:16
+Rush him
+
+### OD:17
+Let him escape
+
+### OD:18
+Red
+
+### OD:19
+Purple
+
+### OD:20
+Leave Now!
+
+### OD:21
+Fight!
+
+### OD:22
+Ready Weapons
+
+### OD:23
+Wait
+
+### OD:24
+Approach
+
+### OD:25
+Attack!
+
+### OD:26
+Scenario:encounter data 
+
+### OD:28
+io:encounter data2 w+b :
+
+### OD:29
+cenarios:New Scenario:Da
+
+### OD:30
+a C  w+b :Scenarios:New
+
+### OD:31
+cenario:string data w+b 
+
+### OD:32
+Scenarios:New Scenario:d
+
+### OD:33
+or data rb  :Scenario Va
+
+### OD:34
+iables r+b :Scenarios:Ci
+
+### OD:35
+y of ByWater:City of ByW
+
+### OD:36
+ter  r+b :Scenarios:City
+
+### OD:37
+of ByWater:City of ByWat
+
+### OD:38
+r  r+b :Scenarios:City o
+
+### OD:39
+ ByWater:City of ByWater
+
+### OD:41
+he old man tells you tha
+
+### OD:42
+ you are welcome to rest
+
+### OD:43
+here in town as long as
+
+### OD:44
+ou want.  "When you are
+
+### OD:45
+eady to leave go to the
+
+### OD:46
+ell and I will take you
+
+### OD:47
+o the front gates."   Th
+
+### OD:48
+ man leaves you to rest.

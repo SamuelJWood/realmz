@@ -8,17 +8,17 @@ void bodycount(void) {
   short maxtochose = 4;
   CCrsrHandle compassnew;
 
-  short select[maxloop], chosen = 0;
+  short bodyselect[maxloop], chosen = 0;
 
   for (t = 0; t < maxloop; t++)
-    select[t] = 0;
+    bodyselect[t] = 0;
 
   for (t = 0; t < nummon; t++) {
     monster[t].beenattacked = monster[t].condition[COND_RUNS_AWAY] = monster[t].condition[COND_HELPLESS] = monster[t].condition[COND_TANGLED] = monster[t].condition[COND_STUPID] = monster[t].condition[COND_CONFUSED] = monster[t].condition[COND_DEFENSE_BONUS] = 0;
     if (monster[t].cansum < 0)
       monster[t].traiter = 0;
     if ((monster[t].stamina > 0) && (!monster[t].traiter) && (monster[t].cansum))
-      select[count++] = t + 1;
+      bodyselect[count++] = t + 1;
   }
 
   if (!count) {
@@ -47,43 +47,43 @@ void bodycount(void) {
 
   for (t = 0; t < count - 1; t++) {
     for (tt = 0; tt < count - 1; tt++) {
-      if ((monster[select[tt] - 1].stamina < monster[select[tt + 1] - 1].stamina) || (monster[select[tt + 1] - 1].cansum == -1)) {
-        temp = select[tt];
-        select[tt] = select[tt + 1];
-        select[tt + 1] = temp;
+      if ((monster[bodyselect[tt] - 1].stamina < monster[bodyselect[tt + 1] - 1].stamina) || (monster[bodyselect[tt + 1] - 1].cansum == -1)) {
+        temp = bodyselect[tt];
+        bodyselect[tt] = bodyselect[tt + 1];
+        bodyselect[tt + 1] = temp;
       }
     }
   }
 
   for (t = 0; t < 32; t++) /***** display the mandatory selection ******/
   {
-    if (select[t]) {
+    if (bodyselect[t]) {
       GetDialogItem(bodyc, t + 3, &itemType, &itemHandle, &buttonrect);
       upbutton(FALSE);
-      monsterupdate(select[t] - 1, buttonrect);
+      monsterupdate(bodyselect[t] - 1, buttonrect);
 
-      if ((monster[abs(select[t]) - 1].cansum == -1) && (chosen < 18)) {
+      if ((monster[abs(bodyselect[t]) - 1].cansum == -1) && (chosen < 18)) {
         downbutton(FALSE);
-        select[t] = -(abs(select[t]));
+        bodyselect[t] = -(abs(bodyselect[t]));
         chosen++;
       }
     }
   }
 
   for (t = 0; t < 32; t++)
-    if (select[t] < 0)
+    if (bodyselect[t] < 0)
       maxtochose++;
   if (maxtochose > 18)
     maxtochose = 18;
 
   for (t = 0; t < 10; t++) /***** add secondary selection ****/
   {
-    if (select[t] > 0) {
+    if (bodyselect[t] > 0) {
       GetDialogItem(bodyc, t + 3, &itemType, &itemHandle, &buttonrect);
 
       if (chosen < maxtochose) {
         downbutton(FALSE);
-        select[t] = -(abs(select[t]));
+        bodyselect[t] = -(abs(bodyselect[t]));
         chosen++;
       }
     }
@@ -123,7 +123,7 @@ over:
       goto out;
 
     if ((itemHit > 2) && (itemHit < 35)) {
-      if (((chosen > (maxtochose - 1)) && (select[itemHit - 3] > 0)) || (!select[itemHit - 3])) {
+      if (((chosen > (maxtochose - 1)) && (bodyselect[itemHit - 3] > 0)) || (!bodyselect[itemHit - 3])) {
       toomany:
         TextMode(1);
         TextSize(12);
@@ -133,11 +133,11 @@ over:
         delay(80);
         MyrCDiStr(41, (StringPtr) "");
         goto over;
-      } else if (select[itemHit - 3] < 0) {
-        if (monster[abs(select[itemHit - 3]) - 1].cansum == -1) {
+      } else if (bodyselect[itemHit - 3] < 0) {
+        if (monster[abs(bodyselect[itemHit - 3]) - 1].cansum == -1) {
           upbutton(FALSE);
           sound(141);
-          select[itemHit - 3] = abs(select[itemHit - 3]);
+          bodyselect[itemHit - 3] = abs(bodyselect[itemHit - 3]);
           chosen--;
 
           TextMode(1);
@@ -153,12 +153,12 @@ over:
 
         upbutton(FALSE);
         sound(141);
-        select[itemHit - 3] = abs(select[itemHit - 3]);
+        bodyselect[itemHit - 3] = abs(bodyselect[itemHit - 3]);
         chosen--;
       } else if (chosen < maxtochose) {
         downbutton(FALSE);
         sound(141);
-        select[itemHit - 3] = -(abs(select[itemHit - 3]));
+        bodyselect[itemHit - 3] = -(abs(bodyselect[itemHit - 3]));
         chosen++;
       } else
         goto toomany;
@@ -178,23 +178,23 @@ out:
   heldover = chosen;
 
   for (t = 0; t < 32; t++) {
-    if (select[t] < 0) {
+    if (bodyselect[t] < 0) {
       chosen--;
       if (chosen > -1) {
-        holdover[chosen] = monster[abs(select[t]) - 1];
+        holdover[chosen] = monster[abs(bodyselect[t]) - 1];
         for (tt = 0; tt < 4; tt++)
           if (holdover[chosen].condition[tt] > 0)
             holdover[chosen].condition[tt] = 0;
         holdover[chosen].condition[COND_ABSORBING_ENERGY_FROM_ATTACKS] = 0;
 #if CHECK_ILLEGAL_ACCESS > 0
-        if (abs(select[t]) - 1 < 0 || abs(select[t]) - 1 >= 100)
+        if (abs(bodyselect[t]) - 1 < 0 || abs(bodyselect[t]) - 1 >= 100)
           AcamErreur("monster bad index");
 #endif
-        monster[abs(select[t]) - 1].stamina = monster[abs(select[t]) - 1].hd = 0;
+        monster[abs(bodyselect[t]) - 1].stamina = monster[abs(bodyselect[t]) - 1].hd = 0;
         for (tt = 0; tt < 6; tt++)
-          monster[abs(select[t]) - 1].items[tt] = 0;
+          monster[abs(bodyselect[t]) - 1].items[tt] = 0;
         for (tt = 0; tt < 3; tt++)
-          monster[abs(select[t]) - 1].money[tt] = 0;
+          monster[abs(bodyselect[t]) - 1].money[tt] = 0;
       }
     }
   }

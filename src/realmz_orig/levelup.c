@@ -22,7 +22,7 @@ short levelup(short character, short mode) {
   needupdate = TRUE;
 
   if (Rand(100) < 15) {
-    if ((!doreg3()) && (currentscenario > 10))
+    if ((!doreg3()) && (currentscenario > 5))
       scratch(452);
   }
 

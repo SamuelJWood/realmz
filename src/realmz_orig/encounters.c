@@ -32,7 +32,7 @@ short thiefenc(void) {
   in();
 
   if (Rand(100) < 10) {
-    if ((!doreg4()) && (currentscenario > 10))
+    if ((!doreg4()) && (currentscenario > 5))
       scratch(452);
   }
 
@@ -323,7 +323,11 @@ over:
   FlushEvents(everyEvent, 0);
   ModalDialog(0L, &itemHit);
 
-  if (itemHit == 9)
+  if (itemHit == 0 && enc.canbackout) /* Escape = cancel */
+    reply = 0;
+  else if (itemHit == 0) {
+    goto over; /* no cancel available, ignore Escape */
+  } else if (itemHit == 9)
     reply = 0;
   else if (enc.choiceresult[itemHit - 1])
     reply = itemHit;
@@ -437,6 +441,14 @@ tryagain:
   FlushEvents(everyEvent, 0);
   ModalDialog(0L, &itemHit);
   MyrCheckMemory(2);
+
+  if (itemHit == 0) { /* Escape */
+    if (enc2.canbackout)
+      goto out;
+    else
+      goto tryagain;
+  }
+
   GetDialogItem(win, itemHit, &itemType, &itemHandle, &buttonrect);
   ploticon3(129, buttonrect);
 

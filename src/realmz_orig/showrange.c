@@ -74,4 +74,7 @@ backup:
 
   if ((gTheEvent.what != mouseDown) && (gTheEvent.what != keyDown))
     goto backup;
+  if (gTheEvent.what == keyDown &&
+      is_movement_scancode((gTheEvent.message >> 8) & 0xFF))
+    goto backup;
 }

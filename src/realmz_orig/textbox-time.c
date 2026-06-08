@@ -108,6 +108,9 @@ void textbox(short class, short index, short click, short different, Rect newrec
 #endif
 
       if ((gTheEvent.what == mouseDown) || (gTheEvent.what == keyDown)) {
+        if (gTheEvent.what == keyDown &&
+            is_movement_scancode((gTheEvent.message >> 8) & 0xFF))
+          continue;
         if ((class == -1) && (((gTheEvent.message & charCodeMask) == 'n') || (autonote))) /**** n key = take note ***/
         {
           notes[abs(index)] = TRUE;

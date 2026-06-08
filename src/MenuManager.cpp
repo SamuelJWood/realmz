@@ -7,6 +7,7 @@
 #include "MenuManager-C-Interface.h"
 #include "ResourceManager.h"
 #include "SDLMenuBar.hpp"
+#include "StuffItArchive.hpp"
 #include "StringConvert.hpp"
 #include "WindowManager.hpp"
 #include <SDL3_image/SDL_image.h>
@@ -16,6 +17,7 @@
 #include <functional>
 #include <list>
 #include <phosg/Strings.hh>
+#include <resource_file/IndexFormats/Formats.hh>
 #include <resource_file/ResourceFile.hh>
 #include <stdexcept>
 #include <unordered_map>
@@ -23,6 +25,9 @@
 using ResourceDASM::ResourceFile;
 
 static phosg::PrefixedLogger mm_log("[MenuManager] ");
+
+// Name of the sub-folder under :Scenarios: that holds user-supplied scenarios.
+static const char* const kThirdPartyFolder = "3rd Party Scenarios";
 
 class MenuManager {
 public:
@@ -86,6 +91,33 @@ public:
     this->res_id_to_menu.emplace(menu->menu_id, menu);
     this->handle_to_menu.emplace(handle, menu);
     this->menu_id_to_handle.emplace(menu->menu_id, handle);
+  }
+
+  Handle new_mbar_from_menu_ids(const int16_t* menu_ids, int count) {
+    Handle handle = NewHandle(0);
+    auto menu_list = std::make_shared<MenuList>();
+    for (int i = 0; i < count; i++) {
+      menu_list->menus.emplace_back(this->get_menu(menu_ids[i]));
+    }
+    this->handle_to_menulist.emplace(handle, menu_list);
+    return handle;
+  }
+
+  void set_menu_item_key(Handle menu_handle, int16_t item, char key) {
+    auto menu = this->get_menu(menu_handle);
+    if (item >= 1 && item <= static_cast<int16_t>(menu->items.size())) {
+      menu->items.at(item - 1).key_equivalent = key;
+    }
+  }
+
+  void append_submenu_item_cstr(Handle menu_handle, const char* title, int16_t sub_menu_id) {
+    auto menu = this->get_menu(menu_handle);
+    Menu::Item item;
+    item.name = title;
+    item.key_equivalent = '\x1B';
+    item.mark_character = static_cast<char>(sub_menu_id);
+    item.enabled = true;
+    menu->items.emplace_back(std::move(item));
   }
 
   void insert_submenu(MenuHandle handle) {
@@ -306,6 +338,106 @@ void SetItemIconByCicnId(MenuHandle theMenu, int16_t item, int16_t cicnId) {
   }
 }
 
+// Decode a scenario's Mac custom folder icon (the "Icon\r" file's resource fork,
+// extracted as "Icon.rsrc") into a 32x32-ish RGBA image suitable for the menu.
+// Returns nullptr if no usable icon resource is present.
+static std::shared_ptr<phosg::ImageRGBA8888N> load_scenario_folder_icon(const std::string& dir_mac) {
+  std::string icon_host = host_filename_for_mac_filename(dir_mac + ":Icon.rsrc", false);
+  if (!std::filesystem::is_regular_file(icon_host)) {
+    return nullptr;
+  }
+  try {
+    std::string data = phosg::load_file(icon_host);
+    ResourceFile rf = ResourceDASM::parse_resource_fork(data);
+    auto ids = rf.all_resources_of_type(ResourceDASM::RESOURCE_TYPE_icns);
+    if (ids.empty()) {
+      return nullptr;
+    }
+    auto decoded = rf.decode_icns(ids.front());
+
+    // Prefer a 32x32 image (the classic icl8/ICN#), otherwise the largest one no
+    // bigger than 32px, otherwise the smallest available — the menu scales to 32.
+    auto& images = decoded.type_to_composite_image;
+    auto best = images.end();
+    auto score = [](size_t w) -> int { return w == 32 ? 0 : (w < 32 ? 1 : 2); };
+    for (auto it = images.begin(); it != images.end(); ++it) {
+      size_t iw = it->second.get_width();
+      if (iw == 0 || it->second.get_height() == 0) continue;
+      if (best == images.end()) {
+        best = it;
+        continue;
+      }
+      size_t bw = best->second.get_width();
+      int sb = score(bw), si = score(iw);
+      if (si < sb || (si == sb && ((si == 1 && iw > bw) || (si != 1 && iw < bw)))) {
+        best = it;
+      }
+    }
+    if (best == images.end()) {
+      return nullptr;
+    }
+    return std::make_shared<phosg::ImageRGBA8888N>(std::move(best->second));
+  } catch (const std::exception& e) {
+    mm_log.warning_f("Failed to decode folder icon '{}': {}", icon_host, e.what());
+    return nullptr;
+  }
+}
+
+// Box-average downscale an image to a square of `target` pixels (the menu draws
+// icons at a fixed 32px). Producing the final size here keeps the icon crisp and
+// avoids caching a multi-hundred-pixel texture per scenario.
+static std::shared_ptr<phosg::ImageRGBA8888N> downscale_square(const phosg::ImageRGBA8888N& src, size_t target) {
+  size_t sw = src.get_width(), sh = src.get_height();
+  if (sw == 0 || sh == 0) return nullptr;
+  auto dst = std::make_shared<phosg::ImageRGBA8888N>(target, target);
+  for (size_t y = 0; y < target; y++) {
+    size_t sy0 = y * sh / target, sy1 = std::max(sy0 + 1, (y + 1) * sh / target);
+    for (size_t x = 0; x < target; x++) {
+      size_t sx0 = x * sw / target, sx1 = std::max(sx0 + 1, (x + 1) * sw / target);
+      uint64_t r = 0, g = 0, b = 0, a = 0, n = 0;
+      for (size_t yy = sy0; yy < sy1; yy++) {
+        for (size_t xx = sx0; xx < sx1; xx++) {
+          uint32_t c = src.read(xx, yy);
+          r += (c >> 24) & 0xff;
+          g += (c >> 16) & 0xff;
+          b += (c >> 8) & 0xff;
+          a += c & 0xff;
+          n++;
+        }
+      }
+      if (!n) n = 1;
+      dst->write(x, y, ((r / n) << 24) | ((g / n) << 16) | ((b / n) << 8) | (a / n));
+    }
+  }
+  return dst;
+}
+
+// Fall back to the scenario's splash picture (the 320x320-ish title image the
+// engine shows on load, PICT 32128/30128/32127) when there's no custom folder
+// icon. Downscaled to a 32px menu icon.
+static std::shared_ptr<phosg::ImageRGBA8888N> load_scenario_splash_icon(const std::string& dir_mac) {
+  std::string host = host_filename_for_mac_filename(dir_mac + ":Scenario.rsrc", false);
+  if (!std::filesystem::is_regular_file(host)) {
+    return nullptr;
+  }
+  try {
+    std::string data = phosg::load_file(host);
+    ResourceFile rf = ResourceDASM::parse_resource_fork(data);
+    for (int16_t id : {(int16_t)32128, (int16_t)30128, (int16_t)32127}) {
+      if (!rf.resource_exists(ResourceDASM::RESOURCE_TYPE_PICT, id)) continue;
+      try {
+        auto decoded = rf.decode_PICT(id);
+        return downscale_square(decoded.image, 32);
+      } catch (const std::exception&) {
+        // Try the next candidate id.
+      }
+    }
+  } catch (const std::exception& e) {
+    mm_log.warning_f("Failed to read scenario splash '{}': {}", host, e.what());
+  }
+  return nullptr;
+}
+
 void SetItemIconFromScenarioPng(MenuHandle theMenu, int16_t item, const char* scenario_name) {
   auto menu = mm.get_menu(theMenu);
   if (item < 1 || item > static_cast<int16_t>(menu->items.size())) {
@@ -313,9 +445,15 @@ void SetItemIconFromScenarioPng(MenuHandle theMenu, int16_t item, const char* sc
   }
   auto& menu_item = menu->items.at(item - 1);
 
-  // Find a .png file in the scenario's directory.
+  // Find a .png file in the scenario's directory. Bundled scenarios live directly
+  // under :Scenarios:; 3rd party scenarios live under the "3rd Party Scenarios"
+  // sub-folder, so fall back to there if nothing is found at the top level.
   std::string dir_mac = std::string(":Scenarios:") + scenario_name;
   auto files = mac_list_directory(dir_mac);
+  if (files.empty()) {
+    dir_mac = std::string(":Scenarios:") + kThirdPartyFolder + ":" + scenario_name;
+    files = mac_list_directory(dir_mac);
+  }
   std::string png_host;
   for (const auto& fname : files) {
     if (fname.size() > 4 &&
@@ -327,8 +465,15 @@ void SetItemIconFromScenarioPng(MenuHandle theMenu, int16_t item, const char* sc
   }
 
   if (png_host.empty()) {
-    mm_log.warning_f("No PNG icon found for scenario '{}'", scenario_name);
-    menu_item.icon_image = nullptr;
+    // No bundled PNG. 3rd party scenarios (unpacked from .sit archives) carry
+    // their icon either as a Mac custom folder icon, or — failing that — we use
+    // the scenario's own splash picture as a representative icon.
+    auto icon = load_scenario_folder_icon(dir_mac);
+    if (!icon) icon = load_scenario_splash_icon(dir_mac);
+    if (!icon) {
+      mm_log.info_f("No icon found for scenario '{}'", scenario_name);
+    }
+    menu_item.icon_image = std::move(icon);
     return;
   }
 
@@ -387,12 +532,8 @@ void popupCallback(int16_t menuId, int16_t itemId) {
 int32_t PopUpMenuSelect(MenuHandle menu, int16_t top, int16_t left, int16_t popUpItem) {
   auto m = mm.get_menu(menu);
 
-  auto sdl_window = WindowManager::instance().get_sdl_window();
-  auto properties = SDL_GetWindowProperties(sdl_window.get());
-  auto nsWindow = SDL_GetPointerProperty(properties, SDL_PROP_WINDOW_COCOA_WINDOW_POINTER, NULL);
-
   result = -1;
-  MCCreatePopupMenu(nsWindow, m, mm.get_current_menu_list(), {top, left}, &popupCallback);
+  MCCreatePopupMenu(nullptr, m, mm.get_current_menu_list(), {top, left}, &popupCallback);
 
   // Wait for either an item to be selected and fire the callback to modify result, or for
   // the menu to be closed without a selection, which will fire the callback with 0 as the result.
@@ -420,6 +561,14 @@ MenuHandle Realmz_NewMenu(int16_t menuID, ConstStr255Param menuTitle) {
   Handle handle = NewHandle(0);
   mm.register_new_menu(handle, menu);
   return handle;
+}
+
+void SetMenuItemIsHeader(MenuHandle theMenu, int16_t item) {
+  auto menu = mm.get_menu(theMenu);
+  if (item < 1 || item > static_cast<int16_t>(menu->items.size())) return;
+  auto& mi = menu->items.at(item - 1);
+  mi.is_header = true;
+  mi.enabled   = false;
 }
 
 void SetItemMark(MenuHandle theMenu, int16_t item, int16_t markChar) {
@@ -457,10 +606,21 @@ void SetItemDescription(MenuHandle theMenu, int16_t item, const char* descriptio
   menu->items.at(item - 1).description = description ? description : "";
 }
 
+void SetMenuItemShortcutText(MenuHandle theMenu, int16_t item, const char* shortcut_text) {
+  auto menu = mm.get_menu(theMenu);
+  if (item < 1 || item > static_cast<int16_t>(menu->items.size())) {
+    return;
+  }
+  menu->items.at(item - 1).shortcut_text = shortcut_text ? shortcut_text : "";
+}
+
 // === Description file loader ===
 
 static std::unordered_map<std::string, std::string> g_desc_cache;
 static bool g_desc_cache_loaded = false;
+
+static std::unordered_map<std::string, std::string> g_scenario_desc_cache;
+static bool g_scenario_desc_cache_loaded = false;
 
 static std::string desc_normalize_key(const std::string& name) {
   std::string key = name;
@@ -538,6 +698,58 @@ static void load_descriptions_file() {
   fclose(f);
 }
 
+static void load_scenario_descriptions_file() {
+  FILE* f = mac_fopen(":Data Files:Scenario Descriptions.txt", "r");
+  if (!f) {
+    mm_log.warning_f("Could not open Scenario Descriptions.txt");
+    return;
+  }
+
+  std::string current_key;
+  std::string current_body;
+  bool prev_blank = true;
+  char buf[2048];
+
+  auto flush = [&]() {
+    if (!current_key.empty()) {
+      while (!current_body.empty() && current_body.back() == '\n')
+        current_body.pop_back();
+      if (!current_body.empty())
+        g_scenario_desc_cache.emplace(current_key, std::move(current_body));
+      current_key.clear();
+      current_body.clear();
+    }
+  };
+
+  while (fgets(buf, sizeof(buf), f)) {
+    std::string line(buf);
+    while (!line.empty() && (line.back() == '\n' || line.back() == '\r'))
+      line.pop_back();
+    bool is_blank = line.empty() ||
+        std::all_of(line.begin(), line.end(),
+            [](unsigned char c) { return static_cast<bool>(std::isspace(c)); });
+    if (!is_blank && prev_blank && desc_is_entry_name(line)) {
+      flush();
+      current_key = desc_normalize_key(line);
+    } else if (!current_key.empty()) {
+      current_body += line + "\n";
+    }
+    prev_blank = is_blank;
+  }
+  flush();
+  fclose(f);
+}
+
+static const std::string* get_scenario_description(const std::string& name) {
+  if (!g_scenario_desc_cache_loaded) {
+    load_scenario_descriptions_file();
+    g_scenario_desc_cache_loaded = true;
+  }
+  std::string key = desc_normalize_key(name);
+  auto it = g_scenario_desc_cache.find(key);
+  return (it != g_scenario_desc_cache.end()) ? &it->second : nullptr;
+}
+
 const char* GetDescriptionFromFile(const char* item_name) {
   if (!g_desc_cache_loaded) {
     load_descriptions_file();
@@ -609,6 +821,69 @@ int32_t MenuManager_FindItemByKeyEquivalent(char ch) {
   return mm.find_item_by_key_equivalent(ch);
 }
 
+Handle Realmz_NewMBarFromMenus(const int16_t* menu_ids, int count) {
+  return mm.new_mbar_from_menu_ids(menu_ids, count);
+}
+
+void SetMenuItemKey(MenuHandle theMenu, int16_t item, char key) {
+  mm.set_menu_item_key(theMenu, item, key);
+}
+
+void AppendSubmenuItemCStr(MenuHandle theMenu, const char* title, int16_t subMenuID) {
+  mm.append_submenu_item_cstr(theMenu, title, subMenuID);
+}
+
+// Unpack any *.sit scenario archives in the 3rd party folder that have not been
+// extracted yet. third_party_host is the host path of the folder. A scenario is
+// considered already installed if its folder contains a Scenario.rsrc fork.
+static void install_third_party_scenarios(const std::string& third_party_host) {
+  if (!std::filesystem::is_directory(third_party_host)) {
+    return;
+  }
+
+  // Collect the archive list first: extraction creates sub-directories in this
+  // same folder, and modifying a directory while iterating it is unspecified.
+  std::vector<std::string> sit_paths;
+  for (const auto& entry : std::filesystem::directory_iterator{third_party_host}) {
+    if (!entry.is_regular_file()) {
+      continue;
+    }
+    std::string ext = entry.path().extension().string();
+    std::transform(ext.begin(), ext.end(), ext.begin(), ::tolower);
+    if (ext == ".sit") {
+      sit_paths.push_back(entry.path().string());
+    }
+  }
+
+  for (const auto& sit_path : sit_paths) {
+    std::string root = stuffit::root_folder_name(sit_path);
+    if (root.empty()) {
+      mm_log.warning_f("Could not read StuffIt archive '{}'", sit_path);
+      continue;
+    }
+
+    std::filesystem::path scenario_dir = std::filesystem::path(third_party_host) / root;
+    if (std::filesystem::is_regular_file(scenario_dir / "Scenario.rsrc")) {
+      continue; // already extracted
+    }
+
+    mm_log.info_f("Extracting 3rd party scenario archive '{}'", sit_path);
+    if (!stuffit::extract(sit_path, third_party_host)) {
+      mm_log.warning_f("Failed to extract '{}'", sit_path);
+    }
+  }
+}
+
+// Returns the host path of the scenario's info PDF (in the :Manuals: folder) if
+// one exists, else an empty string.
+static std::string scenario_pdf_host_path(const std::string& name) {
+  std::string host = host_filename_for_mac_filename(":Manuals:" + name + ".pdf", false);
+  if (std::filesystem::is_regular_file(host)) {
+    return host;
+  }
+  return "";
+}
+
 int PopulateScenarioMenu(MenuHandle theMenu) {
   auto menu = mm.get_menu(theMenu);
 
@@ -634,8 +909,18 @@ int PopulateScenarioMenu(MenuHandle theMenu) {
       "Half Truth",
   };
 
+  // A scenario folder is playable only if it contains both a file matching the
+  // folder name (the scenario data file) and a "Scenario.rsrc" resource fork.
+  // The latter holds the RLMZ resources, pictures, etc.; without it the scenario
+  // would crash on launch (e.g. scenarios copied off an old Mac that lost their
+  // resource forks).
+  auto is_playable_scenario = [](const std::filesystem::path& dir, const std::string& name) -> bool {
+    return std::filesystem::exists(dir / name) &&
+        std::filesystem::is_regular_file(dir / "Scenario.rsrc");
+  };
+
   // Scan only the bundled :Scenarios: directory so that user-installed scenarios
-  // from the userdata path (e.g. Kalypso's Island) are never shown.
+  // from the userdata path are never shown.
   std::string scenarios_host = host_filename_for_mac_filename(":Scenarios:", false);
 
   std::vector<std::string> valid;
@@ -645,8 +930,12 @@ int PopulateScenarioMenu(MenuHandle theMenu) {
         continue;
       }
       std::string name = entry.path().filename().string();
-      // A valid scenario directory contains a file with the same name as the folder.
-      if (!std::filesystem::exists(entry.path() / name)) {
+      // The "3rd Party Scenarios" folder is a container, not a scenario itself;
+      // it is scanned separately below.
+      if (name == kThirdPartyFolder) {
+        continue;
+      }
+      if (!is_playable_scenario(entry.path(), name)) {
         continue;
       }
       valid.push_back(name);
@@ -673,8 +962,64 @@ int PopulateScenarioMenu(MenuHandle theMenu) {
     auto& item = menu->items.emplace_back();
     item.name = name;
     item.enabled = false;
+    if (const std::string* desc = get_scenario_description(name))
+      item.description = *desc;
+    item.pdf_path = scenario_pdf_host_path(name);
+  }
+
+  // The Fantasoft scenario count determines topfantasoftsceanrio; anything past
+  // the divider added below is treated as a 3rd-party scenario by the engine.
+  int fantasoft_count = (int)valid.size();
+
+  // Scan the :Scenarios:3rd Party Scenarios: folder for additional, user-supplied
+  // scenarios. These are listed below a divider in plain alphabetical order.
+  std::string third_party_host =
+      host_filename_for_mac_filename(std::string(":Scenarios:") + kThirdPartyFolder + ":", false);
+
+  // 3rd party scenarios are distributed as StuffIt (.sit) archives so that their
+  // Mac resource forks survive being stored on non-Mac filesystems. Extract any
+  // that haven't been unpacked yet into sibling folders, which the scan below
+  // then discovers just like a normal scenario directory.
+  install_third_party_scenarios(third_party_host);
+
+  std::vector<std::string> third_party;
+  if (std::filesystem::is_directory(third_party_host)) {
+    for (const auto& entry : std::filesystem::directory_iterator{third_party_host}) {
+      if (!entry.is_directory()) {
+        continue;
+      }
+      std::string name = entry.path().filename().string();
+      if (!is_playable_scenario(entry.path(), name)) {
+        mm_log.warning_f("Skipping 3rd party scenario '{}' (missing data or Scenario.rsrc)", name);
+        continue;
+      }
+      third_party.push_back(name);
+    }
+  }
+
+  std::sort(third_party.begin(), third_party.end(), [](const std::string& a, const std::string& b) {
+    std::string la = a, lb = b;
+    std::transform(la.begin(), la.end(), la.begin(), ::tolower);
+    std::transform(lb.begin(), lb.end(), lb.begin(), ::tolower);
+    return la < lb;
+  });
+
+  if (!third_party.empty()) {
+    // Divider between bundled Fantasoft scenarios and 3rd party scenarios.
+    auto& sep = menu->items.emplace_back();
+    sep.name = "-";
+    sep.enabled = false;
+
+    for (const auto& name : third_party) {
+      auto& item = menu->items.emplace_back();
+      item.name = name;
+      item.enabled = false;
+      if (const std::string* desc = get_scenario_description(name))
+        item.description = *desc;
+      item.pdf_path = scenario_pdf_host_path(name);
+    }
   }
 
   mm.sync();
-  return (int)valid.size();
+  return fantasoft_count;
 }

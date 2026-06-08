@@ -117,7 +117,7 @@ refresh:
       gCurrent = aging;
       BackPixPat(base);
 
-      MoveWindow(GetDialogWindow(aging), GlobalLeft + (leftshift / 2), GlobalTop + (downshift / 2), FALSE);
+      WindowManager_CenterWindow(GetDialogWindow(aging));
       ShowWindow(GetDialogWindow(aging));
       ErasePortRect();
 
@@ -246,7 +246,7 @@ refresh:
       aging = GetNewDialog(191, 0L, (WindowPtr)-1L);
       SetPortDialogPort(aging);
       gCurrent = aging;
-      MoveWindow(GetDialogWindow(aging), GlobalLeft + (leftshift / 2), GlobalTop + (downshift / 2), FALSE);
+      WindowManager_CenterWindow(GetDialogWindow(aging));
       ShowWindow(GetDialogWindow(aging));
       ErasePortRect();
 

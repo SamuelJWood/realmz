@@ -721,7 +721,7 @@ void updatewalls(int32_t x, int32_t y) {
   int32_t t, tt;
 
   if (Rand(100) < 10) {
-    if ((!doreg3()) && (currentscenario > 10))
+    if ((!doreg3()) && (currentscenario > 5))
       scratch(452);
   }
 

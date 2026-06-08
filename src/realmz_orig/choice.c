@@ -252,7 +252,7 @@ short choice(short key) {
     }
   }
 
-  if ((theControl == departshop) || (key == 0x0d /* 'return'*/) || (key == 3 /* 'enter'*/)) {
+  if ((theControl == departshop) || (key == 0x0d /* 'return'*/) || (key == 3 /* 'enter'*/) || (key == 0x1b /* Escape */)) {
     sound(141);
     ploticon3(132, r);
     if (shopavail)
@@ -369,7 +369,7 @@ short choice(short key) {
               characterr = c[cr];
             theControl = rightarrow;
             change(FALSE, TRUE);
-            select[cr] = TRUE;
+            charselected[cr] = TRUE;
           }
         } else if ((cr != -1) && (!c[cr].items[index - 1].equip)) {
           moveicon();

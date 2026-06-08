@@ -1,0 +1,3185 @@
+# Realmz scenario text — Prelude to Pestilence
+# -----------------------------------------------
+# Edit the text between the ### header lines.
+# Do NOT modify the ### lines themselves.
+# Max lengths: SD2/DES = 255 chars, OD = 24 chars.
+# Empty entries are omitted; inject will not touch them.
+
+### SD2:0
+Do Not Use
+
+### SD2:1
+You detect no signs of a trap.
+
+### SD2:2
+You have checked the lock and are sure that it is not trapped.
+
+### SD2:3
+You have failed to pick the lock.
+
+### SD2:4
+The lock is now open.
+
+### SD2:5
+You have been successful at disarming the trap.
+
+### SD2:6
+You have failed to disarm the trap.
+
+### SD2:7
+Your inspection has detected a trap!
+
+### SD2:8
+Who will attempt to break the door down?
+
+### SD2:9
+After making a hell of a lot of noise nothing happens.
+
+### SD2:10
+Nothing happens.
+
+### SD2:11
+You have found a secret passage.  Do you enter?
+
+### SD2:12
+This passage leads to the surface.
+
+### SD2:13
+This passage leads to the underdark.
+
+### SD2:14
+You find nothing of value.
+
+### SD2:15
+Who is so brave as to volunteer?
+
+### SD2:16
+This gate is locked.
+
+### SD2:17
+You could easily barricade this door and rest in this room undisturbed.
+
+### SD2:18
+Your attempt at forcing the door has failed.  It is wedged shut.
+
+### SD2:19
+You collect anything you find on your vanquished foe before heading for the prize table to collect your winnings.
+
+### SD2:20
+You see some dinosaurs in the distance grazing on small cave plants.  Do you wish to attack them?
+
+### SD2:21
+You spot some fish-like creatures.  They seem to be looking for dead fish that have washed up on the rocks.  Do you want to attack them?
+
+### SD2:22
+This cave continues off into the distance.  There is a pretty strong breeze of less than fresh air.
+
+### SD2:23
+You see a small band of ogres in the distance.  Do you wish to attack them?
+
+### SD2:24
+You see a group of Dogre in the distance.  Do you want to attack them?
+
+### SD2:25
+You see the corpses of over 3 dozen Dogre.  Many are nothing but armor stretched over withered bones but several are considerably more fresh.  Even though, the flesh on some seems to be withered as if aged hundreds of years in just moments.
+
+### SD2:47
+You need to finish the quest.
+
+### SD2:48
+You have finished the quest.
+
+### SD2:50
+You enter the guard house outside the main gate to Castle Anthrax.  Several guards keep a wary eye on you as you approach the head Magistrate.  He is a stately looking man in fine robes.
+
+### SD2:51
+Judging by the man's large girth, robes are not all he fancies.  You approach his fine oak desk.  "Present your invitation so I may validate it for passage to yon castle."
+
+### SD2:52
+The lump of a man leans close so the guards do not hear.  "For 300 Gold, I shall give you an invitation, but you must swear to use it but once.  To do so more than once will raise my ire."
+
+### SD2:53
+In a booming voice, he pronounces you valid petitioners and bids the guards to let you pass into Castle Anthrax.
+
+### SD2:54
+He takes your clever forgery and looks it over carefully.  Ere he hands it back to you his eyes go wide and he summons the guards.  "Hold these fools, they attempt deception."  Guards rush to apprehend you.
+
+### SD2:55
+The sergeant of the guard grins in anticipation.  "You shall swing from the gallows ere today's sun bids us farewell."  The battle is joined.
+
+### SD2:56
+The Magistrate screeches in fear.  "Hold men, for I fear they have foul intentions!"  With your hostage you manage to beat a hasty retreat from the guardhouse and disappear.  Twas a difficult task with such bulk in tow.
+
+### SD2:57
+With the reluctant aid of the Magistrate you find your way to a secluded alley.  From the shouts you here in the streets, it would seem the whole kingdom is in search of your whereabouts.
+
+### SD2:58
+The guards begin to pursue when you here the Magistrate bellow with laughter as he calls them back.  "Run foul vermin, for we are far too busy to chase the likes of you!"  It would seem they did not take you as too serious a threat.
+
+### SD2:59
+After you explain that you only want to gain entrance to the court on honest business, the Magistrate is so amused that he lets you enter.  "Since you chose not to resist, I deem you to be honest folk, and this is an honest kingdom.  Enter as you will."
+
+### SD2:60
+He hands you an invitation to the Castle Anthrax.
+
+### SD2:61
+He bids you farewell as you make your way from the gate house.
+
+### SD2:62
+The lump of a man leans close so the guards do not hear.  "For 300 Gold, I shall give you a writ of entrance, but you will be able to use it but once."
+
+### SD2:63
+The Magistrate gazes at you and speaks "Without an invitation you will not be allowed through the main gate.  Perhaps we can work something out."
+
+### SD2:64
+"Very well then.   Guards!  Show these fine people to the door, they have no valid business in the castle this day.  Farewell good people."
+
+### SD2:65
+The gate guards check your invitation and wave you through.
+
+### SD2:66
+"Sorry citizen, without a formal invitation, the only way into the castle is in chains.  See the magistrate in yon building, he can explain all.  Now be off."
+
+### SD2:67
+You approach the main gate to Castle Anthrax.  As you near, the gate guard bars your path and asks to see your formal invitation.
+
+### SD2:68
+The corporal of the watch shouts "Be sure to check in with the Magistrate in the guard house before entering."
+
+### SD2:69
+The town patrol waves you through as they hand you a map showing where you can buy provisions.
+
+### SD2:70
+You send him to the gods.  In his dying whispers he says a prayer to an unfamiliar god.  It would seem he has cursed you with his last gasp.  One might hope he was not held in high regard by his deity.  You search the body.
+
+### SD2:71
+You take all his possessions as you strip him down to his breeches.  "You ruffians shall pay dearly for this!  The King will spare no expense at expunging you and your kind!" he cries.
+
+### SD2:72
+"Well, I should guess so.  I shall explain the error of your ways to the city guard.  It is fortunate for you that I am a patient man.  Now be gone, for I must return to my duties."
+
+### SD2:73
+As he flees, he shouts to no one in particular.  "Help, I am being waylaid.  Help....Help!"  Unfortunately for you, the streets are filled with troops searching for you and they stream towards you.  They do not even ask you to throw down your arms.
+
+### SD2:74
+Town guards rush towards you.  The corporal in charge screams, "They are the ones who murdered the good Magistrate.  Kill them!"  Troops are upon you before you can make good your escape.
+
+### SD2:75
+You have entered a rather fine tavern filled with only the best citizens of Bywater.  Most of the tables are filled with patrons eating spiced potatoes and engaged in interesting discussions.  You find yourself a table near the back.
+
+### SD2:76
+You are standing in a tavern.
+
+### SD2:77
+"The way I see it, those trolls need to be taught a lesson.  If the king won't take care of it, then the town council should.  I'm telling ya.  Someone better do something right quick.  People are afraid to leave town and travel the roads at night."
+
+### SD2:78
+"Steven says there is a rat cult under the Glowing Coal Inn.  I says he's crazy, that's what I say.  Steven and a few of his men are planing to set out and find that cult and put it to rest.  I says, 'I'll watch the women folk while your gone fools!'"
+
+### SD2:79
+"Seems like everybody in town be saying that those Gnath down south be getting too big fer der breeches.  I be agreeing.  Two merchants due today didn't show and one of dem was supposed to be a Wizard.  'Tis bad times when Wizards start to disappear."
+
+### SD2:80
+"I hear there be an old underground city called Waterford southeast of town.  Been buried for a hundred years, maybe more.  Full of treasure for he who's brave enough to go get it. Master Thew the librarian has been tellin' everybody seen it."
+
+### SD2:81
+"King Sevren's daughter disappeared a few days ago.  Rumor has it she turned into a Dragon and flew out of the tall tower.  I'm thinking too many people have been drinking too much grog."
+
+### SD2:82
+"I hear the city council is planning on taking on King Sevren for rule of the whole province.  I'm telling ya, there be some sparks flying soon!"
+
+### SD2:83
+"My sister's new boyfriend is the sergeant of the south gate.  He says the King's men captured a monster and have it chained beneath the guards' quarters.  A big brute it is, all green and scaly.  He set his mages to work on picking its brains."
+
+### SD2:84
+"Word has it, there's a 5,000 gold piece reward for the capture of the leader of a band of Orcs that have been raiding the village of Sestoon.  I believe it, too.  A big band of mercenaries arrived today to set out and claim that reward."
+
+### SD2:85
+"Thanks friend."  He pockets the coins and pats you on the back.  He seems a bit more friendly to you.
+
+### SD2:86
+"Oh, I don't really know much."  She smiles and points to the seedy looking man.  "Ask him, he's been telling me all kinds of stories all day."
+
+### SD2:87
+As you approach the table, he places his palm on the hilt of a rusty looking sword.   You realize he is not a man but a Half Orc.  And judging by the bulk under his worn tunic, a strong one at that.
+
+### SD2:88
+"What you want?"   "Me no make trouble! Good King say me no have to leave!"  His panic quickly subsides as it begins to dawn in his puny mind that you are not the King's men and you are not there to kick him out of town.
+
+### SD2:89
+"Targ no go out of town.  Targ being chased.  You help Targ?"  He grasps at your sleeve as he stands.  "Me go with you, tell big secret.  We go to see big iron box near lake and...AAAARRRRGGGG!!"  You see a steel point sprout from his chest.
+
+### SD2:90
+He pitches forward with a red feathered shaft growing from his back.  As bile spews from his slack jaw, he thrusts a slip of paper into your grasp.  You see his assassins at the bar.  Three very large orcs smiling a toothy grin and brandishing weapons.
+
+### SD2:91
+They make for the door in haste, yelling, "Targ the thief has gotten his due! Any man who follows us shall join him in Hades!"  Apparently, they did not see the slip of paper Targ gave you.
+
+### SD2:92
+As you step from the door, you meet a hailstorm of arrows.  They seem to appear from  nowhere and pin you down in the doorway.  You are forced to retreat inside.   By now, they have surely made it to safety.
+
+### SD2:93
+His body is filthy and unwashed.  You find several copper coins that are all but worthless.  In your haste to search him you take less caution than is wise and prick yourself on a poison needle concealed in his sleeve.
+
+### SD2:94
+You are at your table when the town guards show up.  Luckily, nobody wants to get so involved as to implicate you in any manner.  The guards bind Targ's arms to his chest and drag him from the inn.
+
+### SD2:95
+As you examine the slip of paper, you see that it's a map describing the location of an old crypt in the graveyard.
+
+### SD2:96
+The town guard is quick to arrive.  You explain your view of what happened.  The guards prepare to leave with the body and  begin a search for his assassins.
+
+### SD2:97
+The man in charge of the guards is known by the name of Haikur.  He invites you to visit him at the guard's barracks.  He hands you a paper.  "This will allow you to enter Castle Anthrax so you may visit.  I believe we have much in common.  Good day."
+
+### SD2:98
+Who will do it?
+
+### SD2:99
+You enter the barracks of the town guard.
+
+### SD2:100
+As you enter, you hear sharp words being exchanged from two high-ranking men.  It would seem the guardsmen are split into two factions.  One faction appears to be headed by a man by the name of Haikur, the other by a man named Thurfur.
+
+### SD2:101
+Before you catch too much of the argument, the barracks falls silent as all heads turn to you.  Thurfur comes over and demands to know your business for being there.  Not satisfied with your answer, he orders you to leave.  Do you leave?
+
+### SD2:102
+"We ask you to leave one last final time, citizens.  This area is restricted to you.  Do not make us take you by force."  Judging by the atmosphere in the barracks, you get the feeling they may attack if you stay any longer.  Do you leave?
+
+### SD2:103
+"Very well.  Now is a rather poor time to test my never plentiful supply of patience."  Thurfur draws steel and falls upon you.
+
+### SD2:104
+Haikur recognizes you and walks over to greet you.  He introduces you to Thurfur who seems to take an immediate liking to you.  It is obvious both men have a certain distaste for each other, but a strong sense of duty keeps them from all out bloodshed.
+
+### SD2:105
+There have been several threats to Bywater as of late and disagreements on how to handle the situation.  You sit at a table and listen to both men as they tell their stories in an effort to win your assistance.
+
+### SD2:106
+Haikur speaks, "There have always been Goblin raids on some of the more far-flung southern farmsteads, but recently they grow more and more bold.  In days past, they would steal a pig or two but would never harm the farmers."
+
+### SD2:107
+"Yestereve, we discovered two farmsteads burned to cinders and nothing can be found of the peasants that worked the land.  I say we should squelch these foul vermin before they begin raiding some of the smaller hamlets."
+
+### SD2:108
+Thurfur speaks, "That can wait Haikur.  Our more immediate threat is to the east.  Orc tribes have been raiding our eastern provinces.  Just last week, Vesba was sacked and nearly fifty people lost their lives.  These orcs must pay for their crimes!"
+
+### SD2:109
+Both men are determined to take their troops and engage the enemy.  What do you do?
+
+### SD2:110
+Both men are determined to complete their quest on their own and bid you good day.  They set about making preparations for their upcoming battles.
+
+### SD2:111
+Thurfur scowls as he walks away.  "So be it, fools.  The kingdom shall not suffer for your foolish choice.  Men, we march east in a few days.  With or without Haikur and his friends!  Gather your gear and assemble at the east gate!  Good day citizens."
+
+### SD2:112
+Haikur scowls as he walks away.  "Very well.  I count you amongst fools for not seeing the more serious danger.  There seems little I can do.  My men march south.  All right men! Fall out to the south gate!  Good day fine people, to you as well Thurfur."
+
+### SD2:113
+You enter a pleasant little shop that seems well stocked.  The shopkeeper smiles and asks you to look around at his fine wares.   (To enter shops, click the button labeled SHOP at the bottom right of the game screen.)
+
+### SD2:114
+This is a temple dedicated to Sestuona, goddess of nature.  A portly-looking man wearing a green robe approaches and speaks.  "Welcome travelers, to this most holy of temples.  If you like, you may partake of our healing skills."
+
+### SD2:115
+You come upon a shocking scene.  You spy a small group of town bullies attacking an old woman.  It would seem they are after a dagger she is clutching to her chest.  Do you wish to intervene on her behalf?
+
+### SD2:116
+The bullies do not have the stomach to fight and flee at your approach.  The old hag scowls at you, "Stay away!  You can't have it!"  The dagger she is clutching is rather ornate and seems very likely to be magical in nature.  What do you do?
+
+### SD2:117
+"You young whelps!  You shall rot in hell for your evil ways!"  Having lost the dagger she shuffles away.
+
+### SD2:118
+As you walk away, she yells, "Come and see me at my shop.  I will give you a special price!"  She quickly disappears around a corner before you realize that you do not even know where her shop is.
+
+### SD2:119
+You notice a small wooden sign near the window.  It's so old and faded as to be almost illegible.  It reads, "Madam Osswel's Specialty Shop."  It appears to be closed.
+
+### SD2:120
+Madam Osswel's specialty shop appears to be open.  As you glance in through the window, you recognize Madam Osswel as the old hag you saved from the ruffians.
+
+### SD2:121
+This is an old abandoned well.  It looks to be a long ways down.  The bucket and crank are almost rotted out.  This well has not been in use for quite some time.
+
+### SD2:122
+You hear the yip of a frightened dog followed by a howl and barking.  A dog appears to be in distress somewhere close by.  Hopefully, someone does not intend to dine on poor man's filet mignon tonight.
+
+### SD2:123
+A wretched young gutter snipe runs up to you and begins crying so loud you can barely make out what he is saying.  "Oh, please help me, please, please!  My dog has fallen into the old well and I can't get him out.  Please help!"  What do you do?
+
+### SD2:124
+"Oh, thank you so much!  Come, this way.  Hurry! Hurry!"  He leads you to the old abandoned well.  At the bottom, you see a miserable little mutt covered in mud.  The bucket for drawing water is so old it's completely useless.
+
+### SD2:125
+The sides of the well are slick with green slime.  You estimate it to be about 50 feet to the bottom.  It is amazing that the mutt survived such a fall.
+
+### SD2:126
+Your attempt at climbing down the well has failed.  You lose your grip and fall to the bottom.  Now you need to be rescued as well.  The boy bursts out in tears all over again.  What have you gotten into?
+
+### SD2:127
+You have been successful and have retrieved the mutt.  The boy looks at you with misty eyes as he thanks you.  Somewhere a passionate deity looks down and smiles.   You are invited to come play in the old cave.  "What cave?" you ask.
+
+### SD2:128
+You now need to be rescued.  This is not how a hero should go about this.  In the well, you find an old rope ladder.  You throw one end up and climb out.   As you exit, the dog jumps out and runs off.  A screaming boy follows behind.
+
+### SD2:129
+As you are bumbling about at trying to rescue the dog, the town guard shows up.  After much laughter at your expense, they produce a rope and complete the rescue.  This does not do much to raise your status as a hero.
+
+### SD2:130
+You come upon an inn and cookhouse.  The smell of hot meals and the sounds of good conversation waft to you from inside.   Do you step inside?
+
+### SD2:131
+As you try the fare, disappointment is king. The aroma far outshines the taste.  Most of the food is very bland indeed. Some is outright awful.  The cook approaches you.  "Well, good patrons,  how is my fine meal today?"
+
+### SD2:132
+The cook's face grows red as veins bulge from his neck.  He produces a meat cleaver and charges you yelling obscenities.  You easily hold him at bay until other patrons pull him into the kitchen.  You decide that now is a good time to leave.
+
+### SD2:133
+He smiles a toothy grin, "Ah, thank you fine people.  For a very special price of but 10 Gold,  I will let you taste this fine wine."  He pulls a rather crusty looking bottle from a pocket and offers it to you.  What do you do?
+
+### SD2:134
+"Very well.  Please feel free to visit this humble house of finery again."  The cook retreats to the kitchen as you decide to leave the remnants of your meal to feed the squalor bins.
+
+### SD2:135
+Before you drink the wine, you read the label.  It is Bordeaux Sal La Sal,  House of Chalingrad, Waterford, 1423.  You mention to the cook that you believed the city of Waterford to be but a legend.
+
+### SD2:136
+"Oh, well. I guess not.  I don't really know much about such things.  I was given this bottle by Master Thew, the chief librarian across the street."  The cook bids you good day and departs for the kitchen.
+
+### SD2:137
+You enter the town archives.  An old withered man with dried leather for skin sits perched behind a sturdy desk.  He is scratching at some parchment with an ink quill.  As you approach, he frowns and looks up with a furrowed brow.  "Sssshhhh!"
+
+### SD2:138
+"You people make more noise than a herd of rampaging Trollocs."  He continues with a sour look upon his face, "What is it that you want?  We are very busy here.  You may look around, but do not bother me unless I am needed."
+
+### SD2:139
+"Waterford was supposed to be but a legend.  I have discovered in my days of research through volumes of forgotten lore that it did exist.  In fact, it lies through a secret cave in the mountains east of here.  Only the best of wines were made there."
+
+### SD2:140
+You discover one tome to be very different than the rest.  It appears to be magical.  You easily slip it under your clothing and make off with your theft.
+
+### SD2:141
+You browse through many volumes of text.  If nothing else, you feel more enlightened.
+
+### SD2:142
+You are standing in the town archives.
+
+### SD2:143
+You are attacked by a band of Goblins.
+
+### SD2:144
+You have the pick of their equipment.  Most of it is shoddy and stinks of Goblin-  an odor most find almost unbearable.
+
+### SD2:145
+You have the pick of their equipment.  It is well-made and will last for years to come.
+
+### SD2:146
+You engage the Royal Guard.  Two of the King's commanders number among your foe.
+
+### SD2:147
+You are attacked by the Royal Guard headed by a corporal.
+
+### SD2:148
+You are attacked by the Royal Guard led by a lieutenant.
+
+### SD2:149
+You are attacked by the Royal Guard led by a sergeant.
+
+### SD2:150
+You are attacked by a small group of Orcs.
+
+### SD2:151
+You are attacked by a large group of Orcs.
+
+### SD2:152
+You collect their equipment searching for valuables worthy enough to keep.
+
+### SD2:153
+"I sought it out many years ago and brought some wine back, but I have not been there in many years.  The exact location of the city is lost to me.  I only recall the way into the Grimwall mountains."
+
+### SD2:154
+Thurfur turns to you, "He is but a fool!  We have many preparations to make.  Meet me at the east gate when you are ready to depart.  We shall teach these foolish Orc tribes that we are their betters! Remember, the east gate.  May Adon smile upon us!
+
+### SD2:155
+Haikur turns to you, "Thurfur has always had a hot temper.  He seldom sees things clearly as do I.  Let us prepare for the upcoming battle!  Meet me and my men at the south gate when you are ready to depart.  These evil goblin folk shall rue this day!"
+
+### SD2:156
+Thurfur and his men are at the east gate preparing to leave as you approach.  Many colored banners flap in the breeze depicting the King's standard-a huge gold dragon with a pair of swords clenched in its fists.
+
+### SD2:157
+"Ah!  Our heroes have come to join the fun!  Let us set out to crush the rabble!"  You make acquaintance with Thurfur's lieutenants and sergeants.  Amongst great fanfare from the townsfolk, you set out on your mission.
+
+### SD2:158
+At long last, your column comes to a halt.  You see an Orc village in the distance.  Thurfur rides up alongside, "I deem this to be the very tribe that waylaid Sestoon.  Let us charge in.  Surprise shall be a formidable ally to lead our just cause.
+
+### SD2:159
+Thurfur raises a mail-clad arm to signal the bugle to sound the charge.  Your mounts churn up dust as they dash into the village.  Unaccustomed to fighting on horseback, you dismount once you're in the fray to fight on solid ground.
+
+### SD2:160
+You have come to the town brothel.  Perfume fills the air and covers any original odor that may come from this former boarding house.  A sign outside the building gives prices for various races and sexes.
+
+### SD2:161
+It appears to be well-managed and doing a lot of business.  There is a steady stream of customers going in the front door and another coming out the back.
+
+### SD2:162
+As you step inside, you are instructed by several thugs to see a small scruffy- looking dwarf behind a desk.  You step up to the desk, as he smiles at you displaying more gold teeth than ivory.
+
+### SD2:163
+The dwarf thanks you for your interest and asks you to look around.  "Ha Ha Ha!  You'll come back.  They always do."
+
+### SD2:164
+As you rejoin the group, you notice you feel a little strange.  It becomes apparent that you have caught some kind of disease.  It would seem a trip to the Blue Temple is in order.  What would your mother say?
+
+### SD2:165
+"You're cute, honey!  Hey, are you one of them mercenary types that's here to collect that 5000 gold piece reward I been hearing about?  How much of that 5000 do you get?  You know, I kinda like you."
+
+### SD2:166
+"I don't believe all this scare-talk about trolls, do you?  My cousin says she started that rumor just so her boyfriend would walk her home at night."
+
+### SD2:167
+"Did you see that big green monster the king's men were dragging into the guards' quarters last night?  Probably not. It happened late at night.  Not too many people of honest professions up that late.  Not that what I do isn't honest.  Just late hours."
+
+### SD2:168
+"I hear master Thew over at the library is giving away wine from Waterford.  I always thought that place was just a legend.  If your interested I'm sure master Thew could tell you all about the place."
+
+### SD2:169
+He looks around to see that nobody else is watching too closely.  He whispers, "Follow me upstairs.  The treasure is ready to be split up."
+
+### SD2:170
+You follow him to a room upstairs.  You are standing in the room with seven large men.  The door behind you slams shut and you hear a jam being placed behind it.  It would seem you have walked into a trap.
+
+### SD2:171
+You push on the door to attempt a quick escape but it's no use.  Your stuck in this room and will have to fight for your lives.
+
+### SD2:172
+You notice a large iron box under a loose floorboard.  It would appear that you have found the profits from the brothel.
+
+### SD2:173
+You have entered the blacksmith's shop.  The smith is hard at work on repairing the bellows.  His face is covered with soot except for a clean streak leading down each cheek.  It would appear he has been crying.
+
+### SD2:174
+"Hello.  Good people, what can I do for you today?"  You ask him where his apprentice is that he must stoop to fixing the bellows.  "My son was slain several days ago in the Barren mountains.  We found his body defiled by the evil sluk that live there."
+
+### SD2:175
+"I cannot get the King's men to rout out these foul vermin, and I do not have the gold to purchase retribution from mercenaries.  All I have is the sweat of my brow, and that buys little justice these days.  You would seem to be of hardy stock."
+
+### SD2:176
+If you were to send these foul sluk to the pits that spawned them, I would be eternally grateful."  What do you do?
+
+### SD2:177
+"I bid you good day then, for I have much work to do and can ill afford to waste my time telling my problems to every wayward band."
+
+### SD2:178
+You end the misery of the poor sod who fell victim to this foul state.  As you search the area you see a blood-stained diary.  Most of the pages have been torn out and are nowhere to be found.  One page remains and it reads...
+
+### SD2:179
+You see a small village in the distance.  It appears to be vacant.  Many of the straw huts have fallen into total decay.  Pieces of broken crockery and cooking utensils lie scattered about.  Whoever lived here seems to have beaten a hasty retreat.
+
+### SD2:180
+This appears to be the site of a rather large cavern that has recently caved in.
+
+### SD2:181
+You have only managed to bring fresh debris down around you.
+
+### SD2:182
+It is a sickly sight to see living flesh growing out of the very rock.  However, your spell is far too feeble to move such large quantities of earth.
+
+### SD2:183
+You have succeeded in uncovering the passage behind the cave-in.  It is now  possible to traverse the passage to wherever it may take you.
+
+### SD2:184
+As you stand pondering the situation, you here a deep rumble.  You look skyward and see the whole slope begin to slide towards you.  You manage to get away from the area with only slight damage.  However, the old site is hopelessly buried.
+
+### SD2:185
+The tunnel continues west.  You smell decaying flesh.  The odor is almost overwhelming.
+
+### SD2:186
+You find the slain bodies of several goblins.  Their bodies have been scattered about the area.  You also see a small pile of what looks to be polished stones.  As you kick the pile around you notice a gem among them.  Do you wish to look for more?
+
+### SD2:187
+You search the remains of the cavern and find nothing of interest.
+
+### SD2:188
+You kick around the stones and a small treasure of gems is revealed.
+
+### SD2:189
+Do you wish to look for more gems?
+
+### SD2:190
+As you are rummaging around in the polished stones, you hear a bizarre sound.  From around a large stalagmite a group of large cave bears come to investigate your scent.
+
+### SD2:191
+You manage to flee the cavern.  The speed of these huge creatures is amazing, and they dog your heels all the way to the entrance.  You get into the open, but it is of no use.  You will have to face these mighty foes.
+
+### SD2:192
+You finish your search of the stones and find a few remaining gems.
+
+### SD2:193
+This is an ancient secret passage into the courtyard of castle Anthrax.
+
+### SD2:194
+"Why, the old cave that leads into the castle courtyard."  He draws you a map on a piece of parchment.  You kindly turn down the chance to play with him, and he skips off with his happy, but muddy friend.
+
+### SD2:195
+The gate stands unguarded.  A notice from the king is posted.  It reads, "Stanchion burial lands are closed until further notice.  All those that enter do so of their own accord and at their own risk."
+
+### SD2:196
+The graveyard has fallen into a state of total disrepair.  Most of the graves and crypts have been looted.  The caretakers have not been busy for quite some time.
+
+### SD2:197
+The stench of death assaults you as you are attacked by zombies.
+
+### SD2:198
+The reek of death and decaying flesh hang heavy in the air as you are attacked by zombies and ghouls.
+
+### SD2:199
+You search the putrid bodies but find nothing of value.
+
+### SD2:200
+The doors on this crypt are broken as are most in the graveyard.  As you peer in, you happen to see a small crack in the floor.  Your investigation reveals that it is a trap door that leads to a subterranean crypt.
+
+### SD2:201
+This room lies undisturbed.  As you stand in the doorway, you feel a strong desire to leave this room.  That might explain why thieves have not pilfered the coffin in this room.  It lies covered in centuries'  old dust.  Do you approach it?
+
+### SD2:202
+The coffin is made of solid stone with a stone lid.  Dust leaps into the air as you pass across the floor.  You are the first person to enter this crypt in countless years.  The coffin must contain one of the first occupants of this now decrepit tomb.
+
+### SD2:203
+You lift off the lid and peer inside, but it appears to be empty after all.
+
+### SD2:204
+You FEEL rather than see a corpse in the coffin.  You come to the conclusion that the corpse inside must be invisible.  You feel around the corpse and discover a necklace.  You remove it and the corpse reappears.  You find keys as well.
+
+### SD2:205
+In the process of demolishing the coffin, a corpse appears out of nowhere.  It was in the coffin wearing an ornate necklace that has slipped off its neck.  A large piece of stone has destroyed the necklace.  However, you do find some iron keys.
+
+### SD2:206
+You carefully place the lid as it was and stand back.  Except for the disturbed dust,  all is as it was before you entered.
+
+### SD2:207
+You see a small notch carved into the wall.  It holds an iron chest bolted to the wall.
+
+### SD2:208
+Your attempt at dislodging the box has failed.  You have triggered a trap.
+
+### SD2:209
+With the trap triggered, the lock is quickly defeated.  Inside, you find treasure.
+
+### SD2:210
+You hear a click as a trap disarms and the lock opens.  Inside you find treasure.
+
+### SD2:211
+Nothing seems to happen.
+
+### SD2:212
+You come upon some fresh excavation.  It would seem that someone or something has burrowed up from below.  The tunnel is considerable in size and looks to be frequently used.  You venture inside.
+
+### SD2:213
+This hole leads to Stanchion graveyard.
+
+### SD2:214
+You descend approximately 60 feet below the surface by means of a well-trod slope.  It would take countless shuffling feet to compact the earth to such a flat and hard surface.  It is likely that you are not alone below the city of Bywater.
+
+### SD2:215
+A group of subterranean creatures attack you.
+
+### SD2:216
+You find nothing of value.
+
+### SD2:217
+This chamber has been looted.  You find nothing of interest.
+
+### SD2:218
+The door to this chamber is locked.  It is made of quite solid oak.
+
+### SD2:219
+As the echoes fade from your pounding, you hear a faint shuffling.  It would seem you have gained the attention of some of the denizens of this crypt.
+
+### SD2:220
+This wall is but an illusion.  Behind its fake facade is an earthen tunnel.  It leads to an underground cavern.
+
+### SD2:221
+This large cavern appears to be used as both a laboratory and a place of ritual.   Several pedestals have been built.  Their appearance suggests they've been used  to strap human-sized beings in place for experiments.
+
+### SD2:222
+All are stained with dried blood and ichor.  Off to one side of the cave you see a decomposing pile of human appendages-  arms, legs, heads and all manner of organs.  It would appear that someone has been experimenting on bodies.
+
+### SD2:223
+One of the pedestals still has a body strapped to it.  The flesh on half of its body has decomposed so badly that it is literally falling off the bones.  Next to the body is a tray of long thin knives. Some madman has been flaying flesh.
+
+### SD2:224
+As you stand in witness to this awful carnal scene, the body on the pedestal begins to move slowly.  It makes no attempt to escape its bonds for it would appear to be a zombie.  Its creator has left it to decompose over the centuries.  Do you approach?
+
+### SD2:225
+"The chamber has grown too small for my army.  I have to locate a larger cavern to continue my preparation of the assault on  Spider Tower.  In addition, I need more supplies from the king.  He seems reluctant to meet with his end of the bargain."
+
+### SD2:226
+You happen upon a group of myconids.  They do not see you.  Do you wish to attack them?
+
+### SD2:227
+You stand at the entrance to an enormous cave.  Zombies mill around in great numbers.  Towards the center of the cave, you see a cleric standing over a dead body chanting arcane words.  Suddenly, the dead body shudders and rises.  It shuffles off.
+
+### SD2:228
+He suddenly sees you and calls zombies to stand between him and you.  In a very strange tone of voice he says, "Where have you been?  I'm almost out of bodies and the time for attack grows nigh."
+
+### SD2:229
+He shouts, "You shall pay for your interference!  You are a minor problem to deal with!"  Zombies shuffle forth to attack you.  Their forces are bolstered by myconids and a few ghouls.
+
+### SD2:230
+Now that the cleric has perished, the remaining ghouls flee.  All the remaining zombies collapse in heaps.  One zombie, however, does not collapse.  In fact, it turns to you and speaks.
+
+### SD2:231
+"Thank you, fools!  I was imprisoned by this foppish man and bound to do his bidding.  Now that you have set me free of his bonds, I shall take my revenge-not on him, but on ALL the living."  He waves his hands and disappears in a ball of flame.
+
+### SD2:232
+You gather together the dead bodies and burn them.  It would seem there is a new enemy-one who is both undead and magical.
+
+### SD2:233
+"I assume that you are not here to deliver bodies.  My name is Arrock, high priest of the king's archdiocese.  He has tasked me to rid the city of that accursed Spider Tower in any manner I see fit.  My army of undead will deal the fatal blow."
+
+### SD2:234
+"The days of that foul Spider cult are at an end.  In fact, I was expecting one final shipment of bodies to add to my army before I commenced my attack.  However, if you were to join me, we would be more than strong enough to attack now.  What say ye?
+
+### SD2:235
+"Excellent! After this final batch, my army shall be more than strong enough to defeat the puny defenses of that accursed Spider Tower.  Bring them in here and lay them next to the wall."
+
+### SD2:236
+"In any case, I have waited far too long for the last shipment of bodies.  I depart now to deal with this foul tower.  Farewell.  Tell the king he shall once again be sole master of this fine city."  He marches out with his army of undead.
+
+### SD2:237
+"Good! Good!  Let us be off to mete out the king's justice.  I have had my forces digging a tunnel under the Spider Tower for several weeks.  Now all is ready to seal their doom.  Ha!  We shall arrive at their very doorstep."
+
+### SD2:238
+This is the gate to enter the Spider Tower.  Herein dwells an evil cult bent on total dominance of the world by arachnids and others of their ilk.  The gates are massive, and the walls are guarded by fierce creatures.  Do you wish to attack?
+
+### SD2:239
+You are immersed in a veritable cacophony of spider beasts, all of them quite hostile to you.
+
+### SD2:240
+You have managed to battle your way past the gate.  Something tells you that the tough battles are yet to come.
+
+### SD2:241
+After the thrashing you gave the creatures at the gate before, the gate is now only lightly guarded.
+
+### SD2:242
+The courtyard is filled will small groups of arachnids.  They scurry about in all directions.  A small group crosses your path and attacks.
+
+### SD2:243
+You move away as their bodies drip ichor from punctured exoskeletons.
+
+### SD2:244
+You enter the spider tower.  The main level is shaped like a spider.  Inside, two clerics have prepared for your arrival.  They have heard the clamor outside, and have prepared for battle.  You face a large force of eight legged foes.
+
+### SD2:245
+You have defeated the keepers of the Spider Tower.  The remaining arachnids in the area wander off to nooks and crannies in the surrounding countryside.
+
+### SD2:246
+The chest is full of valuable treasure and magical items.
+
+### SD2:247
+You burrow up through the last few feet of earth and emerge at the very foot of the tower.  You rush inside with your undead allies.  You come upon two clerics  discussing business.  There is a sizable contingent of arachnids in attendance.
+
+### SD2:248
+They see you and your undead army rush in.  They command their sickly army to destroy you.  Arachnids and undead mix in a ghastly battle that can only resemble a freak show.
+
+### SD2:249
+You have walked into a tannery.  Many fine quality leather goods are made and sold here.
+
+### SD2:250
+The blacksmith hands you a map showing the location where they found his son's body.  As you depart he says, "Thank you, good people.  Return when you have cleansed the land of these foul vermin, and we shall celebrate."
+
+### SD2:251
+In this hut there is a wounded goblin lying on the floor.  Blood leaks slowly between his fingers as he clutches at his chest.  He sees you and his eyes grow wide in horror.  He topples over dead, his face locked in a horrible grimace.
+
+### SD2:252
+You search his body and turn up a map scribbled on a piece of bark.  What it represents, no one will ever know.  As you prepare to leave, you hear a loud thump. A  party of krise storm the village behind you.
+
+### SD2:253
+Among the items, you find a sack with personal items belonging to the blacksmith's son.  It would seem you have killed the very group who had slain the smith's son.
+
+### SD2:254
+You spot a group of goblins before they spot you.  Do you wish to attack them?
+
+### SD2:255
+You spot a group of orcs before they spot you.  Do you wish to attack them?
+
+### SD2:256
+You burst into the most flamboyant hut in the village.  The goblin king is inside with several of his most prominent warriors.  They jump in front of the king ready to attack.  However, the king barks out a sharp command to call off his dogs of war.
+
+### SD2:257
+He speaks in surprisingly good common, "Why you come my land.  Me no have war with human king.  We no raid human village.  We only have war with krise sluk.  We fight sluk well.  We good warriors.  Why you no like goblin?"
+
+### SD2:258
+His goblin dogs rush you, literally bowling you over and out the door before you can set up a good defensive position.  Goblins join the fray from every direction.  It would seem that you have made a gross miscalculation of the goblin king's forces.
+
+### SD2:259
+You have defeated the goblin king's strongest warriors.  The remaining goblins in the village flee in panic.  Inside his hut, the goblin king awaits his fate.  As you approach, he begs your mercy as only a goblin could.  Do you grant it?
+
+### SD2:260
+You execute the goblin king and gather whatever you find in the shack as spoils of war.  It appears he lived more like a pauper than a king.
+
+### SD2:261
+He whimpers in excitement at being spared and speaks, "My people stand no chance now.  We must flee, for the krise sluk are too numerous.  I show you where they live so you shall know where not to go as well."  He gives you a map.
+
+### SD2:262
+"I let you go if you pay.  You pay king 500 gold and me let you go.  You no pay, me have warriors kill you and take gold.  PAY!"  Do you pay?
+
+### SD2:263
+"Me king! Lead sneak attack now.  You come."  He stands and dons his armor and weapons and leads his force to a secret cave just west of the great iron door.  "We sneak here.  Krise not know we come.  We kill them from behind. "
+
+### SD2:264
+"Goblin and krise always fight.  Now krise have powerful wizard.  They kill many goblin.  We need kill all krise, but they hide behind great iron door.  We no can break it down.  Now we find secret cave and sneak up behind.  We kill all krise."
+
+### SD2:265
+He leads the war party into a long, twisting, turning crevasse.  It is barely wide enough to squeeze through.  You exit into a large alcove.  Once the entire force is assembled, the goblin king leads a small scouting party ahead to set up the ambush.
+
+### SD2:266
+You come upon a small band of krise manning a great iron door.  It is massive and obviously beyond their building capabilities.  The goblin king believes it is the work of a wizard who made a pact with the krise and has helped them kill many goblins.
+
+### SD2:267
+Plans are laid, and the rest of the force is brought up.  On the king's command, goblins storm the iron door in great force.  The puny krise seem to stand little chance.
+
+### SD2:268
+It appears the krise were waiting for the wizard to show up while they stood guard over a reinforced chest.  The goblin king shows little interest in this chest.
+
+### SD2:269
+He turns to you and speaks,  "You go. We kill krise now.  We need your help no more.  You go."  He turns and leads his forces deeper into the caves in search of krise to kill.
+
+### SD2:270
+Your fumbling around with the box has caused some vials of liquid to break inside.  Liquid oozes out of the box and seeps into the ground.  The smell is repugnant.  Most likely the vials contained magic potions.  What a pity!
+
+### SD2:271
+With the glass already broken, you smash the box open.  There are several smashed vials and a pair of scrolls.  They are now soaked and worthless.
+
+### SD2:272
+As you hit the box, you hear glass break.  Inside are several smashed vials and a pair of scrolls.  They are now soaked and worthless.
+
+### SD2:273
+The chest pops open revealing several vials and a pair of scrolls.
+
+### SD2:274
+You turn your attention to the chest.  You tip it slightly and hear several objects made of glass clink together.
+
+### SD2:275
+You spot a group of undead stumbling about.  Do you wish to attack them?
+
+### SD2:276
+At the bottom of the well, you find an old rope ladder.  It is very old but usable.  You throw one end up and climb out.   As you exit the well, the dog jumps out of your arms and runs off.  A screaming boy is right behind.
+
+### SD2:277
+There are two caskets in this chamber.  One is still sealed, the other empty. The lids contain inscriptions bearing the  occupants' names along with a declaration of their mutual devotion.  Although the door was locked, one body is missing.
+
+### SD2:278
+You search the chamber for signs of a secret entrance or exit but find nothing.
+
+### SD2:279
+This is the cave that leads to the sunken city of Waterford.
+
+### SD2:280
+You step into a large valley.  It is completely shut out from the outside world by high peaks.  Towards the east you can make out a large cave in the distance.
+
+### SD2:281
+You find a cave behind a stone outcropping.  It is practically invisible unless you're right in front of the opening. This passage has lain hidden for ages.  It winds east through a jagged crevasse.
+
+### SD2:282
+You have found the sunken city of Waterford.  Legend has it that a great crack rent the earth and swallowed the city.  No one managed to escape before the massive fissure collapsed in upon the city and buried it forever.
+
+### SD2:283
+The entire city was thought to have been destroyed.  You now see that large sections of the city have survived remarkably well.  There are signs of some type of two-footed creature having been in the area.  The prints are large and clawed.
+
+### SD2:284
+You are attacked by a band of ogres.
+
+### SD2:285
+Their guts smell to high heaven.  It makes one wonder what they have eaten in the past.
+
+### SD2:286
+You see a group of ogres.  Do you wish to fight them?
+
+### SD2:287
+You hear growls.  Suddenly, there appears an ogre.  It is being chased by a beast even more fierce-a giant troll.  Do you wish to attempt to save the ogre from its obvious fate or do you stand back and enjoy evil destroying evil?
+
+### SD2:288
+You come upon a building that appears to have been an armory.  It must have been closed during the catastrophe.  The door is still bolted shut.
+
+### SD2:289
+You have set the building on fire.  Something causes the old building to explode.
+
+### SD2:290
+Most of the shop's goods have fallen into total ruin.  However, some items did survive along with a tidy sum of gold.
+
+### SD2:291
+You enter Anthrax castle.  The herald announces your arrival to the king who is holding audience.  As your names are called, there are puzzled looks.  It is obvious that you are newcomers.  King Steven's motions you to approach.
+
+### SD2:292
+"Hail, good people!  What brings you here this fine day?  You are obviously not from Bywater, for your manner of dress is most foreign."  You explain to the king that you are but simple travelers in search of adventure.
+
+### SD2:293
+"Adventure!  Well, my good citizens.  This is the place!  Many strange happenings have been taking place of late.  Many, I'm sure, the direct result of that accursed Spider Tower that has sprung up at the east end of town."
+
+### SD2:294
+"But this is a peaceful land, which claims hatred towards no one who does no direct harm.  As of yet, there has been no evil which can be proven to have originated from that foul spire.  Come, meet with me in my chambers."
+
+### SD2:295
+With little fanfare, he calls an end to court and bids his patrons good day.  You retreat with the king to a chamber adjoining the main hall.  The door is closed, and you are surrounded by only the king and his closest advisors.  The king speaks.
+
+### SD2:296
+"My good fellows.  Dark times have befallen this fair city.  Alas, politics prevent me from declaring so in public.  This foul spider cult is sapping the very strength of our bustling city.  I would see this vile cult rousted from my kingdom,
+
+### SD2:297
+but my own decrees of fairness prevent me from doing so. If you rid this town of this accursed tower, I could not reward you publicly.  In private, however, is another matter.  I charge you to rid Bywater of this foul cult!"
+
+### SD2:298
+"What say you?  Will you accept my plea of help for this fair city?"
+
+### SD2:299
+"If that is your wish, then so be it.  I bid you good day then, for a king has many duties-duties that I neglect even now.  Steward, show these fine people to the door."  You are briskly ushered out the door.
+
+### SD2:300
+You enter Castle Anthrax.  Scant attention is paid to your presence.
+
+### SD2:301
+"Good!  It's settled then.  There is another secret agent of mine that is striving toward a similar goal.  If you cross paths, I decree you to help rather than hinder each other's efforts.  Well!  We all have much to do."
+
+### SD2:302
+The steward tells you of the armory and asks you to take your pick of equipment.  He also gives you an item. "Use this magic crown to return to the front gate of our fair castle.  It will work but 3 times so use it only in time of great need."
+
+### SD2:303
+You relay the status of your mission to the king's steward who promises to pass it on to the king.
+
+### SD2:304
+You are jumped by a pack of thieves, intent on slitting more than just your purse.
+
+### SD2:305
+As you top a knoll, you come upon an Orc female giving birth.  She looks quite pale, and is so weak she doesn't even notice you.  The baby is breached and will die if you do not help.  Do you aid her?
+
+### SD2:306
+You are successful at delivering the baby.  The mother only has time to see the face of her healthy newborn boy, before she slips into a coma and dies.  It would seem you have become parents by default.  What do you do?
+
+### SD2:307
+You wrap the babe in a blanket and secure him to your back.
+
+### SD2:308
+You stumble upon an old Orc burial mound.   Several of the mounds seem to be untouched, but many have been dug up. Do you wish to excavate them in search for valuables?
+
+### SD2:309
+You break into several mounds and find nothing of value.  As you are excavating another mound, you feel a chill in the air.  A spirit rises from one of the mounds that is yet untouched and speaks in a voice that resembles leaves rustling.
+
+### SD2:310
+"This most sacred ground has been disturbed for the last time!  Foolish mortals, now you shall wish for the  everlasting peace that you so cruelly deny us!"  The spirit sweeps a wispy hand over the mounds.  The earth erupts as corpses rise.
+
+### SD2:311
+The air is filled with a musty smell as the dead stumble forth to attack.
+
+### SD2:312
+You hear the sound of battle in the distance.  You see a band of orcs being attacked by a large group of goblins.  The orcs appear doomed unless you help.  The battle spreads out to engulf you.  Do you stand with the orcs or attack both parties?
+
+### SD2:313
+This is the shack belonging to the village chief.  His features are clouded by a worried expression.  During your conversation, you learn that his pregnant daughter is missing.  "If you find my daughter, I will reward you."  He sends you on your way.
+
+### SD2:314
+You come to a village of orcs.  Normally nomadic, it appears they have set up a temporary village.  You question some of the villagers as to why they have settled down.
+
+### SD2:315
+They tell of the chief's daughter who is pregnant.  The chief has ordered them to make camp for several weeks until his daughter gives birth.  Now the chief is worried, for his daughter has disappeared.
+
+### SD2:316
+The village chief greets you and asks you how the search for his daughter is going.
+
+### SD2:317
+"You keep looking!  I give big reward if you find daughter.  Now go!"  He shoves you out the door.
+
+### SD2:318
+The chief takes the babe and grins.  "This babe will be a mighty warrior like his gramp!  You are welcome to travel in my territory."  He lifts a fur rug from the floor revealing a pit.
+
+### SD2:319
+From the pit, he pulls out two objects wrapped in animal skins.  He uncovers a set of throwing daggers and a throwing ax.  "You take!  Strong magic!  You take!"  He hands you the gifts and goes off to find his grandson a wet nurse.
+
+### SD2:320
+You happen upon a troll dining on a grizzly meal of krise.  The krise corpse is wearing a backpack.  The troll is eating so greedily that it is swallowing krise, backpack, and anything else it can stuff into its huge maw.
+
+### SD2:321
+You figure that the beast will completely consume the corpse in short order unless you interfere.
+
+### SD2:322
+As you search the remains of the troll and goblin, you discover one item of value.  A scroll case is jammed in the backpack.  It is an odd item for a krise to be carrying.
+
+### SD2:323
+You leave the ugly brute to dine on his meal.  You weren't hungry anyway.
+
+### SD2:324
+As the troll finishes his meal with a loud belch, he pulls something from a tooth.  It appears to be a ribbon commonly used to bind scrolls.  His meal included more than first met the eye.  The troll wanders off.
+
+### SD2:325
+You stand before a great iron door set into the side of the mountain.
+
+### SD2:326
+Small sliders open in the face of the door.  Crossbow bolts and rocks hail down on you.  Behind the door, you can hear the harsh guttural laughter and sneers of krise.
+
+### SD2:327
+You move through a great iron door.  It connects the underworld with the surface.
+
+### SD2:328
+Deep within a crevasse, you see a pentagram.  It has been drawn with the blood from a krise's dead body lying nearby.  At each crux of the pentagram is a disk made of gold etched with arcane runes.  The bludgeoned body of a wizard lies near the krise.
+
+### SD2:329
+Searching the chamber and bodies, you find several items of interest.  One such item is a bloody page from some arcane text.  It describes the ritual for summoning the demon Rewop and binding him to your service.
+
+### SD2:330
+It would seem that this poor wretch was not up to the task, lost control of his servant, and paid the price.  Do you wish to take the gold disks for their treasure value, or do you wish to attempt the summoning yourself?
+
+### SD2:331
+You collect the disks, scatter the blood-soaked earth, and burn the page that describes the summoning.  It is a wise choice.  You collect the other items of interest in the cave.
+
+### SD2:332
+As you follow the rites described on the page, you see the gold disks begin to glow.  A tendril of smoke wisps up from the center of the pentagram followed by a  spire of flame.  Your eyes widen as a huge sand demon steps from the flames.
+
+### SD2:333
+"I see the lackeys of the fool I dispatched earlier have arrived. You shall pay dearly for disturbing me!  I shall feast well on your lifeblood this day!"  He mutters a few words in some unknown tongue and summons two of his lieutenants.
+
+### SD2:334
+With the demise of these foul creatures, you collect the treasure in the area.  The page on which the demon's name was inscribed explodes into flames.
+
+### SD2:335
+A net drops over you from above.  A large group of krise quickly pounce with such numbers that any resistance is quickly squelched. You are trussed up and roughly dragged through a long set of tunnels.
+
+### SD2:336
+You are battered and bruised, but not seriously hurt.  They finally dump their cargo unceremoniously at the feet of their ruler.  You are unable to clearly understand their discussion, but you get the general gist.  You are to be today's entertainment.
+
+### SD2:337
+They plan on dumping you into a pit.  Apparently, the pit is filled with nasty beasts of the underworld.  No one has ever left the pit alive.  They drag you kicking and screaming into the pit and toss you in.
+
+### SD2:338
+You land in the bottom with a loud thump.  Whatever is in the pit must be foul indeed, for they did not even bother to disarm            you.
+
+### SD2:339
+The pit has only two exits.  Both disappear into the blackness of the underworld.  Do you choose the left pit or the right?
+
+### SD2:340
+The reason no one has ever returned from this pit is that this tunnel leads to the surface!  The krise must have been so afraid of whatever dwells in the other tunnel, they never investigated this one!
+
+### SD2:341
+The real reason no one has ever returned from this pit is because this tunnel leads to the surface!  You suspect that former victims of this evil band were immediately killed.  Those who weren't, probably  escaped to the surface through this very tunnel.
+
+### SD2:342
+As you delve deeper into the tunnel, you begin to think the cave uninhabited.  Soon, a putrid smell surrounds you.  The cave is inhabited!
+
+### SD2:343
+You encounter a party of krise.  They do not see you.  Do you wish to attack them?
+
+### SD2:344
+You encounter a group of krise.  They attack you on sight.
+
+### SD2:345
+At battles end, the leader of the king's men turns to you and speaks, "I shall mention your good deeds to the king.  Now we ride on to rout out any stragglers."
+
+### SD2:346
+You see a huge iron gate in the distance.  It is guarded by a small party of krise who are gathered around a reinforced chest.  They spot you and attack before you can slip back into the tunnels.
+
+### SD2:347
+The blacksmith weeps as you hand him his son's possessions. "Thank you, friends.  Now, no one else will have to know what it is to lose a loved one to these vermin.   If I'd only been a younger man, I would have ventured forth myself to right this wrong.
+
+### SD2:348
+"But alas, I am old and withered.  I was saving these for when my son left the shelter of my home.  Now you may have them as payment."  He hands you a cloth  bundle containing leather goods and retreats to a back room to weep.
+
+### SD2:349
+The king sees you immediately.  "Ah! Our mighty heroes.  This fine day you have done a great service indeed.  Your efforts  shall be rewarded with great treasure."  He orders three chests brought out.  "You may select one chest as your reward."
+
+### SD2:350
+The king's cleric takes charge of the situation.  He turns to you and says, "See the king for any reward you may have coming.  You are great friends of this kingdom."
+
+### SD2:351
+The king races off to make plans for a celebration in your name.
+
+### SD2:352
+You enter an immense building.  It was once a temple dedicated to Malkelae, god of magic.
+
+### SD2:353
+You enter the sleeping chamber of a high priest.  The quarters are modest except  for a large ornate pillar that supports the ceiling.
+
+### SD2:354
+You enter the main hall of worship.  Many columns support the high ceiling.  This room is vast indeed.  Old moth-eaten tapestries cover the walls.  You expect there to be a thick coating of dust on the floor, but that is not the case.
+
+### SD2:355
+You see the tracks of many clawed feet.  Many appear to be recent.  The temple is not abandoned as you first thought.
+
+### SD2:356
+This room is rather large and cluttered with religious paraphernalia.  Do you wish to rummage around to look for valuables?
+
+### SD2:357
+You search through the musty equipment and artifacts in search of anything worth its weight in copper.
+
+### SD2:358
+Under some old rotting robes, you find a small box.  Its hinges are rusty and crumble easily.  Inside, you find a necklace with a small key.  It appears to be quite valuable.
+
+### SD2:359
+This room is very ordinary.  There are many pegs on the walls-some with robes still hanging on them.  It was once a simple cloak room.
+
+### SD2:360
+As you walk by this wall full of old rotting cloaks, you notice one that appears to have survived the ravages of time.
+
+### SD2:361
+You enter the quarters which housed several acolytes.  The bunks have long since rotted and collapsed.  A quick glance inside the room reveals nothing of interest.
+
+### SD2:362
+This was an old storehouse.  Most of the provisions have long since decayed to uselessness.  You do, however, find some dried rations that were stored here in case of great need.  They have survived all these years.
+
+### SD2:363
+You find barrels upon barrels of wine.  In addition, you find several cases of very fine wine.  The label reads, "Bordeaux Sal La Sal,  House of Chalingrad, Waterford, 1423."
+
+### SD2:364
+You enter a large prayer room.
+
+### SD2:365
+You stand at the foot of a massive gate.  It stands some 30 feet high, but it has been shattered by the sundering that rocked this city so long ago.  A gaping hole  enables you to pass through.
+
+### SD2:366
+The door to a large ornate palace stands unlocked.
+
+### SD2:367
+This large, semicircular room is dominated by a stairway.  The room is totally empty except for a large creature that patrols the room.  It keeps a respectable distance.
+
+### SD2:368
+When you approach the stairs, the creature attacks you.  Obviously, this creature has been put here to keep anybody from ascending the stairs.
+
+### SD2:369
+The chamber at this level is smaller.  The room is also guarded by a fierce beast.  The only way up is blocked by this monstrosity.  It attacks you without fear.
+
+### SD2:370
+You see a wizard who is hunched over a large book.  "Well, well! Still alive!  I have listened to your progress with interest.  Unfortunately for you, it shall stop here and now."
+
+### SD2:371
+He utters an arcane word and a secret panel slides over.  Another monstrous beast stands between you and the wizard.  At his command, it attacks you with total abandon.
+
+### SD2:372
+"You have defeated all my pets.  I can enslave more, I assure you.  After I have disposed of you, I shall do just that!"
+
+### SD2:373
+Your search of the wizard and his workshop reveals a treasure of magical items.
+
+### SD2:374
+This room is patrolled by a group of repulsive creatures.  Their odor is so foul  it almost makes you retch.
+
+### SD2:375
+You find the temple treasury.  Do you wish to take the treasure?
+
+### SD2:376
+The floor opens up underneath you.  Those that do not perform an acrobatic act, fall in and take damage.
+
+### SD2:377
+You quickly scale the rough sides of the pit and get out.
+
+### SD2:378
+This is a rather ornate building.   Do you wish to explore the inside of the building?
+
+### SD2:379
+You notice a coating of dust on the floor disturbed only by the footprints of many clawed feet.  In the center of the room is a wooden chair.   A small leather pouch has been set on it.  Do you take it?
+
+### SD2:380
+As you lift the pouch, the floor gives way.  You have triggered a trap door.  You fall into a smooth tunnel and slide down an unknown distance.  You hear the floor above spring back into place and reset for the next victim.
+
+### SD2:381
+As you try to lift the pouch, you feel it resist and the floor shifts slightly.  It would seem you have discovered a trap.  Do you wish to trigger the trap and see what is below?
+
+### SD2:382
+As you reach the bottom of the pit, you hear the tunnel above collapse.  You are trapped down below.
+
+### SD2:383
+You are in a dark cave.  As you search the immediate area, you notice numerous piles of ogre bones.  This trap has obviously trapped many before you and may have no exit.   With the tunnel's collapse, you could very well be its last victim.
+
+### SD2:384
+You come upon a large group of gaunt- looking ogres.  They have been digging a tunnel in an attempt to escape.  The tunnel is almost complete, but they are too weak from hunger and fighting slime worms to complete the job.  Do you help?
+
+### SD2:385
+With your help, you easily finish the tunnel.  The sickly ogres shuffle off to recover in their own hellholes.  The purpose of the trap is unknown and has died with its maker.
+
+### SD2:386
+You are attacked by the scavengers of the deep.  They would like to add some fresh meat to their diet.
+
+### SD2:387
+You pass a small group of ogres fighting against slime worms.   The ogres will surely lose in the long run.
+
+### SD2:388
+You see a large group of slime worms feeding on ogre carcasses.
+
+### SD2:389
+The collapse of the tunnel beneath the floor has caused a deep shift in the foundation of the building above it.  As a result, a portion of one wall has collapsed   to reveal a small, iron box.  It contains many items of worth.
+
+### SD2:390
+You discover a large, rickety, old building.  Inside are the remains of an old wizard's lab.  There are numerous cages along the walls that contain skeletons of various creatures long since starved to death.
+
+### SD2:391
+You also see a human skeleton on the floor.  It is covered by an old rotting robe.   You search the corpse and find a ring and a set of gauntlets.  In addition, you find a pair of vials in a cabinet.  They may contain magical potions.
+
+### SD2:392
+One of the cages is huge and encompasses a large pool of water.  The lock on the cage is so old that it practically falls apart in your hands.  As you stand at the edge of the water, you see a myriad of fish swimming in a vast, underground lake.
+
+### SD2:393
+About forty feet down, you see a short tunnel that radiates light.  It obviously surfaces somewhere, but you cannot hold your breath long enough to reach it.  You must turn back.
+
+### SD2:394
+With your increased ability to breathe freely, you search the entire pool and notice many large bones of bipeds littering the bottom.  This pool has proved to be a watery grave for more than one unlucky adventurer.
+
+### SD2:395
+You move through an underground tunnel and emerge into a cave that is totally immersed in a strange, green light.  The light comes from a strange moss-type plant that covers the walls forming a thick mat.
+
+### SD2:396
+You engage in combat with giant shantiles.
+
+### SD2:397
+You are attacked by shantiles.
+
+### SD2:398
+You spot a group of reptilian creatures.  Do you wish to attack them?
+
+### SD2:399
+You see a large hole that measures six feet across and six feet deep.
+
+### SD2:400
+You spot a large group of Mush Men under attack by an even larger group of reptile like creatures.  It would seem the reptiles are literally eating the Mush Men alive.  Do you with in jump in the fray?
+
+### SD2:402
+An old man pokes his head out of the window. "Hulloooo!  Oh my, I thought I was the only human left alive in the whole world.  Come in! Come in!"  You enter his modest abode.  He tells his tale of how his ancestors were stranded during the catastrophe.
+
+### SD2:403
+Down through the years, his family kept alive.  However, inbreeding eventually caused all the children to be born so deformed that few survived.  He is the last.  "I thought the world destroyed," cries the old man.
+
+### SD2:404
+"At first, my great, great, great grandpap and his kin looked for a way out, but we never found one.  Then the ogres came and we holed up inside whatever building we could find.  Now I am the last, and I have all but given up."
+
+### SD2:405
+"I have spent my time in devotion to Steneck, the god of travel.  Alas, my prayers are never answered."  He is so happy when you tell him the location of the cave entrance leading to the surface,  he breaks out in tears.
+
+### SD2:406
+"Finally! My prayers have been answered.  Here, take these.  My ancestors gathered them during the years we searched for a way out.  I have no use for them, and they may do you some good."
+
+### SD2:407
+"You are welcome to rest here as long as you like.  One of my ancestors knew some magic.  A permanent protection spell has been cast on this area.  Ogres and other creatures will not come near."
+
+### SD2:408
+You are standing at the edge of the pool of water that leads out of this area.
+
+### SD2:409
+You see a hill giant slumped against a tree.  He is wounded and is nearly dead.  He speaks, "Ranthog fight big bear.  Ranthog hurt.  You help Ranthog?"      What do you do?
+
+### SD2:410
+"Ranthog thank you.  Ranthog give you big treasure."  He sketches a map on a piece of papyrus showing the location of a large, hollowed out tree.  He says the treasure is hidden inside the tree.  "Ranthog go home.  Ranthog tired."  He limps away.
+
+### SD2:411
+As you approach him, he sighs with a mighty wind and hoists himself up.  He does not plan on going down without a fight.
+
+### SD2:412
+Just as Ranthog had promised, you find a sizable treasure larder.  Most of this stuff looks incredibly valuable.  Ranthog must have had no idea how valuable it was, or he would never have given it away.
+
+### SD2:413
+You spot an adult hill giant teaching the finer points of setting up ambush to a small group of youngsters.  Do you wish to teach them a valuable lesson and set an ambush of your own?
+
+### SD2:414
+The students have paid very close attention to their teacher.  Your ambush is spotted by one of them.  You are surprised as they set upon you.  They act as if they are seasoned veterans, not the greenhorn youngsters you expected them to be.
+
+### SD2:415
+You spot what appears to be three young hill giants tormenting a large proto-badger.  Do you help the proto-badger against these evil folk?
+
+### SD2:416
+You engage in combat with a small group of giants.
+
+### SD2:417
+You spot a small group of hill giants.  Do you wish to attack them?
+
+### SD2:418
+This crypt is occupied by the undead.  Several ghouls are feasting on a corpse they have dragged from a stone crypt.  They quickly leap at the chance of dining on a fresh corpse.  Yours!
+
+### SD2:419
+This room has been recently disturbed.  All the bodies that occupied the crypt are missing, and there are many footprints of booted and unbooted feet.
+
+### SD2:420
+Standing in the doorway of this room, you are overcome by a strange sensation. It's as if something is running down your spine.  A cold draft of very dank and musty air is coursing through, and you are unable to decipher which direction it's coming from.
+
+### SD2:421
+This temple has been recently desecrated.  The footprints in the dust suggest that a large group of people wearing steel-shod boots are the culprits.
+
+### SD2:422
+This small alcove held supplies for the caretaker of the burial crypt.  They were seldom used, for they are covered with a thick layer of dust.  Do you wish to search the supplies for anything of worth?
+
+### SD2:423
+You are just about to continue on, when you notice an old piece of folded parchment jutting out from the equipment.  It is a map showing the location of a secret wall and passage.
+
+### SD2:424
+You notice a small cave opening along the shoreline.  A putrid smell pours out of the entrance. You suspect some creature must be living down there in its own offal.  Do you enter?
+
+### SD2:425
+You are attacked by strange blob-like creatures.
+
+### SD2:426
+You see a small group of blob creatures slithering in the mire.  Do you want to attack them?
+
+### SD2:427
+You stumble into the most bizarre battle you have ever seen.  It appears to be a civil war between jelly-like monsters.  If you hadn't been dragged into its midst, you might have even been amused by the situation.
+
+### SD2:428
+You see enormous flightless birds in the distance.  At this distance, you are not certain how many there are.  You can still  escape before you are noticed.  Do you choose to engage them in combat?
+
+### SD2:429
+The river flows into a large cave.  Shortly after entering the cave, the river disappears underground and becomes  subterranean.  The cave is not completely without interest.  The creatures that attack you can attest to this!
+
+### SD2:430
+A river emerges from below and flows out of the cave entrance.  You can smell the stench of some creature living inside.  Towards the back of the main chamber, there is a whole network of caves leading in various directions.  Do you enter?
+
+### SD2:431
+You are attacked by a group of huge reptiles.  They are of such great size they could easily crush you under foot if you were not so agile.
+
+### SD2:432
+You smell a foul odor so strong, it gives away the location of a group of disgusting monsters.  They are large reptiles.  Do you wish to attack them?
+
+### SD2:433
+You find an old shack.  Only Adon knows why it is buried so deep in these monster-infested caves.  You look through  a window and see that it is empty.  Do you enter?
+
+### SD2:434
+Inside, you see a small cot with the skeletal figure of the former occupant.  Judging by the state of the corpse, he has been dead for many years.  With the exception of several books that stand out from the rest, the shack contains nothing of interest.
+
+### SD2:435
+You see a group of krise.  They have not noticed you yet.  Do you wish to engage them in combat?
+
+### SD2:436
+This shallow cave is an abode for a family of krise.  In defense of their home, those that are here quickly rise to attack.
+
+### SD2:437
+This cave is empty.  You search the area quickly but find nothing of interest.
+
+### SD2:438
+This cave is much larger than the others. Strewn about are items that do not appear krise in origin.  Bones of enormous creatures litter the floor.  This would seem to be the abode of a great wizard who lives with the krise.
+
+### SD2:439
+You come upon a campsite of a group of ogres.  They are roasting a krise on a spit.  They do not see you.  Do you attack?
+
+### SD2:440
+Everything these brutes possessed was crude and nearly worthless.  However, you do find a peculiar-looking stone in a small leather pouch.
+
+### SD2:441
+This is an old inn and cookhouse.  There is very little left.  This part of the city did not fare very well during the catastrophe.
+
+### SD2:442
+This is an old temple.  It is in remarkable shape compared to many of the surrounding buildings.  You enter through a large bronze door.
+
+### SD2:443
+You step into a foyer that has not seen use in countless years.  A heavy gloom settles over you.  This once holy place has taken on an atmosphere of despair.  You feel great evil is afoot.
+
+### SD2:444
+This is an old storeroom that now contains nothing but rot and decay.  A few casks of wine still remain, but a sampling shows that it has long since gone bad.
+
+### SD2:445
+Numerous cots with rotted legs have collapsed into termite-infested heaps.
+
+### SD2:446
+As you pass through the door, a strong wave of evil washes over you. You almost bolt for the door.  Whatever lies beyond must be pure evil.  Pure evil radiates outward.
+
+### SD2:447
+A huge crystal sphere is being held aloft  by a net of strands.  These strands appear to be made from living, scaled flesh that has materialized out of thin air.  Inside the sphere, you see a whirling vortex of mist.
+
+### SD2:448
+This seems to be the source of the evil  you have felt throughout the temple.   A shimmering, impenetrable energy field surrounds the sphere.   Demonic symbols are engraved on the floor to the sides of the energy field.
+
+### SD2:449
+The symbols are large enough for four people to kneel inside.  Do four members of the party wish to step inside?
+
+### SD2:450
+Upon kneeling on the symbols, a magical display of energy sweeps across the floor. Energy beams of light in a myriad of colors appear from all directions.  They strike all those not within the symbols.
+
+### SD2:451
+After the discharge of light beams, the protective energy field vanishes.  Inside the sphere, the vortex of mist forms the visage of a hideous beast.  It stares intently into your eyes and begins to communicate telepathically.
+
+### SD2:452
+"Who dares summon me with the help of my very own scrying crystal?  AHHHH! It is foolish mortals.  How entertaining!  What rash passions can drive such frail beings such as yourselves to the point of utter insanity?"
+
+### SD2:453
+Unstoppable, the beast's hideous laughter courses throughout your brain. "Ha! Ha! Ha! Ha!  Run, puny insects!  Run, while you may!  You shall soon see that it is already far too late!"  As evil permeates the room, you manage to safely reach the doorway.
+
+### SD2:454
+Just as you are about to make contact with the sphere, the living flesh net that holds it aloft forms into a hideous demon.  It immediately attacks you.
+
+### SD2:455
+The sphere fades as the beast speaks one last time.  "Fear for your short lives, mortals!  You will be hard-pressed to escape my house alive.  Hard-pressed, indeed!"
+
+### SD2:456
+"I think not, puny mortals.  Your destruction is beneath the likes of me.  However, it is not beneath the duty of my lieutenants!"  The beast's hideous laugh courses through your brain.  At the same time you hear a low growl sound behind you.
+
+### SD2:457
+"How dare you treat me as inferior!  Now you shall know why mortals fear death!"  The beast materializes before you.  It stands nearly 13 feet at the shoulder.  You may have made a very big mistake in enraging the creature to this point.
+
+### SD2:458
+You have done a great deed this day.  You have destroyed the body of this foul demon.  Though not permanently dead, it will be many years before it may torment the Realmz again.
+
+### SD2:459
+You are attacked by a horde of disgusting creatures.  They are being herded in your direction by some winged beasts.
+
+### SD2:460
+This room is inhabited by both the dead and the undead.  Several ghouls are feasting on some of the fresher corpses.  They intend to feast on you as well.
+
+### SD2:461
+The statue comes alive, turns towards the defiler and speaks, "You have taken that which is freely given and offended me.  You shall not partake of my gifts again."  Along with the pool of water, the statue fades into nothingness.
+
+### SD2:462
+The statue comes alive, turns toward the defiler, and speaks, "Your base attitude shall beget you nothing."  A sudden flash of light overtakes the vandal, just before statue fades into nothingness.
+
+### SD2:463
+Magic courses throughout your body.  You are healed.
+
+### SD2:464
+You feel a deep, warm, tingling sensation.  The calluses on your travel-weary feet slowly disappear.
+
+### SD2:465
+You come upon a stone statue of a man.  In one hand he grasps a staff.  The other outstretched hand holds a bowl.  Water continually pours from this bowl, forming a shallow pool at the statue's feet.
+
+### SD2:466
+This room is the only area so far that does not emanate a strong aura of evil.  In the center of this large room, is a tall stone statue.   There is an air of peace about this place that suggests you could rest here safely.
+
+### SD2:467
+You happen upon a herd of dinosaurs.  They viciously defend their meager home.
+
+### SD2:468
+You approach a goblin village. If you slip from hut to hut, it is possible to avoid contact with most of the dwellers.  You surmise that the goblin king lives towards the south in a hut noticeably larger than the rest.
+
+### SD2:469
+This tunnel is inhabited by one of the world's mightiest of creatures.  A red dragon sits atop a vast pile of wealth.  The dragon is sleeping soundly but would be sure to awaken if you enter.  Do you enter?
+
+### SD2:470
+I hope you know what you are doing!
+
+### SD2:471
+The world is a safer place with the demise of this foul creature.
+
+### SD2:472
+A very powerful animal must have feasted here.  Several bones litter the floor.  You  recognize some of the bones.  They were originally from trolls and giants.  You shudder to think of the immense creature capable of feasting on such beasts as these.
+
+### SD2:473
+A complete search of the area turns up nothing of value.  However, you discover red scales scattering the ground.  They could only have been shed from a red dragon.  You know that such a creature could easily devour trolls and giants.
+
+### SD2:474
+They pull large weapons from leather thongs at their waists.  They attack without mercy.
+
+### SD2:475
+You have entered a rather fine tavern filled with only the best citizens of Bywater.  Most of the tables are filled with patrons eating spiced potatoes and engaged in interesting discussions.  You find yourself a table near the back.
+
+### SD2:476
+This room is occupied by small, fluttering shapes not native to the Realmz.  They immediately swarm upon you.
+
+### SD2:477
+You are attacked by a group of winged servants.
+
+### SD2:478
+You are attacked by a group of slime demons.   They are being herded in your direction by a some of devilish herdsmen.
+
+### SD2:479
+This hidden room contains the old bones of many small rodents.  You have a creepy feeling that you are being watched.
+
+### SD2:480
+You hear a whisper that seems to come from nowhere and everywhere.  "Free us!  Our souls languish in eternal torment."  The whisper fades, but everyone seems to have heard the same thing.
+
+### SD2:481
+You step into a secret passage that leads to a large cave.
+
+### SD2:483
+You see a group of devil kin.  They do not see you, however.  Do you wish to attack them?
+
+### SD2:484
+You find a secret passage into the courtyard of the spider tower.
+
+### SD2:485
+Haikur is at the gate awaiting your arrival.  "Good, good.  Now, let us be off and rid the land of these foul goblins."  Several hours into the journey, you feel the hair on your neck prick.  Suddenly, you are ambushed by goblins.  This looks grim.
+
+### SD2:486
+Your force has been too badly wounded to continue.  Rumblings arise from the wounded.  They claim that you are cursed.  Haikur has no choice.  To avoid a mutiny, he casts you out.  You are now on your own, deep in no man's land.
+
+### SD2:487
+You find the remains of an old grave.  It has been dug up and pilfered.  The bones of the buried lie about the area.  Do you bury the bones or leave them where they lay?
+
+### SD2:488
+A whisper from nowhere thanks you.
+
+### SD2:489
+You enter the gaming arena.  The master of the games asks if you wish to pit your skills in combat against dire creatures for a wager.  Do you wish to enter the games?
+
+### SD2:490
+Let the games begin!
+
+### SD2:491
+A sign above the front gate reads,  "Official Sanctioned Gaming Arena."  From inside you here the cheers of an excited crowd and the moans of the wounded and dying.
+
+### SD2:492
+A man approaches you and speaks in a hushed voice.  "My aides have told me of the arrival of an adventurous band.  Hear my offer before you leave."  He tells a story of an evil man who has a stable of wild beastmen.
+
+### SD2:493
+The man asks if you would eliminate the stable of beastmen for monetary compensation.  He offers you 400 gold pieces if you kill the foul creatures.  Do you agree?
+
+### SD2:494
+You find the small cave that leads to the stable.  You creep inside to see a large corral of beastmen.  They number a  baker's dozen.  This won't be easy.  Do you wish to attack these vermin now?
+
+### SD2:495
+Having completed your handiwork, the man contacts you as planned.  He hands you a sizable leather pouch.  "Here is the price as we agreed.  I have given ye a little something extra for your trouble."
+
+### SD2:496
+The man gives you a map showing the location of a hidden cave just outside the town walls.   "Good luck friends.  I shall seek ye out and reward thee when the deed is done.  Now, good day to you."
+
+### SD2:497
+You see a group of giant rats.  Do you wish to attack them?
+
+### SD2:498
+An old woman pokes her head out a window.  As soon as she sees you she screams, "Get ye away!  You stole my dagger!  I don't sell my wares to thieves such as you!  Now, begone before I call the guard!"  She slams the window shut.
+
+### SD2:499
+You stumble into a cave inhabited by huge cave beetles.  They scurry forth and attack.
+
+### SD2:500
+As you prepare to leave the area, you also notice that the bones seem to be picked clean.  Those responsible seem to boil from a crack in the side of the cave.
+
+### SD2:501
+As you are standing near a large group of huge shrub-like plants you hear a loud buzzing.  Before long huge wasps descend from above.  You must fight or end up as food for their larvae.
+
+### SD2:502
+You see a large iron door set into the mountain.  Inscribed into the steel of the door are strange runes.  They are an ancient but familiar script.  It tells of a great evil that has been banished beyond the mighty portal.  Do you open it?
+
+### SD2:503
+A blast of stale air pours forth.  Along with a vile creature.
+
+### SD2:504
+This was the room of a low level priest.  Now however it is the home of a group of cacodemons.
+
+### SD2:505
+This column appears to be hollow.  You discover a small panel that open to reveal a shaft inside the column.  It's large enough for a person to crawl inside.  A ladder of rusty iron rings protrude from one side of the shaft.  Does somebody wish to enter?
+
+### SD2:506
+At the bottom of the shaft is a large pile of gold coins.  Do you wish to take them?
+
+### SD2:507
+This cave leads back into a completely dark and enclosed path.  You feel a strange vibration coming from the floor.  The cave continues east.
+
+### SD2:508
+Large rocks break loose from the ceiling.  Those who are not quick enough fail to get out of the way and take damage.
+
+### SD2:509
+Even as you watch many eggs are hatching.  Crawling around these eggs are hundreds of strange lizard creatures.  Some mistake you for food.
+
+### SD2:510
+You have stumbled into some sort of nightmarish nursery.  Thousands of eggs litter the ground.  Some are hatching even as you watch with slack jaws.
+
+### SD2:511
+You see huge piles of cracked and shattered bones.  They seem to be from the creatures you saw in the nursery.  It is hard to believe, but it seems like something is using THEM as livestock.  Hard to believe until you see what that something is.
+
+### SD2:512
+These dragons appear to have been trapped down hear by some great earthquake.  Unable to escape they survived over the many years by living off the creatures in the nursery.
+
+### SD2:513
+You have found the dragons treasure.  Sad to say that it is not as wondrous as one might expect.
+
+### SD2:514
+You step into a rather large cave only to find 8 eyes staring at you from 4 thick necks.
+
+### SD2:515
+You see the footprints of some two footed creatures with clawed feet.  Blood is smeared from floor to ceiling.  The bodies of several farmers have been ripped limb from limb and partially eaten.
+
+### SD2:516
+A bloody trail leads from the shack to the east.  Someone has been dragged from the shack kicking and screaming.
+
+### SD2:517
+As you walk in the small shack you witness a scene out of your worst nightmares.  Nailed to the walls are the half eaten corpses of a farmer and his wife.  From the way the blood has pooled at their feet it is obvious they were eaten alive.
+
+### SD2:518
+On a small table lies the remains of a small 10 year old girl.  Her arms and feet have been nailed to the table in order to make easy pickings for whatever has chosen to dine on her.
+
+### SD2:519
+You find the remains of a small boy.  The flesh on his face is about the only portion that has not been peeled away in strips.  Most of his body seems to be here so whatever did this, did it for the pure joy of it.
+
+### SD2:520
+You see the remains of yet another small child.  Blood still trickles from a jugular  recently opened to let this innocent child's life leak away.  Do you wish to dig the child a grave.
+
+### SD2:521
+That will be one foul meal that shall go untasted.  Whatever could prey on helpless farmers and small children deserves this grave far more than this poor child.
+
+### SD2:522
+As you are leaving the cave you hear a loud roar behind you.  It comes from where you found the small child.  As you attempt to determine the identity of the creatures you see a group of large trolls running in your direction on flapping feet.
+
+### SD2:523
+The noise of this battle is sure to attract more trolls if there are any in the immediate area.
+
+### SD2:524
+Nothing special seems to happen.
+
+### SD2:525
+You notice nothing different.
+
+### SD2:526
+You are unable to see any results.
+
+### SD2:527
+Nothing happens.
+
+### SD2:528
+What do you want to do?
+
+### SD2:529
+You see several dozen dead orcs strewn about the cave.  Most of the bodies have been nibbled on somewhat by some creature that must be quiet large.  The cave continues off to the back.  You hear heavy breathing and the shuffling of great feet.
+
+### SD2:530
+Do you wish to move to the back of the cave to investigate?
+
+### SD2:531
+You discover that this cave is inhabited by a mated pair of trolls.  Though you have approached with the stealth of a clemidian devil cat, the trolls can smell you as if you had sacks of bacon strapped to your backs.  Trolls like bacon!!!
+
+### SD2:532
+You discover what can only be described as a nest for lack of a better word.  The bodies of even more orcs are heaped in mounds about the cave.  Beasts such as trolls need to eat a lot.  Why so many look to be hardly touched is a mystery.
+
+### SD2:533
+As you continue to look around for anything of interest you hear the wail of a baby troll coming from the west.
+
+### SD2:534
+In this end of the cave is a very frightened young troll. The babe must have witnessed you killing its parents.  Its eyes bulge like saucers as it looks at you in total fear. Suddenly the babe begins to relax.  The fear subsides for an unknown reason.
+
+### SD2:535
+Unknown, that is, until you look behind you.  The babe's brothers and sisters have stalked up on you.  They charge you in an attempt to revenge their fallen parents and save their baby brother.
+
+### SD2:536
+During the melee the babe has disappeared.  The remainder of the cave has nothing of interest.
+
+### SD2:537
+As you travel deeper into the cavern you find that the skeletal giant had a trio of rather nasty pets.
+
+### SD2:538
+You see a group of cacodemon warriors.  Do you wish to engage them in combat?
+
+### SD2:539
+You spot a small cave in the side of the mountain.  When you proceed inside to investigate the source of a strong acrid odor you are confronted by the true ruler of the Spider Tower - a powerful spider queen.
+
+### SD2:540
+As you are journey through a grove of oaks, large snakes drop from the branches.  They intend to make an easy meal of you.
+
+### SD2:541
+The cave dead ends here.  Chained on the wall are the remains of a hill giant that has been partially devoured.  You are unable to tell if the body parts were consumed before being chained to the wall or if it simply fell prey to scavengers.
+
+### SD2:542
+You emerge into the musty confines of a large cavern.  It would appear the hapless giant was to be milk and cookies for the beast resting here.  Resting that is, until now!
+
+### SD2:543
+You stand toe-to-toe with a blue dragon.  It looks at you and clasps its bony hands.  "Mmmmmmmm, you have arrived just in time.  I grow ever so hungry.  Thank you kind people for your generosity."
+
+### SD2:544
+Your skin prickles, and your hair stands completely on end as if you are rubbing your feet furiously on a bearskin rug while wearing wool socks.
+
+### SD2:545
+There must be a powerful source of electrical energy nearby.
+
+### SD2:546
+You find a sizable cache of wealth and a small sack with a group of 4 daggers.
+
+### SD2:547
+You have found your way to the alley behind the combat arena.  You see a large shack in the distance that you had not seen before.
+
+### SD2:548
+As you approach the shack, a man wearing a leather harness exits from the hut and approaches.  "What are you doing here?  This area is off limits."  He turns to go back inside when suddenly a huge creature bursts from the shack.
+
+### SD2:549
+The creature bears the remains of shackles.  Blood-soaked chains, wrapped about its fists, create crude but effective weapons.  The man in the leather harness yells, "Look out!  It's loose!" In hot pursuit, several armed men storm out the door.
+
+### SD2:550
+You discover a scroll inside the shack.  It contains orders that the corporal train the troll to fight in the arena.  Bad idea!
+
+### SD2:551
+Holes have been ripped into the thatched roof of an abandoned shack.  Bloodstains on the floor bear witness that the former occupant suffered a violent death.
+
+### SD2:552
+The creatures that caused the demise of the former occupant are now back searching for more food.
+
+### SD2:553
+This spacious valley is inhabited by immense herds of giant boars.  Viewing you as a threat, a group of them attacks you.
+
+### SD2:554
+Large piles of bones litter the cave's entrance to the south.
+
+### SD2:555
+A small side cave leads to the lair of a group of Mush-Men.  They are less than pleased with your invasion.
+
+### SD2:556
+A giant ant colony lives in the area.   Escorted by a few warriors, a stream of workers blocks your path.  Burdened under the remains of a large animal, they disappear into holes built into the cavern walls.  Do you attempt to pass this phalanx of death?
+
+### SD2:557
+Fresh water is a rare find in the underworld.  When it is available, it's usually claimed and carefully guarded.
+
+### SD2:558
+A small gnome mining detail worked here. Now, nothing but their bones litter the ground.  One skeletal hand holds a precious bauble.
+
+### SD2:559
+This dead-end cavern is occupied by some unfriendly shantiles.
+
+### SD2:560
+Large boulders careen downwards from a ridge above.  Those not fast enough to avoid the rocks are crushed beneath a hail of missiles.
+
+### SD2:561
+The hail of boulders forces you to take up a defensive position.  Gnath seize the opportunity to close ranks and attack.
+
+### SD2:562
+They carried little of value.  This was a perfect position for setting up an ambush.  Be careful of similar attacks in the future.
+
+### SD2:563
+You round the corner. Someone yells at you from behind.  Spinning around, you come face-to-face with seven young men.  Huge cats accompany them, and they look like wizards' apprentices.  Fanning out, they begin to cast spells.
+
+### SD2:564
+Welcome to "The City of Bywater", a scenario for use with the Realmz Scenario Driver.  If you enjoy playing Realmz and would like to see more scenarios developed, please support us by sending in your registration fee.
+
+### SD2:565
+Once you have registered this copy of Realmz, you will also be able to play test other scenarios BEFORE having to register them.  The fee for each additional scenario are $13 each.  For information on how to register, see chapter 3 of the Realmz Manual.
+
+### SD2:566
+Once you have registered this copy of Realmz, you will be able to play the entire scenario.  This scenario is very loose.  It does not have a strong plot line.  You can adventure where you want for as long as you want.
+
+### SD2:567
+Other scenarios utilize the capabilities of the Realmz scenario driver to a greater extent.  These scenarios feature a definite plot line, new monsters, new magical items and more dangerous encounters.
+
+### SD2:568
+You approach the gates of a huge citadel.  A large group of Dogre guard the entrance.  Upon your arrival, they draw weapons and charge.
+
+### SD2:569
+Now unguarded, you gain easy access to the fortress before you.
+
+### SD2:570
+The stale underground air comes as a welcome relief compared to the stench emitted by the inhabitants of this foul place.
+
+### SD2:571
+You are in a storage room.  With a minimum of effort, the door could easily be barricaded providing you with limited protection against roaming bands of Dogre.
+
+### SD2:572
+The sturdy, massive door to this storage room has been viciously wrenched from its hinges.  The unidentifiable remains of its scattered contents rotted and withered away long ago.
+
+### SD2:573
+In the corner, half a dozen large Dogre snooze with indolent abandon.  They are resplendently decked out with an impressive array of new weapons.  Do you wish to attack them?
+
+### SD2:574
+One of the brutes owns a small leather pouch that contains an interesting item.
+
+### SD2:575
+An impressive cache of wealth has been stored at one end of this room.   Appearances would suggest that these pillagers have been hoarding and adding to this treasure for quite some time.
+
+### SD2:576
+Two gigantic Dogre stand guard.  One of them quickly jerks down on a heavy, braided rope.  Before you can engage the Dogre in battle, you must first handle a head-on confrontation against some of their voracious pets.
+
+### SD2:577
+The clamor of weapons attracts attention. Just seconds too late, several of the Dogres' comrades burst into the room.  Incensed, they strike out furiously to avenge their comrades' recent deaths.
+
+### SD2:578
+You discover several dead gnaths strapped to large racks.  Blood still drips from fresh wounds on several of the gnath's necks.  You suspect that your arrival brought immediate doom to these poor saps.
+
+### SD2:579
+For their own twisted amusement, the Dogre had tortured the gnaths for information.  Upon hearing the clash of arms, they probably assumed that a rescue attempt was in progress and  abruptly killed the gnath in an all-out massacre.
+
+### SD2:580
+A spacious room stretches before you.  The walls appear to be draped with  gauze, and the floor lies covered with an undisturbed, thick coating of dust.  For mysterious reasons, the Dogre have not dared to enter this area of the fortress.
+
+### SD2:581
+Upon closer inspection, you realize that the gauze actually consists of several wispy forms billowing softly along the  room walls.  They do not appear to be attached.  They are hovering freely in midair.  Do you approach?
+
+### SD2:582
+A manifestation takes the shape of a  ghostly human figure.  It is manacled against the wall by smoky, ethereal iron chains.  A shimmering blue energy curtain envelops the figure.
+
+### SD2:583
+The prisoner begins to wail and moan.  The energy curtain shimmers intensely in an  attempt to block the ghost's powerful magic.  Your head begins to throb painfully.  You feel overwhelmed by a piercing migraine headache.
+
+### SD2:584
+Deep in your mind you hear a silky smooth, beguiling voice.  "Free me!  Destroy these bonds!  I shall reward you with the greatest gift a mortal could ever dream of."
+
+### SD2:585
+A small jet black vial sits at the foot of the energy barrier.  It emits a foul black mist that forms the shimmering energy curtain.  Do you smash the vial and set the ghostly apparition free?
+
+### SD2:586
+Free after so many centuries of bondage,  the ghostly apparition begins to wail forcefully.  Stabbing pain shoots up your spine and throughout your mind.
+
+### SD2:587
+Staggering about in pain, you are fallen upon by a host of ethereal beings intent on your destruction.  "Foolish mortals!  Now I shall give you your great gift-the eternal peace of death!"
+
+### SD2:588
+Though you have defeated this group of beings, the bond that imprisoned others of their kind to this room has been destroyed.  Dozens of wispy forms flee from the room.
+
+### SD2:589
+Soon, ghostly wailing and the agonizing growls of dead and dying Dogre fills the halls.  Within minutes, the carnage is over.  The ghosts have sated their appetite for life. They return to the nether regions from which they have so long been absent.
+
+### SD2:590
+The corpses of over three dozen Dogre litter the ground.  Their armor protects nothing but frail bodies of dried, withered skin stretched over brittle bones.  Their flesh appears to have aged hundreds of years within a matter of minutes.
+
+### SD2:591
+You enter a large hall.  An old Dogre in long flowing robes stands alone at the far end.  Her back is to the door and she is unaware of your presence.  Do you approach?
+
+### SD2:592
+With difficulty, an aged Dogre mage awkwardly turns to eye your approach.  She stands hunched over and despondent.  When you're close, she speaks in broken common. "I expect you desire vengeance for your fallen comrades.  I'll not defend myself."
+
+### SD2:593
+"I am too old to be a threat to you.  I look forward to being rid of my duties and ending this miserable life."  She rambles listlessly and reveals that the clan chief, lord of this castle, strongly despises and fears all magic.
+
+### SD2:594
+This mage Bregwart, once renowned for healing, has been confined here for years by the clan chieftain to perform cruel experiments on captured humans and gnath to gain knowledge for war purposes.  Do you offer to help her kill the chieftain?
+
+### SD2:595
+"Well then, don't waste more of my time.  No one cares about old Bregwart.  I expect many believe that I disappeared from sight and died long ago.  I might as well end it all."  Clapping her hands twice, she disappears in a flash of smoke and sulfur.
+
+### SD2:596
+"Excellent!  I have long dreamt of the day where I could face Cragentooth and crush him.  Night and day, he is constantly  surrounded by many warriors.  With the aid of your strength, I will finally be able to unseat him from power."
+
+### SD2:597
+Bregwart leads you to a cleverly hidden passage.  "This way leads to his private chambers.  Cragentooth believes that only he and his most trusted bodyguards are aware of its existence.  I discovered it several years ago."
+
+### SD2:598
+"Have your blades drawn.  Be prepared with magic on your lips.  His warriors are quick of wit and blade.  Our advantage of surprise shall not last long.  He is located just west of here."
+
+### SD2:599
+You descend the passageway to Cragentooth's quarters.  Bregwart steps on a false floor tile.  The ground beneath her collapses.  She plunges to a bloody death, her body ravaged by spikes. You leap the gap to face Cragentooth and his warriors.  To battle!
+
+### SD2:600
+You enter a massive building.  It appears to be an endless maze of hallways and corridors.
+
+### SD2:601
+You descend a flight of stairs and  face a long, colorless hallway.  The lifeless air is close and stifling.  Your heels kick up ancient dust.
+
+### SD2:602
+You dead end at a set of primarily empty chambers.  Some warped spears and a set of rusty armor lay in an abandoned heap in the far left corner of this chamber.
+
+### SD2:603
+You rummage about the old pile of armor and weapons and find one item of interest.  A large sack of barbed jacks.  As you rummage around, you stir up a thick cloud of dust and are overtaken by a severe sneezing fit.
+
+### SD2:604
+A ghostly apparition now stands at the room's center.  Raising a smoky tendril-like arm in your direction, it speaks in the ancient fespian tongue. "Seek! Ye shall find only death here."
+
+### SD2:605
+The figure disappears into the cracks of  the wall farthest away from you.  As soon as it fades from sight, the wall completely crumbles.  A small hidden chamber is revealed.  Intent on protecting their final resting place, undead guardians stream forth.
+
+### SD2:606
+Old rotted bodies lay about the room like an army of broken rag dolls-a twitching arm, a disembodied head- scattered parts are all that remain of this ungodly army.  Before you can regain your full strength, yet another figure emerges from the alcove.
+
+### SD2:607
+Unlike the others, this figure must stoop to enter the room.  It is a massive zombie heading up a multitude of lesser zombies.
+
+### SD2:608
+Do you wish to investigate the alcove that the ghostly figure retreated to?
+
+### SD2:609
+You search the dead and mangled bodies but discover nothing of interest.
+
+### SD2:610
+If you were in search of treasure, you are sadly disappointed.  If you desired to meet the ghostly figure, you're in luck.
+
+### SD2:611
+You enter a large storage room.  It contains few items of any real use.  However, you sense something so slight, it is barely perceptible.  A sense of evil seems to pervade this room.  You cannot deny it's presence, and you shiver uncontrollably.
+
+### SD2:612
+You enter the town jail.  Six cells have been sectioned off.  Two of the local town drunks can be heard snoring loudly, sleeping off their regular overindulgence of merriment.  Low, restless growling emanates from the other cells.
+
+### SD2:613
+At a table near the jail's entrance, a pair of burly guards play a rousing game of bloody knuckles.  One brusquely demands that you state your business.  Used to curiosity seekers, they readily grant you permission to ogle at the caged beast prisoners.
+
+### SD2:614
+"Yah!  We got orders from Captain Richards to see that these varmints get transported to the gladiator games.  Well,   dragging them through the streets is just begging for trouble.  Me and Ramius don't ache to risk our lives.  These be nasty beasties."
+
+### SD2:615
+The guards watch you closely and exchange covert looks.  One suggests casually, "Looks like you could use some extra coin.  Want to take on the job?"  Do you offer to take the beasts to the gladiator games in exchange for 100 Gold Zembulian Zelots?
+
+### SD2:616
+"Fair enough.  We don't blame you.  It's not a job we're looking forward to.  Our pay barely makes the task worth the risk, but there are few good paying jobs around here to choose from."
+
+### SD2:617
+"Praise the maker, we have a taker!   We'll fetch the critters right quick.  Don't want to give you time enough to change your mind!"  The guards round up three large beasts imprisoned by heavy manacles. Chains link all three beasts together.
+
+### SD2:618
+They provide you with a map that shows  the location of the slave gladiator prison.  "Take them here.  You can give this note to Corporal Sampson.  He will be the one that pays you.  Good luck, but beware!  These beasts are not as dumb as they look!
+
+### SD2:619
+As your head clears from the initial impact of the spell, you catch a glimpse of the cleric swiftly disappearing behind the  temple's fortified door.
+
+### SD2:620
+You enter the slave prison.  A potbellied Corporal Sampson is slumped over a shaky table.  He's slept through the entire ordeal that just took place outside.  The smell of elderberry wine permeates his clothes.  You try to rouse him to collect your fee.
+
+### SD2:621
+Sampson awakens with a jolt and sits up quickly.  An offensive stream of drool has slid across his left cheek.  Heavy bags underneath his eyes imply he hasn't slept well lately.  "What's this?  Can a man have no rest?" You promptly display your contract.
+
+### SD2:622
+Sampson swiftly scans the contract with disbelief.  "I see that you have been promised the sum of 100 gold Zelots.  Well, there is not that many gold Zelots in all of Bywater!  You may be very brave, but you are also very gullible!"
+
+### SD2:623
+"I can offer you a few silver for your trouble.  That is the best I can do."  He begins to search his belongings for a few paltry coins.  Suddenly, a nasty brawl breaks out between two of the beasts.
+
+### SD2:624
+During the battle with the mad troll, one of the troll's hands had been severed.  One of your charges hungrily snatched it up to eat.  However, another beast greedily attempted to steal the tender morsel.  This attempt has provoked an all-out brawl.
+
+### SD2:625
+Before you are able to get the situation under control, the beasts erupt explosively into a convulsing ball of fur and slashing claws.  You are immediately  pulled into the fray.
+
+### SD2:626
+Corporal Sampson is badly wounded during the melee.  He asks you to take him to the village healers.
+
+### SD2:627
+"Thank you, good people.  I didn't look forward to facing Father Yenovich.   Years ago, I ran off with his sister and ended up exposing her to the black sickness.  She died soon afterwards, and I returned to the city alone.  He's never forgiven me."
+
+### SD2:628
+He thanks you and rewards you with a huge amount of coin.  "I bid you a well and safe journey." You feel awkward about this magnanimous offering.  You suspect that it is all he owns.  However, local customs dictate that it would be improper to refuse.
+
+### SD2:629
+"Vipers!  You shall hang for this!  You yellow dogs have not seen the last of me!"
+
+### SD2:630
+Never one to miss an opportunity, you snatch up one of the dead beast's claws and slash Sampson's throat.  His life blood  gushes out to drench the trampled grass.
+
+### SD2:631
+In his last dying moments, he gazes up at you with eyes of pure hatred.  "You will regret this.  My dying image shall haunt your nightmares again and again.  I vow to avenge myself for the sake of my children, now forced to grow up fatherless."
+
+### SD2:632
+With the death of the cleric, the magical enchantments that animates his mindless undead army fades.  Without the magic to sustain them, the corpses collapse to the ground.
+
+### SD2:633
+You transport him to the village temple for healing.  A cleric is immediately summoned.  Upon seeing that the injured party is Sampson, his eyes narrow with recognition.  He demands, "Is this man a friend of yours?"  What is your reply?
+
+### SD2:634
+"You have made a poor choice.  Though I may be a man of the cloth, I cannot condone this man's past actions.  Your decision to be friends of this fiend has condemned you all to suffering."  Before you can respond, he casts a spell upon you.
+
+### SD2:635
+"You're wise not to associate with this man and his sordid past."  Two young priests are quickly appointed to carry Sampson off.  "Leave now!  Your business is done." He withdraws back into the temple.  There are sounds of the door being heavily barred.
+
+### SD2:636
+Frenzied shouting suddenly breaks out.  A patrol of men rapidly approach your position.  "They're the ones!  They left Corporal Sampson to die like a wretched beast!  Seize them!"
+
+### SD2:637
+You arrive at a temple dedicated to Sestuona, goddess of nature.  You will be permitted entry only if you are willing to pay an outrageous price for the temple's services.  Your presence here is opposed by a powerful enemy within the sect.
+
+### SD2:638
+You enter the outer office of the city's head magistrate.  Her assistant at the front desk is drowning in paperwork.  He inquires about your business. "So, you seek adventure."  He informs the magistrate of your presence. "You may see her now."
+
+### SD2:639
+You enter a spacious, well-organized office.  The city magistrate is an imposing woman dressed in rich velvet robes.  You state your desire for adventure.  She asks you a number of probing questions.  You detail your background and capabilities.
+
+### SD2:640
+She informs you, "Some rather nasty business needs to be handled.  If you wish to contract with me, I can offer you a generous sum for your services.  There are a number of commissions to choose from."  She considers her case files thoughtfully.
+
+### SD2:641
+"Ah!  This looks like a job that could fulfill your desire for adventure."  She hands you a file to look over.  "Read this thoroughly.  It details the assignment and your compensation.  If you find the terms acceptable, sign and date the final sheet."
+
+### SD2:642
+Notorious Bindwart Bigbelly is wanted for the murder of Vladimir, a captain in the Royal Brigade.  You'll be rewarded in gold talons for his successful capture or if you can provide proof of his death by your hands.  Do you accept the commission?
+
+### SD2:643
+"Excellent!  Bigbelly regularly frequents a grog and mead house known as "Newt's Landing".  It's located in the northeastern part of the city.  Careful! It's a rough hangout.  Report back here when you have successfully completed your assignment."
+
+### SD2:644
+You enter a sleazy tavern known as "Newt's Landing".  The title suits this damp, dirty place.  Only a newt should want to hang out with his friends in such a dump.
+
+### SD2:645
+In the back corner, near a large table piled high with roast mutton, a large Orc warrior pounds down a crock of mead.  He fits Bindwart Bigbelly's description.  A second Orc notices your unveiled interest and points it out to him.
+
+### SD2:646
+Large armed Orc warriors crowd the tavern.  The boisterous din turns suddenly silent.  They all seem to be waiting for your next move.
+
+### SD2:647
+No one attempts to stop you as you rush after Bigbelly in hot pursuit.  You approach the tavern's back door and come to an abrupt halt.  Bigbelly stands in front of you, his back to a large stack of barrels.  His gleaming sword is drawn.
+
+### SD2:648
+From behind you, several heavily armed orcs approach.  Congratulations!  It appears that with just a minimum amount of forethought, you have managed to wedge yourself between a rock and a hard place.
+
+### SD2:649
+The magistrate's assistant informs her of your success.  He's given authorization to pay you.  You sign a receipt, receive your gold talons, and are quickly ushered back into the magistrate's office.
+
+### SD2:650
+The magistrate thanks you gracefully.  She is notably impressed by your achievement and hopes that you will consider taking on another commission.  You proceed to look over another file.
+
+### SD2:651
+A rabid beast is wreaking havoc among the king's vast private gardens.  Two servants are dead.  One of the king's dear friends was attacked.  You will be rewarded handsomely if you destroy the beast.   Will you take this commission?
+
+### SD2:652
+You are just about to enter the king's private gardens.  Someone has posted a message at the front gate.  "Closed until further notice.  Do not enter under any circumstances.  You have been warned!"
+
+### SD2:653
+You enter the king's gardens and begin to stalk for signs of the rabid beast.  Several  plants have been uprooted or mutilated.  You hear something up ahead on your right.  There are indications that the beast may not be alone.  Do you wish to continue?
+
+### SD2:654
+You're shocked.  A sudden thought races through your head.  "The magistrate better pay extra for this!"  There is not one beast.  Instead, circumstances require you to engage no less than six ferocious beasts at once.
+
+### SD2:655
+Do you ask for more money because of the additional work you were required to perform in the king's gardens?  OR   Do you accept the original contract amount?
+
+### SD2:656
+The magistrate sees to it that you are rewarded handsomely with a bonus.  "You have earned it, my brave friends.  Come back later.  I may be able to offer you something in the future."
+
+### SD2:657
+"You fools!  Your instructions were to kill one pet beast that had been infected with rabies. Instead, you have killed all of the king's pets. The king is beside himself! You have made a mockery of our contract and deserve nothing.  Leave!"
+
+### SD2:658
+"If you don't exit this office immediately,  I shall summon my guards and have you thrown into prison."  You beat a hasty retreat out the door.
+
+### SD2:659
+"Hey!  No one is allowed beyond this point.  You will have to leave."  Guards escort you to a door outside the cell block.
+
+### SD2:660
+You climb up a staircase.  This appears to be the surface level.
+
+### SD2:661
+A drunk dwarf has passed out on a bed of dry straw.  All your attempts to wake him fail utterly.
+
+### SD2:662
+Opening the door to this cell was not a wise decision.  Several large fungus creatures sense their chance at freedom.  They appear eager and willing to destroy you if it will enable their escape.
+
+### SD2:663
+Your attempt at unlawful entry to the town jail brings guards running.  They draw steel as they approach. "Planning to break out those miserable dunderheads we caught snooping around the graveyard?  Well, consider a cell your new home!"
+
+### SD2:664
+Except for a few boxes stacked in the corner, the cell is empty.  You discover that the boxes contain numerous pamphlets.  They all promise benefits to those who worship Vixies, the Spider Goddess.
+
+### SD2:665
+You open the door from the outside without difficulty.
+
+### SD2:666
+You enter an area that bustles with clerks and aides.  They carry out their work with a self-important air.  Some sit at tables scribbling furiously.  Others struggle with armfuls of official-looking documents and sealed scrolls.
+
+### SD2:667
+The air has become bitterly cold.   However, a soft glow emanates from the back of the room.  You are drawn to its suggestive promise of warmth.
+
+### SD2:668
+Drawn to the soft glow, you edge your way slowly towards the far wall.  You find that you're shivering uncontrollably now.  Without any warning, the door behind you suddenly slams shut.  An icy draft sprints down your back.
+
+### SD2:669
+The mortar, which bonds the floor's stone blocks together, glows with an unnatural light.  Will someone volunteer to touch the floor?
+
+### SD2:670
+A green ball of light shoots out from the floor. Stunned, your volunteer collapses in a daze. The ball explodes into particles across the floor. Your feet feel an electrical surge. It zips through your bodies, shocking you like lab rats in a metal cage.
+
+### SD2:671
+Coursing across the floor from the room's outer walls, the electric bolts of energy converge at a centralized point. Light particles swirl and swell upward forming a nebulous humanoid shape. Pointing an amorphous limb in your direction, it casts a spell.
+
+### SD2:672
+From deep within the ground, you hear a  rumbling.  The stone floor begins to shake unsteadily.  Large cracks begin to split the stone surface.  Suddenly, the floor erupts into rubble.  An army of huge insects boil up out of the floor.
+
+### SD2:673
+The summoner of this plague of centipedes has disappeared from sight.
+
+### SD2:674
+You pause and listen intently.  The sounds are muffled and repetitive.  You suspect that they are the sounds of shuffling feet.  A strong odor of rotting, decaying flesh assaults your nostrils.  There can only be one explanation.  Zombies must be nearby.
+
+### SD2:675
+You stumble into a swarming hive of zombies.  Several of them must have been created quite recently.  The place is bursting at the seams and appears hardly able to accommodate such a large number.
+
+### SD2:676
+An old, mummified corpse sits in a corner.  Its right arm has been ripped off just below the elbow, and rats have gnawed off its feet.
+
+### SD2:677
+You find Cragentooth's cot.  The mattress is infested by maggots, fleas, and spiders.  Disgusted, you broaden your search.  The place crawls with loathsome critters.  These conditions are repulsive.  You quickly determine that nothing valuable is here.
+
+### SD2:678
+You are overcome by a bout of dizziness.  For some inexplicable reason, your compass appears unable to provide you with an accurate reading.
+
+### SD2:679
+Created out of solid bronze, an imposing nine foot tall idol stands just in front of you.  The idol is in the image of a Anti'id.  Do you wish to destroy it?
+
+### SD2:680
+With the figure destroyed, a small passage is revealed.  It had been secretly hidden beneath the base of the figure.
+
+### SD2:681
+You descend into a tunnel.  Several clawed footprints have been left in the sand.  You proceed cautiously.  This tunnel may be used quite regularly.
+
+### SD2:682
+Apparently, Cragentooth worshiped a graven deity in private.  You wonder what his followers' reaction would have been had they been aware of Cragentooth's lack of devotion to their own god.  He probably would have literally been skinned alive.
+
+### SD2:683
+The idol crashes to the floor and splits in two.  A stream of small, glittering gems pour out of the broken figure.
+
+### SD2:684
+You are just about to slip through the secret door to Cragentooth's quarters, when a brilliant light bolts down from above.  It heavily impacts the ground behind you.  You turn your head.  An eight foot figure stares over your shoulder.
+
+### SD2:685
+The being looks very much like the idol you just destroyed.  It raises a tentacled head and speaks to you telepathically.   "Puny mortals!  I have been sent to take revenge on the desecrators of Xycloxyio's holy sanctuary."
+
+### SD2:686
+"I expect to enjoy devouring your minds as much as Xycloxyio will enjoy devouring your bodies.  Xycloxyio will be most pleased with your capture."
+
+### SD2:687
+The magistrate listens with courtesy as you relate your tale of progress.  When you have finished, she responds simply, "I assure you that you will receive your reward as soon as you have successfully cleared out the beast."
+
+### SD2:688
+The place is stock full of provisions.  With a minimum of effort, you could securely barricade the door using some of these heavy crates.  For awhile, this could serve as a temporary resting place.
+
+### SD2:689
+The circular room contains walls which are entirely devoted to scenes of carnage.  There are numerous depictions of large creatures with tentacled heads.  They're often shown attaching these tentacles to helpless victims' skulls.
+
+### SD2:690
+Dwarves, elves, ogres, orcs and even  gnomes are shown having their brains extracted by the strange creatures.   Humans are depicted in only one scene. It's possible that the scenes are   chronological pictographs representing this race's history.
+
+### SD2:691
+Humans are a young race, and they do not appear until the last scene.  Here,   humans are shown engaged in battle with the strange creatures.  The humans are fighting the creatures using highly developed mental capabilities, and they are winning.
+
+### SD2:692
+Perhaps, Realmz owes its existence to the human race.  These numerous strange creatures were in the process of destroying all other races until humans appeared.  Somehow, humans were able to develop their psychic abilities to defeat them on their level.
+
+### SD2:693
+Many ancient songs and stories have proclaimed that the gods created the human race to ensure the survival of the elder races.
+
+### SD2:694
+After the devastating threat to the elder races had been eliminated, the gods supposedly lost interest in humankind.  The race had fulfilled its original purpose.  It was physically weak and unintelligent.  They agreed that it would probably die out.
+
+### SD2:695
+However, one goddess did take pity on the puny race.  She granted humans the power to learn and the ability to work together.  While preoccupied over these ancient myths, you utterly fail to notice the arrival of several strange, tentacled beings.
+
+### SD2:696
+There's no doubt that these creatures could have virtually destroyed Realmz and its inhabitants.  Their tentacles try to attach as you strain your sword skills to the limits.  Although you manage to defeat them, you shrink at the mere thought of an army.
+
+### SD2:697
+Those that inhabit the Realmz are fortunate that these horrendous creatures no longer exist in such vast numbers.
+
+### SD2:698
+As soon as you step into the hidden passage, you are assaulted by a mental attack.  It is a psychic barrier used to prevent weak-minded Dogre from entering this area of the fortress.  Your magical energy drains from your body.
+
+### SD2:699
+You come across a large tentacled creature.  It is slowly dissecting a live Dogre, carefully removing and labeling various body parts.  Still conscious, the Dogre is unable to shriek or move.  It is gagged and immobilized by large leather straps.
+
+### SD2:700
+You enter a large room filled with several unfamiliar objects.  Curious, you begin to experiment with several of the devices attempting to figure out what they're used for.  Suddenly, four creatures converge upon your party from opposite directions.
+
+### SD2:701
+The Mush Men fight for their lives.  They have become completely surrounded.
+
+### SD2:702
+You greet a passing wizard who smiles warmly at you.  You strike up a wonderful conversation and become friends.  He asks about your travels and would like to know if he may accompany you on your exploits?
+
+### SD2:703
+You return to his small shack to gather his things before you set off with your new found friend.  His name is Vodalian and he states that he simply loves adventure.
+
+### SD2:704
+A seedy looking group of gnomes are sitting at a vomit stained table.  They are swilling cheap grog from a clay jug.  They seem more concerned with getting more than their share of the wine and pay you little attention.
+
+### SD2:705
+Just as you're about to dismiss the group,  Vodalian rears up a glinting dagger and charges against one of the gnomes.  "Murderous scum!  I shall avenge my sweet Alex this very day!"
+
+### SD2:706
+You burst forth in an attempt to restrain Vodalian.   Gnomes rush from the shadows to aid their drunken friends.
+
+### SD2:707
+Vodalian thanks you for your aid.  "This vermin slew my son.  Alex was an extremely intelligent and talented pupil.  He could have grown to become a powerful mage.  This foul creature deserved a more cruel demise."
+
+### SD2:708
+The goblins scatter.  The body of their chief lies broken and still.  Blood gurgles forth amid the lonely quiet.
+
+### SD2:709
+A large group of flesh fiends stand on the far side of the small stream.  They seem reluctant to approach the water.  If you venture across, they will surely attack.
+
+### SD2:710
+Upon the destruction of the mush mound, the surrounding podlings wither and die.
+
+### SD2:711
+You plow through thick clumps of fungus. Movement flashes at your side.  You halt and warily eye the surroundings.  A constant, steady rustling seems to come from all directions.  You feel quite on edge.  There's something odd about these plants.
+
+### SD2:712
+Huge fungus-like plants grow throughout the area.  Each fungus is surrounded by small podlings attached by long vines.  The podlings slither in your direction.
+
+### SD2:713
+A faint smell begins to permeate the air. It slowly gains strength.  You toy with the idea of capturing one of the creatures.  A wizard would pay dearly to use such a  plant in experiments.  The nasty odor hastily devours this thought.
+
+### SD2:714
+Open grassland is marred by a dark, gaping pit.  Muted bubbling fizzles below.  A large log lies near the pit's edge.  It might be possible to use it as a crude, makeshift ladder.  Do you push the log in and attempt to enter the pit?
+
+### SD2:715
+The cleric emits a low, guttural chant.  Near the cavern wall, corpses twitch and writhe.  Compelled to serve as  reinforcements to the cleric's unholy army, the grotesque bodies awkwardly disentangle themselves.
+
+### SD2:716
+You start to slowly clamber down the log.  With a heavy thump, the log shifts to the right and begins to shake with violent force.  Clinging for dear life, you scramble your way back up out of the pit.  Massive slime creatures slither up the log.
+
+### SD2:717
+Your movements attract the attention of another mush mound.
+
+### SD2:718
+The clamor of battle attracts the attention of several krise.  They rush to the aid of their clansmen.
+
+### SD2:719
+Several warriors from the village rush to defend their chief.
+
+### SD2:720
+Several krise arrive on the scene.  The sounds of battle reverberating throughout the caverns have brought them running to investigate the commotion.
+
+### SD2:721
+With the annihilation of Rewop, his companions are no longer able to remain in the Realmz.  They quickly fade away, returning to the smoky Abyss of their true home.
+
+### SD2:722
+Rewop summons a minor demon to fight at his side.  He is an intimidating, powerful foe.
+
+### SD2:723
+Fire fiends attack.  Their yellow fangs ooze steaming ichor as they lunge from every direction.
+
+### SD2:724
+Deep crags and pits of sulfurous lava make the footing treacherous.  Periodically, growls belch from the hot inner recesses.  It's difficult to believe that some creature could breathe and survive these steamy, molten pits.
+
+### SD2:725
+More centipedes boil up from beneath the floor tiles.  Without a pause, they crunch over the dead husks of their own kind in their relentless pursuit of you.
+
+### SD2:726
+The Widow of the Web possesses the ability to control lesser arachnids.  She draws on this power to compel her lesser cousins to aid her in battle.
+
+### SD2:727
+At the death of their leader, troopers begin to scatter and run.  You repeatedly bellow out orders for them to stand their ground.  The situation deteriorates into panic and disorder.
+
+### SD2:728
+You walk down a dimly lit passage.  The odor of cheap wine intermingles with   spiced potatoes.  The raucous din of drunken patrons swells the close, musty hallway.
+
+### SD2:729
+A worn carpet has been stained by  countless mugs of spilled ale.  Patches of mold grow in dark corners of the room.  The rotting remains of potatoes have been ground into the carpeting.
+
+### SD2:730
+You head towards Bigbelly.  An Orc warrior steps forward and offers to buy you a drink.  The moment your attention is diverted, Bigbelly bolts for the bar's back door.  At this second, the path of pursuit is free and clear.  Do you dash after him?
+
+### SD2:731
+You enter the musty, dank cellar.  Immense, dirty claw prints trail off into the distance.  From somewhere up ahead, growls rumble in a low-toned threat.
+
+### SD2:732
+Encouraged by countless mugs of ale, a few of Bigbelly's buddies rise to attack.
+
+### SD2:733
+It's pretty dark down here.  You may want to cast some light.  Click the TORCH button  OR   Cast a light spell if you have one.    -The Protector-
+
+### SD2:734
+Several inches of rancid water cover the floor.  A cruddy drain is clogged by accumulated filth and grime.
+
+### SD2:735
+You pry the warped trap door up by a huge iron ring.  The rusty hinges groan in protest.  Beneath the door is a small pit that holds a large leather sack.  The bottom of the sack has rotted away, but the contents are as valuable as ever.
+
+### SD2:736
+A large pit slowly drains the stagnant water from this room.  In the bottom of the pit you see a large green pool.  It quivers as each drop of water hits it's surface.  Do you throw an object in the well to test it's depth?
+
+### SD2:737
+You kick a large stone into the well.  It does not land with the expected splash.  Instead, it hits the green pool with a loud slap.  It sounds as if the stone has hit a large blob of clay.  If only that was the case...
+
+### SD2:738
+A old ladder leads down a small pit.  You enter the small hole only to emerge into a small room.
+
+### SD2:739
+A loud growl to the west alerts you that you are not alone.  With luck, this is knowledge the creature who made the growl does not have.
+
+### SD2:740
+A number of flasks are in a crate near a barrel.  The barrel is full of lamp oil.  It's an easy task to fill the flasks with oil.
+
+### SD2:741
+The rations in this sack seem fit for consumption.  They appear to be pilfered from the tavern above.  Obviously, the minotaurs must sneak to the surface and steal them.
+
+### SD2:742
+Suddenly the floor gives way.  A large pit opens beneath your feet.  Those that do not DETECT TRAP do not see the danger in time and fall in.
+
+### SD2:743
+The noise of the trap attracts the creatures that lives here.  As you manage to gather yourself together a pair of large minotaur rushes you from the west.
+
+### SD2:744
+The foot locker is locked but it's easily defeated.
+
+### SD2:745
+A large lever sticks from a pillar.  Do you move the lever?
+
+### SD2:746
+The lava begins to drain from the pool.  It seeps into what must be an underground storage tank.
+
+### SD2:747
+The pool of water drains through a drain in the wall.  It must be headed for an underground storage chamber.
+
+### SD2:748
+The minotaurs must have used the lava for heat and the cool water to drink.  However, with both the lava and water in the storage tank below, a great gush of steam fills the room.  You are literally cooking alive.
+
+### SD2:749
+With both levers thrown, you feel a low rumble below ground.  In now dawns on you that fire and water don't mix.
+
+### SD2:750
+You throw the switch.  A loud bang sounds from nearby.
+
+### SD2:751
+Several dead and mutilated bodies are scattered about the area.  Most look to have been slain patrons of the seedy bar above.  A few carrion slugs are cleansing the area of all dead flesh.  Your living flesh will be a welcome treat.
+
+### SD2:752
+The room is filled with many provisions.  All of which are now rotten and useless.
+
+### SD2:753
+Many tables and chairs are stacked in the corner.  At one time they must have been of some worth, but they have been rotting here for so long they are now worthless.
+
+### SD2:754
+An old sump near the back of the room must lead to some underground cavern.  A few denizens of the deep have found their way to this room.  They are feasting on the sacks of rotting wheat in the corner of the room.
+
+### SD2:755
+This lever is rusted so bad it will not budge.
+
+### SD2:756
+This lever looks to have been oiled recently.  Do you wish to throw it and see what happens?
+
+### SD2:757
+There are several potions of worth on this table.
+
+### SD2:758
+You spot a group of the vermin that infest this decrepit cellar.  Do you wish to attack them?
+
+### SD2:759
+As you eye a stairwell that leads to the root cellar, a nearby scullery maid speaks to you.  "I would not go down there.  Quite a few that do never come back up.  Olif has abandoned that cellar long ago.  Something's down there.
+
+### SD2:760
+Olif has offered a generous reward of gold to anybody who can root it out.  So far none of the takers have returned."  Do you wish to enter the abandoned root cellar?
+
+### SD2:761
+Olif, the owner of this sleaze pit rushes up to you.  Having heard the noise from below he speaks out, "I don't believe what I'm seeing  Thought for sure that whatever was down there had got you too.
+
+### SD2:762
+I suppose your wanting to collect the reward I have out for the killing of what was down there.  I tell you what.  How about I give you a choice.  I can give you the gold, or I can give you what I have in my pocket.  What do you say?"
+
+### SD2:763
+"If that is your choice."  Olif hands you a heavy bag of coin.  Olif pulls out his hand and reveals a ring with a large glowing gem.  He plays with it absentmindedly.  Do you ask him to reconsider and ask for what he has in his pocket?
+
+### SD2:764
+Olif ponders for a moment and then nods.  "Very well, since you are so sure of yourself, you can indeed have what I have in my pocket."
+
+### SD2:765
+Olif reaches in his pocket and pulls out a bright copper tarsk.  He flips it at your feet and walks away, "Don't spend it all in one place!"
+
+### SD2:766
+He grudgingly hands you the sack of coins.  "If I were you, I would be moving on.  Quite a few in this fine establishment would not mind slitting your throat for that coin.  Now be gone before I have you thrown out!"
+
+### SD2:767
+A pack of ghouls is devouring a man in the corner.  From the blood stained remnants of his cloak, he appeared to be one of the town guards.  With a sneer on their blood stained lips, they attack like a pack of wild dogs.
+
+### SD2:768
+The remains of the man are scattered about the room.  He appears to have been a fine warrior in his day for he possessed a keen edged weapon.
+
+### SD2:769
+Many mangled corpses and gnawed bones are heaped in the corner of the room.  A macabre site if you ever saw one.
+
+### SD2:770
+As you prepare to leave the dead in peace, you notice one pile of bodies seems to shift.  From beneath the pile of bodies you can hear a grunting noise.  Do you investigate?
+
+### SD2:771
+As you pull several bodies from the pile it begins to topple.  As the grotesque and misshapen forms slide from the pile you uncover several carrion feeders.
+
+### SD2:772
+As you wipe the gore from your blades you spot a small ledger near the back of the room.  To read the ledger, select "Ledger" from the Maps/Notes Menu.
+
+### SD2:773
+From somewhere behind you, near where you came in, you hear what sounds like a high pitched moaning.  The hair on the back of your neck begins to stand as you contemplate the source.
+
+### SD2:774
+You see a trap door in the floor.  Below is a smooth sloping shaft.  Do you wish to slide down?
+
+### SD2:775
+Do you push the lever?
+
+### SD2:776
+A grimy drain, and a way to move about.
+
+### SD2:777
+Many apprentice wizards are about the drudgery of taking inventory of their food stores.  Each apprentice will strive his best to prove themselves to their master by being the first to slay you.
+
+### SD2:778
+You have found the animal pen.  The beasts within do not recognize you as their masters and attack before you can close the door behind you.
+
+### SD2:779
+The very orderly quarters of the apprentices stands before you.  Most of those that call this home are gone.  However, a few are completing some studies.  They are quick to respond to your intrusion.
+
+### SD2:780
+You enter the semi private quarters of the headmaster.  On a small table near the bed you see his daily diary.  The instructions on the cover are for the headmaster to fill out a daily report on the training of his students.
+
+### SD2:781
+Each day that page must be ripped out and delivered to the grand wizard by the student who has performed poorly for that day.  Today's log is only partially filled in.
+
+### SD2:782
+A gruesome site indeed.  The remains of some sacrificed individual lies heaped in the corner to rot.  A loud buzzing comes from the corpse as a plague of pests and zephyr flies feed on the corpse.
+
+### SD2:783
+Two identical statues are in each corner of the room.  However, the statue on the right seems to have a soft white glow.
+
+### SD2:784
+Inscribed in stone at the base of the statue are the instructions for a sacrificial ritual.  The eerie glow about the statue almost gives you the impression that it's alive.  In fact it's undead.
+
+### SD2:785
+The noise has alerted a nearby Dogre patrol.
+
+### SD2:786
+You approach the headmaster who waits patiently for your arrival.  A dead apprentice lies at his feet like a rag doll.  His body and face charred like overdone ribs.  He answers your question before you can even ask.
+
+### SD2:787
+"I am not a believer in the old saying,  'Don't punish the messenger'.  If he had done his job, there would have been only good news to report."  With that said he seats himself in his fine silk chair.
+
+### SD2:788
+"So you have slain my master.  No matter.  It only saves me the time of having to destroy that feeble man myself.  For many months now I have planned to overthrow him.  You only rob me of the pleasure that would have given me.
+
+### SD2:789
+My enemy is dead, but you shall substitute in his place."  With lightning quick reflexes, he smashes a pair of amber crystals at his feet.  As you clear the smoke from your eyes you stair at the a pair of immense beings.
+
+### SD2:790
+You find the secret treasure of the headmaster.  He has been massing his wealth and fortune for some time in anticipation of overthrowing his master.  This money would have gone a long way towards bribing the apprentices.
+
+### SD2:791
+Though you have set me back with your wanton destruction of my students, I fear that battling you can only further weaken my position.  If you leave my quarters in peace I shall let you live.  Otherwise I shall deal with you harshly.  Do you leave?
+
+### SD2:792
+You are very unceremoniously dumped on the floor like sack of wheat.  Your pride is not the only thing bruised this day.
+
+### SD2:793
+You unwise decision to pull the lever has not only caused you to suffer searing pain, but has attracted the attention of a nearby group of apprentices.
+
+### SD2:794
+This room is empty save a strong smell of perfume.
+
+### SD2:795
+You interrupt a woman.  "Get out!  I shall have the town guard throw you in prison for this!"  You narrowly dodge a vase that is thrown at you.
+
+### SD2:796
+You walk in as a rather embarrassed man finishes buttoning up his robe.  He mills about gathering his things and leaves in a hurry.
+
+### SD2:797
+A storeroom.  Nothing of interest as far as you can see.  You could rest in here without being found.
+
+### SD2:798
+A gnome is surprised by your boldness.  "I will ask you to leave.  I have friends in the town militia.  It would be best if I did not have to give them your names."  Do you leave?
+
+### SD2:799
+Having called his bluff, he gives you a stern look and stomps out of the room.  "You shall regret your hasty decision!"
+
+### SD2:800
+Waiting for you at the bottom of the stairs is the small gnome you so rudely interrupted upstairs.  Behind him is a large group of armed militia.  "That's them Boron!  That group right there.  Now if you want your gold, you will have to earn it."
+
+### SD2:801
+As you clean your blades on the tunics of the fallen, you hear one of the employees of this establishment yell out the door to a group of nearby town militia.  She is calling for help.  You hear the clank of weapons and armor as they come running.
+
+### SD2:802
+You hear the same woman call to yet another group.  However, they are far off and this gives you ample time to scram.
+
+### SD2:803
+A burly dwarven warrior is snoring loudly on the bunk.  Several empty flagons of ale are scattered about the room.  Do you wake him?
+
+### SD2:804
+He awakes with a start.  As he shakes the cobwebs from his head he begins to pat his belt.  Suddenly he stands and begins to shout, "Hey!  Who stole me purse!" Without hesitation he grabs a nearby ax and begins to swing.
+
+### SD2:805
+"Me be tinkin me be knowing who has me purse!  Me be tinkin on getting it back, just quick."
+
+### SD2:806
+Suddenly Reppep Rd stops attacking. "Oie!  Me be sorry folks. I guess I lost me head.  Twas the girl who me thinks took me coin.  Perhaps you will let me travel with you for a while. Tis a dangerous place to be traveling alone. Tink I tag along with ye."
+
+### SD2:807
+"Oie!  Tis a good ting you be doing.  Me name is 'Reppep Rd'  Me been waiting in Bywater fer tree days for me mate to show.   Lookin be he not be showin."
+
+### SD2:808
+Throw the lever?
+
+### SD2:809
+Do you want to take the top off of the coffin?
+
+### SD2:810
+At first the coffin appears to be empty.  The bottom appears to be a shinny black silk.  Suddenly the silk begins to move.  It's not silk after all but a solid mass of tiny black spiders.
+
+### SD2:811
+The spiders begin to grow in size.  You quickly attempt to smash them with your weapons but there are just too many.  Dozens of large spiders pour out of the coffin as they become too big to fit inside.
+
+### SD2:812
+With gore still dripping from your blades, more spiders continue to pour from the coffin.
+
+### SD2:813
+The coffin is buried in spider flesh.  Many of the spiders did not escape in time and were crushed by the growing bodies of their fellow spiders.  A sickly ooze of crushed spider flesh hangs on the coffin.
+
+### SD2:814
+You scrape the disgusting site clear and find a small skeletal figure.  The figure is without any ornaments save a leather belt, a wand clasped in one hand, and a scroll case in the other.
+
+### SD2:815
+The scroll case holds writings that predict the rule of the Realmz by Vixies.  The spider god.
+
+### SD2:816
+A large group of spiders is in the corner.  They make no move to attack.
+
+### SD2:817
+As you approach the lever, the spiders attack.
+
+### SD2:818
+The spiders have been tasked to guard the treasure with their lives.  They do so.
+
+### SD2:819
+With the Widow of the Web banished from the Realmz, her powers to keep the temple also in the Realmz fails.  The Widow will have to face Vixies and explain her failure to achieve victory over a few puny mortals.
+
+### SD2:820
+A small pile of wealth and valuables.
+
+### SD2:821
+At the far end of the hall is the town magistrate.  She is glowering at you.  "What are you doing here!  Now you shall see why curiosity has killed the cat!"  She pushes a button on a nearby wall.
+
+### SD2:822
+A sliding door opens to reveal a small animal pen beyond.  Seven large boars exit and begin to nuzzle the magistrates legs.  "You are not fit for swine, yet it looks as if you shall have to do this day."
+
+### SD2:823
+A squad of Dogre are bunked here.  Most are off somewhere, but a few are lazing around sharpening their weapons.
+
+### SD2:824
+As you enter this door you feel large powerful hands grasp you and toss you towards the center of the room.  You are surrounded by several large squads of gnath warriors.
+
+### SD2:825
+The leader restrains his troops from falling on you immediately. "What you do here,  you not Dogre?" You take the opportunity to lie your way out of this dire situation and buy yourself some time. They are satisfied that your no friends to the Dogre.
+
+### SD2:826
+These gnath are here to rescue some of their warriors that have been captured.  One of the warriors is the son of their chief.  They have been ordered to free the chiefs sun or die in the attempt.
+
+### SD2:827
+The room is littered with the dead bodies of over two dozen Dogre and a few gnath as well.  It looks as if they have been hiding from the Dogre in this room and picking off the patrols as they leave for duty from nearby barracks quarters.
+
+### SD2:828
+Even with the great advantage of surprise on their side, they cannot hope to defeat the entire force of Dogre.  "You help, we help you.  We know big secret, but we too big to fit.  You help us?"  Do you ally with the gnath for now?
+
+### SD2:829
+"You no can tell  we here.  You are bad!"  The gnath warriors jump on you like a ton of bricks.
+
+### SD2:830
+The few gnath that were wounded and did not engage you right away are pressed to attack.
+
+### SD2:831
+The gnath sketches out a crude map that shows a secret tunnel.  He claims there is treasure on the other side but they are too big to fit through the tunnel.  "Now you come with us.  We attack now why we still can."
+
+### SD2:832
+You travel with your large but smelly friends past several turns in the hall.  "Behind is great Dogre army.  We surprise and kill all we can.  Then no more Dogre."
+
+### SD2:833
+With the help of two strong gnath, you smash the door in.  Beyond is a large force of Dogre.  Perhaps too many.  Even the surprise on the gnath leaders face says that there are more Dogre than he anticipated.
+
+### SD2:834
+Loosing no time, you and your gnath friends wade into the throng and cut down as many as you can before they can form up.  However, there are so many that things soon turn against you.
+
+### SD2:835
+The gnath was no liar.  There is a huge pile of coins that almost staggers the imagination.  However, the bulk of the coin is copper and is far too heavy to be of any real worth.  Even so, the gold you find is still quite a tidy sum.
+
+### SD2:836
+A massive force of Dogre is stationed in this large barracks.
+
+### SD2:837
+The steward informs the kings provisioner to allow you to have anything you want from the kings storeroom.  "You will find the storeroom near the entrance.  Fair thee well."
+
+### SD2:838
+A large group of  armed men prevent you from going upstairs.  "Those are the private chambers of the castle.  You are not allowed there citizen!"
+
+### SD2:839
+The kings provisioner has learned of your alliance with the king and allows you to take whatever you wish.
+
+### SD2:840
+You find the corpse of a dead human.  His leg is swollen and infected from some type of animal bite.  The scavengers have not yet taken their toll, so the body is pretty fresh.  On his person you find nothing but a small scrap of paper.
+
+### SD2:841
+Below the door in the floor are several small cases sealed in wax.  Inside are stacks of parchment.
+
+### SD2:842
+On the floor at your feet is a dust covered whip.  As you brush the dust away you can see that the leather underneath is in fine condition.
+
+### SD2:843
+In the far corner of the room is a large skeleton of some demonic beast.  Centuries of dust cover it's now decimated body.  It has something gripped in it's clawed hand.
+
+### SD2:844
+Pulling the items from the creatures clenched fist you find a long bull whip.  The leather is in perfect condition after all these years.  It's obviously magical in nature.
+
+### SD2:845
+You are hurled back by the ferocity of the evil within.
+
+### SD2:846
+You discover a small hidden shaft behind some crates.  As you enter the tight tunnel you hear loud squeaking from the far end of the shaft.  The stench of decay and rot is more than you can stand as you paint your shoes the color of your breakfast.
+
+### SD2:847
+As you continue to listen you determine that the squeaks come from giant rats.  They seem to be worked up about something.
+
+### SD2:848
+You can now see in the dim light.
+
+### SD2:849
+The light fades leaving you in darkness.
+
+### SD2:850
+You enter an ancient temple.  The floor is covered in a sea of giant rats.  A few of the largest rats appear to be gnawing at a stone coffin at the far end of the room.  Within seconds the rats take notice of you and begin to scurry your way.
+
+### SD2:851
+Even before the first wave of vermin reach you the rats succeed in pulling the lid off of the coffin.  As the lid tumbles to the floor every rat in the room suddenly becomes quiet and sniffs the air.
+
+### SD2:852
+Whatever is in the coffin seems to be of some importance to them.  Slowly a figure begins to rise from the coffin.  The only way to describe it would be to say some sort of Rat Man creature.  It slowly floats over the room.
+
+### SD2:853
+Suddenly without warning the creature opens it's blood red eyes as it comes to a standing position before you.  With a high pitched squeal it commands it's minions to gnaw the very flesh from your bones.
+
+### SD2:854
+The Rat Demi-Lord summons more rats to fight at it's side.
+
+### SD2:855
+Inside the coffin you find a small leather pouch with a few tiny glass mice.
+
+### SD2:856
+You hear rustling feet behind you.  As you spin around in the darkness you see a strange black shadow creeping along the floor.  It nears the edge of your visible light.  Suddenly the dead corpse of the Rat Demi-Lord looms in front of you.
+
+### SD2:857
+Strange glowing eyes tell you that it has entered the realm of the nether world.  It has summoned a sea of rats and sends them after the treasure you stole from its coffin.
+
+### SD2:858
+Strange footprints trail off to the east.  Something else would appear to live deeper within the cave.
+
+### SD2:859
+The evil feeling runs so deep as to prevent any Priest or Crusader from turning.
+
+### SD2:860
+Strange footprints trail off to the east.  Something else would appear to live deeper within the cave.
+
+### SD2:861
+Strange footprints trail off to the east.  Something else would appear to live deeper within the cave.
+
+### SD2:862
+Strange footprints trail off to the east.  Something else would appear to live deeper within the cave.
+
+### SD2:863
+Strange footprints trail off to the east.  Something else would appear to live deeper within the cave.
+
+### SD2:864
+Strange footprints trail off to the east.  Something else would appear to live deeper within the cave.
+
+### SD2:865
+Strange footprints trail off to the east.  Something else would appear to live deeper within the cave.
+
+### SD2:866
+Strange footprints trail off to the east.  Something else would appear to live deeper within the cave.
+
+### SD2:867
+You arrived in Bywater just in time as a winter storm has just covered the entire region in a thick blanket of snow.
+
+### SD2:868
+An ancient crypt guarded by those that now call it home.
+
+### SD2:869
+Propped up against the corner of the crypt is a shield that sports an interesting design.
+
+### SD2:870
+A small orcish dwelling that belongs to the local witch doctor.  The owner gives you a toothless grin and offers to sell you a few potions and trinkets.
+
+### SD2:871
+You pause and listen intently.  The sounds are muffled and repetitive.  You suspect that they are the sounds of shuffling feet.  A strong odor of rotting, decaying flesh assaults your nostrils.  There can only be one explanation.  Zombies must be nearby.
+
+### DES:0
+A giant frog.  What else can you say?
+
+### DES:2
+Large, slow, stupid.  Put it all together and you have a four- footed eating machine with sharp teeth.
+
+### DES:5
+Not a true dragon.  Named after one because it is the only beast known that can rival a dragon's brute strength.
+
+### DES:6
+A mindless larva.  Nobody knows what this thing will turn into because it has never been found in a cocoon state.
+
+### DES:7
+Capable of launching a multitude of attacks, this critter is extremely deadly.
+
+### DES:22
+Skilled in the art of archery.
+
+### DES:29
+Humanoid in shape.  Made from a colony of semi-intelligent mosses.
+
+### DES:32
+Be careful not to fall victim to its bite.  It has been known to cause paralysis.
+
+### DES:33
+A poisonous bite may be the least of your worries if you meet up with one of these vermin.
+
+### DES:34
+Sporting a nasty bite, these critters are more dangerous than they look.
+
+### DES:35
+Incapable of rapid movement, these bizarre creatures spawn podlings.  The podlings act as mindless slaves.
+
+### DES:36
+A powerful cousin to the modern day mountain lion.
+
+### DES:37
+Though slow moving and mindless, they will do the bidding of the Mush Mound which spawned them.
+
+### DES:38
+Strongest of the evil dragons.  Few are those that have met with one, and LIVED!
+
+### DES:39
+Woe are the fools that find themselves in lonely company with one of this ilk.
+
+### DES:40
+One of the weaker races of dragon kind.  A sly mind and a taste for blood make green dragons a force to be feared.
+
+### DES:46
+Disgusting to behold, the smell of these creatures is a strong clue as to their diet.
+
+### DES:47
+Large and heavily armored with a bony back plate and horns.  Only a fool would back one of these things into a corner.
+
+### DES:48
+Large and brutish.  These simple- minded humanoids survive due to there sheer size.
+
+### DES:49
+A hardy warrior trained for combat.  A true asset to the king.
+
+### DES:50
+A true leader of men.  Trusted with the task of keeping the troops in line and loyal to the king.
+
+### DES:51
+A smaller dinosaur that must hunt in packs in order to bring down larger prey.
+
+### DES:53
+Standing 8 feet tall or more, these large brutes love to bully those weaker than themselves.  They are often employed as troops in mercenary armies.
+
+### DES:54
+A strong family structure allows these giant reptiles to survive in a hostile environment.
+
+### DES:55
+Young and weak when compared to a fully grown giant.  Still more than a match for any full grown human or orc.
+
+### DES:56
+Extremely strong for their size, these beasts make excellent warriors.
+
+### DES:57
+Neither very fast nor powerful. These nasty reptiles do have one advantage - a poisonous bite.
+
+### DES:58
+Hailing from some unknown plane, these beasts are often summoned by powerful enchanters to do their bidding.
+
+### DES:59
+Though not native to the nine planes of hell, they populate large regions of that foul area.
+
+### DES:60
+The creature's favorite form of attack is to lower its armored head and charge.  Don't stand in front of it when it does.
+
+### DES:63
+These minor devils live their lives as servants to those more powerful than themselves.
+
+### DES:65
+A powerful creature of the undead.  These creatures drain your life force.
+
+### DES:67
+Filthy claws can cause disease if they break the skin.
+
+### DES:68
+An old wretch with little to loose in life.
+
+### DES:70
+Completely mindless.  They are used as shock troops and as food by most other demons.
+
+### DES:72
+They sport a nasty chemical attack.  Oh, I guess it may be worth mentioning.  They may split into two slimes when killed.
+
+### DES:73
+Completely mindless.  They are used as shock troops and as food by most other demons.
+
+### DES:75
+A creature of the undead.  This foul creature's touch can cause disease.  They also regenerate wounds so it is best to kill them as fast as you can.
+
+### DES:76
+A storm of claws and fangs.  Your basic garden variety of giant spider.
+
+### DES:77
+A strange race indeed.  Not even the oldest of elven sages know of the origins of this foul race.  Some speculate they are not of this world.
+
+### DES:78
+A humanoid raised from the dead to become one of the cursed undead.
+
+### DES:79
+A disgusting blind creature of the deep.  Four clawed feet, two tentacles and a trunk that resembles an elephants all combine to make this a creature to avoid.
+
+### DES:80
+A small, reptilian race.  They are extremely evil and travel in large groups for they are small in stature and are often eaten as food if found alone.
+
+### DES:81
+A giant boar with a bad attitude.
+
+### DES:83
+Completely mindless.  They are used as shock troops and as food by most other demons.
+
+### DES:84
+An apparition from beyond the grave.  Neither good nor evil by nature, it is still best to avoid such creatures.
+
+### DES:85
+An apparition from beyond the grave and extremely evil by nature.  It's good practice to stay clear of these whispy creatures.
+
+### DES:86
+Long dead creatures of a larger race.  Many such creatures were once gnolls, bug bears, ogres or true giants.
+
+### DES:91
+A common orc who claims to have some skill with weapons.
+
+### DES:92
+Small and weak.  Goblins band together in large tribes for their own protection.
+
+### DES:93
+A strong goblin warrior that has risen above those of more ordinary skill.
+
+### DES:95
+Pressed into service to pay off debts, these troops are not much of a match for those skilled with weapons.
+
+### DES:96
+Somewhat skilled with weapons.  The preferred weapon is the bow.
+
+### DES:97
+Big as a thespian devil cat and twice as mean.  These men are solely paid to keep the troops in line.  They use force if necessary.
+
+### DES:98
+A would be leader of men.  Most die in battle at the hands of their own men if they are not careful.
+
+### DES:99
+An experienced leader with the respect of his troops.  Few will question his orders.
+
+### DES:100
+Filthy claws and teeth make this creature a deadly menace.  Fear it's bite for it can paralyze.
+
+### DES:101
+A blaze of claw and fang.  The speed of these nether world creatures is almost without compare.
+
+### DES:102
+Normally they feed on only the dead, but in times of hunger they will hunt their prey.  They are semi-intelligent and travel with other that feed on carrion.
+
+### DES:103
+Abused as youngsters, these ill- tempered men are but common thugs for hire.
+
+### DES:104
+Pickpocket, cutpurse, burglar.  By any name, a thief is a thief.
+
+### DES:108
+A small demon from the nether region.  In large numbers though they can be a difficult force to deal with.
+
+### DES:109
+Avoid the paralyzing bite of these large insects.
+
+### DES:110
+Half man.  Half fish.  All bad temper.
+
+### DES:114
+Only slightly less primitive than a caveman.  These humanoids bear a much closer resemblance to animals than to humans.
+
+### DES:123
+Only slightly less primitive than a caveman.  These humanoids bear a much closer resemblance to animals than to humans.
+
+### DES:124
+Quick and nimble, this hardy race is known for their ability to find a mechanical way to achieve almost any task.
+
+### DES:125
+A common vermin of immense size.
+
+### DES:126
+Skilled in the art of archery.
+
+### DES:127
+A paralyzing sting makes these insects as deadly as they look.
+
+### DES:128
+Over 2 feet of pure terror.
+
+### DES:129
+Above average in both skill and size.
+
+### DES:130
+Capable with the bow and prefers to pepper its enemies from afar.
+
+### DES:133
+A large filthy rat.  Its bite can cause disease.
+
+### DES:134
+With special attacks and the ability to summon other giant rats to aid it in battle, this mystic creature is one best left alone.
+
+### DES:136
+End of List
+
+### DES:142
+End Of List
+
+### DES:202
+<.
+
+### DES:203
+( H¡XÅ-Aˇp 0/  S0( 4H¿/ /Nπ  5H¿".ˇ–ÅOÔ / N
+
+### DES:204
+n 0( H¿2.ˇ˛H¡êÅênˇ˙? ®ì T h 
+†
+
+### DES:205
+π  ú(@/Nπ  J∞åOÔ g/Nπ  JXè/ Nπ   /Nπ  &PO fp ` t T&PHnˇÙ®ã Tp¿® 
+
+### DES:206
+( 4H¿r 2 SÈÅ–Ä–År¬p$g AÓˇÏCÓˇ‰ Ÿ Ÿp 0/  T0
+
+### DES:207
+nˇ‘©( T/( 0©"/Nπ   T/( 0©#XOp ` åHnˇ‰ n 0( H¿/ p 0/ /Nπ  % T0( 
+
+### DES:208
+¿r 2 SÈÅ–Ä–År¬p$gŒJGfp `  í/.ˇ¸/Nπ  9Üp/ Nπ  / nˇ¸ PHh ©( THh ©
+
+### DES:209
+@  Sp¿® gl  8, òTXl  S0( –E=@ˇ˙|ˇ>` Uè/. /®≠
+
+### DES:211
+/. ®≠JW√DHÉ0¿Cg  ¶BF/. ®£ T0( 4H¿r 2 SÈÅ–Ä–År¬p$gp / H≈/Hƒ/Nπ  ⁄OÔ `: T0( 4H¿r 2 SÈÅ–Ä–År¬p$gp / 2.ˇ˛H¡/2.ˇ¸H¡/Nπ  jOÔ  T0( 4H¿r 2 SÈÅ–Ä–Å00$   gHx	8p / ®_/. ®§Uè©tJf ˛ú` T0( 4H¿r 2 SÈÅ–Ä–År¬p$g|JFg F/. ®£ T0( 4H¿r 2 S
+
+### DES:212
+Å–Ä–År¬p$g  Çp / H≈/Hƒ/Nπ  ⁄ T0( 4H¿r 2 SÈÅ–Ä–ÅrÇp$p˚¿A T2( 4H¡t 4 SÈÇ“Å“Ç1Ä$ T0( 4H¿r 2 SÈÅ–Ä–Å00$   OÔ g  ∂Hx	8p / ®_/. ®§`  ¢ T0( 4H¿r 2 SÈÅ–Ä–År¬p$g  Ñp / 2.ˇ˛H¡/2.ˇ¸H¡/Nπ  j T0( 4H¿r 2 SÈÅ–Ä–ÅrÇp$p˝¿A T2(
+
+### DES:213
+( 4H¿r 2 SÈÅ–Ä–Å00$   OÔ gHx	8p / ®_/. ®§H
+
+### DES:214
+T –Är 20/ S0( 4H¿/ /Nπ  5N:
+
+### DES:215
+nˇ‰g  ûJnˇ˙f/.ˇ‡®“`Bnˇ˙/.ˇ‡0.ˇÍênˇÊ? 0.ˇËênˇ‰? ®‡/.ˇË S/( 0Nπ  ú(@ S/( 0Nπ  J∞åOÔ g" S/( 0Nπ  JXè/ Nπ   /Nπ  &PO` f S/( 0Nπ  JXè/ Nπ   XO/.ˇ‡®“-nˇËˇ‰Uè©tJf ˇJnˇ
+
+### DES:216
+Å/ Nπ  ä:r≤ÄXOl/.ˇ‡©'/.ˇ‡®Ÿ/.ˇË S/( 0Nπ  úPOLÓˇ»N^NuãNLDragItems  NV  HÁ:. (n  T&PBF> T0( H¿/ 0( 4H¿ S–Är 20/ T0( 4H¿/ /Nπ  5N8 O
+
+### DES:217
+( 4H¿/ /Nπ  5> 0RFOÔ JGg∫Gf÷∫Gf< Tºh m  ¬H
+
+### DES:218
+llNicely   NVˇ¸HÁ:. &n (n  T-Pˇ¸ T0( H¿/ 0( 4H¿ nˇ¸ P–Är 20/ T0( 4H¿/ /.ˇ¸Nπ  5N> BFOÔ `$p 0/  T0( 4
+
+### DES:219
+ItemToRect   NVˇ‰HÁ&n /. ®s/. Nπ  J(@ XOg ú T-PˇÙ0+ H¿* .<   ˇŒ´ 
+
+### DES:220
+Ög" T0( 4H¿/ /Nπ  ;‡/Nπ  OÔ ` ™ Tp¿® g  sg wg tg yf TCÓˇÏXà"ÿ"ÿ0.ˇÚê| =@ˇÓHnˇÏ©(  sgS gtW g6U g  ò`  ¿ T0( H¿/ /Nπ  !P T/( ,?( ©c T/( ,©mPO` "/Nπ  8<H¿ T2( H¡ê
+
+### DES:221
+( ©c T/( ,©mPO` º T0( H¿/ /Nπ  "Z T/( ,?( ©c T/( ,©mPO` ê
+
+### DES:222
+ $ T0( 4H¿r 2( ( nˇÙ PÈÅ–Ä–År¬p$gD T0( 4H¿r 2( ( nˇÙ PÈÅ–Ä–År˚¬p$pÄA T2( 4H¡t 4( ( nˇÙ PÈÇ“Å“Ç1Ä$
+
+### DES:223
+Nπ   T/( 0©#OÔ ` ∏/Nπ  XO` ™p? ©»` †
+
+### DES:224
+A T2( 4H¡t 4( ( nˇÙ PÈÇ“Å“Ç1Ä$ Tp 0( ( nˇÙ PÈÄJp g ò Tp 0( ( nˇÙ PÈÄ"T3p  ( Tp 0( (/ /Nπ  ∏Yè®ÿ&W®z THh ®{Hnˇ¯/ Tp 0( (/
+
+### DES:225
+z T0( H¿2( H¡4( H¬íÇNπ  í–nˇ‰=@ˇËHnˇ‰®{Hnˇ¯/ Tp 0( (/ /Nπ  %/®y/®Ÿ Tp 0( (/ /Nπ  ∏OÔ $` jp? ©»` ` Tp 0( ( nˇÙ PÈÄJp"g$ Tp 0( ( nˇÙ PÈÄr 20" nˇÙ PÈÅ>0 `
+
+### DES:226
+ 0 nˇÙ PÈÄ>0JGgp 0 nˇÙ PÈÄ"T00∞i (f‘p 0/  T0( 4H¿/ /.ˇÙNπ  5< OÔ `">p 0/  T0( 4H¿/ /.ˇÙNπ  5< OÔ J
+
+### DES:227
+  –JEg   H≈H« êál TBh ` Tüh  Tæh o,CÓˇ¯Xà"ÿ"ÿ Tp¿® gn ˇ˛Hnˇ¯®£/Nπ  ÿXO`|0¡∆<  TCÓˇ¯Xà"ÿ"ÿ
+
+### DES:228
++ úk JGg XUè T/( ,©b∫_l HH≈H« –á-@ˇÙ/Nπ  8<H¿ T2( H¡ê
+
+### DES:229
+ÿ&_®⁄Hnˇ¯®°/®€Hnˇ¯©( TCÓˇ¯Xà"ÿ"ÿ Tp¿® gn ˇ˛Hnˇ¯p ? H∆"DÅ?/®Ô T/( 0©"/Nπ  ÿ T/( 0©#/®ŸXOLÓ‡ˇ‹N^NuåNLScrollDown   NV  HÁ&n Yè/©Z(_ T>( Uè/©`<æFoH«H∆
+
+### DES:230
+Á &n 
+Yè/©Z(_0. @ kt@ nn–@0; N˚   
+  * @p/ /Nπ  !PPO`:p/ /N
+
+### DES:232
+zJGg|H∆p 0 TÈÄ"“Å“Ä20$  g2H∆p 0 TÈÄ"“Å“Ä20$H¡ <  Ä ÄÅH∆r 2 TÈÅ$‘Ç‘Å1Ä($HnˇÙp ? ?.ˇÍ®®p
+
+### DES:233
+ TÈÄ"“Å“ÄpÄp$H∆r 2 TÈÅ$‘Ç‘Å1Ä($Hx	8p / ®_/
+
+### DES:234
+˛>.ˇ¸`HH∆p 0 TÈÄ"“Å“ÄpÄp$H∆r 2 TÈÅ$‘Ç‘Å1Ä($p 0/  S0( 4H¿/ /Nπ  5> OÔ JGgænˇ˛fÆH∆p 0.ˇ˛ TÈÄ"“Å“ÄpÄp$H∆r 2.ˇ˛ TÈÅ$‘Ç‘Å1Ä($ SCÓˇÙXà"ÿ"ÿ S0( –nˇÙ=@ˇ¯ S0( –nˇˆ=@ˇ˙ Sp¿® gn ˇ˙0.ˇ¯ênˇÙ=@ˇÍXnˇˆ0.ˇÊH¿/ H∆ T –Är 20/ S0( 4H¿/ /Nπ  5N> :.ˇÊ
+
+### DES:235
+Ô `  ÷JGg 8H∆p 0 TÈÄ"“Å“Ä20$H¡0<Ä ¿Ag*H∆p 0 TÈÄ"“Å“Äp¿p$f<Hx	8p / ®_Hn
+
+### DES:236
+D
+
+### DES:237
+Nπ  ;rH∆p 0 TÈÄ"“Å“ÄpÄp$H∆r 2 TÈÅ$‘Ç‘Å1Ä
+
+### DES:238
+E`
+0`SLSKSEJEfí0LÓ‡ˇÏN^NuågnirtSpmoCUI   NV  /(n  L†) TJPfJ® g h 
+"T ) †$
+
+### DES:239
+¸ HABA–Å–© †$>8 g0`: L†* L"Tp 0) r 2“ÄÈÅp.“Ä †$>8 g0` T0–h 1@  L†*p LÓ¿ˇÙN^NuÜNLGrow   NVˇ¸HÁ>. 
+0RGp 0RÄÈÄr.–Å/ Nπ  2≤(@Jx XOgp/ Hxr0/Nπ  +“p OÔ ` NYè/Nπ   jp / /N
+
+### DES:240
+L†#p/ Hxr0/Nπ  +“p OÔ `  ‡Y
+
+### DES:241
+àˇÏN^NuéNLInitListData  
+
+### DES:242
+‚JSgJFf)E `   JFg + ` + 
+-@ˇ¸JFg + ` + . Yè/.ˇ¸Nπ   j êá Er ≤Äe8 nˇ¸†* nˇ¸"Ep –á†$Jx gSk p
+
+### DES:243
+:. <.
+
+### DES:244
+^NuåNLDeleteItem   NV  HÁ<. (n  g  ÷H∆ T –Ä:0`  ¿H∆p 0 TÈÄ"“Å“Ä20$
+
+### DES:245
+‡ˇN^NuëNLDelete
+
+### DES:246
+ê/ Hz Ñ/Nπ  ≤H≈p 0 TÈÄ"“Å“Äp¿p$g T h p 0"TÈÄ 1*–ê` T h 
+p 0"TÈÄ 1*–ê/ Nπ   Zp OÔ `p 0 TÈÄ<0"JFf ˛ﬁ0LÓ˛ËN^NuáNLDepth Circular list reference: %s NV  p 0. / 0. H¿/ /. Nπ  3åH¿–Ä" Âà–ÅN^N
+
+### DES:247
+≈p 0 TÈÄ"“Å“Äp¿p$gp 0/ H≈//Nπ  5> OÔ JGfp `.<BG`"p 0/ H≈//
+
+### DES:248
+ 0 TÈÄ00 `  ﬁp 0 TÈÄJpgBH≈p 0 TÈÄr 20 TÈÅ –Ä–År¬p$gp 0 TÈÄ<0` ˇPp 0 TÈÄ00`  ép 0 TÈÄJp"fp `
+
+### DES:249
+is   NV  HÁ<. (n JFg fp `  îp 0 TÈÄJp gp 0 TÈÄ00 `vp 0 TÈÄJpgp 0 TÈÄ0
+
+### DES:250
+> 0RFOÔ JGf‡0LÓ‡ˇÏN^NuëNLGetVisItemCount  NV  HÁ
+
+### DES:251
+‡ˇN^NuãNLGetSel
+
+### DES:252
+g  ﬁJÆ g  ÷JDg  – S-Hˇ¸(P<( 4
+
+### DES:254
+Nπ  5> OÔ JGf∫LÓ¿ˇÙN^NuãNLSelectAll  NVˇ HÁ
+
+### DES:255
+Á(n B`p.∞fRRLJfLÓÄˇ¯N^NuéNLcountperiods   NVˇÙHÁ<. 
+/. 
+
+### DES:256
+Ô f& êÆˇ¯ nˇ¸r 0 A .fH∆H« RÄ∞Üm|`*BF`& êÆˇ¯RÄ/ /. /. Nπ  6‚JÄOÔ f
+
+### DES:257
+´ (@Uè/.ˇ¸/Nπ  ≤0H¿LÓ ˇÙN^NuéNLCompareItems   NVˇÙHÁ 8jêπˇˇ±ˆr≤Änp/ Nπ  /*Yè©u#ﬂˇˇ±ˆXO n p 0 yˇˇ±" ¿¸ "HA¬¸ "HABA–ÅI  n p 0 yˇˇ±" ¿¸ "HA¬¸ "HABA–Å—¿-HˇÙ –πˇˇ±Ï&@RKp +ˇˇ–ã-@ˇ¯ nˇÙ –πˇˇ±Ï(
+
+### DES:258
+Dp   @cp   [d  p   @cp   [d  p r êAH¿* g `.∑Óˇ¯dπÓˇ¸eê∑Óˇ¯e
+πÓˇ¸dpˇ`∑Óˇ¯d
+
+### DES:259
+ˇ{ﬁ h &P#Àˇˇ± yˇˇ{ﬁ h†i  yˇˇ{ﬁ h†) yˇˇ{ﬁ h#–ˇˇ±ÏHy  r
+p/ //.ˇ¸Nπ  äz n  PIË .BGOÔ `\p 0 nˇ¸–Är 20  yˇˇ± ¬¸ "H@¿¸ "H@B@“ÄG )S J+ g l@  `løˇ p 0 nˇ¸–Ä9p  
+IÏ 0RGp 0ºÄbú yˇˇ{ﬁ h †j yˇˇ{ﬁ h†j nˇ¸†p LÓˇ‰N^NuëNLBuildSort
+
+### DES:260
+dList  NVˇ¸HÁ(n  T-Hˇ¸&P<( 4 K†i  K†) SIË .BG`  ÜH∆ –Är¬tp 0JÄfhH∆ –Är¬tp 0JÄg*0, 
+H¿ y
+
+### DES:261
+. <.  yˇˇ{ﬁ h †i@ˇ˛ n †i@ˇˇp / Nπ 
+
+### DES:262
+0<@ Äl 9@ `0<øˇ¿l 9@ IÏ GÎ "0RG∫Gd®JÑg  ê yˇˇ{ﬁ h†i  yˇˇ{ﬁ h†) yˇˇ{ﬁ h&D◊–`*0<øˇ¿l 9@ 
+
+### DES:263
+@ ` n  P1|   n  PBh  n  Pp 0( @ cL n 
+
+### DES:264
+ n  PBh ` n  P1|  p/ Nπ  //. Nπ  ,ûPOLÓˇ‚N^NuãNLBuildList  NV˛˙HÁGÓ˛¸8. (n  T h †) T
+
+### DES:265
+ê` T h 
+p 0"TÈÄ 1*–ê/ p 0 TÈÄr¬p$g T h p 0"TÈÄ 1*–ê` T h 
+p 0"TÈÄ 1*–ê/ 0. H¿SÄ/ Nπ  =™J@OÔ fp 0 TÈÄ1Ñ"0` òJg p 0 TÈÄr¬p$g T h p 0"TÈÄ 1*–ê` T h 
+p 0"TÈÄ 1*–ê/ p 0 TÈÄr¬p$g
+
+### DES:267
+1*–ê-@ˇ¸/p 0 TÈÄr¬p$g T h 
+
+### DES:268
+TÈÄBpp 0 TÈÄBpp LÓ˛‚N^Nuà
+
+### DES:269
+Æ`H∆ –ÄrÇsH∆ –Ä7ÅGÎ 0RD T∏h c ˇ<"H0( ∞i dzAË "Tp 0) ÈÄ–à&@GÎ  I8( RD`RH∆ –Ä03H¿2<Ä
+
+### DES:270
+))É
+
+### DES:271
+YE(="
+_"ÄÆÉÅ&4RJSEQ     §Üˇˇ    8     r   ñ  °,      £        NV  HÁ &n (n p &Ä`"“Å Ââ“ÄHÄH¿–År0êÅ&ÄRLp0∞np9
+
+### DES:272
+eTab   NV  /(n `RLp ∞m¯ (nˇ¸N^NuãSkipToWhite  NVˇÊ/Hnˇ¸®t=| ˇÍBÆˇÏ=| ˇ=| ˇÚ0. =@ˇÙ–| =@
+
+### DES:273
+	¢`Hz N/Nπ  6Í//Nπ  6Í L"Kp R@H¿†.OÔ p∞Æ˛ƒf∏ LÓÄ˛àN^NuëPathNameFromDirID :  NV˛¸HÁAÓ  -H˛¸IÓˇ `BR
+
+### DES:274
+¢.
+
+### DES:275
+n BpˇLÓÄ˛N^NuâgetRFC822  NV 
+
+### DES:276
+$` n p †$p LÓ ˇÙN^NuêRemoveResultCode   NVˇ¯HÁ..  n &P(K-Hˇ¯Yè/. Nπ   j nˇ¯ –ê-@ˇ¸`vp∞f(p¿ág" n ∑–g`p¿áfp∞+ˇˇgRp
+∞+ˇˇgJSK`Fp
+∞fp¿áf:p∞f2p¿
+
+### DES:277
+V  HÁYè/<STR#?. ©†(_ f <  `( L†i  L†)/. //. Nπ  ".  L†j OÔ LÓ
+
+### DES:278
+p	∞+ fRK∑ÓˇÚeÆRKp
+∞f
+| ˇˇRK`B.ˇˇ UÄ∞ÆˇÓb0p¿Ñf   .ˇˆRÆˇˆ @º J.ˇˇg  ⁄ .ˇˆRÆˇˆ @º 
+`  »p¿Ñf 
+
+### DES:279
+Jg nˇÓ"nˇˆ êÆˇÓ†. êÆˇÓ—Æˇˆ∑ÓˇÚe ˛î∑ÓˇÚdp¿Ñf K"nˇˆ .ˇÚêã†. .ˇÚêã—Æˇˆ n †* n  .ˇˆêÆˇ˙†$ n .ˇ
+
+### DES:281
+n †j . LÓˇ‹N^NuéGetHeaderF
+
+### DES:282
+. 
+/. /. /. /.  yˇˇ≤
+ XÄ @Nê0N^NuáPAPRead  NV  Uè?. 
+/. 
+
+### DES:283
+^NuèHandleFontPopup  NV  /. /. Nπ  ÚN^NuëSetFontPopupValue  NVˇ /IÓˇ //. 
+
+### DES:284
+SizePopup  NV˝¸HÁ &n IÓ˛ Uè/©`Uè S h  P/©P0∞_f  º n 0H¿/ Hnˇ Nπ   Hnˇ Nπ   RXOp / / Hnˇ / /
+
+### DES:285
+`/©F/Hn˝¸Nπ  ¬ n 0Æ˝˛ n 0H¿/ /Nπ  p POLÓ ˝ÙN^NuëGetSizePopupValue %d%*1s  NV˛¸HÁ<. GÓˇ (n Uè T h  P/©P0H¿. `2 T h  P/?/©F/Hn˛¸Nπ  ¬H∆ºÆ˛¸f
+/?©c
+
+### DES:286
+Uè/©`/©F L"n p R@H¿†.p LÓ ˛¯N^NuëGetText
+
+### DES:287
+Efp `0LÓ‡ˇÏN^NuëTrackPopupControl  NV˛ÓHÁ&n <. (n /?. Hn˛˛Hn˛ÓHn˛ˆ©ç/®s=n˛¯˛Ù=n˛ˆ˛ÚHn˛Ú®pp / 2.˛ÙH¡/2.˛ÚH¡//Nπ  ò. OÔ g4/ <  ˇˇ¿á? Hnˇ ©FHnˇ H∆//Nπ  oR/?p ? ?<ˇ©~OÔ p
+
+### DES:288
+®f>º : n
+
+### DES:289
+No Special Attacks
+
+### DES:290
+No Special Attacks
+
+### OD:1
+Attack your friend
+
+### OD:2
+Do not attack
+
+### OD:5
+Stay and fight
+
+### OD:6
+Run away
+
+### OD:7
+Rescue the woman
+
+### OD:8
+Back away
+
+### OD:10
+Do not go
+
+### OD:11
+Leave
+
+### OD:12
+Stay
+
+### OD:13
+Enter
+
+### OD:14
+Pay the gold
+
+### OD:15
+Refuse his offer
+
+### OD:16
+Take the dagger
+
+### OD:17
+Bid her goodday
+
+### OD:18
+Go with and help
+
+### OD:19
+Shoo him away
+
+### OD:20
+Avenge his son
+
+### OD:21
+Wish him luck
+
+### OD:22
+Attack the troll
+
+### OD:23
+Leave them be
+
+### OD:24
+Leave the child
+
+### OD:25
+Take the child
+
+### OD:26
+Side with the orcs
+
+### OD:27
+Attack both parties
+
+### OD:28
+Take the disks
+
+### OD:29
+Summon Rewop
+
+### OD:30
+Left
+
+### OD:31
+Right
+
+### OD:32
+Bind his wounds
+
+### OD:33
+Slay him
+
+### OD:34
+Bury the bones
+
+### OD:35
+Leave them be
+
+### OD:36
+Attack now
+
+### OD:37
+Wait a while
+
+### OD:38
+Take original amount
+
+### OD:39
+Ask for more
+
+### OD:40
+Take the gold
+
+### OD:41
+Take the object
+
+### OD:43
+ Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä
+
+### OD:45
+ Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä Ä
+
+### OD:47
+ Å Å Å Å Å Å Å Å Å Å Å Å
+
+### OD:49
+ Å Å Å Å Å Å Å Å Å Å Å Å

@@ -297,7 +297,14 @@ void ShowStats(short showprestige) {
   for (t = 0; t < 40; t++) {
     if (characterl.condition[t]) {
       GetIndString(myString, 133, t + 1);
+      {
+        Rect condRect;
+        GetDialogItem(gCurrent, 27 + conditionindex, &itemType, &itemHandle, &condRect);
+        if (StringWidth(myString) > condRect.right - condRect.left)
+          TextSize(11);
+      }
       MyrPascalDiStr(27 + conditionindex++, myString);
+      TextSize(14);
       if (conditionindex == 5)
         return;
     }

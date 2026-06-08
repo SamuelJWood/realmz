@@ -137,7 +137,7 @@ moveon:
       aging = GetNewDialog(191, 0L, (WindowPtr)-1L);
       SetPortDialogPort(aging);
       gCurrent = aging;
-      MoveWindow(GetDialogWindow(aging), GlobalLeft, GlobalTop, FALSE);
+      WindowManager_CenterWindow(GetDialogWindow(aging));
       ShowWindow(GetDialogWindow(aging));
       ErasePortRect();
 

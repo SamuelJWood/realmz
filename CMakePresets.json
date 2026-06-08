@@ -39,6 +39,25 @@
         "phosg_DIR": {"value": "$env{HOME}/mingw-install/lib/cmake/phosg"},
         "resource_file_DIR": {"value": "$env{HOME}/mingw-install/lib/cmake/resource_file"}
       }
+    },
+    {
+      "name": "Linux",
+      "displayName": "Linux Release",
+      "description": "Native Linux release build using llvm-mingw Clang targeting x86_64-linux-gnu. Requires X11/Wayland dev headers (sudo apt-get install libx11-dev libxext-dev libxrandr-dev libxkbcommon-dev libwayland-dev libegl-dev libxi-dev libxcursor-dev libxfixes-dev libxrender-dev libxss-dev libxinerama-dev).",
+      "generator": "Unix Makefiles",
+      "binaryDir": "${sourceDir}/build_linux",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": {"value": "Release"},
+        "CMAKE_VERBOSE_MAKEFILE": {"value": "ON", "type": "BOOL"},
+        "SDLTTF_VENDORED": {"value": "ON", "type": "BOOL"},
+        "CMAKE_C_COMPILER": {"value": "/opt/llvm-mingw/bin/clang"},
+        "CMAKE_CXX_COMPILER": {"value": "/opt/llvm-mingw/bin/clang++"},
+        "CMAKE_C_FLAGS": {"value": "-target x86_64-linux-gnu"},
+        "CMAKE_CXX_FLAGS": {"value": "-target x86_64-linux-gnu"},
+        "CMAKE_EXE_LINKER_FLAGS": {"value": "-target x86_64-linux-gnu"},
+        "CMAKE_SHARED_LINKER_FLAGS": {"value": "-target x86_64-linux-gnu"},
+        "CMAKE_PREFIX_PATH": {"value": "/usr"}
+      }
     }
   ],
   "buildPresets": [
@@ -50,6 +69,10 @@
     {
       "name": "Windows",
       "configurePreset": "Windows"
+    },
+    {
+      "name": "Linux",
+      "configurePreset": "Linux"
     }
   ]
 }

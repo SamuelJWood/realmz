@@ -19,7 +19,7 @@ void spelleffect(short t, short mode) /*** mode 0 = normal, 1 = quickshow ****/
   if (!incombat) {
     bodyrect.top = 50 * t + 9;
     bodyrect.bottom = bodyrect.top + 32;
-    bodyrect.left = 339;
+    bodyrect.left = 339 + leftshift;
     bodyrect.right = bodyrect.left + 32;
     if ((itemused) && (initems))
       SetPort(GetWindowPort(itemswindow));

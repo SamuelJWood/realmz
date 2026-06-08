@@ -435,6 +435,11 @@ backup:
             goto checkcontrols;
             break;
 
+          case 0x1b: /*** Escape = Done ***/
+            theControl = done;
+            goto checkcontrols;
+            break;
+
           default:
             goto tryagain;
             break;
@@ -773,7 +778,7 @@ backup:
                 goto backup;
               }
 
-              if (select[charselectnew] < 0)
+              if (charselected[charselectnew] < 0)
                 goto backup;
               goto tryagain;
             }
@@ -953,7 +958,7 @@ backup:
                     c[charselectnew].items[tt].ident = TRUE;
                   theControl = tempdummy;
                   updateitems(0, 10);
-                  select[t] = TRUE;
+                  charselected[t] = TRUE;
                   sound(683);
                   goto moveon;
                 }

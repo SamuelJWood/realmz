@@ -893,6 +893,19 @@ void combat(short suprise, short mode) {
                 buttonrect.left = 522 + leftshift;
                 buttonrect.right = buttonrect.left + 44;
                 downbutton(TRUE);
+                /* Auto-switch to ranged when: in melee mode, ranged weapon equipped,
+                 * not adjacent to an enemy, and the melee weapon has no ranged ability. */
+                if (!c[charup].toggle && c[charup].armor[15] && !checkforenemy(1)) {
+                  short melee_has_ranged = 0;
+                  if (c[charup].armor[2]) {
+                    loaditem(c[charup].armor[2]);
+                    melee_has_ranged = (item.sp2 > 1100);
+                  }
+                  if (!melee_has_ranged) {
+                    c[charup].toggle = 1;
+                    combatupdate2(charup);
+                  }
+                }
                 theControl = combatitem;
                 break;
             }
@@ -927,7 +940,7 @@ void combat(short suprise, short mode) {
                   lastspell[charup][0] = castlevel;
                   lastspell[charup][1] = castnum;
                   oldpowerlevel[charup] = powerlevel;
-                  select[charup] = fastspell = TRUE;
+                  charselected[charup] = fastspell = TRUE;
                   theControl = castspellsbut;
                 }
               }

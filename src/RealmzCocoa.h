@@ -175,6 +175,7 @@ OSErr FadeToBlack(UInt16 numSteps, FadeType typeOfFade);
 OSErr FadeToGamma(GammaRef to, UInt16 numSteps, FadeType typeOfFade);
 void BeginUpdate(WindowPtr theWindow);
 void EndUpdate(WindowPtr theWindow);
+void WindowManager_CenterWindow(WindowPtr win);
 void SetPt(Point* pt, int16_t h, int16_t v);
 int16_t DIBadMount(Point where, int32_t evtMessage);
 

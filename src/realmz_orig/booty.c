@@ -462,7 +462,7 @@ restoreitems:
       if ((cancast(t, 1)) && (c[t].canidentify) && (c[t].spellpoints > 24)) {
         idtoggle = TRUE;
         c[t].spellpoints -= 25;
-        select[t] = TRUE;
+        charselected[t] = TRUE;
 
         for (t = 0; t < 1000; t++) {
           if (list[t]) {
@@ -1371,7 +1371,7 @@ backup:
 
                 if ((!identflag) && (detectflag < 2) && (detectavial)) {
                   c[detectavial - 1].spellpoints -= 5;
-                  select[detectavial - 1] = TRUE;
+                  charselected[detectavial - 1] = TRUE;
                 }
                 listindex = 0;
 

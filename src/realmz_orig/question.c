@@ -152,7 +152,7 @@ short question2(short prompt1, short prompt2) {
   TextFont(defaultfont);
   ForeColor(yellowColor);
 
-  MoveWindow(GetDialogWindow(question), GlobalLeft + 322 + leftshift, GlobalTop + 301 + downshift, FALSE);
+  MoveWindow(GetDialogWindow(question), GlobalLeft + 322 + leftshift, GlobalTop + 270 + downshift, FALSE);
   ShowWindow(GetDialogWindow(question));
   ErasePortRect();
 
@@ -249,7 +249,7 @@ short question3(Str255 p1, Str255 p2) {
   TextFont(defaultfont);
   ForeColor(yellowColor);
 
-  MoveWindow(GetDialogWindow(question), GlobalLeft + 322 + leftshift, GlobalTop + 301 + downshift, FALSE);
+  MoveWindow(GetDialogWindow(question), GlobalLeft + 322 + leftshift, GlobalTop + 270 + downshift, FALSE);
   ShowWindow(GetDialogWindow(question));
   ErasePortRect();
 

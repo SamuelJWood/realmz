@@ -222,6 +222,6 @@ short wear(short character, short itemnum, short play) {
       sound(600 + item.sound);
 out:
 
-  select[character] = reply;
+  charselected[character] = reply;
   return (reply);
 }

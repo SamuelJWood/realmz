@@ -1161,12 +1161,12 @@ void shortupdate(short mode) {
 void selectupdate(void) {
   int enable_recomposite = WindowManager_SetEnableRecomposite(0);
   for (t = 0; t <= charnum; t++) {
-    if (select[t]) {
-      if (select[t] > 0)
+    if (charselected[t]) {
+      if (charselected[t] > 0)
         updatecharshort(t, 0);
       else
         updatecharshort(t, 1);
-      select[t] = 0;
+      charselected[t] = 0;
     }
   }
   WindowManager_SetEnableRecomposite(enable_recomposite);
@@ -1778,6 +1778,17 @@ void updatemapmenu(void) {
 }
 
 /****************************** Startlevel **********************************/
+
+static Boolean Startlevel_filter(DialogPtr dlg, EventRecord* ev, short* hit) {
+  (void)dlg;
+  if (ev->what == keyDown) {
+    uint8_t vkey = (uint8_t)((ev->message >> 8) & 0xFF);
+    if (vkey == 0x7D) { *hit = 200; return TRUE; } /* Down arrow */
+    if (vkey == 0x7E) { *hit = 201; return TRUE; } /* Up arrow   */
+  }
+  return FALSE;
+}
+
 short Startlevel(void) {
   DialogRef gGeneration;
 
@@ -1794,13 +1805,26 @@ short Startlevel(void) {
   TextFont(defaultfont);
   ForeColor(yellowColor);
 
-  MoveWindow(GetDialogWindow(gGeneration), GlobalLeft + 206, GlobalTop + 134, FALSE);
+  {
+    Rect pb;
+    GetPortBounds((CGrafPtr)GetDialogWindow(gGeneration), &pb);
+    short dlgW = pb.right - pb.left;
+    short dlgH = pb.bottom - pb.top;
+    MoveWindow(GetDialogWindow(gGeneration), (800 - dlgW) / 2, (600 - dlgH) / 2, FALSE);
+  }
   ShowWindow(GetDialogWindow(gGeneration));
   ErasePortRect();
 
   while (gStop == FALSE) {
     FlushEvents(everyEvent, 0);
-    ModalDialog(0L, &itemHit);
+    ModalDialog(Startlevel_filter, &itemHit);
+
+    /* Translate arrow keys into the nearest skill-level item */
+    if (itemHit == 200) { /* Down arrow: advance to next level */
+      itemHit = (!oldhit) ? 3 : (oldhit < 14 ? oldhit + 1 : 0);
+    } else if (itemHit == 201) { /* Up arrow: go back to previous level */
+      itemHit = (oldhit > 3) ? oldhit - 1 : 0;
+    }
 
     if ((itemHit > 2) && (itemHit < 15)) {
       sound(130);
@@ -2317,7 +2341,9 @@ void updatescenarioavail(void) {
   short start, stop;
 
   start = 5;
-  stop = topfantasoftsceanrio; //  Fantasoft v7.1
+  // Validate every scenario item, including 3rd party scenarios listed below the
+  // divider (past topfantasoftsceanrio).  Dividers are skipped in the loop.
+  stop = CountMItems(gGame) + 1;
   if (divine) {
     start = topfantasoftsceanrio + 1; /*** v7.1 ****/
     ;
@@ -2327,21 +2353,10 @@ void updatescenarioavail(void) {
   for (t = start; t < stop; t++) {
     GetMenuItemText(gGame, t, myString);
     PtoCstr(myString); // Myriad
-    if (strlen(myString)) {
+    if (strlen(myString) && strcmp((char*)myString, "-")) { // skip dividers
       if (selectscenario((Ptr)myString, 0)) {
         EnableItem(gGame, t);
         SetItemIconFromScenarioPng(gGame, t, myString);
-        GetMenuItemText(gGame, t, myString); /***** scenarios version  *********/
-        GetVersStr(2, 0);
-        PtoCstr(myString);
-        PtoCstr(theString);
-        strcat(myString, (StringPtr) " - ");
-        if (temp != -1)
-          strcat(myString, theString);
-        else
-          strcat(myString, (StringPtr) "Unknown");
-        CtoPstr((Ptr)myString);
-        AppendMenu(prefer, myString);
       } else {
         DisableItem(gGame, t);
       }
@@ -2379,7 +2394,31 @@ short selectscenario(char tempfilename[256], short mode) {
     return (0);
   }
 
-  strcpy(filename, ":Scenarios:");
+  /* Bundled Fantasoft scenarios live directly under :Scenarios:.  User-supplied
+   * scenarios live under :Scenarios:3rd Party Scenarios:.  Probe for the scenario
+   * data file in the standard location first; if it is not there, switch the base
+   * folder to the 3rd party sub-folder.  All of scenarioname/returnname/filename
+   * (and therefore every later getfilename() call) then use the correct path. */
+  {
+    char scenbase[256];
+    char probe[256];
+
+    strcpy(scenbase, ":Scenarios:");
+
+    strcpy(probe, scenbase);
+    strcat((StringPtr)probe, tempfilename);
+    strcat((StringPtr)probe, ":");
+    strcat((StringPtr)probe, tempfilename);
+
+    if ((fp = MyrFopen(probe, "rb")) != NULL) {
+      fclose(fp);
+      fp = NULL;
+    } else {
+      strcpy(scenbase, ":Scenarios:3rd Party Scenarios:");
+    }
+
+    strcpy(filename, scenbase);
+  }
   strcat((StringPtr)filename, tempfilename);
   strcpy(scenarioname, filename);
   strcpy(returnname, filename);

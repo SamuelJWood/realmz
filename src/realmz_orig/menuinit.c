@@ -6,40 +6,149 @@
 void MenuInit(void) {
   short menucounter;
   short t = 0;
-  Str255 holdversion;
   FILE* fp = NULL;
 
-  copywright = GetNewMBar(129);
-  SetMenuBar(copywright);
-  copy = GetMenuHandle(133);
+  // --- Copyright menu bar (shown briefly during init) ---
+  {
+    MenuHandle emptyMenu = NewMenu(138, "\p");
+    AppendMenuCStr(emptyMenu, "");
 
-  strcpy(holdversion, theString);
+    copy = NewMenu(133, "\pRealmz Copyright 1994-2002, Tim Phillips.  Please pay if you play.");
+    AppendMenuCStr(copy, "");
+    SetItemStyle(copy, 1, 1);
 
-  myMenuBar = GetNewMBar(128);
-  SetMenuBar(myMenuBar);
-  gScenario = GetMenuHandle(200);
-  SetItemIcon(gScenario, 1, 126); /* cicn #382: note keeper */
-  SetItemIcon(gScenario, 2, 127); /* cicn #383: journal     */
-  gApple = GetMenuHandle(128);
-  gFile = GetMenuHandle(129);
-  gGame = GetMenuHandle(130);
-  gOptions = GetMenuHandle(139);
-  gParty = GetMenuHandle(136);
-  gBeast = GetMenuHandle(132);
-  prefer = GetMenuHandle(137);
-  gNPC = GetMenuHandle(146);
-  musicmenu = GetMenuHandle(145);
+    static const int16_t copywright_ids[] = {138, 133};
+    copywright = Realmz_NewMBarFromMenus(copywright_ids, 2);
+    SetMenuBar(copywright);
+  }
 
-  gSound = GetMenu(135);
-  InsertMenu(gSound, -1);
-  SetMenuItemText(gSound, 2, "\p0 (Let's hunt wabbits.)");
-  SetMenuItemText(gSound, 9, "\p7 (Wake the neighbors!)");
-  SetItemIcon(gSound, 2, 124); /* cicn #380: speaker off */
-  SetItemIcon(gSound, 9, 125); /* cicn #381: speaker on  */
+  // --- Info menu (128) ---
+  gApple = NewMenu(128, "\pInfo");
+  AppendMenuCStr(gApple, "About Realmz\xe2\x84\xa2");
+  AppendMenuCStr(gApple, "About Fantasoft");
+  AppendMenuCStr(gApple, "Prelude to Pestilece");
+  AppendMenuCStr(gApple, "Assault on Giant Mountain");
+  AppendMenuCStr(gApple, "Destroy the Necronomicon");
+  AppendMenuCStr(gApple, "Castle in the Clouds");
+  AppendMenuCStr(gApple, "Grilochs Revenge");
+  AppendMenuCStr(gApple, "White Dragon");
+  AppendMenuCStr(gApple, "Mithril Vault");
+  AppendMenuCStr(gApple, "Twin Sands of Time");
+  AppendMenuCStr(gApple, "Trouble in the Sword Lands");
+  AppendMenuCStr(gApple, "War in the Sword Lands");
+  AppendMenuCStr(gApple, "Wrath of the Mind Lords");
+  AppendMenuCStr(gApple, "Half Truth");
 
-  gSpeed = GetMenu(134);
-  InsertMenu(gSpeed, -1);
+  // --- Game menu (129) ---
+  gFile = NewMenu(129, "\pGame");
+  AppendMenuCStr(gFile, "Load A Saved Game");
+  SetMenuItemKey(gFile, 1, 'L');
+  AppendMenuCStr(gFile, "Revert To A Previous Game");
+  SetMenuItemKey(gFile, 2, 'R');
+  DisableItem(gFile, 2);
+  AppendMenuCStr(gFile, "Save Current Game");
+  SetMenuItemKey(gFile, 3, 'S');
+  DisableItem(gFile, 3);
+  AppendMenuCStr(gFile, "Fast Save");
+  SetMenuItemKey(gFile, 4, 'F');
+  DisableItem(gFile, 4);
+  AppendMenuCStr(gFile, "-");
+  AppendMenuCStr(gFile, "Quit");
+  SetMenuItemKey(gFile, 6, 'Q');
 
+  // --- Adventure menu (130) ---
+  gGame = NewMenu(130, "\pAdventure");
+  AppendMenuCStr(gGame, "Begin New Adventure");
+  SetMenuItemKey(gGame, 1, 'B');
+  AppendMenuCStr(gGame, "-");
+  DisableItem(gGame, 2);
+  AppendMenuCStr(gGame, "End This Adventure");
+  SetMenuItemKey(gGame, 3, 'E');
+  DisableItem(gGame, 3);
+  AppendMenuCStr(gGame, "-");
+
+  // --- Character menu (136) ---
+  gParty = NewMenu(136, "\pCharacter");
+  AppendMenuCStr(gParty, "Party Order");
+  SetMenuItemKey(gParty, 1, 'O');
+  DisableItem(gParty, 1);
+  AppendMenuCStr(gParty, "Change Character Portrait");
+  SetMenuItemKey(gParty, 2, 'C');
+  DisableItem(gParty, 2);
+  AppendMenuCStr(gParty, "Change Character Icon");
+  SetMenuItemKey(gParty, 3, 'I');
+  DisableItem(gParty, 3);
+  AppendMenuCStr(gParty, "-");
+  AppendMenuCStr(gParty, "Generate New Character");
+  SetMenuItemKey(gParty, 5, 'G');
+  AppendMenuCStr(gParty, "-");
+  AppendMenuCStr(gParty, "Modify Party");
+  SetMenuItemKey(gParty, 7, 'M');
+  DisableItem(gParty, 7);
+
+  // --- Bestiary menu (132) ---
+  gBeast = NewMenu(132, "\pBestiary");
+  DisableItem(gBeast, 0);
+
+  // --- Allies menu (146) ---
+  gNPC = NewMenu(146, "\pAllies");
+  for (t = 0; t < 20; t++) {
+    AppendMenuCStr(gNPC, "");
+    DisableItem(gNPC, t + 1);
+  }
+
+  // --- Maps/Notes menu (200) ---
+  gScenario = NewMenu(200, "\pMaps/Notes");
+  AppendMenuCStr(gScenario, "Note Keeper");
+  SetMenuItemKey(gScenario, 1, 'N');
+  AppendMenuCStr(gScenario, "Journal");
+  SetMenuItemKey(gScenario, 2, 'J');
+  AppendMenuCStr(gScenario, "-");
+
+  // --- Preferences menu (137) ---
+  prefer = NewMenu(137, "\pPreferences");
+  AppendMenuCStr(prefer, "Toggle Fullscreen");
+  SetMenuItemShortcutText(prefer, 1, "F11");
+  AppendSubmenuItemCStr(prefer, "Sound Volume", 135);
+  AppendSubmenuItemCStr(prefer, "Music Volume", 147);
+  AppendSubmenuItemCStr(prefer, "Game Speed", 134);
+  AppendMenuCStr(prefer, "Faster Spell Resolution");
+  SetMenuItemKey(prefer, 5, 'H');
+
+  // --- Music menu (145) ---
+  musicmenu = NewMenu(145, "\pMusic");
+  AppendMenuCStr(musicmenu, "Music Not Available In Version 8.0 or Higher (yet)");
+
+  // --- Developer options (139) not present in any shipped version ---
+  gOptions = NULL;
+
+  // --- Sound Volume submenu (135) ---
+  gSound = NewMenu(135, "\pSound Volume");
+  AppendMenuCStr(gSound, ">>> Sound F/X Volume <<<");
+  AppendMenuCStr(gSound, "0 (Let's hunt wabbits.)");
+  AppendMenuCStr(gSound, "1");
+  AppendMenuCStr(gSound, "2");
+  AppendMenuCStr(gSound, "3");
+  AppendMenuCStr(gSound, "4");
+  AppendMenuCStr(gSound, "5");
+  AppendMenuCStr(gSound, "6");
+  AppendMenuCStr(gSound, "7 (Wake the neighbors!)");
+
+  // --- Game Speed submenu (134) ---
+  gSpeed = NewMenu(134, "\pGame Speed");
+  AppendMenuCStr(gSpeed, "Lets Open Her Up!");
+  AppendMenuCStr(gSpeed, "1");
+  AppendMenuCStr(gSpeed, "2");
+  AppendMenuCStr(gSpeed, "3");
+  AppendMenuCStr(gSpeed, "4");
+  AppendMenuCStr(gSpeed, "5");
+  AppendMenuCStr(gSpeed, "6");
+  AppendMenuCStr(gSpeed, "7");
+  AppendMenuCStr(gSpeed, "8");
+  AppendMenuCStr(gSpeed, "9");
+  AppendMenuCStr(gSpeed, "ZZzzZZzzZzZz");
+
+  // --- Music Volume submenu (147) ---
   gMusicVol = NewMenu(147, "\pMusic Volume");
   AppendMenu(gMusicVol, "\p>>> Music Volume <<<");
   AppendMenu(gMusicVol, "\p0 (Let me listen to my hard drive spin.)");
@@ -52,10 +161,27 @@ void MenuInit(void) {
   AppendMenu(gMusicVol, "\p7 (Damage my eardrums, I'm an impetuous youth!)");
   SetItemIcon(gMusicVol, 2, 124); /* cicn #380: speaker off */
   SetItemIcon(gMusicVol, 9, 125); /* cicn #381: speaker on  */
+
+  // --- Build and activate main menu bar ---
+  // The Info menu (128) is intentionally omitted: per-scenario information now
+  // lives in the PDF buttons on the Adventure menu, so it is no longer needed.
+  // gApple/menu 128 is still created above so existing references remain valid.
+  {
+    static const int16_t mbar_ids[] = {129, 130, 136, 132, 146, 200, 137};
+    myMenuBar = Realmz_NewMBarFromMenus(mbar_ids, 7);
+    SetMenuBar(myMenuBar);
+  }
+
+  // --- Register submenus with the active menu list ---
+  InsertMenu(gSound, -1);
+  SetItemIcon(gSound, 2, 124); /* cicn #380: speaker off */
+  SetItemIcon(gSound, 9, 125); /* cicn #381: speaker on  */
+  InsertMenu(gSpeed, -1);
   InsertMenu(gMusicVol, -1);
 
-  InsertMenuItem(prefer, "\pToggle Fullscreen", 0);
-  InsertSubmenuItem(prefer, "\pMusic Volume", 147, 2);
+  // --- Set icons on Maps/Notes items ---
+  SetItemIcon(gScenario, 1, 126); /* cicn #382: note keeper */
+  SetItemIcon(gScenario, 2, 127); /* cicn #383: journal     */
 
   for (t = 1; t < 22; t++) /******** fill in maps menu with blank titles *****/
   {
@@ -80,11 +206,15 @@ void MenuInit(void) {
     seenit = 1;
   }
 
-  // Populate Adventure menu from the bundled Scenarios/ folder.  Runs after the
-  // doreg() block so that any Divinity names appended above are stripped first.
+  // Populate Adventure menu from the bundled Scenarios/ folder, plus any user
+  // scenarios in Scenarios/3rd Party Scenarios/ (listed below a divider).  Runs
+  // after the doreg() block so that any Divinity names appended above are stripped
+  // first.  PopulateScenarioMenu returns the count of bundled Fantasoft scenarios;
+  // topfantasoftsceanrio points at the divider, so anything below it (the 3rd party
+  // scenarios) is treated as a 3rd-party scenario by the engine.
   {
-    int scen_count = PopulateScenarioMenu(gGame);
-    topfantasoftsceanrio = 5 + scen_count;
+    int fantasoft_count = PopulateScenarioMenu(gGame);
+    topfantasoftsceanrio = 5 + fantasoft_count;
   }
 
   updatescenarioavail();

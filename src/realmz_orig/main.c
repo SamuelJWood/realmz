@@ -41,7 +41,7 @@ short specailabs(short i);
 unsigned int32_t myrmagictab[10L * 1024L] = {0};
 #endif
 
-short topfantasoftsceanrio = 23; /*** v7.1 ****/
+short topfantasoftsceanrio = 18; /*** v7.1 ****/
 short customspellresnum; /*** v7.1 ****/
 short stackcounter[20]; /*** v7.1 ****/
 short stackindex; /*** v7.1 ****/
@@ -194,7 +194,7 @@ int32_t myrmagic_fumque = MYRMAGIC;
 int32_t appnum = 0;
 Boolean physical, battlemacro, doingque, macro, cycle, nologo, nofade;
 
-char autonote, portraitchoice, currentscenariohold, blank3; /****** additional preference varialbles *******/
+char autonote, portraitchoice, currentscenariohold, fullscreen_pref; /****** additional preference varialbles *******/
 short journalindex2, blank5, blank6, blank7, blank8, blank9, blank10;
 Handle data_handle;
 short Appl_Rsrc_Fork_Ref_Num;
@@ -317,7 +317,7 @@ int32_t myrmagic_wealthstore = MYRMAGIC;
 
 short heldover, deduction, duration;
 Boolean displaytag, hide;
-short blankround, select[6];
+short blankround, charselected[6];
 int32_t mouseuptime, templong;
 Handle myMenuBar, copywright;
 Boolean needupdate, shortupdateneed, putup;
@@ -751,6 +751,7 @@ void ToolBoxInit(void) {
   temp = MyrOpenResFile((Ptr) "\p:Data Files:Realmz Update Gem 7"); //***** fantasoft v7.1
 
   base = GetPixPat(131);
+  SetLargeBackgroundTexture(base, ":Data Files:Background Texture.bmp");
   light = GetPixPat(132);
   dark = GetPixPat(133);
   whitepat = GetPixPat(134);
@@ -788,6 +789,10 @@ void ToolBoxInit(void) {
   charnum = -1;
 
   getpref();
+#ifdef PC
+  if (fullscreen_pref)
+    WindowManager_ToggleFullscreen();
+#endif
 
   FlushEvents(everyEvent, 0);
   SystemTask();
@@ -957,6 +962,7 @@ keepmoving:
 
   fclose(fp); /************* load these in to start so New Character Torches/castes work ********/
 
+  temp = MyrOpenResFile((Ptr) "\p:Data Files:Data ID");
   temp = MyrOpenResFile((Ptr) "\p:Data Files:Custom Names");
   usecustomnames = MyrOpenResFile((Ptr) "\p:Data Files:Scenario Names");
   portraitrefnum = MyrOpenResFile((Ptr) "\p:Data Files:Portraits");
@@ -1508,14 +1514,14 @@ short regscen(void) {
   int32_t regcode, serialnumber;
 
   serialnumber = 0;
-  if ((currentscenario == 13) || (currentscenario > 14)) {
+  if ((currentscenario == 8) || (currentscenario > 9)) {
     serialnumber = serial;
-    serialnumber /= ((currentscenario - 5) * 666);
+    serialnumber /= (currentscenario * 666);
   }
 #ifdef PC // Modif Myriad 15-9-99
 
   serialnumber = serial;
-  serialnumber /= ((currentscenario - 5) * 666);
+  serialnumber /= (currentscenario * 666);
 
 #endif
 
@@ -1882,7 +1888,7 @@ short regscen_pc(void) {
     // Part 2: Calculate SerialValue
     //
     SerialValue = serial;
-    SerialValue /= ((currentscenario - 5) * 666);
+    SerialValue /= (currentscenario * 666);
 
     // Part 3: Calculate RegistrationValue using SerialValue and NameValue
     //
@@ -2186,6 +2192,7 @@ void quickinfo(int who, int itemnumber, int itemid, int where) {
       break;
   }
 
+  Boolean saved_inbooty = inbooty;
   if (item.iscurse) {
     if (!showcurse)
       temp = getselection(item.iscurse);
@@ -2194,13 +2201,13 @@ void quickinfo(int who, int itemnumber, int itemid, int where) {
     inbooty = TRUE; //*** keeps the beep for text from happening
     pict(218, pictrect);
     textbox(temp + 2, item.iscurse - temp + 1, FALSE, TRUE, txtbox);
-    inbooty = FALSE;
+    inbooty = saved_inbooty;
   } else {
     getselection(item.itemid);
     inbooty = TRUE; //*** keeps the beep for text from happening
     pict(218, pictrect);
     textbox(tempselection + 2, item.itemid - tempselection + 1, FALSE, TRUE, txtbox);
-    inbooty = FALSE;
+    inbooty = saved_inbooty;
   }
 
   MoveTo(300, 484);

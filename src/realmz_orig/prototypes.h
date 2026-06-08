@@ -102,6 +102,7 @@ void flashrange(short which, short who);
 void loaddoor(int32_t id, short index);
 void loaddoor2(short id);
 void flashmessage(Str255 string, short x, short y, short duration, short toplay);
+short is_movement_scancode(short sc); /* TRUE if sc is an arrow or numpad movement key */
 void getbattleorder(short suprise);
 short getchoice(short number, short initems, short candead);
 short getnumspells(short spellcastertype, short casteid, short level);

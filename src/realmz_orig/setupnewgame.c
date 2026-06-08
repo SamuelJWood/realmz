@@ -13,7 +13,7 @@ void setupnewgame(void) {
   t = CountResources('RLMZ') - 1;
 
   if (currentscenario < 20) {
-    if ((currentscenario - 5 != t) && (t)) {
+    if ((currentscenario != t) && (t)) {
       warn(92);
       scratch(-502);
     }

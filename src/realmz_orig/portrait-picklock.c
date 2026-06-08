@@ -29,7 +29,11 @@ void portrait(short mode) {
 
   needdungeonupdate = TRUE;
 
-  MoveWindow(GetDialogWindow(portrait), GlobalLeft, GlobalTop, FALSE);
+  {
+    Rect pb;
+    GetPortBounds((CGrafPtr)GetDialogWindow(portrait), &pb);
+    MoveWindow(GetDialogWindow(portrait), (800 - (pb.right - pb.left)) / 2, (600 - (pb.bottom - pb.top)) / 2, FALSE);
+  }
   ShowWindow(GetDialogWindow(portrait));
   ErasePortRect();
   DrawDialog(portrait);

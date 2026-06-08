@@ -95,8 +95,8 @@ short load(void) {
     partyloss(TRUE);
   }
 
-  if (currentscenario < 7)
-    currentscenario = 10;
+  if (currentscenario < 5)
+    currentscenario = 5;
 
   CheckItem(gGame, currentscenario, FALSE);
 
@@ -450,11 +450,11 @@ short load(void) {
 
   viewtype = 1;
 
-  if ((!doreg()) && (currentscenario > 10)) {
+  if ((!doreg()) && (currentscenario > 5)) {
   needtoregister:
 
-    CheckItem(gGame, 10, TRUE);
-    currentscenario = 10;
+    CheckItem(gGame, 5, TRUE);
+    currentscenario = 5;
     strcpy((StringPtr)scenarioname, (StringPtr) ":Scenarios:City of Bywater:");
     if (showing)
       flashmessage((StringPtr) "", 10, 10, -1, 0);
@@ -476,9 +476,9 @@ short load(void) {
     strcpy((StringPtr)filename, myString);
 
     if (!selectscenario((Ptr)myString, FALSE)) {
-      CheckItem(gGame, 10, TRUE);
+      CheckItem(gGame, 5, TRUE);
       strcpy((StringPtr)scenarioname, (StringPtr) ":Scenarios:City of Bywater:");
-      currentscenario = 10;
+      currentscenario = 5;
       if (showing)
         flashmessage((StringPtr) "", 10, 10, -1, 0);
       warn(69);
@@ -493,7 +493,7 @@ short load(void) {
 
   if (currentscenario < topfantasoftsceanrio) // Fantasoft v7.1  changed it to use topfantasfotscenario varialbe
   {
-    if ((currentscenario - 5 != t) && (t)) {
+    if ((currentscenario != t) && (t)) {
       warn(92);
       scratch(-502);
     }

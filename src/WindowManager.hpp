@@ -150,6 +150,9 @@ public:
   // Re-render from the already-uploaded intermediate texture + menu bar only.
   // Much cheaper than recomposite_all() — no CPU framebuffer work, pure GPU.
   void redraw_menu_bar_only();
+  // Same as redraw_menu_bar_only but without SDL_RenderPresent, so callers can
+  // add an overlay (e.g. a popup panel) before presenting.
+  void render_base_frame();
 
   inline sdl_window_shared get_sdl_window() const {
     return this->sdl_window;

@@ -189,7 +189,7 @@ short checkkeypad(short mode) {
               lastspell[charselectnew][0] = castlevel;
               lastspell[charselectnew][1] = castnum;
               oldpowerlevel[charselectnew] = powerlevel;
-              select[charselectnew] = fastspell = TRUE;
+              charselected[charselectnew] = fastspell = TRUE;
               theControl = castspellsbut;
             }
           }

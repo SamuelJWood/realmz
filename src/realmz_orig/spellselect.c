@@ -24,7 +24,11 @@ void Spellselect(void) {
   maxlevel = caste.spellcasters[0][2] + caste.spellcasters[1][2] + caste.spellcasters[2][2];
 
   spellwindow = GetNewDialog(135, 0L, (WindowPtr)-1L);
-  MoveWindow(GetDialogWindow(spellwindow), GlobalLeft + 1, GlobalTop + 1, FALSE);
+  {
+    Rect pb;
+    GetPortBounds((CGrafPtr)GetDialogWindow(spellwindow), &pb);
+    MoveWindow(GetDialogWindow(spellwindow), (800 - (pb.right - pb.left)) / 2, (600 - (pb.bottom - pb.top)) / 2, FALSE);
+  }
   ShowWindow(GetDialogWindow(spellwindow));
   SetPortDialogPort(spellwindow);
   BackPixPat(base);

@@ -1,0 +1,2868 @@
+# Realmz scenario text — Prelude to Pestilence
+# -----------------------------------------------
+# Edit the text between the ### header lines.
+# Do NOT modify the ### lines themselves.
+# Max lengths: SD2/DES = 255 chars, OD = 24 chars.
+# Empty entries are omitted; inject will not touch them.
+
+### SD2:0
+What do you want to do?
+
+### SD2:1
+Nothing seems to happen.
+
+### SD2:2
+You notice nothing out of the ordinary.
+
+### SD2:3
+You can see no visible result.
+
+### SD2:4
+You are certain that there is NO trap.
+
+### SD2:5
+When you get closer to the cave where the stream comes through the mountains you see some light in the distance.  Do you walk through the dark and damp cave towards the light?
+
+### SD2:6
+Do you want to go back through the cave?
+
+### SD2:7
+Do you want to go where the cave takes you?
+
+### SD2:8
+You can see some light ahead.  Do you want to go forward?
+
+### SD2:9
+You see some light ahead.  Do you go towards it?
+
+### SD2:10
+Do you want to go back through the cave?
+
+### SD2:11
+Do you want to enter this dark cave and see where it leads?
+
+### SD2:12
+The well trodden path goes into this cave.  You can see lit oil lamps hung along the sides of the cave for light.  Do you want to walk through the cave?
+
+### SD2:13
+When you enter this room you can't help noticing the hundreds of plants in this small but cozy hut.  Some of the plants have very vibrant and exotic flowers on them.  Then you see a women intently looking at a very large plant with many blooms.
+
+### SD2:14
+It seems like an eternity until she acknowledges your presence.  Then she looks up to you and almost exclaims, "Oh, I didn't realize someone was here." She moves from behind the stand of flowers she was attending.
+
+### SD2:15
+Only then do you notice that she has a natural beauty that comes through even with the smudges of dirt on her face.  She says, "What can I do for you?"
+
+### SD2:16
+What do you tell this women?
+
+### SD2:17
+"Oh, that is easy.  You just head East down the town road and then South towards the Castle.  You will see a large Inn where you can stay."
+
+### SD2:18
+Do you want to say anything else to the women?
+
+### SD2:19
+You thank the women for the information and tell her that you will be on your way.  She tells you, "Come back anytime."
+
+### SD2:20
+The women is here again still attending her plants with a joyful look she sees you come in and asks, "what she can do for you?"
+
+### SD2:21
+After you ask your question the women frowns and says, "You are not one of those groups that want to kill the White Bear?"  What do you tell the women?
+
+### SD2:22
+She becomes furious and says,"Well you are not going to get help from me!  Now get out of my house immediately and don't ever come back again!"  As you move out of her house the door slams shut behind you.
+
+### SD2:23
+The women meets you at the door and tells you, "What do you senseless killers want?  I told you that I did not want to see you around here again!"  The door slams in your face.
+
+### SD2:24
+The women says, "Good, you are not one of those senseless groups that wants to kill that bear.  It should be left alone to live out its life in peace.  It may even be magical."
+
+### SD2:25
+You can tell that the women is very adamant about not killing the bear and you don't mention it any more since it will just upset her even more.
+
+### SD2:26
+The women smiles with a sheepish grin and tells you, "These are my orchids!  I just love them.  This one here is spiking and should have blooms very soon."  The women continues to talk about her orchids without stopping to see if you are listening.
+
+### SD2:27
+Then the women comes back and you can tell from the expression on her face that she has thought of something.  She then tells you, "You could help me get an orchid I have been looking for!"  Before you say anything she starts to speak again.
+
+### SD2:28
+"Yes, such a strong and brave party could go to the haunted woods and retrieve the cypripedium I heard grows in that woods."  The women looks at you and then continues to say, "I will pay you 500 gold pieces for a healthy cypripedium."
+
+### SD2:29
+Before you can speak the women anticipates your question.  "What is a cypripedium?  Well, it is an orchid that has a white and crimson bloom that looks  like a lady's slipper."
+
+### SD2:30
+"You must be careful since many who have traveled there have never returned.  The last party I had try to retrieve a cypripedium never came back."  Do you take the women up on her offer?
+
+### SD2:31
+"Excellent!  You need to travel North from the city gates.  I'm afraid I can't be of much more help."  Then the women runs off to get something.  She comes back a bit out of breath, but manages to say, "I remember I had this bit of map."
+
+### SD2:32
+"It has the location of the woods where the cypripedium grow.  I know it isn't much help, but it is all I have."  The women bids you luck and goes back to tending her flowers.
+
+### SD2:33
+The woman nearly pouts, but understands why you don't take the dangerous task.  Then the women comes back with another offer.  "Will you look for the cypripedium for 1000 gold pieces?"
+
+### SD2:34
+"Very well, I must ask you to leave since I need to be alone with my orchids."
+
+### SD2:35
+"You again, why don't you go kill something and leave me alone!"
+
+### SD2:36
+Just as the great wizard Zukar wished, you have traveled in search of the white dragon.  Your journey has brought you to the outskirts of Brierwood.  You are hoping someone in this large city can give you more information about the white dragon.
+
+### SD2:37
+Along the way to Brierwood you happened upon a lone traveler that sold you a map of Brierwood.  This map points out the local shops and inns.
+
+### SD2:38
+Here at the base of the tree is a very ornate sword.  The sword is embedded in the tree nearly to the hilt.
+
+### SD2:39
+What would you like to do?
+
+### SD2:40
+The sword does not budge.  There seems to be a powerful magical spell that keeps the sword in the tree.  Do you want to try something else?
+
+### SD2:41
+Who will attempt to hack the tree down?
+
+### SD2:42
+Who will attempt to pull the sword from the tree?
+
+### SD2:43
+The sword hums with a magical sound and it comes free from the tree.
+
+### SD2:44
+Who will attempt to burn the tree down?
+
+### SD2:45
+Hacking at the tree is futile.  The weapon does not even cause a small nick in the trunk of the tree.  Do you want to try something else?
+
+### SD2:46
+The tree seems impervious to flames since all attempts to start the tree on fire fail.  Do you want to try anything else?
+
+### SD2:47
+A guard welcomes you to Brierwood and asks for 2 gold for entry into town.  The guard explains that the lord uses the money for improvements to the cities roads and buildings.  Do you pay the entry fee?
+
+### SD2:48
+The guard tells you not to start any trouble while in Brierwood since the lord is very strict.  The guard also tells you that someone was just hung because he stole an orange from the market.
+
+### SD2:49
+The guard tells you that he can't let you in without paying.  You are shoved back and the gates close in front of you.
+
+### SD2:50
+The guard at the gate asks for the 2 gold piece entry fee.  Do you pay the entry fee?
+
+### SD2:51
+The guard takes your money and tells you to be on your way.
+
+### SD2:52
+While walking around this city you come across a haggard old man.  The state of his clothes can only be summed up as just rags.  The dirt and stench is very sharp and intense.
+
+### SD2:53
+Sitting here on the ground is a small little boy.  His clothes are very dirty and tattered.  The boy's eyes are sunk in, since he hasn't eaten in a long time.  He tells you that he is the bastard son of the lord, but he has been banished to die.
+
+### SD2:54
+A very young women comes up to you with two very small children.  The women tells you a very sad tale of her husband being hung because he stole an orange to feed his family.
+
+### SD2:55
+A young man comes up to you while you were walking around the city.  The young man nearly bumps into you.  Then you see that he is blind since his eyes have been taken out.  The young man tells you that the lord took his eyes for looking at his daughter.
+
+### SD2:56
+The poor man asks for some gold to get something to eat.  Do you give the poor person some money?
+
+### SD2:57
+You check your purse and see that it is empty of gold.  The poor soul gives you waning look and moves away.
+
+### SD2:58
+You are thanked for your small gift just before the poor soul moves off to get something to eat.
+
+### SD2:59
+The poor soul looks very sad, but understands and move away to look for food.
+
+### SD2:60
+A few youths come up to you.  There clothes are ragged and dirty.  They ask you for some gold.  Do you give it to them?
+
+### SD2:61
+While you were pulling out your purse to give the youths some money more of them appear.  You are surrounded by at least 10 youths that are looking more like thugs every second.  One of them tells you that they want all your money.
+
+### SD2:62
+Do you give the youths all your money?
+
+### SD2:63
+The youth that made the request whistles and suddenly you are surrounded by more ragged by knife wielding youths.  One of them asks you for all your money.
+
+### SD2:64
+One of them lunges toward your party with a sharp knife and a battle ensues.
+
+### SD2:65
+A street entertainer juggling colorful balls comes up to you.  His clothes are very colorful, but dirty.  He asks you for some money to feed a starving fool.
+
+### SD2:66
+A person comes up to you with their face painted white.  The person doesn't say a word and just acts things out like climbing a invisible rope.  The person points towards his hat and obviously wants some gold for his trouble.
+
+### SD2:67
+A woman singing songs and playing a guitar comes up to you.  You haven't heard such beautiful music in a long time.  The women asks for a donation for her singing.
+
+### SD2:68
+Do you give the entertainer some gold?
+
+### SD2:69
+The entertainer thanks you and moves on.
+
+### SD2:70
+The entertainer just moves on in search of some money.
+
+### SD2:71
+The entertainer just shrugs and moves on.
+
+### SD2:72
+The poor boy asks for some gold to get something to eat.  Do you give the boy some money?
+
+### SD2:73
+The poor woman asks for some gold to get something to eat.  Do you give the woman some money?
+
+### SD2:74
+The poor man asks for some gold to get something to eat.  Do you give the man some money?
+
+### SD2:75
+The youths run off with your money.
+
+### SD2:76
+You see something moving in the distance.  Do you investigate?
+
+### SD2:77
+While walking through this area you are jumped by some very large scorpions.
+
+### SD2:78
+All of sudden you are jumped by some crabs!
+
+### SD2:79
+These giant slugs are looking for some protein to add to their diet.
+
+### SD2:80
+You come upon some silver back wolves that are being attacked by some very large snakes.  Before you know it, you are right in the middle of the fight.
+
+### SD2:81
+A band of Ogres attack you.
+
+### SD2:82
+You hear some clicking sounds before you find yourself under attack.
+
+### SD2:83
+You can't believe all the spiders surrounding you to attack.
+
+### SD2:84
+You hear a very faint clicking noise, before you realize you are under attack.
+
+### SD2:85
+From a very large window you can see a lot of exotic flowers, but nobody is around.  The front door is locked tight.
+
+### SD2:86
+You come upon a very strange flower.  It has very long petals with black dots on it.  The flowers are very fragrant and smell very nice.  Do you take the plant?
+
+### SD2:87
+The woman looks at you and asks if you have found the flower yet?  When you tell her no, she pouts and goes back to work.
+
+### SD2:88
+When the woman sees the flower she is very happy that you have brought the flower to her.  She tells you that this is not the flower that she wanted, but she would be willing to give you 100 gold for it.  Do you take the women's offer?
+
+### SD2:89
+The woman thanks you, and asks you to please get the cypripedium.
+
+### SD2:90
+The woman tells you that she will not pay any more for that flower.  She reminds you of her offer for the cypripedium and goes on with her work.
+
+### SD2:91
+Here you find a very strange flower.  The flower is very bulbous and is crimson and white.  This might be the flower the woman in Brierwood wanted.  Do you take the flower?
+
+### SD2:92
+The woman is very excited when you bring the cypripedium into her home.  She is nearly jumping out of her shoes.  She runs back into a small room and brings out a chest.  She tells you that she has decided to give you 1500 gold instead for the plant.
+
+### SD2:93
+Inside the chest of gold is a necklace.  The woman sees what is on your mind and asks you if you would rather have the necklace instead of the gold?
+
+### SD2:94
+The women gives you the necklace.
+
+### SD2:95
+The women gives you 1500 gold pieces.
+
+### SD2:96
+The strange flower that you picked up has died.  The decomposing flowers have given off a strange gas that affects your party.
+
+### SD2:97
+This flower is not good to you now.   Do you want to get rid of it?
+
+### SD2:98
+The woman tells you that she does not want that dead flower.  She tells you, "Leave immediately!"
+
+### SD2:99
+The sign on the door says, "Brierwood Town Inn".  The place looks very warm and comfortable.  Do you see if there is room to stay?
+
+### SD2:100
+Inside you are met by a very large but friendly woman.  She tells you that there is room to stay, but it costs 50 gold pieces per week.  Do you stay?
+
+### SD2:101
+The women tells you that there isn't any other place to stay in Brierwood and bids you good day.
+
+### SD2:102
+The party doesn't have enough gold for room and board.  You are evicted!
+
+### SD2:103
+This is Brierwood's town temple.
+
+### SD2:104
+This is Brierwood's town shop.
+
+### SD2:105
+This smoky shop is the home of a blacksmith.  He offers to sharpen your weapons.  Do you take him up on his offer?
+
+### SD2:106
+The Blacksmith tells you that he is busy making cages for the lord and has to get back to work.  He bids you a good day.
+
+### SD2:107
+The Blacksmith tells you that he will sharpen your swords for 200 gold pieces.  Do you accept his price?
+
+### SD2:108
+The plant completely decomposes into dust and kills the person carrying it.
+
+### SD2:109
+The blacksmith just looks at you and says, "It is a sign of the times".
+
+### SD2:110
+After the blacksmith sharpens your weapons, he looks you up and down.  The blacksmith decides that he can trust you and makes you an offer.  The blacksmith tells you that he has some very good items for sale if you don't inform the lord on him.
+
+### SD2:111
+The blacksmith says, "Normally I wouldn't make such an offer since the Lord would have my head, but you like people I can trust."  Do you see what the blacksmith has to offer?
+
+### SD2:112
+The blacksmith tells you that he only has a few items and that the price reflects the danger he is risking to sell them to you.
+
+### SD2:113
+The blacksmith asks you to not spread the offer around, since he will deny that he ever made the offer.
+
+### SD2:114
+You find the blacksmith working away at some metal cages and he is acting like he doesn't notice you.  When you ask him if he has any "special" weapons or armor he replies, "I don't know what you are talking about.  I am just making cages for my lord."
+
+### SD2:115
+"I am very busy and I must ask you to leave."  The blacksmith returns to his work as you leave in disbelief.
+
+### SD2:116
+Here in this hut you find a young man sitting on a rocker reading one of his many books.  When he sees you, he pauses for a moment to look up and then back to his book to finish what he was reading.
+
+### SD2:117
+He then places a bookmark in the book he was reading and gets up to greet you.
+
+### SD2:118
+"My name is Loufar and this is my personal library.  How can I help you today?"
+
+### SD2:119
+The wind here is very strong and it blows your party around.
+
+### SD2:120
+If it weren't for the magic that surrounds the party, you would have all fallen into the deep hole you are above.
+
+### SD2:121
+You fall down a hole in the ground to an underground cavern far below.  Your party is hurt slightly from the fall.
+
+### SD2:122
+Here you can see light coming through from somewhere above you.  There are some very large roots and places in the rock where you can probably grip and pull yourself up.   Do you want to try to climb out?
+
+### SD2:123
+This door leads outside.  Do you want to exit the castle?
+
+### SD2:124
+These stairs lead up to the next level.  Do you want to use them?
+
+### SD2:125
+These stairs lead down to the next level.  Do you want to use them?
+
+### SD2:126
+You see some large snakes moving in the distance.  Do you attack?
+
+### SD2:127
+Out of the large holes in the ground come some very mean looking snakes.
+
+### SD2:128
+At the bottom of this hole you can see a very shiny object.  Do you like to take a closer look?
+
+### SD2:129
+You can reach it if someone reaches down the hole.  Do you want to try and reach it?
+
+### SD2:130
+Who will reach down the hole?
+
+### SD2:131
+You have found something that might be worth something.
+
+### SD2:132
+After realizing that what you found is a useful weapon you see what is left of the former owner.  There is a hand and maybe what is left of a foot.   From the looks of the bites, it looks like this poor adventurer was dinner for a large snake.
+
+### SD2:133
+You see movement up ahead.  Do you go and investigate what is moving?
+
+### SD2:134
+You can see some cloaked figures coming your way.  Do you stand and fight?
+
+### SD2:135
+Some monks come out running up.  "You are not welcome here!  We can not let you escape alive!"
+
+### SD2:136
+Here you find many monks around a smoking brazier chanting some strange runes.  They see you and are quickly move to attack.
+
+### SD2:137
+Looking around this hut you find nothing of value.
+
+### SD2:138
+Here at the well is a well used bucket for drawing water.  Do you use the well to get some water to drink?
+
+### SD2:139
+You are able to retrieve a good size bucket of water that looks pure and cold.  Do you have someone test the water to see if it is good?
+
+### SD2:140
+The water tastes good and refreshing.  Does the party want to drink some of this water?
+
+### SD2:141
+The rest of the party drinks their fill and feels refreshed.
+
+### SD2:142
+Here you find a monk tied to the wall.  You can tell that she must of been tortured by the marks on her hands and feet.  She looks up at you and pleads for you to let her down.  Do you let her down?
+
+### SD2:143
+The woman nearly slumps to the ground when you let her down.  Since she can tell you are not going to harm her, she starts to tell you about herself and how she got into this predicament.  "My name is Cleothina, and my father was the great monk Kenyu. "
+
+### SD2:144
+"A long time ago, my father was leader of this village until  Phestern killed my father in a test of leadership.  It was written in our laws that the leader of the order must fight any challenger on morn of a blue moons eve."
+
+### SD2:145
+"Phestern challenged my father, because my father had nearly exiled him for his unorthodox ways and thinking.  Phestern, knowing that my father was a far superior monk, cheated and used a powerful poison to win."
+
+### SD2:146
+"Phestern has either banished or killed all of my fathers followers.  I escaped and have been training and plotting for my fathers revenge.   I had successfully infiltrated the village when one of Phesterns followers recognized me."
+
+### SD2:147
+"Phestern has been torturing me to see if any of my fathers followers were here helping me.  Since he hasn't gotten much out of me he has decided to kill me in the middle of the square as an example of what happens to traitors to his authority."
+
+### SD2:148
+"I am greatly indebted to you for your kindness, but I must destroy Phestern."  With a determined look on her face she starts to gather her things.  She pulls a small vile from a secret hiding place in a book.
+
+### SD2:149
+It must of been a very powerful healing potion since you can see the life energy return to her body.  Even though Cleothina is healed you fear she will die before she can take revenge for her fathers death.  Do you offer to help her?
+
+### SD2:150
+She tells you that she is grateful for your assistance, but asks you to let her destroy Phestern.  You agree knowing that is the only way she will stick with you.
+
+### SD2:151
+From behind you comes throwing star hitting the woman between the eyes.  A stream of blood drains down her stark face as if in slow motion.  The movement of many monks awakens you from the brief trance.
+
+### SD2:152
+The woman is dead and you can only wonder why she was tied up here.
+
+### SD2:153
+The women thanks you again for releasing her and moves silently out the door before you know it.
+
+### SD2:154
+Here you find what is left of Cleothinas body.  It has been nearly ripped apart and has many throwing stars stuck in various locations.  She must of suffered a lot.  You wonder who could be so cruel.
+
+### SD2:155
+Cloethina tells you that the well contains water that has a magic placed upon it.  All monks that drink this water are healed.  She is not sure what it will do to non-monks.  Do you drink from the well?
+
+### SD2:156
+Do you want to drink from the well?
+
+### SD2:157
+Cleothina is dead and it looks like she will never know revenge.
+
+### SD2:158
+As you enter this large building you see many monks practicing combat moves while one monk in a very ornate robe watches.  He raises his hand slightly and everything stops.
+
+### SD2:159
+He says something and before you know it the monks ready for attack.  The leader starts to talk, "My name is Phestern, and I don't how you have managed to enter my humble order, but I am asking you to leave immediately."
+
+### SD2:160
+What do you do?
+
+### SD2:161
+As you turn the door is blocked by some monks.  Phestern starts to talk again.  "I wish it would be that easy.  I can't let you leave, since you will tell others and come back with an army.  You will see what my followers have learned today!"
+
+### SD2:162
+After searching around Phesterns residence you don't find much.  Phestern must of sold just about everything to stay young.
+
+### SD2:163
+Phestern doesn't even blink.  He just snaps his fingers and his followers attack.
+
+### SD2:164
+As you turn the door is blocked by some monks.  They attack almost immediately.
+
+### SD2:165
+Do you want to enter the Castle to see if there is any treasure?
+
+### SD2:166
+"I am sorry, but we do not let outsiders join our order."  Phestern snaps his fingers and more of his followers arrive to do battle.
+
+### SD2:167
+Then Phestern sees Cleothina.  "Cleothina, how did you escape?  I was going to take care of you tomorrow, but no matter.  I will take care of you now, along with the rest of these outsiders."
+
+### SD2:168
+Cleothina has perished during the battle.  Maybe she will rest in peace knowing that her father's death has been avenged.
+
+### SD2:169
+Then you notice Cleothina.  She is looking out the window when she starts to speak.  "I am most grateful to you for helping me avenge my fathers death.  I can not stay here for the memories of what once was is too much burden to carry."
+
+### SD2:170
+"I must leave and try to find what life has in store for me."  She slips out the window and is gone without a sound.
+
+### SD2:171
+This house seems to be void of inhabitants.  Do you want to enter it?
+
+### SD2:172
+This small house is very clean and well kept up, but there doesn't seem to be anything of value here.
+
+### SD2:173
+From this small hut you can hear some noise.  Do you want to enter it?
+
+### SD2:174
+Inside are some monks working on their hand to hand combat.  They notice you and start to attack.
+
+### SD2:175
+From outside this well built house you can see a table with some papers on it.  Do you want to enter this house?
+
+### SD2:176
+The table is full of drawings and other useless supplies.  There is one piece of paper though that may be of use to you.
+
+### SD2:177
+Here you find a partially filled in hole.  Digging in the hole reveals a bag of gold.
+
+### SD2:178
+Cleothina has perished in the battle.   She will never know the satisfaction of seeing her fathers killer dead.
+
+### SD2:179
+Do you want to leave the Castle?
+
+### SD2:180
+This castle has an aura that you have felt before.  Do you want to enter the Castle?
+
+### SD2:181
+These stairs are well worn and steep.  Do you want to use them?
+
+### SD2:182
+You find some stairs here.  Do you want to use them?
+
+### SD2:183
+These stairs lead up.  Do you want to use them?
+
+### SD2:184
+These stairs lead down.  Do you want to use them?
+
+### SD2:185
+There is a lever here on the wall.  Do you want to try to pull the lever?
+
+### SD2:186
+You can see that are only a few guards at the main door.  Do you rush the guards hoping to surprise them or do you try to talk your way in?
+
+### SD2:187
+Do you want to pull the lever?
+
+### SD2:188
+Do you want to put the lever back?
+
+### SD2:189
+A magical explosion occurs where Nufack was.  A new form rises from the smoke.
+
+### SD2:190
+Do you think you can destroy me that easy?  Now you will feel my wraith!
+
+### SD2:191
+There is a huge column of Flame engulfs what was once Nufack.  From that flames come a very large and evil looking creature!
+
+### SD2:192
+You have completely destroyed my earthly body! I will destroy you now that I am not confined to that weak and pathetic existence.
+
+### SD2:193
+Nufack's body is blasted back to another plane.  It will be a long time before he will be able to enter this plane again.
+
+### SD2:194
+From here you can the see the cave where the water flows through the mountains.  You can see that there is daylight somewhere in the distance.
+
+### SD2:195
+You come upon a small living quarters of a young lad.  He is selling various junk and weapons that had there better day.  When the young lad sees you he realizes that you have no use for those items.
+
+### SD2:196
+The lad can tell that you are travelers and may be in need of a map or two.  Do you want to buy a map from the lad?
+
+### SD2:197
+What map would you like to buy?
+
+### SD2:198
+"Excellent choice!"
+
+### SD2:199
+"I know the price is high, but I need the money."
+
+### SD2:200
+"You are very wise, that map is a good one."
+
+### SD2:201
+"Great, now I can get some food from the market."
+
+### SD2:202
+"Someone nearly bought that map a few days ago from me."
+
+### SD2:203
+"I found that map on my way to Havern City one day."
+
+### SD2:204
+"Please come back when you have more money."
+
+### SD2:205
+Do you want to buy another map?
+
+### SD2:206
+You see a large group of people gathering near the gate of the castle.  Do you want to go see what is happening?
+
+### SD2:207
+From here you can see what all the commotion is about.  There is a young lad blindfolded and bound.  He is being led up a ramp near the gallows.  It looks like he is going to be put to death for some crime.
+
+### SD2:208
+The crowd becomes quiet and the magistrate starts to speak.  "King Brier has determined that the criminal Thoreas will be put to death by hanging for his deed of taking bread from the King's kitchen."
+
+### SD2:209
+"The King wants this to be a warning to all other criminals that dare to commit crimes in his jurisdiction."  The hangman clad in a dark gray hood with the kings symbol on it does his final checks on the rope and then pulls the lever.
+
+### SD2:210
+The lad's body twinges for a few moments and then becomes limp.  The young life has been snuffed out.  The crowd softly groans with conversation and in the distance you can hear the faint hint of sobbing.
+
+### SD2:211
+As the people shuffle by you wonder how the king could be so brutal to kill someone for stealing a loaf of bread.
+
+### SD2:212
+You are told by some passers by that everyone must witness the execution or face execution themselves.  The people don't take no for an answer and prod you towards the commotion.
+
+### SD2:213
+Here you find a gallows that seems to get a lot of use.
+
+### SD2:214
+From here you can see that the blue face of the young lad that was hung.  The lad could not of been more than 10 years old.
+
+### SD2:215
+After entering this room you can see that there are many trunks and boxes at the other end of the room.  Do you want to investigate?
+
+### SD2:216
+The floor gives way and your party fall to the bottom of a pit.
+
+### SD2:217
+The floor gives way and your if your party wasn't magically held up you would have surely fell to your death.
+
+### SD2:218
+This must be one of the local drinking establishments.  There is a passed out hobgoblin sitting on a stool outside the door.  He must of had too much grog to drink.  Do you want to enter the establishment?
+
+### SD2:219
+You walk into the local tavern and find two burly Orcs throwing axes at a wooden target in one corner of the bar.  There is a bartender drinking his fill behind the bar.  There are some other customers, but they are keeping to themselves.
+
+### SD2:220
+What would you like to do?
+
+### SD2:221
+The bartender smiles and tells you that this is his best batch since last week.  He tells you that the cost is 2 gp.
+
+### SD2:222
+The bartender tells you to come back when you have some money.
+
+### SD2:223
+The grog is very good, but you can tell it is very potent.  Your head swims after drinking only half of the glass.
+
+### SD2:224
+"I don't have any information, I am only a bartender.  Why don't you have some grog?"  Do you do as the bartender suggests and have some grog?
+
+### SD2:225
+The bartender tells you that I will give you this one on the house, but you will have to pay for the next one.
+
+### SD2:226
+The orcs laugh at your question and then start to speak.   "You think you can beat me at this game?  Huh?  I am the best in the land with a throwing ax.  Would you like to wager on our game?"  The orc obviously doesn't want to play for fun.
+
+### SD2:227
+Do you wager with the orc?
+
+### SD2:228
+With a smirk the orc goads you to play for pint of grog.  Do you play for the pint of grog?
+
+### SD2:229
+"Good! We will just play a friendly game for some grog.  There is no use playing unless there is something to play for.  Who will challenge me?"
+
+### SD2:230
+"The game is easy.  We will each throw one ax and whoever is closest to the center wins."
+
+### SD2:231
+"Oh well, you can't blame me for trying.  I don't want to play unless we wager at least a pint of grog on it."
+
+### SD2:232
+What will you wager on the game?
+
+### SD2:233
+"Good! 10 gold pieces it is.  I can buy five pints of grog with that!  Who will challenge me?"
+
+### SD2:234
+"Great!  We have a very confident one here.  I will gladly take that money off your hands."
+
+### SD2:235
+"Whoa!  That is a lot of money to bet on a friendly game.  I hope you will not get mad when I take it from you!"
+
+### SD2:236
+The orc throws his axe and is off the mark to the right.  You line up, aim and throw.  Your ax hits dead center much to the dismay of the orc.  He laughs and says, "Drink up on me and maybe we can play again!"
+
+### SD2:237
+Do you want to play again?
+
+### SD2:238
+The orc tells you to go first.  When you ready your ax you feel a little out of sorts.  You aim and throw.  To your surprise you nearly hit the center.  You laugh confidently thinking that the orc can't beat you.
+
+### SD2:239
+The orc moves up and throw his ax dead center of the target.  You are a little upset that you lost, but then you realize that you only really lost 2 gold pieces.
+
+### SD2:240
+"The orc laughs and tell your party that grog is on him.  I will take it as a major insult if you don't drink with me."  Do you drink with the orc?
+
+### SD2:241
+The orc bellows, "Bartender, give me my special grog for all my friends!"  The bartender brings out a fancy bottle with grog in it and pour you all some grog.  The grog is very good and smooth.
+
+### SD2:242
+You find yourself stumbling out of the back of the building followed by the orc and his friend.  You realize that they have slipped you some sort of elixir to incapacitate you.  The orcs tell you that they want all your money.
+
+### SD2:243
+Do you give them all your money?
+
+### SD2:244
+The orcs laugh and walk off with your money.
+
+### SD2:245
+The orcs tell you that they will take it off your dead bodies when they are finished.
+
+### SD2:246
+The sign says, closed by the authorities.
+
+### SD2:247
+The orc throws his ax and is off the mark to the right.  You line up, aim and throw.  Your ax hits way off center.  He laughs and says, "Well that is just a practice try, please lets go at it again."
+
+### SD2:248
+The orc says, "Are we such sore losers that you can't have a drink with me?"  Do you have a drink with the orc?
+
+### SD2:249
+The orc tells you to go first.  When you ready your ax you feel a little out of sorts.  You aim and throw.  To your surprise you nearly hit the center.  You hope that the orc can't beat you.
+
+### SD2:250
+The orc stands up and aims.  His throw is off the mark.  You can tell the way he shovels over the money for the grog that he is disgusted with his performance.  He tells you that he is tired of playing and leaves with his friend.
+
+### SD2:251
+The bartender tells you that it is getting late and he would like to close up.  He tells you to leave.
+
+### SD2:252
+The orc moves up and throw his ax dead center of the target.  You are a little upset that you lost, but then you realize that you only really lost 10 gold pieces.
+
+### SD2:253
+The orc stands up and aims.  His throw is off the mark.  You can tell the way he shovels over the money that he is disgusted with his performance.  He tells you that he is tired of playing and leaves with his friend.
+
+### SD2:254
+You realize that you don't have enough money to pay the bet.  The orc looks at you with a puzzled look and then smiles.  "That is ok, you can owe me the money, but you must drink with me as a sign of good will."  Do you drink with the orc?
+
+### SD2:255
+The orc growls at you that you have no honor and you should leave this place before he decides to do something foolish.  He tells you to watch your back or you might find a ax in it.  The orc and his friend quickly leave.
+
+### SD2:256
+When you leave you see no sign of the two orcs.
+
+### SD2:257
+The orc tells you to go first.  You aim and throw.  To your surprise you nearly hit the center.  You hope that the orc can't beat you.
+
+### SD2:258
+The orc moves up and throws his ax dead center of the target.  You are very upset that you lost, but then you realize that you only really lost 100 gold pieces.
+
+### SD2:259
+The orc moves up to prepare for his throw.  You can see that he is clearly nervous about losing.  He throws and misses the center by a lot.  The orc grunts loudly and says a few expletives.
+
+### SD2:260
+The orc moves up to prepare for his throw.  You can see that he is clearly nervous about losing.  The orc throws and just beats your throw.  The orc give out a very load howl.  You just lost 10 gems!
+
+### SD2:261
+"Hmm, White Dragon, is that by someone I should know.  Maybe Theores or Constantine perhaps."  You realize that Loufar thinks you are talking about a book.  You clarify yourself and he still looks puzzled."
+
+### SD2:262
+"I don't think I can help you on that subject.  I don't even recall reading about the White Dragon in any of my books.  Do you have any literary interests?"
+
+### SD2:263
+Loufar looks at you strangely and starts to speak, "Sure you can read as much as you want as soon as you buy a book.  I don't run a reading room for all the vagrants that come through town!"
+
+### SD2:264
+You realize that Loufar is not the most pleasant person you have ever met, but he may have some useful books for sale.
+
+### SD2:265
+It doesn't look like Loufar can help you in this area.  Do you stay?
+
+### SD2:266
+"Well, please come back if you have any interest in buying books."
+
+### SD2:267
+"Great, I have just a small selection right now, but this is what I have to chose from.  They are very good books."  Which book would you like?
+
+### SD2:268
+"This is a good one for those that are on a budget."
+
+### SD2:269
+"I'm sorry, I need money for these books.  Please come back when you have some."
+
+### SD2:270
+Do you want to buy any more books?
+
+### SD2:271
+"Yes, this is a very good one and you are getting a very good deal on it.  I was holding it for someone, but they never came back for it."
+
+### SD2:272
+"I can tell that you have good taste.  This is one of my favorites.  This one is well worth the money."
+
+### SD2:273
+"This one is a very good one.  Not the best that I have, but a very good one indeed."
+
+### SD2:274
+The sign on the door says, "Closed Until Further Notice."
+
+### SD2:275
+You here a muffled voice from behind the door telling you to go away.  Do you stay?
+
+### SD2:276
+You hear the swooshing of air and find yourself in battle with two unidentified monks.
+
+### SD2:277
+Searching the hut you find a map of some secret entrance.  You hope the scuffle didn't arouse any undue attention.
+
+### SD2:278
+The gate is locked and a guard on the other side opens a small portal and asks, "What do you want?"  What do you tell the guard?
+
+### SD2:279
+"Shove off, this is the Kings castle gate."
+
+### SD2:280
+The guard looks serious and then says, "Certainly sir, just a minute for us to open the gate."  Do you wait as the guard asks?
+
+### SD2:281
+You here some rattling of the door and then you here the sound of a spears flying down on you!
+
+### SD2:282
+The guard tells you will get more if you stay.  Do you defy the guards and stay?
+
+### SD2:283
+As you are moving away, some guards on top of the wall throw spears down at you.  Luckily you moved away and the spears miss you.  Looks like that approach didn't work.
+
+### SD2:284
+The guard laughs and says, "You must be stupid!"  Then more spears come flying down on you.
+
+### SD2:285
+The guards start to cringe and carry on.  "More beggars want to see the King.  Shove off and earn a living!" Do you leave?
+
+### SD2:286
+"I told you to shove off!  We can solve your problem by hanging you!"  Then some spears come flying down on you.
+
+### SD2:287
+Do you stay to take more abuse?
+
+### SD2:288
+"The king said to expect a tax collector, but he said there would only be one. Which one of you is the tax collector?" Who do you pick to be the tax collector?
+
+### SD2:289
+"Only you can come through the gate."  The guard lets the one member through and then quickly slams the door.  There are several guards behind the gate looking for the bag of gold you collected for the king.
+
+### SD2:290
+Then a light goes on in one of the guards heads.  He screams, "Attack!  Attack! it is a trick!"  With that the guards attack the fake tax collector.
+
+### SD2:291
+After dispatching the guards the gate is easily opened for the rest of the party with the guard's key.
+
+### SD2:292
+The guard starts to look at you and scratch his unshaven chin before he speaks.  "You don't look like a tax collector.  You look like that party that tried to break in!"
+
+### SD2:293
+It looks like your previous attempt to get in the gate may have given you away.  Do you attempt to lie to the guard and reaffirm that you are the tax collector?
+
+### SD2:294
+The guard must be very gullible, since he believes you this time.
+
+### SD2:295
+"Yes, it is that party.  Give it to them!"  Spears once again come raining down on you before the gate opens and a large group of guards attacks.
+
+### SD2:296
+The gate is left open after the battle.  The guards were not smart enough to leave someone behind the gate.
+
+### SD2:297
+This looks like it is the kings stables.  There is a lot of hay and stalls that are very dirty.  Out of the corner of your eye you can see that some guards from the castle have noticed movement near the stable do you try and hide in the stable?
+
+### SD2:298
+You quickly hide under a straw pile before the guard appears at the entry way door.  The guard looks around suspiciously, but does not see you.  He leaves and goes back to the castle.
+
+### SD2:299
+You see a guard pointing in your direction and then you see a swarm of arrows!  Attacking guards follow them.
+
+### SD2:300
+No more guards from the castle join in the attack.  It looks like you will be expected at the front gate.
+
+### SD2:301
+You quickly hide under a straw pile before the guard appears at the entry way door.  The guard looks around suspiciously, but does not see you.  He leaves and it looks like he went back to the castle.
+
+### SD2:302
+The guard must of seen you hiding and knowing he was outnumbered faked like he didn't see you.  Too bad it didn't help him in the end.  The fight has surely alerted the guards at the castle.
+
+### SD2:303
+You peer out of the stable and to your surprise, find a few guards here waiting for you!
+
+### SD2:304
+You rush the few guards that are there before they have time to sound the alarm or send a volley of arrows.
+
+### SD2:305
+The main door to the castle is wide open now.  Do you enter the castle?
+
+### SD2:306
+It looks like that wasn't the best idea you have ever had, since once the guards see you they ring an alarm.  Soon there is a volley of arrows coming your way.
+
+### SD2:307
+Then more guards come pouring out of the castle to attack.
+
+### SD2:308
+The guards at the main gate saw you coming and you find yourself under a volley of arrows from the castle.
+
+### SD2:309
+Then a stream of guards come out of the castle to attack.
+
+### SD2:310
+The guards at the castle were alerted to your presence when they saw the commotion at the stables.  A couple volleys of arrows flying at you before a large group of guards attack.
+
+### SD2:311
+Another volley of arrows comes raining down on you.  Then while you were trying to protect yourself more guards came out of the castle to attack.
+
+### SD2:312
+Do you want to enter the castle?
+
+### SD2:313
+You run into some Brierwood castle guards and they attack.
+
+### SD2:314
+You see some Brierwood guard's in the distance.  Do you want to attack?
+
+### SD2:315
+The guard ahead of you sees you come through the door and call out the general alarm before he attacks.
+
+### SD2:316
+More guards come from their quarters to attack.
+
+### SD2:317
+That battle surely alerted every guard in the castle.
+
+### SD2:318
+From here you can tell that there is a castle guard around the corner.  Do you want to see if you can sneak up and take him out quietly?
+
+### SD2:319
+One person will have a better chance at surprising him.  Who do you want to try to subdue the guard?
+
+### SD2:320
+The guard was very alert and saw you coming!  He sends out the general alarm and attacks.
+
+### SD2:321
+The guard was very alert, but because you were invisible you were able to sneak up on the guard and take him out without much noise.
+
+### SD2:322
+The guard is surprised and quickly disabled without much of a fuss.
+
+### SD2:323
+Do you want to try rushing the guard?
+
+### SD2:324
+You quickly turn the corner and the guard sees you and sounds the alarm.
+
+### SD2:325
+The guard heard your party trying to decide what to do.  He has quietly alerted his fellow guards and surprises you!
+
+### SD2:326
+The guard here wasn't paying much attentions since you were able to walk right up on him.  He pulls his sword and attacks, hoping others will join him soon.
+
+### SD2:327
+More guards come out of their quarters to attack.  If they were a little quicker, they might of saved the lone guard.
+
+### SD2:328
+Entering this room you can see many sparse beds.  This must be the barracks room for lower ranking guards.
+
+### SD2:329
+The barracks room had originally looked empty, but when you move about the room you jump a few guards in hiding.
+
+### SD2:330
+Those guards must of thought they could save their skins if they just stayed and hid under their bunks.  It looks like their plan didn't work out.
+
+### SD2:331
+The guards that make this dreary room their home don't like you entering their home.
+
+### SD2:332
+This room  looks like it is the sergeants office.  There is a well worn desk and chair along with some empty weapons racks.
+
+### SD2:333
+The desk is full of daily reports that someone was working on not to long ago.  There isn't anything else that looks important.
+
+### SD2:334
+This room is richly decorated and full of books on military strategy.  You can easily surmise that this room must be the quarters of a high ranking guard.
+
+### SD2:335
+This weapons rack has some swords that look like that can be of some use, but they have seen a lot of use and are of mediocre quality.  Do you want to take some of them?
+
+### SD2:336
+Here you find a small bag of gold.  Do you take the contents?
+
+### SD2:337
+Here are some small jars that contain some sort of liquid.  Do you want to investigate?
+
+### SD2:338
+What do you want to try?
+
+### SD2:339
+The jar smashes easily on the floor.  The brown clear liquid in the jar flows all over the floor, but that is it.
+
+### SD2:340
+Who will take a drink from one of the jars?
+
+### SD2:341
+After a small sip, you can tell that the liquid is a home made ale of some sort.  It must of been stored here for a long time since it tastes very skunky.  You decide it would be best to leave it here.
+
+### SD2:342
+You can't see or detect any traps that may cause you harm.
+
+### SD2:343
+Who will check for traps?
+
+### SD2:344
+Who will check for magic?
+
+### SD2:345
+You can't determine if the the jars contain any magic or not.
+
+### SD2:346
+Who will smash a jar on the floor?
+
+### SD2:347
+This quarters is clean and nicely kept. You can tell that this must be the quarters of the sergeants.  The room is empty at the moment.
+
+### SD2:348
+Here at the desk are daily reports that the captain was signing.  Nothing else of much importance can be found.
+
+### SD2:349
+Here you find a level, but it isn't apparent what is for.  Do you want to pull the lever?
+
+### SD2:350
+Who will pull the lever?
+
+### SD2:351
+The lever moves without much trouble, but you still can't tell what it did.
+
+### SD2:352
+Do you want to put the lever back in the up position?
+
+### SD2:353
+Do you want to pull the lever?
+
+### SD2:354
+This a guard shack that has several guards either sleeping or oiling their weapons.  One of the guards tells you to leave immediately.  Do you leave?
+
+### SD2:355
+The warns you to leave again, "This is the last time I am going to warn you.  If you don't leave now, we are going to string you!"  Do you leave now?
+
+### SD2:356
+The guard yells and the sleeping guards get up and attack.
+
+### SD2:357
+More guards come from outside the shed and attack.
+
+### SD2:358
+No more guards come in, but you can only guess that the remaining guards have locked the inner gate.   It looks like you have really done it this time.
+
+### SD2:359
+Arrows come from slits high above you.  You move back under the hail of the arrows to take less damage.
+
+### SD2:360
+It looks like you will never ever be let into Brierwood again.  You mission to find the White Dragon will probably never be accomplished now.
+
+### SD2:361
+This is a very big library.  There are bookshelves and very nice oaken tables everywhere in this room.  Someone in this castle must like to read a lot.
+
+### SD2:362
+You just entered a very long hallway that gets a lot of use and not much cleaning.   There are pieces of rotten food and liquids  from meals long gone by.
+
+### SD2:363
+This looks like a storage room, since there are many burlap sacks covering the floor.  It looks like some may contain flour.
+
+### SD2:364
+This looks like a storage room, since there are many wooden crates covering the floor.
+
+### SD2:365
+This looks like a storage room, since there are many wooden barrels filling the room.  Maybe, they have wine in them!
+
+### SD2:366
+Entering this large room you see many large tables that are partially dirty.  It looks like you found the main dining hall for the Lord Brier's guards.  At the moment no one is here.
+
+### SD2:367
+While walking around this room you notice something on the floor and find a secret door under one of the boxes.  Do you want to investigate?
+
+### SD2:368
+After checking for traps and other deviant magic, you open the door and find that it leads to a secret dungeon level below.  Do you want to enter the dungeon?
+
+### SD2:369
+Do you want to go down to the dungeon level?
+
+### SD2:370
+Do you want to check out the secret door?
+
+### SD2:371
+This small room must be used by the cooks and waiters for the guards.  There are some wobbly chairs and tables that can be used for eating.  Not much else.
+
+### SD2:372
+This room is a storage room for extra tables and chairs.
+
+### SD2:373
+This room looks like it is some sort of holy room.  The solid pillars of marble that adorn the walls must of taken some very strong men or beasts to place.
+
+### SD2:374
+Do you want to go back up?
+
+### SD2:375
+Do you want to move the lever?
+
+### SD2:376
+Here on the floor are some items that may prove to be to be useful.
+
+### SD2:377
+Here inside the dresser you find some very smelly stockings!  Yuck!
+
+### SD2:378
+Upon entering this room, you can immediately smell a very strong smell of rotting fish.  The room is very wet and dank, because of the large pool that fills the room.  Do you want to investigate the room?
+
+### SD2:379
+Looking around the room you don't see anything unusual except for a rotting fish carcass here and there on the floor.
+
+### SD2:380
+Then while looking in the pool you realize that the water is moving!
+
+### SD2:381
+It looks like you have discovered and killed one of the fabled water beasts.
+
+### SD2:382
+This door is barricaded with a large board.  Do you want to take the board off and see what is in the room?
+
+### SD2:383
+This room was locked from the outside, because it is full of captured shantile and it looks like they haven't been fed in a while.
+
+### SD2:384
+This door has seen better days.  The door is heavily battered as if someone from the inside had pounded on it for several days.  It is secured by two heavy boards.  Do you want to remove the boards and see what is inside?
+
+### SD2:385
+The stench from this room is very pungent and strong.  You can see a several bodies in various states of decomposition littering the room.  There is one in the corner that looks almost as big as a cow.
+
+### SD2:386
+Your nose stings with every breath you take.  Then you notice that not everything you see is dead.
+
+### SD2:387
+You have entered a very stately room that is empty at the moment.  The decor of the room is decidedly feminine, but the crossed swords on the wall tell you that the person who sleeps in this room is also a warrior.
+
+### SD2:388
+The vast number of books is an indication of a well studied warrior.  This room is also very big indicating a very important person in Lord Brierwood's life.
+
+### SD2:389
+The parchments you pick are just declarations of Lord Brierwood raising taxes, or sentencing a petty thief to death.  Lord Brierwood does not seem to be a man popular with the common people  Do you want to search the desk for more?
+
+### SD2:390
+Here is a desk with various pieces of parchment on it.  Do you want to see what they contain?
+
+### SD2:391
+You just find more declarations of Lord Brierwood.  The last one that you look at says that all meal rations for the slaves will be cut in half because of poor performance and output.
+
+### SD2:392
+Then you notice a book with a piece of parchment sticking out of it on the desk.  Do you want to see why the parchment is being hidden in the book?
+
+### SD2:393
+The parchment contains an unfinished letter.  "My Dear Darling Dumarious, I ache for the day when we can be together without fear of my father.  Then every day will be like the day we ran away into the woods and you pledged your undying love to me."
+
+### SD2:394
+"I fear that day never come.  My father still wants me to wed Zaphres even though I have told him that I do not love him.  He tells me that once I understand the power that Zaphres has, I will love him."
+
+### SD2:395
+"If Zaphres is anything like his people he has sent to serve my father, I would rather die than wed him.  I only live in the hope we will be together someday.  What word do you have of ...."
+
+### SD2:396
+Someone must have interrupted since the letter abruptly ends there.   It looks like Lord Brierwood's tyranny affects his family too.
+
+### SD2:397
+This large iron door is locked.  What are you going to do?
+
+### SD2:398
+You were able to open the lock.
+
+### SD2:399
+You were able to force the door off its hinges.
+
+### SD2:400
+You are nearly rushed by the person locked in this cell.  He stops once he sees the size and stature of your party.  Do you try to talk this prisoner?
+
+### SD2:401
+You ask the prisoner his name and you can see the tension leave his body before he speaks.  "My name is Garreth and I used to be the private guard of Lord Brierwood until he locked me up."
+
+### SD2:402
+"I can tell by the look of your armor and dress that you don't pay homage to Lord Brierwood.  Lord Brierwood found out that I planned to help his daughter Chloe elope and marry Dumarious."
+
+### SD2:403
+"Lord Brierwood did not like that since he had pledged her hand in marriage to Zaphres in exchange for power and wealth.  I had also found out that Zaphres minions plan to kill Lord Brierwood as soon as Zaphres weds Chloe."
+
+### SD2:404
+"I tried to warn Lord Brierwood, but he has heart and mind has been clouded by Zaphres and his minions.  I am sentenced to death and I fear my time is short.  I beg of you to release me so I can save Chloe from Zaphres."  Do you agree to release Garrath?
+
+### SD2:405
+You tell Garrath you will help him free Chloe.   Garrath's eyes light up with hope of a second chance to finish what he initially started.  "Thank you my friends and in repayment I will serve you until you release me."
+
+### SD2:406
+The prisoner looks hesitant, but then starts to speak.  "My name is Garreth and I used to be the private guard of Chloe Brierwood until Lord Brierwood locked me up."
+
+### SD2:407
+Garrath's eyes start to flare and he says in a loud forceful voice, "You must set me free or I will have to try to kill you all to get my freedom!  I must help Chloe and I would rather die trying than die by the rope!"  Do you agree to help Garrath now?
+
+### SD2:408
+"So be it!  Prepare to feel my anger!"
+
+### SD2:409
+Garrath fought well and with all his might.  He was seriously committed to helping Chloe.  You wonder if you haven't done the world an injustice by killing Garrath.
+
+### SD2:410
+Here you see what is left of a very huge man.  His bones and armor are all that is left.
+
+### SD2:411
+There is a strange rush of wind lifting the bones of the skeleton into the air!  The skeleton seems to be animated by some sort of magic. The skeleton starts to attack without warning.
+
+### SD2:412
+It was if the bones had a magical curse that activated when you entered the room.
+
+### SD2:413
+In this room is death.  That is the easiest way to describe it.  There is blood everywhere along with pieces of flesh and organs that look as if they were just dumped here from a bucket.  There are some bones too, but mainly just flesh.
+
+### SD2:414
+Here you find a very eloquent statue.  You must assume that it is of Lord Brierwood, since there is no name plate on it.  Around the neck of this statue is a very beautiful and no doubt a very expensive necklace.  Do you want to take the necklace?
+
+### SD2:415
+The floor underneath you gives way as soon as you touched the necklace, which is really just a switch and a closer investigation of the jewels indicates that they are fake.  It is a good thing your party was able to float back to the stepping stones.
+
+### SD2:416
+The floor underneath you moves out of the way dropping you hundreds of feet into a pool of acid.  You are dead!
+
+### SD2:417
+This chest isn't even locked.  Do you want to open it?
+
+### SD2:418
+The chest is full of gold and gems!
+
+### SD2:419
+After getting through the locked you can see that the room is full of trucks, barrels, old chairs and other stuff.
+
+### SD2:420
+Entering this room, you find a lot of Brierwood guards working on their combat skills.  Do you run in to attack them hoping to gain some surprise?
+
+### SD2:421
+Maybe if they had practiced a little harder, they would be alive today!
+
+### SD2:422
+This looks like it is another storage room, since it is just packed with barrels and burlap sacks.
+
+### SD2:423
+The top of this barrel is lose.  Do you want to investigate?
+
+### SD2:424
+Inside of the barrel is a dark red liquid, which smells like wine.  There is a pouch hanging from a nail inside the barrel.  Pulling the pouch out of the barrel reveals a vial of something.
+
+### SD2:425
+The guards see you and move to attack.  When you turn to see if there is an escape route you see more guards coming down the hall.
+
+### SD2:426
+On this spear stand are some spears that are in good repair.  Do you want to take some of them?
+
+### SD2:427
+Entering this room you can smell a strange incense burning.  The source of the incense.  There is a person with a very dark robe chanting something in a very strange language.
+
+### SD2:428
+He sees your party and without hesitation moves his arm through the air summoning some evil creatures to help him do battle.
+
+### SD2:429
+Upon entering this room you see a man musing over his books.  When he sees you he smiles and asks you to come in.  Do you come in?
+
+### SD2:430
+You move into the room and towards the man.  He asks you what he can do for you?  When you start to think about what you are going to tell this man, you realize that the man was just stalling so the Brierwood guards could arrive.
+
+### SD2:431
+"Just as well then.  I will kill you where you stand!"
+
+### SD2:432
+This room appears to be a dining hall.  There are several nice tables and chairs.  Even though there are several lamps, the room is eerily dark.
+
+### SD2:433
+This is an elegant private dining room with just a single table and two chairs.
+
+### SD2:434
+This room is full of coffins.
+
+### SD2:435
+Here at the end of the hallway is a very large trunk.  Do you want to see what is inside it?
+
+### SD2:436
+There are many strange noises coming from inside this room.  Do you want to enter it?
+
+### SD2:437
+When you enter the room you see three hooded magi huddling around a brazier.  It looks like you made it here just in time to see what they were summoning.
+
+### SD2:438
+Some Brierwood guards come to join the battle.
+
+### SD2:439
+On this desk are some potions and papers.  Do you want to investigate what is on the desk?
+
+### SD2:440
+There is a letter on the desk addressed to his exalted Zhaphres.  "We are progressing in our plan to take over Brierwood.  The lord thinks by giving his daughters hand in marriage it will increase his land holdings and area where he can tax."
+
+### SD2:441
+"He has agreed to us sending Chloe with a special envoy to your castle.  We had to give him substantially more gold to convince him that he should not send his own guards.  He will do anything as long the right amount of gold comes with it."
+
+### SD2:442
+"As soon as we have word of your marriage to Chloe, we will ambush lord Brierwood and hang him in his public square.  Then the townspeople will know you are now their leader and rebellion will not be tolerated."
+
+### SD2:443
+The letter ends there. On the table are some potions that may be of some use.
+
+### SD2:444
+This is another guest room, but it seems to be empty at this time.
+
+### SD2:445
+This door is locked.  What do you want to do?
+
+### SD2:446
+You were able to open the lock.  Do you want to enter the room?
+
+### SD2:447
+You move into the room to find a couple of clerics and magi dissecting someone who was obviously tortured for a long time.  They attack you instantly.
+
+### SD2:448
+You bust down the door and find  a couple of clerics and magi dissecting someone who was obviously tortured for a long time.  They attack you instantly
+
+### SD2:449
+This door is still unlocked.  Do you want to enter the room now?
+
+### SD2:450
+It doesn't look like you can save who ever they were dissecting, but you have stopped them from ever doing it again.
+
+### SD2:451
+This room appears to be a storage room.  It has various food in sacks and barrels.
+
+### SD2:452
+This room is very large and ornate.  The larger pillars are made of a very strange marble that seems to almost glow.
+
+### SD2:453
+Here you find a body with a decorative cloth over it.  Do you want to see what is under the cloth?
+
+### SD2:454
+Under the cloth is a body that has many large stitches all over it.  It looks as if the body was cut into many pieces and then stitched back together.  Then you notice that there is a lever to the right of the table.  Do you want to pull the lever?
+
+### SD2:455
+Who will pull the lever?
+
+### SD2:456
+There is a bolt of lightning and the body comes to life.  The person pulling the lever gets zapped!
+
+### SD2:457
+Do you want to pull the lever?
+
+### SD2:458
+When entering this room, you immediately notice the glowing pentagram on the far end of the room.
+
+### SD2:459
+You are nearly blinded by the flash of light  that just happened.  When you can see again, you realize the source of the light is an apparition above the pentagram.  The apparition asks you why you have disturbed it?
+
+### SD2:460
+What do you tell the apparition?
+
+### SD2:461
+Hmm, that is a strange request.  You should know that the White Dragon has been incapacitated.  You would know that if you were one of Zaphres minions!  Zaphres will owe me for dealing with you.
+
+### SD2:462
+You are either very lucky or very strong.  Either way you will not fare so well this time!
+
+### SD2:463
+The pentagram stops glowing and you are left to wonder who the apparition really was.
+
+### SD2:464
+Yes, he always want money.  I want you dead!  Whoever you are!
+
+### SD2:465
+Here are the magical weapons you ask for!  They are wielded by some of my minions!
+
+### SD2:466
+I'm sorry!  Such pathetic creatures!  I will end your life fast because I feel sorry for you!
+
+### SD2:467
+When you enter this room, you realize that you were being waited for.  There are many guards, Magis, Clerics and then Lord Brierwood.  Lord Brierwood starts to speak.  "I have been waiting for the troublemakers that have been running around my castle."
+
+### SD2:468
+"Come forward so we can speak."  Do you move forward as Lord Brierwood asks?
+
+### SD2:469
+The floor gives way under your feet.  Your party falls to their death.  The last thing you hear is Lord Brierwood's laugh.
+
+### SD2:470
+Lord Brierwood smiles and says, "I will give you a choice.  You can surrender to me and I will spare your life or you can fight and my minions will kill you slowly."  Do you surrender to Lord Brierwood?
+
+### SD2:471
+The floor gives way under your party, but your party does not fall to their death due to the magic that protects your party.
+
+### SD2:472
+You surrender to Lord Brierwood and all your possessions are taken.  You are marched outside the castle to the gallows.
+
+### SD2:473
+Ropes are put around each one of your necks and you are hung!  It looks like Lord Brierwood was a liar.
+
+### SD2:474
+Lord Brierwood orders his minions to attack while he slips off through a secret door.
+
+### SD2:475
+The hall is finally quiet, but you wonder if there is more to come when you find Lord Brierwood.  You also wonder where Chloe could be.
+
+### SD2:476
+After opening the door you see lord Brierwood reading from a large scroll.  It must be a powerful summoning spell since there are several large monsters appearing just as the scroll is going up in flames.
+
+### SD2:477
+It looks as if you have finally defeated Lord Brierwood, but you still don't know where Chloe is.
+
+### SD2:478
+Walking through the secret door, you see a huge pond of molten lava.  On the far side of the lava is a female human figure.  She tells you her name is Chloe and she has been imprisoned here by her father.
+
+### SD2:479
+She asks you to pull the lever over by the wall.
+
+### SD2:480
+Do you want to pull the lever?
+
+### SD2:481
+The woman speaks to you. "I am grateful to you.  I have been held her against my will by my father so he can wed me off to Zaphres in exchange for more wealth and power.  Ever since my mother died he has become more evil with each passing day."
+
+### SD2:482
+"I assume you have killed my father otherwise you would not of been able to make it here to release me."  You nod in agreement.  "I hope someone has mercy on his soul.  He was once good and righteous."
+
+### SD2:483
+"Even though I am forever in your debt, I must ask another favor of you.  I need you to take me to my love Dumarious.  I fear if you don't help me Zaphres will kill me since I am the lone heir to Brierwood."
+
+### SD2:484
+Do agree to take Chloe to her love Dumarious?
+
+### SD2:485
+Chloe draws you a map of the road to where Dumarious lives.
+
+### SD2:486
+There is a loud noise and you hear a voice.  "Do you think you can get away that easy?  I will kill you for interfering in my plan."  While you were listening to the voice you realize that it was just a stall tactic so his minions could move to attack.
+
+### SD2:487
+You have a feeling that won't be the last you will hear of Zaphres.
+
+### SD2:488
+Chloe has perished during the battle.  You have failed to bring her safely to Dumarious.  You can only wonder what the implications are.
+
+### SD2:489
+You were able to climb up and out of the underground.
+
+### SD2:490
+The floor gives way and if it weren't for the magic surrounding your party you would have fell to the darkness below.
+
+### SD2:491
+The floor gives way under your feet.  The entire party falls into the darkness below.
+
+### SD2:492
+Your landing wasn't a soft one.
+
+### SD2:493
+The walls around you are covered with cobwebs and the air is very stale.
+
+### SD2:494
+This door is locked.
+
+### SD2:495
+This room is filled with very ornate coffins.  Do you want to investigate them?
+
+### SD2:496
+When you move forward to investigate, the coffin lids come flying off.  We are so glad you could open the door for us.
+
+### SD2:497
+It looks like you don't have to investigate after all.  The occupants of the coffins come out to investigate who has opened the room they have been imprisoned in.  They don't intend to thank you.
+
+### SD2:498
+This room has one coffin in it.  There is no name or any other distinguishing marks.  Do you want to investigate the coffin?
+
+### SD2:499
+There is nothing the coffin except a few bones.
+
+### SD2:500
+You open a coffin and find a the remains of what was once a very stately person.  There are only a bones, rotted cloths and a  necklace.  Do you want to take the necklace?
+
+### SD2:501
+This room is filled with coffins standing on end.  Do you want to investigate the coffins?
+
+### SD2:502
+Opening a coffin you find a large wrapped figure which starts to move.
+
+### SD2:503
+This room seems to be completely empty except for cobwebs and dust.  Do you want to investigate the room?
+
+### SD2:504
+You move towards the center of the room and start to realize that the shadows seem to be moving around you.
+
+### SD2:505
+This room is completely empty.
+
+### SD2:506
+This is a very large chamber.  It is nearly filled to the roof with bones.  Do you want to investigate the bones?
+
+### SD2:507
+The bones start moving and rattling.  Then   they configure themselves into some very large monsters.
+
+### SD2:508
+This room appears to be empty at first glance.  Then you notice something in the corner to your right.  You can't make it out from here.
+
+### SD2:509
+Here lying on the floor is a pile of bones and rusted armor.  This is what you must of saw from the doorway.
+
+### SD2:510
+You are attacked by some very strange looking creatures.
+
+### SD2:511
+You hear some very strange chomping noises and find yourself in a battle with some very strange looking creatures.
+
+### SD2:512
+The earth starts to shake and it as if the it is moving towards you.  You soon find out that it is.
+
+### SD2:513
+It looks like you have found a lair for some Earth beasts.
+
+### SD2:514
+Here around this lowest part of the cave is what would be considered dung.  It is not like anything you have ever seen before, but it still smells terrible.  Do you want to investigate it?
+
+### SD2:515
+After searching for a while you find some gems!
+
+### SD2:516
+Do you want to continue to search the dung?
+
+### SD2:517
+You find some more gems!
+
+### SD2:518
+You find a very large pile of gems.
+
+### SD2:519
+When entering this room you are immediately see some glowing eyes in the dark.
+
+### SD2:520
+From here you can see a battle that is raging near the woods ahead.  You can make out several elves shooting arrows from behind trees at some very large and strange creatures.  Do you help the elves in this battle?
+
+### SD2:521
+You move to help the elves.
+
+### SD2:522
+After the battle a female elf comes up to you to thank you for your help.  "My name is Selophina and I am Chief Hawerito's bodyguard.  I am glad that you could help us defeat this patrol of Draven. " Do you ask Selophina about the Draven?
+
+### SD2:523
+Selophina looks at you with a somewhat surprised look and then starts to speak, "Oh, that is right you are not from this area.  The Draven are a strange race of monsters that as far as we can tell not of this world."
+
+### SD2:524
+"One night many bright lights lit the deep woods and ever since then there have been teams of Draven working to destroy our home by cutting down the forest.  These creatures will not stop until they cut every sacred tree in the forest."
+
+### SD2:525
+"Chief Hawerito was captured during a surprise attack by the Draven.  I was knocked unconscious otherwise I would have died trying to save Chief Hawerito.  I have vowed to drive the Draven from our forest and free Chief Hawerito or die trying."
+
+### SD2:526
+"You are mighty warriors and I could use your help.  I am sure that Chief Hawerito will be more than willing to reward you if you save his home.  I will personally serve you until I die or we save Chief Hawerito and my home."
+
+### SD2:527
+You can tell that Selophina really needs your help, but is too proud to beg for it.  Do you help Selophina with her quest to save Chief Hawerito and here home?
+
+### SD2:528
+You are hit from behind by a very large claw.  It looks like some of the strange creatures have found you.
+
+### SD2:529
+After dispatching the strange creatures you find that the other battle has moved to all around you.  Once again you must defend yourself from the strange creatures, but at least you have the help of the elves.
+
+### SD2:530
+Selophina suddenly hits her head and starts to speak.  "Oh, that is right you are not from this area.  You probably don't know about the Draven.  The Draven are a strange race of monsters that as far as we can tell not of this world."
+
+### SD2:531
+"I am very grateful to you and now we must fight our way south to find Chief Hawerito.  The Draven have been moving him around so he has been very hard to find even for our scouts."
+
+### SD2:532
+Selophina tries not look disappointed, but you can tell that she is.  You are so moved by her passionate desire to help her chief you try to console her, by telling her that you are on a quest to find the White Dragon.
+
+### SD2:533
+"The White Dragon!"  Selophina shouts.  "Chief Hawerito has spoken with the White Dragon.  He might be able to help you on your quest.  That is if he hasn't been killed by the Draven!"
+
+### SD2:534
+You realize that in order to find the White Dragon you will have to have to help Selophina.  You tell Selophina that you will help her fight the Draven.
+
+### SD2:535
+Selophina tells you that she strongly suggests that you stay in the forest and fight.  Do you ignore her suggestion and keep moving away from the forest?
+
+### SD2:536
+Selophina tells you that she can not let you leave without saving Chief Hawerito.  She pulls a small acorn from her pocket and throws it on the ground.  You remember falling down to Selophina's feet and that is it.  You are dead.
+
+### SD2:537
+While moving through the woods you are attacked by a large group of Draven.  Elves come from nowhere when you start your attack.
+
+### SD2:538
+It looks like not all the Draven have been killed that are in this area.
+
+### SD2:539
+You are met by a wall of Draven Warriors.  They must not want you to get past them for some reason.
+
+### SD2:540
+From here you can see some of the damage the Draven have caused.  All of the trees are gone in this area.  There are just a few very old, but dead trees still standing.
+
+### SD2:541
+The cause of all this damage is apparent.  It is moving towards you to make your party as dead as the trees in the area.
+
+### SD2:542
+After the battle you notice a figure tied to the ground in the distance.  Selophina gasps and rushes over to the figure.  "Chief Hawerito you are alive!  Yes, Selophina I am alive thanks to you." says Chief Hawerito.
+
+### SD2:543
+"Selophina says, I can't take the credit.  That belongs to this party of adventurers."  Chief Hawerito looks at you and gives you a heart felt thanks.  He asks you, "What can I do for you?"
+
+### SD2:544
+Just as you are about to ask him about the White Dragon you are attacked.
+
+### SD2:545
+After the battle you notice a figure tied to the ground in the distance.  You move over to the figure and realize it must be Chief Hawerito.  You ask him who he is and he tells you,   "I am Chief Hawerito and I am alive thanks to you."
+
+### SD2:546
+You tell him that he also has the late Selophina to thank too.  Chief Hawerito body deflates with deep sadness.  When he speaks again his voice is very weak.  "What can I do for you in return for my life?"
+
+### SD2:547
+Chief Hawerito, comes to you again after the battle.  "I think that is the last time for a while that we will see the Draven."  You ask Chief Hawerito if he knows anything about the White Dragon.
+
+### SD2:548
+Chief Hawerito smiles and says, "Yes, I know about the White Dragon.  I once met her when I was younger.  I was making a journey to find Earwatha.  It is something all elves of my clan must do to become an adult."
+
+### SD2:549
+"I had been traveling for days without food and I decided to take a rest before trying to move on.  I remember falling in and out of conciousness before there was a flutter of giant wings from out of nowhere."
+
+### SD2:550
+"It was the White Dragon, Raquiline.  She gently moved over to where I was lying and put a drop of dragons milk in my mouth.  I was instantly revived and rested.  When I was about to ask her why she had stopped to help me she only said this."
+
+### SD2:551
+"I Raquiline, will need your help in the future.  You must tell them to search the land, sea and air for me, since I am the land, sea and air."  The Chief pauses.  "I do not know to this day what she meant by that."
+
+### SD2:552
+"I tell you this, because I have this overwhelming feeling she meant you.   You must search the land, sea and air for her.  I'm sorry that I can't be of more help, but this may help you in your journey.  It was given to me by the White Dragon."
+
+### SD2:553
+The Chief bids you farewell and good luck and then the elves fade into the forest to see about fixing the damage the Draven have caused.
+
+### SD2:554
+Selophina rushes over to where chief Hawerito's lifeless body is lying.  It looks like you have driven the Draven out of the elves home, but at a costly price.  Selophina and the rest of the elves pick up Hawerito's body and fade into the forest.
+
+### SD2:555
+On the ground you can see chief Hawerito's lifeless body. It looks like you have driven the Draven out of the elves home, but at a costly price.  A magical glow starts to form over the chief and soon his body is gone.
+
+### SD2:556
+This area has been totally decimated.  All that is left are some rocks, stumps and Draven!
+
+### SD2:557
+The trees in this area are being cut at an alarming rate.  Now that you are here, maybe you can slow down the Draven's progress.
+
+### SD2:558
+A elf scout comes out of nowhere and motions to some of the elves in your group and they quickly move off into the forest.  You overhear, that the scouts think they know where chief Hawerito is and are trying a sneak attack.
+
+### SD2:559
+It looks like the Draven's plan to divert some of your party worked.  Now that most of the elves are gone the Draven attack.
+
+### SD2:560
+It looks like the Draven will have to do better than that to stop you in your mission.
+
+### SD2:561
+It looks like the Draven are determined to defeat you or at least die trying.
+
+### SD2:562
+Here you can see more of the destruction the Draven have caused.
+
+### SD2:563
+You here Selophina's voice tell you that she strongly suggests that you stay in the forest and fight.  Do you ignore her suggestion and keep moving away from the forest?
+
+### SD2:564
+Selophina tells you that she can not let you leave without saving Chief Hawerito.  All you remember is falling down. You are dead.
+
+### SD2:565
+Do you want to leave the castle?
+
+### SD2:566
+Would you like to use the stairs?
+
+### SD2:567
+Do you want to pull the lever?
+
+### SD2:568
+You are magically teleported to someplace else.
+
+### SD2:569
+You find yourself in a very dark and damp place.  The stones under your feet are very slippery and moist.  You also notice that you are not alone.
+
+### SD2:570
+As soon as you step on the stairs you are teleported!
+
+### SD2:571
+You find yourself in a very dark and dusty room.
+
+### SD2:572
+Suddenly, there is a very large boom and you find yourself face to face with some very hot creatures.
+
+### SD2:573
+You don't know what may have caused that, but you are sure it wasn't the work of kind gentle people.
+
+### SD2:574
+The room is mysteriously quiet.  Then you notice the patter of feet on the hard marble floor all around you in the darkness.  Glancing from side to side, you notice shadows moving and then several glowing eyes.
+
+### SD2:575
+The door opens slowly and comes to stop.  You see that this room has had some very strange things happening in it.  There is a half of a dwarf torso hanging from the wall and the half torn apart head on a nearby table.
+
+### SD2:576
+The demons that make use of this room are also here to greet you.
+
+### SD2:577
+Entering this room, you immediately feel a warm breeze.
+
+### SD2:578
+This door is locked.
+
+### SD2:579
+You here a very evil laugh and then find yourself surrounded by skeletal Knights.
+
+### SD2:580
+The ceiling opens up above you and a large amount of dung falls on you!  Phew you stink!
+
+### SD2:581
+The room fills with green odorless gas.  You are all poisoned!
+
+### SD2:582
+A magical wind comes into the room and an object appears before you.
+
+### SD2:583
+You find yourself somewhere else in the castle.
+
+### SD2:584
+It isn't readily apparent what that lever did.
+
+### SD2:585
+Who will pull the lever?
+
+### SD2:586
+A huge pile of gold falls from the ceiling.  Unfortunately for you it is right on top of the person pulling the lever.
+
+### SD2:587
+The tunnel is blocked.  You can't get through to the other side.
+
+### SD2:588
+Nothing seems to happen.
+
+### SD2:589
+This gate is closed.
+
+### SD2:590
+The gate is open, you can enter.
+
+### SD2:591
+You are greeted at the door of this humble mansion by a young man.  Chloe nearly squeals with joy.  "Dumarious, I am here!"Dumarious immediately smiles and picks up Chloe and spins her around.
+
+### SD2:592
+While Dumarious and Chloe get to know each other again, the lord of the castle puts his hand on your shoulder and starts to speak.  "I am Therfus, the father of Dumarious and hopefully the future father of Chloe."
+
+### SD2:593
+"I am very grateful to you for bringing Chloe to us.  Unfortunately, I don't think Zaphres will rest until he gets Chloe and takes revenge against you.  If only we knew where his castle was, we might be able to surprise him and take his head."
+
+### SD2:594
+Dumarious and Chloe start to pay attention to the conversation.  Dumarious moves towards you and starts to speak, "I will search out Zaphres castle and kill him!" Chloe adds, "Not without me!"  Therfus looks concerned.
+
+### SD2:595
+Therfus says, "I can't let you do that!" Dumarious replies, "You have no choice father!  Zaphres must be killed or we are all in danger."  Therfus nods, "Yes, you are right my son.  Zaphres must be dealt with."
+
+### SD2:596
+"I can not let you adventure alone though.  I will only let you go with these powerful adventurers.  Therfus, tells you that Chloe and Dumarious will attempt to kill Zaphres with or without your help."
+
+### SD2:597
+"I prefer that you help them, so I know they will return safely.  I will make it worth your time if you can journey to Zaphres castle and send him back to the black plane he came from and ensure the safe return of Dumarious and Chloe."
+
+### SD2:598
+Do you take Chloe and Dumarious with you?
+
+### SD2:599
+"Good, then it is all settled!  Please take good care of my future daughter and my son.  I don't know what I would do if they would perish. "  Therfus gives you a map to the suspected secret tunnel that leads to the land where Zaphres castle is.
+
+### SD2:600
+"I am sorry to here that.  I fear that Chloe and Dumarius will sneak out and get themselves killed.  You are free to stay in town as long as you like, but please leave my home now."
+
+### SD2:601
+You are greeted at the door of this humble mansion by a young man.  He frowns with disappointment when he doesn't find the person he is looking for.  "I'm sorry, but I was hoping that my love Chloe was here."
+
+### SD2:602
+You realize that this must be Dumarious.  You tell Dumarious about how Chloe perished despite your efforts.  The pain in his face increases with every moment.  Dumarious asks you to leave him to grieve and he closes the door behind him.
+
+### SD2:603
+You are at a complete loss at what to do now.  It looks like you will never complete your mission to find the White Dragon now.
+
+### SD2:604
+A guard opens a slit in the door and tells you to go away.
+
+### SD2:605
+The tunnel seems to end here.
+
+### SD2:606
+You notice a small lever in a small hole.  Do you want to pull it?
+
+### SD2:607
+A hole in the cave opens up and you are able to move forward.
+
+### SD2:608
+There is an explosion where Zaphres severely damaged body was.
+
+### SD2:609
+The gates are open.  Do you want to enter?
+
+### SD2:610
+After entering the main courtyard you soon notice the many guards and mages that surround you.  Then you hear Zaphres in the distance.  "Did you think I would not be prepared for you after what you did in Brierwood?"
+
+### SD2:611
+Zaphres continues without a pause.  "I lost many good subjects because of you.  In addition you have delayed my marriage to Chloe." Dumarious scowls and starts to move slightly until Chloe stops him.
+
+### SD2:612
+Zaphres smiles, "Oh yes, I will marry Chloe and extend my power over more of the land."  Chloe screams, "You will have to kill me first!" Zaphres laughs with that! "Oh I plan too, I plan to."  With that, Zaphres minions move in to attack.
+
+### SD2:613
+More of Zaphres minions attack with Zaphres.
+
+### SD2:614
+You have defeated Zaphres minions, but you are not sure that Zaphres is really dead, since there are no remains to be found.
+
+### SD2:615
+You enter town and notice Chloe and Dumarious in the midst of battle.  It looks like they beat you here and may lose their lives.  Maybe you should have told them they could come along, so you could at least keep an eye on them.
+
+### SD2:616
+Zaphres body is blasted into another plane of existence.
+
+### SD2:617
+Ahead of you is a rich and ornate chamber.  There is a small throne with strange marble pillars on either side of it.  Standing near it is what only can be described as a small emerald dragon with some human facial features.
+
+### SD2:618
+You realize that it is Zaphres in his normal body.  Zaphres must of teleported himself away from the battle just before the delayed fireball.  He sees you and he isn't smiling.  "You have caused me great pain!"
+
+### SD2:619
+"You have been lucky and have destroyed my human body that I have used for the past 150 years.  I will have to find another one to use after I destroy you.   Dumarious, your body will do fine even though it is a bit puny for my taste."
+
+### SD2:620
+"Then Chloe, I will marry you."  Chloe, doesn't flinch at all.  "I will of course have to replace your heart with something more evil, but that will be no problem for my father, Nufack!  Yes, he is still alive and doing quite well."
+
+### SD2:621
+"Especially after dealing with the White Dragon!"  Zaphres sees your questioning look.  "Yes, the White Dragon has been frozen in time.  She is now a Glass Dragon and the only person who could change that has been isolated to his own prison."
+
+### SD2:622
+"So you see that your mission is hopeless.  You could join me and be on the winning side or you can die."  Do you join Zaphres?
+
+### SD2:623
+Zaphres smiles, and tells you that you must give your souls to him.  Kneel down and pay homage to me.  Do you kneel?
+
+### SD2:624
+Zaphres casts a death spell and sends your entire party into oblivion.  Maybe you shouldn't believe evil men.
+
+### SD2:625
+"No matter, I was planning to kill you anyway.  It will just take a little more effort now!"
+
+### SD2:626
+It looks like Nufack is still alive and will stop at nothing to kill you now that you have killed his son.  You must find the one person that Zaphres was talking about that can help the White Dragon.  If you only knew where he was.
+
+### SD2:627
+"You have been lucky and have destroyed my human body that I have used for the past 150 years.  I will have to find another one to use after I destroy you.  I am sure my father Nufack will be glad to hear of your demise."
+
+### SD2:628
+" Yes, he is still alive and doing quite well.  Especially after dealing with the White Dragon!"  Zaphres sees your questioning look.  "Yes, the White Dragon has been frozen in time."
+
+### SD2:629
+"She is now a Glass Dragon and the only person who could change that has been isolated to his own prison.  So you see that your mission is hopeless.  You could join me and be on the winning side or you can die."  Do you join Zaphres?
+
+### SD2:630
+"Then I will have my father, Nufack,  animate Chloe."  Your eyes nearly pop out with the mention of Nufack.  Zaphres sees your surprise. "Yes, he is still alive and doing quite well."
+
+### SD2:631
+Therfus greets you at the door.  "Dumarious, you are still alive!  I had hoped you would survive."
+
+### SD2:632
+"I am also very glad that Chloe is also here."  You tell Therfus that you have defeated Zaphres, but there is an even greater danger in the land, Nufack.   Therfus, shudders slightly.  "Yes, I know of this evil vile creature."
+
+### SD2:633
+You tell Therfus what you learned from Zaphres before you killed him in battle.  Therfus nods and says, "I might know who Zaphres was talking about.  A long time ago when the land was still growing, there was a young man named Dwared."
+
+### SD2:634
+"He was just a common man, with the same hopes and desires that all common people have.  Happiness, Love and hope for a better future.  One day while hunting food for Dwared found a clear polished stone.  When he touched it he was overcome by magic."
+
+### SD2:635
+"After that moment, Dwared had the power to turn glass into flesh.  Since he was a common man, Dwared did not have much use for this talent and went on with his life in complete anonymity.  Then one day Dwared just disappeared."
+
+### SD2:636
+"It would make sense if Nufack had imprisoned Dwared to prevent him from turning the White Dragon back into flesh if he could."  Therfus pauses a moment.
+
+### SD2:637
+"If I recall, it is rumored that Dwared is imprisoned on an island in the mystical land to the south, but I am not sure you can get there without help from the gods."
+
+### SD2:638
+"I am sorry, I could not be of more help than that.  I do have a reward for you bringing back my son and future daughter to me."
+
+### SD2:639
+Therfus turns towards Dumarious and Chloe, "We will have a wedding and after you have spent some time to rest you can try rejoin these adventurers in their quest to find the White Dragon."
+
+### SD2:640
+Therfus, Dumarious, and Chloe leave to prepare for the upcoming wedding.  You realize that you must find Dwared at all costs and you won't find him sitting here.
+
+### SD2:641
+Therfus greets you at the door.  "Where is Dumarious?" Therfus, searches in vain for Dumarious among your party.
+
+### SD2:642
+Chloe steps forward to tell Therfus the bad news.  Therfus nearly collapses under his grief.  Chloe carries Therfus away to console him.  You have failed to return his only son and you doubt he will want to help you in your quest.
+
+### SD2:643
+The doors to the castle are locked and no one answers.
+
+### SD2:644
+You tell Therfus, that both Dumarious and Chloe have perished.  Therfus just stands there and his face loses all expression and you can tell his mind is somewhere else.  He then snaps out of his trance and in very shaky and abrupt voice asks you leave.
+
+### SD2:645
+Therfus notices the sadness evident in the eyes of Dumarious.  Therfus looks up and notices that Chloe is not in the party.  Therfus embraces his son to console him.  Therfus then asks you to leave him and his son alone to grieve.
+
+### SD2:646
+There is a man on board who tells you that his ship is not for hire and even if it was, it isn't possible for it to move since there is no wind.
+
+### SD2:647
+This small cave seems to end here.
+
+### SD2:648
+You tell him that, the griffins have sent you and that they have given you the power of the wind.  The man laughs and starts to speak. "I am sorry to be gruff, but I didn't know the Griffins had sent you.  My name is Herockes and this is my ship."
+
+### SD2:649
+"I owe the Griffins a favor or two from the past.  I guess they are asking me to repay them by helping you out.  I will take you anywhere that you want to go."
+
+### SD2:650
+You are attacked from creatures from above.
+
+### SD2:651
+Reinforcements come in to continue the battle.
+
+### SD2:652
+You are ambushed by some Blue Dragons!
+
+### SD2:653
+You are ambushed by some Red Dragons!
+
+### SD2:654
+You see very large winged creatures above you, but they do not attack.
+
+### SD2:655
+You find yourself amidst a battle of Griffins and dragons.
+
+### SD2:656
+What is left of the Griffins take off without even a thanks.  You heard that they were arrogant, but not ungrateful.
+
+### SD2:657
+You find yourself amidst a battle of Hippogrifs and dragons.
+
+### SD2:658
+What is left of the Hippogrifs take off without even a thanks.  You heard that they were arrogant, but not ungrateful.
+
+### SD2:659
+You come upon a party of Griffins and Hippogrifs.  They are arguing among themselves when you come upon them.
+
+### SD2:660
+The leader of the Griffins stops and sees your party approaching.  He tells you that you should leave this area or you may become the victim of the evil dragons that are in the area.  Do you leave the area?
+
+### SD2:661
+You stand your ground and the Griffin looks at you as if you were crazy.  You tell the Griffins that you will help them fight the evil dragons.  The group laughs.  How can such puny beings help us against such large and powerful foe?
+
+### SD2:662
+It looks like it will not be long until he finds out.
+
+### SD2:663
+The group takes wing and fly away.
+
+### SD2:664
+You leave the area as you said you would.
+
+### SD2:665
+The battle is not even close to be finished.  More reinforcements on both sides appear.
+
+### SD2:666
+Your starting to think, you should have listened to the Griffins.  More dragons appear to do battle.
+
+### SD2:667
+After the battle a few more griffins and hippogrifs arrive.  They are impressed that you survived at all, let alone destroy a few dragons too.  Then a very large Griffin moves forward.  "Hello, my name is Arie and you have done a great service for us."
+
+### SD2:668
+"Evil dragons have been coming from far away and amassed in our land.  The griffins and the hippogrifs have sided together in order to attempt to move them out.  With your help we have been able to do that."
+
+### SD2:669
+"We are in your debt.  Is there anything we can do for you?" You tell Arie that you are looking for a man named Dwared, but you do not know where he may be.  Arie thinks for a moment.
+
+### SD2:670
+"I think I know where you might be able to find Dwared, but I will not be able to help you.  I need to stay here and make sure that more evil dragons do not have a chance to attack again. There is a man in the south that may be able to help you."
+
+### SD2:671
+"He owes us some favors and will help you if you tell him I sent you.  I must go now and tend to the wounded and ready for any new attack.  Good luck and may the wind of the Griffins be with you."
+
+### SD2:672
+You are ambushed by some Green Dragons!
+
+### SD2:673
+It looks like the cave dead ends here.
+
+### SD2:674
+Cylantra notices something at the base of this tree.  It is a small glass globe filled with water.  Inside is a small figure of a man.  Do you want to investigate?
+
+### SD2:675
+When you look closer at the globe you can see that the figure is moving.  Then the figure starts to talk.  "I was wondering when you were going to find me.  I am Drawed and I know why you are here."
+
+### SD2:676
+"You are here to ask me to change the White Dragon back to flesh with my powers, right?"  You nod slowly in disbelief.   "I knew it would be only a matter of time before someone would find me."
+
+### SD2:677
+"Unfortunately, I can not help you.  I am imprisoned here in this globe forever.  No magic can release me."  You nearly drop the globe when you hear this.  The tell Drawed that he is the White Dragon's only hope.
+
+### SD2:678
+Drawed shakes his head.  "No, my son Blake is the White Dragon's only hope.  He is an extension of me and my powers.  I can change the White Dragon back into flesh through him, but you must find him."
+
+### SD2:679
+"When I was taken away, he was sent to a hidden village in the North to protect him.  I was told to tell anyone who finds me to look where life of a river begins.  That is where my son resides."
+
+### SD2:680
+ After a short pause Drawed says, "We have no time to waste!  We must go now!"
+
+### SD2:681
+In this small but clean hut, you find an old woman with a small boy in armor.  The boy turns to look at you and immediately notices the glass globe.  He says, "I know that is my father in that globe.   Can I talk to him?"
+
+### SD2:682
+You nod yes as the boy takes the globe into his hands.  "Father, I have missed you very much.  Grandma said that one day I would get to speak to you and I was hoping it was going to happen soon."
+
+### SD2:683
+"I have missed you too, Blake, but time is short.  I am only here to help you free the White Dragon.  You must travel with these adventurers to the canyon with the whistling winds.  You will be able to pass where no others can."
+
+### SD2:684
+"It is there where the White Dragon lies." Drawed turns to you, "You must take Blake with us and protect him with your life.  If he perishes, so does the land."
+
+### SD2:685
+You hear the strong winds of the canyon, but you are able to pass unaffected.
+
+### SD2:686
+The cave opens up and in the distance you can see a very large glass dragon.
+
+### SD2:687
+Here right in front of the dragon, you are awe struck by the shear size of the dragon.
+
+### SD2:688
+Blake looks at the globe as Drawed says something that you can not hear.  Then Blake holds the globe above his head.  A glow starts to form around the globe and then suddenly there is bolt of lightning that strikes the globe and then the dragon.
+
+### SD2:689
+The dragon starts to turn into flesh from the top down.  When the process is finished the globe with Drawed is gone.  Blake is looking at his empty hands wondering where his father went.  The White Dragon looks down toward Blake and speaks.
+
+### SD2:690
+"Young Blake, your father has moved on to another plane now that his job here is done.  He is in a good place and you will join him in time.  I am going to send you back to your grandmothers so you can live the rest of your life in peace."
+
+### SD2:691
+In that instance Blake disappears.  The White Dragon turns to you.  "Good adventurers, I, Raquiline, owe you my life  for freeing me.  Unfortunately your job isn't done, I still need your help to stop Nufack."
+
+### SD2:692
+"He is just beyond these mountains preparing a evil force to take over the land.  It will not be long before he realizes that I am free.   Once he does, he will start to killing innocent people and his strength will grow."
+
+### SD2:693
+"If we strike now we can stop him before he gets too strong."  You tell Raquiline, that you expect to do no less than rid this land of Nufack for good.  Raquiline nods in approval and you are teleported to somewhere else.
+
+### SD2:694
+Drawed tells you that it is no use without Blake.  You are doomed!  Nufack will surely destroy the land without the White Dragon.
+
+### SD2:695
+You find yourself in front of a very large crowd of dragons.  You know that they are not here to have tea.
+
+### SD2:696
+More dragons move to attack.
+
+### SD2:697
+After the battle Raquiline tells you to rest up, because she knows that this is only the start of what is to come.
+
+### SD2:698
+The White Dragon has perished during the battle.  You don't know if you can still succeed in defeating Nufack now, but you must try or you have lost anyway.
+
+### SD2:699
+You here a voice from somewhere, "You are mighty adventurers, but do you think you can really defeat me?  Lets see how you do against some of my friends from other planes!"
+
+### SD2:700
+After that battle, you can only wonder what Nufack has in store for you.
+
+### SD2:701
+You see Nufack far away from you.  Between you and him are many evil and vile creatures.  You have no idea how you are going to defeat all of them.  You muster up courage and give one last brief prayer before rushing to attack.
+
+### SD2:702
+The gate to the town graveyard is unlocked.
+
+### SD2:703
+The sign on the door says, "Jeb's Metal Works and Supplies"  Do you want to enter?
+
+### SD2:704
+You are jumped by a bunch of bandits.
+
+### SD2:705
+Some of the mushrooms in this area are really mushoids.
+
+### SD2:706
+You come upon a well built shack here at the base of the mountains.  The smoke coming from the chimney tells you that someone is home and that it will probably be quite cozy inside.  Do you want to knock on the door?
+
+### SD2:707
+After knocking on the door you hear some movement from inside and a man comes to the door that you recognize.  It is Thufar Savag, from McBane city.  He recognizes you and says, "I hope you are not here to harass me about that bad ale incident."
+
+### SD2:708
+You shake your head, not understanding what Thufar is talking about.  Thufar speaks again, "Oh, never mind that, please come in.   What can I do for you?"  You enter Thufar's cozy hut and start talking  about your mission to find the White Dragon.
+
+### SD2:709
+Thufar listens to what you tell him and then tells you that he can't be of much help since he has been locked up here ever since he lost his tavern in McBane.
+
+### SD2:710
+Lord McBane forced Thufar to close his doors after too many townspeople complained about getting sick on bad ale.  Thufar also tells you that he would be willing to travel with you as long as you pay him.
+
+### SD2:711
+Thufar tells you that he would be willing to travel with you if you pay him.  He wants 200 gems to go with you.  Do you pay him?
+
+### SD2:712
+Thufar smiles and says, "Great, those gems will be enough for me to start my tavern again in another location."  Thufar packs up his valuables and puts on his armor and leaves with you.
+
+### SD2:713
+Thufar tells you that he is a very good warrior and that it will cost you much more than that for less.  He also tells you that he will not be going anywhere soon, so if you change your mind, come back and see him.
+
+### SD2:714
+Thufar understands that you don't have the money right now and tells you to come back if you get the money.
+
+### SD2:715
+Thufar is outside chopping wood.  Do you tell Thufar you want him to join your party?
+
+### SD2:716
+Entering this hallway, you immediately notice the four very large guardians that are moving to attack.
+
+### SD2:717
+You are jumped by a large group of thieves.
+
+### SD2:718
+You have entered the lair of some very dangerous cave trolls.  They plan to show you how dangerous they are.
+
+### SD2:719
+The cave opens up into a cavern filled with many cave troll.  Some were sleeping, while others are eating carrion.  They look at you and see food for the next month.
+
+### SD2:720
+When entering this cavern you see some cave trolls arguing with some strange looking ogres.  They see that you don't belong here and direct their anger towards you.
+
+### SD2:721
+You here a small click and then find yourself somewhere else.
+
+### SD2:722
+Here you find a very large oaken chest.  It looks like it could be at least 100 years old.  Do you want to investigate?
+
+### SD2:723
+After checking for traps and other malicious tricks, you open the chest to find some gold, gems and magical items.
+
+### SD2:724
+You find yourself surrounded by some very well armored stygian trolls.
+
+### SD2:725
+The gate is open just a crack.  Do you open the gate?
+
+### SD2:726
+You swing open the door and knock a small wooden peg.  It releases boiling oil on your party!
+
+### SD2:727
+Stygian trolls come out to finish the job.
+
+### SD2:728
+You back away cautiously until you bump into the Stygian trolls behind you.
+
+### SD2:729
+After dispatching the trolls, you notice that the ajar door was a trap.  You set it off with large stick and find boiling oil coming down where you were standing before.  It would have surely hurt you badly.
+
+### SD2:730
+One of your party notices a small wooden peg on the floor and warns the rest of the party.  You set off the trap and boiling oil comes falling down where you were standing before.   The Stygian trolls behind you are not happy that their trap failed.
+
+### SD2:731
+Inside, you find more Stygian trolls waiting for you.  They grunt in anger, that you have disturb their home.
+
+### SD2:732
+More trolls come through the door to attack.  You hope this is the last of them.
+
+### SD2:733
+Here at the end of the cave you find something may be of value.
+
+### SD2:734
+You are rushed by some very large and unusual trolls.  Their smell is almost unbearable.
+
+### SD2:735
+Here among the rotting bodies, you find something of value.
+
+### SD2:736
+The stench coming from this cave is very strong and pungent.  You recognize the smell to be rotting bodies in various states of decomposition.
+
+### SD2:737
+There is an eerie quietness as you venture into this dark and damp cave.  The smell of rotting flesh is all too evident.
+
+### SD2:738
+The source for the pungent odor is right in front of you.  Piles of rotting carcasses that are being munched on by carrion trolls.
+
+### SD2:739
+The carrion trolls heard you outside and decided to try to wait in the rotting flesh that is strewn around the room.  They hope to add you to there stash.
+
+### SD2:740
+Here under a pile of multicolored flesh is something that could be magical.
+
+### SD2:741
+Carrion trolls come out of adjoining cave to attack.
+
+### SD2:742
+This cave smells as bad as the other caves. There is no doubt that it contains decaying bodies.
+
+### SD2:743
+This cave is the least pungent of them all, but the air still causes you to gag every now and then.
+
+### SD2:744
+You are attacked by some very strange creatures.
+
+### SD2:745
+You encounter a very lovely being, but as you get closer, you realize that the image is just a mirage.
+
+### SD2:746
+The waters seem to rise up from nowhere.
+
+### SD2:747
+You see some movement in the distance.  You are sure that it must be bandits.  Do you want to attack?
+
+### SD2:748
+These giant rats are looking for some morsels of food.
+
+### SD2:749
+The earth lifts up in front of you.  It looks like you walked over where some earth creatures were sleeping.
+
+### SD2:750
+Your party looks like easy pickings for this large group of spiny cave lizards.
+
+### SD2:751
+The door is unlocked.  The room is filled with dust and rotting cloth.
+
+### SD2:752
+The room seems to come alive.  The rotting cloth rises up and takes shape.
+
+### SD2:753
+The door is barricaded shut.  Do you want to remove the barricade?
+
+### SD2:754
+You remove the barricade and move into the room.  The room is very dark and quiet.  You then see a few eyes floating in front of you.  The teeth that go with those eyes also become evident.
+
+### SD2:755
+You are jumped by bandits.
+
+### SD2:756
+Garreth gets your attention and tells you that he should get back to Brierwood to start to put things back together.  Without a ruler it will susceptible to attack.  You bid Garreth farewell and good luck.
+
+### SD2:757
+The area around this shack is neatly kept. The small pieces of wood littering the ground around a small stump tells you that someone was recently chopping wood.  Do you want to enter the shack?
+
+### SD2:758
+When you enter the shack you here a swoosh and thud.  It was an ax just missing you head.  You put up your guard immediately and the women puts up her hands in surrender, while her ax is stuck solidly in the door beam.
+
+### SD2:759
+The women is noticeably scared.  "I am sorry, I thought you were those shantiles coming to get me.  I am Cylantra and I have been stuck on this island ever since my boat was destroyed in a storm over a year ago."
+
+### SD2:760
+"I would be eternally grateful if you would let me join your party.  I am a good fighter and I am not afraid of anything."  Do you tell Cylantra you will take you with you?
+
+### SD2:761
+Cylantra smiles and proceeds to work on taking her ax out of the door frame.  She eventually works it out of the wood and joins your party.
+
+### SD2:762
+When you enter the shack you here a swoosh before a large ax hits the first person in your party.  You put up your guard immediately and the women puts up her hands in surrender.
+
+### SD2:763
+Cylantra smiles and proceeds to pick up her things and joins your party.
+
+### SD2:764
+Cylantra looks very disappointed.  Do you reconsider your decision and tell Cylantra that you will take her with you?
+
+### SD2:765
+Cylantra smiles and gathers her things before joining your party.
+
+### SD2:766
+Cylantra looks extremely angry now.  She screams, "You will pay for this!" as you leave.
+
+### SD2:767
+The waters become very rough and you find yourself in surrounded by water beasts.
+
+### SD2:768
+There doesn't seem to be an end to them.
+
+### SD2:769
+More water beasts move in to attack.
+
+### SD2:770
+You wonder how long this will go on.
+
+### SD2:771
+You must drop a special NPC to let Dumarious join your group.
+
+### SD2:772
+This hole is not empty.
+
+### SD2:773
+When you exit the cave, you see a site you couldn't even dream of.  There are piles and pile of bones in this secluded mountain valley.  Do you want to investigate the piles of bones?
+
+### SD2:774
+While investigating the piles of bones. You find a very strange looking staff.  Do you take it from the bones?
+
+### SD2:775
+After taking the staff, the bones come to life and attack to protect their treasure.
+
+### SD2:776
+You leave the staff where it lies and during an endless search you can't find anything else.  In fact, you can't even find the staff you found before.  It looks like it is lost forever.
+
+### SD2:777
+Nothing else stirs.
+
+### SD2:778
+You see some creatures come towards you.  Do you want to attack?
+
+### SD2:779
+The Omnipod explodes, with acid going every where.
+
+### SD2:780
+The old and dead trees around you come to life.
+
+### SD2:781
+The worn and battered sign says, "Village Shop".  Do you want to enter?
+
+### SD2:782
+You hear a foreboding voice telling you to leave the island immediately.  Do you leave?
+
+### SD2:783
+Then you will die!
+
+### SD2:784
+You are found by some roaming monsters.
+
+### SD2:785
+Some of Zaphres minions have found you.
+
+### SD2:786
+Demons, that call this castle home have found you.
+
+### SD2:787
+The floor behind you fills with lava!
+
+### SD2:788
+Fire creatures rise out of the lava and attack.
+
+### SD2:789
+Here you find a stone in the floor that moves slightly.  Do you want to try pushing on it harder?
+
+### SD2:790
+The stone moves tripping a secret mechanism.
+
+### SD2:791
+Raquiline is very happy that you have survived the battle with Nufack.  "Nufack, can not be completely destroyed, but it will be a very long time before he will have enough power to reenter this Realmz.
+
+### SD2:792
+I owe you a great deal for releasing me from Nufack's prison.  I can offer you treasure or maybe I still have the ability to grant you special magic powers.  What do you tell Raquiline?
+
+### SD2:793
+Raquiline nods and produces some magical treasure.
+
+### SD2:794
+Raquiline tells you that she must be off to start repairing the damage that Nufack has caused.  She bids you farewell and good luck in your future adventures.
+
+### SD2:795
+Thank you for playing White Dragon.  I hope you have enjoyed it enough to want to play it again.
+
+### SD2:796
+Raquiline nods and gives you a special magical power.
+
+### SD2:797
+Cylantra tells you, that she has to move on.  She bids you good bye and leaves.
+
+### SD2:798
+The stairway is blocked by a stone wall.
+
+### SD2:799
+You see something up ahead.  Do you want to attack?
+
+### SD2:800
+Inside this room you can hear moans of agony.  It sounds like someone is being tortured for information.  Do you want to enter the room?
+
+### SD2:801
+Upon entering the room, you immediately see a few guards standing around a bed that has a person chained to it.  There is one person causing a lot of pain to the unrecognizable figure on the bed.
+
+### SD2:802
+When he sees you he puts a small knife into the badly mutilated bodies throat.
+
+### SD2:803
+"I see we have new subjects to work on!"
+
+### SD2:804
+Here is a very large marble statue.  You think it is of Zaphres, but you are not entirely sure.  The workmanship is very shoddy and not complete.
+
+### SD2:805
+Here are some potions! Do you want to take some of them?
+
+### SD2:806
+Some of these robes may be magical! Do you want to take some of them?
+
+### SD2:807
+There is a nice selection of weapons on this rack.  Do you want to take some of them?
+
+### SD2:808
+Here are some bags, which are obviously filled with gold.  Do you want to take some?
+
+### SD2:809
+Upon entering this room, you see many large tables.  Some of them have pieces of what only can be called food.
+
+### SD2:810
+Upon entering this room, you see many large tables.  Some of them have pieces of what only can be called food.
+
+### SD2:811
+When you come up to this door you are nearly bowled over by the many guards leaving it.  They are nearly as surprised as you are.
+
+### SD2:812
+Then you notice that the room is not empty.  There are several of Zaphres minions here hiding.  They must of heard you coming.
+
+### SD2:813
+Here is a very rich and ornate throne.  Do you want to sit in it?
+
+### SD2:814
+Who will sit in the throne?
+
+### SD2:815
+The person on the throne has a feeling of being more powerful.
+
+### SD2:816
+Upon entering this room, you are overtaken by the strong smell of incense and other perfumes.  This room is richly decorated and is fit to be a throne room for a prince.
+
+### SD2:817
+This pillar is unstable.
+
+### SD2:818
+The pillar move and topples upon you!
+
+### SD2:819
+The pillar moves a bit, but stays put.
+
+### SD2:820
+Those that can't move out of the way are seriously hurt!
+
+### SD2:821
+There are some spears on this rack.  Do you want to take some of them?
+
+### SD2:822
+There are some swords on this rack.  Do you want to take some of them?
+
+### SD2:823
+There is a trunk here at the end of the bed.  Do you want to see what is inside?
+
+### SD2:824
+The trunk is full of old clothes.  Nothing of use though.
+
+### SD2:825
+The trunk is empty.
+
+### SD2:826
+The trunk is full of women's clothing.
+
+### SD2:827
+The trunk is full of garbage.
+
+### SD2:828
+The trunk has some strange looking contraptions in it.  Nothing of any use though.
+
+### SD2:829
+The trunk is filled with neatly pressed clothes.
+
+### SD2:830
+The trunk is full of strange looking insects eating something.
+
+### SD2:831
+The trunk is filled with smelly socks.
+
+### SD2:832
+The trunk is filled with blankets.
+
+### SD2:833
+The trunk is filled with dried beef and other food.
+
+### SD2:834
+The trunk is filled with candy.
+
+### SD2:835
+The trunk has something that may be worth something in it.
+
+### SD2:836
+Upon entering this room, you immediately notice that this room is used to house some of Zaphres guards.
+
+### SD2:837
+Right now the room is devoid of any guards.
+
+### SD2:838
+Some of the guards that call this room home attack as soon as they realize that you don't belong here.
+
+### SD2:839
+This room is full of supplies and food.
+
+### SD2:840
+There is a very shiny necklace on this rotting skeleton.  Do you want to take it?
+
+### SD2:841
+Currently, there are many clerics and mage.  preparing the room for some sort of visit from someone important.
+
+### SD2:842
+Currently, the room is empty.
+
+### SD2:843
+Upon entering this room, you see several clerics chanting something.  You soon realize, they are conjuring up beings from a very evil plane.
+
+### SD2:844
+This truck is locked.  What do you want to do?
+
+### SD2:845
+You have set off a trap!
+
+### SD2:846
+The trunk was destroyed in the blast!
+
+### SD2:847
+You find that the trunk is protected by a trap.
+
+### SD2:848
+You were able to open the trunk and you find some items that may be worth something.
+
+### SD2:849
+Upon entering this room, you are immediately rushed by creatures from another plane.  The magi that have conjured these creatures also attack.
+
+### SD2:850
+This rack has various robes on it.  Do you want to take a look at them?
+
+### SD2:851
+Some of them might be magical.
+
+### SD2:852
+The lad tells you to come back any time.
+
+### SD2:853
+After giving you the gold she sees your other flower and starts to smile.  "I will give you 100 gold for that flower with the spidery like petals."  Do you take the women up on her offer?
+
+### SD2:854
+She tells you, "You won't find anyone else to pay you more, but you are welcome to try."  She bids you good day.
+
+### SD2:855
+Wandering creatures find you.
+
+### SD2:856
+856
+
+### SD2:857
+ÌI¿¡¸ÄˇˇmFAeê0 I¿¡¸Ë9ˇˇOÌI¡√¸ÅˇˇmFAeê0I¡–A? 9ˇˇOÌI¿¡¸ÄˇˇmFA
+
+### SD2:858
+m&On¸ë ˙Ô¸ËÏÛ¯˛ Ô˝¯˙Å ˇˇT˙—  
+
+### SD2:859
+¸œÈ€	A Ã ıÏá
+
+### SD2:860
+“  Ùıà5ÚWó?xonÂ0ò/ª!Í„À B˜Ó Á› èfπc0QPk4BL0Òx !oˇ˙¸¸Â ÜQ ©bÄ#ﬂAê√	!vQ_ ˚È‰∂a!ø˛ıÔ	È  (qﬁ/K]w+‰2>2íR˛s˝¸ı˜Ú¸o¸ÈÊ± ˝O ˜˘	ÉPM'Pˇﬁ@D0ˇQQÛÛ˝<ulP]?OÍçi8ê "˜Ë%PÍ ˇ ¸Úˆ¿Ë…GIPW	˝ ^p ¯ÚÛ˚∫ ç0ü¸˚
+
+### SD2:863
+˛§p\Ä5p\ c±k≈Ïö&N¿˛æi"D1ﬁK ˇ˘ÚÚ|± ˆ˘ê5q∏‹√√zÁ¨‡n«í¢0°/°ˇ°˛˘}ıÜ!˝Ûˆ˝˘Õ¿Â∞ëòÅ=¡¿e\£mﬂÕnÅÁÅ¸˙;ÚÙ ˝ˆˇÓ¡PÄ µ®∫r¯Òª0?P0]Ñó®A‰™ëê”h:—¸ÛÛ˝˛!˙˜˘ˇ˘¸√1ˇ≥ †¿≥†wë>√^”‡œø3Wã’ÿ¡˛˛ˆ;Ú˚ó¡¯˛K†•¬ Jÿ’Ω2◊a\h¸m‚ç”†Y£≥ù°i¨†˜)∞˝˙˙#∞⁄p∆ PR–¢¡ ;
+
+### SD2:887
+ © © © ©ë 
+
+### SD2:943
+0
+
+### DES:1
+These demons are born out of pure pain.
+
+### DES:8
+This race of dragon kind devotes their entire lives to the destruction of their evil kin.
+
+### DES:9
+A gaping maw of immense size makes this mindless foe one to best be avoided.
+
+### DES:11
+This sect of Draven command the other Draven.
+
+### DES:12
+Created from non-living parts and given life through arcane magic.  They will serve their creator until destroyed.
+
+### DES:16
+A larger version of the ordinary troll.  The physical strength of these beasts is near god-like.
+
+### DES:20
+A mountainous man-fish.
+
+### DES:23
+Chloe's Love interest
+
+### DES:28
+There is only one of these Dragons and she is very powerful!
+
+### DES:29
+Humanoid in shape but actually made from a colony of semi-intelligent mosses.
+
+### DES:30
+A real monster.  Fortunately, this eight legged monstrosity has NO venom.
+
+### DES:31
+A real monster.  A paralyzing venom could well be the least of your worries when you encounter these huge spiders.
+
+### DES:32
+Be careful not to fall victim to a bite from one of these.  Their bite has been known to cause paralysis.
+
+### DES:33
+A poisonous bite may be the least of your worries if you meet up with one of these vermin.
+
+### DES:34
+An evil race of Ogre that has great malice for any surface dwelling race.
+
+### DES:35
+These deadly dragons inhabit the colder regions of Realmz.
+
+### DES:37
+Long ago a tribe of trolls developed the ability to think.  They have since developed a strong tribal society that rivals orcs and goblins.
+
+### DES:38
+Strongest of the evil dragons.  Few are those that have met with one, and LIVED!
+
+### DES:39
+Woe are the fools that find themselves in lonely company with one of this ilk.
+
+### DES:40
+One of the weaker races of dragon kind.  A sly mind and a taste for blood make green dragons a force to be feared.
+
+### DES:41
+These dragons are strange mutations of other dragons made by the demonic creatures.
+
+### DES:42
+Harpies are considered among the most evil minded of creatures.
+
+### DES:46
+A snake of unbelievable size.  Easily over 60 feet long and as large around as a good size oak.
+
+### DES:54
+Evil incarnate, these creatures feast of the terror and pain of those they choose as victims.
+
+### DES:58
+Hailing from some unknown plane, these beasts are often summoned by powerful enchanters to do their bidding.
+
+### DES:59
+Zaphres Human Body
+
+### DES:62
+These dragons are a mix of red and green dragons.
+
+### DES:63
+These minor devils live their lives as servants to those more powerful than themselves.
+
+### DES:67
+Just the touch of these foul creatures can cause disease.
+
+### DES:70
+These fire creatures are usually accompany the fire queens.
+
+### DES:76
+The filthy teeth of these creatures can cause disease if they break the skin.
+
+### DES:77
+Skilled in the ways of magic, stygian witches are known to associate with evil giants.
+
+### DES:83
+Completely mindless.  They are used as shock troops and as food by just about any other demon.
+
+### DES:85
+Often pressed into service to pay off debts.
+
+### DES:86
+A conscript with little to look forward to in the civilian world.  For this reason they often re-enlist to become Corporals.
+
+### DES:87
+Charged to keep the troops in line.
+
+### DES:88
+A true leader of men.
+
+### DES:90
+A trained warrior often hired to bolster the ranks of the common conscripts.
+
+### DES:91
+A common orc who claims to have some skill with weapons.
+
+### DES:92
+Slightly larger and more powerful than goblins, these close cousins to real goblins band together in large tribes.
+
+### DES:95
+A brave but somewhat unskilled troop.
+
+### DES:96
+A conscript with little to look forward to in the civilian world.  For this reason they often re-enlist to become Corporals.
+
+### DES:97
+Charged to keep the troops in line.
+
+### DES:98
+A true leader of men.
+
+### DES:99
+Skilled in the ways of combat and leadership.  An up and coming officer to be sure.
+
+### DES:101
+A blaze of claw and fang.  The speed of these nether-world creatures is almost without compare.
+
+### DES:103
+Abused as a youngster.  These ill tempered men are but common thugs for hire.
+
+### DES:104
+Pickpocket, cutpurse, burglar.  By any name, a thief is a thief.
+
+### DES:105
+Beaten when young, these evil people make a poor choice of company.
+
+### DES:106
+Beaten when young, these evil people make a poor choice of company.
+
+### DES:108
+Combination between a spider and a human.
+
+### DES:116
+Capable of casting clerical spells makes this humanoid something to fear.
+
+### DES:117
+Prefer to feed on the dead.  However, they will not hesitate to add a little fresh meat when only that is available.
+
+### DES:118
+Belonging to the arachnid family, these large critters pack a paralyzing sting.
+
+### DES:120
+A warrior of great skill and strength.
+
+### DES:121
+The priest of a tribe of orcs.
+
+### DES:122
+Strong and most capable with arms.
+
+### DES:126
+Skilled in the use of a bow.  These warriors prefer to pepper their enemies with fine yew wood shafts.
+
+### DES:128
+Souls that have been damned to roam the astral plane.  If provoked, they can exist on the material plane for short periods.
+
+### DES:129
+Large and fierce warriors of above average skill.
+
+### DES:130
+A hob goblin skilled in the use of a bow.
+
+### DES:133
+Young thug.
+
+### DES:140
+Zaphres evil body.
+
+### DES:141
+A larger version of the ordinary troll.  The physical strength of these beast is near god like.
+
+### DES:146
+This is Nufack's undead body then he evolves into monster # 27
+
+### DES:147
+These strange creatures came from magic sludge in deep caverns.  Not much else is known about them.
+
+### DES:154
+Skilled in the ways of thievery as well as war, these vile thugs would just as soon slit your throat as look at you.
+
+### DES:155
+With a shell as dark as soot, this crab is mindless machine with powerful pincers.
+
+### DES:156
+With a hard carapace as tough as steel plating.  This crab is like a knight in armor.
+
+### DES:157
+Large glands in the pincers inject victims with a powerful chemical that bursts into flame when it comes in contact with air.
+
+### DES:158
+Thousands of tiny spots give this crab its name.  Though nowhere near as fast as a leopard, it is just as deadly.
+
+### DES:167
+These huge mounds of evil sludge exude electrical power that stuns unwary victims so they can be digested.
+
+### DES:169
+A very secret and strange order of monks that don't like outsiders.
+
+### DES:171
+These magical creatures escaped from a wizards lab and multiplied.
+
+### DES:172
+These magical creatures escaped from a wizards lab and multiplied.
+
+### DES:173
+These reptiles have very hard outer layer skin and a deadly poisonous bite.
+
+### DES:174
+These vile creatures are a cross between a giant snake and a green dragon.
+
+### DES:178
+Born of pure evil.  These beautiful, deadly creatures love to inhabit murky forests.
+
+### DES:183
+Ions ago a race of trolls became infected with a terrible disease.  Though they have since become immune to disease, the descendants live in pain.
+
+### DES:186
+A disgusting creature at best.  This  beast sports four clawed feet, two tentacles and a elephants trunk.  It's bite can also paralyze.
+
+### DES:192
+End of list
+
+### DES:195
+	Ë             
+
+### DES:196
+No Special Attacks
+
+### DES:197
+No Special Attacks
+
+### OD:1
+Attack your friend
+
+### OD:2
+Do not attack
+
+### OD:5
+Stay and Fight
+
+### OD:6
+Run Away
+
+### OD:7
+Surprise
+
+### OD:8
+Talk

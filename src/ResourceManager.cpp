@@ -391,7 +391,7 @@ void FSpCreateResFile(const FSSpec* spec, OSType creator, OSType fileType, Scrip
 int16_t FSpOpenResFile(const FSSpec* spec, SInt8 permission) {
   auto host_filename = host_resource_filename_for_FSSpec(spec);
   if (host_filename.empty()) {
-    auto filename = string_for_pstr<64>(spec->name);
+    auto filename = string_for_pstr<256>(spec->name);
     rm_log.info_f("Failed to load resource file {}", filename);
     resError = fnfErr;
     return -1;

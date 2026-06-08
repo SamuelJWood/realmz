@@ -564,6 +564,7 @@ back:
               whichset = 10;
               break;
 
+            case 0x1b: /**** Escape = abort ****/;
             case 'a': /**** abort key ****/;
             case 'A': /**** abort key ****/;
               itemHit = 38;
@@ -712,7 +713,7 @@ out:
     lastspell[charselectnew][0] = castlevel;
     lastspell[charselectnew][1] = castnum;
     oldpowerlevel[charselectnew] = powerlevel;
-    select[charselectnew] = TRUE;
+    charselected[charselectnew] = TRUE;
   }
 
   spellwindow = NIL;

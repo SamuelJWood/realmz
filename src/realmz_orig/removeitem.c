@@ -125,6 +125,6 @@ short removeitem(short character, short itemnum, short play, short force) {
 
   if ((item.sound) && (play))
     sound(600 + item.sound);
-  select[character] = TRUE;
+  charselected[character] = TRUE;
   return (1);
 }

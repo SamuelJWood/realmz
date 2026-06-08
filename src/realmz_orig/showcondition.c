@@ -24,12 +24,24 @@ short showcondition(short start, short stop, short type, short showonly, short w
 
   for (tt = start; tt <= stop; tt++) {
     if ((type != 4) && (type != 3)) {
-      CtoPstr(c[tt].name);
-      AppendMenu(popup, (StringPtr)c[tt].name);
-      PtoCstr((StringPtr)c[tt].name);
+      if (type == 0 || type == 1) {
+        // Build "<Name>'s Items" / "<Name>'s Conditions" for the header item.
+        char header_buf[300];
+        snprintf(header_buf, sizeof(header_buf), "%s's %s",
+                 c[tt].name, (type == 1) ? "Items" : "Conditions");
+        CtoPstr(header_buf);
+        AppendMenu(popup, (StringPtr)header_buf);
+      } else {
+        CtoPstr(c[tt].name);
+        AppendMenu(popup, (StringPtr)c[tt].name);
+        PtoCstr((StringPtr)c[tt].name);
+      }
       index++;
       SetItemIcon(popup, index, c[tt].pictid);
       SetItemStyle(popup, index, 1);
+      if (type == 0 || type == 1) {
+        SetMenuItemIsHeader(popup, index);
+      }
     }
 
     switch (type) {

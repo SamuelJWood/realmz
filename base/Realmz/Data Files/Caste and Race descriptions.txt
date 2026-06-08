@@ -1,0 +1,317 @@
+Fighter
+•Warriors - excel in the art of combat.  They are second to none when it comes to physical combat with weapons.
+•Armor and Weapons - may use any type with very few exceptions.
+•Attacks Per Round - will increase as they gain Skill Levels.
+•Chance to cause a Major Wound (double damage): 5% plus 1% per skill level.
+
+Fencer
+•Warriors - excel in the art of combat.  Drilling  exclusively in the art of melee weapons they excel at such tactics.  They will not use missile weapons of any kind as they find them a cowardly way to do battle.  They also shun bashing weapons such as maces.
+•Armor and Weapons - may use any type of non missile bladed weapon with a few exceptions.
+•Attacks Per Round - will increase as they gain Skill Levels.
+•Chance to cause a Major Wound (double damage): 2% plus 1% per skill level.
+•Abilities Acquired at Higher Skill Levels:
+18th Level - Shield From Hits:  All damage from attacks will be reduced by 5 points to a minimum of 1 point of damage.
+
+Berzerker
+•Warriors - capable of entering a battle rage at any given moment, Berzerkers are one man wrecking crews. They refuse to use more sophisticated weapons in battle such as bows and other aimed weapons.
+•Armor and Weapons - will not use any missile weapons and only light armor.
+•Resistant to fire damage.
+•Attacks Per Round - will increase as they gain Skill Levels.
+•Chance to cause a Major Wound (double damage): 2% plus 1% per skill level.
+
+Archer
+•Warriors, a special type of fighter - Skilled woodsmen, who excel in the use of missile weapons such as the bow.
+•Armor and Weapons - May use padded, leather, or chain armor.  Archers receive a Missile Adjustment of +15% to reflect their great skill at archery and will do extra damage above and beyond the normal damage with any missile weapon as they gain in skill levels.
+•Attacks Per Round - will increase as they gain Skill Levels.
+•Chance to cause a Major Wound (double damage): 3% at all Skill Levels.
+•Starting at skill level 15 they gain the ability to caste very low level sorcerer spells.
+•Abilities Acquired at Higher Skill Levels:
+10th Level - Missile Shield. Immune to normal missile attacks.
+
+Marksman
+•Warriors, a special type of fighter - Skilled woodsmen, who excel in the use of missile weapons such as the bow.
+•Armor and Weapons - May use padded, leather, or chain armor.  Marksman receive a Missile Adjustment of +20% to reflect their great skill at archery. In addition they gain in skill with missile weapons faster than an Archer but never gain the ability to cast low level sorcerer spells.
+•Attacks Per Round - will increase as they gain Skill Levels.
+•Chance to cause a Major Wound (double damage): 5% at all Skill Levels.
+•Abilities Acquired at Higher Skill Levels:
+12th Level - Missile Shield. Immune to normal missile attacks.
+
+Rogue
+•Thieving is considered an honorable profession in the world of Realmz, or at least one that is tolerated. Rogues are actively sought out to engage in various activities best left to professionals. Capable of many tasks that no other character caste can perform, their abilities include: Disarm Traps, Pick Locks, Pick Pockets, and Sneak Attacks.
+•Agility is most important for a good Rogue. It would be a short life for a Rogue who went BUMP in the night.
+•Rogues also have the special skill of reading languages to decipher old maps and instructions. This also includes the deciphering magical writing on scrolls. This lets them cast a spell from any magical scroll.
+•Armor or Weapons - May wear robes, padded, or leather armor.  Use only one-handed weapons, with the exception of bows.  Not avid fighters.
+•Capable of Sneak Attacks (triple damage): 2% plus 1% per Skill Level. A weapon technique, difficult to learn, but deadly when mastered.
+•Cast Low Level Spells - When a Rogue reaches the 15th skill level, they can begin to cast low level Sorcerer spells.
+•Abilities Acquired at Higher Skill Levels:
+8th Level - Invisibility:  They are capable of breaking away from an enemy without getting attacked.
+
+Bard
+•Thieving is considered an honorable profession in the world of Realmz, or at least one that is tolerated. Bards are former rogues and cut purses that have achieved a social rank above that of the common man. Retaining most of the skills of their earlier days, they have shifted some attention towards the more physical arts such as combat.
+•Bards also have the special skill of reading languages to decipher old maps and instructions. This also includes the deciphering magical writing on scrolls. This lets them cast a spell from any sorcerer scroll.
+•Armor or Weapons - May wear robes, padded, leather or chain armor.  More skilled with weapons than Rogues, but it takes them longer to gain the ability to cast low level sorcerer spells.
+•Capable of Sneak Attacks (triple damage): 5% at all skill levels. A weapon technique, difficult to learn, but deadly when mastered.
+•Abilities Acquired at Higher Skill Levels:
+15th Level - Invisibility:  They are capable of breaking away from an enemy without getting attacked.
+
+Assassin
+•Skilled in the art of the quick kill, they excel at sneak attacks and crippling blows.
+•Armor or Weapons - May wear robes and padded armor.  Avid fighters when it comes to the techniques of causing crippling hits in a single blow.
+•Capable of Sneak Attacks (triple damage): 10% plus 1% per Skill Level. A weapon technique, difficult to learn, but deadly when mastered.
+•Abilities Acquired at Higher Skill Levels:
+15th Level - Invisibility:  They are capable of breaking away from an enemy without getting attacked.
+
+Monk
+•Master of the Martial Arts.  Astute in the use of the body as a weapon, and knowledgeable of all aspects of the body - both mental and physical.  Always seeks an inner peace. Has an additional 10% resistance to mental attacks.
+•More capable at some abilities such as Disarm Trap, Pick Lock and Pick Pocket than most other castes but still very modest in skill when compared to a Rogue.
+•Armor and Weapons - May wear robes, gauntlets and cloaks.  May wear only a few types of light armor protection. May also use their bare hands as effective tools of combat. At high Skill Levels they can do massive damage using nothing but hands and feet.
+•Attacks Per Round - will increase as they gain Skill Levels.
+•Chance to cause a Major Wound (double damage): 5% plus 1% per skill level.
+•Abilities Acquired at Higher Skill Levels:
+5th Level - Permanent protection (1/ 2 damage) from mental-based spells. 10th Level - Permanent protection (1/ 2 damage) from chemical-based spells. 20th Level - Gain the ability to regenerate wounds.
+•Hand-to-Hand Damage: Ranges at 2 x ability level plus 2 points.
+Examples:
+1st level Monk does 2 x 1 + 2.	Capable Range of Damage = 2 to 4 pts.
+10th level Monk does 2 x 10 + 2.  Capable Range of Damage = 2 to 22 pts.
+15th level Monk does 2 x 15 + 2.  Capable Range of Damage = 2 to 32 pts.
+
+Priest
+•Warrior-Priests, skilled both in the arts of war and the cloth. But, unlike Crusaders, they generally concentrate a greater amount of their time in the weaving of magic, which is derived from devotion to their deity.  Therefore they are much more effective as a magical force in the party but are not as adept at physical combat as a Crusader.
+•Capable of Turning, thus destroying or changing the alliance of Undead and lesser Demons, Daemons and Devils.
+•Armor or Weapons - can wear any type of armor, but may use only blunt weapons.
+•Abilities Acquired at Higher Skill Levels:
+10th Level - Magic Aura.  Makes it harder for an enemy to hit them and easier for them to hit an enemy.
+25th Level - Protection From Foe.  Creatures are easier to hit and have a harder time hitting the priest. Similar to Magic Aura but more powerful.
+
+Cardinal
+•Priests, skilled in the arts of the cloth.  Unlike Crusaders and Priests, they generally concentrate most of their time in the weaving of magic, which is derived from devotion to their deity.  Therefore they are effective as a magical force in the party but are not as adept at physical combat as a Priest.
+•Capable of Turning, thus destroying or changing the alliance of Undead and lesser Demons, Daemons and Devils.  They initially start out strong in this area but do not gain skill at the same rate as a priest.
+•Armor or Weapons - can wear most types of armor, but may use only blunt weapons.
+•Abilities Acquired at Higher Skill Levels:
+8th Level - Magic Aura.  Makes it harder for an enemy to hit them and easier for them to hit an enemy.
+15th Level - Protection From Foe.  Creatures are easier to hit and have a harder time hitting the cardinal. Similar to Magic Aura but more powerful.
+
+Sorcerer
+•Use the arcane powers of magic to weave spells of a destructive nature.  Most Sorcerer spells are offensive, rather than defensive in nature.
+•Armor or Weapons - may use only three weapons in combat: the dagger, the staff, and the dart.  They are not capable of wearing any armor that would hinder their movement, since fluid motion of the hands and arms is a must for spell casting. That leaves the Sorcerer with only robes and special magical items for protection.
+•The Sorcerer's skill in combat with weapons is poor.
+•Abilities Acquired at Higher Skill Levels:
+25th Level - Absorbs Spell Energy From Attacks:  When hit with magic spells, they can absorb some of the energy to recharge their own spell points.
+
+Cabalist
+•Spell-weavers. A special caste of Sorcerer that love to use magic in battle. Drawing on arcane magic as well as weaving magic from deities.  More adept at the art of spell casting that Sorcerers, they are more feeble by far physically and in combat skills
+•Armor or Weapons - Very limited.
+•Abilities Acquired at Higher Skill Levels:
+10th Level - Pro' from 1st level spells. Immune to harmful 1st level spells.
+20th Level - Pro' from 2nd level spells. Immune to harmful 1st-2nd level spells.
+30th Level - Pro' from 3rd level spells. Immune to harmful 1st-3rd level spells.
+
+Enchanter
+•Spell-weavers.  A solitary and mysterious caste.  Love to talk in riddles and guide a conversation rather than hold it.  Draw on arcane magic as well as weaving magic from deities.  They have some of the benefits and shortfalls of both Sorcerers and Priests.
+•Specialize in Summoning spells, for creatures to aid the party in combat.
+•Armor or Weapons - have a slightly better selection of weapons and armor to choose from than Sorcerers but are still very limited when compared to most castes.
+•Abilities Acquired at Higher Skill Levels:
+25th Level - Absorbs Spell Points: Will recharge spell points at a faster rate.
+
+Evoker
+•Spell-weavers.  A special caste of Enchanters that use the arcane powers of magic to weave spells of a destructive nature.  Most Evoker spells are offensive, rather than defensive in nature.  More powerful in the ways of magic than the Enchanters they  are more feeble in body.  Almost any attacker in close quarters with an Evoker can hack them to pieces in short order.
+•Armor or Weapons - may use only two weapons in combat: the dagger and the staff.  They are not capable of wearing any armor that would hinder their movement, since fluid motion of the hands and arms is a must for spell casting. That leaves the Evoker with only robes and special magical items for protection.
+•The Evoker's skill in combat with weapons is poor.  They are dwarfed by virtually every other caste. Front line battle troops they are not.
+•Abilities Acquired at Higher Skill Levels:
+15th Level - Pro' from 1st level spells. Immune to harmful 1st level spells. 
+25th Level - Pro' from 2nd level spells. Immune to harmful 1st-2nd level spells.
+35th Level - Pro' from 3rd level spells. Immune to harmful 1st-3rd level spells.
+
+Warlock
+•Spell-weavers to the extreme.  A special caste of Enchanters that thrives on the  use of arcane magics.
+•Specialize in Spell Casting. To the exclusion of anything else, Warlocks cast spells. In physical combat they are pathetic.  In magical combat they are lethal.
+•Armor or Weapons - Extremely limited.
+•Abilities Acquired at Higher Skill Levels:
+25th Level - Absorbs Spell Energy From Attacks:  When hit with magic spells, they can absorb some of the energy to recharge their own spell points.
+36th Level - Absorbs Spell Points:  Will recharge spell points at a faster rate.
+
+Battle Mage
+•Use the arcane powers of magic to weave spells as well as weapons. Though not capable of reaching the highest level of either spell casting or warrior skill, they are much more capable with arms than almost any other magical caste.
+•Armor or Weapons - may use most types in combat, including some types of missile weapons.
+•Chance to cause a Major Wound (double damage): 2% at all Skill Levels.
+•Abilities Acquired at Higher Skill Levels:
+15th Level - Pro' from 1st level spells. Immune to harmful 1st level spells.
+30th Level - Pro' from 2nd level spells. Immune to harmful 1st-2nd level spells.
+45th Level - Pro' from 3rd level spells. Immune to harmful 1st-3rd level spells.
+
+Dabbler
+•Warriors - excel in the art of combat but to a lesser extent than the hard-core warriors such as Fighters and Crusaders.  However, they do have one advantage. They like to dabble in the arts of magic.  Believing a small amount of magic  during battle can be a good thing they gain the ability to cast low level spells at the 5th skill level.
+•Armor and Weapons - may use most types with a few exceptions.
+•Attacks Per Round - will increase as they gain Skill Levels.
+•Chance to cause a Major Wound (double damage): 3% at all Skill Levels.
+•Abilities Acquired at Higher Skill Levels:
+20th Level - Pro' from 1st level spells. Immune to harmful 1st level spells.
+
+Crusader
+•Holy warriors, a special type of fighter who can cast Priest spells when they gain enough Skill Levels.
+•Armor and Weapons - may use any type of armor or weapon except missile weapons and some special weapons.
+•Attacks Per Round - will increase as they gain Skill Levels.
+•Chance to cause a Major Wound (double damage): 3% at all Skill Levels.
+•Capable of Turning starting at Skill Level 4. (Turning destroys or changes the alliance of Undead and lesser Demons, Daemons and Devils.)
+Ability to cast Priest spells when they reach Skill Level 7.
+Crusaders can cast any spell from a scroll.
+Due to the purity and holy nature of the caste, they are always affected by "Magical Aura".
+
+Minstrel
+•Music has a mystical link to magic in the Realmz, and a Minstrel is a wandering musician who uses that link to good effect. Though they gain proficiency in their craft rapidly during their early career, later advancement becomes fairly difficult. The use of musical instruments helps to hone and strengthen their talents.
+•Armor or Weapons - Though dedicated to their craft, Minstrels are free to study the arts of war, if they so choose. A wide range of armor is available, though gloves must allow free enough movement to play instruments and armor must allow for chest expansion. Minstrels may use all but the largest and most complicated weapons.
+•Attacks Per Round - will increase as they gain Skill Levels.
+•Cast Low Level Spells - When a Minstrel reaches the 4th skill level, they begin to receive spell points, and  can access 1st level Enchanter spells. Though they never advance beyond 4th level spells they continue to gain spell points. Their spell points aid in the singing of powerful Minstrel songs, their own impressive form of magic. Many instruments may increase a Minstrel's spell points.
+•Chance to cause a Major Wound (double damage): 4% plus 1% per level.
+•Abilities Acquired at Higher Skill Levels:
+9th Level - Pro. 1st Level.  Immune to 1st level spells.
+18th Level - Pro. from mental. Takes half damage from mental based spells.
+27th Level - Attack Bonus.
+36th Level - Pro. 2nd level. Immune to 2nd level spells.
+
+Humans
+Humans are by far the most populous of all races. This is due mainly to their  incredible ability to adapt to almost any condition, and to accomplish great feats by sheer determination.  Many races scoff at the achievements of humans in public, but few races can contest the success of the human race to inhabit almost every niche of the known world.  Human's major weakness is their short life span.  Their major strength is their short life span.  While longer-living races feel that 70 years is far too short to accomplish anything of great value,  it's for that very reason that humans strive so hard to rise to the top.  Most fail, but by sheer weight of numbers many great deeds are done.
+
+Typical Human:
+Height - 6 feet, 180 pounds Life Span - 70 years
+
+Elves
+Elves are the eldest of all known mortal races.  Elves are slight of build and none too  sturdy, but they are very quick of mind and body. They are agreeable people but tend to shun the more brutish of races.  They hate change. They live such long lives that they fail to see the urgency in many situations until it is too late. They wish no ill will on other races but are disgusted by the fast pace and wasteful ways of many races.
+
+NOTE:  Elves are not capable of regeneration of any kind.
+Typical Elf:
+Height -  5 1/ 2 feet, 120 pounds Life Span - 250 years
+
+Shadow Elves
+The Shadow Elves are distant cousins to the Elves that
+populate the known regions of the Realmz.  Cunning and ruthle are one of the most feared of all humanoid races. They hail from a
+most reaches of the Realmz.  Their society is based on one simple rule; the strong enslave the weak.  It's not uncommon for a Shadow Elf to even place their own blood kin in chains.  They learn to kill without mercy from a tender age. One would think their reputation as stoic killers would bind their fate to the gallows but in fact it lends them some protection. Many rich merchants see the value in a bodyguard whose mere presence will ward away many would-be bandits.  Due to the savage life of their island habitat, most Shadow Elves never live to die a natural death.  Because of assassinations and their hatred for the weak and frail, few members of their sick society die of old age.
+
+NOTE:  Elves are not capable of regeneration of any kind.
+Typical Shadow Elf:
+Height and Weight:  5  feet, 110 pounds
+Life span 250 years. (If their society lets them live that long)
+
+Dwarves
+Surpassed in life span only by the Elves and Gnomes, 
+Dwarves live to be 200 plus years of age.  Dwarves are sturdy fo taller than four feet high. They have an innate hatred for magic an
+are populous throughout the world and second only to humans in number.  Even though Humans and Dwarves get along quite well, many in both races preach that the other will ultimately have to be eliminated if theirs is ever to truly thrive. Many other races hire Dwarves for construction as they have an incredible ability to work long hard hours without rest even in the worst of conditions.  Few races will harass a Dwarven stronghold as they are clever and formidable foes.
+
+Typical Dwarf:
+Height and Weight:  4  feet, 170 pounds Life span 210 years
+
+Furfoots
+Furfoots are odd folk indeed. They are well liked by most races and yet they tend to shun contact with all but their own. They resemble Elves in build
+but are much shorter, growing to only three feet in height.  Elves are quick of body but appear sluggish when compared to Furfoots who amaze other races with demonstrations of speed and agility. They dwell in pleasant remote areas and seldom leave home to adventure.  As with all races, there are always those that have a taste to see the Realmz and the Furfoots are no exception.
+
+Typical Furfoot:
+Height and Weight:  3  feet, 80 pounds Life span 130 years
+
+Gnomes:
+Just as Furfoots resemble small Elves, Gnomes resemble small Dwarves. Many other races would find it difficult to tell the two apart if Gnomes
+were build slightly stockier.  Gnomes are extremely intelligent and curious.  They almost always dwell underground but on occasion they are known to travel to the surface.  Few in number, they are often the target of more hostile races.  They are not known for their skills of war, but few will attempt to defeat their well-planned defenses as they are clever when it comes to crafting tricks and traps for a would be foe.
+
+Typical Gnome:
+Height and Weight:  3 1/ 2  feet, 110 pounds Life span 190 years
+
+Orcs
+Orcs are large, brutish, and none too bright.  They are, however, strong and easily manipulated by more intelligent races.  Orcs are known to live above and
+below ground, and are satisfied with the most meager of possessions.  Their large size makes them fierce warriors, if nothing else.  Often they are employed by others as mercenaries, for they can be bought with the promise of food or other simple items which most others would consider of little value.  Though they are gruff and not well liked by most races, they are tolerated for one very good reason;  it is often unwise to upset an Orc, for they are a very populous race and any given Orc has many relatives.  It's a common belief that Humans and Dwarves have a larger population than Orcs but rumors have begun to surface that Orcs live in vast numbers in underground cities.... VAST numbers.
+
+Typical Orc:
+Height and Weight:  6 1/ 2  feet, 220 pounds Life span 55 years
+
+Half-Elf
+Strangely enough, Elves, being the longest lived of the mortal races, may only have offspring with one other race other than their own:  humans, one of the shortest lived.  Seldom is such a child born to a willing mother, however, as  more often than not, the child is the product of some vile act done unto the mother from some evil-doer.  Half-Elves are shunned by both races, but tolerated.  It is the Elves' love of life that prevents the mother from allowing any harm to befall the child, but on the child's 20th birthday they are almost always driven away.  Half-Elves lead a solitary and lonely life.  They share benefits from both races, for they live upwards of 150 years and tend to be physically stronger than true Elves.
+
+NOTE: Elves and even Hlaf-Elves are not capable of regeneration of any kind.
+
+Typical Half-Elf:
+Height and Weight:  6  feet, 150 pounds Life span 150 years
+
+Half-Orcs
+Half-Orcs are about as low on the social scale as one can get.  Even lower than full blooded Orcs.  They are a cross of Orc and almost anything else.  Orcs
+are not known for being picky about what they breed with. Most Half-Orcs die shortly after birth but a few survive.  Many are quite intelligent for they seem to receive a fit body from the Orc line and the Knowledge from the other blood line. Since almost anything (save Goblins) are more intelligent than Orcs it would be a plus save for the fact of their low social standing.
+
+Typical Half-Orc:
+Height and Weight:  6  feet, 180 pounds Life span 55 years
+
+Goblins
+Similar in appearance to Orcs, Goblins are extremely numerous and hardy creatures.  Though they lack the ability to attain super intelligence, they do
+possess qualities that not only lets them survive in almost any environment but to outright thrive in areas even an Orc tribe would shun.  Extremely strong and quick for their size it's wise not to underestimate a goblin in physical combat.
+
+Typical Goblin:
+Height and Weight:  4  feet, 110 pounds Life span 45 years
+
+Hobgoblins:
+Cousins to the more numerous Goblins, Hobgoblins grow much larger.  With an avid appetite for violence and destruction, it's a wonder the
+race has survived at all.  As it is, they are not very numerous as most other races will attack Hobgoblins at the first opportunity.  Over the past decades the most violent tribes have been wiped out and those that remain show some sign of civility.  For that reason many of the other races avoid outright warfare on Hobgoblins but still tend to shun them.
+
+Typical Hobgoblin:
+Height and Weight:  6  feet, 260 pounds Life span 60 years
+
+Kobold
+Small reptilian creatures, the Kobold always travels in large packs.
+The typical  Kobold tends to lean towards the evil side of things but it's not
+uncommon to find one of a more gentle and forgiving nature; those individuals are almost always outcast from their tribe.  Though somewhat brutal by nature, Kobold society will not harm these outcasts and in fact will lend aid to the isolated individual down on their luck. The small, thin frame of the Kobold does not give due credit to their actual physical strength, but their speed and quickness are their real assets. 
+
+Typical Kobold:
+Height and Weight:  3  feet, 90 pounds Life span 45 years
+
+Vampires
+Vampires are an odd race as they are incapable of reproduction as most races know it. Vampires are capable of turning other humanoids into
+a Vampire by passing on a portion of their life force.  This is never easy and the
+parent Vampire runs a great risk of death each time they multiply.  Because of the dangers, they tend to shun the act of reproduction until they grow tired of their undead existence.  A typical Vampire will only be able to reproduce 2 or 3 times before the act ends his own un-life.  Though feared by most races, they are tolerated due to their extreme volatility. Those that are of living flesh and blood seldom wish to risk death to vanquish them.  As a rule the longer a Vampire has lived the stronger it becomes.  It's rumored the first of their kind still lives nearly 13,000 years after his creation.  If legend is correct, many of the lesser gods envy his power.
+
+Typical Vampire:
+Height and Weight:  6  feet, 150 pounds
+Life span: Infinite (In theory) but few go longer than 300 years before reproduction ends their un-life.
+
+Lizard Men
+Strong and brutish Lizard Men travel in small bands.
+They tend to live near aquatic swamps but are capable of life even in the dry
+desert.  Unlike most reptiles they are warm blooded.  They are excellent warriors as they coordinate well with their fellows to strike at a victim as a group.
+
+Typical Lizard Man:
+Height and Weight:  5 1/ 2  feet, 160 pounds Life span 45 years
+
+Brownie
+Magical in nature the Brownie is a very elusive race.  There have been only a few reported sightings of a group of Brownies in excess of 3.  Even
+Elves are amazed to catch more than a glimpse of 2 or 3 in their long lifetimes. The exact nature of their lifestyles is a mystery even to this ancient text but many elder sages believe the Brownie to be a young pupa stage of the flying Pixie. When asked about such things, most Brownies simply turn invisible never to appear to that individual again.
+
+Typical Brownie:
+Height and Weight:  2 1/ 2  feet, 50 pounds
+Life span: Unknown but believed to be about 70 years.
+
+Pixie
+Extremely magical in nature, the Pixie is a complete mystery.  Though rare, they do associate with other races from time to time.  They radiate a strong
+sense of goodwill and nearly every race or wild creature is drawn to them when they are around. Exactly where they come from is unknown but it's believed that they have some magical link to Brownies as it is common to see a Pixie buzzing about the head of a Brownie scolding the Brownie like a bad stepchild.
+
+Typical Pixie:
+Height and Weight:  1  1/ 2  feet, 10 pounds
+Life span: Unknown but it's said they are the only immortal race that does not have an undead or Nether worldly origin.  They still feel the affects of aging and tend to have a useful lifespan of 300 years. 
+
+Leprechaun
+Mischievous by nature, the Leprechaun loves to poke fun at others in a harmless sort of way.  They frequent forested areas but are also known
+to dwell in the attics of larger mansions of humans and the cellars of Dwarven and Gnomish strongholds.  Most other races find their antics enjoyable when not directed at them personally and tend to take a liking to them as a whole.  It's believed by most races that the presence of a Leprechaun to be good luck as they are very sensitive to the probabilities of luck and shun those they find to be unlucky.
+Leprechauns and Brownies do not seem to get along well.  This is a real mystery as both races are goodly and funloving in nature.
+
+Typical  Leprechaun:
+Height and Weight:  3  feet, 60 pounds Life span: 90 years.
+
+Demons
+Demons are not native to the plane of Realmz but are often stranded here.  Demons are brought to the Realmz through rituals performed by
+sorcerers and enchanters.  This is almost always done against the Demon's will.  When arriving in the Realmz, they often engage in a battle of mental power with the summoning Mage.  If they are victorious they often kill the Mage and thus end any chance they have of returning to their native plane.  If the Demon is out on a task for the Mage and the Mage meets his doom, a similar fate befalls the demon.
+
+In their native world Demons are brutal and untrustworthy.  However, they are not altogether stupid and realize their fate when stranded in the Realmz.  They realize it's in their own best interest to get along with those of this world as they are often isolated and have nowhere to turn to for aid if they should encounter hard times.  They often accept room and board along with a moderate amount of wealth to act as guards to wealthy merchants.  Even rogue vampires and large orcish tribes will shy away from a merchant train that boasts a Demon among its ranks.
+
+Typical Demon:
+Height and Weight:  Varies by nature of the beast.
+Life span: Varies by nature of the beast but averages about 120 years.
+
+Cathoon
+Lithe and quick, the Cathoon are a strange race indeed.  In physical appearance they seem almost a cross between a cat and a bat.  Though they have no wings or retractable claws they do have incredible hearing, night vision, and a speed and dexterity unmatched by anything on two legs.  Normally solitary in nature later in life, they have an innate curiosity when young.  Often it is this curiosity that causes an untimely demise.  It's said that a Cathoon must be extremely lucky to live to a ripe old age.  The old proverb "Curiosity killed the cat" was originally coined by a Cathoon philosopher who stated "Curiosity killed the Cathoon."  When they reach their 30th birthday they perform a solitary ceremony known as "The Ritual of Nine Lives."  Upon the completion of the ceremony they give thanks for surviving their youth and settle down with a mate to lead a dull and uneventful life.
+
+Typical Cathoon:
+Height and Weight:  3-4 feet, 60-80 pounds.
+Life span: 65 years but few live past the age of 9.  Most perish by the hands and claws of others for sticking their noses into places they should have stayed clear of.

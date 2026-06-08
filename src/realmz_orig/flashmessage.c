@@ -6,6 +6,13 @@
 // the first parameter to a C string (6-7-99)
 //
 
+/* Returns TRUE if sc is an arrow or numpad movement scan code. */
+short is_movement_scancode(short sc) {
+  return (sc == 0x7E || sc == 0x7D || sc == 0x7B || sc == 0x7C || /* arrow keys */
+          sc == 0x5B || sc == 0x54 || sc == 0x56 || sc == 0x58 || /* numpad 8/2/4/6 */
+          sc == 0x59 || sc == 0x5C || sc == 0x53 || sc == 0x55);  /* numpad 7/9/1/3 */
+}
+
 /************ flashmessage ***********************/
 void flashmessage(Str255 strc, short x, short y, short duration, short toplay) /********** - duration = putup toggle ***** 0 duration = Wait for click *****/
 {
@@ -97,8 +104,12 @@ void flashmessage(Str255 strc, short x, short y, short duration, short toplay) /
       DoCorrectBugMADRepeat();
 #endif
 
-      if ((gTheEvent.what == mouseDown) || (gTheEvent.what == keyDown))
+      if ((gTheEvent.what == mouseDown) || (gTheEvent.what == keyDown)) {
+        if (gTheEvent.what == keyDown &&
+            is_movement_scancode((gTheEvent.message >> 8) & 0xFF))
+          continue;
         break;
+      }
     }
     FlushEvents(everyEvent, 0);
     SetCCursor(sword);

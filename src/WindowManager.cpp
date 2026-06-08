@@ -458,16 +458,23 @@ public:
         break;
       }
       case ResourceFile::DecodedDialogItem::Type::EDIT_TEXT: {
-        if (!port.draw_text(text, this->rect)) {
+        // Shift text and caret up 2 pixels to match visual alignment.
+        const Rect shifted{
+            static_cast<int16_t>(this->rect.top - 2),
+            this->rect.left,
+            static_cast<int16_t>(this->rect.bottom - 2),
+            this->rect.right};
+        if (!port.draw_text(text, shifted)) {
           wm_log.error_f("Error when rendering editable text item {}: {}", resource_id, SDL_GetError());
         }
 
-        // Draw caret if this item is focused
+        // Draw blinking caret if this item is focused (500ms on / 500ms off).
         auto window = this->owner_window.lock();
-        if (window && window->get_focused_item().get() == this) {
-          int16_t caret_x = this->rect.left + port.measure_text(text) + 1;
-          Point caret_top = {.h = caret_x, .v = this->rect.top};
-          Point caret_bottom = {.h = caret_x, .v = this->rect.bottom};
+        if (window && window->get_focused_item().get() == this &&
+            (SDL_GetTicks() / 500) % 2 == 0) {
+          int16_t caret_x = shifted.left + port.measure_text(text) + 1;
+          Point caret_top = {.h = caret_x, .v = shifted.top};
+          Point caret_bottom = {.h = caret_x, .v = shifted.bottom};
           port.draw_line(caret_top, caret_bottom);
         }
         break;
@@ -1251,7 +1258,12 @@ void WindowManager::recomposite(std::shared_ptr<Window> updated_window) {
       }
 
       SDL_RenderPresent(renderer);
+      // SDL_SyncWindow blocks until the windowing system acknowledges window state.
+      // On Wayland (including VirtualBox virtual displays), this can hang indefinitely.
+      // Limit it to macOS where it's needed to avoid partial frames on the native compositor.
+#ifdef __APPLE__
       SDL_SyncWindow(this->sdl_window.get());
+#endif
     }
   }
 }
@@ -1287,7 +1299,7 @@ void WindowManager::recomposite_all() {
   this->recomposite(nullptr);
 }
 
-void WindowManager::redraw_menu_bar_only() {
+void WindowManager::render_base_frame() {
   if (!this->sdl_window) return;
   auto renderer = SDL_GetRenderer(this->sdl_window.get());
   if (!renderer || !this->intermediate_texture) return;
@@ -1295,13 +1307,10 @@ void WindowManager::redraw_menu_bar_only() {
   int pw, ph;
   SDL_GetWindowSizeInPixels(this->sdl_window.get(), &pw, &ph);
 
-  // Re-render the game frame from the already-uploaded intermediate texture
-  // (already on the GPU — no CPU framebuffer work at all).
   SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
   SDL_RenderClear(renderer);
   SDL_RenderTexture(renderer, this->intermediate_texture.get(), nullptr, &this->content_rect);
 
-  // Draw menu bar overlay.
   float cursor_x, cursor_y;
   SDL_GetMouseState(&cursor_x, &cursor_y);
   uint64_t now_ms = SDL_GetTicks();
@@ -1309,7 +1318,15 @@ void WindowManager::redraw_menu_bar_only() {
   this->last_recomposite_ms = now_ms;
   SDLMenuBar::instance().update(dt, static_cast<int>(cursor_y), this->m_fullscreen, ph);
   SDLMenuBar::instance().draw(renderer, pw, ph, this->m_fullscreen);
+  // No SDL_RenderPresent — caller adds overlay then presents.
+}
 
+void WindowManager::redraw_menu_bar_only() {
+  if (!this->sdl_window) return;
+  auto renderer = SDL_GetRenderer(this->sdl_window.get());
+  if (!renderer || !this->intermediate_texture) return;
+
+  this->render_base_frame();
   SDL_RenderPresent(renderer);
   // Note: no SDL_SyncWindow here — menu bar updates don't need to block the caller.
 }
@@ -1464,6 +1481,9 @@ static void PrintDebugInfo(void) {
 }
 
 void WindowManager_Init(void) {
+  TTF_Init();
+  init_fonts();
+
   if (!SDL_Init(SDL_INIT_VIDEO)) {
     wm_log.error_f("Couldn't initialize video driver: {}", SDL_GetError());
     return;
@@ -1472,10 +1492,6 @@ void WindowManager_Init(void) {
   WindowManager::instance().create_sdl_window();
 
   PrintDebugInfo();
-
-  TTF_Init();
-
-  init_fonts();
   SDLMenuBar::instance().init(get_chicago_font());
   MCInstallWindowHook(WindowManager::instance().get_sdl_window().get(), PushMenuEvent);
 }
@@ -1503,6 +1519,38 @@ WindowPtr WindowManager_CreateNewWindow(int16_t res_id, bool is_dialog, WindowPt
     go_away = dlog.go_away;
     ref_con = dlog.ref_con;
     dialog_items = DialogItem::from_DITL(dlog.items_id);
+
+    // Dialogs 136 and 200 are the two-button choice dialogs (question2/question3).
+    // Expand their height to 50px, growing upward, to make them easier to click.
+    // question.c adjusts MoveWindow to keep the bottom edge at the same screen position.
+    if (res_id == 136 || res_id == 200) {
+      constexpr int16_t EXPANDED_HEIGHT = 50;
+      bounds.top = bounds.bottom - EXPANDED_HEIGHT;
+      for (auto& item : dialog_items) {
+        if (item->type == DialogItemType::CUSTOM && item->enabled) {
+          // Clickable area fills the full new height.
+          item->rect.top = 0;
+          item->rect.bottom = EXPANDED_HEIGHT - 1;
+        } else if (item->type == DialogItemType::PICTURE) {
+          // Draw the image at its natural pixel dimensions, bottom-anchored within
+          // the button area. This preserves aspect ratio regardless of image height.
+          int nat_w = 0, nat_h = 0;
+          if (GetPictureNaturalSize(item->resource_id, &nat_w, &nat_h) && nat_h > 0) {
+            item->rect.top    = static_cast<int16_t>(EXPANDED_HEIGHT - nat_h);
+            item->rect.bottom = EXPANDED_HEIGHT;
+            item->rect.right  = static_cast<int16_t>(item->rect.left + nat_w);
+          } else {
+            item->rect.top    = 0;
+            item->rect.bottom = EXPANDED_HEIGHT;
+          }
+        } else if (item->type == DialogItemType::TEXT) {
+          // Center text vertically within the new height.
+          int16_t text_height = item->rect.bottom - item->rect.top;
+          item->rect.top = (EXPANDED_HEIGHT - text_height) / 2;
+          item->rect.bottom = item->rect.top + text_height;
+        }
+      }
+    }
 
   } else {
     auto data_handle = GetResource(ResourceDASM::RESOURCE_TYPE_WIND, res_id);
@@ -1571,6 +1619,16 @@ void GetDialogItem(DialogPtr dialog, short item_id, short* item_type, Handle* it
   }
 }
 
+void WindowManager_SetDialogItemRect(DialogPtr dialog, short item_id, const Rect* box) {
+  auto window = WindowManager::instance().window_for_port(reinterpret_cast<WindowPtr>(dialog));
+  auto& items = window->get_dialog_items();
+  try {
+    items.at(item_id - 1)->rect = *box;
+  } catch (const std::out_of_range&) {
+    wm_log.warning_f("WindowManager_SetDialogItemRect: invalid item_id {}", item_id);
+  }
+}
+
 void GetDialogItemText(DialogItemHandle item_handle, Str255 text) {
   size_t handle = unwrap_opaque_handle(item_handle);
   auto item = DialogItem::get_item_by_handle(handle);
@@ -1604,7 +1662,11 @@ void ClearDialogFocus(DialogPtr dialog) {
 }
 
 int16_t StringWidth(ConstStr255Param s) {
-  return s[0];
+  if (!s || s[0] == 0) return 0;
+  std::string str(reinterpret_cast<const char*>(s + 1), s[0]);
+  auto* port = CCGrafPort::as_port(qd.thePort);
+  if (!port) return static_cast<int16_t>(s[0]);
+  return static_cast<int16_t>(port->measure_text(str));
 }
 
 Boolean IsDialogEvent(const EventRecord* ev) {
@@ -1820,8 +1882,26 @@ void ModalDialog(ModalFilterProcPtr filterProc, short* itemHit) {
   EventRecord e;
   DialogPtr dialog;
   short item;
+  static uint64_t last_blink_state = UINT64_MAX;
   while (true) {
     WaitNextEvent(everyEvent, &e, 1, NULL);
+
+    // On null events, periodically re-render only the focused editable text
+    // item so the blinking caret updates without erasing custom drawings
+    // (e.g. pict overlays in fileprep) that are not part of the dialog's DITL.
+    if (e.what == nullEvent) {
+      auto top_window = WindowManager::instance().front_window();
+      auto focused = top_window ? top_window->get_focused_item() : nullptr;
+      if (focused) {
+        uint64_t blink_state = SDL_GetTicks() / 500;
+        if (blink_state != last_blink_state) {
+          last_blink_state = blink_state;
+          focused->render_in_port(top_window->get_port(), true);
+          WindowManager::instance().recomposite_from_window(top_window);
+        }
+      }
+      continue;
+    }
 
     // Menu events are encoded as mouseDown with both coordinates negative
     // (see EventManager::push_menu_event). Handle them here so that shortcuts
@@ -1843,6 +1923,16 @@ void ModalDialog(ModalFilterProcPtr filterProc, short* itemHit) {
         *itemHit = 1;
         return;
       }
+      if (char_code == 0x1B) { // Escape — caller interprets as cancel/done
+        *itemHit = 0;
+        return;
+      }
+    }
+
+    // Give the caller a chance to handle the event before standard processing.
+    if (filterProc && filterProc((DialogPtr)port, &e, &item)) {
+      *itemHit = item;
+      return;
     }
 
     if (e.window_port == port && IsDialogEvent(&e) && DialogSelect(&e, &dialog, &item)) {
@@ -2067,6 +2157,18 @@ int WindowManager_SetEnableRecomposite(int enable) {
 void WindowManager_RecompositeAlways() {
   auto& wm = WindowManager::instance();
   wm.set_enable_recomposite(wm.set_enable_recomposite(true));
+}
+
+void WindowManager_CenterWindow(WindowPtr win) {
+  if (!win) return;
+  auto window = WindowManager::instance().window_for_port(win);
+  int w = window->get_width();
+  int h = window->get_height();
+  int x = (800 - w) / 2;
+  int y = (600 - h) / 2;
+  if (x < 0) x = 0;
+  if (y < 0) y = 0;
+  window->move(x, y);
 }
 
 void WindowManager_ToggleFullscreen(void) {
