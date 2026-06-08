@@ -1005,10 +1005,21 @@ int PopulateScenarioMenu(MenuHandle theMenu) {
   });
 
   if (!third_party.empty()) {
-    // Divider between bundled Fantasoft scenarios and 3rd party scenarios.
-    auto& sep = menu->items.emplace_back();
-    sep.name = "-";
-    sep.enabled = false;
+    // Separate the bundled Fantasoft scenarios from the 3rd party scenarios with an
+    // unselectable "3rd Party Scenarios" heading sandwiched between two dividers.
+    // The heading is a disabled, non-"-" item; updatescenarioavail() leaves it
+    // disabled because selectscenario() finds no scenario data file of that name.
+    auto& sep_top = menu->items.emplace_back();
+    sep_top.name = "-";
+    sep_top.enabled = false;
+
+    auto& header = menu->items.emplace_back();
+    header.name = "3rd Party Scenarios";
+    header.enabled = false;
+
+    auto& sep_bottom = menu->items.emplace_back();
+    sep_bottom.name = "-";
+    sep_bottom.enabled = false;
 
     for (const auto& name : third_party) {
       auto& item = menu->items.emplace_back();

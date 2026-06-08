@@ -72,3 +72,9 @@ A fan-made adventure for the Divine Right game driver.
 
 Trial by Fire
 Dusty L. Johnson's first scenario - a shareware adventure that puts a new party to the test, and the prelude to his Kalypso's Island.
+
+Dead of Night
+Book One of Pierre H. Vachon's "Prince of Death Cycle". Your weary arrival at the city of Southgate coincides with the prophesied Times of Darkness. A large, very challenging Divine Right adventure for a high-level party (6 characters around 22nd-23rd level).
+
+Dragon of Death
+Book Two of Pierre H. Vachon's "Prince of Death Cycle". The avatar of Shades is loose along the Middle Azure Coast, seeking to bring the dark goddess Domorash into the world. A large, very challenging Divine Right adventure for a high-level party (6 characters around 25th-26th level).
