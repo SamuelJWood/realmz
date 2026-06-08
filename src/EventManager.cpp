@@ -2,6 +2,8 @@
 
 #include <SDL3/SDL_events.h>
 
+extern "C" void savepref(void);
+
 #include <cstring>
 #include <deque>
 #include <phosg/Strings.hh>
@@ -431,6 +433,7 @@ protected:
       // TODO: Handle any cleanup of specific window that was closed
       //  case SDL_EVENT_WINDOW_CLOSE_REQUESTED:
       case SDL_EVENT_QUIT:
+        savepref();
         exit(EXIT_SUCCESS);
         break;
       case SDL_EVENT_KEY_DOWN:

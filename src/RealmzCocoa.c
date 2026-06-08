@@ -13,6 +13,8 @@
 #include "SoundManager.h"
 #include "WindowManager.h"
 
+void savepref(void);
+
 GDevice gDevice;
 GDPtr gDevicePtr;
 PrefRecord prefs;
@@ -95,6 +97,7 @@ int32_t DragGrayRgn(RgnHandle theRgn, Point startPt, const Rect* boundsRect, con
 }
 
 void ExitToShell(void) {
+  savepref();
   exit(EXIT_SUCCESS);
 }
 
