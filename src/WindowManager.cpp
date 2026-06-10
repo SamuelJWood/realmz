@@ -970,7 +970,11 @@ void WindowManager::create_sdl_window() {
 
   static constexpr size_t w = 800;
   static constexpr size_t h = 600;
-  this->sdl_window = sdl_make_shared(SDL_CreateWindow("Realmz", w, h + SDLMenuBar::MENUBAR_HEIGHT, SDL_WINDOW_RESIZABLE));
+  // Created hidden: the window is shown only once it has reached its final
+  // (possibly fullscreen) state and we begin the launch fade — otherwise an
+  // 800×600 window flashes briefly before fullscreen/opacity are applied. See
+  // fade_window_in() / cancel_startup_fade(), which call SDL_ShowWindow().
+  this->sdl_window = sdl_make_shared(SDL_CreateWindow("Realmz", w, h + SDLMenuBar::MENUBAR_HEIGHT, SDL_WINDOW_RESIZABLE | SDL_WINDOW_HIDDEN));
   if (!this->sdl_window) {
     throw std::runtime_error(std::format("Could not create SDL window: {}", SDL_GetError()));
   }
@@ -991,6 +995,15 @@ void WindowManager::create_sdl_window() {
   }
   // intermediate uses default SDL_SCALEMODE_LINEAR
   this->screen_port.resize(w, h);
+
+  // Begin fully transparent with a black overlay so the window is invisible
+  // until the one-time launch fade (fade_window_in) reveals it. See main.c,
+  // which calls WindowManager_FadeWindowIn() once the (possibly fullscreen)
+  // window is in its final state.
+  this->fade_overlay_alpha = 255;
+  this->window_faded_in = false;
+  SDL_SetWindowOpacity(this->sdl_window.get(), 0.0f);
+
   this->recomposite_all();
 }
 
@@ -1257,6 +1270,8 @@ void WindowManager::recomposite(std::shared_ptr<Window> updated_window) {
         SDLMenuBar::instance().draw(renderer, pw, ph, this->m_fullscreen);
       }
 
+      this->draw_fade_overlay(renderer, pw, ph);
+
       SDL_RenderPresent(renderer);
       // SDL_SyncWindow blocks until the windowing system acknowledges window state.
       // On Wayland (including VirtualBox virtual displays), this can hang indefinitely.
@@ -1326,9 +1341,111 @@ void WindowManager::redraw_menu_bar_only() {
   auto renderer = SDL_GetRenderer(this->sdl_window.get());
   if (!renderer || !this->intermediate_texture) return;
 
+  int pw, ph;
+  SDL_GetWindowSizeInPixels(this->sdl_window.get(), &pw, &ph);
   this->render_base_frame();
+  this->draw_fade_overlay(renderer, pw, ph);
   SDL_RenderPresent(renderer);
   // Note: no SDL_SyncWindow here — menu bar updates don't need to block the caller.
+}
+
+// ---------------------------------------------------------------------------
+// Startup fades (not part of the original source). The original Mac game faded
+// the whole screen to/from black via the display's gamma ramp, which has no
+// equivalent in our SDL renderer. Instead we draw a full-window black rectangle
+// over the composited frame at a varying alpha, and (for the one-time launch
+// reveal) animate the SDL window's opacity from transparent to opaque.
+
+void WindowManager::draw_fade_overlay(SDL_Renderer* renderer, int pw, int ph) {
+  if (this->fade_overlay_alpha == 0) return;
+  SDL_SetRenderDrawBlendMode(renderer, SDL_BLENDMODE_BLEND);
+  SDL_SetRenderDrawColor(renderer, 0, 0, 0, this->fade_overlay_alpha);
+  SDL_FRect full = {0.0f, 0.0f, static_cast<float>(pw), static_cast<float>(ph)};
+  SDL_RenderFillRect(renderer, &full);
+}
+
+void WindowManager::present_fade_frame() {
+  if (!this->sdl_window) return;
+  auto renderer = SDL_GetRenderer(this->sdl_window.get());
+  if (!renderer || !this->intermediate_texture) return;
+  int pw, ph;
+  SDL_GetWindowSizeInPixels(this->sdl_window.get(), &pw, &ph);
+  this->render_base_frame();
+  this->draw_fade_overlay(renderer, pw, ph);
+  SDL_RenderPresent(renderer);
+}
+
+void WindowManager::fade_black_overlay(int from_alpha, int to_alpha, int duration_ms) {
+  from_alpha = std::clamp(from_alpha, 0, 255);
+  to_alpha = std::clamp(to_alpha, 0, 255);
+  if (!this->sdl_window || duration_ms <= 0) {
+    this->fade_overlay_alpha = static_cast<uint8_t>(to_alpha);
+    this->present_fade_frame();
+    return;
+  }
+  uint64_t start = SDL_GetTicks();
+  for (;;) {
+    uint64_t now = SDL_GetTicks();
+    float t = std::min(1.0f, static_cast<float>(now - start) / static_cast<float>(duration_ms));
+    int a = static_cast<int>(std::lround(from_alpha + (to_alpha - from_alpha) * t));
+    this->fade_overlay_alpha = static_cast<uint8_t>(std::clamp(a, 0, 255));
+    SDL_PumpEvents();
+    this->present_fade_frame();
+    if (t >= 1.0f) break;
+    SDL_Delay(8);
+  }
+  this->fade_overlay_alpha = static_cast<uint8_t>(to_alpha);
+  this->present_fade_frame();
+}
+
+void WindowManager::fade_to_black(int duration_ms) {
+  this->fade_black_overlay(this->fade_overlay_alpha, 255, duration_ms);
+}
+
+void WindowManager::fade_from_black(int duration_ms) {
+  this->fade_black_overlay(this->fade_overlay_alpha, 0, duration_ms);
+}
+
+void WindowManager::fade_window_in(int duration_ms) {
+  // The framebuffer behind the window is held fully black for the reveal.
+  this->fade_overlay_alpha = 255;
+  if (!this->sdl_window || duration_ms <= 0) {
+    if (this->sdl_window) {
+      SDL_SetWindowOpacity(this->sdl_window.get(), 1.0f);
+      SDL_ShowWindow(this->sdl_window.get());
+    }
+    this->window_faded_in = true;
+    this->present_fade_frame();
+    return;
+  }
+  // Reveal the (until now hidden) window starting fully transparent, so the
+  // first visible frame is already at opacity 0 — no flash at full opacity.
+  SDL_SetWindowOpacity(this->sdl_window.get(), 0.0f);
+  SDL_ShowWindow(this->sdl_window.get());
+  uint64_t start = SDL_GetTicks();
+  for (;;) {
+    uint64_t now = SDL_GetTicks();
+    float t = std::min(1.0f, static_cast<float>(now - start) / static_cast<float>(duration_ms));
+    SDL_SetWindowOpacity(this->sdl_window.get(), t);
+    SDL_PumpEvents();
+    this->present_fade_frame();
+    if (t >= 1.0f) break;
+    SDL_Delay(8);
+  }
+  SDL_SetWindowOpacity(this->sdl_window.get(), 1.0f);
+  this->window_faded_in = true;
+}
+
+void WindowManager::cancel_startup_fade() {
+  // Used when fading is disabled: make the (initially transparent, blacked-out)
+  // window plainly visible without any animation.
+  this->fade_overlay_alpha = 0;
+  this->window_faded_in = true;
+  if (this->sdl_window) {
+    SDL_SetWindowOpacity(this->sdl_window.get(), 1.0f);
+    SDL_ShowWindow(this->sdl_window.get());
+  }
+  this->present_fade_frame();
 }
 
 void WindowManager::window_to_logical(float wx, float wy, float& lx, float& ly) const {
@@ -2177,6 +2294,22 @@ void WindowManager_ToggleFullscreen(void) {
 
 int WindowManager_IsFullscreen(void) {
   return WindowManager::instance().fullscreen_active() ? 1 : 0;
+}
+
+void WindowManager_FadeWindowIn(int duration_ms) {
+  WindowManager::instance().fade_window_in(duration_ms);
+}
+
+void WindowManager_FadeToBlack(int duration_ms) {
+  WindowManager::instance().fade_to_black(duration_ms);
+}
+
+void WindowManager_FadeFromBlack(int duration_ms) {
+  WindowManager::instance().fade_from_black(duration_ms);
+}
+
+void WindowManager_CancelStartupFade(void) {
+  WindowManager::instance().cancel_startup_fade();
 }
 
 TEHandle TENew(const Rect* destRect, const Rect* viewRect) {

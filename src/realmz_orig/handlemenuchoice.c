@@ -66,8 +66,12 @@ void DoFreeBeforeQuit(void) {
   temp = resetvolume;
   SetSoundVol(temp);
 
-  if (!nofade && !nologo)
-    fadeinout(25, fadein);
+  // DoFreeBeforeQuit() is always immediately followed by ExitToShell(), so we
+  // deliberately leave the screen black after the logo's fade-to-black instead
+  // of fading back in. The original Mac faded in here to restore the display
+  // gamma before returning to the Finder; our SDL window is simply destroyed on
+  // exit, so a fade-in would only flash the empty screen (and menu bar) for a
+  // frame before quitting.
 
   FlushEvents(everyEvent, 0);
   return;

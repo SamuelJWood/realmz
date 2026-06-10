@@ -88,6 +88,10 @@ void hideMenuBar(void) {
   Rect mainScreenRect; // the rect that bounds the menu bar
   RgnHandle mainScreenRgn; // the region of the menu bar
 
+  // Keep the SDL menu bar fully retracted through the logo splash so it can't
+  // slide back in over the Fantasoft logo.
+  SDLMenuBar_SetForceHidden(1);
+
   // record the menu bar height
   sMenuBarHeight = GetMBarHeight();
 
@@ -115,6 +119,9 @@ void hideMenuBar(void) {
 
 /***************** showMenuBar *********************************/
 void showMenuBar(void) {
+  // Restore normal SDL menu bar visibility now the splash is over.
+  SDLMenuBar_SetForceHidden(0);
+
 // set the menu bar to its normal height
 #ifndef CARBON
   LMSetMBarHeight(sMenuBarHeight);

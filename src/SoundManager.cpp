@@ -8,6 +8,7 @@
 #include <resource_file/ResourceFile.hh>
 #include <unordered_map>
 
+#include "FileManager.hpp"
 #include "MemoryManager.hpp"
 #include "ResourceManager.h"
 #include "Types.hpp"
@@ -15,6 +16,11 @@
 static phosg::PrefixedLogger sm_log("[SoundManager] ");
 
 constexpr size_t OUTPUT_SAMPLE_RATE = 48000;
+
+// The currently-loaded scenario's path prefix, e.g. ":Scenarios:City of Bywater:"
+// (empty before a scenario is loaded). Defined in main.c. Used to locate
+// scenario-specific resampled sounds, which can reuse / override base sound ids.
+extern "C" char scenarioname[256];
 
 class SoundManager {
 public:
@@ -70,6 +76,26 @@ public:
 
     this->all_channels.emplace(channel);
     return channel;
+  }
+
+  // Play a pre-resampled WAV from ":Data Files:Sounds:snd_<id>.wav" if present.
+  // These are high-quality 44.1 kHz resamples of the original 'snd ' resources
+  // (the in-engine snd decoder only does cheap linear interpolation). Returns
+  // false if there's no WAV for this id, so the caller can fall back to the
+  // resource.
+  bool play_sound_by_id(SDL_AudioStream* sdlAudioStream, int16_t id) {
+    auto sound = this->wav_sound_for_id(id);
+    if (!sound) {
+      return false;
+    }
+    if (sound->data.size() > std::numeric_limits<int>::max()) {
+      sm_log.warning_f("WAV sound {} is too large ({} bytes)", id, sound->data.size());
+      return true; // a WAV exists; don't fall back to the (identical) resource
+    }
+    if (!SDL_PutAudioStreamData(sdlAudioStream, sound->data.data(), static_cast<int>(sound->data.size()))) {
+      sm_log.warning_f("Could not put audio stream data: {}", SDL_GetError());
+    }
+    return true;
   }
 
   void play_sound(SDL_AudioStream* sdlAudioStream, Handle data_handle) {
@@ -187,10 +213,74 @@ private:
     return ret;
   }
 
+  // Returns the pre-resampled WAV for a snd id, or nullptr if there's no such
+  // file. The current scenario's :Sounds: folder is checked first so scenarios
+  // can override / reuse base sound ids (mirroring how a scenario's 'snd '
+  // resources shadow the base ones); the global :Data Files:Sounds: folder is
+  // the fallback.
+  std::shared_ptr<const Sound> wav_sound_for_id(int16_t id) {
+    std::string suffix = "Sounds:snd_" + std::to_string(id) + ".wav";
+    if (scenarioname[0] != '\0') {
+      if (auto s = this->wav_sound_for_mac_path(std::string(scenarioname) + suffix)) {
+        return s;
+      }
+    }
+    return this->wav_sound_for_mac_path(":Data Files:" + suffix);
+  }
+
+  // Loads (and caches) a resampled WAV at a Mac path, converted to the output
+  // format (48 kHz S16 stereo) via SDL's high-quality resampler. Returns nullptr
+  // if the file doesn't exist or can't be decoded. Both hits and misses are
+  // cached by resolved host path so we don't stat the filesystem on every play.
+  std::shared_ptr<const Sound> wav_sound_for_mac_path(const std::string& mac_path) {
+    std::string host_path = host_filename_for_mac_filename(mac_path, false);
+    if (auto it = this->wav_sounds_by_path.find(host_path); it != this->wav_sounds_by_path.end()) {
+      return it->second;
+    }
+    if (this->wav_path_misses.count(host_path)) {
+      return nullptr;
+    }
+
+    SDL_AudioSpec wav_spec;
+    Uint8* wav_buf = nullptr;
+    Uint32 wav_len = 0;
+    if (!SDL_LoadWAV(host_path.c_str(), &wav_spec, &wav_buf, &wav_len)) {
+      this->wav_path_misses.insert(host_path);
+      return nullptr;
+    }
+
+    SDL_AudioSpec out_spec;
+    out_spec.format = SDL_AUDIO_S16LE;
+    out_spec.channels = 2;
+    out_spec.freq = OUTPUT_SAMPLE_RATE;
+
+    Uint8* out_buf = nullptr;
+    int out_len = 0;
+    bool converted = SDL_ConvertAudioSamples(&wav_spec, wav_buf, static_cast<int>(wav_len),
+        &out_spec, &out_buf, &out_len);
+    SDL_free(wav_buf);
+    if (!converted) {
+      sm_log.warning_f("Could not convert WAV sound '{}': {}", mac_path, SDL_GetError());
+      this->wav_path_misses.insert(host_path);
+      return nullptr;
+    }
+
+    auto ret = std::make_shared<Sound>();
+    ret->bits_per_sample = 16;
+    ret->num_channels = 2;
+    ret->sample_rate = OUTPUT_SAMPLE_RATE;
+    ret->data.assign(reinterpret_cast<const char*>(out_buf), static_cast<size_t>(out_len));
+    SDL_free(out_buf);
+    this->wav_sounds_by_path.emplace(host_path, ret);
+    return ret;
+  }
+
   SDL_AudioDeviceID device_id;
   float default_volume = 4.0f / 7.0f;
   std::unordered_set<std::shared_ptr<SndChannel>> all_channels;
   std::unordered_map<Handle, std::shared_ptr<const Sound>> decoded_sounds;
+  std::unordered_map<std::string, std::shared_ptr<const Sound>> wav_sounds_by_path;
+  std::unordered_set<std::string> wav_path_misses;
 };
 
 static SoundManager sm;
@@ -222,6 +312,22 @@ OSErr SndPlay(SndChannelPtr chan, Handle data_handle, Boolean async) {
   // Some Realmz data, such as the mapstats array loaded in loadland-loadpixmap.c, appears to
   // specify a snd resource with id 0, which cannot be loaded. In these cases, we simply
   // return an error.
+  if (data_handle == nullptr) {
+    return resProblem;
+  }
+  sm.play_sound(chan->sdlAudioStream, data_handle);
+  return noErr;
+}
+
+OSErr SndPlayById(SndChannelPtr chan, int16_t id, Boolean async) {
+  if (chan == nullptr || chan->sdlAudioStream == nullptr) {
+    return resProblem;
+  }
+  // Prefer the pre-resampled WAV; fall back to decoding the 'snd ' resource.
+  if (sm.play_sound_by_id(chan->sdlAudioStream, id)) {
+    return noErr;
+  }
+  Handle data_handle = GetResource('snd ', id);
   if (data_handle == nullptr) {
     return resProblem;
   }

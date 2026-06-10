@@ -33,6 +33,9 @@ typedef SndChannel* SndChannelPtr;
 OSErr SndNewChannel(SndChannelPtr* chan, uint16_t synth, int32_t init, void* userRoutine);
 OSErr SndDoImmediate(SndChannelPtr chan, const SndCommand* cmd);
 OSErr SndPlay(SndChannelPtr chan, Handle sndHdl, Boolean async);
+// Like SndPlay, but plays a pre-resampled WAV from ":Data Files:Sounds:" keyed
+// by the snd resource id, falling back to the 'snd ' resource if absent.
+OSErr SndPlayById(SndChannelPtr chan, int16_t id, Boolean async);
 // Returns true when the channel has no more audio queued (sound has finished).
 Boolean SndChannelDone(SndChannelPtr chan);
 

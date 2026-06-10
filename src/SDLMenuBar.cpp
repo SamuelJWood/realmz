@@ -183,6 +183,13 @@ void SDLMenuBar::on_fullscreen_changed(bool now_fullscreen) {
 }
 
 void SDLMenuBar::update(float dt, int cursor_y, bool fullscreen, int win_h) {
+  // Forced hidden (e.g. during the logo splash): keep the bar fully retracted.
+  if (this->force_hidden) {
+    this->y_offset = -(float)MENUBAR_HEIGHT;
+    this->y_target = -(float)MENUBAR_HEIGHT;
+    return;
+  }
+
   // Menu bar is always visible — no auto-hide in fullscreen.
   this->y_offset = 0.0f;
   this->y_target = 0.0f;
@@ -206,6 +213,20 @@ void SDLMenuBar::update(float dt, int cursor_y, bool fullscreen, int win_h) {
       SDL_PushEvent(&ev);
       this->anim_event_pending = true;
     }
+  }
+}
+
+void SDLMenuBar::set_force_hidden(bool hidden) {
+  if (this->force_hidden == hidden) return;
+  this->force_hidden = hidden;
+  if (hidden) {
+    // Dismiss any open dropdown/submenu so nothing lingers over the splash.
+    this->close_all();
+    this->y_offset = -(float)MENUBAR_HEIGHT;
+    this->y_target = -(float)MENUBAR_HEIGHT;
+  } else {
+    this->y_offset = 0.0f;
+    this->y_target = 0.0f;
   }
 }
 
@@ -789,6 +810,7 @@ void SDLMenuBar::draw_dropdown(SDL_Renderer* r, int win_w, int win_h) {
 }
 
 void SDLMenuBar::draw(SDL_Renderer* r, int win_w, int win_h, bool fullscreen) {
+  if (this->force_hidden) return;
   if (!this->menu_list || !this->font) return;
   if (this->y_offset <= -(float)MENUBAR_HEIGHT) return;
 
@@ -1262,6 +1284,7 @@ void SDLMenuBar::dispatch_submenu_item(int menu_idx, int submenu_item_idx, int i
 }
 
 bool SDLMenuBar::handle_event(const SDL_Event& e, bool fullscreen, int win_w, int win_h) {
+  if (this->force_hidden) return false;
   if (!this->menu_list || !this->font) return false;
 
   this->rebuild_title_layouts(win_w);
@@ -1909,4 +1932,13 @@ bool SDLMenuBar::handle_event(const SDL_Event& e, bool fullscreen, int win_w, in
     default:
       return false;
   }
+}
+
+// ── C bridge ───────────────────────────────────────────────────────────────────
+
+// Force the menu bar hidden (1) or restore normal visibility (0). Called from
+// hideMenuBar()/showMenuBar() in showlogo.c so the bar stays hidden through the
+// Fantasoft logo splash.
+extern "C" void SDLMenuBar_SetForceHidden(int hidden) {
+  SDLMenuBar::instance().set_force_hidden(hidden != 0);
 }

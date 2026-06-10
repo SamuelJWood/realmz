@@ -900,6 +900,20 @@ keepmoving:
   } else
     nologo = FALSE;
 
+  // Reproduce the original Mac launch reveal. The window has been invisible
+  // (transparent + black overlay) since creation; with the fade flags now final,
+  // fade it from fully transparent up to an opaque black screen. The screen is
+  // left black (fadestate TRUE) so showlogo()'s logo reveal picks up from black
+  // and its now-redundant initial fade-to-black is skipped. If fading is
+  // disabled, just make the blacked-out window visible so nothing is stuck
+  // behind the startup blackout.
+  if (!nofade) {
+    WindowManager_FadeWindowIn(500);
+    fadestate = TRUE;
+  } else {
+    WindowManager_CancelStartupFade();
+  }
+
   if (!nologo)
     showlogo(130);
 
@@ -985,7 +999,6 @@ noreg:
   flashmessage(myString, 330, 200, -1, 0);
 #else
   if (doreg()) {
-    showreg = TRUE;
     PtoCstr(Name_String);
     if (strlen(Name_String) < 3) {
       serial = Rand(21987); /***** generate new serial number as it looks like a mistake ***/
@@ -1005,10 +1018,7 @@ noreg:
       }
       savepref();
     } else {
-      strcpy(myString, (StringPtr) "This copy is registered to                 ");
-      strcat(myString, Name_String);
       CtoPstr((Ptr)Name_String);
-      flashmessage(myString, 15, 60, -1, 0);
     }
   }
 #endif
@@ -1244,14 +1254,10 @@ void MainLoop(void) {
         SndCommand qcmd = {quietCmd, 0, 0L};
 
         if (amb_state == 0) {
-          /* Pick and start a random ambient sound. */
-          HUnlock(ambient_sndhandle);
-          ambient_sndhandle = GetResource('snd ', amb_ids[Rand(4) - 1]);
-          HLock(ambient_sndhandle);
-          if (ambient_sndhandle) {
-            SndDoImmediate(ambient_cool, &qcmd);
-            SndPlay(ambient_cool, (SndListHandle)ambient_sndhandle, TRUE);
-          }
+          /* Pick and start a random ambient sound (prefer the resampled WAV). */
+          short amb_id = amb_ids[Rand(4) - 1];
+          SndDoImmediate(ambient_cool, &qcmd);
+          SndPlayById(ambient_cool, amb_id, TRUE);
           amb_state = 1;
         } else if (amb_state == 1) {
           /* Wait for the sound to finish playing. */
@@ -1462,44 +1468,33 @@ void compactheap(void) {
 #endif
 
 /******************************** fadeinout  ************************/
-void FadeOut(void);
-void FadeIn(void);
+// The original Mac faded the whole screen via the display gamma ramp. Our SDL
+// port reproduces the effect by animating a full-window black overlay; see
+// WindowManager_FadeToBlack / WindowManager_FadeFromBlack. fadestate guards
+// against double fades so a fadeout is only honored when the screen is visible
+// and a fadein only when it's already black. Each fade is 500ms, matching the
+// original Mac launch sequence.
+#define kFadeDurationMs 500
 void fadeinout(short steps, short fadedirection) {
+  (void)steps; // duration is fixed; the original used this as a gamma step count
   if ((nologo) || (nofade))
     return;
 
-#ifdef PC
+  switch (fadedirection) {
+    case fadeout:
+      if (!fadestate) {
+        WindowManager_FadeToBlack(kFadeDurationMs);
+        fadestate = TRUE;
+      }
+      break;
 
-  if (fadedirection == fadeout)
-    FadeOut();
-  else
-    FadeIn();
-
-#else
-  if (IsColorGammaAvailable()) {
-    switch (fadedirection) {
-      case fadeout:
-
-        if (!fadestate) {
-          StartFading(&initialState);
-          FadeToBlack(steps, quadraticFade);
-          fadestate = TRUE;
-        }
-
-        break;
-
-      case fadein:
-
-        if (fadestate) {
-          FadeToGamma(initialState, 50, quadraticFade);
-          StopFading(initialState, TRUE);
-          fadestate = FALSE;
-        }
-
-        break;
-    }
+    case fadein:
+      if (fadestate) {
+        WindowManager_FadeFromBlack(kFadeDurationMs);
+        fadestate = FALSE;
+      }
+      break;
   }
-#endif
 }
 
 /*************** regscen *******************************************/

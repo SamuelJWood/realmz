@@ -111,6 +111,14 @@ private:
   SDL_FRect content_rect = {0, 0, 800, 600};
   uint64_t last_recomposite_ms = 0;
 
+  // Startup fade state. A full-window black rectangle is drawn over every
+  // presented frame at this alpha (0 = none, 255 = fully black), which lets us
+  // reproduce the original Mac's fade-to/from-black launch effect on top of the
+  // SDL framebuffer. window_faded_in tracks whether the one-time launch fade
+  // (window opacity transparent -> opaque) has run yet.
+  uint8_t fade_overlay_alpha = 0;
+  bool window_faded_in = true;
+
   WindowManager();
 
 public:
@@ -153,6 +161,16 @@ public:
   // Same as redraw_menu_bar_only but without SDL_RenderPresent, so callers can
   // add an overlay (e.g. a popup panel) before presenting.
   void render_base_frame();
+
+  // Startup fade helpers (see fade_overlay_alpha above). Each animates over
+  // duration_ms while presenting frames, then leaves the state at its endpoint.
+  void draw_fade_overlay(SDL_Renderer* renderer, int pw, int ph);
+  void present_fade_frame();
+  void fade_black_overlay(int from_alpha, int to_alpha, int duration_ms);
+  void fade_to_black(int duration_ms);
+  void fade_from_black(int duration_ms);
+  void fade_window_in(int duration_ms);
+  void cancel_startup_fade();
 
   inline sdl_window_shared get_sdl_window() const {
     return this->sdl_window;

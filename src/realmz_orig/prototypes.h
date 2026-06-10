@@ -281,6 +281,8 @@ void showlogo(short howlong);
 void delay2(short timedelay);
 void hideMenuBar(void);
 void showMenuBar(void);
+// Implemented in SDLMenuBar.cpp — force the SDL menu bar hidden during the splash.
+void SDLMenuBar_SetForceHidden(int hidden);
 void showque(void);
 void showrange(short edgemode);
 void showresults(short tar, short special, short from);

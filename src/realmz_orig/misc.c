@@ -1914,12 +1914,12 @@ void sound(short id) {
   theCommand.param2 = 0L;
   bug = SndDoImmediate(cool[channel], &theCommand);
 
-  if (sndhandle != NIL) {
-    if (id > 0)
-      SndPlay(cool[channel], (SndListHandle)sndhandle[channel], TRUE);
-    else
-      SndPlay(cool[channel], (SndListHandle)sndhandle[channel], FALSE);
-  }
+  // Prefer the pre-resampled WAV in :Data Files:Sounds:, keyed by id; SndPlayById
+  // falls back to the 'snd ' resource loaded above if no WAV is present.
+  if (id > 0)
+    SndPlayById(cool[channel], abs(id), TRUE);
+  else
+    SndPlayById(cool[channel], abs(id), FALSE);
 }
 
 /********************* updatemain **************************/

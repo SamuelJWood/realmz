@@ -156,6 +156,18 @@ int WindowManager_IsFullscreen(void);
 // Center a window within the 800×600 virtual screen.
 void WindowManager_CenterWindow(WindowPtr win);
 
+// Startup fade effects (reproducing the original Mac's fade-to/from-black at
+// launch). FadeWindowIn fades the window from fully transparent to opaque over
+// a black screen (the one-time launch reveal); FadeToBlack / FadeFromBlack
+// animate a full-window black overlay over the current frame. duration_ms is
+// the length of each fade. None of these are part of the original source.
+void WindowManager_FadeWindowIn(int duration_ms);
+void WindowManager_FadeToBlack(int duration_ms);
+void WindowManager_FadeFromBlack(int duration_ms);
+// Skip the startup fades entirely and just show the window (used when fading is
+// disabled, so the window isn't left stuck behind the initial black overlay).
+void WindowManager_CancelStartupFade(void);
+
 #ifdef __cplusplus
 } // extern "C"
 #endif // __cplusplus

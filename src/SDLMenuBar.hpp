@@ -49,6 +49,12 @@ public:
   // Returns MENUBAR_HEIGHT in windowed mode, 0 in fullscreen (bar overlaps).
   static int reserved_top_pixels(bool fullscreen);
 
+  // Force the menu bar fully hidden regardless of cursor position. Used during
+  // the Fantasoft logo splash (hideMenuBar/showMenuBar) so the bar doesn't
+  // reappear over the logo.
+  void set_force_hidden(bool hidden);
+  bool is_force_hidden() const { return this->force_hidden; }
+
 private:
   SDLMenuBar() = default;
   SDLMenuBar(const SDLMenuBar&) = delete;
@@ -74,6 +80,7 @@ private:
   float y_offset = 0.0f;
   float y_target = 0.0f;
   float auto_hide_timer = 0.0f;
+  bool force_hidden = false;
 
   // Animation event: registered once, used to self-drive slide animation frames.
   static Uint32 s_anim_event_type;
