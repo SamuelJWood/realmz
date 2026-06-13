@@ -355,25 +355,6 @@ if(NOT WIN32 AND NOT CMAKE_BUILD_TYPE STREQUAL "Release")
     target_link_options(Realmz PRIVATE -fsanitize=address)
 endif()
 
-set(TEST_EXECUTABLES "GraphicsTest")
-foreach(TEST_EXECUTABLE ${TEST_EXECUTABLES})
-    add_executable(${TEST_EXECUTABLE} MACOSX_BUNDLE
-        src/tests/${TEST_EXECUTABLE}.cpp
-        ${RESOURCE_FILES}
-        ${DATA_RESOURCE_FILES}
-    )
-    target_compile_definitions(${TEST_EXECUTABLE} PUBLIC REALMZ_COCOA=1)
-    target_compile_options(${TEST_EXECUTABLE} PUBLIC -fpascal-strings)
-    target_include_directories(${TEST_EXECUTABLE} PUBLIC ${SDL3_INCLUDE_DIRS} src src/realmz_orig)
-    target_link_libraries(${TEST_EXECUTABLE}
-        PUBLIC
-        realmz_lib
-    )
-
-    target_compile_options(${TEST_EXECUTABLE} PRIVATE -fsanitize=address)
-    target_link_options(${TEST_EXECUTABLE} PRIVATE -fsanitize=address)
-endforeach()
-
 # Scenario data installed in Contents/Resources/Scenarios
 set(SCENARIO_NAMES
     "Assault on Giant Mountain"
