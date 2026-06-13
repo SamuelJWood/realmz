@@ -68,7 +68,13 @@ short resist(short who) {
       if (Rand(100) <= (c[who].dodge - (spellinfo.tohitbonus)))
         return (TRUE); /**** Missile dodge ****/
     } else if (Rand(100) <= c[who].magres + (powerlevel * spellinfo.resistadjust))
-      return (FALSE);
+    /* *** CHANGED FROM ORIGINAL IMPLEMENTATION ***
+    * NOTE(chromancer): Original code inherited had return (FALSE), meaning magres never did anything,
+    * except overriding the 'magic screen' (Protection from Nth Level) conditions, causing PCs to get
+    * hit when they would otherwise be immune. Note monster magres still worked.
+    * (Incorporated from upstream Realmz-Castle/realmz PR #231.)
+    */
+      return (TRUE);
   } else {
     for (ttt = castlevel; ttt < 5; ttt++)
       if (monster[who - 10].condition[ttt + 16])
