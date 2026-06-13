@@ -60,10 +60,15 @@ void centerpict(void) {
     SetPort((GrafPtr)GetWindowPort(look));
   }
 
-  lookx += (partyx - 8);
+  /* Pin the party to the center of the viewport. It is 15 tiles wide and 13
+   * tall (see the render loops below), so the centered cell is column 7 (7
+   * tiles visible on each side) and row 6 (6 on each side). The camera-shift
+   * offset and the pinned column/row must match so the icon stays aligned to
+   * the party's world tile. */
+  lookx += (partyx - 7);
   looky += (partyy - 6);
 
-  partyx = 8;
+  partyx = 7;
   partyy = 6;
 
   if (lookx < 0) {
