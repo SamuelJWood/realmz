@@ -2032,6 +2032,14 @@ void ModalDialog(ModalFilterProcPtr filterProc, short* itemHit) {
       continue;
     }
 
+    // Give the caller a chance to handle the event before standard processing.
+    // Consulted before the Return/Enter/Escape shortcuts below so a filter can
+    // repurpose those keys (e.g. the party-select screen maps Enter to "Add").
+    if (filterProc && filterProc((DialogPtr)port, &e, &item)) {
+      *itemHit = item;
+      return;
+    }
+
     // Treat Return / Enter as clicking the default button (item 1), matching
     // the Classic Mac OS ModalDialog convention.
     if (e.what == keyDown) {
@@ -2044,12 +2052,6 @@ void ModalDialog(ModalFilterProcPtr filterProc, short* itemHit) {
         *itemHit = 0;
         return;
       }
-    }
-
-    // Give the caller a chance to handle the event before standard processing.
-    if (filterProc && filterProc((DialogPtr)port, &e, &item)) {
-      *itemHit = item;
-      return;
     }
 
     if (e.window_port == port && IsDialogEvent(&e) && DialogSelect(&e, &dialog, &item)) {

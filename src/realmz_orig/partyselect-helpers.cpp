@@ -35,6 +35,10 @@ extern "C" void update_character_files_list() {
   std::sort(characters.begin(), characters.end());
 }
 
+extern "C" uint32_t get_character_list_count() {
+  return characters.size();
+}
+
 extern "C" void get_character_info_from_list(uint32_t index, const char** name, short* level) {
   try {
     const auto& ch = characters.at(index);
