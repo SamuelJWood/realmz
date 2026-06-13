@@ -444,11 +444,26 @@ protected:
         this->set_modifier_value(EVMOD_RIGHT_CONTROL_KEY_DOWN, e.key.mod & SDL_KMOD_RCTRL);
         this->set_modifier_value(EVMOD_RIGHT_OPTION_KEY_DOWN, e.key.mod & SDL_KMOD_RALT);
         this->set_modifier_value(EVMOD_RIGHT_SHIFT_KEY_DOWN, e.key.mod & SDL_KMOD_RSHIFT);
+#ifdef _WIN32
+        // On Windows the Control key stands in for the Mac Command key (see the Command mapping
+        // below), so it must not also set the Control bit. Doing both would select the
+        // control-character KCHR table and break Command-key shortcuts and typed characters.
+        // (Incorporated from upstream Realmz-Castle/realmz PR #245.)
+        this->set_modifier_value(EVMOD_CONTROL_KEY_DOWN, false);
+#else
         this->set_modifier_value(EVMOD_CONTROL_KEY_DOWN, e.key.mod & SDL_KMOD_LCTRL);
+#endif
         this->set_modifier_value(EVMOD_OPTION_KEY_DOWN, e.key.mod & SDL_KMOD_LALT);
         this->set_modifier_value(EVMOD_CAPS_LOCK_ENABLED, e.key.mod & SDL_KMOD_CAPS);
         this->set_modifier_value(EVMOD_SHIFT_KEY_DOWN, e.key.mod & SDL_KMOD_LSHIFT);
+#ifdef _WIN32
+        // The Windows (Super) key is reserved by the OS for the Start menu and shell shortcuts, so
+        // it cannot reliably act as the Mac Command key. Map the Control key to Command instead.
+        // (Incorporated from upstream Realmz-Castle/realmz PR #245.)
+        this->set_modifier_value(EVMOD_COMMAND_KEY_DOWN, e.key.mod & SDL_KMOD_LCTRL);
+#else
         this->set_modifier_value(EVMOD_COMMAND_KEY_DOWN, e.key.mod & SDL_KMOD_GUI);
+#endif
 
         if (e.type == SDL_EVENT_KEY_DOWN) {
           auto sym = e.key.key;
