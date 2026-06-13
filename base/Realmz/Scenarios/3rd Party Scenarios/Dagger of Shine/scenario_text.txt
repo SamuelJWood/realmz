@@ -1,0 +1,3162 @@
+# Realmz scenario text — Dagger of Shine
+# -----------------------------------------------
+# Edit the text between the ### header lines.
+# Do NOT modify the ### lines themselves.
+# Max lengths: SD2/DES = 255 chars, OD = 24 chars.
+# Empty entries are omitted; inject will not touch them.
+
+### SD2:0
+Do Not Use
+
+### SD2:1
+Nothing seems to happen.
+
+### SD2:2
+What do you want to do?
+
+### SD2:3
+Do you want to enter?
+
+### SD2:4
+Do you want to exit?
+
+### SD2:5
+Do you want to take the stairs up?
+
+### SD2:6
+Do you want to take ther stairs down?
+
+### SD2:7
+Success!!
+
+### SD2:8
+You have triggered a trap!
+
+### SD2:9
+Do you want to pull the lever?
+
+### SD2:20
+Following the death, Mind Slayer sparks its mental energy.
+
+### SD2:21
+Red Slime turns to fire!
+
+### SD2:22
+Blue slime discharges its electric power!
+
+### SD2:23
+Green slime splashes strange chemical!
+
+### SD2:24
+Yellow slime leaves its mental power on the field!
+
+### SD2:25
+Orange Slime casts foul magic after the death!
+
+### SD2:26
+Metal Slime explodes with its strong magical power!
+
+### SD2:27
+Will-O' Wisp sparks its gigantic magical power!
+
+### SD2:28
+Fireball explodes!
+
+### SD2:29
+Lich disappears and turns the floor into Quake!
+
+### SD2:30
+Verdon explodes!
+
+### SD2:31
+Helgoth's body started to collapse.
+
+### SD2:32
+Along with the collapse of Helgoth's body, meteor began falling!!
+
+### SD2:33
+The meteor turned the field into fire!
+
+### SD2:34
+Gorgon turns to stone along with the death. Your weapon is stuck.
+
+### SD2:35
+Stone Crab turns to stone following the death. Your weapon is stuck.
+
+### SD2:36
+Frost Yeti turns to ice following the death. Your weapon is stuck.
+
+### SD2:37
+Lich has power to summon Earth Elemental on its side. It does.
+
+### SD2:38
+Xeagon has power to create skeletal knights during the combat. It does.
+
+### SD2:39
+"Necro!" Verdon shouted. The next moment, Necro Reapers appeared!
+
+### SD2:40
+Fairies are immortal. Alicia is not an exception. She resurrects.
+
+### SD2:41
+Fairies are immortal. Amelia is not an exception. She resurrects.
+
+### SD2:42
+Fairies are immortal. Angela is not an exception. She resurrects.
+
+### SD2:43
+Leviathan used its gigantic power to cause tide wave!
+
+### SD2:44
+With the Xeagon's death, all the fireballs explode!
+
+### SD2:45
+Xeagon's fury turns the battle field into fire!
+
+### SD2:46
+The Venus radiates the heat and flame!
+
+### SD2:47
+Followingly, the battle field turns to the fire!!
+
+### SD2:48
+Then, Venus... appeared again!?
+
+### SD2:49
+You have done well to defeat the Evil Venus. Then, all the Golems disappear!
+
+### SD2:50
+The Venus has power to generate Golems from iron chunk during the battle. She does.
+
+### SD2:100
+Hearing a crisis in the Easternmost frontier of the Kingdom, you headed to the East. After a long, long journey from Port Hyrtin, finally you can see the village of Easmore down the valley. That beautiful village looks quite peaceful.
+
+### SD2:101
+Welcome to Dagger of Shine scenario. This is the following scenario of City of Port Hyrtin, but CoPH is not prerequisite for this scenario.
+
+### SD2:102
+You can play a part of this scenario for free, but you have to register it if you want to play farther and complete the scenario.
+
+### SD2:103
+No other funds are acceptable. Please read Dagger of Shine Info for more information.
+
+### SD2:104
+Here you can see a small valley. Easmore is ahead.
+
+### SD2:105
+"Hello adventurers, welcome to Easmore. I have heard of you from Queen Emma." The village guard greets you.
+
+### SD2:106
+"Well... Did you hear anything about Clara?"
+
+### SD2:107
+"Really? Please find and return her." The guard opens the gate.
+
+### SD2:108
+"I see. It's quite natural. Never mind." The guard opens the gate.
+
+### SD2:109
+This is village shop. It offers good stuff at low price.
+
+### SD2:110
+This is village well. Would you like to drink the water?
+
+### SD2:111
+Mmm... Good taste.
+
+### SD2:112
+Would you like to have more water?
+
+### SD2:113
+You had too much water and caused diarrhoea.
+
+### SD2:114
+"This is the inn of Easmore. Do you want to stay here at 30 gold?"
+
+### SD2:115
+"Thank you, good adventurers. I used to be the owner of a traveler's inn at Salevo. But one day, pirates came to Salevo and took my inn., and changed it to a brothel. Once it was a flourished, beautiful port city, Salevo was destroyed by the pirates."
+
+### SD2:116
+"Today, frequent theft, murder, rape... Salevo is a ghetto. People started to escape. I also escaped from Salevo, crossed the border, and came to this peaceful village... but the pirates also try to cross the border for properties and young women..."
+
+### SD2:117
+"Women?" You asked. The owner continued, "Yes. They kidnap beautiful young women from inside and outside Salevo, or even from overseas, and sell them to brothels. Once Salevo was an important port for weapons, but is a port for prostitute market today."
+
+### SD2:118
+"Adventurers, you look so mighty. Would you save us... and the village?"
+
+### SD2:119
+"Really? I really appreciate your offer. This is the map."
+
+### SD2:120
+"Okay, if you say so. The pirates are very strong, so It's quite natural." It seems the owner got disappointed by your answer.
+
+### SD2:121
+"Sorry, I see your feelings, but I also have to make my living. I can't let you stay here if you don't have money."
+
+### SD2:122
+"Hello, adventurers." The guards greet you. "This is the gate on the border. Beyond here it is too dangerous, so we can't let you pass without permission. We are very sorry."
+
+### SD2:123
+This is the elder's house. Do you want to enter?
+
+### SD2:124
+This is village healer's room
+
+### SD2:125
+"Hello, adventurers. I am a village healer." The old man greets you. "What can I do for you?"
+
+### SD2:126
+"Sorry, sirs. You can't pass here without permission of the elder."
+
+### SD2:127
+This is the elder's office.
+
+### SD2:128
+"Hello. I'm very glad to meet you, brave adventurers." The elder greets you. "I have heard about you from Queen Emma, so I asked her to send you here."
+
+### SD2:129
+"About a year ago, pirates came to the independent city of Salevo, just north of Easmore. That beautiful port city was destroyed and turned to a gossam city. Yet, Easmore has been kept in peace until a few weeks ago."
+
+### SD2:130
+"But these days," The elder continues, "those pirates come to try to cross the border... for our money, commodities, and women. We are getting threatened day by day."
+
+### SD2:131
+"Actually, a village girl is missing for a few days. Her name is Clara. She is just 18 years old, but she is so beautiful. We really worry about her... Would you find her for us?"
+
+### SD2:132
+"Good! Good! Thank you so much. Now I gotta tell the border guards to let you pass the gate. Please find and return her as soon as possible."
+
+### SD2:133
+"I see, if you say so. Probably I have expected you too much. Thank you for coming to our village." The elder sees you off and shuts the door.
+
+### SD2:134
+It seems the elder does not want to see you anymore.
+
+### SD2:135
+"So, you are those adventurers searching for Clara. Fine. The elder told us to let you pass the gate. Take care." Now you can get through the border gate.
+
+### SD2:136
+These stairs lead to the elder's private rooms. You must leave.
+
+### SD2:137
+This is the city of Salevo. As you have heard, it has totally deteriorated.
+
+### SD2:138
+This used to be the building for the city parliament. It is empty now.
+
+### SD2:139
+The sign of this building says General shop of Salevo. It was destroyed.
+
+### SD2:140
+It seems there used to be a building, but it was destroyed.
+
+### SD2:141
+A man is dead here. He has a cross in his hand. Probably this building was a temple, and he tried to save the temple with his life.
+
+### SD2:142
+This is a small shop. It has so many rogue stuff. the shopkeeper tells you he is forced to supply his goods to the pirates, but he is still alive simply because he does so.
+
+### SD2:143
+This is the gate for pirates' headquarter
+
+### SD2:144
+The gate is guarded. They attack as they notice you.
+
+### SD2:145
+More guards rush you.
+
+### SD2:146
+Remaining guards charge you.
+
+### SD2:147
+You have defeated all the guards. Now you can pass the gate.
+
+### SD2:148
+This is a brothel. Do you want to enter?
+
+### SD2:149
+"Off Limits!"
+
+### SD2:150
+This is entrance only.
+
+### SD2:151
+This is exit only.
+
+### SD2:152
+"Hello, sirs." The owner greets you. "Don't you buy a girl for 100 gold? One is available right now, and she is so pretty. You'll like her for sure."
+
+### SD2:153
+"Thank you, sirs. Your room is in the upper floor. Have fun."
+
+### SD2:154
+"Sorry, sirs. But no money, no girls."
+
+### SD2:155
+"Hi, sirs. How was she? Come again."
+
+### SD2:156
+This room is already occupied. Inside a pirate is playing with a girl. Seems you have to leave.
+
+### SD2:157
+This room is locked and your key doesn't work.
+
+### SD2:158
+This room is locked. You can't see what is going on inside the room, but you can hear a girl is panting.
+
+### SD2:159
+This is your room.
+
+### SD2:160
+"Hi, sirs." A beautiful woman has already been waiting for you. She doesn't look like a "professional" prostitute. What do you want to do?
+
+### SD2:161
+"I'm sorry, but I don't know anything."
+
+### SD2:162
+"Okay, men are always the same... and it's my job." She took her clothes off and lay down on the bed.
+
+### SD2:163
+After you finished, she turned to you and smiled deliberately. "That's all for today..."
+
+### SD2:164
+"Please, come again."
+
+### SD2:165
+"Hi! Thank you for visiting me again." She greets you.
+
+### SD2:166
+She smiled to you after the finiish as usual.
+
+### SD2:167
+"I'm Kate, ex-princess of this independent city of Salevo... until one year ago. The King, my father, was killed by the pirates when Captain Madoes came to Salevo."
+
+### SD2:168
+"Then, the Captain found me, raped me, and sold me to this brothel. He is the meanest man I've even seen, but nobody could do anything. Because Salevo had been peaceful for a long, long time, our militaly was so weak..." She started to cry.
+
+### SD2:169
+"Don't cry more, Princess Kate." You encouraged her. "Thank you, good adventurers. Since I was sold to the brothel, I was forced to work as a prostitute. Most of the visitors are pirates...
+
+### SD2:170
+"And I come to think men are all the same... I'm not a princess any longer. But you are different. You are really good men. Still... I haven't seen anybody who can defeat the pirates."
+
+### SD2:171
+"We do!" You encourage her again. "We are adventurers. We fight against anything which disturbs the peace and harmony. We will do it for sure. Trust us."
+
+### SD2:172
+"Thank you, adventurers... But nobody could even beat the guards... Wait! It used to be my castle. I know a hidden passage to avoid the gate. It will help you. Please beat them... for the future of this city." She smiles, and gives you a map.
+
+### SD2:173
+This is the pirates' headquarter. Do you want to enter?
+
+### SD2:174
+You entered inside the building. LOTS of pirates have already been there, with mighty captain Madoes.
+
+### SD2:175
+"Fools! Did you think you can flee from us? DIe!" Captain Madoes catches up with you, and gave you a critical hit from the behind. You die.
+
+### SD2:176
+After the battle, you wonder where Clara is.
+
+### SD2:177
+This is Madoes' room. The door is not even locked.
+
+### SD2:178
+On Madoes' desk, you found a key.
+
+### SD2:179
+Using the key, you opened the gate for the jail.
+
+### SD2:180
+This gate is locked. It seems to be a special lock. You don't know how to open it.
+
+### SD2:181
+This cell is currently empty.
+
+### SD2:182
+You opened the lock for the sell with the key. A girl is inside the cell. As you told her Madoes had already died, she fled from the cell.
+
+### SD2:183
+You opened the lock for the cell. You told her that you had defeated Madoes and she can flee from the jail. She thanked you.
+
+### SD2:184
+This cell is empty, but you can see a piece of paper inside.
+
+### SD2:185
+There is a piece of paper on the floor. Would you like to read it?
+
+### SD2:186
+The paper seems to be one page of the diary. It is still wet with tear. "Finally the day has come. I will be sold overseas... I don't want go there, but it seems to be my fate..."
+
+### SD2:187
+"Mom, Dad, the elder... I miss you. I miss you all. But I won't be able to come back to Easmore for ever and ever... I'm sorry. I'm very sorry..."
+
+### SD2:188
+"But if you forgive me, please remember this - I have been a virgin until today. Clara."
+
+### SD2:189
+You felt you must hurry up, before Clara has unwanted experiences.
+
+### SD2:190
+This pier is guarded. "Off limits here. Leave immediately, or you shall die." Do you still proceed?
+
+### SD2:191
+The guards attack you!
+
+### SD2:192
+More guards came on.
+
+### SD2:193
+There are no guards anymore. You can approach to the ship now.
+
+### SD2:194
+Do you want to enter inside the ship?
+
+### SD2:195
+You have entered inside the pirates' ship. Seems many, many pirates are remaining in the ship.
+
+### SD2:196
+Do you want to disembark?
+
+### SD2:197
+As you tried to approach to the room, BUNCH of pirates rushed you from behind!
+
+### SD2:198
+There seems to be no guard behind anymore.
+
+### SD2:199
+This looks the control room. You can see some levers over there. Do you want to enter?
+
+### SD2:200
+This seems to be control lever of this ship. Seems you had better not touch it.
+
+### SD2:201
+"Where on earth are we going to be taken to..."
+
+### SD2:202
+"I don't want to be a prostitute... I want to go home... sob..."
+
+### SD2:203
+"You have beat that Madoes!? Fantastic! Please, please help us... Please let us escape from this ship..."
+
+### SD2:204
+This has been a brothel owned by pirates. It is closed now.
+
+### SD2:205
+You leave the city of Salevo, with hope that the citizens rebuild the city.
+
+### SD2:206
+"Clara! Are you okay?" The elder was pleased with her coming back.
+
+### SD2:207
+Clara said to the elder, "I was captured by the pirates and about to be sold overseas, but thanks to these adventurers, I could get out of the ship and come back to the village."
+
+### SD2:208
+"I see. You are really good and mighty adventurers, as Queen Emma told me. Thank you so much." The elder thanked you.
+
+### SD2:209
+"Well... Would you do us one more favor? Far downstream of the river, Water Dragons are living. Even though they do nothing bad for us, they are potential threat for us. Would you beat them?"
+
+### SD2:210
+"Okay, if you say so."
+
+### SD2:211
+"Fantastic! I have a boat on the lakeshore. You can get the lake via the cave behind this house. Please use my boat to get to the Water Dragon Lair."
+
+### SD2:212
+"Also, I have a map. I'll give it to you."
+
+### SD2:213
+"So, you are permitted to use the elder's boat to get the Water Dragon Lair... Fine." The guard let you pass.
+
+### SD2:214
+You exit the elder's house from the behind. Then, you can see the entrance of the cave in front of you.
+
+### SD2:215
+You can see small ford here. River is quick, but here might be good place to take a rest.
+
+### SD2:216
+As your map shows, Water Dragons are living here. Those ferocious dragons attack as they notice you.
+
+### SD2:217
+Congratulations! You have defeated Water Dragons. You thought you could come back to Easmore.
+
+### SD2:218
+Then, suddenly, huge wave hit you and the elder's boat. The boat was broken down. You were drifted.
+
+### SD2:219
+You regained your consciousness. The river is calm now. Where is it? Where is the elder's boat? How can we go back to Easmore? And... where is our equipments and money?
+
+### SD2:220
+Then, you found a cave behind you.
+
+### SD2:221
+You have entered a dark cave. You can hear growl of monsters, but you can't see anything.
+
+### SD2:222
+There is a small stream. Probably those monsters can't pass the river. You don't know why. Anyway this stream plays a role of monster's bane.
+
+### SD2:223
+There is a small cave. You can smell a slight odor.
+
+### SD2:224
+Odor gets stronger here.
+
+### SD2:225
+This is an old campfire. You can't see anything but ash.
+
+### SD2:226
+Now you see why it smells so much in this cave. A man is dead here. The corpse is totally rotten and digested by Larva!
+
+### SD2:227
+You searched around the corpse after the battle. You found some equipments taken away from the man. Those stuff don't smell so much. You took them.
+
+### SD2:228
+You found some reptilians over there. They haven't notices you yet. Do you want to attack them?
+
+### SD2:229
+You can see a small, shining cave ahead. Do you want to step into the cave?
+
+### SD2:230
+Inside you have found LOTS of treasures.
+
+### SD2:231
+Then, Griffins came back to the cave. They love shining things, so they stored so much gems inside their nest. As they notice unfamiliar humans, they attack.
+
+### SD2:232
+This is the exit of the cave. Do you want to get out of the cave?
+
+### SD2:233
+You have got out of the cave. This is vast forest. Where is it anyway?
+
+### SD2:234
+You found the end of the road. This road might lead to a city, a town, or a village.
+
+### SD2:235
+You told the elder Clara's death. He was disappointed a lot, yet thanked you for finding her. The elder saw you off.
+
+### SD2:236
+Here you found some daggers, robes, boots and money. Probably those had been used by "unlucky" adventurers, who were drifted up to here, like you.
+
+### SD2:237
+Hello, Folks! Please enter password #1 to get through this gate. Thank you.
+
+### SD2:238
+You are so funny, but I can't let you pass.
+
+### SD2:239
+Thank you for registering my scenario. Please go ahead.
+
+### SD2:240
+You are standibg on the edge of the waterfall. 500 feet below, you can see a lake, but you can't find how to descend. Probably you'd better leave.
+
+### SD2:241
+Here you can look up the waterfall. It is very beautiful and magnificent.
+
+### SD2:242
+"Hello, adventurers. Welcome to Easmore." A couple greets you.
+
+### SD2:243
+"We are planning to go to Port Hyrtin, but we can't because of Hill Giants. Even though they don't harm the village, still we are really afraid of their attacks, as well as pirates..."
+
+### SD2:244
+"Would you exterminate the Hill Giants, please?"
+
+### SD2:245
+"Okay, if you say so. It's quite natural. Just we  will take much care until we pass the mountain." The couple left.
+
+### SD2:246
+"Really? Thank you so much, but I'm sorry I don't know where they live." The couple saw you out.
+
+### SD2:247
+A troop of Hill Giants are guarding this passage. They notice you and attack!
+
+### SD2:248
+More Giants come on.
+
+### SD2:249
+No more Giants are guarding here. You can see the passage continues farther. Probably this tunnel leads to the horde of Hill Giants.
+
+### SD2:250
+This is the horde of Hill Giants. They notice you and attack!
+
+### SD2:251
+No more Giants are remaining in this room. You are now sure that couple can head to Port Hyrtin.
+
+### SD2:252
+"We can't thank you enough. Now we can pass the mountain without any risk and go to Port Hyrtin. Thank you so much."
+
+### SD2:253
+"Oh, why don't you take this hammer? This is too heavy for us to use, but probably you can use this. Please take it." The couple gave you a great hammer.
+
+### SD2:254
+"Farewell, advnturers." The couple left.
+
+### SD2:255
+This passage seems to be dead end here.
+
+### SD2:256
+You have found Hill Giants over there. It seems they haven't noticed you yet. Do you want to rush them?
+
+### SD2:257
+This pillow is wet with her tears.
+
+### SD2:258
+This is the conference room of pirates. Only are high-ranked pirates allowed to enter, but luckily it is empty now.
+
+### SD2:259
+"Oh, I saw a girl was taken to the storage by some of high-ranked pirates. She was uncounscious and helpless. One of those pirates was holding her naked body with his arms..."
+
+### SD2:260
+"I remember she was far prittier than the rest of us when we are taken to the ship from Madoes' headquarter. Her name was... oh, it was Clara."
+
+### SD2:261
+This cell is empty.
+
+### SD2:262
+You found a beautiful blue robe on the floor.
+
+### SD2:263
+There was a book under the robe. As you read some pages, you figured out it was the rest of Clara's diary. You have taken it, as well as this beautiful robe.
+
+### SD2:264
+It seems to be the storage. You heard a woman's scream over there. It might be Clara's.
+
+### SD2:265
+You noticed some pirates are standing around the corner of the storage. At the corner of the room, a girl is laid on the floor. She is naked and surronded by the pirates. One of those pirates is also naked and having a sex with the girl forcefully.
+
+### SD2:266
+Do you want to intervene?
+
+### SD2:267
+You approached to the naked pirate and killed him from the behind without his notice. Following to your interruption, the remaining ones attack you!
+
+### SD2:268
+You tried to escape from the combat over the pirates, but they were too fast to let you flee. You were caught and bound.
+
+### SD2:269
+In front of your sight, the pirates started to rape the girl again. After their finish, the pirates hunt your head one by one. You were totally helpless and died.
+
+### SD2:270
+You have defeated the pirates surrounded the girl, but the girl is still crying. Her tears and blood are leaking out onto the floor.
+
+### SD2:271
+You approached to her, but she doesn't stop crying.
+
+### SD2:272
+You passed her blue robe, and told her gently. "Put your clothes on, and don't cry more."
+
+### SD2:273
+Then, she stopped crying. "Thank you, good adventurers. I'm Clara, from the village of Easmore. I was captured by the pirates while I was visiting my boy friend living in Salevo. He was planning to escape from Salevo and live with my family in Easmore."
+
+### SD2:274
+"As he tried to get out of Salevo from the city gate with me, the pirates came on. He was killed when he tried to cover me. I was caught by the pirates at that time..."
+
+### SD2:275
+"If it were not for you, I would be sold to a brothel overseas... Thank you so much." She thanked you and joined you, but her mental damage - for losing her boy friend and her virginity - was too large. You understood she needed to take more time.
+
+### SD2:300
+This bridge is guarded. "Hello, adventurers. This is the Ledomise City, the Capital of Kingdom of Ledomise." The guard greets you.
+
+### SD2:301
+"What is the purpose you came to the Ledomise City?"
+
+### SD2:302
+"Adventure? Good! Please visit our King at the castle. You can get good information from the King about your adventure for sure." The guard hands you a map.
+
+### SD2:303
+"Food and Lodging? Good! We have a nice tavern for food. The Central Temple might be a good lodging for you." The guard hands you a map.
+
+### SD2:304
+"Shopping? Alright. We have a well-stocked shop. Please enjoy your shopping there." The guard hands you a map.
+
+### SD2:305
+"By chance? Okay. Probably you have come long, long way to get here. Go on." The guard hands you a map.
+
+### SD2:306
+This is the Central Temple of Ledomise City.
+
+### SD2:307
+This is a shop. It is a little bit expensive, but well stocked.
+
+### SD2:308
+This is tavern. Do you want to step inside?
+
+### SD2:309
+"Hello, adventurers. How may I help you?"
+
+### SD2:310
+"Thank you. Please, come again."
+
+### SD2:311
+Mmm... It's yummy.
+
+### SD2:312
+"Sorry, No money, no ale."
+
+### SD2:313
+"Do you know something about a priest dead in front of the waterfall? I don't know so much, but he might be a high priest, considering what he wears."
+
+### SD2:314
+"It is said Ogres are living in a castle in a cave downstream of the river. Even though it is far South of Ledomise City and they have not done anything to us, it is so scary, isn't it?"
+
+### SD2:315
+"I heard Griffins have so many gems and jewelries in their lair. Many adventurers tried to find their lair, but nobody has come back alive yet."
+
+### SD2:316
+You threaten the master and visitors to give you all of their money. They did so.
+
+### SD2:317
+Then, the town guards arrived. The guards arrested you via hot pursuit.
+
+### SD2:318
+"The sentence for robbery is... DEATH." The guards told you. They called the cleric from the church and told him to cast you death spell.
+
+### SD2:319
+This is the gate of the King's garden.
+
+### SD2:320
+This is the gate of King Ledomise's castle.
+
+### SD2:321
+Do you want to enter the castle?
+
+### SD2:322
+This is the exit of the castle.
+
+### SD2:323
+"You can't enter here without the King's permission."
+
+### SD2:324
+This is the King's private chamber. You must leave.
+
+### SD2:325
+"Greetings, brave adventurers." The King greets you. "So, you came from Port Hyrtin... Good. I heard the Kingdom of Hyrtin was at stake when Mellia appeared, but they regained the peace five years ago, thanks to brave adventurers..."
+
+### SD2:326
+"What? Are you those adventurers? I'm really glad to meet you... Our kingdom, the Kingdom of Ledomise, is in the darkest time in the history. Ogres, Minotaurs, Dark Elves... monsters are unceasingly increasing."
+
+### SD2:327
+"There might be a great source of evil, but I don't know, I can't even imagine what it is. Would you find and terminate the evil from this Kingdom?"
+
+### SD2:328
+"Okay, if you say so."
+
+### SD2:329
+"Really? Good!! Oh, please take this sword. Also, I let you take our weapons and armors from the stock."
+
+### SD2:330
+"One more thing. Don't forget to meet Sage Eizar. He lives in a magnificent building just East of the castle. He might know something helpful for you."
+
+### SD2:331
+"So, you got the King's permission. Fine. Please take our weapons as you like."
+
+### SD2:332
+"So, you got the King's permission. Fine. Please take our armors as you like."
+
+### SD2:333
+There is a magnificent building. Do you want to enter?
+
+### SD2:334
+This building seems to be closed.
+
+### SD2:335
+"Hello, adventurers. I'm very pleased to meet you." The old man greets you. "Yes, I am Eizar the Sage."
+
+### SD2:336
+"The source of recent evil is Verdon, the Demon Lord living atop of a high mountain to the South. That mountain used to be a holy place, but it is dominated by the darkness these days."
+
+### SD2:337
+"In order to defeat Verdon you have to get the Crest of Light. You need the power of three fairies to revive the crest, but all three fairies are missing..."
+
+### SD2:338
+"One is captured by Minotaur living in the mountain. Another one is held by Dark Elves living in deep forest. I'm afriad I don't know about the last one."
+
+### SD2:339
+"Then, after you have found all three fairies, you have to go to white church in Lenar. That church is kept by triplet priestesses. Do you understand your mission?"
+
+### SD2:340
+"Okay, this is the map for Minotaur mountain. I'm sorry I don't have other two maps. Here you go."
+
+### SD2:341
+A priest is dead here. He might be a high priest, considering what he wears.
+
+### SD2:342
+As you search around the corpse carefully, you found a mace. Probably it was his, but now it is yours.
+
+### SD2:343
+This is East gate of Ledomise City.
+
+### SD2:344
+There is wasp's nest in this forest. Wasps attack you to save their nest.
+
+### SD2:345
+From the tree a leaf felt down. It seems to be magical.
+
+### SD2:346
+You have seen this kind of leaf for the first time in your life as an adventurer.
+
+### SD2:347
+The moat is too deep here. You must go back.
+
+### SD2:348
+This is West gate of Ledomise City.
+
+### SD2:349
+A guard is standing here. "Hello, sirs. This is the castle of the King Ledomise. This castle is open to every good people."
+
+### SD2:350
+You found a secret cave on the criff. Do you want to enter inside the cavern?
+
+### SD2:351
+A fighter is lying here. He is already burnt and dead.
+
+### SD2:352
+You have stepped into the cave. Hearing the noise of your footsteps, Green Dragons come on and attack!
+
+### SD2:353
+You have defeated Green Dragons this time, but you thought there would be much more monsters.
+
+### SD2:354
+You can see the nest of Green Dragons ahead. Do you want to proceed?
+
+### SD2:355
+I hope you know what you are doing!
+
+### SD2:356
+You have defeated Green Dragons here, but you can't see anythign but coupses of dragons.
+
+### SD2:357
+You found secret treasures on the wall!
+
+### SD2:358
+You found a secret tunnel. It continues to the East.
+
+### SD2:359
+At the end of the tunnel, there is a small cavern, and you found a fairy!
+
+### SD2:360
+A pit! There was a lave pool underneath. You fell down and died.
+
+### SD2:361
+A pit! Thanks to the magic, you could avoid falling down to the lava pool.
+
+### SD2:362
+Beyond the pit you can see a horde of Green Dragons. There are ten, and two are greater than others. Do you want to attack them?
+
+### SD2:363
+A beautiful fairy is floating here. Do you want to approach her?
+
+### SD2:364
+"Hello, adventurers. I'm Alicia. I have been kept here by Green Dragons and couldn't escape, but thanks to you, I'm finally free..."
+
+### SD2:365
+"What? Are you searching for other two fairies? Fine. I'll join your quest. Thank you so much." Alicia joins you.
+
+### SD2:366
+You walk on the edge of the pit carefully lest you fall down to the lava pool.
+
+### SD2:367
+Seeing your equipment, a man approached to and talked to you. "Do you know what has happened on the priest dead in front of the waterfall, adventurers? Probably he was killed by the Fire Drakes."
+
+### SD2:368
+"They say Fire Drakes are living in the cave behind the waterfall. I don't know if it is true, but don't go near the waterfall unless death is what you seek." The man left.
+
+### SD2:369
+You found the entrance of a cave behind the waterfall. Do you want to enter?
+
+### SD2:370
+It is pretty dark inside. You heard some growl of monsters. They look like Gold Dragons, but much more ferocious.
+
+### SD2:371
+Then, fierce monsters started to attack you!
+
+### SD2:372
+After the battle, you figured out those are the monsters called Fire Drake. You have defeated all anyway.
+
+### SD2:373
+You found some goods on the secret shelf.
+
+### SD2:374
+You have successfully escaped from the battle. You would have been killed by those monsters like that priest if you had failed. Probably those are the monsters called Fire Drake. You decided to get out of the cave.
+
+### SD2:380
+As you raised the stone to the air, the stone started to radiate.
+
+### SD2:381
+The next moment, the stone has gone. Instead, a beautiful fairy is floating in front of you!
+
+### SD2:382
+"Glad to meet you, adventurers. I'm Amelia. I was captured by Minotaurs and enclosed into this stone by Venus, but finally I'm free. Thank you so much."
+
+### SD2:383
+"So, you are searching for other two fairies as well as me... I see, and let's find them together." Amelia joins you.
+
+### SD2:400
+Magical flame covers the moutain passage. What would you like to do?
+
+### SD2:401
+Magical flame was extinguished. You can pass this passage now.
+
+### SD2:402
+Patrolling Minotaurs noticed you and attack!
+
+### SD2:403
+This is the gate of Minotaur Castle. In front of this big iron gate, Minotaurs are guarding. As they notice you, they attack.
+
+### SD2:404
+The top of this mountain is a small plateau. In the center of the plateau, you found a large castle.
+
+### SD2:405
+You tried to enter the castle. Then, Minotaur troop appeared to prevent your invasion into the castle.
+
+### SD2:406
+More Minotaurs came on.
+
+### SD2:407
+You have defeated all the minotaurs having guarded the entrance of the castle. You can't see anything but corpses of Minotaurs. You wondered where "the fairy" is kept.
+
+### SD2:408
+This is Minotaur King's room. Do you want to enter?
+
+### SD2:409
+The Minotaur King was in the room, with his troops. "Why did you, humans, come here? We do nothing against you guys. We are living in peace in this mountain." The Minotaur King complained.
+
+### SD2:410
+"What? Living in peace? Shut up! We know you guys, Minotaurs, come to the valley and make assault on the route against humans! Besides, you captured one of our precious fairies!" You rebutted.
+
+### SD2:411
+"Okay, if you know so much about what we are doing... I can't let you return to the valley alive... BEGONE!!"
+
+### SD2:412
+You have defeated the strongest troop of Minotaur, as well as the King. Still you can't see any figures of fairies.
+
+### SD2:413
+You can see treasures ahead. Do you want to proceed to take them?
+
+### SD2:414
+A trap! These treasures were illusion. A pit appeared on the floor and you fell down to the poison pool. You died.
+
+### SD2:415
+A trap! These treasures were illusion. A pit appeared on the floor but you could avoid falling down to the poison pool thanks to the magic.
+
+### SD2:416
+This is storage. There seems to be nothing interesting.
+
+### SD2:417
+This is storage of iron chunk. Why did Minotaurs stock iron in such a room?
+
+### SD2:418
+There is a large pool inside this room. Luckily it has a drawbridge to the other side, so you can pass it.
+
+### SD2:419
+The drawbridge was just an illusion here. It diappeared when you approached to it and you fell down to the poison pool. You died.
+
+### SD2:420
+The drawbridge was just an illusion here. It diappeared when you approached to it but you could reach the other side thanks to your magic.
+
+### SD2:421
+This large room is guarded by LOTS of demons that look like beautiful women. They will try to charm you for sure!
+
+### SD2:422
+You have come up to the roof of the castle. You take special care for each of your stpes lest you fall down from to the ground.
+
+### SD2:423
+W... What is this!? This room is filled with MANY statues, but not set in a line. Looks so strange.
+
+### SD2:424
+Now you know the reason... Gorgon attacks!
+
+### SD2:425
+You found iron-made giants over there. They have not noticed you yet. Do you want to surprise attack them?
+
+### SD2:426
+There is a mirror. This is beautifully decorated. Do you want to approach to the mirror?
+
+### SD2:427
+You approached to the mirror. Then, suddenly, Gorgons approached you from behind you and gazed at you.
+
+### SD2:428
+Gorgons' gaze stoned you!
+
+### SD2:429
+Thanks to your mirror, you could avoid their gaze, but they have already started their next movement before you notice!
+
+### SD2:430
+You have defeated the Gorgons behind you. What a nasty surprise.
+
+### SD2:431
+Behind the mirror, you found a secret passage.
+
+### SD2:432
+At the end of the secret passage... There is another hidden passage!
+
+### SD2:433
+This is a large room. There is a mantra in the center of the room.
+
+### SD2:434
+Do you investigate the mantra?
+
+### SD2:435
+Death spell was cast on you. You died.
+
+### SD2:436
+You found a scepter underneath the mantra.
+
+### SD2:437
+Beyond this door you can see a bunch of Sabre Lions. Do you still want to proceed?
+
+### SD2:438
+As you search on the crack you found a trap door. Do you want to take it right now?
+
+### SD2:439
+Do you want to take the trap door?
+
+### SD2:440
+Anti'ids are living in this small room. They attack the invaders, namely, you.
+
+### SD2:441
+You entered a large room. Most part of the floor is covered with hot lava. There must be a strong source of fire in this room.
+
+### SD2:442
+There is a mantra in front of you. Fire Queen is standing on the mantra.
+
+### SD2:443
+"Thanks for your coming to my castle, adventurers. I am Venus, the Queen of Queens."
+
+### SD2:444
+"Fairy? Ah, that fairy. I know. I summoned Minotaurs and let them to capture the fairy..."
+
+### SD2:445
+"And I enclosed her with my magic. I don't allow the existance of creatures that is more beautiful than I! I am the Queen, I must be the most beautiful woman all the time!! So I terminated her existance."
+
+### SD2:446
+"Now you know everything, so I shall kill you!"
+
+### SD2:447
+After the battle, you found a red stone on the mantra. Probably it is held by the Venus. Other than her staff and this red stone, you couldn't find anything.
+
+### SD2:448
+Soon after you take the stones, the castle started to collapse. This castle lost its source of power along with the death of the Venus. You escaped from the castle from broken wall.
+
+### SD2:449
+You have managed to escape from the castle breaking down, but where has "the fairy" gone anyway?
+
+### SD2:450
+This is West gate of the city of Lenoad.
+
+### SD2:451
+This is East gate of the city of Lenoad.
+
+### SD2:452
+This is Lenoad city temple.
+
+### SD2:453
+This is Lenoad weapon & armor shop. "Hi, how are ya?" The shopkeeper greets you.
+
+### SD2:454
+This is the headquarter of Forest Knight Army.
+
+### SD2:455
+"Sorry, sirs, but it is quite dangerous beyond this gate."
+
+### SD2:456
+This is tavern. Do you want to step inside?
+
+### SD2:457
+What do you want to do?
+
+### SD2:458
+"Sorry, but you need money to taste our fine cocktail."
+
+### SD2:459
+It's so tasty!
+
+### SD2:460
+Then, the master asked you. "Do you know something about a misterious lake in the forest south of Lenoad?"
+
+### SD2:461
+"Okay, keep going."
+
+### SD2:462
+"Okay, let me tell you all I know about the lake. The lake is in the forest south of Lenoad. Rumor says its water can heal quite large wounds. But cureently the forest is dominated by Dark Elves so that nobody can approach the lake."
+
+### SD2:463
+"Nice to meet you, adventurers. I'm Leonardo, the Captain of forest knight troop."
+
+### SD2:464
+"So, you are from Bywater and traveling althrough the Realmz. Good. We are planning to attack Dark Elven castle with our Army. You look so mighty and brave. Would you join us, please?"
+
+### SD2:465
+"Okay, if you say so."
+
+### SD2:466
+"Good! Let's go!"
+
+### SD2:467
+"Our brave forest knights. Now it is time to attack Dark Elves. We got mighty adventurers on our side. Now you gotta concentrate. Triumph or Death!" Captain gathered the troop. You set out for the Dark Elven forest with Forest Knights.
+
+### SD2:468
+This is barrack for Forest Knights.
+
+### SD2:469
+This is Dark Elven castle. Do you want to enter?
+
+### SD2:470
+This is the center of the lake. Do you want to drink the water?
+
+### SD2:471
+This room is guarded by Stone Ropers. It is said Stone Ropers play a role of guards for very important places. Here must not be an exception.
+
+### SD2:472
+As you thought, you can see stairs on the opposite side of the room.
+
+### SD2:473
+You can see a statue here. It looks like a very strong giant warrior.
+
+### SD2:474
+A statue is here. It is made of iron. What would you like to do?
+
+### SD2:475
+The statue is too hard to be broken by your blows.
+
+### SD2:476
+As you cast the spell, the statues started to move.
+
+### SD2:477
+After the battle, those statues are gone.
+
+### SD2:478
+Statues are gone. What would you like to do?
+
+### SD2:479
+With your spell, you have created a narrow passage.
+
+### SD2:480
+You can see a crystal surrounded by lava in the center of the room.
+
+### SD2:481
+Do you want to touch the crystal?
+
+### SD2:482
+As you touch the crystal, Dark Elves attack.
+
+### SD2:483
+Even after the battle, you can't see any visible result.
+
+### SD2:484
+It is Dark Elf King's room upstairs. The king was already there with his troop.
+
+### SD2:485
+"This is the end, Dark Elf King! I'm Leonardo, the Captain of Forest Knight. This forest is for everybody. We, the Forest Knight Army, fight against you for freedom of the forest!"
+
+### SD2:486
+"Ha ha ha ha ha ha... Freedom of the forest? YOU guys built human city in OUR forest without permission. We are taking a revenge of the forest! BEGONE, HUMANS!!"
+
+### SD2:487
+"Ha ha ha ha ha ha... Did you think you can escape from us? What chickens! Die hard!!
+
+### SD2:488
+"Ahhhhhh..." Dark Elf King died. However, it was the quest which made you think what the harmony is in the true meaning. It is really good thing to build a city in the field, forest, or the wilderness to let human flourish only themselves?
+
+### SD2:489
+"Hello, adventurers. I'm Angela." A fairy is floating above you.
+
+### SD2:490
+She came down and talked to you. "I used to live in this forest, but Dark Elves caught me and held me in this room. But thanks to you, now I can come back to the forest."
+
+### SD2:491
+"I see. You are searching three fairies including me. Okay, now it's time I help you." Angela joins you.
+
+### SD2:492
+"Thank you adventurers, now our quest is done. Here's the reward." Captain Leonardo landed you the reward and left you.
+
+### SD2:493
+Anyway, you have to find the fairy in this castle.
+
+### SD2:494
+"Hello, adventurers. I'm Talem, a villager of Celiedo." The man greets you.
+
+### SD2:495
+"Celiedo is to the southeast of Lenoad. It has been a beautiful village surrounded by mountain, but suffering from goblin invasion. They come from their village east of Celiedo, take our properties, kill the villagers, and destroy the houses."
+
+### SD2:496
+"Those goblins are not so strong, but they are too many. Besides, their village is guarded by huge snakes... Would you help us to beat them, please?"
+
+### SD2:497
+"Really? Thank you! Here is the map for goblin's village. Please take care." Talem hands you a map.
+
+### SD2:498
+"Thanks for visiting us."
+
+### SD2:499
+This is village gate.
+
+### SD2:500
+Beyond the mountain pass you can see the village of Celiedo. Some houses are broken down.
+
+### SD2:501
+This is village elder's house. Do you want to enter and talk to the elder?
+
+### SD2:502
+"Hello, adventurers. Welcome to Celiedo, the village of leather craft." The elder greets you.
+
+### SD2:503
+"Because of small population and abundant leather, our village used to be so rich. But Goblins living east of Celiedo threaten this village frequently. I hope someone exterminate them."
+
+### SD2:504
+This is village shop. It deals with fine leather goods at low price.
+
+### SD2:505
+This is home of village healer. "How can I help you?"
+
+### SD2:506
+"Thanks for visiting us."
+
+### SD2:507
+"Okay, what would you like to ask me?"
+
+### SD2:508
+"Sure. What kind of scrolls do you want?"
+
+### SD2:509
+"Good. Please look for the potions as you like."
+
+### SD2:510
+Here is the passage for goblin's village. As the villegers say, HUGE snakes approach to you for food.
+
+### SD2:511
+You have killed guardian snakes. You can see goblin village over the forest.
+
+### SD2:512
+There is a big tree house. Do you want to approach?
+
+### SD2:513
+"Hey, humans! Why dare do you attack this peaceful village?" The Goblin Chief appeared in front of you.
+
+### SD2:514
+"Here used to be the paradise for us, the Goblin clan. But one day, humans came into this mountain in search of fine leathers. We are really poor. So are trying to kick the humans out of this mountain..."
+
+### SD2:515
+"INCLUDING YOU!!"
+
+### SD2:516
+You have won human-goblin war in this mountain. The remaining goblins offered peace operation plan, which Goblin clan promises no invasion into human territory and assures the lives of the remaining Goblins. Do you accept it?
+
+### SD2:517
+"Thank you so much for keeping our lives. We don't have money, but we give you this gift for our apology. This mighty sword can't be used by goblinoids, but probably humans can use it. Please keep it."
+
+### SD2:518
+You have killed all the remaining Goblins. Only corpses are remaining on the field. This scenery is pretty disgusting.
+
+### SD2:519
+"Oh, our mighty heroes are back! They fled us from the Goblin menace! Hail the heroes!" The villagers started to hail you.
+
+### SD2:520
+"Thank you so much, brave adventurers." The elder thanked you. "Oh, I'd have to give you a reward. This whip is the best of our fine leather crafts. I give you."
+
+### SD2:521
+"Also, I found a strange leaf under the buckeye behind this house. I couldn't figure out what it is, so I left the leaf there. Take it if you want."
+
+### SD2:522
+As the elder said, a buckeye is here. Lots of leaves are fallen down and you can't find a "strange leaf" the elder said.
+
+### SD2:523
+As you search under the buckeye, you found a "strange leaf" the elder said. Definately it is magical.
+
+### SD2:550
+Inside the cave you can here the monster's growling. Do you still want to enter?
+
+### SD2:551
+You have enteres the cave. Inside you can see several ponds, in addition to the river. The terrain is wet quite a bit.
+
+### SD2:552
+You can see a cave in front of you. The cave leads a stream of water to the lake.
+
+### SD2:553
+Here seems to be the dead end.
+
+### SD2:554
+As you search the lakeshore, you found a map.
+
+### SD2:555
+Here seems to be the end of the river. You can see a small pool in this small, separated cavern. Stream beyond this pool may lead to the ocean.
+
+### SD2:556
+This cavern is filled with water. Stream is too quick. You have to go back.
+
+### SD2:557
+In the center of the pool you found a hole. What do you want to do?
+
+### SD2:558
+You found there is another cave down this pool. But you had to come back to the coast, due to thelimit of your swimming ability. You put on your equipments again on the coast.
+
+### SD2:559
+With your swimming ability you reached the deep sole of the pool. There you found another cavern. Where are Ogre living anyway?
+
+### SD2:560
+Do you want to come back to the surface?
+
+### SD2:561
+You have approached the gate for Ogre Castle. Of course it is guarded... by two dozens of Ogres!
+
+### SD2:562
+You have defeated the guarding Ogres. Now you can pass the gate for free.
+
+### SD2:563
+It is dark inside the castle. Luckily, there are no guards.
+
+### SD2:564
+This door is locked. What do you want to do?
+
+### SD2:565
+You have activated the alarm. The guards arrived and attacked you as thieves.
+
+### SD2:566
+This is storage of food.
+
+### SD2:567
+This is storage of fine wine.
+
+### SD2:568
+Spears are important weapon for Ogres. It is storage of spears.
+
+### SD2:569
+This room might be the tombplace of high-class Ogres.
+
+### SD2:570
+Suddenly, mummies approached you, stood in front of you, and attacked you!
+
+### SD2:571
+You have found nothing in this room. Probably you should leave them here and let them sleep well.
+
+### SD2:572
+This is study room for magic-using ogres. There are a lot of books of magic.
+
+### SD2:573
+Ogres were studying in this room. They attack you for your disturbance.
+
+### SD2:574
+No Ogres are remaining in this room.
+
+### SD2:575
+As you search the book shelf, you found a book and some scrolls.
+
+### SD2:576
+This is sleeping quarter. Ogres were sleeping. They attack.
+
+### SD2:577
+Do you want to open this trunk?
+
+### SD2:578
+Just there are ordinary clothes.
+
+### SD2:579
+There are grosceries.
+
+### SD2:580
+This trunk is empty.
+
+### SD2:581
+Inside the trunk you found a horn.
+
+### SD2:582
+This room is quiet. Inside the room you can see an acid pool.
+
+### SD2:583
+There is a hole in the pool. do you want to dive into the hole?
+
+### SD2:584
+This hole is filled with poison, and you died.
+
+### SD2:585
+This hole is filled with poison, but you can swim in the poisonous pool, thanks to the protection. There is a tunnel down the hole.
+
+### SD2:586
+Through the tunnel, you entered a separated cell. There is a piece of paper on the floor.
+
+### SD2:587
+Do you want to go back to the acid pool via the tunnel?
+
+### SD2:588
+This piece of paper is a map. It shows a hidden passage in this castle.
+
+### SD2:589
+Over the door, scenery of this passage is so disgusting. Fragments of flesh, bones, and blood are here and there. Odor is beyond your tolerance. You can imagine so many people are killed here.
+
+### SD2:590
+Suddenly, the rain of small spears POURED onto you from every directions. You couldn't avoid them and took damages. Those spears were all poisonous.
+
+### SD2:591
+You entered a magnificent room. Ogre King is still sitting down on the throne and shows no movement.
+
+### SD2:592
+You approached the throne. The Ogre King called the Ogre troop, and attack you!
+
+### SD2:593
+You have defeated all the ogres in this room. Treasure room is next to the throne room.
+
+### SD2:594
+As you thought, you found treasures here. It is not trapped, nor even locked.
+
+### SD2:599
+You sometimes feel you are losing your magical power. You don't know why.
+
+### SD2:600
+"Welcome to Lenar, the most important port city of the Kingdom of Ledomise." The guard greets you and hands you a map.
+
+### SD2:601
+This is Lenar City temple. "Hello, adventurers. Do you need some healing?"
+
+### SD2:602
+"What kind of healing can I offer you?"
+
+### SD2:603
+This is weapon and armor shop. Do you want to enter?
+
+### SD2:604
+"Hi, adventurers. How may I help you?" The shopmaster greets you.
+
+### SD2:605
+This is magic shop.
+
+### SD2:606
+This is apartment for crews.
+
+### SD2:607
+This is port custom office.
+
+### SD2:608
+There is a white building. It appears to be a church, but it is closed.
+
+### SD2:609
+There is a white church It might be the church Eizar the Sage told you. Do you want to enter?
+
+### SD2:610
+You have stepped inside the church. Three priestesses were praying over there. They must be triplet priestesses Eizar the Sage has said to you.
+
+### SD2:611
+"Hello, sirs... and fairies. How art thou?" The sisters greet you.
+
+### SD2:612
+Alicia: "Long time no see, Sister Anna. We have come back here thanks to these brave adventurers."
+
+### SD2:613
+Amelia: "We are pretty fine, Sister Julie. Now we are gathered all. I'm really glad to see you sisters, Alicia, and Angela again."
+
+### SD2:614
+Angela: "How have you been, Sister Monica. Nice to see you again, but probably this world is turning to the darkness... What has happened?
+
+### SD2:615
+Sister Monica: "Okay, let us explain what is going on. There is thy Unicorn Church to thy West of Lenar. It is located in a deep valley covered by thy forest. The Unicorn inside has kept thy world in peace for a long, long time.
+
+### SD2:616
+Sister Julie: "But one day, Helgoth came to thy valley with his Blue Dargon troops and attacked thy church. Many Druids were killed, but Druids art still fighting with remaining Dragons."
+
+### SD2:617
+Sister Anna: "Helgoth cast a curse on thy gate to Unicorn Church valley. In order to remove curse from thy gate, Thou shall get Daggers of Shine."
+
+### SD2:618
+"Daggers of Shine?" You asked. Sister Anna continued, "Daggers of Shine are thy creations of holy light and power. There art two Daggers of Shine. When light and power meet, those holy daggers will lend thee their might."
+
+### SD2:619
+Sister Julie: "Can you see a high mountain to thy South? It is called thy top of the world, because of its height and holiness. Thy top of thy mountain is like a plateau, and there is a holy town."
+
+### SD2:620
+Sister Monica: "Inside the town there is a holy vault. There light and power meet. First, thou shall get thy Crest of Light. Without thy Crest of Light, gate of thy vault does not open."
+
+### SD2:621
+Sister Anna: "Now, thou hast to get two crystals. One is red and the other one is blue. With those two crystals and thy magical power of Alicia, Amelia, and Angela, thy Crest of Light revives."
+
+### SD2:622
+Sister Julie: "Those two crystals are now kept in the mansion on thy hill North of Lenar. When thou find thy crystals, activate this rod. It regains thy holy light of thy crystals."
+
+### SD2:623
+Angela: "We would like to go with and help them to get those crystals. Would you let us to go with these adventurers, please?"
+
+### SD2:624
+Alicia: "We were saved by these adventurers and could come here. Now it's our turn to help them. Would you let us, please?"
+
+### SD2:625
+Amelia: "We really would like to go with them now. Please, please allow us to..."
+
+### SD2:626
+Sister Monica: "Okay if thou say so, fairies... but take much care, for that mansion is haunted. If thou art captured again, then all thy hope of thy world disappears..."
+
+### SD2:627
+"Please save them, adventurers. We believe thee. Thou can and shall make it. Thy fate of thy world is on your sholders."
+
+### SD2:628
+Now you head to the haunted mansion on the top of the hill, with three fairies.
+
+### SD2:629
+The gate is closed.
+
+### SD2:630
+This is the outer gate of the haunted mansion. Do you want to pass the gate?
+
+### SD2:631
+As you pass the gate, you felt some kinds of fear. Probably because of strong curse coming from the mansion on the hill.
+
+### SD2:632
+Do you want to step inside the mansion?
+
+### SD2:633
+You have stepped inside the mansion. There is a large room. You sense strong curse.
+
+### SD2:634
+Then, you noticed a lot of undead monsters attack you.
+
+### SD2:635
+Undead monsters in this room are all gone. However, you still sense strong curse.
+
+### SD2:636
+This room seems to have been weapon storage.
+
+### SD2:637
+This room seems to have been armor storage.
+
+### SD2:638
+This wall is an illusion.
+
+### SD2:639
+This is a pit. Ouch.
+
+### SD2:640
+Suddenly, strong magical static shocked you!
+
+### SD2:641
+Here seems to be a portal. Do you want to enter?
+
+### SD2:642
+You found stumbling undead in front of you. Do you want to attack them?
+
+### SD2:643
+You can sense gigantic curse and fury beyond this door. There must be strong undead. Are you ready?
+
+### SD2:644
+As you thought, a skull is floating in front of you. The skull is surrounded by eight fireballs.
+
+### SD2:645
+Beyond this undead creature you can see shining crystal. It must be one of the crystals you have to get.
+
+### SD2:646
+"Nice to see you, brave adventurers. I'm really glad you can make it up to here..."
+
+### SD2:647
+"What!? You want this red crystal? Who do you think I am? Do you think you can beat me, Xeagon? Ha Ha Ha Ha Ha Ha Ha Ha Ha..."
+
+### SD2:648
+"BEGONE!!"
+
+### SD2:649
+You have defeated Xeagon. The red crystal is shining in front of you.
+
+### SD2:650
+The red crystal is here. It is shining, but strong magical force doesn't allow you to take the crystal. What do you want to do?
+
+### SD2:651
+As you activate the Rod of Trinity, the magical force disappears. Now you can take the crystal.
+
+### SD2:652
+Congratulations! You have got the red crystal!
+
+### SD2:653
+You can sense gigantic curse and very evil magic beyond this door. There must be strong undead. Are you ready?
+
+### SD2:654
+As you thought, a fiend is standing in front of you, with five Earth Elementals.
+
+### SD2:655
+Those kinds of fiends always hate brave adventurers like you. This fiend, Lich, is not an exception.
+
+### SD2:656
+You have defeated Lich. You found shining blue crystal in front of you.
+
+### SD2:657
+Blue crystal is shining here, but strong magical force does not allow you to take the crystal. What would you like to do?
+
+### SD2:658
+Congratulations! You have got the blue crystal!
+
+### SD2:659
+Sister Anna: "Welcome back! We are waiting for thee."
+
+### SD2:660
+Sister Julie: "Fantastic! Thou really got thy crystals!" You handed Sister Julie two crystals. She put those two crystals onto the Mantra.
+
+### SD2:661
+Sister Monica: "Okay. Alicia, Amelia, Angela, now it is your turn. We need your magical power." Fairies started to chant magical words, but you can't understand what they are whispering.
+
+### SD2:662
+Alicia: "@&'%7;#%-xo$f#j&!" Her body started to radiate blue light.
+
+### SD2:663
+Amelia: "#&%g6'%$*%f%sp3g!" Her body started to radiate red light.
+
+### SD2:664
+Angela: "%&t#yf6';4$+qr&c%!" Her body started to radiate green light.
+
+### SD2:665
+Then, those three lights combined! The fusion of three lights became strong white light, and hit the crystals.
+
+### SD2:666
+The next moment, crystals have gone. Instead, a crest is on the Mantra.
+
+### SD2:667
+Sister Monica: "Alicia, Amelia, Angela, well done. Thy Crest of Light is here." She took the Crest of Light from the Mantra and handed it to you.
+
+### SD2:668
+Congratulations! You got the Crest of Light!!
+
+### SD2:669
+Sister Julie: "Hurry up! Take thy crest to thy top of thy world. Thou art thy last hope of thy world."
+
+### SD2:670
+Sister Anna: "Take care, adventurers. Thou art thy true prophecy. We believe thee."
+
+### SD2:671
+Hello again, folks! Please enter password #2 to get through this tunnel.
+
+### SD2:672
+Sorry for making you do this twice. Thank you for registering my scenario. Please go ahead.
+
+### SD2:673
+This is a tavern. Do you want to enter?
+
+### SD2:674
+"Hi, travelers. What would you like to do?"
+
+### SD2:675
+"Thanks for visiting us. Please come again."
+
+### SD2:676
+Mmm... It's tasty!
+
+### SD2:677
+"Sorry, but no money, no ale."
+
+### SD2:678
+"The yonder scholar says that deserted village of Arvor was once a Kingdom, huh! Who on earth believe that?"
+
+### SD2:679
+"He says a magtic sword is sleeping under Lake Lenar. Isn't it so terrific? I don't want to be killed by 'magic sword'!" "Ha Ha Ha Ha Ha Ha..."
+
+### SD2:680
+"Prince Arvor? What's that? What kind of 'Prince' want to live in such a village!?"
+
+### SD2:681
+"Hello, sirs." The man greets you. He is a little bit disappointed. What do you want to do?
+
+### SD2:682
+Ask him why
+
+### SD2:683
+Leave him alone
+
+### SD2:684
+"I am Roger, a researcher of archeaology. I traveled long, long way from Bywater, where I used to study about Waterford, in search of old Kingdom of Arvor."
+
+### SD2:685
+"Bywater? We are from there, too." You interrupted Roger. He continues, "oh, what a coincidence... Anyway, Arvor is just a deserted village now, but once it was a Kingdom long, long ago."
+
+### SD2:686
+"The Kingdom had a prince. He was really mighty warrior, but died near the lakeshore of Lenar. Citizens of Arvor buried him in a large tomb, but throw his sword into Lake Lenar."
+
+### SD2:687
+"His sword is still sleeping under Lake Lenar... Those are all I know from my researches, but nobody believe me..." Do you believe him?
+
+### SD2:688
+"Okay, if you say so. It's quite natural. I'll just keep my researches."
+
+### SD2:689
+"Really? Do you beleive me? Thank you! Oh, I have a map. I'll give it to you."
+
+### SD2:690
+"Also, this is the map of Prince Arvor's tomb."
+
+### SD2:691
+You found a trap door here. Do you want to open it?
+
+### SD2:692
+There is a chest. It is not even locked. Do you want to open it?
+
+### SD2:693
+Inside you found two flasks of potions.
+
+### SD2:694
+This room is filled with bunch of Death Knights. They attack.
+
+### SD2:695
+You found a sabre floating in the air. Do you want to approach?
+
+### SD2:696
+The sabre is animated. It attacks you.
+
+### SD2:697
+The sword stopped its movement and lay down on the floor. Do you want to take it?
+
+### SD2:698
+This sword is no longer animated. Now it is yours.
+
+### SD2:699
+You can see crawling crestacean over there. Do you want to attack them before they notice you?
+
+### SD2:700
+You can see a deserted village over there. It is the village of Arvor.
+
+### SD2:701
+This is village well.
+
+### SD2:702
+There is an old house, but it is seemed nobody lives here.
+
+### SD2:703
+This is a village house. Seems it is empty.
+
+### SD2:704
+This is a house. Nobody is here, but it is not even locked.
+
+### SD2:705
+This is a village house. A man lives there!
+
+### SD2:706
+"Hello, travelers." He greets you. "Please make yourself at home. I had a guest for the first time in three years... Last guest was an archeaologist, who is making a research of the Kingdom of Arvor."
+
+### SD2:707
+"Today Arvor is such a deserted village far from main road. But once upon a time, it was a flourished Kingdom. The Kingdom had a brave and mighty prince, but he died near the shore of Lake Lenar.
+
+### SD2:708
+"Soon after the Prince's funeral, big tide came down to the Kingdom. Most of the Kingdom had sunk into the deep ocean. Today's village area is small remaining land."
+
+### SD2:709
+"Today, Arvor is just a deserted village. Few come here."
+
+### SD2:710
+This seems to be an old tomb. You can't read what is carved on the monolith, but there is a trap door. Do you want to enter?
+
+### SD2:711
+This way is magically blocked. What do you want to do?
+
+### SD2:712
+Magical block has gone. Now you can pass.
+
+### SD2:713
+Here is a coffin. Do you want to open?
+
+### SD2:714
+Inside the coffin you found a mummy.
+
+### SD2:715
+Suddenly, the mummy started to move. It wears a suit of shining plate armor. "Hello, brave adventurers. I am the Prince of Arvor. I died 1,000 years ago."
+
+### SD2:716
+"Here I give thee a choice. Thou can have my sword or exchange thy sword with my armor. Which would thou like?"
+
+### SD2:717
+Take the sword
+
+### SD2:718
+Exchange with armor
+
+### SD2:719
+"Okay, if thou say so. Keep going." The mummy went back to the coffin, and started to sleep again.
+
+### SD2:720
+The mummy is sleeping quietly.
+
+### SD2:721
+"I see... But I have to test thee before that!" The mummy started his movement against you!
+
+### SD2:722
+"Well done, adventurers. Now thou can have my armor." The mummy handed you his armor and went back to the coffin.
+
+### SD2:750
+This river leads to the underground.
+
+### SD2:751
+This river leads to the surface.
+
+### SD2:752
+This is town temple.
+
+### SD2:753
+This is town shop.
+
+### SD2:754
+"Hi, adventurers." A dwarf greets you. "I am the chief blacksmith of this town."
+
+### SD2:755
+"This is a dwarven town. We began living in this underground cave because it is Azement mine. Azement is very precious magical metal from which we make first-class swords. We make our living by selling those swords to humans living on the surface."
+
+### SD2:756
+"But one day, Trolls came to this town and started to live in Azement mine. I don't know why. We can't get Azement anymore, so we can't make swords. Just we are selling what we can get on the surface." The Blacksmith saw you off.
+
+### SD2:757
+"It's dangerous beyond here." The guards were standing in front of the gate and stopped you.
+
+### SD2:758
+"So, you heard the story from the chief... I see. Take much care. Trolls are so vicious." The guards handed you a map and let you pass.
+
+### SD2:759
+You found wandering Trolls. They haven't noticed you yet. Do you want to attack them?
+
+### SD2:760
+There is a hole with ladder. To you want take the ladder down?
+
+### SD2:761
+You can see dim light from the hole. There is a ladder on the wall. Do you want to take the ladder up?
+
+### SD2:762
+You can see dim light here.
+
+### SD2:763
+It gets dark here.
+
+### SD2:764
+Large pack of Trolls are living here. They have just noticed you.
+
+### SD2:765
+"Why are you here?" Big Troll asks. "Why do you bully the dwarves? They really need Azement." You continue.
+
+### SD2:766
+The trolls answers, "Azement? Ah, this metal? So what? We have been living here for a long, long time. It was so peaceful. Then, dwarves came to OUR cave and started their mining here."
+
+### SD2:767
+"They do this because humans use the weapon made from this metal... WE HATE HUMANS! WE HATE HUMANS!!
+
+### SD2:768
+After the battle, you are sure you have defeated all the trolls in this cave. Now dwarves can do their mining again.
+
+### SD2:769
+This cave still has ample Azement. What would you like to do?
+
+### SD2:770
+You got a piece of Azement.
+
+### SD2:771
+"Yes! Yes! So, there are no trolls in the mine... Fantastic! Thank you so much..."
+
+### SD2:772
+"Wait! I'll make a sword from this metal. Just wait for a while."
+
+### SD2:773
+"It's done. Take it."
+
+### SD2:774
+The guard is standing. "Watch out, There are so many Dragons outside."
+
+### SD2:775
+You got out of the cave. It is deep forest and a little bit dark. You can hear the noise of wing flaps.
+
+### SD2:776
+It is the end of the road.
+
+### SD2:777
+Here you can see a building. It looks so magnificent.
+
+### SD2:778
+This is a portal. It is currently closed at the end.
+
+### SD2:779
+This portal is now open. Do you want to take it?
+
+### SD2:780
+You can see a monolith ahead. But by whom is it built? And for what purpose is it built?
+
+### SD2:781
+Monolith says a brave warrior sleeps here after the battle against a fierce evil dragon.
+
+### SD2:782
+As you search around the monolith, you found some nice stuff.
+
+### SD2:783
+A pit! You fell down.
+
+### SD2:784
+It is dark here. Where is it?
+
+### SD2:785
+Then, you heard some wing flaps. Before you notice their figures, they attack!
+
+### SD2:786
+Woo... what a nasty trap. Yet you can't figure out how you can come back to the ground level.
+
+### SD2:787
+It is long, dark passage downstairs. It looks endless.
+
+### SD2:788
+Here you can see stairs to go up. This seems to be the end of the passage.
+
+### SD2:789
+This is a portal. Do you want to take it?
+
+### SD2:790
+Guards!!
+
+### SD2:791
+Nether Spawns are patrolling in this cave. They attack.
+
+### SD2:792
+This cave is pretty dark. You can hear the moaning voice. There might be LOTS of monsters. Are you ready?
+
+### SD2:793
+You proceed into the cave with your firm will. Indeed, what are waiting for you?
+
+### SD2:794
+In the secret criff you found a shining, white ion stone!
+
+### SD2:795
+You stepped into the passage. Then, you heard a strange noise behind.
+
+### SD2:796
+You turned back, and you found the stairs are turned to the stone!
+
+### SD2:800
+Inside the cave there are stairs. Do you want to take these stairs down?
+
+### SD2:801
+It is the top of the world. Because of its height, it is a little bit chilly.
+
+### SD2:802
+Then, a troop of armies approached you. "You don't look like people liveing here. Who are you? Why are you here?"
+
+### SD2:803
+"Amulet of Power? We have already got it... And we are going to take the Crest of Light, NOW!!"
+
+### SD2:804
+"The Holy Vault? What is that? Good prayers? They disturb us all the time... Shut up and begone!"
+
+### SD2:805
+"Justice? Save the world? The world is ours. We are going to stop you guys!"
+
+### SD2:806
+"Adventure? WE HATE ADVENTURERS!"
+
+### SD2:807
+After the big battle, you thought you have to hurry up. The holy town is at stake.
+
+### SD2:808
+It is the gate of the holy town, St. Sagatis.
+
+### SD2:809
+As you approach the gate, you notice the troop of St. Sagatis armies are fighting with another troop to save their town. You must help.
+
+### SD2:810
+While you escape from the battle, St. Sagatis armies have fought... until they die.
+
+### SD2:811
+The gate is closed.
+
+### SD2:812
+You have defeated a large troop of armies. "They are the troop of Verdon. Thank you for your help. We really appreciate it."
+
+### SD2:813
+"Please enter the town and look around as you like."
+
+### SD2:814
+The guard is standing in front of this big iron gate. "Hi, good people. It is quite dangerous beyond here."
+
+### SD2:815
+You can see quiet shoreline ahead. It might be good place to take a rest.
+
+### SD2:816
+This is the Holy Vault. Do you want to enter now?
+
+### SD2:817
+This is the Holy Vault. It seems to be closed.
+
+### SD2:818
+This is the exit.
+
+### SD2:819
+You have stepped into the vault. It is so gorgeous inside.
+
+### SD2:820
+A mage is standing here. "Hail, adventurers. I hast been waiting for thee."
+
+### SD2:821
+"As thou know, this is where thy Light and thy Power meet. And we hast possessed thy Amulet of Power."
+
+### SD2:822
+"You have possessed? What do you mean by that?" You asked. The mage continued, "thy Amulet of Power was here, but Verdon, the Demon Lord, came to this holy mountain with his unholy troop..."
+
+### SD2:823
+"And robbed thy Amulet of Power from us. Thy Amulet of Power will give its gigantic power to ANYBODY who possesses it. If it is possessed by good ones, it works as the maintainance of the peace and harmony of thy world, but..."
+
+### SD2:824
+"If bad ones possess it, it starts to help them to accumulate their unholy power. It is the beginning of the disaster of thy world..."
+
+### SD2:825
+"Well... what is it that thou have in your hand? Is it thy Crest of Light!? Fantastic!! Thy Crest of Light is pure holy Crest that has thy might to terminate thy darkness."
+
+### SD2:826
+"When thy Light and thy Power meets, thy Daggers of Shine revive. There art two Daggers of Shine. Those daggers art the symbol of purity and might. Only those who have purity in their heart can use those daggers."
+
+### SD2:827
+"When Daggers of Shine revives, it is thy end of thy every evil..."
+
+### SD2:828
+"Verdon is living at thy top of thy tower across thy lake. Please, please retreive thy Amulet."
+
+### SD2:829
+"Are you those adventurers who are going to retreive the Amulet of Power?"
+
+### SD2:830
+"I see. Please take care... and save the world." The guard opens the gate.
+
+### SD2:831
+This is magic shop. Price is outrageous.
+
+### SD2:832
+This is town healer. He is the member of St. Sagatis church. "Hi, Sirs. Thou hast to visit our holy vault first.
+
+### SD2:833
+This is town healer. He is the member of St. Sagatis church so that he offers his healing service for free.
+
+### SD2:834
+Verdon patrols attack!
+
+### SD2:835
+This is Verdon's tower. Do you want to enter now?
+
+### SD2:836
+You have entered inside Verdon's tower through heavy iron gate.
+
+### SD2:837
+Suddenly, you could hear the iron gate close.
+
+### SD2:838
+This iron gate is firmly closed. You can't open it.
+
+### SD2:839
+This large room is guarded by Ropers. They attack.
+
+### SD2:840
+In the center of the room, you found a chest. It is not locked. Do you want to open it?
+
+### SD2:841
+A trap! Shower of poison poured onto you. You died.
+
+### SD2:842
+What do you want to do then?
+
+### SD2:843
+Trap was set on the roof above the chest. Now it is broken and does not work. You opened the chest, and got a nice necklace.
+
+### SD2:844
+Trap was set on the roof above the chest. Now it is broken and does not work. You opened the chest, and got a nice broach.
+
+### SD2:845
+This wall is illusion!
+
+### SD2:846
+There is a small room inside the large room. You can see a chrystal in the center of this small room.
+
+### SD2:847
+Here is a crystal. Do you want to touch it?
+
+### SD2:848
+This crystal appeared to be magical, but nothing has happened.
+
+### SD2:849
+You are surrounded by strong light. You lost your consciousness for a while.
+
+### SD2:850
+The next moment, you found several pieces of scrolls on the floor!
+
+### SD2:851
+As you step into the passage, you heard someone laugh.
+
+### SD2:852
+Right after the laughter, your soul were stolen!
+
+### SD2:853
+You found a lever here. Do you want to pull it?
+
+### SD2:854
+Something might have happened, but you can't see what it is.
+
+### SD2:855
+This lever was a trap!
+
+### SD2:856
+"Welcome, adventurers." You heard a strange voice, but you could't figure out who was speaking.
+
+### SD2:857
+Then, a winged-devil appeared. in front of you. "I'm glad to see you, brave adventurers. I really appreciated such a brave warrior has done well and came here..."
+
+### SD2:858
+"My name is Tilinack, the General of Lord Verdon's Army. He is the King of Kings. Here is the last place you can get. Even though you are strong, you can't beat him. He got the Amulet of Power on his hands..."
+
+### SD2:859
+"I give you a choice, adventurers. If you join our Army right now, I let you join us as the Major. Do you join us, adventurers?"
+
+### SD2:860
+"Really?"
+
+### SD2:861
+"Okay, adventurers. Now you are the Major of our Army. You have to take off your equipment. We will prepare your weapons and armor soon." You took off all of your equipment.
+
+### SD2:862
+"Fools! Who dare offers such an important status for guys like you? All you deserve here is death!"
+
+### SD2:863
+"I see. Now I shall stop you with respect!!"
+
+### SD2:864
+You have defeated Tilinack, as well as his troop. But where is Verdon anyway?
+
+### SD2:865
+Here seems to be the dead end. You found a nice tapestry here. Do you want to take it?
+
+### SD2:866
+You took the tapestry from the wall.
+
+### SD2:867
+A pit! You fall down.
+
+### SD2:868
+You can see stairs in front of you. It looks these stairs lead to the upeer floor.
+
+### SD2:869
+These stairs were illusion. Not only that... it was a trap. Suddenly, bunch of deadly allows poured onto you.
+
+### SD2:870
+Beyond this door it is Verdon's room. Are you ready?
+
+### SD2:871
+Are you sure?
+
+### SD2:872
+You entered Verdon's room. Both sides of the room are covered by lava.
+
+### SD2:873
+Suddenly, the door turned to solid wall!
+
+### SD2:874
+Verdon was standing in front of the throne. "Who are you? How dare have you come here? Do you know who I am?"
+
+### SD2:875
+"Okay, just I have to show my power!"
+
+### SD2:876
+"I tell you with respect!"
+
+### SD2:877
+"Ahhhhhhhhh!!!!!" Verdon has died. You found the Amulet of Power on Verdon's neck.
+
+### SD2:878
+Congratulations! You have retrieved the Amulet of Power!!
+
+### SD2:879
+Right after you retreived the Amulet, you heard the sound of explosion. Soon, you found this tower is breaking down! But you still wonder how you can get out of the tower.
+
+### SD2:880
+You laid the tapestry on the floor. Then, the tapestry started to flow. You rode on the tapestry. It kept floating and started.
+
+### SD2:881
+Riding on the tapestry, you got out of the tower, flew across the lake, and came back to the town. When you reached the town of St. Sagatis, the tapestry had gone.
+
+### SD2:882
+"Welcome back, mighty adventurers!" The Mage welcomed you. You showed the Amulet of Power.
+
+### SD2:883
+You handed the Crest of Light and the Amulet of Power to the Mage. The Mage started to chant a special spell. You can't figure out what he says.
+
+### SD2:884
+Then, the strong magical power radiated from the Amulet and hit the Crest. The Crest and the Amulet disappeared.
+
+### SD2:885
+The next moment, two daggers appeared! "It's done. These art thy Daggers of Shine." The Mage handed you Daggers of Shine.
+
+### SD2:886
+Congratulations! You finally got the Dagger of Shine!!
+
+### SD2:887
+"Well done, adventurers. Yet thou must beat one more evil. It is thy strongest evil ever existed in the Realmz. Thy name is Helgoth. He is attacking thy Unicorn Church with his Blue Dragon troop."
+
+### SD2:888
+"Hurry up! Thou art thy last hope of thy world! Take these daggers to thy Unicorn Church! Take thy portal, and thou can get down to thy world directly." The Mage saw you out.
+
+### SD2:889
+This is the portal, but it is currently closed here.
+
+### SD2:890
+The portal is now open. It teleports you directly down to the world. Do you want to take it?
+
+### SD2:900
+This large iron gate is closed. You can't come up with how to open it.
+
+### SD2:901
+As you raise the Dagger of Shine, the gate opened!
+
+### SD2:902
+You got through the tunnel. It is deep valley. As far as you can see, it is the world of the forest and criff. Nothing but those.
+
+### SD2:903
+This woody valley is now dominated by Blue Dragons. They attack.
+
+### SD2:904
+In front of a magnificent building, Druids are fighting against Blue Dargons. They are the clerics of the Unicorn Church. What would you like to do?
+
+### SD2:905
+Help Druids
+
+### SD2:906
+Hide behind the criff
+
+### SD2:907
+Because of your cowardice, all the Druids were killed. Right after that, dragons blew the church with their breath! The Unicorn Church has burnt out.
+
+### SD2:908
+You joined the battle against Blue Dragons, to save the Unicorn church, and the world.
+
+### SD2:909
+More dragons came on.
+
+### SD2:910
+Finally, a beautiful, large, black dragon appeared.
+
+### SD2:911
+"Who are you? Why dare do you disturb me? I, Helgoth, am not like others! The world is mine!! Begone!!!"
+
+### SD2:912
+The Druid Bishop appeared from the church. "Helgoth, it's the end!!!" The last Jihad had just begun.
+
+### SD2:913
+"Well done, adventurers... Art those the Dagger of Shine that thou have? Fantastic! Oh, come on in." The Druid Bishop invited you into the church.
+
+### SD2:914
+This is the Unicorn church. Do you want to enter?
+
+### SD2:915
+"Thank thee for saving our church, Sirs. The Bishop is waiting for thee."
+
+### SD2:916
+The Bishop was waiting for you there. "I cannot thank thee enough. We hast fought against evil dragons for a long time, but we were always in danger. Thanks to thee, we hast finally defeated all thy evil."
+
+### SD2:917
+"Now we shall pray for the peace and harmony of thy world. Would you pass me the Daggers of Shine?"
+
+### SD2:918
+"Sure." You passed the Bishop the Daggers of Shine. The Bishop started to pray. The Druids followed him.
+
+### SD2:919
+As the Bishop and Druids pray, the daggers radiated very strong light towards the Unicorn.
+
+### SD2:920
+The next moment, the light hit the Unicorn with its power. Everyone in this church lost their consciousness for a while...
+
+### SD2:921
+You woke up. Daggers had gone. Instead, the Unicorn is shining.
+
+### SD2:922
+"Well done, adventurers." The Unicorn talked to you. "Now thy world recovered its peace and light. Thank thee so much. Daggers hast come back to where thy God of Light lives."
+
+### SD2:923
+"Oh, I shall give you a reward. First, I give you a shield. This is the treasure of this church."
+
+### SD2:924
+"Also, I hereby give you a part of my magical power. Please accept it."
+
+### SD2:925
+Followingly, the Bishop and Druids regained their consciousness. The Unicorn didn't talk anymore. The Bishop noticed that Daggers of Shine had already gone, but he knew those daggers had come back to where they are supposed to be.
+
+### SD2:926
+Your long journey is the end here. It was not easy at all, but you have made it... Thank you for saving the Realmz. Thank you for playing and registering Dagger of Shine scenario. I hope I will see you later - Ryota Yashima, the author.
+
+### SD2:927
+Finally you defeated Helgoth, but nobody looked happy. The corpse of brave Bishop was laid in the center of the battle field, as well as that of Helgoth.
+
+### SD2:928
+"Thank thee for saving us, brave adventurers. But we art very sorry we shall hold a funeral for the Bishop. Please do not disturb us. Thank thee so much."
+
+### SD2:929
+"Bishop's funeral is on going. Please do not disturb." The Druids shut the gate of the church.
+
+### SD2:930
+You saw their feelings. You also understood that you couldn't enter the church anymore...
+
+### SD2:931
+and you couldn't return the Daggers of Shine to the Unicorn Church. The world will never regain its light and peace. Your long journey was in vain.
+
+### SD2:932
+"Where art thou going? Thou shall return the Daggers of Shine to us and save thy world now." The Bishop stopped you to leave.
+
+### SD2:933
+You found a cave on the criff. It is seemed you can take a rest in this cave.
+
+### SD2:950
+As you approached to the entrance of the mansion, you heard strange laughter.
+
+### SD2:951
+The next moment, you found the fairies had gone!
+
+### SD2:952
+"Thank you so much for taking your time for gathering these fairies. I really appreciate your work. Now the world is mine for ever and ever..."
+
+### SD2:953
+"Do you want to me return these bitches to you? If you do, come up to the North Point with the crystal. I'll be waiting for you. Ha ha ha ha ha ha..." The voice disappeared.
+
+### SD2:954
+You felt you must get the crystals as soon as possible and retrieve the fairies.
+
+### SD2:955
+Tide wave shocks you!
+
+### SD2:956
+This is a cave. Inside you found an old campfire. Probably it is a safe place to rest.
+
+### SD2:957
+The North Point is ahead. It is deserted. You felt you have come to the land's end.
+
+### SD2:958
+Here is a monolith. You can't figure out what is written on it.
+
+### SD2:959
+"Welcome, adventurers. Fairies are inside the monolith. Come on in with your crystals!" Do you want to step inside the monolith?
+
+### SD2:960
+Do you want to go back to the surface?
+
+### SD2:961
+You entered a alrge room after walking down the long, long hallway. But you can't see any figures of fairies. Alicia? Amelia? Angela? Where are they...??
+
+### SD2:962
+Then, you heard strange laughter again. "Thank you again, stupid adventurers! Did you think I would keep your words? Ha ha ha ha ha ha ha ha ha... You shall die hard here, and I will take the crystals!" Followingly, Red Dragons attacked!
+
+### SD2:963
+You defeated all the Red Dragons, but you can't find who was laughing. You can't find any figure of fairies, either.
+
+### SD2:964
+As you fled from the battle, you heard that strange laughter. This time it showed the figure in front of you, but its figure disappeared soon.
+
+### SD2:965
+The next moment, you found the crystals had gone!
+
+### SD2:966
+Then, you heard that laughter again. "I am really admired with your work, adventurers. Now I have two crystals to break, in addition to three fairies. The world is mine, for ever and ever! I am the King of Kings!! Ha ha ha ha ha ha ha ha ha..."
+
+### SD2:967
+With your failure to save the fairies and crystals, the hope of the Realmz has all gone now. The Realmz will start to turn into the darkness soon. Your adventure is over with much disappointment.
+
+### SD2:968
+You entered a small room beyond the secret passage, and you found the fairies in the center of the room!
+
+### SD2:969
+Fairies were lying on the floor. Probably they had been unconcious for a while. As you approach to the fairies, they regained their consciousness and started to float in the air.
+
+### SD2:970
+Alicia: "Thank you again, brave adventurers. I really appreciate your saving us twice..." Alicia joined you.
+
+### SD2:971
+Amelia: "Thank you, adventurers. We would have liked to help you this time, but you helped us again... Sorry for that and I can never thank you enough." Amelia joined you.
+
+### SD2:972
+Angela: "Thank you, adventurers. I am really admired with your strength and courage. Now we have to go back to the church. Please take us to the church. thank you so much." Angela joined you.
+
+### SD2:973
+Congratulations!! You have retrieved the fairies!
+
+### SD2:974
+You have got two crystals and gathered three faiires. Now you have to head to the church with Alicia, Amelia, and Angela.
+
+### SD2:975
+It is so rocky here. You can see a cave ahead. The ship started to be shaken by big waves. Probably you must disembark.
+
+### SD2:1000
+You found a man is lying on the ground. He is rather wounded. What would you like to do?
+
+### SD2:1001
+Take him to temple
+
+### SD2:1002
+Leave him
+
+### SD2:1003
+You left the man there. The man was bleeding, and died at last.
+
+### SD2:1004
+You carried the man to the temple. "He is bleeding so badly. We have to heal him soon." The priest began healing him.
+
+### SD2:1005
+With the priests' generous healing, the man recovered his consciousness.
+
+### SD2:1006
+"Thank you, good people. I am Dancs, a warrior from the village of Flena."
+
+### SD2:1007
+"My village, Flena, is suffering from unceasing tide waves caused by Leviathan. Most of the village was destroyed by tide waves. Many, many people were killed..."
+
+### SD2:1008
+"I fought against Leviathan, because I am the strongest warrior in my village, but I failed. Leviathan is too strong. Who on earth can defeat it... and stop tide waves?"
+
+### SD2:1009
+"Never give up, Dancs." You encouraged him. "Thank you, good people. Still I can't find any mighty warriors who can beat the Leviathan..." Do you offer him to go with and fight against Leviathan with him?
+
+### SD2:1010
+"Really? Thank you so much... Oh, I have to show you how to get to my village. Here is the map."
+
+### SD2:1011
+"Let's go!" Dancs joined you.
+
+### SD2:1012
+"Okay, It is quite natural. Never mind. Just I have to get much stronger. Thank you for healing me." Dancs left the temple.
+
+### SD2:1013
+This tunnel seems to be the dead end here.
+
+### SD2:1014
+"This is the tunnel that leads to our village. Are you really ready?"
+
+### SD2:1015
+"Sure. Let's go... thanks a lot."
+
+### SD2:1016
+There is a small basin, but the road seems to continue farther.
+
+### SD2:1017
+This is long, long tunnel. You can't see the other entrance of the tunnel from here.
+
+### SD2:1018
+From this tunnel, you can hear the sound of... probably the tide wave.
+
+### SD2:1019
+You have entered the village of Flena with Dancs. The sound of tide wave does not stop.
+
+### SD2:1020
+Tide wave! The villagers escape.
+
+### SD2:1021
+This is Dancs' house. It is empty right now.
+
+### SD2:1022
+This is village well. Do you want to drink the water?
+
+### SD2:1023
+It was tasty, and you felt a little bit better.
+
+### SD2:1024
+This is village elder's house.
+
+### SD2:1025
+"Dancs! Are you okay?" The villagers surrounded him.
+
+### SD2:1026
+"I was almost dying when I reached the city of Lenar, but these adventurers helped me and brought me back. Those adventurers are very mighty. Probably we can succeed this time, with the help of these adventurers." Dancs told the villagers.
+
+### SD2:1027
+"Really? Fantastic! Leviathan appears on the beach and cause tide wave all the time. Please, please stop it..." The villagers told you.
+
+### SD2:1028
+You thought you must beat the monster named Leviathan for these villagers.
+
+### SD2:1029
+As the villagers told you, Leviathan appeared on the beach. It was about to cause the tide wave as usual. You must stop it.
+
+### SD2:1030
+You had done well to defeat Leviathan, but brave Dancs died during the battle. Villagers gathered and prayed towards his corpse. Soon after that, the villagers started his funeral as the hero.
+
+### SD2:1031
+Despite the hero's death, the villagers thanked you.
+
+### SD2:1032
+This is Dancs' tomb. "Our hero Dancs sleeps here."
+
+### SD2:1033
+You have done well to defeat Leviathan. Dancs was alive and thanked you. "Well... why don't you come to my home?" He took you to his home.
+
+### SD2:1034
+"We are finally saved, thanks to your courage and might. I really appreciate it. I'm afraid I don't have so many things to compensate your offerings..."
+
+### SD2:1035
+"But probably it is the best thing I can do for you. Please accept my reward." He gave you a great scimitar, and saw you out.
+
+### SD2:1036
+You hoped the villagers of Flena would rebuild the village, with this hero.
+
+### SD2:1037
+There is a shack. What do you want to do?
+
+### SD2:1038
+An old man was living inside the shack. He couldn't escape from unpredicted fire and died.
+
+### SD2:1039
+This man is burnt and dead.
+
+### SD2:1040
+You can hear nothing.
+
+### SD2:1041
+"Hey! What are you doing? Breaking into other's house unannounced? What rude men!" A man got angry, brought an axe and approached to you. What do you want to do then?
+
+### SD2:1042
+Attack him
+
+### SD2:1043
+Apologize to him
+
+### SD2:1044
+"Okay, men. Probably you are in emergency." The old man invited you inside the shack.
+
+### SD2:1045
+Inside the shack an old man was living. "Hello, adventurers. Come in." He greeted you and invited you inside the shack. Do you want to enter?
+
+### SD2:1046
+"So, you are traveling around the Realmz. Good. But you are stranger here... It's quite natural. This region is very mountainous and deserted."
+
+### SD2:1047
+"Why don't you take this map? Since I am living here for a long, long time, I don't need this anymore." The man gave you a map.
+
+### SD2:1048
+"Take care, tide wave attacks the coast in this region frequently. Me? Don't worry, this place is surrounded by mountain and quite safe." The man saw you out.
+
+### SD2:1049
+An old man attacks you!
+
+### SD2:1050
+You have killed the old man living here. Nothing is left other than his corpse.
+
+### SD2:1051
+This shack is empty.
+
+### SD2:1070
+At the end of the land, you found the entrance of the cave. Do you want to enter?
+
+### SD2:1071
+You have stepped into the cave. It is a little bit warmer than outside, yet it is so chilly.
+
+### SD2:1072
+You can see an underground lake over there. It is not frozen. Looks so mysterious.
+
+### SD2:1073
+You found LOTS of gold, gems, and jewelries on the secret shelf!
+
+### SD2:1074
+The criff behind the lakeshore is so steep. You take care of your each steps.
+
+### SD2:1075
+Suddenly, the criff started to collapse and the rocks fell onto you! Those who can't move so fast will be killed by those falling rocks for sure.
+
+### SD2:1076
+You have managed to escape from the falling rocks, but the pass is closed now.
+
+### SD2:1077
+Passage is quite narrow here. You can sense something evil and cold.
+
+### SD2:1078
+There is a large room at the end of the narrow passage. This room is filled with lots of trolls.
+
+### SD2:1079
+As those trolls notice you, they attack!
+
+### SD2:1080
+You have defeated all the trolls in this room. You can't see anything but trolls' corpse from here.
+
+### SD2:1081
+As you search around, you found a shining sword!
+
+### SD2:1082
+When you tried to pass the passage, you felt somewhat strong static discharge.
+
+### SD2:1083
+Followingly, LOTS of Will-O' Wisps appeared around you!
+
+### SD2:1084
+Wisps have disappeared after the battle. The static no longer shocks you on this passage.
+
+### SD2:1085
+You can see an underground stream here, but you have no idea from where it comes or to where it leads.
+
+### SD2:1086
+You found another small cavern. It seems to be pretty quiet.
+
+### SD2:1087
+Cave becomes narrower here.
+
+### SD2:1088
+Here seems to be the dead end.
+
+### SD2:1089
+You found a secret passage behind the criff. Do you want to take it to get the lower level?
+
+### SD2:1090
+Do you want to take the passage up to the upper level?
+
+### SD2:1091
+You have got down to the lower level via the secret passage. Everything is calm here.
+
+### SD2:1092
+You are standing on the shore of an underground spring. It is filled with still air and looks so mystic.
+
+### SD2:1093
+Suddenly, three snake-like figures appeared from the spring.
+
+### SD2:1094
+"Glad to see thee, brave adventurers. We are thy messengers of Mercury."
+
+### SD2:1095
+"Verdon is living far beyond thy stream on thy upper level. Thou will need thy Mercury's help to get through thy stream."
+
+### SD2:1096
+"...Before that, we shall test thee."
+
+### SD2:1097
+"Fools! We cannot regard thee as thy prophecy of thy world! Thou shall die here!" The Mercury cast death spell on you. You died.
+
+### SD2:1098
+"Well done, adventurers. Thou art thy true prophecy of thy world. Now I shall give thee my power. Use this stone when thou need my help." The Mercury gave you a stone.
+
+### SD2:1099
+"Go! Everyone is waiting for thee. Thou shall beat thy Verdon, or thy darkness will cover thy world for ever and ever. Go, right now!!" The Mercury disappeared.
+
+### SD2:1100
+You have raised the stone the Mercury have given to you.
+
+### SD2:1101
+The stone radiated very strong green light. Followingly, you heard a large sound over there. However, you couldn't see any visible result.
+
+### SD2:1102
+Then, you heard someone is speaking to you. "Go to thy end of thy underground stream on thy upper level. Thou will see what has happened. My help is done. Good luck." The stone has disappeared.
+
+### SD2:1103
+There is a small sandy island. Seems you can't go farther from here.
+
+### SD2:1104
+That tide wave seems to have had the sand gone. Now you can pass here.
+
+### SD2:1105
+You can see a large room here. There is a mantra at the center of the room.
+
+### SD2:1106
+This room seems to have been occupied by strange tentacled race since the ancient era. As they notice the invasion of young races, namely, you, they started their movement towards you!
+
+### SD2:1107
+You have defeated all the tentacled creatures in this room. This room is also pretty quiet after the battle.
+
+### SD2:1108
+Do you want to touch the mantra?
+
+### SD2:1109
+As you touch the mantra, you have heard very large sound behind. It sounds like big earthquake or wave, but you can't see any visible result.
+
+### SD2:1110
+You stood on the bank of the stream. Now you have found the source of that large sound. Very large tide wave is approaching to you!
+
+### SD2:1111
+After the battle, the stream regained its calmness. Now you can take the boat and go down the stream again.
+
+### SD2:1112
+You have disembarked the boat and stepped on the bank. A pair of Water Dragons were sleeping, but you woke them up. They move towards you for being disturbed.
+
+### SD2:1113
+You have defeated Water Dragons, at the end of the stream... Anyway, it is the end of the underground stream. Where on earth is Verdon living?
+
+### SD2:1114
+You can see a ladder and dim light here. Do you want to take the ladder up?
+
+### SD2:1115
+You have come back to the surface via the ladder. Here is isolated, but you can see a very tall tower. You can feel strong sense of evil. Definately this tower is where Verdon lives.
+
+### SD2:1116
+Aggressive large birds appeared around you. They move very quickly.
+
+### SD2:1117
+You have faced to a strange scene. A large troop of Verdon Armies are here, but seems to be fighting against one another.
+
+### SD2:1118
+Soon, you figured out the Captain is a traitor. He might become your ally if he survives after the battle. Do you want to join the battle?
+
+### SD2:1119
+You have faced to a strange scene. A large troop of Verdon Sorceresses are here, but seems to be fighting against one another.
+
+### SD2:1120
+Soon, you figured out one of the sorceresses is a traitor. She might become your ally if she survives after the battle. Do you want to join the battle?
+
+### SD2:1121
+You have faced to a strange scene. A large troop of Verdon Priestesses are here, but seems to be fighting against one another.
+
+### SD2:1122
+Soon, you figured out one of the priestesses is a traitor. She might become your ally if she survives after the battle. Do you want to join the battle?
+
+### SD2:1123
+Large beasts were sleeping over there. Seems you have awakened them as you stepped into this cave. They attack.
+
+### SD2:1124
+After the battle, all you can see is the corpses of those beasts. You can't find anything of interest inside this small cave.
+
+### DES:1
+Though they are not difficult to kill, take care.  Their bite is quite deadly.
+
+### DES:2
+A gaping maw of immense size makes this mindless foe one to avoid. They are good at choking your throat.
+
+### DES:3
+Long ago a wizard's experiment had gone afoul and this is the result. Its bite gives you lots of damages and poison.
+
+### DES:4
+Large, slow, stupid.  Put it all together and you have a four- footed eating machine with sharp teeth.
+
+### DES:5
+Large and heavily armored, with a bony back plate and horns.  Only a fool would back one of these things into a corner.
+
+### DES:6
+A mindless larva.  Nobody knows what this thing will turn into for no one has ever found one in a cocoon state.
+
+### DES:7
+Fencer of Dark Elf clan. He is proud of his sword skills very much.
+
+### DES:8
+Elves are adept in use of bows. He is the most skillful in archery even among elves.
+
+### DES:9
+Priest of the Dark Elf clan. He contributes to his tribe with his clerical spells.
+
+### DES:10
+In her forest most women become sorceresses or enchantresses. It seems to be her fate to devote to her forest with her magic.
+
+### DES:11
+In her forest most women become sorceresses or enchantresses. It seems to be her fate to devote to her forest with her magic.
+
+### DES:12
+King of Dark Elves. He is one of the meanest humanoids in Realmz.
+
+### DES:13
+In addition to a stout body, those kinds of Minotaurs have superior intelligence to cast low-level sorcerer spells.
+
+### DES:14
+In addition to a stout body, those kinds of Minotaurs have superior intelligence to cast low-level enchanter spells.
+
+### DES:15
+Minotaurs have a stout body that would make even an ogre quake with fright. These powerful creatures love to engage in combat.
+
+### DES:16
+Minotaurs have a stout body that would make even an ogre quake with fright. These powerful creatures love to engage in combat.
+
+### DES:18
+These short-tempered animals have ability to cast strong lightning with their anger. Ouch!
+
+### DES:19
+Frosty version of ordinary trolls. Their attacks freeze you for sure.
+
+### DES:20
+Snow Beast. Their physical strength is god-like.
+
+### DES:22
+Standing 8 feet tall or more, these large brutes love to bully those weaker than themselves. They are often employed as troops in mercenary armies.
+
+### DES:23
+Their ability to cast low level priest spells compensates for their physical weakness compared to most Ogres.
+
+### DES:24
+Though they are physically weaker than ordinary ogre, they can be so tough, for they can cast sorcerer spells and have better magic resistance.
+
+### DES:25
+They are physically weakest of all kinds of ogres. Yet, they are they most skillful in use of magics.
+
+### DES:26
+Ogres with superior physical strength and combat skills.
+
+### DES:28
+Belonging to the arachnid family, these large critters pack a paralyzing sting.
+
+### DES:29
+Despite its stamina, quick movement and hard shell make them tougher than you might think.
+
+### DES:30
+Though it looks identical to ordinary scorpions, it has one advantage - flame breath.
+
+### DES:31
+Though it looks identical to ordinary scorpions, it has one advantage - frost breath.
+
+### DES:32
+Though it looks identical to ordinary scorpions, it has two advantage - acid breath and poisonous bite.
+
+### DES:33
+Often used to guard magical treasure or some important location. Watch out for its sting, for it can turn you to stone.
+
+### DES:34
+Very big, and fierce animals.
+
+### DES:35
+Half man, half tiger. This kind of creatures take advantages of humans' intelligence and tigers' physical strength.
+
+### DES:36
+Strongest cat-kind creatures. Its bite makes this creature more fierce.
+
+### DES:37
+This kind of dragon must be feared by all, for its breath can freeze anything that stand in front of it.
+
+### DES:38
+With huge body, poisonous bite, and frost and acid breath, it threats the peace of the ocean.
+
+### DES:39
+Born of pure evil. These beautiful, deadly creatures love to inhabit murky forests.
+
+### DES:40
+One of the weaker races of dragon kind. A sly mind and a taste for blood make Green Dragons a force to be feared.
+
+### DES:41
+Strongest of the evil dragons.  Few are those that have met with one, and LIVED!
+
+### DES:43
+Fire Lizard. This mighty reptile looks nothing but an ordinary lizard. Apperance can be deceiving.
+
+### DES:44
+Snakes with extraordinary quickness and deadly poison.
+
+### DES:45
+A poisonous bite may be the least of your worries if you meet up with one of these vermin.
+
+### DES:46
+These Lesser Demons appear to live their lives as servants to those more powerful than themselves. In fact, they are using Greater Demons as their shield.
+
+### DES:47
+With their great defensive ability, these Greater Demons tend to stand in the frontline and let Lesser Demons attack the foes from behind. Their teamwork is amazing.
+
+### DES:48
+Watch out! This nasty creature inflicts flame on whatever it touches.
+
+### DES:49
+A hardy warrior trained for combat among the trees.
+
+### DES:50
+A true leader of men.  Trusted with  keeping the troops in line.
+
+### DES:51
+Leonardo, the Captain of Forest Knight troop. He is really respected.
+
+### DES:52
+Fictitious creatures magically made from eagles and lions. They love shining things.
+
+### DES:53
+Aggressive birds. It attacks not only your party members,  but also other monsters.
+
+### DES:54
+A huge animal with tusks as long as most men are tall. Stand aside! Do not block the path of a rampaging behemoth.
+
+### DES:55
+Purely evil dog. It is said its breath burns every creatures standing in front of it.
+
+### DES:56
+Large and brutish. These simple-minded humanoids survive due to their sheer size.
+
+### DES:57
+This most beguiling of devils preys on the sexual impulses of mortals.  Taking the shape of a beautiful woman, they lure unsuspecting souls to their doom.
+
+### DES:58
+Undead version of Hell Bat. Watch out for their draining experience and frost spell.
+
+### DES:59
+Though not native to the Abyss, they populate large regions of that foul area.
+
+### DES:60
+The creature's favorite form of attack is to lower its armored head and charge. Don't stand in front of it when it does.
+
+### DES:61
+Large, but stupid. These reptiles have been known to trample an adult ogre without even slowing down.
+
+### DES:62
+Neither fast nor powerful, these nasty reptiles do have one advantage - a stunning bite.
+
+### DES:63
+Undead version of dinosaur. Its charging is still cause of fear, as well as its curse.
+
+### DES:64
+Not a true dragon. Named after there ilk for it is the only beast known that can rival them in brute strength.
+
+### DES:65
+A powerful creature of the undead.  These creatures drain your experience.
+
+### DES:67
+Capable of regenerating, these creatures are almost indestructible.
+
+### DES:68
+A larger version of the ordinary troll.  The physical strength of these beasts is near god-like.
+
+### DES:69
+A small, but deadly variety of your every day troll. It can cast low level sorcerer spells in addition to its paralyzing claws.
+
+### DES:70
+A hideous being which feeds on the mental energy of its victims. Once the mental energy is drained, it feeds on the actual physical brain.
+
+### DES:71
+Red Slime. Capable of inflicting fire damage and casting flame breath.
+
+### DES:72
+Blue Slime. Capable of inflicting electric damage and striking lightning on the targeted foes.
+
+### DES:73
+Green Slime. Capable of inflicting chemical burn and splashing acid.
+
+### DES:74
+Though it appears to be weak, be careful. Those kinds of slimes can inflict stunning burn.
+
+### DES:75
+Those kinds of slimes must be feared, for their burn confuses their foes standing in front of them.
+
+### DES:76
+Armored by mithril coating, they have extraordinary defense ability. Their quickness and spell are really nasty.
+
+### DES:77
+Completely mindless. They are used as shock troops and as food by most other demons.
+
+### DES:78
+A humanoid raised from the dead to become one of the cursed undead.
+
+### DES:79
+A creature of the undead. Their claws and bite cause disease.
+
+### DES:80
+Resembling ghouls, these vile creatures often live among them. They are much more powerful than ghouls.
+
+### DES:81
+Filthy claws and teeth make this creature a deadly menace. Fear its bite for it can paralize.
+
+### DES:82
+In life, a formerly valiant warrior. In death, he is now a cursed pawn of evil.
+
+### DES:83
+An apparition from beyond the grave. Neither good nor evil by nature, it is still best to avoid such creatures.
+
+### DES:84
+An apparition from beyond the grave and extremely evil by nature. It's good practice to stay clear of these whispy creatures.
+
+### DES:85
+Mighty undead! Be careful for its charm, as well as flame spells.
+
+### DES:86
+Mightiest undead of its kind. It is REALLY tough!
+
+### DES:87
+Capable of casting death spell, those pure Dark Knights are really nasty.
+
+### DES:88
+Long dead prince.
+
+### DES:89
+Being able to steal souls, these creatures are the scariest of all undead monsters.
+
+### DES:90
+Priest of the Unicorn church.
+
+### DES:91
+Highest priest of the Unicorn church.
+
+### DES:92
+They are also important memvers of the Unicorn church, because of their physical combat skills.
+
+### DES:93
+Ordinary town guard of St. Sagatis.
+
+### DES:94
+Somewhat experienced town guards.
+
+### DES:95
+Leader of the town guards.
+
+### DES:96
+Excellent warriors to save holy town.
+
+### DES:97
+The leader of St. Sagatis troop.
+
+### DES:105
+One of the fairies who can revive legendary crest.
+
+### DES:106
+One of the fairies who can revive legendary crest.
+
+### DES:107
+One of the fairies who can revive legendary crest.
+
+### DES:108
+A paralyzing sting makes this large insect quite deadly.
+
+### DES:109
+Avoid the paralyzing sting of these large insects.
+
+### DES:110
+Ordinary goblin fighters.
+
+### DES:111
+A goblin skilled in the use of a bow.
+
+### DES:112
+Large and fierce warriors of above average skill.
+
+### DES:113
+Best warrior of Goblin clan. They have ascended to today's position mainly due to their physical strength.
+
+### DES:114
+Leader of Goblin clan.
+
+### DES:115
+Capable of casting clerical spells. This humanoid should be feared.
+
+### DES:116
+High priest of Goblin clan.
+
+### DES:117
+Goblins who are capable of casting sorcerer spells. They are really nasty.
+
+### DES:118
+Goblins excel in use of magic. They must be feared.
+
+### DES:119
+With a hard carapace as tough as steel plating, this crab is like a knight in armor.
+
+### DES:120
+Large glands in the pincers inject victims with a powerful chemical that bursts into flame when it comes in contact with air.
+
+### DES:121
+This crab has ability to turn anything into stone with its pincer claw.
+
+### DES:122
+Pickpocket, cutpurse, burglar, pirate. By any name, a thief is a thief.
+
+### DES:123
+Abused as a youngster. These ill- tempered men are common thugs for hire.
+
+### DES:124
+Captain of the pirates. He is really notorious.
+
+### DES:125
+High-ranked pirates. They are far superior to ordinary ones both in might and evilness.
+
+### DES:126
+A beautiful girl from the village of Easmore. Alas, she was raped by pirates, but is safe now.
+
+### DES:127
+Those fireballs are magically surrounding Xeagon. They are explosive.
+
+### DES:128
+Strong undead made from skull and fury.
+
+### DES:130
+Lich, fiend of the Earth.
+
+### DES:131
+Extremely magical creature. It sparks its gigantic magical power all the time.
+
+### DES:133
+General of Verdon's Army. He is a really mighty warrior with very evil mind.
+
+### DES:134
+Verdon, the Demon Lord.
+
+### DES:136
+Taking the shape of a dragon, it is true master of the ocean.
+
+### DES:137
+A mighty warrior living in the village of Flena. He is really adept in use of Scimitars.
+
+### DES:138
+Male villager of Flena.
+
+### DES:139
+Female villager of Flena.
+
+### DES:141
+Beautiful and purely evil. The strongest dark dragon ever existed.
+
+### DES:142
+Those kinds of dragons must be feared by all, for they can cast flame breath in addition to various flame spells.
+
+### DES:145
+Golems made from iron chunk and the Necromancer's magic.
+
+### DES:146
+Beautiful at sight, bitchy in behavior. Be careful, for appearance is quite deceiving.
+
+### DES:147
+Beautiful at sight, bitchy in behavior. Be careful, for appearance is quite deceiving.
+
+### DES:148
+Huge Poison Slime.
+
+### DES:149
+Though it looks weak, watch out for this kind of creatures. It has deadly poison.
+
+### DES:150
+Created long, long ago as punishment by the gods, this foul race is feared by even the most evil and powerful wizards that walk on the Realmz.
+
+### DES:151
+A strange race indeed. Not even the oldest of elven sages know of the oragins of this foul race. Some speculate they are not of this world.
+
+### DES:152
+Very, very large snake. Its skin is as hard as Mithril.
+
+### DES:153
+A close cousin to the red dragon.  These creatures are more common in the Abyss than on the material plane.
+
+### DES:154
+Big frost bird with extraordinary quickness and agressive mind.
+
+### DES:156
+Messengers of the Mercury.
+
+### DES:158
+ex-Verdon Captain
+
+### DES:159
+ex-Verdon Sorceress
+
+### DES:160
+ex-Verdon Priestess
+
+### DES:161
+This kind of beast can cast chilly breath, in addition to its brute strength that allows it to rival against true Dragons.
+
+### DES:189
+Loners in the world of the Abyss.  They are among the rarest of demons.  It is rumored that only a few clans of these demons still survive.
+
+### DES:190
+The name is only part of the story.  These foul-tempered creatures stink to high heaven and have a face no mother could love.
+
+### DES:192
+Souls that have been damned to roam the astral plane.  If provoked, they can exist on the material plane for short periods.
+
+### DES:193
+Often found in the company of ghouls, ghasts and other ilk of that manner.  These fiends have an endless appetite for flesh, either alive or dead.
+
+### DES:194
+They are extremely rare even on their own plane of existence.  The shadow mite is immune to projectile weapons.
+
+### DES:195
+The black sheep of the Abyss.  Half demon, half devil.  They are often shunned by full-blooded demons and devils.
+
+### DES:196
+A mutated mushman, fungoids are extremely rare..... and deadly.
+
+### DES:197
+Hailing from the frozen planes of the Abyss, these malevelent creatures are immune to cold based spells.  They also have a nasty bite.
+
+### DES:198
+These beasts are no more than slaves to the evil eys.  They serve as hands for those that have none.  They are imensly strong.
+
+### DES:199
+Weak in mind and body, these demons are lightning quick.  They are cowards in battle and will surrender or run easily.
+
+### DES:200
+Incredibly strong, these demons rule over whole races of lesser ilk.  They prefer to pummle their enemies with bare hands and magic.
+
+### DES:201
+Existing on both the material plane and the astral plane simultaneously.  They can inflict massive chemical damage.
+
+### DES:202
+Nomally happy to stand around and chew cud.  These creatures can be dangerous if they stampede.
+
+### DES:211
+These vermin carry a deadly disease.  They breed so rapidly there are always plenty to take the place of those that perish.
+
+### DES:213
+End of List
+
+### DES:214
+End of List
+
+### DES:215
+End of List

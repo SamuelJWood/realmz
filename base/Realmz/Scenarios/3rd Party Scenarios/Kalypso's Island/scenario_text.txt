@@ -1,0 +1,3201 @@
+# Realmz scenario text — Kalypso's Island
+# -----------------------------------------------
+# Edit the text between the ### header lines.
+# Do NOT modify the ### lines themselves.
+# Max lengths: SD2/DES = 255 chars, OD = 24 chars.
+# Empty entries are omitted; inject will not touch them.
+
+### SD2:0
+Do Not Use
+
+### SD2:1
+Nothing seems to happen.
+
+### SD2:2
+What do you do?
+
+### SD2:3
+Who?
+
+### SD2:4
+Left
+
+### SD2:5
+Right
+
+### SD2:6
+The beast explodes!
+
+### SD2:7
+The beast's body dissolves into a noxious gas!
+
+### SD2:8
+As death takes the large beast, its life force Ignites its surroundings.
+
+### SD2:9
+The beast splits apart into several smaller fiends.
+
+### SD2:10
+The creature explodes!
+
+### SD2:11
+Suddenly the bits of monster grow into all new fiends.
+
+### SD2:12
+The mummy's guts spew out a plague of vileness.
+
+### SD2:13
+When the ship went down it took with it any hope you might have had of a comfortable life in the courts of Bywater.  Instead, after days of floating aimlessly at sea, your small raft broke apart on the rocks of this remote island.
+
+### SD2:14
+Kalypso's Island is a new starter scenario.  My real hope with this scenario is to entertain players for hours, days, maybe even push a week or two.  Just sit back, pull up a soda, and get ready to adventure. Just don't be surprised if it's not easy.
+
+### SD2:15
+Like anything that's worth spending time doing, this scenario isn't free.
+
+### SD2:16
+http://home.rmci.net/moonspinner/kalypso.html. Thank you and enjoy playing.
+
+### SD2:17
+Skie's General Mercantile
+
+### SD2:18
+Sherinda's Magic Supply Shop.
+
+### SD2:19
+A small man, probably half elven, sits below this treehouse carving out a bow.  "Greetings to you all," he says in a half whisper.  "Don't see many folks 'round here.  You looking to buy some of my fine products?"
+
+### SD2:20
+Welcome to the town library.  Wipe your feet and be QUIET!!!!!
+
+### SD2:21
+"Pshhh!," the woman behind the desks hisses at you.  "If you folks are looking for adventure, I'm afraid you're in the wrong place.  I must insist that you behave yourselves and stay quiet in here."
+
+### SD2:22
+"Don't bother me at this moment," the woman behind the desks snaps quietly.  "Books are through that door.  Adventure is the other way."
+
+### SD2:23
+The woman glares at you.  "I'd ask if I can help you, but I see you're beyond my help."  She turns back to her books, ignoring you.
+
+### SD2:24
+The woman just looks you over once and hisses, "Shhhh."
+
+### SD2:25
+"What do you... adventurers... want in this respectable place?"  Whithout waiting for a response, the woman turns her back on you and ignores you.
+
+### SD2:26
+The woman averts her gaze so that she may ignore you.
+
+### SD2:27
+The woman stares at you for a moment then goes back to her work ignoring you.
+
+### SD2:28
+The woman behind the desk smiles at you for a second, then she looks you over and the smile vannishes.  "Your kind are not welcome here... but feel free to look around.  There's an elegant picture book section in the back."
+
+### SD2:29
+"If you cause even a little problem," the woman begins without any eye contact, "I shall be glad to call the town gaurds and have you executed for vanadilism."  She turns back to her work.
+
+### SD2:30
+The woman simply ignores you.
+
+### SD2:31
+The small plaque at the base of this odd statue reads, "King Rapheal IX."
+
+### SD2:32
+The base of the statue appears to be solid marble, but you can't help but notice a small fissure running in a box like shape on one side.  Would you like to investigate?
+
+### SD2:33
+While no one else is looking you press on the small, box-like shape and a tiny drawer pops out of the base.  Inside is a necklace.
+
+### SD2:34
+The plaque on the base of this statue has been scratched blank.
+
+### SD2:35
+The woman appears absorbed in her research.  She is muttering to her self over and over again, "Krestomancy."  The word sends a shiver down your spine.
+
+### SD2:36
+The sign reads simply, "Inn."  The smell of good food and sweet wine seems to hang in the air.  Do you wish to enter?
+
+### SD2:37
+The small man smiles at you as you draw close.  "They say King Raphael hid a great treasure in here... good luck in finding it though."
+
+### SD2:38
+You come upon several large tomes which contain many maps.  Do you wish to copy them down?
+
+### SD2:39
+A large, old book rests on top of this shelf.  After dusting it off you discover it to be an ancient tome of spells.  Do you wish to copy some onto parchment?
+
+### SD2:40
+Which spells do you copy?
+
+### SD2:41
+The book explodes from the drain on its power!
+
+### SD2:42
+The old mage covers the book he is looking at as you approach.  He appears intent on not letting you see it.
+
+### SD2:43
+Suddenly the old mage jumps up and looks at you with an excited smile.  "I've found it at last!" he shouts.  An echo of "Shhhh!" fills the room and he quiets down.  "I must move quickly.  Would you people like to earn
+
+### SD2:44
+"a thousand gold for a few days work?"
+
+### SD2:45
+"Great," he says, supressing his joy.  "We must head south to the dragon caves."  He sees the look of fear that momentarily escapes your control.  "The dragon caves are not a problem for you, are they?"
+
+### SD2:46
+"Oh, well... I guess I'll go find someone a little heartier than you look.  Good day!"  With that he is gone.
+
+### SD2:47
+"Hah! I thought you looked like the brave sort.  We must enter the southern most cavern and follow this map to the point I've marked with an X."  He glances around at the other people.  "And, um, keep it quiet."
+
+### SD2:48
+The old monk ignores you.
+
+### SD2:49
+Ahh, the rare Dragon's Bane.  No wonder these foul beasts have not been attacking the local towns.  Someone powerful must have transplanted these here to trap the beasts. It should be safe from dragons if these are near.
+
+### SD2:50
+The gentle woman at the door greets warmly, "Welcome to the Inn.  There is plenty of food and wine for all at the table, and places to rest safely."
+
+### SD2:51
+A young girl comes up to you and rythmically rattles off, "Wine for a gold, Mead for two, Stew for three, and four buys Honey Brew."  She looks at you expectantly.
+
+### SD2:52
+She comes back in moments with the wine.  It tastes sweet and light.
+
+### SD2:53
+She returns with tankards of mead and sets them down.  "You folks drink it slowly now," she says with a wink.
+
+### SD2:54
+The bowls of steaming stew are brought out immediately.  As you eat you feel health returning to you.
+
+### SD2:55
+The tall flutes of Honey Brew are brought out and set before you.  The girl stays for a moment then dashes back to the kitchen.  As you drink, the warmth of the drink seems to fold around you.
+
+### SD2:56
+The small man behind the desk looks up at you inquisitively.  "Ah, you must be here looking after the reward?"
+
+### SD2:57
+"No?" he says looking a little dowsed.  "No matter.  Please leave my office.  I have much work to be done."  He turns to a stack of papers and ignores you.
+
+### SD2:58
+"Fabulous!  Now, let me see."  He rummages through the papers on his desk until he comes up with a rather crude drawing of a man or possibly half orc.  "Henchert is one of the seediest villians in the region.
+
+### SD2:59
+"So watch out for him and his henchmen.  He roughed up my two daughters out there and then killed two of my customers when they tried to force him to stop.  My daughters can take it, but the murders are bad for business.
+
+### SD2:60
+"So, ten gems for his head... only his head.  Sound fair?"
+
+### SD2:61
+"Then we're agreed."  He hands you the drawing and adds, "You can probably find him in the Thieve's Forrest, or else down by the water front.  Bring his head back and I'll settle up with you."
+
+### SD2:62
+The Innkeeper looks up at you and asks, "Have you brought me Henchert's head?"
+
+### SD2:63
+"Ahhhh!"  He takes the head from you and places it on a stack of papers.  "Now then, your reward... ten gems I believe it was.  Thank you for the service."
+
+### SD2:64
+"Now look, you don't get paid a single stone until I have his head.  Is that clear?  Good."  He waves his hand dismissively.  "Just leave."
+
+### SD2:65
+The large, well maintained building appears deserted at first.  A few birds begin chirping and then, all at once, you are surrounded by a horde of vile men, women, and other mixed humanoids.
+
+### SD2:66
+The group parts and a single man walks through.  "My name is Henchert the Vile, and you have invaded my home."  He begins a slow circling of you, examining each of you carefully.
+
+### SD2:67
+"Kill them," he states coldly.  His band attacks immediately.
+
+### SD2:68
+You quickly identify Henchert from among the dead and remove his head.  As you do so, the thieves in the forrest flee.
+
+### SD2:69
+Die
+
+### SD2:70
+"An excellent choice... now, let's see," Henchert begins circling you again.  "We must have an initiation.  What shall the challenge be?"  He pauses and looks about his hoard as they snicker and snear at you.
+
+### SD2:71
+"I have it!" he says with a snap of his fingers.  "In the temple is a statue.  In the hand of the statue is a very small, almost worthless gem.  Bring it to me."  He turns to walk away then stops.  "Oh and if you're not back in... 30 days
+
+### SD2:72
+"I will send a squad of assasins out to find you and gut you.  I don't suggest you dally along the way."
+
+### SD2:73
+A group of small assasins surround you and attack.
+
+### SD2:74
+The kindly looking statue looks down on you in benevolence.  A voice from nowhere proclaims, "Offer of thy bounty and I shall bless thee!"
+
+### SD2:75
+The tiny gem rests in the statue's hand.  The lifeless statue seems to grow as you stand before it and a sense of dread fills you.  "Renounce thy quest!"  Do you renounce the quest the thieve's sent you on?
+
+### SD2:76
+You shrug off the feeling and the words and take the gem from the statue's hand.  The statue immediately shrinks back to its real appearance.
+
+### SD2:77
+"I renounce my quest!" you find yourselves saying.  Almost immediately the statue seems to grow flesh and an extremely comely man stands before you.  "It is a hard thing you have done... and it may yet lead to your death.
+
+### SD2:78
+"But for this I will bless you.  Though thy enemy may smite thee, if you live I bless you with a swift recovery."
+
+### SD2:79
+A voice from the fire around you asks, "I am the last in life, the first in eternity.  I am what enters and leaves the eye, and night will never have me.  What is my name?"
+
+### SD2:80
+"Pass on child."
+
+### SD2:81
+The fire errupts with laughter.  "Ye fools may never enter.  Begone!"  Sparks flie from the fire and burn you, driving you back.
+
+### SD2:82
+A voice speaks from the fire, "Although I am never seen by my presence, my absence defines me.  In me all are blind, without me none may see. In my arms the baby sleeps and the dragon lies in wait.  Who am I?"
+
+### SD2:83
+Yet another voice speaks, "I happen once in every minute, twice in every moment, but never in a thousand years.  Who am I?"
+
+### SD2:84
+A low voice rumbles from the flames, "Every child enters crying as I step in and he starts dying.  Only the gods reject my hand and only the old can understand.  Who am I?"
+
+### SD2:85
+Another, whining voice asks, "I have five faces which speak one name, a twin that will never be the same but together we laud a hero's fame.  What am I?"
+
+### SD2:86
+Henchert looks a bit surprised by your answer.  "You have spirit, I'll give you that.  Go on, get out of here.  My war is not with you.  But remember, Henchert treated you honorably."
+
+### SD2:87
+"What are you doing back here?" Henchert snaps.  Several of his allies step in and herd you away.
+
+### SD2:88
+Henchert comes up to you and smiles.  "I see by your expression that you have brought it.  You may throw it away now and feel free to go your way.  You have done the one thing none of my allies could, and now we may win our war with the King."
+
+### SD2:89
+He turns from you and to his company.  "Now, with the blessings of the gods taken from the King and his people, we will claim the throne and the Kingdom!"  A shout of hurrays rise and the whole company moves off toward the city.
+
+### SD2:90
+A small boy hails you from the porch, "Good people, if you're looking to enter the library, I' certain you are looking to buy some parchment, no?  Look no farther."
+
+### SD2:91
+A monolithic man stands still as a mountain pointing towards the west.  Even the driving wind from the ocean does not move him although everything about him seems to be alive.
+
+### SD2:92
+A haunting voice drifts to you like the wind saying, "Seek time... in time all things will be prepared."  The voice drifts away like a light dust upon the wind.  A heart beat longer and the man disappears.
+
+### SD2:93
+A great house seems to bustle with rich merchants coming and going.  As you approach the door, however, the door moves.  A man inside the window you now stand in front of grins at you.  "This place is for merchants only.  Adventuring scum
+
+### SD2:94
+"like you are not welcome... good day."  All windows and doors quickly vanish.
+
+### SD2:95
+The only treasure you can find is an old, musty sack that looks to have seen better days.
+
+### SD2:96
+The great dragon in this cavern seems too emense to comprehend.  Your blood runs cold as a corpse as you look on your almost certain destruction.
+
+### SD2:97
+The beast's corpse fades away as it's spirit flees to another plane to heal.  Someday you may see this fiend again.
+
+### SD2:98
+This cavern is fairly shallow and new looking.  It would appear that a dragon has been digging a new home.  As you blink back the spots from the light outside the cave, two spots remain... and blink at you.
+
+### SD2:99
+"Why do you disturb me?" the low voice rumbles.  "Dragons have not hunted your kind for nearly nine hundred years.  I myself am now an outcast for having respected this doctrine of peace... maybe the others are right."
+
+### SD2:100
+Your eyes adjust a little and you can see that you stand before a truely ancient dragon.  Its scales appear weathered and cracked, and it is missing one of its large fangs.  But its eyes are still bright and full of magic.
+
+### SD2:101
+"You look at me like one sizing an enemy up... perhaps a thousand years will not breed the lust to kill us from your kind."  The ancient one exposes his nearly scaleless chest to you.  "Go on.  Do you wish to kill me?"
+
+### SD2:102
+With a swift motion you rid the world of yet one more dragon.  Unsure of what trick the ancient one was hoping to pull, you are certain that this foul beast will no longer terrorize the lands around here.
+
+### SD2:103
+The dragon waits patiently for you to strike, but when you don't he eyes you a little more keenly.  "Maybe," he begins, "there is a little to hope for.  The young of my people lust only after the death of your kind.  But I have a friend among your kind.
+
+### SD2:104
+"The Lady Lianna saved me years ago from the upstart Prince of that city called Caspia, and I have taken a liking to her.  She loved him also, however, and I fear for her."  Time frowns deeply.  "Now I pray she has discovered his true heart.
+
+### SD2:105
+"He has made a pact with Bathur, one of the most evil of my kind.  I suspect that there is more to it that that... but I am no seer.  Bathur seeks to destroy all of the man-kin races like yourselves.
+
+### SD2:106
+The spiral stair case comes to an end and you enter a vast cavern.  The cave seems to be filled with beautiful and exotic smells and sounds.  Far ahead, towards the west, a faint glowing can be seen.
+
+### SD2:107
+A single knight steps out of the darkness and challenges you asking, "Who has sent you to this place?"
+
+### SD2:108
+"Scum!" the knight shouts.  His voice calls others to his side.
+
+### SD2:109
+"Time?" he questions for a second and then a look of recognition comes over his face.  "Ah, Our Lady said that Time was on our side.  I didn't know exactly what she meant by that... I guess you understand it a little better than me."  The knight
+
+### SD2:110
+You see a small necklace gleaming beneath the surface of the water.  Reaching down you find that it is a great holy symbol.
+
+### SD2:111
+A single guard stands watch outside of the door.  Seeing you he bows low and  opens the door.
+
+### SD2:112
+"We have seen this for some time... and anticipated peace hopefully.  The council will grant one last hope for peace... and only one.  We hear a new king rules among your people, a young, unmarried king.  My youngest daughter shall travel with you
+
+### SD2:113
+"And you will present her before this young king.  If he will marry her, there will be peace between our people.  If not... well, we shall hope."  The dragon spreads his massive, hideous claws and it immediately strikes you that no man
+
+### SD2:114
+not even a King, would marry a dragon.  The leader of the dragons grins as though he can read your mind and for an instant you seem to see that peace is not his plan.  Still, he must make a show of it for some reason.
+
+### SD2:115
+A smaller, green dragon slithers out from one of the back caverns and eyes you.  "Daughter, these beings will take you to meet their king.  If he will marry you, be his bride.  If not... consider our peoples at war."
+
+### SD2:116
+"Go now, and let us hope for peace."
+
+### SD2:117
+Taking on the whole council of great dragons is either the sure way to die... or make a mark in the history books.
+
+### SD2:118
+Now that wasn't so bad was it?
+
+### SD2:119
+The castle steward comes rushing up to you shouting, "Not permitted!!!  You cannot come in here with that... that... dragon!"  You quickly try and explain, but several gaurds rush in to see that you are thrust out.
+
+### SD2:120
+Just as the urge to pull a sword and slice the steward's head off is just about overwhelming, a new man, a youth wearing a crown, enters the hall.  "What's the trouble, Bootlik?"  The steward tries to say everything at once and ends up just stammering.
+
+### SD2:121
+"Silence," the King commands.  He looks you over carefully then the dragon, Lianna.  "I've never..." he begins to say in an almost hushed voice.  "I've never seen a dragon before.  Do you have a name?"
+
+### SD2:122
+Lianna almost smiles as she nods, almost a bow to him.  "Lianna, sire.  And do they give your kind names too?"  The king flushes as he realizes she is teasing him.  "I am Prin... I mean King Eric."  The King looks at you, then at the steward
+
+### SD2:123
+and the gaurds and snaps his fingers.  "Steward, get these soldiers something to eat, and offer these people whatever they want from our stores.  Lianna," he says, turning to the dragon, "will you be my guest in the gardens? I would love
+
+### SD2:124
+"to learn all about you... and your people, of course."
+
+### SD2:125
+The steward begins again to rush in several directions at once as the young King and the Dragon dissappear down the hall towards the King's private gardens.  At last the steward points down the hall and says to you, "The stores are down that way."
+
+### SD2:126
+A very official looking man comes up as you enter the hall.  "You're not permitted in here unless the King has requested your presence.  Depart now."  As if to emphasize his words, a whole array of gaurds snap to attention along the walls behind him.
+
+### SD2:127
+Do you leave?
+
+### SD2:128
+The steward takes only a half of a step backwards when suddenly the walls on either side of you slam together.  You do not have need of weight loss diets any longer.  You're dead.
+
+### SD2:129
+"Sorry," the gaurd says.  "You're not permitted in here."
+
+### SD2:130
+"You may have whatever you like, but I must charge my commission fee to keep the King's stores running and my family fed."
+
+### SD2:131
+"You must stop them!" the steward almost shouts at you as you exit the shop.  "The King and that thing you brought here have called for the head of the temple to marry them.  This is horrid!!!"  He whisks you along the hall to
+
+### SD2:132
+the King's audience chamber.
+
+### SD2:133
+The King smiles at you and waves the Steward away.  "You fine people have done too much for me, and I don't even know you.  I shall ever honor you for bringing me a bride who is more than my equal."
+
+### SD2:134
+Lianna speaks next.  "We have spoken at length and it is agreed.  Before I met you good people I would have gladly killed any human I met.  But the time I spent with you and now, meeting Eric... I am convinced my father was wrong to hate
+
+### SD2:135
+all people.  And I will marry to unite our peoples even if it is not his real wish."  She bows her head slightly before you.  "Where is that priest?" demands the King of the Steward.
+
+### SD2:136
+"He... he says he will not perform the ceramony... your Highness."  The steward looks as though he will shrink into nothingness at having said this to the King.  "He has forbidden any of the priests from acting towards this end."
+
+### SD2:137
+The King looks as though he were about to explode, but then his eyes fall on you again.  "By any chance is one of you a holy person?"
+
+### SD2:138
+"Too bad."  Lianna looks at you and then smiles at the King.  "Among my people," she begins, "one who is proven worthy in battle is considered a Holy Hero.  They may perform bindings and marriages."  At this the King grins.
+
+### SD2:139
+"In that case, having heard of your acts of valor in battle, I hereby name you a Holy Hero, and request that one of you perform the ceremony.
+
+### SD2:140
+"Who will perform the ceremony for us?"
+
+### SD2:141
+In a matter of minutes things are arranged for the marriage and you begin the exchange of vows.  As you complete the vows, the two kiss, and before your eyes Lianna changes into a beautiful maiden.
+
+### SD2:142
+The King looks startled for a moment, but then is consumed with the kissing.  After several moments where you're not sure if you should avert your eyes or not, the two turn back to you.  "You have averted a terrible war,
+
+### SD2:143
+"and brought us together," Lianna states.  "I wish I had a great treasure to give you."  The King grins.  "You're the Queen now, Lianna.  All that I have is yours to give these people."  Lianna whispers into her new husband's ear and the two smile.
+
+### SD2:144
+"Friends, no reward could be enough, but I know you seek adventure.  It is a hard life as you have shown me, and maybe these few tools will help you on your way. Farewell, Holy Heros."
+
+### SD2:145
+An old woman sits on the porch of this house surrounded by dozens of children.  She holds a clay tablet in front of herself and draws a letter on it...
+
+### SD2:146
+"A," she says.  "A is for Adventure, there's plenty 'round here, but far to the south must adventurers fear."
+
+### SD2:147
+"B is for Bones... bones all around in the cave of the dead where the great Lich is found."
+
+### SD2:148
+"C... is for Cathoons, a dexterous race.  Their skill is quite lovely, but not so their face."
+
+### SD2:149
+"D is for dragons in the caves to the south.  If you wander down that way you'll end up in one's mouth."
+
+### SD2:150
+"E... E is for ease which life can never be.  Not for young adventurers nor old folks like me."
+
+### SD2:151
+"F is for flames that come from Mt. Orned.  Wanders who go that way usually end up dead."
+
+### SD2:152
+"T is for Thieves who live in the wood nearby.  They make the innkeeper angry when they make his patrons die."
+
+### SD2:153
+"T is for time... something no one can hold... Time is also a dragon who has grown very old."
+
+### SD2:154
+"S is for swords and shields, something every adventurer needs.  R is for running when you drop your sword.  Sorry, I can't seem to get a rhyme out of this one."
+
+### SD2:155
+"M is for might, but you already know, the King has declared the might's used for right, and not just to settle a row."
+
+### SD2:156
+She looks up at you briefly and smiles then goes back to her lessons.
+
+### SD2:157
+A group of trolls seems to have moved into this cave to snatch what they can from the town.  You look to them like easy pickings.
+
+### SD2:158
+The younger trolls seemed to hope you wouldn't pass their seniors in the mouth of the cave.
+
+### SD2:159
+As you might guess from the size of their treasure, these trolls have been raiding this area for several months.
+
+### SD2:160
+A great monolith stands here in the middle of nowhere.  On it is written these mystical words: "This world was created by Dusty L. Johnson.  Copyright© 1998, all rights reserved."
+
+### SD2:161
+Three little orc children play outside this hut, tossing a cat into the air and seeing who catches it.  When the cat begins to loose its fight, one of the children breaks the tip of its tail and tosses it up again.  Do you rescue the cat?
+
+### SD2:162
+You quickly scare the three children who rush inside the hut screaming.  The cat runs off screaming too and is soon out of sight.  A moment later a large orc woman exits the hut and looks at you sternly.  In her hands is a large club like thing
+
+### SD2:163
+covered in flour.  She bangs it roughly into her hand.  "W'o 'ere's been roughin' moy boys up now?" she demands.  She stalks towards you.  "Why doncha pick on somebody yer own soze."  The mean mother attacks!
+
+### SD2:164
+The man in the room sizes you up quickly and grins.  "Check in folks.  You lookin' for work?
+
+### SD2:165
+"Well," he says while looking over a parchment on the desk.  "Got a few little matters here...
+
+### SD2:166
+"Oh good, we've sent two teams out and neither succeeded.  The parents are getting a bit witless so do hurry.  Now, here's a map the last group made, and there are three boys and a girl.  I hope they've stayed together."
+
+### SD2:167
+"Return here when you've recovered them, and we'll take care of the reward and getting the children to their rightful homes."
+
+### SD2:168
+"I thought we sent you people out after those young ones.  Get back out there and don't show your face here until you have completed the assignment!"
+
+### SD2:169
+"Ahhhh!!!" the man at the desk exclaims.  "You have found one of the children."  You quickly relate the girl's story and your experience and the man nods his head gravely.  "It should be enough.  The reward is yours."
+
+### SD2:170
+The small shaft down has caved in.  Would you like to dig it out?
+
+### SD2:171
+What do you do?
+
+### SD2:172
+The path is cleared!
+
+### SD2:173
+An odd little dwelling lies hidden back in this corner.  It looks to be newly built and there is a small amount of light coming from it.  As you draw nearer you hear a sound behind you.  Spinning you find yourselves face to face
+
+### SD2:174
+with a young girl.  She has a makeshift bow knocked and pointed generally at you, but her hands relax without pulling the string.  "Are you... from the surface?"  Within minutes you realize that this girl has been lost and alone
+
+### SD2:175
+in the cave since the cave in.  She details how each of her friends were killed and how she managed to survive and even hunt in the darkness.  She quickly adds herself to your group and begs to head for the surface.
+
+### SD2:176
+Shantile's attack!!!
+
+### SD2:177
+You are attacked!!!
+
+### SD2:178
+You spot some fiends before they see you.  Do you wish to attack?
+
+### SD2:179
+This pair of fiends are not quite like those you've fought before.
+
+### SD2:180
+One of the groups of rescuers apparently could have used a little rescuing too.  All that is left is a bloody pile of bones that the creatures have gnawed away.  The beasts of the cavern saw no use in their equiptment.
+
+### SD2:181
+You find a small, bloody stump of a small foot.  Apparently whatever was dining on this person didn't care for foot odor.
+
+### SD2:182
+A small child's toy lies crushed in this corner of the cavern.  No signs remain of the child.
+
+### SD2:183
+Amongst the dozens of various feet prints in the clay here you can identify three small foot prints from human children.  They appear to head south.
+
+### SD2:184
+The roof overhead gives a shudder and rocks fall.  Those who do not tumble quickly out of harms way are beaten by the debris.
+
+### SD2:185
+It would appear that the ground is unstable here.
+
+### SD2:186
+A gaurd opens a small slit in the door and peeks through.  Eying you he asks, "What's the password?"
+
+### SD2:187
+He smiles and opens the door.
+
+### SD2:188
+The gaurd steps aside and lets you inside.  A lovely woman sits at the far end of the room and smiles at you warmly.  "You must be wise indeed to have entered here.  Few know my name or ever dare speak it.  If you are as wise as this," she continues,
+
+### SD2:189
+"then my little riddle should mean nothing to you.  If you fail to answer it, I'm afriad you must die.  If you can answer it... then you are worthy to treat with me.  My treasures are vast, but we shall see."
+
+### SD2:190
+"A child I see, lost and alone.  On her hand is a ring made of stone.  On her feet are shoes made of bone.  In her eyes a black star has shone.  Only one name does she condone.  What is my name?"
+
+### SD2:191
+"Awww, I did not wish to kill you," she says with a frown.  "But I can't go back on my word now, can I?"  From her fingers fly sparks which touch each of you.  "Good bye."
+
+### SD2:192
+"Oh you are wise!" she exclaims.  "Feel free to take from my treasures in return for gold and gems.  When you are done... leave, please."
+
+### SD2:193
+Several priests sit on the steps of this temple and smile at you as you approach.  Half a dozen of them come to you and offer their healing assistance.
+
+### SD2:194
+The gate is, to say the least, massive.  As you draw close to it an incredible magical force repells you and you hear a voice saying, "None may enter here until Lot awakes!"
+
+### SD2:195
+The dead arise to repell you from their homes.
+
+### SD2:196
+This tomb stone seems to be new in comparasion with the others.  It reads, "Here lies treasure, not just bones, taken from the sea and Davey Jones." Do you dig up the grave?
+
+### SD2:197
+After a few hours of digging you strike a chest.  Hauling it to the ground you find thatit is locked.  As you begin to think on opening it, the graves all give up their dead to fight you.
+
+### SD2:198
+You turn back to the chest to find that during the battle it was opened.  Inside is one small dagger.
+
+### SD2:199
+The grave has swollowed the chest back into its folds of earth.
+
+### SD2:200
+Thieves attack!
+
+### SD2:201
+You spot some thieves waiting in ambush.  Do you wish to surprise them instead?
+
+### SD2:202
+A massive figure rises from beneath the bridge and grins malevolently at you.  "Ahhhh," he slavers, "lunch!"
+
+### SD2:203
+You spot some fiends before they spot you.  Do you wish to attack?
+
+### SD2:204
+You are attacked!
+
+### SD2:205
+While searching around the ruins of this castle, you find a fine sword.
+
+### SD2:206
+You may continue on your way.
+
+### SD2:207
+[All materials needed for registration should have come with your copy of Kalypso's Island.  Please fill out the form completely and send it with an e-mail address for quickest response.  Thank you.]
+
+### SD2:208
+You may continue on your way.
+
+### SD2:209
+This gate of ornate workmanship seems very much out of place with the rest of your surroundings.  It is almost not surprising when the knocker on the gate begins to speak.  "What are dwarves made from?"
+
+### SD2:210
+"Ye are obviously not true dwarves," the gate respondes.  "Be gone!"
+
+### SD2:211
+"Enter dwarves and dwarf friends!"
+
+### SD2:212
+The dwarven outpost has fallen into disrepair over the centuries, but it seems to be a safe place to rest.
+
+### SD2:213
+It seems as though this was once a mine shaft for very skilled workers.  Although they appear to be gone, the recent cave ins appear to have dislodged a few valuables they dug for.
+
+### SD2:214
+Do you wish to dig for more gems?
+
+### SD2:215
+You find more gems!
+
+### SD2:216
+As you dig a dwarven skeleton falls out of the wall.  Its head rolls down the corridor with a clatter that seems to grow louder the further away it rolls.  Suddenly you understand.  The whole shaft is collapsing!
+
+### SD2:217
+As you scramble to run the whole shaft seems to tip and fall end over end!  The rubble collapses and sucks the air from around you.
+
+### SD2:218
+The whole world seems to be collapsing until at last it stops.
+
+### SD2:219
+The large plaque reads, "Here our people shall forever rest, all in stones... all our flesh."
+
+### SD2:220
+A very large dwarf sits on the step of this great building and smiles at you.  "I wouldn't go in there if I were you.  That last shock broke 'er foundation.  But if it's healing that you're after, I can handle that without the temple."
+
+### SD2:221
+A very young dwarf sits staring at you as you approach.  "You folks from the outside?"  As you tell what has happened to you the young dwarf smiles.  "Same thing that happened to the old ones a few centuries ago.
+
+### SD2:222
+"They decided to stay down here with all the gems and gold, but what good are they without people around?  No, I only want to get to the surface again.  Can I go with you folks?"
+
+### SD2:223
+"You're a blessing!" he almost cries.  "The only way out is through that pool of water.  You might guess why I haven't tried it on my own, being a dwarf."
+
+### SD2:224
+The cavern is filled with gems and gold lining the walls and floor.  The whole cavern is filled with more treasure than a King would ever see!
+
+### SD2:225
+Dozens of dwarves greet you kindly and mill about the cave.  None of them seems to take much interest in you.  They stare glassy eyed at the walls of the cavern.
+
+### SD2:226
+A whirl pool forms at the back of these rocks.  It does not look like a friendly place to dive in.  Do you do it anyway?
+
+### SD2:227
+You slam about on the rocks as the water forces you under.
+
+### SD2:228
+The water tries to force its way into your lungs.  Any moment you will drown.  The weight of your treasure seems to be holding you under.  Do you drop your treasure?
+
+### SD2:229
+A small sack of treasure lies just beneath the water.
+
+### SD2:230
+Life slips from you as your wealth drags you down.
+
+### SD2:231
+The camp fire seems still a little warm.  It does seem strange that there are no foot prints.
+
+### SD2:232
+A small bastion seems completely deserted until your hand rests upon the door.  Immediately you are surrounded by witches.
+
+### SD2:233
+It seems you have found their coven home.  Inside the small fortress you find a wonderous treasure!
+
+### SD2:234
+Muttering voices rise from nowhere and suddenly there are icy fingers touching you.  Just as suddenly, however, the sensations are gone.
+
+### SD2:235
+As you round the corner you catch site of a huge tail, then another.  Soon you have counted six tails that could only belong to dragons.  Do you enter anyway?
+
+### SD2:236
+A sound overhead wakes all the sleeping dragons.  Apparently they had a guard.  This is not going to be a pretty battle.
+
+### SD2:237
+A small horde of dragon treasure rests in this corner.
+
+### SD2:238
+A small statue has been erected in this alcove.  It is of a fine figured man with only one arm.  In his hand he holds a small bird.  Would someone like to touch it?
+
+### SD2:239
+The power is incredible.
+
+### SD2:240
+A small group of adventurers rest in this cave area.  When they see you they hail quietly to you.  After a brief exchange of names and food and wine, they ask you how to get out of the cave.  Do you tell them?
+
+### SD2:241
+They are deeply offended by your lack of help and attack!
+
+### SD2:242
+One of them uses a summoning device and calls in reinforcements.
+
+### SD2:243
+They thank you profusely stating that they have actually been lost in these caves for three months (by their best guess.)  They offer you a bit of their treasure for the help.  Then they leave.
+
+### SD2:244
+The shaft is filled with bats.  You had best walk quietly to avoid waking them.
+
+### SD2:245
+A small scuffing noise drives the bats into a frenzy.  They begin flying around and biting whatever they can.  Those who fail to dodge their attacks will be bitten!
+
+### SD2:246
+The water rips through this small area.  The ceiling is too low to fly or jump the water, and even a pixie would end up in the water at a point or two.  The water does not seem all that deep, however.  Do you try and pass?
+
+### SD2:247
+You manage to reach the other side.
+
+### SD2:248
+It sure was unlucky to be swept into the rocks!  It hurt too.
+
+### SD2:249
+You see light and smell fresh air from outside the cave just south of here.
+
+### SD2:250
+It is time once again to ask and say, have you registered your version of this game today?
+
+### SD2:251
+This grave is rather new.  It marks the fresh grave of the old King.  His son has taken the throne in his place though only a boy of 26.
+
+### SD2:252
+As you stop for a moment to pay your respects, a ghostly apparition rises from the earth and looks at you.  "Peace, good people.  I am King Stephan whom thou mournest.  I have returned to give you a command."
+
+### SD2:253
+He looks around the area and sees that you are alone and smiles.  "My son is alone in this land of evil.  Defend him and all that is good, and find him council and help.  The time swiftly cometh that war with the dragons wil devour my people."
+
+### SD2:254
+The King begins to fade.  "Seek in the south... there... Time...."  And he is gone.
+
+### SD2:255
+A pair of gaurds eye you as you pass through the gate.
+
+### SD2:256
+One lone gaurd grunts at you as you pass the gate.
+
+### SD2:257
+The gaurds sit near the gate playing a game of stones against the wall.  They take no heed of you.
+
+### SD2:258
+A gaurd smiles at you as you pass through the gate.  She begins to whistle a happy tune.
+
+### SD2:259
+There is no gaurd visible at this time.
+
+### SD2:260
+A rather skinny gaurd naps against the gate's arch.
+
+### SD2:261
+An old orc shaman sits outside this hut, carving merrily on a piece of wood.  As you approach he begins to whistle.  Within second over twenty arms orcs are milling casually about in the close area.  "What bring you here?" he asks.
+
+### SD2:262
+After you briefly explain your origens he nods.  "You fine."  He stops carving and looks around.  The group of warriors disperses.  "Maybe you help Orc people little.  Have some treasure for pay?"
+
+### SD2:263
+"Good," he grins with his one tooth.  "We lost holy stick.  Need it to make rains taste good.  You find, you bring."  He looks around once more then whispers.  "Keeps me from loosing them."  He winks at you.
+
+### SD2:264
+"You find it?" the old man asks.  As he sees you don't have the stick he makes a slurping noise and waves you off with a hand.  "No bother.  Just want stick, no chit chat.
+
+### SD2:265
+"Try look east."
+
+### SD2:266
+"It white with letters.  Maybe in woods."
+
+### SD2:267
+"Some wood elves wanted it.  Try forrest."
+
+### SD2:268
+"Not near graves... try south of castle mountain."
+
+### SD2:269
+"I dreamed it was near water.  Try near water."
+
+### SD2:270
+"Not too near... but not so far I think."
+
+### SD2:271
+"Ah!" The triumph in the old man's eyes is almost tangible.  His hand snaps forward and the One Staff flies to him.  Before your eyes you see the old man become young and strong.  He almost dwarfs you in his presence.  "I have long been
+
+### SD2:272
+"without her... and I and my people thank you for her return."  He raises the staff over his head and it begins to rain.  "As my word, I have treasure for you."
+
+### SD2:273
+"Good bye fair people.  May the rains wash you at your journey ending."
+
+### SD2:274
+Lodged in the branches of this tree you catch a glimpse of a polished bit of wood.  One of you climbs quickly up and retrieves it.
+
+### SD2:275
+You can see an pile of bones down this well, blocking the depths of the well like a latice of a cage.  The bucket is beneath the pile, however, and you could dislodge them with a little effort.  Do you wish to do so?
+
+### SD2:276
+After several tries the bones break free and the bucket is pulled easily up.  Almost immediately you hear a hissing sound coming from the well.  This may well be why the villiage is deserted.
+
+### SD2:277
+The villiage appears to be deserted at first, but slowly you notice orcs peering out from the huts at you.  They are uncharacteristically fearful.
+
+### SD2:278
+The rather large warrior grins at you as you approach.  "Lookin' for a strong arm?  I'm just the man yer lookin' fer.  For 500 gold and food I'll watch your back and keep watch at night.  What do ya say?"
+
+### SD2:279
+Accept
+
+### SD2:280
+Decline
+
+### SD2:281
+"You'll not regret this!"  He takes your money and picks up his gear.
+
+### SD2:282
+"You looking to hir a scout or an archer?  I come at 200 gold and worth every ounce of it."  Do you hire him?
+
+### SD2:283
+He picks up his gear and joins you.
+
+### SD2:284
+The warrior looks at you then falls drunk in his stew.
+
+### SD2:285
+A brawl begins and you are sucked into it.
+
+### SD2:286
+It looks as though a few of the patrons are trying to pick a fight with you.  Do you fight?
+
+### SD2:287
+A small chest is washed up on the sand of this tiny island.  Inside you find several fine items.
+
+### SD2:288
+An enormous woman sits perched in this tree making arrows.  As she spies you she immediately knocks an arrow and aims it directly at you.  "You have three beats of my heart to explain what you're doing here?"  Do you run?
+
+### SD2:289
+She laughs at your flustered look and bravado.  She unknocks the arrow and smiles.  "Either fools, or you have some magic against death arrows.  Either way, welcome to my home."
+
+### SD2:290
+She leaps down from the tree and it is obvious that she is a giantess.  "You look like foolish, young adventurers.  Well, if that be the case, would you consider going down that tiny hole in my orchard and fetching my gryphons for a little reward?"
+
+### SD2:291
+"Well," she says, hopping back into the tree, "I thought it was all just a show."  She knocks another arrow and says with just a hint of meanace in her voice.  "Don't bother me again when I'm working."
+
+### SD2:292
+The giantess lets fly a volly of arrows before you are even able to speak to her.  Those not dexterous enough to dodge them are stuck despite any magical wards.
+
+### SD2:293
+"Wonderful!" she booms.  "Just scurry on down that hole and find them, and when you return I'll give you a bundle of arrows."
+
+### SD2:294
+The hole drops deep into the ground.  Do you enter?
+
+### SD2:295
+It is dark and cold down here, but it will be easy enough to scramble back up the sides of the shaft you climbed down.
+
+### SD2:296
+Strange beasts appear out of the walls as if there were nothing there to stop them.
+
+### SD2:297
+Many griphons are caged in this structure.  Do you free them?
+
+### SD2:298
+The gryphons catch you in theie claws almost immediately and fly, just as dozens more of those strange beasts materialize to fight you.
+
+### SD2:299
+"Oh quit your whining and get back down in that hole!"
+
+### SD2:300
+"I see my friends have been returned to me.  I can only guess what foulness took them, but I'm sure they'll not dare raise their heads above the ground.  As for you, your reward as promised."
+
+### SD2:301
+You spot some fiends before they see you.  Do you wish to attack?
+
+### SD2:302
+Demonic creatures attack!
+
+### SD2:303
+This horrid tree is literally covered in the semi dried and shrunken heads of people of all races, including a dragon.  Runes etched into its bark warn you not to trespass the forest to the south.
+
+### SD2:304
+The twisted shape of this tree looks like evil itself.  Do you try and cut it down?
+
+### SD2:305
+Who?
+
+### SD2:306
+It's as though your cuts slice into yourself instead of the tree.  Do you wish to continue?
+
+### SD2:307
+The pain is incredible!
+
+### SD2:308
+Another whack and the tree topples as does the cutter!
+
+### SD2:309
+As the tree dies, all the evil in the forrest is sucked away.  Within seconds the wood seems beautiful and peaceful.  Suddenly a lone unicorn comes up to your group.  Dipping her horn to the dead person, there is a sudden flash.
+
+### SD2:310
+The unicorn quickly disappears.
+
+### SD2:311
+The gate stands before you locked and enchanted.  As you try to go over it it simply grows higher.  A set of ruins mark it as incredibly powerful.  What do you do?
+
+### SD2:312
+One of you takes the huge brass knocker and bangs it on the door.  A few seconds later it swings easily open.
+
+### SD2:313
+The doors of this garrison hang loosely open.  Heavy webs fill the doorway, the thinkness of a human arm, and a horrid arachnid smell seems to float out to greet you.  Do you wish to enter?
+
+### SD2:314
+The webs block your entrance.  How do you pass them?
+
+### SD2:315
+As you begin to hack through the webs, the vibrations alert the owners and they charge in for the kill!
+
+### SD2:316
+Flames quickly gut the webs and you hear crackling and popping sounds from inside.
+
+### SD2:317
+There are a few remnants of clothing hanging on this rack.  As you sort through them you note one marked heavily with runes of power.  It is probably worth taking.
+
+### SD2:318
+Apparently those who were killed by the spiders never made it to this weapon rack.  If they had, they may not have been killed.
+
+### SD2:319
+The supplies in this crate have rotted away.
+
+### SD2:320
+Examining this bed closely you find that one of the legs is a small lever.  Do you wish to throw the lever?
+
+### SD2:321
+The level moves slowly and you hear a rumbling sound in the center of the floor.  It is an escape tunnel of some sorts.  The smell of mold and dust fills the room, overwhelming the spider smell.  No matter how hard you try, the lever won't return.
+
+### SD2:322
+A small parchment on this desk gives the following orders, "Commander Hardton, Enter the garrison and lock the back door.  I will unlock it later.  S.V."
+
+### SD2:323
+Some basic supplies are piled here, but most seem aged beyond use.  There are some that look edible.
+
+### SD2:324
+Suddenly, the food you took begins to smell putrid and within seconds the whole air around you seems choked with a vile smell.  It is only as you move that you find the smell is coming from you.
+
+### SD2:325
+As swiftly as you can you drop the vile food, but its nastiness seems to have spread to everything you are wearing.  Even objects that are metal seem plague ridden. Do you drop everything?
+
+### SD2:326
+The plague is horrible.
+
+### SD2:327
+The sacks are filled with gold and gems!!!
+
+### SD2:328
+The chest is not locked.  It could be trapped, but since there are no outward signs there is no way to detect for such.  Do you open it?
+
+### SD2:329
+As the lid lifts the whole closet seems to explode!
+
+### SD2:330
+The jugs are filled with a clear liquid.  A careful inspection reveals it to be water that has gone stale in its containers.  They are utterly useless.
+
+### SD2:331
+These barrels are filled with a fine, powdery substance.  As you touch it your skin becomes invisible!  A few minutes later you return to normal.  Would you like to take some of this powder?
+
+### SD2:332
+Do you throw the lever?
+
+### SD2:333
+Most of the stuff in this room appears to be ruined by the passing of many years.
+
+### SD2:334
+There is no lock on this chest yet it appears obviously trapped.  Open it anyway?
+
+### SD2:335
+As soon as you try to safely set off the trap you discover it to be an illusion.  The illusion melts away and you see a small man cowering before you.
+
+### SD2:336
+"Oh please gentle people, do not hurt me," he stammers out.  "I have been trapped in this foul place for nearly twelve years.  My friends were all killed, and I've been hiding ever since."  He smiles up at you.  "May I accompany you on your way out?"
+
+### SD2:337
+Throw the lever?
+
+### SD2:338
+Nothing happens
+
+### SD2:339
+"Oh!" he snarls.  "Well fine, I'll just get myself out of this place.  Just don't come crying back to me because I'll not listen."  The little man sits down and stubbornly will not look at you again.
+
+### SD2:340
+"Oh wonderous day!" he shouts, then quiets himself.  "Let's go."
+
+### SD2:341
+It looks like some of these provisions have been eaten lately.  There's still a good bit left.
+
+### SD2:342
+Inside this chest lie bunches of boots.
+
+### SD2:343
+Upon entering this room a hideous beast attacks!
+
+### SD2:344
+Fire demonds leap up to drive you out of the room!
+
+### SD2:345
+The fire spits forth demonic creatures to attack you.
+
+### SD2:346
+Spears stab out from the walls.  Those not nimble enough are stabbed!
+
+### SD2:347
+The floor momentarily dissappears beneath you.  Those not flying or leviatating drop and are killed as it reappears.
+
+### SD2:348
+You can see bones jutting out of the floor in front of you as iff the floor had simply swollowed someone.  It is not a pretty site.
+
+### SD2:349
+Strange things rise out of the water to attack you.
+
+### SD2:350
+A voice from the statue states, "You have passed the test of truth... ye shall be blessed."  A magic aura falls over you.
+
+### SD2:351
+"You are hereby named friend of the Temple.  Enter as ye wish!"
+
+### SD2:352
+One of the gaurds states clearly, "You're not permitted in there."  He almost seems to be daring you to enter anyway.  Do you enter?
+
+### SD2:353
+A rather large man behind the desk in this room looks up at you and frowns.  "I'm certain the gaurds told you not to enter.  Be gone!"  The words magically take you away.
+
+### SD2:354
+You are jumped by a bunch of thieves.
+
+### SD2:355
+The well along side the castle seems to be made of small gems stones.  Looking down into its depths you see nothing but blackness.
+
+### SD2:356
+The stone cask opens as you near it.  A long, slender hand reachs out and takes hold of the side, and slowly a woman raises herself to a sitting position.  Golden lightening dances from her skin.  She turns to face you.
+
+### SD2:357
+"You people have come far to find me.  Do you wish to rest?"
+
+### SD2:358
+"I am pleased to help you."  With that her hands snap over her head and magic fills the room!  The two skeletons rise up from the ground to join her.  It appears she has eternal rest in mind for you.
+
+### SD2:359
+The cackling voice of the necromancer trails behind you, "Come back, we're not done yet!"
+
+### SD2:360
+A great evil has been destroyed today!  As you heave a sigh of releif one of your group notices the lid to the casket close, seemingly on its own.  To your chagrin you realize that you have mearly defeated a part of the necromancer.
+
+### SD2:361
+She will return!
+
+### SD2:362
+Do you wish to attempt to destroy the casket?
+
+### SD2:363
+"Then you must have come to pay homage to me, perhaps request something.  What is it you want?"
+
+### SD2:364
+"My power?" she asks curiously.  "Very well, I've not had followers before.  I shall give you power, and you shall give me... I wonder what you have?"  She eyes you intently for a moment then smiles.
+
+### SD2:365
+"You shall give me all you have for my power."  Do you agree?
+
+### SD2:366
+"You ungrateful wretches!" she bellows.  With a snap of her fingers two skeletons rise from the floor and attack with her.
+
+### SD2:367
+The necromancer drops back into her casket and closes it as your equiptment dissapears.
+
+### SD2:368
+How?
+
+### SD2:369
+Flames surround the casket but they seem to do nothing for a long time.  Finally, however, the flames change in color and the casket is consumed.  As it is, a black cloud rises from it and fills the room.
+
+### SD2:370
+Perhaps your act has saved millions of lives of future generations, but it may have cost you your own.
+
+### SD2:371
+The spell utterly destroys the casket and its evil contents.
+
+### SD2:372
+An odd little hut with a lamp shining at any hour of the day sits nestled here amongst the trees.  Looking around you can find no occupants nor anything of interest.
+
+### SD2:373
+It might be a safe place to hold up for a time.  Do you wish to go inside?
+
+### SD2:374
+The body of the man melts into the earth and for just a moment the lamp flares brighter.
+
+### SD2:375
+Beorn rushes up from the dense underbrush and greets you affectionately.
+
+### SD2:376
+Unfortunately his strength is a little more than he can control.  Brushing yourselves off, you find him smiling warmly at you.  "Friends," he greets, "welcome back to my little home.  Do you need more healing?"
+
+### SD2:377
+The massive man calls to you as you run, "Come back some time and we'll play again!"
+
+### SD2:378
+"You are not a threat, not to my wood.  I can see it now in your eyes."  The man backs off from the battle and smiles.  "Another few minutes and I might have regretted something.  But no real harm done."
+
+### SD2:379
+He settles his weapon down and grins.  "Perhaps you fine folks could use some of my healing powers anyway.  We are friends now, our blood has mixed a little with the ground.  Come back any time you wish... unless I'm out hunting."
+
+### SD2:380
+"Oh, and be a little more careful whose home to tresspass upon."
+
+### SD2:381
+As you pass, one member of the group accidentally trips a small, almost imperceptible button on the wall.  With a snap you hear stone grating against stone and everyone braces for the worst.
+
+### SD2:382
+And the wall to the east slide aside to reveal a hidden room.
+
+### SD2:383
+The small brass fountain bears the marks of the temple in town.  It must be stolen.  Water pours from its hands filling the small room with a sweet, clean smell.  Do you wish to take the fountain to return it to the temple?
+
+### SD2:384
+It takes a few minutes to disconnect the fountain.  It is very heavy, but there is a great chest to carry it inside.  Who will carry it?
+
+### SD2:385
+As you touch the pale, lifeless light which fills this small passage, you feel the weight of years upon you.
+
+### SD2:386
+As you enter the light you feel as though the weight of the whole world were pressed upon you.
+
+### SD2:387
+The light swells as you enter.  Suddenly the light takes form and attacks!
+
+### SD2:388
+The light flares and suddenly you are not where you were.
+
+### SD2:389
+The light dims as you enter, followed by a million bolts of lightening arcing through you!
+
+### SD2:390
+There is a sudden coloring of the light as you pass through.  For a moment... nothing happens.
+
+### SD2:391
+The light dims only slightly as you are attacked.
+
+### SD2:392
+A very fine treasure indeed!  Do you take it?
+
+### SD2:393
+Perhaps you were wise to overlook the treasure, for in overlooking it you notice a small keyhole in the wall to the north.
+
+### SD2:394
+The small lock opens to reveal a room filled with torture devices.
+
+### SD2:395
+The ragged clothing appears to have once been quite fine... and very expensive.  This corpse must have been a member of the royal house.  To your horror and surprise, the corpse appears to be slightly alive.  Some great magic seems to keep
+
+### SD2:396
+it right at the verge of death.  You quickly attempt to break the magic but you cannot.  Do you take the body with you?
+
+### SD2:397
+"Go away until you have completed your assignment!" the man orders.
+
+### SD2:398
+"Oh my goodness!" the clerk shouts as you carry the King's brother's body into his office.  He quickly covers his nose.  "Just set it over," he looks around and points, "over there."  He quickly exchanges the body for a chest.
+
+### SD2:399
+"Really?  I wouldn't have ... well, if you think you can handle it.  The Trolls are east and in caves on the mountain side.  All I can say is they are pests to travellers... especially when they rip your head off.  Good luck."
+
+### SD2:400
+"there's always a chance."
+
+### SD2:401
+"Ooh, he's a nasty one... be sure and bring his head back here for the reward.  No stops along the way."
+
+### SD2:402
+"The preists and priestesses will be glad to see this indeed!" He smiles.  "I hope it was not too difficult to obtain."  You begin to tell where you found it but he cuts you off.  "Here's your reward.  You made a deal... and I don't want to hear
+
+### SD2:403
+"your sob story about how hard it was."  He hands you a case of potions.
+
+### SD2:404
+As soon as you enter the main part of this cavern you realize it may have been a big mistake!  Dragons fill the cavern!
+
+### SD2:405
+The beautiful light swirls around you almost lovingly.
+
+### SD2:406
+The stone building is teaming with guards.  They nod at you and ignore you.
+
+### SD2:407
+These dragons have been ammsing quite a hoard of gold and gems!
+
+### SD2:408
+Giants sit atop great pinnacles over this gate and stare down at you.  As you reach to open the gate they hurl boulders down from high above.
+
+### SD2:409
+This rather large hut seems to be made out of tanned leather.  As you look closer you note that all of the hides have a man shaped appearance.  Before you can think to act on this knowledge, however, you notice that a hundred warriors have
+
+### SD2:410
+surrounded you.  Against such odds you know that you face your deaths.  They are all very silent as one of them, a wizen old man with rows and rows of teeth hanging from his neck, steps forward.  "You should not be here... but maybe you'll make
+
+### SD2:411
+a nice snack."  He grins at his followers.  "Tell me why you should live?"
+
+### SD2:412
+"Warriors? Then you shall be tried by war."  He nods and the whole group spreads out forming a circle.  "You fight my daughters and win, you live and go.  If not, you are dinner."
+
+### SD2:413
+"You are not warriors!  You shall die!"  The whole group converges on you in seconds, devouring you where you stand.
+
+### SD2:414
+The leader looks over the carnage you have made of his daughters and sobs great tears.  "Kill them!!!" he shouts to the group surrounding you, but no one moves.  The leader himself attacks.
+
+### SD2:415
+They look down and prepare another volley of even greater porportions.
+
+### SD2:416
+Another volley of rocks rain down on you!
+
+### SD2:417
+Your curses infuriate them and the two storm down the mountains and attack.
+
+### SD2:418
+Your spell weakens the mountain and a massive land slide rains down on you.  You have killed both giants, but maybe yourselves as well.  Those not wise enough to find proper cover are killed in the falling rocks.
+
+### SD2:419
+This looks to have been an open air temple, but there are no priests anywhere.  In fact, there is no one anywhere.
+
+### SD2:420
+The great city's hall is totally stripped clean of all things... including occupants.  There is nothing here but the echos of your own feet.
+
+### SD2:421
+As you search more, however, you note a small mark on one of the stone steps... like a very large spear was pressed into the stone with great force.
+
+### SD2:422
+A little pool of acid lies pooled on the floor of this house... under a chair.  The acid is incredibly strong.
+
+### SD2:423
+In this long, echoing hall you find traces of human blood, but someone has gone to great care to wipe away all the newer stains.  Infact, it would appear that some areas of the floor were scrubbed clean.
+
+### SD2:424
+The gates hang open and unprotected.
+
+### SD2:425
+"Then be gone little ones... you're not noble enough to be spectators.  Come back when you've grown up."  You find yourselves being ushered out.
+
+### SD2:426
+"Wonderful!"  He turns quickly and shouts into the room beyond, "Strangers to fight the beasts!  Strong looking folks... place your bets!"  He turns back to you.  "Just go on in when you're ready."
+
+### SD2:427
+The crowd applauds.
+
+### SD2:428
+A magical light fills the room and for a moment you have to blink your eyes.  When you can see again you find that the door behind you has been barred, bolted, and magically sealed.  "Head toward the center of the arena," a voice whispers behind you."
+
+### SD2:429
+At the far end of the room you can see that several fiends have appeared out of thin air to attack you.
+
+### SD2:430
+As the last of the fiends falls the doors behind you are opened and the crowd goes wild.  The man stands in the door and hands you a sack of treasure as you exit.
+
+### SD2:431
+The shop lies open and empty... whatever came upon this town, nothing has been left behind.
+
+### SD2:432
+The gaurds simply nod as you enter.
+
+### SD2:433
+The gaurds eye you cautiously as you enter the gates.
+
+### SD2:434
+Two gaurds jump out from behind the gate and shout, "Boo!"  They roll on the ground laughing madly.  They appear to be a little drunk.
+
+### SD2:435
+A lone gaurd standa at the gate and bows slightly as you enter.
+
+### SD2:436
+A gaurd sleeps peacefully by the gate as you enter.
+
+### SD2:437
+Two gaurds fight violently off to one side as you enter.
+
+### SD2:438
+The gaurds seem to ignore you.
+
+### SD2:439
+"Hey, I wouldn't go in there if I were you," the gaurd whispers to you.
+
+### SD2:440
+The gaurd simply smiles a sort of secret smile as you enter the town.
+
+### SD2:441
+You are suddenly rushed without warning by a group of town gaurds.  Nets and silence spells are placed over you before you can even breath.  Those any where near you quickly look away as the gaurds haul you away.
+
+### SD2:442
+They dump you uncerimoneously into the center of a big room and quickly rush out.
+
+### SD2:443
+A strange man whispers to you, "Best get out of here while you can.  They... like strangers here.  More sporting."  Before you can ask what he means, the man runs off.
+
+### SD2:444
+The tome explodes!
+
+### SD2:445
+You are quickly thrown out of the library!
+
+### SD2:446
+You must have more parchment (at least 20) to copy this text.
+
+### SD2:447
+At first there seems to be nothing of interest on this tiny island, but then you notice a small piece of paper in the pebbles on the beach.  It reads, "The Sea Heart is not on these rocks... if I find it, I will take it to my grave."
+
+### SD2:448
+"You have been sent to kill me, haven't you?" he asks.
+
+### SD2:449
+The carefully inlain pentagram seems to quiver and waiver in your presence,  as if some power were waiting to be invoked.
+
+### SD2:450
+As you speak the word, the lids from the three coffins rise into the air, and three handsome young men step from the coffins.  They wear no expression upon their faces, only a look of blind obedience.  You do not have the power to hold them
+
+### SD2:451
+however, and in seconds their malevolence strikes!
+
+### SD2:452
+The power will not let you pass.
+
+### SD2:453
+The coffin is empty except for a single strand of blond hair.
+
+### SD2:454
+A few clippings of finger nail are all that are left in this coffin.
+
+### SD2:455
+Just a small tooth, a human canine, lies in this coffin.
+
+### SD2:456
+After a second more inspection you note the bottom of the coffin has been scraped a bit and a false bottom is revealed.  Inside you find a case of viles.
+
+### SD2:457
+The drawers contain fine silk and lace clothing, but nothing that would be more value than a funeral shroud.
+
+### SD2:458
+One book catches you interest, being marked simply, "SPELLS."  Will someone open it?
+
+### SD2:459
+Who?
+
+### SD2:460
+As soon as the pages sepparate power fills the room and the book burns into the hands of the person holding it.
+
+### SD2:461
+The sensation stops, followed by a sudden, draining feeling.
+
+### SD2:462
+The chest is open.  Inside is a small pile of infant bones marked heavily with runes.  It would appear that the necromancer likes children.
+
+### SD2:463
+Signs around the forest marked on the trees warn that all who enter the Thieve's forrest will be hung, beheaded, drawn and quartered, poisoned, electricuted, and summarily slain unless members of the thieves' guild.
+
+### SD2:464
+There is evidence of many, many very skilled thieves in the wood.  (Hint, don't go in unless you're really sure you want to.)
+
+### SD2:465
+Dragon's Bane grows a bit weaker here in the dark of the cave, but you should be safe if you stay close to it.
+
+### SD2:466
+A very large group of gaurds stand on the wall keeping watch.  The one centered over the gate calls down to you, "Do you come in peace?"
+
+### SD2:467
+He shakes his head twice and suddenly arrows and boiling oil rain down upon you.
+
+### SD2:468
+The gaurds throw heavy, magic nets over you, making you completely helpless.  A sorcerer on the wall quicky casts a very strong silencing spell on you to keep you from casting any spells.
+
+### SD2:469
+Several gaurds come out from the gate and drag you away.  In your dazed state, it is hard to say where they take you.  However, they drop you at last and leave you to what ever fate may await you.
+
+### SD2:470
+"Enter then, and take some rest."  The gates are opened just wide enough to let you enter."
+
+### SD2:471
+A small group of off duty gaurds gather around this hut gambling.  When they see you watching they offer to let you join.  "It's pretty simple," one explains.  "Just toss a coin as close to the daggar as you can," he indicates an orante
+
+### SD2:472
+daggar and tosses a coin close to it.  "The one who lands closest wins all the other gold."  He grins at his companions.  "Want to play?"
+
+### SD2:473
+You toss in a coin.
+
+### SD2:474
+Someone else's coin comes nearer and you loose.
+
+### SD2:475
+Your coin comes closest to the daggar.  You win all the coins.
+
+### SD2:476
+A small, aged man grins at you, "Sit down you good people... sit and listen.  I was once King of a great castle south over the waters, though I don't look the part these days.  We were strong, but I boasted that I and my great sword could defeat even
+
+### SD2:477
+the powers of death.  I was vain.  The dead rose up and drove me and my loyal followers from the castle, took my sword, and destroyed the castle.  It was a sad day.  But we have rebuilt and I have learned..." He drifts off for a moment.
+
+### SD2:478
+"But unless someone goes there and recovers the sword I fear the powers in that evil place will one day use it to destroy this whole land.  I am old and will not wield it again, but someone should go in and rescue it."  The old man falls asleep.
+
+### SD2:479
+A small sign proclains this to be "Har Olds Market".
+
+### SD2:480
+A healer sits outside this house waiting to offer her skills.
+
+### SD2:481
+"Herein lies the mortal remains of P............" Someone or something has scraped the surface of this plaque beyond recognition.
+
+### SD2:482
+A deep pit has been dug here and a ladder reaches  far into the dark below.  Do you wish to go down?
+
+### SD2:483
+A ladder reaches upwards here.  Do you climb up?
+
+### SD2:484
+It appears that who ever dug this tunnel wanted a little place to hold up.  The fire pit has no warmth in it.
+
+### SD2:485
+Creatures fall on you from above!
+
+### SD2:486
+A small pile of gems lies scattered back here.
+
+### SD2:487
+One of the gravestones appears to be extremely new.  In a flash of light, there is suddenly a beautiful, hauntingly sad woman standing upon the grave.  "It is so cold... so cold," she moans.  "Dimitri?  Is that you?" she asks in your direction.
+
+### SD2:488
+"You shouldn't have buried me yet... the ground is so cold."  She takes a step towards you then stops.  "The priests could have brought me back... it wouldn't have cost all the treasure."  Her foot steps off of the fresh turned soil and
+
+### SD2:489
+she begins to dissolve.  "Dimitri... it's so cold.  Please bring me back... please... please..."
+
+### SD2:490
+The fresh earth yields up the corpse of the woman, and in minutes the spells magic restores life to her.  After a little more time and a little healing magic, she opens her eyes in surprise.  "Who are... what's happening... I... I'm Tate."
+
+### SD2:491
+She holds out her hand and shakes with you.  After quickly explaining that you have brought her back from the dead, she explains to you how she and her ex-love Dimitri robbed the tomb to the north.  They were attacked by shadowy things
+
+### SD2:492
+and in the end she had sacrificed her life so that Dimitri could escape.  He must have taken her body and buried it here.  He could have had her brought back, but at a cost of most of the treasure they found.  Dimitri chose the treasure over Tate.
+
+### SD2:493
+"If you folks would like," she finishes, "I'd like to accompany you on your adventures.  You have given me back my life, and I feel some debt to you."
+
+### SD2:494
+Oddly, though there are no windows, the rooms and halls appear to be well lit.  It appears that tomb robbers have stripped as much from this place as they could.  You can see the whole room quite clearly, but the ceilings appear to be cloaked in shadows.
+
+### SD2:495
+Entering this area you are immediately aware of a pulsing collumn of light and the fact that the ceiling, a masterfully painted fesco, is visable.
+
+### SD2:496
+The water looks safe to drink.  Would someone like to try it?
+
+### SD2:497
+Although once upon a time this pool was filled with great healing properties, the presence of so much evil has tainted it horribly.
+
+### SD2:498
+A voice fills the room as you appear.  "Choose carefully what ye seek!"
+
+### SD2:499
+As you enter the beam of light you feel your whole being ripped apart.  Suddenly you are in a new place.
+
+### SD2:500
+As your hand falls upon the door knob the skeletal remains in the room spring to life.  Each wields a brightly flaming sword.
+
+### SD2:501
+Having been destroyed, the bones turn to dust which stirs in an unfelt whilrwind.  Suddenly the dust melds together to form two glittering faces in the air.
+
+### SD2:502
+"Mark ye well that force alone cannot reach the master's throne.  Two more tests ahead await... two more ways to seal thy fate."  The heads dissappear.
+
+### SD2:503
+In the center of the room flames leap to the ceiling from a rolling stream of fire.  Eyes of flame stare out at you and a voice speaks out of the crackling.  "There is but one path through this fire... come forth and burn with me."
+
+### SD2:504
+After a moment it is suggested that you try one at a time to pass through the flames.
+
+### SD2:505
+Who shall attempt to pass over the flames?
+
+### SD2:506
+As you step foreward the flames reach out and engulf you.  Within seconds your companions are draging what's left of your corpse from the flames.
+
+### SD2:507
+The flames reach out to consume you, but nothing happens.  It's as though they were only a warm wind touching against you.
+
+### SD2:508
+You pass over the flames unharmed.
+
+### SD2:509
+Written on the surface of the casket is a riddle: "Light and dark shall mingle here, men rush towards what they all fear, visiting all from Lord to mouse, I'm all that dwells inside this house."
+
+### SD2:510
+Do you open the casket?
+
+### SD2:511
+As you lift the lid, a dark shadow oozes quickly from inside and engulfs you.  Within seconds your hearts stop.
+
+### SD2:512
+Ignoring the casket for a moment you see that the wall further back is false.  It is a secret door.
+
+### SD2:513
+"I heard you people coming long ago... you were quite noisy."  The large knight smiles warmly at you.  "I am Lot.  For the sake of honor I guard this tomb... even though the dead I gaurded has gone.
+
+### SD2:514
+He runs a hand through his hair and stands up straight.  "With your coming here and witnessing the lack of a corpse, my honor is fulfilled and I may leave.  Consider the contents of this place your just prize for freeing me.  Farewell."
+
+### SD2:515
+With that, the man touches a bracelet on his wrist and dissappears.
+
+### SD2:516
+As you pass under the arch cold fills the air making it hard to breath.  Almost immediately two vile creatures appear to stop your progress.
+
+### SD2:517
+You see in the short distance a small band of merchants is under attack.  The thieves have overpowered their guards.  Do you wish to help them?
+
+### SD2:518
+The merchants rush up to you and thank you profusely for your help.  They were apparently carrying a very expensive load of fine silks to the merchant's guild.  They offer you a fine reward for your services.
+
+### SD2:519
+A young girl comes running up to you and cries, "Oh please, please, come save my brothers.  The sea people will kill them!"  Do you go with her?
+
+### SD2:520
+It would appear that the "sea people" have cornered this girl's brothers and are planning on drowning them.  When you draw close they spin to fight you too.
+
+### SD2:521
+The young girl smiles at you and thanks you for coming to the rescue.  "I don't have much, but take this as a reward."  She hands you a fine necklace, probably worth a small fortune.
+
+### SD2:522
+A landslide here has exposed several gems which can easily be dug out, but the mountain side seems very unstable.  Do you wish to dig?
+
+### SD2:523
+You uncover a small treasure.
+
+### SD2:524
+The whole side of the mountain begins to fall upon you!
+
+### SD2:525
+The gems are buried deep beneath the landslide.  It would take a team of dwarves years to recover them.
+
+### SD2:526
+Deep in this cave you find a solitary creature who was napping... until now!
+
+### SD2:527
+It would appear the green dragon was saving a little treasure for a rainy day.
+
+### SD2:528
+At first this cave only seems to go into the mountain a very short bit, but as the snakes begin coming out of their holes it is apparent that there is more to it than that.
+
+### SD2:529
+The first thing you see as you enter this small cave is the stockpile of weapons and armor, along with several sacks of gold.  The next thing you see is  the cave's owners.
+
+### SD2:530
+A shifty looking man approaches you and looks you over quickly.  "You folk looking to make a little extra coin?"
+
+### SD2:531
+"Ah, I thought so.  Good."  He looks around carefully then back at you.  "Take this note to the cook at the Inn and he'll see that you are paid well."  Do you accept the job?
+
+### SD2:532
+The cook eyes you dubiously then takes the note.  A grin slowly spreads accross his face.  "This is good," he mutters.  He tosses a small sack to you and says, "You should leave out the back way."  He indicates a hidden door near the stove.
+
+### SD2:533
+The cook smiles at you.  "Nothing personal about all that... now you're not going to hold a grudge against me are you?  I just followed orders.  If you folk let me live and don't say a thing, I'll pay you 1000 gold.  How about it?"
+
+### SD2:534
+Take the gold.
+
+### SD2:535
+Kill him.
+
+### SD2:536
+The cook goes to a large container on one of the shelves and pulls out a sack of gold.  He quickly hands it to you and asks you to leave the kitchen before any suspicion is raised.
+
+### SD2:537
+You quickly slit the cook's throat.  As his body drops to the floor one of the serving girls walks in and immediately screams.  A pack of guards quickly falls upon you.
+
+### SD2:538
+More come in to take you
+
+### SD2:539
+There is a lull before any more guards can be summoned and you are able to escape.
+
+### SD2:540
+The guards chase you from the town shouting at you to never return to the Inn.
+
+### SD2:541
+Leaving the Inn several people spot you and share your identity with the Inn keeper.  It is likely that you will not be welcome in the Inn from this time foreward.
+
+### SD2:542
+As you approach the Inn, several people raise an alarm and a number of men at arms step out and raise crossbows to greet you.  "Move along," one of them orders.  "You're not welcome at the Inn."
+
+### SD2:543
+As you step down the ladder into the darkness below, the cook quickly snaps the door above you shut and bolts it magically.
+
+### SD2:544
+As your eyes adjust to the darkness you note the sound of mice and rats.  This area must be filled with them.  Suddenly they seem to take note of you... fresh meat.
+
+### SD2:545
+The hatch above is magically bolted.  What do you wish to do?
+
+### SD2:546
+The magical seal breaks and you are able to open the hatch.
+
+### SD2:547
+The dank and lecherous air down here affects your health badly.
+
+### SD2:548
+One of the tomes glows softly showing its magic under your spell.
+
+### SD2:549
+Who will open the tome?
+
+### SD2:550
+You are drawn into a fight for your life!
+
+### SD2:551
+As the battle ends the book closes.  A small treasure lies on the books cover.
+
+### SD2:552
+The book closes.
+
+### SD2:553
+A girl at the door says, "For 10 gold you can stay in the common room safely and rest."  Do you pay?
+
+### SD2:554
+Down at the bottom of this drain you can see a glittering object.  With just a little effort you are able to fish it out.
+
+### SD2:555
+You can smell something alive in the darkenss of this cavern.  Do you enter?
+
+### SD2:556
+As you take the sword up, the undead rise for one last battle!
+
+### SD2:557
+The bit of green slime on the floor looks as though the last owner of this hut was absorbed by something very powerful.  Either that or they threw up and some mold has grown over it.
+
+### SD2:558
+You see a small boy ahead, fending off a troll with a large stick.  The troll appears to be enjoying the game, and periodically slashes a claw out, catching the boy easily.  Do you come to the boy's rescue?
+
+### SD2:559
+The boy, heavily diseased by the troll's constant attacks, collapses to the ground.  What do you wish to do?
+
+### SD2:560
+After a moment, the boy is roused.  He is somewhat startled at first to even waken from what he though was certain death, then he begins thanking you profusely.  "I thought I would be able to prove myself at least against one troll."
+
+### SD2:561
+He looks around and smiles.  "Perhaps you good people would help me?  I must prove myself competent in battle... in some way.  I have little training, but I am willing to learn anything."  His look is very pleading.  Do you help him?
+
+### SD2:562
+As you stand by and watch, the troll finally tires of the game when the boy bashes him on the nose.  In his rage, however, the troll miscalculates his lunge for the boy.  The boy takes advantage of the mistake and brings the stick down on the troll
+
+### SD2:563
+with a bone shattering crack.  The troll writhes for a moment with a broken neck then lies still.
+
+### SD2:564
+The troll flees from the battle seeing superior numbers.
+
+### SD2:565
+As you stand by, trying in vain to help the boy, a group of twenty men at arms and one very important looking man rush forward.  At first they think you have caused the boy's injuries, but within a few tense minutes you make it clear what has happened.
+
+### SD2:566
+"Any you people had no idea that this was the King's brother?" the important looking man asks.  He quickly uses some priestly powers and the boy is roused.  "Your majesty," the man says with a low bow to the boy.
+
+### SD2:567
+The boy nods to the man and looks around.  The man helps the young boy up and without saying a thing, the men at arms escort the boy back towards Caspia.  The man turns back to you.  "I am not sure what part you have played in this, but I thank
+
+### SD2:568
+you that the boy still lives."  He slips a ring from his finger and holds it out to you.  "Wear this when you come to the castle, and we will recieve you in a proper audience with a suitable reward."  With that he hurries off after the men at arms.
+
+### SD2:569
+The boy looks crest fallen as you decline to help him.  Only a moment latter a group of twenty men at arms and a very important looking man rush towards you.  Within minutes they feel certain that you are not a threat.
+
+### SD2:570
+The boy's face lights up.  "My name is Dani," he declares, and he scoops up the stick he has been carrying.
+
+### SD2:571
+You have barely broken from the place of the troll battle when the troll returns with several of his friends.  It looks like the boy's first lesson may be a hard one.
+
+### SD2:572
+Although injured, the boy grins at you.  "We won," he says with a weak grin.  Almost immediately a large group of men at arms rushes towards you along with a rather over dressed man.  "Your majesty," the fancier man addresses the boy.
+
+### SD2:573
+"We have been searching all over for you."  The boy quickly relates the battle, rather loudly so that everyone can hear, and pronounces you each good friends of his.  It suddenly dawns on you that this is the young King's brother.
+
+### SD2:574
+"I am sorry I did not tell you," he says.  "But you have given me a chance at honor this day which I will reward."  He motions to the chancellor and the man removes a ring from his finger.  "Come to the castle and I will see that you are given
+
+### SD2:575
+a fair reward.  Thank you."  With that, the boy and his troup rush away towards Caspia.
+
+### SD2:576
+The chancellor looks at you with a small smile.  "Ah, so you have come... we sincerely hoped you would."  He snaps his fingers and three very large men step forward and snap to attention.  "See to our guests: food, wine, proper clothing...
+
+### SD2:577
+"Anything they might need.  I will inform his majesty that they have come."  The chancellor turns quickly and passes up the hall.  The three men bow deeply to you and escort you up the hall.
+
+### SD2:578
+As their leader falls, the people see that he was foolish to have triffled with the likes of you.  After a tense moment of silence, one of them comes forward and bows deeply to you.  In seconds the whole tribe is bowing and calling you "great ones."
+
+### SD2:579
+Finally one of them rises and speaks.  "We have waited long here... for one who could lead us.  Barntog fought greatly with his kin, and we thought maybe he.  But you have proven greater still."
+
+### SD2:580
+"We are now without a leader... and will die soon in this land.  Will you lead us?"  The request seems so simple, but looking at the man/woman eating savages, you're not sure that one day you'll not be dinner.  Do you offer to lead them?
+
+### SD2:581
+Upon accepting, the whole tribe surges forward.  In some strange tribute they begin to fight with one another, biting, clawing, breaking bones, until only one is left standing.  As you watch in utter amazement, the one woman goes to each of the others
+
+### SD2:582
+and, using a small, sharp piece of obsidain, slits each of their throats.  After each murder, she licks the blood from the knife.  Finally she turns to you, "I am filled with the blood of all of my people and will follow for all of them, great ones."
+
+### SD2:583
+The whole tribe laughs as you run from the battle.  "Cowards!" shouts the leader.  You flee from their camp.  Luckily no one follows.
+
+### SD2:584
+Declining their offer may have been one of the wisest things you have ever done... but the cannibals do not think so.  You can see the fear of you in their eyes, but also a sad longing... but almost immediately they depart from you and the area.
+
+### SD2:585
+"I must have this power," the leader commands.  He snaps his fingers and instantly the whole tribe rushes you, gags and ties you, strips you, and within an hour you are roasted to a paletable tenderness and served to the leader...
+
+### SD2:586
+If you haven't guessed, you're dead now.
+
+### SD2:587
+The leader smiles and thanks you for the gifts.  He snaps his fingers and his followers rush towards you, gag you, bind you, and strip everything from you.  You are then carried away from the camp.
+
+### SD2:588
+The leader looks at you with pity.  "Leave them... we do not eat of fools."  The whole of the tribe ignores you.
+
+### SD2:589
+This looks as if it would be a safe place to rest.
+
+### SD2:590
+You can see that the path you are following is very well worn.  Many feet coming and going mark a well pressed path deep into the cavern.
+
+### SD2:591
+Approaching the gate, a strong, feminie voice calls to you through an arrow slit, "Do not move or you will be killed where you stand."  From the corners of your eyes you can see that you have walked into a trap of sorts.  The walls are lined with wires
+
+### SD2:592
+which trip key stones.  Also, more than twenty arrows are pointed towards you from various slits in the massive gate.  Do you stay put or flee back up the tunnel?
+
+### SD2:593
+Stay
+
+### SD2:594
+Flee
+
+### SD2:595
+The instant you move the trap is sprung.  It seems as though the whole cavern were caving in over you and arrows fill the air from all directions.  But the pain is gone within seconds as you feel life slip away.
+
+### SD2:596
+You wake up, however, from this death.  It would seem that those who have killed you also have raised you from the dead.  Only now, you have no idea where you are.
+
+### SD2:597
+Standing still, the gates are opened for you and a group of six rather strong looking creatures... partially humanoid, part plant... come out and begin sniffing you.  In a few minutes they go back inside and a very fair looking woman steps out.
+
+### SD2:598
+When she speaks you recognise her voice as the one that greeted you to begin with.  "Welcome to Hole in the Wall," she begins.  "We cannot take enough precautions, you know.  There are many who would have our secret order destroyed.
+
+### SD2:599
+"But the sniffers find no harm in you towards us... so I take it you have either come to join with us or found us by accident?"
+
+### SD2:600
+Join
+
+### SD2:601
+Accident
+
+### SD2:602
+"It is rare... but I suppose an adventurous lot might wind up this way.  I am afraid that I must ask you to leave, however.  We have strict rules here and outsiders are not allowed."  She re-enters the gate and it is shut.
+
+### SD2:603
+She eyes you carefully.  "Yes, I can sense your interest... although I am not certain you know what I am speaking of."  She claps her hands and allows you to enter.
+
+### SD2:604
+As you step inside, a group of people step forward bearing robes of light green.  The woman you have been speaking with turns to you.  "Novices must give up all they have to join our order.  Do you still wish to join?"
+
+### SD2:605
+"It is as I suspected," she concludes.  "You are curious, but not prepared to join us.  Return if ever you feel ready to join our sect.  Goodbye."
+
+### SD2:606
+You surrender all you have, even your clothing, and the people give you the robes.
+
+### SD2:607
+"Now, you are fit to be in our presence.  Learn what you can herein, and return to the gate when you have prepared yourselves for the world above."  She smiles kindly at you.  "Peace be with you."
+
+### SD2:608
+"I see you have returned... perhaps ready for the world above.  Go forth with our blessings and your old equiptment, and especially what you have gained in our order."
+
+### SD2:609
+"Return if you eve have need... or when one day you need rest from your wanderings."
+
+### SD2:610
+It appears that many people have made this secret place their home.  The ceiling of the cave seems hung with strong vines and beautiful, white flowers.  The pollen from those flowers falls on everything in the cavern and casts a nice, warm light.
+
+### SD2:611
+As the pollen falls over you, light enters your being.
+
+### SD2:612
+Peaceful people smile at you as you come to their home.  After a few pleasant exchanges, they bid you good day.
+
+### SD2:613
+Here a large plaque rises to the full height of a human.  On it is this riddle: "Dark below me dark above and dark hands drive me on, the dark beneath brings death and life, the dark above guides me with a thousand eyes... thus, what am I?"
+
+### SD2:614
+A voice speaks from the stone, "Your intellect is great... but it could be greater."  You see an icy finger stretch forth from the stone to touch someone... who volunteers?
+
+### SD2:615
+"A swirling vortex mixes light and dark in the depths of this pool and arcane device.  Gilded on the edges is the following inscription: "To touch me is both death and life... and something neither can be."  Does anyone wish to touch the vortex?
+
+### SD2:616
+Who?
+
+### SD2:617
+A small boy lives in this hut by himself.  When he sees you, he invites you in.  "Please," he says, "I get few visitors... from the outside.  Tell me what it's like?"  For several hours you talk with the boy, telling him what news and gossip you know
+
+### SD2:618
+and he feeds you a fine meal of a meat you cannot identify.  Finally he looks at you hopefully and asks, "May I travel with you?  Please?"
+
+### SD2:619
+He seems to be completely heart broken and throws himself ontop his bed wailing.  No amount of comfort from you can make him stop, but in time he falls to sleep.
+
+### SD2:620
+The boy seems to light up when you agree.  "I'll pack my few things... oh, you will not regret this!"  In a moment he joins your party.
+
+### SD2:621
+There is a small shop set up in this house, offering freely what those of the town might need.
+
+### SD2:622
+A few more adept at the skills of this people offer you healing at this small hut.
+
+### SD2:623
+A wise old woman grins at you as you draw close.  "Come sit with me," she asks.  A moment wears thin as you sit near the woman on her porch.  She smiles at you again.  "You must learn some patience if you are to become anything in this world."
+
+### SD2:624
+Her old eyes gently stare out into the dark and suddenly, without any warning, she simply fades away.
+
+### SD2:625
+This gate seems to block any attempts to pass.  You are unable by any means to get past it.
+
+### SD2:626
+As you approach the massive gate, the young man who joined you steps up to it and presses his hand to the stones.  The gate swing inward.
+
+### SD2:627
+"This is the way to the great Seer.  They say he knows the past and future... but he's a bit mixed up about the present."  The boy grins.  "I was blessed by him when I was very young... too young to remember."
+
+### SD2:628
+The boy looks at you again and shrugs his shoulders.  "Any of you know how to sail a boat?"
+
+### SD2:629
+The well seems to shimmer before you.  Will someone drink?
+
+### SD2:630
+You feel new life surge into you!
+
+### SD2:631
+A magical force prevents you from entering these holy and sanctified buildings.
+
+### SD2:632
+As you turn to leave a solitary man appears in a whirling mist.  "Oh dear," he says almost to himself.  "Am I late?"  He holds up an hour glass, shakes the sand about inside and grins.  "Whew, I almost missed you."
+
+### SD2:633
+As you look at the man in wonder, he takes two steps backwards and looks up.  As your eyes follow his, a rather large seagull drops a huge splat of guano right where the man was standing.  "Being a seer does have a few advantages," he remarks.
+
+### SD2:634
+"Well, now, to business."  He pulls up the hem of his robe and sits... in mid air.  "You have a bit of... difficulty... in your futures.  Some bits of tiffs with dragons and such, and thieves."  He presses a thumb to his forehead and grimaces.
+
+### SD2:635
+"Or is that in your past... well, no matter.  You must find Time and know his name.  You must speak to a King who is not a King to know what you need that was his but isn't.  And you must take from a man what he cannot do without and give it to a man
+
+### SD2:636
+with more than he needs.  In a tiny grave near a giant tomb you must encounter a girl to give back what she does not have.  Oh, and you must take a boy and meet a man and ... oh, wait, that's me... and learn what he has to say.  Bless you on your way."
+
+### SD2:637
+He raises his hand and dissappears as suddenly as he appeared.  The boy smiles, "Nutty, but I think I like him."
+
+### SD2:638
+As you enter the mouth of this enormous cave, you are surprised by a sense of peace and safety that enters you.  In the back of your minds you can hear faint echos of singing... beautiful singing.  A short distance into the cavern you find a spiraling
+
+### SD2:639
+The gaurds eye you closely as you enter the palace.  A woman stands in the entry and smiles at you saying, "You're not permitted in here without an invitation.  Please leave."  Do you leave?
+
+### SD2:640
+"Oh, I see.  I will ask you once more.  Leave."  She seems a little less friendly this time but steps back a pace from you.  Do you leave?
+
+### SD2:641
+She folds her hands gently in front of her and smiles.  "That's too bad."  Suddenly the floor, ceiling, and walls become jutting spikes of some unnatural metal.  As they pierce you you have an instant to think of the pain and stupidity before you die.
+
+### SD2:642
+As you enter the woman at the entry takes note of you and smiles.  "The chancellor said we would be seeing some people matching your description soon.  I almost laughed when he described you, but I see he fell utterly short of reality."
+
+### SD2:643
+She motions with her hand and the ranks of gaurds behind her step forward.  "By order of the King, you are under arrest for the abduction of the King's brother.  Gaurds, take them!"
+
+### SD2:644
+The sudden shock of what the woman has said surprises you for half a moment, but you recover quickly as a host of gaurds rush forward to capture you.  Do you run?
+
+### SD2:645
+You run from the castle confused and uncertain why you were attacked.
+
+### SD2:646
+"So," begins the young King.  "You are the good adventurers who saved my brother."  For a moment you are too awed by the contents of the chamber to reply -- wild beasts mill about to your right, vast, gold gilt art, and a DRAGON to your left --
+
+### SD2:647
+and the King takes your silence as humility.  "I must say, taking on a hundred and six trolls seems a foolish act, but my brother lives..."  He motions to a man who brings forward a chest.  "I must reward such heroism."
+
+### SD2:648
+"And now, my friends, I would ask a favor of ones so great as yourselves.  To the far south, beyond the Western Gulf or the Great Mountain, is the city of Kresthaven.  From there, fine shipments of wine and fruits, as well as the purest gems and gold
+
+### SD2:649
+of the dwarves come.  It is also the home of my young bride, Lianna the White.  Three caravans have been sent in the last week, but not one has returned.  We have not had word from them in twice that time, and it will take us yet three more to build
+
+### SD2:650
+another boat to sail the gulf.  I am," he lowers his voice, "desperate to get news of Lianna... and her city.  I fear the work of some foe is afoot.  In those lands there are many forces which we have not gained control of... and which could destroy
+
+### SD2:651
+the good people who have settled there.  Would you go and help find out what has happened and bring me word from Lianna?"
+
+### SD2:652
+"I shall see that you are greatly rewarded for this act.  Go quickly, and return as soon as you are able."  He claps his hands and suddenly you find yourselves outside.
+
+### SD2:653
+"I understand your fear... and I will hold you to nothing.  You have my gratitude for the life of my brother, and I'll ask nothing more of you.  But if your wanderings take you to those lands, and you should find Lianna... please bring me word."
+
+### SD2:654
+The King bows slightly to you and claps his hands.  Suddenly you are standing outside.
+
+### SD2:655
+The King almost leaps with excitement as he sees you.  "Have you brought me word?"
+
+### SD2:656
+The King nods grimly as you relate the little news you have gathered from your wanderings.  After a few moments he realizes you have no news of his beloved.  "Stop.  Come back when you have news of Lianna."  He claps and you are outside.
+
+### SD2:657
+"I am afraid I have no time for idle chat.  Return if you find word of Lianna."  He claps and you are outside again.
+
+### SD2:658
+You hand the message from Lianna to the King and he reads it passionately.
+
+### SD2:659
+It looks like the seas ahead are too rough for your small vessel.  It would be foolish to contine.
+
+### SD2:660
+The fierce seas whip up around you and destroy your ship.  It would seem your fate at last to die at sea.  The driving waves and a sudden storm conspire to rip from you your equiptment.  Spells fail you and only by luck are you able to cling
+
+### SD2:661
+to a scrap of wood floating by.  You drift and are driven before a horrible storm until finally you are pounded into the beach.
+
+### SD2:662
+The ground rumbles a little beneath your feet as you enter these musty mines.  These mines are definitely not dwarven in make... most likely human miners crafted these shakey and dangerous tunnels.
+
+### SD2:663
+As you press on you feel a low rumbling begin beneath your feet.  Do you hold your ground?
+
+### SD2:664
+You rush backwards as the tunel begins to collapse around you!
+
+### SD2:665
+The tunnel collapses!
+
+### SD2:666
+The rocks nearly choke off the passage before you.  Do you wish to continue?
+
+### SD2:667
+After a few hours of laborious digging, you are able to press forward.
+
+### SD2:668
+When the miner sees you she almost weeps for joy.  "I didn't think anyone survived the dragon's attack!"  After you explain who you are, she tells of the dragon's assault on the city and the mines.
+
+### SD2:669
+"I was just coming up from down here, the last one up really, and there they were, eating my friends whole.  It was almost like they were being careful to keep every drop of blood from falling to the ground.  One or two they even carried away...
+
+### SD2:670
+"And I saw that one of them had Lady Lianna.  She was unconscious, but I think she was alive.  One of them caught my sent then and I fled back into the caves.  They pounded the mountain for hours, then I thought they settled down to wait for me to
+
+### SD2:671
+come out.  I thought you were some of their minions sent in to flush me out.  Oh, I almost forgot, my name if Ghesiku."  After this you tell Ghesiku of the cave in and ask if there is another way out.  "There is an air shaft... but little more than air
+
+### SD2:672
+can get through that way.  I have picks and such... given a month we might dig our way out.  Or we could try a blasting spell, but that might just bring the whole mountain down on us."  What do you decide?
+
+### SD2:673
+Ghesiku agrees that digging, while slow and tedious, may be the safest rout.  And so you dig... and dig... and dig... get the picture?
+
+### SD2:674
+Time seems to loose meaning for you, and soon even your rations seem to taste of dirt and mud.  Hope fades after days and days, but then, one day...
+
+### SD2:675
+You are out!  Everyone rushes out into the open air.  Suddenly the ground gives a horrid shake and the shaft you have worked on collapses behind you.
+
+### SD2:676
+Ghesiku shakes herself free of the dirt and looks at you, her new friends.  "Well, after so long together, I'm afraid I must leave you now.  I have family up north and must go to them.  You good people have work here still to do.  Good luck."
+
+### SD2:677
+You all float like air freely out the shaft and into the open air above.  Ghesiku thanks you deeply and takes her leave.  "I have family away in the north, and you have work to do here."  With that, she is gone.
+
+### SD2:678
+As you attempt to blast away with spells, the whole mountain begins to rumble.  The shaking widens the air hole and you see light above.  Behind you also see that the shaking has revealed a wall covered in precious gems.
+
+### SD2:679
+Do you head for the surface immediately or stop to gather gems?
+
+### SD2:680
+Run
+
+### SD2:681
+Gems
+
+### SD2:682
+The tunnel collapses behind you only seconds after you make the surface.  You have escaped.  Ghesika grins at you.  "I think I have some digging to do.  And you have some adventuring to do.  Good bye and good luck."
+
+### SD2:683
+You gather several handfuls of gems as the mountain collapses around you.  Of course, by the time you have gotten even one handful of gems, the escape is gone.  Moments later the gases of the mine belch out and you die.
+
+### SD2:684
+The town is utterly empty.
+
+### SD2:685
+A group of dwarves mill about the great entry gate to their mountain home.  Upon seeing you, a dwarf in heavy armor comes to you quickly.  "It is horrible!" he nearly shouts at you.  "We have been driven from our halls by those worms!"
+
+### SD2:686
+He quickly relates to you the battle for their home which ended in the death of the great dwarven King and most of the dwarven gaurd.  "I am no warrior, but our people will die on the surface.  Will you help me battle this fiend?"
+
+### SD2:687
+"I am Leets Nori, now ruler of the dwarves.  Let us go into the great hall and give this fiend who keeps my people from their homes a piece of our metal."
+
+### SD2:688
+Upon entering, Leets informs you that the great hall is to the North.
+
+### SD2:689
+A small man looks you over for a moment then warns you, "Don't go into the grave yard.  Them dead sea men don't take well to land folk like yourselves."
+
+### SD2:690
+The dragon that has taken over these dwarven halls must be powerful indeed.  Many hundreds of dwarven bodies lie scattered about and smouldering along the walls and floor.  It has torn apart the buildings and gathered anything of value
+
+### SD2:691
+to some place further into the mountain.  The foot marks it has left do indeed head north, each mark spanning twice a human's height.  "I hope that thing just has big feet," someone mutters.
+
+### SD2:692
+"Well," an enormous voice grumbles from in the dark.  "You have come too far now to turn away... come in and face your doom."  The dragon attacks!!!
+
+### SD2:693
+You flee from the dragon, leaving the dwarf behind.
+
+### SD2:694
+The dragon breaths out a green cloud of gas and fans it with his wings.  Despite your efforts to flee, you are surrounded.  The dragon suddenly breaths fire and the gas errupts around you.  You die.
+
+### SD2:695
+As the fiend falls, many dwarves rush in to aid you in your wounds.  They rush to their leader also and heal him.
+
+### SD2:696
+"You have served the dwarves well this day," Leets proclaims.  "You are forever named a dwarf friend.  Take from our armory what you may need, and may the fires of the mountains strengthen you in your quest."
+
+### SD2:697
+The dwarves hail you as a hero as you approach.  "Have you need of more from our stores?"
+
+### SD2:698
+"Of course, you are free to take what you need!"
+
+### SD2:699
+"Perhaps you need our healers," one offers.  Immediately a healer is brought to you.  The rest go on with the work of restoring their mountain home.
+
+### SD2:700
+stair case, ornately decorated and laden with runes.  Do you descend?
+
+### SD2:701
+You spiral down deeper and deeper into the mountain, and the darkness around you seems to engulf your very essence.  And yet there is no sense of dread or forboding from the dark.  It is like a warmth around you.
+
+### SD2:702
+whistles a long and low note and several more knights come out of the darkness.  "Escort these people to the presence of Our Lady.  They are friends."  The knights look at you for a moment in disbelief then obey their orders.
+
+### SD2:703
+The great gate seems to divide the dark of the caverns from a beautiful and warm light from the Lady's realm.
+
+### SD2:704
+"You're not permitted beyond this point," the guard says, trying to appear a little larger than he really is.  When you ask why, he smiles, seeing that you do not intend to challenge him.  "Oh, well, the Lady's private chambers are on the upper level.
+
+### SD2:705
+"She forbids anyone to enter there without her special request of their presence... of course, she never requests anyone up there.  I don't really know why she has me guard this place anyway.  The magic locks and blocks and... well, let's just say that
+
+### SD2:706
+"no one gets past."  As if to emphasize his own words, the guard pats a firm yet invisible wall behind him.
+
+### SD2:707
+Entering the area you see several people practicing their fighting skills.  It would appear that the Lady Lianna has her own army.  Watching for a moment you also note that those practicing are very, very skillful.
+
+### SD2:708
+There are several practice weapons here, all of fine make, but none worth stealing.
+
+### SD2:709
+A few tattered bits of armor hang here waiting to be mended.  You can see from the equiptment in the room that someone living here is skilled at both leather care and armor repair.
+
+### SD2:710
+Enting this room, a small page greets you.  "Captain T'rell mentioned that some strangers were here.  She will be back in a moment if you wish to meet her."  As if on que, a strong and impressive looking woman enters the chamber.
+
+### SD2:711
+"Hello," the captain greets you.  "I wasn't expecting to meet you."  She quickly wipes persperation from her face and you can tell she has been excersizing.  "
+
+### SD2:712
+"Greetings, fine people," a very pretty, stately, and pregnant woman says warmly.  "I have been hoping for you to come for a long time now.  I even had some of my people venture out and bring me word of your progress... but we didn't dare approach
+
+### SD2:713
+"you until there was some indication where you stand.  I am very glad that Time felt you worthy to come to us.  He  seemed a terror when I met him, but over and over again he has proven a great allie and friend.  Now I suppose you need a little
+
+### SD2:714
+"more of an explanation."  The woman takes a seat and continues.  "I am the Lady Lianna.  Perhaps you know the name... my ex-spouse, King Eric, may have even asked you to come find me.  I'm sure you conviniently found the marks of dragon attacks.
+
+### SD2:715
+"We recieved word only hours before over a hundred armed men swarmed our city.  It took a great amount of magic to conceal our flight, I can assure you."  Lianna smiles and seats are brought for you to sit as well.  "The dwarves, long time allies
+
+### SD2:716
+"of mine, fell under attack from the dragons immediately.  They refused to let me stay and help, ushering me to this secret stronghold of theirs while they fought their battle.  I hope that they are freed from that plague."
+
+### SD2:717
+For the next hour Lianna details the flight of her people, the hunting dragons, and finally coming to the dwarven stronghold.  "Here, we have been safe.  You see, this all boils down to King Eric, and our child.  Just before he became King, well,
+
+### SD2:718
+"I became pregnant.  Only then did his true nature begin to show.  He ordered a watch on me at all times.  He had close friends of mine killed in secret.
+
+### SD2:719
+"And when I asked about them he denied everything.  Finally, I went to the priests and one of them, a great seer, told me of Eric's curse: that one day his own blood would rise over him, slay him, and take his throne.  He killed his father.
+
+### SD2:720
+"His own brother has been kept weak and unfit for battle... and soon I fear Eric will slay him too.  And now I carry his child, his blood.  He is afraid of the prophecy... and has made a pact with the dragons to see that he never looses his throne."
+
+### SD2:721
+The Lady waves her hand and motions to a man in the corner.  In a moment food and wine are brought out.  "We will eat, but I must know for certain where you stand... from your own lips.  With whom do you place your trust, Eric, or myself?"
+
+### SD2:722
+King Eric
+
+### SD2:723
+Lady Lianna
+
+### SD2:724
+She bows her head.  "I had hoped, after knowing everything, you would side with me.  Perhaps the seer spoke of others when he said help would come to me." She rises and steps back from you, looking hurt and betrayed.  "Goodbye."
+
+### SD2:725
+Light swims up around you and you find yourself thrown far away.
+
+### SD2:726
+"Splendid!" she claps her hands and the food is lain out before you.  "We shall dine."  In a short meal you find yourself trusting the Lady Lianna more and more.  As the meal ends, she motions with her hand and a servant comes to her.
+
+### SD2:727
+The servant runs off and returns in a couple of minutes with a small chest.  "Please," Lianna says to you, "take these as small tokens of my appreciation."  She opens the chest and you see six fine rings.
+
+### SD2:728
+"And as Time and the Seer both made me swear, I name you gaurdians of my child, and teachers.  It is in your charge to raise this child," she says, patting her stomach, "to rule a land."  She stands.  "My time is soon.  Make yourselves at home...
+
+### SD2:729
+"Wander the lands doing good, but when the child is born, I will send for you."  She walks from the audience hall and leaves you to your own devices.  A man in white robes motions to you.  "You have been given a chamber of honor in Lady Lianna's home.
+
+### SD2:730
+"You may call on the services of anyone in this palace any time you need, and your chambers will always be kept open."  He escorts you to a chamber attached to the great hall.
+
+### SD2:731
+You have come at last to the formal close of this adventure.  As the Lady Lianna has said, wander the land in search of good that you can still do.  The are many evils to overcome.  Her castle is at your service.  But it is here that you must wait
+
+### SD2:732
+like her, for the birth of her child... the Princess Aria.  The birth of this child will herald a great era of strife, war, horror, bloodshed, and maybe, with your help, peace, chivalry, and honor.
+
+### SD2:733
+Watch for Time's Princess in the coming months at http://home.rmci.net/moonspinner /kalypso.html.  Thank you for playing Kalypso's Island.  Dusty L. Johnson
+
+### SD2:734
+Priests rush forward to attend you.  "You must make a small offering to appease the gods."
+
+### SD2:735
+You feel power swirl around you.  You hear a voice say, "You have invoked my name and power, but ye shall never control it!!!"
+
+### SD2:736
+A sack of gold appears in front of you!
+
+### SD2:737
+A massive quake rocks the ground around you!
+
+### SD2:738
+The air fills will flies and mosquitoes.  The quickly infect you with a rare and deadly disease.
+
+### SD2:739
+One of your number makes a strange gurgling noise, smiles, then explodes!
+
+### SD2:740
+A man in a red outfit slides up in a sleigh and bellows "HOHOHO!!!"  He dorps a few packages at your feet and speeds off.
+
+### SD2:741
+Power digs its way into one of the spell casters!
+
+### SD2:742
+The female characters feel a bit stronger.
+
+### SD2:743
+The power rises up, and the flesh rots from your living corpses.  In seconds you each feel the chill of living death!
+
+### SD2:744
+"Thank goodness I caught up to you," a breathless young fighter pants at you.  "Ten trolls are attacking.  My captain sent me to find help and I saw you from a ways off.  Will you come help?"
+
+### SD2:745
+"Come quick!"  It would seem that the guards have managed only to thin the numbers a little.
+
+### SD2:746
+More soldiers rush to help only to find the battle ended by you.  They congratulate you for your courage and valor.  Their captain comes forward and presses a small sack into your hands.  "Thank you for your aid, people.  Perhaps this will aid you."
+
+### SD2:747
+As you decline you see a whole additional troop of guards rush off to help in the battle.  "Oh well, I guess you're not that important anyway."  The young fighter rushes off to help win the battle.
+
+### SD2:748
+As you flee the battle you can see guards being rallied to the gate and in a matter of minutes they drive the trolls away.  You managed to delay things long enough to help, but it is doubtful that anyone will thank you for that.
+
+### SD2:749
+A beggar comes to you pleading for a coin.  Do you give one?
+
+### SD2:750
+"Thank you kind people."
+
+### SD2:751
+The beggar winks at you and suddenly you know that this beggar is the same old man that you saw as a giant figure as you appeared on this island.  He speaks in a whisper to you:
+
+### SD2:752
+"What you see here may only be the shiny tip of a dragon's claw.  Beware."
+
+### SD2:753
+"Seek the seer in the hidden east.  His knowledge is true and may yet have what you do not know."
+
+### SD2:754
+"The path through the great mountains is very hard.  Great power in arms and magic will be needed to live to see light on the other side.  Be prepared."
+
+### SD2:755
+"You need not wake the sleeping dead. "
+
+### SD2:756
+"The lost Kingdom holds great treasures still... but don't be in a hurry to face so much death."
+
+### SD2:757
+"Trust Lianna."
+
+### SD2:758
+"The dwarves of the south guard her secret... and so do I."
+
+### SD2:759
+"Never eat anything hairier than you are."
+
+### SD2:760
+"The king's son has a feeble grasp on his throne.  Prophecy ordains that one day his own blood will take the throne from him."
+
+### SD2:761
+Instantly the old beggar dissappears.
+
+### SD2:763
+The store house has been set up to double as a shop while these good people live underground.
+
+### SD2:764
+The guards nod to you respectfully.
+
+### SD2:765
+The throne room seems to get little use.
+
+### SD2:766
+The door holds a plaque which reads, "High Regent."  You hear no sound from inside.
+
+### SD2:767
+The chest stands unlocked.  After looking at the contents you can understand why.  The chest itself is worth more than all the contents.
+
+### SD2:768
+Inside the small closet you find a priest's scroll case hanging on a hook.  Do you take it?
+
+### SD2:769
+As you lift it from the hook, a man enters the room and sees you.  "Please, do not take that.  My diety should strike both you and I dead if you did."  Do you put it back?
+
+### SD2:770
+As the priest said, you all die.
+
+### SD2:771
+As you enter the circle, a peaceful feeling falls over you.  A gentle voice of a man speaks to you saying, "Offer up your worldly belongings, O worthy adventurers, and I shall bless thee."  Do you offer your items?
+
+### SD2:772
+"These blessings I give along with new, specially blessed tools which you will find helpful in the future."
+
+### SD2:773
+"You people are very loud... perhaps you should try and sit still for a while and read a good book."
+
+### SD2:774
+"There is a fine section of children's picture books on the shelves near the front door."
+
+### SD2:775
+"Keep an eye on that old man over there... I don't recognize him."
+
+### SD2:776
+"If I recall, there was a great treasure hidden in the base of the statue of King Raphael back in Caspia.  I should have liked to have brought it here."
+
+### SD2:777
+"Legend says that a dragon stole the fabled Bag of Holding.  It had the power to hold tons of equiptment and gold and gems, but never gain so much as a stone's weight."
+
+### SD2:778
+"Shrines lie far in the east where a body may buy greater magic or might.  Here we do so by study."
+
+### SD2:779
+"There are greater things by far in this world than you have yet seen.  Things that sleep.  Things that wait."
+
+### SD2:780
+"Deep in the great mountain it is said that a whole race of dwarves dissappeared long ago."
+
+### SD2:781
+The old man eyes you but chooses to ignore you.
+
+### SD2:782
+The room you enter has a very strong feel of magic about it.  You can see several small creatures and miniscule demonds trapped in cages with various spells about them, but the owner is nowhere to be seen.
+
+### SD2:783
+The chest is locked.
+
+### SD2:784
+The chest opens.
+
+### SD2:785
+There a many papers on the desk written in some strange tongue.  One is clear, however, saying, "To be born queen of Kalypso's Island and all people thereon... she shall be named Aria."
+
+### SD2:786
+A small creature in a golden cage, about the size of a humming bird, begs for you to free it.  "I have been subject to his torture for years... please take pity on me."  Do you free it?
+
+### SD2:787
+As you open the cage, the small creature hope out and immediately explodes to an enormous size.  "He has also kept me hungry for far too long!" it roars.  "I shall give you pity... your deaths shall be swift!"
+
+### SD2:788
+The creature dissapates from this sphere of existance.  Thank goodness.
+
+### SD2:789
+The creature takes a deep breath as you try to flee and regains all of its former strength.  Immediately it draws you back into battle.
+
+### SD2:790
+The owner has returned and is angry at your intrusion.  "How dare you enter here without my... oh, it's you, the chosen ones.  Well, I have no power over you.  But listen well, there will come a day when you will respect Kale the Mighty."
+
+### SD2:791
+He turns and points toward the secret door.  "If you would be so kind as to leave my chambers now."  His words are marked with a throaty hiss and you leave to avoid any further problems with Kale.
+
+### SD2:792
+Several fine cloaks hang here, but none worth taking.
+
+### SD2:793
+The chest is filled with parchment.
+
+### SD2:794
+This chest appears filled with odd notes and bits of maps of the island.  Unfortunately none of them appear of any interest.
+
+### SD2:795
+There is one fine tome here.
+
+### SD2:796
+Nothing of interest.
+
+### SD2:797
+The sack is filled with bits of cheese.  Most of it is heavily molded.
+
+### SD2:798
+The rack is filled with good weapons... but a quick scan of them reveals that all of them are cursed.  It is really a good collection of cursed weapons.
+
+### SD2:799
+The pantry is filled with food and wine.
+
+### SD2:800
+The horse trainer greets you warmly, "Hellos all and one... I am Randall.  Here to train horses and prepare what's needed for the knights.  These are the finest creatures in the realms next to the great steed.  Now there is a creature."
+
+### SD2:801
+After a little coaxing, Randall tells of the great steed.  "She's a beauty... with wings and power... I'd give my right arm to ride her again.  I caught her back when I was just a lad.  She was drinking and I snuck up on her.  Then we rode over
+
+### SD2:802
+"the stars and past the light of the sun.  It was a glory.  Then she dropped me in a lake and flew off to unknown lands.  Since then I've watched the sky and trained the best.  Nothing on earth can throw me... except maybe her."
+
+### SD2:803
+The huge man smiles at you as you approach.  "Heard of me, I see.  I can fix any armor and any weapon.  Part Dwarf, part giant, I can do it all.  Just look at some of the things I've put together over the past few months."  His boasts seem accurate.
+
+### SD2:804
+This would appear to be a small play-house, complete with fake skeleton and costume jewlery for treasure.
+
+### SD2:805
+As you enter the room, two people stop talking and look to you.  "Sorry," the man says at last, "but you're not permitted in here."  Do you remain?
+
+### SD2:806
+"Then we will," the man huffs.  Quickly the two gather their stuff up and leave the room.
+
+### SD2:807
+A very powerful force drives you away from the door.
+
+### SD2:808
+You enter this open air shrine and a voice from nowhere booms, "Ye have entered the shrine of Magic!  Dost thou make an offering of 100 gems for more magic?"
+
+### SD2:809
+"Begone!!!"
+
+### SD2:810
+"Who seeks greater power?"
+
+### SD2:811
+As soon as you enter this shrine a mighty voice shakes you, "If you want to be blessed with greater stamina, it'll cost you 100 gems."  Do you make the offering?
+
+### SD2:812
+"Who wants more stamina?"
+
+### SD2:813
+Creatures attack from above!
+
+### SD2:814
+Creatures attack from below!
+
+### SD2:815
+The shadows inside this building have a sinister and malevolent feel to them.  Do you really want to enter?
+
+### SD2:816
+Okay, but don't say you weren't warned.
+
+### SD2:817
+Immediately the door snaps shut behind you and all light from outside is extinguished!
+
+### SD2:818
+A deep growl rolls through the room and you feel the presence of a horrible beast.  Slowly a terrible sight materializes in front of you, sheding its own light through the room.
+
+### SD2:819
+"Come forward!" a voice like echoing thunder commands.
+
+### SD2:820
+Viewing the fiend you realize that, while you have faced many enemies before that held great power, this is the first time that that power nearly brought you to your knees by itself.  "Your presence here is a great disturbance to me."
+
+### SD2:821
+As the creature moves about, a choking dust is stirred.  It fills the air with a poisonous cloud, sickening you.
+
+### SD2:822
+"You have obviously travelled far... perhaps too far... and do not belong here.  You and your kind are not ready to face me, a pity you have stumbled upon my home.  Now... you will die."
+
+### SD2:823
+"Feeble beings!" the creature bellows after you.  "You'll not escape me!!!"
+
+### SD2:824
+As the incredible beast falls you see an almost transparent form of it rise into the air.  "This battle is only just beginning fools!  Watch for me when the Princess rises!"  With that it is gone.
+
+### SD2:825
+This ancient marker proclaims, "This scenario was created by Dusty L. Johnson, copyright © 1998, all rights reserved."
+
+### SD2:826
+A round, potbellied woman sits just inside this hut working on a loom.  As she weaves you can see a fine image being shaped in the fabric, depicting great battles and acts of heroism.  It suddenly dawns on you that the things she is showing in her work
+
+### SD2:827
+depict what has happened to you since coming to Kalypso's Island.  With her back to you it is impossible to read the woman's expression, but methodically she continues to weave, adding here and there as she goes.  Suddenly she stops.
+
+### SD2:828
+She turns and faces you and you recoil in horror.  She has no face.  Beneath her hair you see only a dense blackness broken by two pinpoints of light.  A chill runs through you as she faces you.  "You have gone far!" the weaving woman says.
+
+### SD2:829
+Her voice is like a wind in aspen trees and it penetrates your very essence.  "But there is much more to this story than you... and the story is far from over.  I can say no more in this time, but perhaps you shall seek me in times to come.  With that
+
+### SD2:830
+she turns back to her loom and waits.
+
+### SD2:831
+There are several small stones on this island marked with an 'X.'  What do you wish to do?
+
+### SD2:832
+After digging for a few hours you come upon a chest.  It opens easily and is filled with dwarven arms.  It would seem you have found the dwarven back up supplies for war.
+
+### SD2:833
+You over-hear two orc men talking about "Grig," apparently some legend of theirs.  "He was the runt to the lot," one says, "until he found the Shrine of Prowess.  I'd give a fortune meself to find that place."
+
+### SD2:834
+"Ah, that's just old story," the other sneers.  "'East of the pillar of salt...' naw, that's just rubbish."
+
+### SD2:835
+"You're a fool Tom!" the first replies.  "My gramp told me all about it.  That pillar of salt is there, in the southern lands, and it has Grig's mark cut into it.   That's the way, and it really is there."  The two fall to arguing.
+
+### SD2:836
+The entrance to the ruined castle is barred by an invisible wall.  What do you wish to do?
+
+### SD2:837
+You may continue on your way.
+
+### SD2:838
+What is password #1?
+
+### SD2:839
+Thank you for registering Kalypso's Island.  Enjoy the rest of the game.
+
+### SD2:840
+You see some rather ugly beasts drinking by a stagnant pool.  You could easily rush them and surprise them.  Do you do so?
+
+### SD2:841
+You wait a few moments and one of them catches your sent and alerts the others to your presence.  They draw closer, but in a non-threatening way.  Slowly they sniff about you and get closer.  Finally one of them moves close enough for you to touch.
+
+### SD2:842
+As you do so, the rest bolt for cover, dissapearing into hidden holes in the rocks.  The one you touch, however, seems to take a liking to you, even nuzzling against you.  It would seem you have a pet.
+
+### SD2:843
+The creatures scatter at the slightest movement you make.  Suddenly the chamber is empty.
+
+### SD2:844
+A strange thing attacks you!
+
+### SD2:845
+Apparently that thing killed some previous wanderers and left their stuff here after eating the juicy parts.
+
+### SD2:846
+A small dripping noise comes from the cave ceiling.  You find that the sound has put your nerves on edge.
+
+### SD2:847
+It's an awfully tight space here to be fighting a dragon, even one this small!
+
+### SD2:848
+"Who dares disturb me in my home!?!" a high, piercing voice bellows from inside this stone house.  A very large and very ugly head protrudes out the opening of a window and looks you over.  "Oh drat it!" the person groans at you.  "Just some surface
+
+### SD2:849
+"dwellers that got lost down here.  Can't you fools ever keep your directions straight?"  Although you feel a little befuddled, you quickly explain that you are not lost... well, not entirely... and that you are adventurers.
+
+### SD2:850
+"Oh?" she eyes you somewhat dubiously.  "Are you friends of that Boy-King of their's in Caspia?"
+
+### SD2:851
+"In that case I have no use for you and dismiss you."  With a wave of her hand and a muttered spell you find yourselves teleported away.
+
+### SD2:852
+"Perhaps you are wiser than you look," she begins.  "Trusting him is what cursed me.  I was his bride's nurse-maid and, more or less, lady in waiting.  I was even human and quite pretty back then."  She opens her door and to your horror you see
+
+### SD2:853
+that her body has been transformed into that of a giant snake.  "But I spoke in confidence to him of Lady Lianna's... condition.  When he discovered that she was to bear him a child he flew into a rage, ordering that peck of a chaimberlain to cast
+
+### SD2:854
+this curse upon me and drive me from him and Lianna.  That has been several weeks now, maybe longer.  Time is so odd down here in the dark.  My new body likes it here, but I fear for my Lady."  She looks you over again.  "You must find her... and her
+
+### SD2:855
+friend, an ancient dragon named Time.  Do what you can for them, and avoid the King.  The old King was good, but his son has the heart of a demond."  She holds out her hand.  "Perhaps a little extra help on your journey will make the difference."
+
+### SD2:856
+She slithers back inside and closes the door.  "Do not tell Lianna of me, please."
+
+### SD2:857
+The serpantine woman sees you coming and smiles.  "I have no more help for you, but I do enjoy the visit.  Please, sit and tell me of your journey."  After a little gossip, you can tell that there is nothing more for you here.
+
+### SD2:858
+You can see by the corpses upon the shore that something intelligent has been hunting the cave beasts.  They are skinned and gutted, and select cuts of meat are taken from the now rotting corpses of the various beasts.
+
+### SD2:859
+Some of the cave's minions have hauled a rotting corpse back here to finish it off.  However, upon seeing live meat enter their lair, their taste in meals suddenly improves!
+
+### SD2:860
+Whoever hunts these caves uses bow and arrow.  At the edge of the water you find two very fine arrows that must have missed their targets and yet remained in tact.
+
+### SD2:861
+Water cascades down the walls of this cave, making everything damp.  You also note the distict smell of salt water and sea life.  You must be directly under the small bay you arrived at.
+
+### SD2:862
+It seems odd to find a boat, even a small one here.  There are no ties holding it, and oddly it is fighting the current to stay its place.  As soon as you step aboard, the tiller responds to your commands and the boat moves without needing you to row.
+
+### SD2:863
+A small inlet here opens into a cavern which water runs through.  You could easily depart the boat here.
+
+### SD2:864
+"He and many of his minions are trapped in there, but they will eventually escape.  The dragon's bane has nearly killed me, but it is worth saving the Lady.  Find her, please, and tell her Time has sent you.  Protect my Lady friend...
+
+### SD2:865
+"And avoid that evil King and his ways at all cost.  He is sly.  Do not join with him."  Time turns back to his digging.  "I must finnish my grave before it finishes me now, so farewell."
+
+### SD2:866
+The cave has been collapsed deep inside.  You can only guess that the dragon is buried deep inside.
+
+### SD2:867
+A wandering group of merchants is visiting the orc villiage selling their goods.  You may shop from them too.
+
+### SD2:868
+A few guards sit beneath the tower in the shade playing a game of Troll (much like Go Fish.)  In a rather conversational way they advise you not to go into the caves to the south.  "Nort saw three dragon scales on his patrol down that way.  And
+
+### SD2:869
+"if I were you I'd steer clear of the Thieve's Forrest just south of here too.  Henchert and his cut-throats are an evil lot."  One of the others looks at you and grins.  "If you're looking for a little weekend adventure, try the cave north of town."
+
+### SD2:870
+You dig for several hours before finally uncovering a chest.  Inside is a treasure worth a life time of digging.
+
+### SD2:871
+This cave appears to be deserted, and yet there is the distinct odor of dragons in the air.  You had best be on your toes.
+
+### SD2:872
+Rounding the corner you are alerted to the presence of a large, red dragon.  She is moving slowly, but gives fight as soon as she sees you.  You can tell she is weakened, but even a weak dragon is a horrible foe to face.
+
+### SD2:873
+You feel little victory at defeating this enemy, despite the fact that she was a dragon.
+
+### SD2:874
+You see dozens of scales littering the floor of this alcove, and there is a distinctive smell of dragon... the dragon you have slain... and something else.  You smell the stench of human corpses rotting.
+
+### SD2:875
+A young maiden is staked to a post here, or at least what is left of her.
+
+### SD2:876
+A dragon's egg rests comfortably amid the stalagmights here.  Apparently the female dragon had just given birth when you came upon her.  The egg, opalescent in color, seems to pulse with life.  Something inside is fighting to get out.
+
+### SD2:877
+Do you destroy the egg before it can hatch?
+
+### SD2:878
+With a heave you bring many of the stalagmights crashing down upon the egg and destroy it.  One stalagmight pierces the young dragon inside, killing it.
+
+### SD2:879
+You watch for a moment as the young dragon slowly rips open the leathery hide of the egg, its red light gleaming against the stones around you.  In moments it heads directly for a corpse tied close by.  Do you attempt to stop it?
+
+### SD2:880
+You pull the small dragon away from the corpse and quickly offer it some of your rations.  Within a few bites the baby dragon is eating from your hand like a horse.  It's light dims a bit, but it opens its wings and lifts a few feet off the ground.
+
+### SD2:881
+It is looking for a shoulder to perch upon.  [Which ever character takes the dragon as a pet in the treasure screen will need to wear it as an item until it is old enough to fend for itself.]
+
+### SD2:882
+The little beast quickly gains a taste for humanish flesh and turns on you.  Although you are reluctant to do so, you are forced to kill the little beast.
+
+### SD2:883
+The female dragon did have a small cache of treasure.
+
+### SD2:884
+"Welcome to the Adventurer's Guild House.  Here you can find out the local news, store equiptment and treasures, and pick up a little hired help.  There's also a tap bar serving guild members 24 hours a day and a few equiptment specialists to help you
+
+### SD2:885
+"supply your adventuring needs.  Guild membership is only 100 gold, and well worth the price."  Do you wish to become a guild memeber (and pay) ?
+
+### SD2:886
+"Wonderful!" the man says as he takes your money and counts it carefully.
+
+### SD2:887
+"Welcome back to the guild house.  I hope adventuring has been profitable for you."
+
+### SD2:888
+A voice behind the door asks, "What's the password?"
+
+### SD2:889
+"Enter."
+
+### SD2:890
+He leans in close and whispers, "The password is 'bunnies.'"
+
+### SD2:891
+The guild's tap bar: here, for a single gold, you can sample some of the finest brew in all of Caspia.
+
+### SD2:892
+The bar keeper nods to you and slides a drink down the bar.
+
+### SD2:893
+The bar keeper walks down to you and shakes his head.  "Adventuring's been rought, huh?"  He and several of the serving girls bring you your drinks.  You quickly begin to drown your sorrows and your kidneys.
+
+### SD2:894
+Who wishes to be the designated driver for the horses?
+
+### SD2:895
+One of the serving girls sits with you and tells you the following information:
+
+### SD2:896
+"There's a group of kids trapped in the old cave by the grave site.  Several of their parents have gone in, but only one man has come out.  He said that he found a boy's shoe, but nothing else."
+
+### SD2:897
+"I hear that the Orc leader has made a perminant camp east of town a ways.  One group told me that he's offering a great reward for something or another."
+
+### SD2:898
+"I heard from a goblin that the caves south of Caspia are infested with dragons.  I don't mean just one or two, but twenty or more!"
+
+### SD2:899
+"The King's kid brother dissappeared and hasn't been seen.  Funny, no one's heard of any reward being offered."
+
+### SD2:900
+"I hear that the new King got some noble girl into the family way, if you know what I mean.  She up and ran off.  Now if he'd gone and done that to me, I'd be sticking around to be his queen."
+
+### SD2:901
+"Caravans have been having troubles with trolls east of town.  One man said that he got a nice reward for helping scare off a troll or two."
+
+### SD2:902
+"Henchert, the leader of the thieves, has a hideout in the center of the thieve's forrest.  No matter what anybody tells you, that's where you'll find him."
+
+### SD2:903
+"I hear that a few of the petty thieves in town are searching through the library for some treasure hidden by some old King."
+
+### SD2:904
+"I heard from an elf that her group ran into a Green Dragon near the base of the Great Mountain.  They looked pretty roughed up by it."
+
+### SD2:905
+"In the south, I hear, there is a villiage of cannibals who drink blood and everything.  Now that would be one 'stiff' drink."
+
+### SD2:906
+"The King has been sending 'embassadors' to the southern lands to find his lover.  Funny thing is, the people he's sending normally only work as assasins.  Go figure."
+
+### SD2:907
+"I hear the old King didn't die in the natural way.  The chancellor bought enough poison just days before the King died to put a Black Dragon in the ground.  And get this, the son hasn't done a thing about it."
+
+### SD2:908
+"That group over there came back from the southern lands last week, and in their hands they had six, count them, six arrows of death.  Now that is a treasure."
+
+### SD2:909
+"The dragons have been seen south of here, but not one attack has been mentioned.  It's kind of creepy."
+
+### SD2:910
+"One of the other girls, Gleena, just up and vanished the other night.  I hear she was taken off by a pair of the King's own guards."
+
+### SD2:911
+"I hear that several boats have been sent south, but not one has returned."
+
+### SD2:912
+"There's some sort of cult forming out east, lead by an ex-seer from the King's own temple."
+
+### SD2:913
+"A group of minotaur are raiding in the mountains east of town."
+
+### SD2:914
+"Not much news right now.  Most adventurers are sticking around here getting fat and drunk."
+
+### SD2:915
+"Oh, I hear that the King has been speaking with the dragons, but I don't put much stock in that."
+
+### SD2:916
+You leave out the back door.
+
+### SD2:917
+The demonic woman had drun the knights at this table into a stupor and she smiles at you.  "Care to hire a real woman?  I'll join your group for just 200 gold... if you can handle it."  Do you hire her?
+
+### SD2:918
+She counts the gold then stands up.  "Lead on, O wealthy ones."
+
+### SD2:919
+"Hey, you folks are heading out for a little adventure, ain't ya?  Me and my sword will tag along for 300 gold.  Ya interested?"
+
+### SD2:920
+You hand the man the money and he joins your party.
+
+### SD2:921
+This short man grins at you.  "Looking to hire a 'little' help?  Look no further... I'm the best little assasin you could ask for.  My price is just 500 gold."  Do you hire him?
+
+### SD2:922
+The little man counts his money quickly and smiles.  "Actually, I'm not an assasin... and you people should be more careful whom you trust."  The little man snaps his fingers and dissappears with your money.
+
+### SD2:923
+"I'm the best in here.  My price is 500 gold.  Do you want ot hire me or not?"
+
+### SD2:924
+The woman stand up and joins you.
+
+### SD2:925
+This man is inebriated.
+
+### SD2:926
+The small passage goes both east and north at this point.
+
+### SD2:927
+The land you have entered seems to pulse with a life deeper than your own.  Each breath you take seems filled with life.
+
+### SD2:928
+An incredible force rips into you.
+
+### SD2:929
+The gaurds stand at the base of the tower betting on fights between various opponants.  "Care to try your luck against me?" one of them asks.  "I say 100 gold I can take any one of you."  Do you accept the challenge?
+
+### SD2:931
+[Hint : In order to move beyond the edge of the screen, use the arrow keys on your keyboard.]
+
+### SD2:932
+This massive gate has been reduced to mere rubble and slag.  Twisted metal and charred stone only emphasises the damage to the great mountainous cliffs which have been crumbled behind it.
+
+### SD2:933
+As you realize that only a dragon could have caused this much destruction you hear a deep rumbling behind you.  Your realize that it probably took more than one dragon to bring down the mountain side.
+
+### SD2:934
+The ground around you explodes as a horrible beast breaks forth to destroy you!
+
+### SD2:935
+This tree seems to move without a breeze.  As you come closer to investigate a mass of giant worms pour out of it, explaining the motion.
+
+### SD2:939
+The dragon summons in a little help.
+
+### SD2:940
+As the great beast dies, the earth seems to be ripped apart around you with a great quake.
+
+### SD2:942
+The great mage Hirophant smiles at you.  He reaches down and picks up a small necklace from the floor and puts it on.  Instantly he seems to grow three feet taller.  "I have found it at last!!! Thank you."
+
+### SD2:943
+He hands you a rather large sack of gold and leaves the cavern the way you entered.
+
+### SD2:967
+A dark feeling passes over you followed by a deep chill.  Magical power seems to drain out of the air.
+
+### SD2:968
+A darkness seems to settle on your spirits as the dead attack.
+
+### SD2:969
+With extreme violence the sky blackens with a storm.  Lightening arcs all around you splitting rocks and deafening everyone.
+
+### SD2:970
+With a sudden jolt, lightening blasts each living person with intense pain!
+
+### SD2:971
+Suddenly, the storm is gone.
+
+### SD2:972
+The dead refuse to let you escape!
+
+### SD2:973
+Dragons attack!!!
+
+### SD2:974
+A large raiding party of fierce trollkin attack you without mercy.
+
+### SD2:975
+You hardly catch your breath when another wave of the King's warriors attack.  Do you run away?
+
+### SD2:976
+Trolls rise from hiding places to attack!
+
+### DES:0
+Long ago a wizard's experiment had gone afoul and this is the result.
+
+### DES:1
+Orcs throw these guys in to soften up the ranks of their opponants.
+
+### DES:2
+Not much of a threat until they start throwing those spells around.
+
+### DES:3
+Orc Champions get their title because they typically can crush any enemy.
+
+### DES:5
+They rise to the top by killing lesser warriors.
+
+### DES:6
+A trained warrior with aspirations to the top.
+
+### DES:7
+The race doesn't matter so much as the spells she casts.
+
+### DES:8
+Strongest of the good dragons.  This race of dragon kind devotes their entire lives to the destruction of their evil kin.
+
+### DES:10
+Strongest of the evil dragons.  Few  have met with one AND LIVED!
+
+### DES:11
+Capable of breathing lightning.  Woe to the fools that find themselves in lonely company with one such as this.
+
+### DES:12
+One of the weaker races of dragon kind.  A sly mind and a taste for blood make green dragons a force to be feared.
+
+### DES:13
+A gaping maw of immense size makes this mindless foe one to  avoid.
+
+### DES:16
+These rare dragons find the frosted planes of ice a natural home and spurn all warmth.
+
+### DES:17
+A storm of claws and fangs.  Your basic garden variety of giant spider.
+
+### DES:18
+A truly fearsome arachnid.  Avoid contact with this eight legged monstrosity, if at all possible.
+
+### DES:19
+Sickly in appearance, these foul creatures blend into their  surroundings and pounce on the unsuspecting.
+
+### DES:21
+Though they look fierce, they are not as deadly as one might think.
+
+### DES:22
+Large and deadly.  Their saliva contains a strange chemical.  Those that do not save will become deathly afraid.
+
+### DES:23
+Be careful not to fall victim to a bite from one of these.  Their bite has been known to cause paralysis.
+
+### DES:24
+A strange cross between a hyena and a tiger.  Nobody knows if it was spawned from magic or nature.
+
+### DES:25
+Do not get too close!  If it gets you in a bear hug you are doomed for sure.
+
+### DES:26
+An odd sight, indeed.  Their appearance would be laughable, if they were not so deadly.  They favor the occasional orc to dine on.
+
+### DES:27
+A poisonous bite may be the least of your worries if you meet up with one of these vermin.
+
+### DES:28
+A powerful cousin to the modern day mountain lion.
+
+### DES:29
+Large and heavily armored, with a bony back plate and horns.  Only a fool would back one of these things into a corner.
+
+### DES:31
+Avoid the paralyzing bite of these large insects.
+
+### DES:32
+A strong family structure allows these giant reptiles to survive in a hostile environment.
+
+### DES:34
+Sporting a nasty bite, these critters are more dangerous than they look.
+
+### DES:35
+Large, but stupid.  These reptiles have been known to trample an adult ogre without even slowing down.
+
+### DES:36
+The creature's favorite form of attack is to lower its armored head and charge.  Don't stand in front of it!
+
+### DES:37
+Minotaurs have a stout body that would make even an ogre quake with fright.  These powerful creatures love to engage in combat.
+
+### DES:39
+Often used to guard magical treasure or some important location.
+
+### DES:40
+A larger version of the ordinary troll.  The physical strength of these beasts is near god-like.
+
+### DES:41
+Long ago a tribe of trolls developed the ability to think.  They have since developed a strong tribal society that rivals orcs and goblins.
+
+### DES:42
+Created from non-living parts and given life through arcane magic.  They will serve their creator until destroyed.
+
+### DES:43
+Large and fierce, this race of half bear, half man is feared thoughout the land.
+
+### DES:44
+Minotaurs have a stout body that would make even an ogre quake with fright.   These powerful creatures love to engage in combat.
+
+### DES:46
+A mountainous man-fish.
+
+### DES:48
+Long dead creatures of a larger race.  Many such creatures were once gnolls, bug bears, ogres or true giants.
+
+### DES:49
+A skilled warrior of the dwarven nations.
+
+### DES:50
+A powerful creature of the undead.  These creatures drain your very life force.
+
+### DES:52
+A creature of the undead.  Their bite can produce paralysis.
+
+### DES:53
+A humanoid raised from the dead to become one of the cursed undead.
+
+### DES:56
+Hailing from some unknown plane, these beasts are often summoned by powerful enchanters to perform their bidding.
+
+### DES:57
+Hellions of the first order.
+
+### DES:58
+These minor demons live their lives as servants to those more powerful than themselves.
+
+### DES:61
+Completely mindless.  They are used as shock troops and as food by   other demons.
+
+### DES:62
+A blaze of claw and fang.  The speed of these netherworld creatures is without compare.
+
+### DES:64
+Little is known about the Grekle for they are solitary creatures that dabble in the black arts.
+
+### DES:66
+A disgusting creature at best.  This  beast sports four clawed feet, two tentacles and a elephants trunk.  It's bite can also paralyze.
+
+### DES:69
+Olive Slime.   Capable of inflicting a strong chemical burn.
+
+### DES:72
+Shades of death that feed on human pain.
+
+### DES:73
+Commanding great power in both the lower planes and the material planes, these beings are not to be triffled with.
+
+### DES:74
+Ratius Giantous
+
+### DES:75
+Nasty beasts summoned by mages to do nasty deeds.
+
+### DES:80
+Standing 8 feet tall or more, these large brutes love to bully those weaker than themselves.  They are often employed as troops in mercenary armies.
+
+### DES:81
+A true leader of men.  Trusted with  keeping the troops in line.
+
+### DES:86
+Solitary they are nasty, in a coven they mean death.
+
+### DES:87
+A small, but deadly variety of your every day troll.
+
+### DES:88
+A brave but somewhat unskilled troop.
+
+### DES:89
+Skilled in the ways of combat.
+
+### DES:91
+A common orc who claims to have some skill with weapons.
+
+### DES:98
+The one master of all things magic, the High Magi assumes the role of dictating the laws of magic.
+
+### DES:99
+Capable of casting spells. This humanoid should be feared.
+
+### DES:100
+A warrior of great skill and strength.
+
+### DES:101
+The priest of a tribe of orcs.
+
+### DES:102
+Strong and capable with arms.
+
+### DES:103
+Only slightly less primitive than a cave man.  These humanoids are all but animals.
+
+### DES:105
+Pickpocket, cutpurse, burglar.  By any name, a thief is a thief.
+
+### DES:107
+Large and fierce warriors of above average skill.
+
+### DES:108
+A hob goblin skilled in the use of a bow.
+
+### DES:113
+Over two feet of mindless insect. Capable of overwhelming foes by their sheer numbers.
+
+### DES:116
+A paralyzing sting makes this large insect quite deadly.
+
+### DES:117
+Prefers to feed on the dead.  However, they will not hesitate to add a little fresh meat when it's available.
+
+### DES:118
+Belonging to the arachnid family, these large critters pack a paralyzing sting.
+
+### DES:120
+Half man.  Half fish.  All bad temper.
+
+### DES:123
+Mystical animals that protect those who fight evil.
+
+### DES:126
+The daughter of the King of the Dragons.
+
+### DES:127
+Never come between a mother and her children, and never discipline another parent's children.
+
+### DES:128
+Lost in the caves for a month, Tian has become quite adept at survival.
+
+### DES:129
+This fiend seems a little stronger than those you've seen before.
+
+### DES:130
+A very dire creature.
+
+### DES:131
+Tired of his home amid gems, Tix seeks adventures above the ground.
+
+### DES:132
+The great dragon had been trapped for centuries... until now.
+
+### DES:137
+A great student of arcane lore.
+
+### DES:139
+The most maleficent force on the island, the necromancer brings the world of the dead into the living.
+
+### DES:140
+Beorn is a huge and solitary fighter.
+
+### DES:144
+A powerful alli raised from the dead.
+
+### DES:145
+A nastier pair of undead gaurdians you'll rarely meet.
+
+### DES:146
+Evil in her heart, but loyal to the death.
+
+### DES:147
+A young boy, but boy is he powerful!
+
+### DES:148
+A horrific beast with teeth and claws set to your final destruction.
+
+### DES:149
+The new leader of the dwarves.
+
+### DES:150
+This young boy would like to learn from you how to be an adventurer.  I hope he survives the lessons.
+
+### DES:153
+Affectionate but ugly.
+
+### DES:154
+Young but still a threat.
+
+### DES:160
+The most powerful of all summoned creatures.
+
+### DES:161
+One creature to run from.
+
+### DES:162
+A beautiful creature one rarely sees.
+
+### DES:165
+One of the greater dragons.  Let's hope you don't run into many of this anchient breed.
+
+### DES:189
+Loners in the world of the Abyss.  They are among the rarest of demons.  It is rumored that only a few clans of these demons still survive.
+
+### DES:190
+The name is only part of the story.  These foul-tempered creatures stink to high heaven and have a face no mother could love.
+
+### DES:192
+Souls that have been damned to roam the astral plane.  If provoked, they can exist on the material plane for short periods.
+
+### DES:193
+Often found in the company of ghouls, ghasts and other ilk of that manner.  These fiends have an endless appetite for flesh, either alive or dead.
+
+### DES:194
+They are extremely rare even on their own plane of existence.  The shadow mite is immune to projectile weapons.
+
+### DES:195
+The black sheep of the Abyss.  Half demon, half devil.  They are often shunned by full-blooded demons and devils.
+
+### DES:196
+A mutated mushman, fungoids are extremely rare..... and deadly.
+
+### DES:197
+Hailing from the frozen planes of the Abyss, these malevelent creatures are immune to cold based spells.  They also have a nasty bite.
+
+### DES:198
+These beasts are no more than slaves to the evil eys.  They serve as hands for those that have none.  They are imensly strong.
+
+### DES:199
+Weak in mind and body, these demons are lightning quick.  They are cowards in battle and will surrender or run easily.
+
+### DES:200
+Incredibly strong, these demons rule over whole races of lesser ilk.  They prefer to pummle their enemies with bare hands and magic.
+
+### DES:201
+Existing on both the material plane and the astral plane simultaneously.  They can inflict massive chemical damage.
+
+### DES:202
+Nomally happy to stand around and chew cud.  These creatures can be dangerous if they stampede.
+
+### DES:211
+These vermin carry a deadly disease.  They breed so rapidly there are always plenty to take the place of those that perish.
+
+### DES:213
+End of List
+
+### DES:214
+End of List
+
+### DES:215
+End of List

@@ -1,0 +1,816 @@
+# Realmz scenario text — Lachis
+# -----------------------------------------------
+# Edit the text between the ### header lines.
+# Do NOT modify the ### lines themselves.
+# Max lengths: SD2/DES = 255 chars, OD = 24 chars.
+# Empty entries are omitted; inject will not touch them.
+
+### SD2:0
+Do Not Use
+
+### SD2:1
+Nothing seems to happen.
+
+### SD2:2
+What is it you would like to do?
+
+### SD2:3
+You approach a gap in the cliffs, but the sound of the brutal wind and blowing sand outside make you think twice.
+
+### SD2:4
+Riding hard on the front of a vicious sand storm, you finally return to Jakt.  The guards at the gate let you in, then quickly close the gate and return to their shelters.
+
+### SD2:5
+Even in a well-sheltered valley like this one, the sandstorms are still dangerous.  You hurriedly make for the Krin tower, your current home.
+
+### SD2:6
+You approach the gate, but the guards shake their heads.  "Sorry, it's too dangerous out there right now.  Only those with special permission may leave."
+
+### SD2:7
+The largest building in the village, the Krin tower houses many of the poorer families.  A few of your neighbors wave to you as you pass them on the way to your home.  The main door is securely locked behind you.
+
+### SD2:8
+Many uneventful days pass as you rest and wait for the storm to weaken.  You pass the time recuperating from your last mission and visiting acquaintances in the tower.
+
+### SD2:9
+Eventually, the violence of the storm abates somewhat, and you are able to travel among the village buildings.
+
+### SD2:10
+You return back home to the Krin tower. Do you want to recuperate for a while?
+
+### SD2:11
+You visit the town shaman, who offers to provide some of his magical services in exchange for work, or failing that, money.
+
+### SD2:12
+You knock at the door, but receive no answer.
+
+### SD2:13
+You knock at the door of Hallin tower, domicile for the skilled workers of the town.  The residents agree to bater their goods.
+
+### SD2:14
+This is the Golan tower, home to the most skilled and valuable members of the community.  With the appropriate wheedling, the most fantastic goods can be obtained here.
+
+### SD2:15
+You are warned that goods pass through very quickly, and that what you see today may not be here tomorrow.  The same goes for what you sell.
+
+### SD2:16
+The guards are aware of your mission, and open the gates to let you through.
+
+### SD2:17
+You take the time to visit the chief's home.  You wait at the door for a minute or two before anyone answers.  A soldier greets you hurriedly, "Good timing.  The elders would like to speak with you.  Go right in."
+
+### SD2:18
+You enter the main room under the eyes of the elders of the town.  The eldest speaks to you, "Greetings, warriors. You are among our finest and most skilled tribe members. We are going to take you into our confidence. A grave matter has arisen."
+
+### SD2:19
+"Hal'ar has informed us that the town springs are running low.  He can provide for some short term solutions with his magic, but the situation cannot be maintained indefinetly. We ask you to assist him in the search any way you can."
+
+### SD2:21
+You visit the chief's home.  A servant greets you, but hesitates when you ask to speak to the elders. "I don't think they want to see you until you've completed your quest. They're all very anxious. Trust me, come back later." He smiles apologetically.
+
+### SD2:22
+You knock at the shaman's door, and explain that the elders requested you assist him in his search for water.  He nods, and ushers you in.
+
+### SD2:23
+"My magic has detected a source of water to the north. I would guess it is a spring of some sort in the Ssal Valley. Please check the quality of this water. If it is good, it might serve as a natural supply for the entire town."
+
+### SD2:24
+You come upon a shimmering spring in the midst of a small crevasse.  As you approach to take a sample of the water, it begins to take shape!
+
+### SD2:25
+Having slain the water demon, you notice with regret that the spring has dissappeared.  Only dust is left.
+
+### SD2:26
+The shaman greets the news of the demon with regret. "I apologize that I could not warn you of this. Still, this is a serious situation. I can detect no other sources of water. Please bring this news to the elders. I will join you shortly."
+
+### SD2:27
+You once again enter the hall of the elders. They greet your news with some displeasure. "This is terrible. If we do not find a source of water soon, our village will perish."  Silence falls among the elders. The shaman suddenly enters. He speaks.
+
+### SD2:28
+"Esteemed elders, I propose a different plan than what you have been considering. It is written in the oldest texts that we conducted trade with a land known as 'Lachis.' I assume that the trade dwindled with the passing centuries."
+
+### SD2:29
+"It does leave open a possibility though: our fates have taken a turn for the worse, but who knows what has happened in other lands. I propose we send an emissary to where this land once lay. It is a desperate plan, but I see little choice."
+
+### SD2:30
+"Alas, the only directions that we have to this land are that it is reached by a high mountain pass far to the northwest."  The shaman turns to you.  "It is your job to investigate this possibility. Please make haste."
+
+### SD2:31
+"It will take some time to move everyone if you succeed, so speed is of the essence. You will leave this very day." The elders nod their approval, and disband the meeting. The shaman approaches you afterwards. "I would like to have a word with you ..."
+
+### SD2:32
+"I know that you are aware of the perils of the desert, but it gets even more dangerous as you travel far from our settlement. Cathoon raiders, flame demons and spiders will plague you. I cannot say what you will find if you succeed in finding the pass."
+
+### SD2:33
+"You have our best wishes. Please do not dawdle on your mission, we are all depending on you."
+
+### SD2:34
+You are attacked by Cathoon raiders!
+
+### SD2:35
+You hear a whisper of wings overhead, and suddenly the battle is joined!
+
+### SD2:36
+You feel a hot breeze down your neck.  As you look skyward, you are attacked!
+
+### SD2:37
+With great cries, the animals circling above you that you took to be vultures dive and attack!
+
+### SD2:38
+You spy in the far distance a roaming band of cathoons and their trained cats.  Do you want to try to catch up with them and attack?
+
+### SD2:39
+You spy a group of flying beasts above you, circling around.  You think you could hide under a nearby outcropping.  Do you want to stay out and fight?
+
+### SD2:40
+A large, war-like band of Cathoon spot you in the distance.  They charge to the attack, presuming you as easy prey.
+
+### SD2:41
+After the battle, you surmise that there must be some sort of encampment nearby to support all these cathoons and their pets. You try to interrogate some of the dying creatures, but they steadfastly refuse to talk.
+
+### SD2:42
+You are caught in a vicious sandstorm!
+
+### SD2:43
+Blasts of sand-filled wind ravage the bleak terrain, forcing you to dig down to shelter for some time.
+
+### SD2:44
+In this secluded niche in the cliff wall a small bush has clung on to life.
+
+### SD2:45
+At the back of a dark cave, you find a narrow passage that leads steeply down into the earth.  Following it, you enter a warren of caves.  Echoes of the wind behind you create an unearthly howling as you descend.
+
+### SD2:46
+Climbing through the narrow passage, you make your way back up to the barren desert.
+
+### SD2:47
+You are surprised to find the remains of a road in the cavern. Despite the quality construction, the ravages of earthquakes and water have destroyed most of it. This small section seems to have surived, however. The question remains: who built it?
+
+### SD2:48
+The cavern before you sports a luxuriant growth of moss and mushrooms.  Quiet echos of dripping water are all that meet your ears.
+
+### SD2:49
+Travelling through a narrow defile, you come out into an open area in the mountains.  You see scattered groups of tents and pens.  You seem to have stumbled upon a Cathoon raider camp.
+
+### SD2:50
+What do you want to do?
+
+### SD2:51
+Drawing your weapons, you rush into the camp, screaming battle cries!
+
+### SD2:52
+You try to creep up on the camp, but the keen eyes of a Cathoon guard spot you.  He sounds the alarm before you can flee.
+
+### SD2:53
+Deciding that discretion is the better part of valor, you turn and start to make your way back.  Unfortunately, the Cathoon had noticed you and arrive hot on your heels.
+
+### SD2:54
+In a small cluster of bushes and trees you find the Cathoon leader and a few guards hiding.  Once they realize they have been discovered, they attack with fanatic zeal.
+
+### SD2:55
+Standing over the bodies of the Cathoon, you realize that their days of banditry are over.  Inspecting the area around where the Cathoon were hiding, you discover a chest half-buried in the sand.  This must be the amassed profits from the raids.
+
+### SD2:56
+You successfully open the chest, revealing a glittering pile of treasure.
+
+### SD2:57
+That appears to have no effect.
+
+### SD2:58
+This small crude hut is the only permanent building in sight.  You cautiously enter, expecting an ambush, but find only a sparsely furnished room.  You search thorougly, but can't seem to find anything of interest.
+
+### SD2:59
+Coming from the lush mushroom growth, the starkness of this cavern is unnerving.  The ground immediately before you seems scorched, but you see no immediate reason as to how it got to that state.
+
+### SD2:60
+You come across a small circle of campfire stones.  There is a small pile of dried mushroom stalks nearby, and the camp seems to have been used recently.
+
+### SD2:61
+As you poke around the fire, you hear a noise.  Laying your hands on your weapons and glancing about fearfully, you see a small, pale goblinoid come out of the shadows.  He looks half afraid and half hopeful.
+
+### SD2:62
+"Greetings" he begins haltingly. "You are the first real people I've talked with in months. I was travelling in a small party of adventurers when we were ambushed by those mushroom men you have met by now.  I was knocked unconcious and left for dead."
+
+### SD2:63
+"When I came to, I tried to make a quiet escape, but went in the wrong direction. I became trapped in this small cave by the mushroom men. I frightened them at first with fire, so they leave me alone. I have been living off mushrooms and fish."
+
+### SD2:64
+"Enough about me. Clearly you can handle the mushroom men. If you would be kind enough to help me out of this cavern, I would be gladly serve you for a time. My name is Inar. Will you help me?" You detect a definite note of pleading in his voice.
+
+### SD2:65
+He shrieks in anger and frustration. "I cannot live like this anymore!"  He turns on you with hatred in his eyes and attacks in a suicidal frenzy.
+
+### SD2:66
+Standing over his corpse, you look around for any secret treasure troves, but are disappointed to find little beyond a couple of dried fish.
+
+### SD2:67
+Denizens of the caverns fall upon you!
+
+### SD2:68
+Creatures startled by your presence react the only way they know how: battle.
+
+### SD2:69
+You descend a short shaft into the caverns below.
+
+### SD2:70
+At the end of a narrow tunnel you spot a shaft of light. You look upwards at a well-made brick well. It's a short climb, and you accomplish it easily.
+
+### SD2:71
+The harsh desert winds have sculpted this rock into an object of art.  You pause and contemplate the beauty of it before moving on.
+
+### SD2:72
+"These are trying times. My magic is failing, and with it, the water supply. Most do not know that it is I who keep the springs in this town fresh and flowing. Alas, the source of my power is fading, and I can no longer keep up the job of the shaman."
+
+### SD2:73
+"I am still capable of some things, however.  I can still heal the water of the body, and I seem to be able to detect other sources of water as well.  That is what I have been up the whole night doing, and not without any results."
+
+### SD2:74
+What do you want to try?
+
+### SD2:75
+A narrow trail leads steeply down; this must be the Ssal Valley.
+
+### SD2:76
+The trail dives steeply again, and you struggle to maintain your footing on the loose sand.
+
+### SD2:77
+A long, narrow path leads deeper into the valley.  It is nearly completely overhung with rocks high above.  You can make out little detail in the gloom.
+
+### SD2:78
+Creeping along, you suddenly stumble down a short slope straight into a gigantic spiderweb!
+
+### SD2:79
+The vibrations of your fall have attracted the owner of the web back.  You struggle to fend it off.
+
+### SD2:80
+An unearthly howling fills this entire valley, although you can't see any immediate source.  The ground seems curiously dented in some areas as well.
+
+### SD2:81
+The howling is loudest here, and it's source becomes evident: a narrow pass amplifies the sound of the wind's passage on the other side of the mountains, creating a painfully loud noise.
+
+### SD2:82
+Attracted to the area by the sound of your passage, a small herd of sandworms burst up from the ground below you and hungrily search for food.
+
+### SD2:83
+Fragrant flowers bloom here, getting life from a small pool that drips down the cliff face.
+
+### SD2:84
+Giant rocks stand sentry at a mammoth cave opening. Rather, what used to be a mammoth cave opening. Earthquakes and desert winds have caused a complete blockage of the passageway. You'll have to find a different way.
+
+### SD2:85
+The path turns extremely steep here. Travelling this way regularly would be most inconvenient.
+
+### SD2:86
+High atop a mountain, you find a pile of brush and collected sticks.  It almost looks like a nest, you think.
+
+### SD2:87
+As you turn away, you glance upwards and see a couple of circling figures dive towards you. Your first guess was right; this must be their nest, and they're very angry about you invading it.
+
+### SD2:88
+Confident that there will be no more disturbances, you carefully search the nesting materials and come up with a most interesting find.
+
+### SD2:89
+Formerly an access point to the outside, a nearby river seems to have overflowed and come through the many gates in the south wall.  The water is too deep to navigate with all of your equipment.
+
+### SD2:90
+You enter a temporary holding room, filled with rotting bags and barrels. The rug once used to impress visitors now nearly completely disintegrates at your step.
+
+### SD2:91
+These broad stairways, once easy access points to the tunnels, are both completlely choked with rubble.
+
+### SD2:92
+You poke at the sacks, but they were long emptied by rats and other scavengers.
+
+### SD2:93
+Long rotted leather goods fill these barrels.
+
+### SD2:94
+You optimistically search the crates, but uncover only rusted-together old tools.
+
+### SD2:95
+This chest appears to be someone's personal goods, or at least it was.  Abandonded long ago, all you find are fragile scraps of cloth and a few rusty weapons.
+
+### SD2:96
+This solidly built chest seems to have fared better than the other items in the room.  You break off the rusty old lock and peer eagerly inside, but find only empty glass vials and old alchemical tools.
+
+### SD2:97
+A narrow passage leads outside.  Do you want to follow it?
+
+### SD2:98
+The leader appears to have been interested in reading.  This well-made bookshelf is full of books, scrolls and loosely-bound pages.
+
+### SD2:99
+You find nothing of interest.
+
+### SD2:100
+Your magic reveals a lever disguised as a crusty old book.  Standing back and pulling on it swings part of the bookshelf away. You look through there and discover a small tunnel leading outside.
+
+### SD2:101
+This room looks somewhat nicer than all the others, making you believe that this might be where whoever used to be in charge lived.
+
+### SD2:102
+You perform a search of the dresser, but whatever made everyone leave in such a hurry didn't worry the commander enough so that they left anything interesting behind.
+
+### SD2:103
+This spartan little room has seen better times; one of the beds is entirely crushed under rubble. The rest of the room is thickly coated with dust and dirt. You try not to sneeze.
+
+### SD2:104
+You approach the ruined barrels leaking fluid in the corner, but the horrid stench that still remains makes you back away. Some things are better left unexplored.
+
+### SD2:105
+The main staircase up into the structure did not fare well. Completlely covered by giant stone slabs fallen from above, it looks like you'll have to find some other way out.
+
+### SD2:106
+This small storeroom is filled with mundane goods, damaged by water and the ravages of time. Hardly an undamaged container remains.
+
+### SD2:107
+The wall here has collapsed, leaving a crawl space. You take the utmost care in moving through here, lest your movement disturb something.
+
+### SD2:108
+The door has been reinforced with piles of rubble, making it quite immovable without considerable effort.
+
+### SD2:109
+A sparsely furnished room, suitable for small groups of people to stay in for perhaps a night or two. The thought occurs to you that this might prove as a good stop-over point for travelling families, should a move be necessary.
+
+### SD2:110
+This room has been fully ruined, only the shattered remains of a bed left.
+
+### SD2:111
+This large room is occupied by two tables, perhaps once a communal eating or gathering area. The tables are still in useable shape, although little else is. A noxious whiff of air wafts to you from a leaking barrel in the corner.
+
+### SD2:112
+This room is quite small; by your judgement, the furniture is slightly nicer than in the surrounding rooms, but not much. Perhaps a room for passing minor officials.
+
+### SD2:113
+This side of the building was harder hit by the damages of time and the elements, perhaps because of it's proximity to water. This large boarding room is useable, but only barely.
+
+### SD2:114
+This room was hit hard. Ironically, the ruined furniture is the nicest you've seen yet.
+
+### SD2:115
+A gigantic crack runs through the mirror, and the top quarter lays in shards on the floor.
+
+### SD2:116
+A crushed skeleton sits under a pile of rubble, the sorrid story of it's circumstances untold. You watch carefully for any sign of undead activity, but it remains resolutely still. You move on, slightly disappointed.
+
+### SD2:117
+A hole in the floor opens into the cavern below; a useable access point, with a ladder or rope.
+
+### SD2:118
+You return to the passage at the back of the ruined fortress. Do you want to go inside?
+
+### SD2:119
+In a small niche in the cave wall, you find evidence of a former campsite.  You search around, and discover it's much older than it looks; dirt-covered skeletons lay around the ring of stones in a haphazard manner.  You wonder what could have occured.
+
+### SD2:120
+While pondering these thoughts, you notice a reflection from your light.  Carefully digging it up, you discover a sword, still in good condition.  You presume it's a magical sword, considering how long it survived here.
+
+### SD2:121
+This particular section of cavern appears highly unstable.  Sizeable rocks lay strewn about on the ground, and the walls definetly have an unnatural shape.
+
+### SD2:122
+Holding your breath so as not to disturb the ancient timbers, you step inside the decrepit guardhouse.  You carefully poke around for something of interest, but fail to uncover anything.
+
+### SD2:123
+This little remnant of a brick road is all that remains of the great passage this once must have been. Tons and tons of rock have sealed off this access route, and it looks like more might fall at any moment. This clearly does not suit your purposes.
+
+### SD2:124
+You notice a luxuriant growth of moss in this area, leading you to wonder what could be causing it. You proceed a little more cautiously.
+
+### SD2:125
+As you step into the open cavern, you are struck with a sight of stunning beauty.  Captured in your light are shimmering colums of water-covered stone that reflect your light in a dazzling display.
+
+### SD2:126
+The Cabalist in your party steps up. "Stop.  This looks like a divine place of Tsewa, goddess of the stars. I must perform the proper ritual, or she will become angry."  Do you allow the ritual?
+
+### SD2:127
+After a series of chantings and the lighting of the proper incense, the Cabalist turns around. "All done. Thank you for allowing me this."
+
+### SD2:128
+Looking at the cavern one last time, you are mesmerized by the beauty of it all, and become lost in thought for a short period of time.  When you snap back into reality, you feel strangely refreshed.
+
+### SD2:129
+The rest of the party decides they really need to be moving on.  The Cabalist looks mildly upset, but agrees.  As you walk away into the darkness, the light fades from the twinkling columns.
+
+### SD2:130
+You find a dark tunnel leading steeply downwards.  A noisome stench rises from it.  You feel faint just being nearby.
+
+### SD2:131
+Unfortunately, your previous visit seems to have awoken the inhabitant of the rancid hole. You struggle to breath as you are assaulted by an unnatural horror.
+
+### SD2:132
+You decide afterwards that sometimes, perhaps it is better to leave some mysteries unsolved.
+
+### SD2:133
+You emerge from a narrow tunnel into a more stable-looking cavern.  In front of you is the remnants of a road, and you think you see some sort of structure through the darkness.
+
+### SD2:134
+You carefully enter the abandoned structure, and look for anything interesting. It looks like it has been stripped bare. Still, you continue your search.  And not in vain: you discover a half-sheet of parchment in a corner, under a small pile of rubble.
+
+### SD2:135
+It looks like it was written in a very archaic form of your language.  Some of the characters and words mystify you, but you get the gist of the paper: it's some sort of record sheet, recording quantities of goods and dates next to them.
+
+### SD2:136
+The remains of the road seem to lead to this point:  a very dark and winding tunnel leading into the side of the cave wall.  You venture in a little, and are satisfied with it's saftey, if not it's ease of use.
+
+### SD2:137
+The tunnel ends very abrubtly in a dead-end here.
+
+### SD2:138
+You are astonished at the lushness on this side of the mountains.  The ground is full of growth and life.  Even the rocky soil leading up to the mountains have scattered bushes and other growths.  The sound of the rushing river behind you is most unsual.
+
+### SD2:139
+You press on with all the more urgency and curiosity, hopeful of making a new home here for yourselves.
+
+### SD2:140
+You emerge from the mountain pass, and are startled by what you see: a town!  You notice a nearby tower and quickly hide yourself from sight.
+
+### SD2:141
+You slowly come to the realization that not much is actually happening.  You carefully emerge from hiding and take a closer look.  On second impression, the town actually looks fairly run-down, as if it hadn't be used in a very long time.
+
+### SD2:142
+A smile reaches your lips.  This would be perfect for your people; most of the work is already done.  All that remains is to get everyone here, and to make sure the buildings are safe and provide adequate shelter.
+
+### SD2:143
+The guard looks up, surprised. You notice that he looks much less healthy than before. He looks at you with awe and hope, "You're back? But .. er, I'll go tell the elders immediately!" He rushes off, leaving you standing on the doorstep.
+
+### SD2:144
+You wait around for a while before he comes rushing back out. "Come in, come in, quickly. They want to know now. I'll go summon the shaman." He runs off. You step inside, and enter the council chambers.
+
+### SD2:145
+Time has taken it's toll. In the short while you were away, the council is one person fewer, while the remaining look more like weak old men than great and wise elders. After a moment, the shaman hurries in and takes his seat.  You begin your story.
+
+### SD2:146
+After you are finished, you notice a vitality back in everyone's eyes. One of the elders speaks. "This is wonderful news. We shall prepapre for the move immediately. Thank you, good citizens. You are truly the saviours of our tribe."
+
+### SD2:147
+"Unfortunately, we shall need all our resources for the coming move, and therefore are in no position to reward you, yet. Please, we do not wish to be ungrateful, but you will have to forestall your reward until we are at our new home."
+
+### SD2:148
+You nod, and begin preparations for the long journey ahead. It will take some time and doing to transport the entire tribe and their important goods to the other side of the mountains, but it is your duty to the tribe, and it must be fulfilled.
+
+### SD2:149
+Once your home, the Kirin tower is now an empty shell, full of the ghosts of memory. It has been swept clean, and now has been left to the elements.
+
+### SD2:150
+The chief's hut is now empty, all it's power drained, all the items of value moved to the other side of the mountains. You pause to reflect on the past, and how it used to be. You shake your head and move on, aware that you have more pressing tasks.
+
+### SD2:151
+Long weeks pass as you assist your friends and relatives in the journey across the desert and below the mountains.  Gradually, the old town disappears and the new one gains a new lease on life.
+
+### SD2:152
+Finally, you are the last ones left.  Sent behind to do one last check, and to pick up the odd forgotten item, it is you who close the gates on the old town.  With a heavy heart, you give it one last look and move on to your new home.
+
+### SD2:153
+Once a mighty set of gates that protected the tribe from the wanderers in the world, they now hang open, unattended and uncared for.
+
+### DES:0
+Long ago a wizard's experiment had gone afoul and this is the result.
+
+### DES:1
+Though they are not difficult to kill, take care.  Their bite is most poisonous.
+
+### DES:2
+A fearsome demon summoned from a magical spring.
+
+### DES:3
+A strange cross between an ogre and a bear.  These creatures were born of magic long ago.
+
+### DES:5
+Not a true dragon.  Named after there ilk for it is the only beast known that can rival them in brute strength.
+
+### DES:6
+A mindless larva.  Nobody knows what this thing will turn into for no one has ever found one in a cocoon state.
+
+### DES:7
+Capable of launching a multitude of attacks, this critter is extremely deadly.
+
+### DES:8
+Strongest of the good dragons.  This race of dragon kind devotes their entire lives to the destruction of their evil kin.
+
+### DES:9
+A gaping maw of immense size makes this mindless foe one to  avoid.
+
+### DES:10
+Sickly in appearance, these foul creatures blend into their  surroundings and pounce on the unsuspecting.
+
+### DES:11
+A truly fearsome arachnid.  Avoid contact with this eight legged monstrosity, if at all possible.
+
+### DES:12
+Created from nonliving parts and given life through arcane magic.  They will serve their creator until destroyed.
+
+### DES:14
+Minotaurs have a stout body that would make even an ogre quake with fright.  These powerful creatures love to engage in combat.
+
+### DES:15
+Minotaurs have a stout body that would make even an ogre quake with fright.   These powerful creatures love to engage in combat.
+
+### DES:16
+A larger version of the ordinary troll.  The physical strength of these beasts is near god-like.
+
+### DES:18
+This horrid-smelling beast seems to defy all the laws of nature you once felt you knew.
+
+### DES:20
+A mountainous man-fish.
+
+### DES:21
+Though they look fierce, they are not as deadly as one might think.
+
+### DES:22
+Large and deadly.  Their saliva contains a strange chemical.  Those that do not save will become deathly afraid.
+
+### DES:23
+An odd sight, indeed.  Their appearance would be laughable, if they were not so deadly.  They favor the occasional orc to dine on.
+
+### DES:24
+A strange cross between a hyena and a tiger.  Nobody knows if it was spawned from magic or nature.
+
+### DES:26
+Large, but stupid.  These reptiles have been known to trample an adult ogre without even slowing down.
+
+### DES:27
+Do not get too close!  If it gets you in a bear hug you are doomed for sure.
+
+### DES:29
+Formed from a colony of semi-intelligent mosses.
+
+### DES:30
+A real monster.  Fortunately, this eight-legged monstrosity has NO venom.
+
+### DES:32
+These dangerous spiders constantly weave a web, and try to capture their prey.
+
+### DES:33
+A poisonous bite may be the least of your worries if you meet up with one of these vermin.
+
+### DES:34
+A true leader of bandits, this creature is cruel and unforgiving.
+
+### DES:35
+These desperate and violent Cathoon have turned to a life of banditry.
+
+### DES:36
+A powerful and dangerous companion to the Cathoon raiders.
+
+### DES:37
+Long ago, a tribe of trolls developed the ability to think.  Since then, they have developed a strong tribal society that rivals orcs and goblins.
+
+### DES:38
+Strongest of the evil dragons.  Few  have met with one AND LIVED!
+
+### DES:39
+Capable of breathing lightning.  Woe to the fools that find themselves in lonely company with one such as this.
+
+### DES:40
+One of the weaker races of dragon kind.  A sly mind and a taste for blood make green dragons a force to be feared.
+
+### DES:46
+A snake of unbelievable size.  Easily  60 feet in length and as large around as a full-grown bull vusk.
+
+### DES:47
+Large and heavily armored, with a bony back plate and horns.  Only a fool would back one of these things into a corner.
+
+### DES:49
+A hardy warrior trained for combat among the trees.
+
+### DES:50
+A true leader of men.  Trusted with  keeping the troops in line.
+
+### DES:51
+A smaller dinosaur that must hunt in packs in order to bring down larger prey.
+
+### DES:52
+In life, a formerly valiant warrior. In death, he is now a cursed pawn of evil.
+
+### DES:53
+Standing 8 feet tall or more, these large brutes love to bully those weaker than themselves.  They are often employed as troops in mercenary armies.
+
+### DES:54
+A strong family structure allows these giant reptiles to survive in a hostile environment.
+
+### DES:56
+Extremely strong for their size, these beasts would make excellent warriors if they were not so lazy.
+
+### DES:57
+Neither fast nor powerful, these nasty reptiles do have one advantage - a poisonous bite.
+
+### DES:58
+Hailing from some unknown plane, these beasts are often summoned by powerful enchanters to perform their bidding.
+
+### DES:59
+Though not native to the Abyss, they populate large regions of that foul area.
+
+### DES:60
+The creature's favorite form of attack is to lower its armored head and charge.  Don't stand in front of it!
+
+### DES:63
+These minor demons live their lives as servants to those more powerful than themselves.
+
+### DES:64
+Large and fierce, this race of half bear, half man is feared thoughout the land.
+
+### DES:65
+A powerful creature of the undead.  These creatures drain your life force.
+
+### DES:67
+Capable of regenerating, these creatures are almost indestructible.
+
+### DES:71
+A close cousin to the red dragon.  These creatures are more common in the Abyss than on the material plane.
+
+### DES:72
+Yellow mold.  Capable of inflicting a strong chemical burn.
+
+### DES:73
+Olive Slime.   Capable of inflicting a strong chemical burn.
+
+### DES:75
+A creature of the undead.  Their bite can produce paralysis.
+
+### DES:76
+A storm of claws and fangs.  Your basic garden variety of giant spider.
+
+### DES:78
+A humanoid raised from the dead to become one of the cursed undead.
+
+### DES:79
+These ferocious, pack-oriented dragons fortunately lack much of the cleverness and magical ability of their relatives.
+
+### DES:80
+These winged desert warriors frequently plague travellers that stray too far from home.
+
+### DES:81
+Always a significant problem for travellers in the mountain regions, these beasts like to prey upon human flesh.
+
+### DES:82
+Winged terrors, these beasts are known to visit death on those who pass by their high aeries.
+
+### DES:83
+Completely mindless.  They are used as shock troops and as food by   other demons.
+
+### DES:91
+A common orc who claims to have some skill with weapons.
+
+### DES:92
+Slightly larger and more powerful than goblins, these close cousins to true goblins band together in large tribes.
+
+### DES:95
+A brave but somewhat unskilled troop.
+
+### DES:96
+A conscript with little to look forward to in the civilian world.  For this reason they often reenlist to become corporals.
+
+### DES:97
+Charged to keep the troops in line.
+
+### DES:98
+A true leader of men.
+
+### DES:99
+Skilled in the ways of combat and leadership.  An up and coming officer.
+
+### DES:100
+A skilled warrior of the dwarven nations.
+
+### DES:101
+A blaze of claw and fang.  The speed of these netherworld creatures is without compare.
+
+### DES:102
+Normally, they feed on only the dead.  In times of hunger, they will often hunt their prey.
+
+### DES:103
+Abused as a youngster.  These ill- tempered men are common thugs for hire.
+
+### DES:104
+Pickpocket, cutpurse, burglar.  By any name, a thief is a thief.
+
+### DES:108
+A drow elf who has failed to please its goddess.  Such is the fate of those that are flawed in the drow society.
+
+### DES:109
+Avoid the paralyzing bite of these large insects.
+
+### DES:110
+Half man.  Half fish.  All bad temper.
+
+### DES:112
+A small, but deadly variety of your every day troll.
+
+### DES:116
+Capable of casting clerical spells. This humanoid should be feared.
+
+### DES:117
+Prefers to feed on the dead.  However, they will not hesitate to add a little fresh meat when it's available.
+
+### DES:118
+Belonging to the arachnid family, these large critters pack a paralyzing sting.
+
+### DES:120
+A warrior of great skill and strength.
+
+### DES:121
+The priest of a tribe of orcs.
+
+### DES:122
+Strong and capable with arms.
+
+### DES:123
+Only slightly less primitive than a cave man.  These humanoids are all but animals.
+
+### DES:125
+Ratius Giantous
+
+### DES:126
+Skilled in the use of a bow.  These warriors prefer to pepper their enemies with fine yew wood shafts.
+
+### DES:127
+A paralyzing sting makes this large insect quite deadly.
+
+### DES:128
+Over two feet of mindless insect. Capable of overwhelming foes by their sheer numbers.
+
+### DES:129
+Large and fierce warriors of above average skill.
+
+### DES:130
+A hob goblin skilled in the use of a bow.
+
+### DES:144
+An underground dweller that is more reptile than man.  They hate all surface dwellers.
+
+### DES:145
+A larger version of the worker ant. Bred to do battle and defend the nest.
+
+### DES:146
+The central brains behind an ant colony.  Her death is the death of the colony.
+
+### DES:147
+Resembling ghouls, these vile creatures often live among them.  They are much more powerful than ghouls.
+
+### DES:155
+With a shell as dark as soot, this crab is a mindless eating machine with powerful pincers.
+
+### DES:156
+Summoned by noises on the sand, these carrion feeders eat almost anything, including each other.
+
+### DES:157
+Large glands in the pincers inject victims with a powerful chemical that bursts into flame when it comes in contact with air.
+
+### DES:158
+Thousands of tiny spots give this crab its name.  Though nowhere near as fast as a leopard, it is just as deadly.
+
+### DES:162
+A hideous being which feeds on the mental energy of its victims.  Once the mental energy is drained, it feeds on the actual physical brain.
+
+### DES:189
+Loners in the world of the Abyss.  They are among the rarest of demons.  It is rumored that only a few clans of these demons still survive.
+
+### DES:190
+The name is only part of the story.  These foul-tempered creatures stink to high heaven and have a face no mother could love.
+
+### DES:192
+Souls that have been damned to roam the astral plane.  If provoked, they can exist on the material plane for short periods.
+
+### DES:193
+Often found in the company of ghouls, ghasts and other ilk of that manner.  These fiends have an endless appetite for flesh, either alive or dead.
+
+### DES:194
+They are extremely rare even on their own plane of existence.  The shadow mite is immune to projectile weapons.
+
+### DES:195
+The black sheep of the Abyss.  Half demon, half devil.  They are often shunned by full-blooded demons and devils.
+
+### DES:196
+A mutated mushman, fungoids are extremely rare..... and deadly.
+
+### DES:197
+Hailing from the frozen planes of the Abyss, these malevelent creatures are immune to cold based spells.  They also have a nasty bite.
+
+### DES:198
+These beasts are no more than slaves to the evil eys.  They serve as hands for those that have none.  They are imensly strong.
+
+### DES:199
+Weak in mind and body, these demons are lightning quick.  They are cowards in battle and will surrender or run easily.
+
+### DES:200
+Incredibly strong, these demons rule over whole races of lesser ilk.  They prefer to pummle their enemies with bare hands and magic.
+
+### DES:201
+Existing on both the material plane and the astral plane simultaneously.  They can inflict massive chemical damage.
+
+### DES:202
+Nomally happy to stand around and chew cud.  These creatures can be dangerous if they stampede.
+
+### DES:211
+These vermin carry a deadly disease.  They breed so rapidly there are always plenty to take the place of those that perish.
+
+### DES:213
+End of List
+
+### DES:214
+End of List
+
+### DES:215
+End of List

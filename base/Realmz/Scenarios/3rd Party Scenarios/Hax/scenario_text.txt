@@ -1,0 +1,3810 @@
+# Realmz scenario text — Hax
+# -----------------------------------------------
+# Edit the text between the ### header lines.
+# Do NOT modify the ### lines themselves.
+# Max lengths: SD2/DES = 255 chars, OD = 24 chars.
+# Empty entries are omitted; inject will not touch them.
+
+### SD2:0
+Do Not Use
+
+### SD2:1
+Nothing seems to happen.
+
+### SD2:2
+What would you like to do?
+
+### SD2:3
+A fallen log ... looks like a nice place to sit down for a minute.
+
+### SD2:4
+How long have you been trudging through this blasted forest anyhow? Must be a day at least, you tell yourself ... maybe two. Couldn't be more than three.
+
+### SD2:5
+- Four, at the absolute max. Hard to tell, it's so dark in here, you can't tell day from night. The locals don't call this forest the Madwood for nothing. Surely, the town of Hax can't be too much further along ... can it?
+
+### SD2:6
+Copyright ©1999 by John Rawlins. Please send your criticisms, witticisms, nitpicks and bug reports to ..
+
+### SD2:7
+Glory be! A road!
+
+### SD2:8
+... used to be a road, anyway.                                                       Well, at least it looks like the weather's clearing up.
+
+### SD2:9
+Ahh ... you feel your strength returning ...
+
+### SD2:10
+Take a seat!
+
+### SD2:11
+Rest later, it's raining!
+
+### SD2:12
+"Hello!" says the log. "My name's Elmo. I'm a log! How are you doing?"
+
+### SD2:13
+Suddenly, the log you're sitting on begins to talk to you!
+
+### SD2:14
+"Good. Let me give you a bit of advice, okay? When you get to the fork in the road, DON'T go south, okay? There's a lot fewer Nasties if you take the north road.  South in general is a bad idea around these parts."
+
+### SD2:15
+Uh-oh.
+
+### SD2:16
+You whirl about to see a Nasty in your midst!
+
+### SD2:17
+The Nasty explodes!
+
+### SD2:18
+A sign on the door reads "Doctor Quack's Snake Oil Pavilion."
+
+### SD2:19
+Elmo bursts open, and splinters fly everywhere!
+
+### SD2:20
+You have talked yourself into an extremely morbid state of mind. You decide it would be a good idea to dive on your weapons and end it all. Luckily, you forget to unsheathe them first, so you emerge relatively unharmed.
+
+### SD2:21
+"Hello?" says the log. "I said, my name's Elmo. I'm a log! How are you doing?"
+
+### SD2:22
+Are you sure you want to hack Elmo into firewood?
+
+### SD2:23
+"Okay, you lunkheads, give me your best shot!" cries Elmo. He launches himself at you with all the power of a falling tree.
+
+### SD2:24
+Sorry, it's too late to change your mind.
+
+### SD2:25
+"I hate the Nasties," whispers Elmo furtively. "For one thing, they're crazy as an undead undertaker! Don't let one bite you, or you'll go crazy too!"               -Just what you need, a paranoid talking log. You nod at Elmo and start edging away ...
+
+### SD2:26
+Inside Elmo are many fine quality wooden items.
+
+### SD2:27
+"Wait!" hollers Elmo. "One more thing before you go ..."
+
+### SD2:28
+"You might find these useful. I never wear 'em anymore."
+
+### SD2:29
+Spouting profane colloquialisms regarding elected officials who prefer cutting taxes to fixing the roads, you press on.
+
+### SD2:30
+You  re-enter Doctor Quack's Snake Oil Emporium.
+
+### SD2:31
+You can't think of any more questions to ask the old dwarves. They look at you expectantly. "Will you go into the cave and kill the bears for us now?"
+
+### SD2:32
+The old dwarf, Canterbury, looks up in surprise when you return. "Why didn't you go into the cave? Surely you're not afraid of a few mangy bears?" You assure him of your fearlessness and walk back outside.
+
+### SD2:33
+A dilapidated temple juts out of the swampy ground. It is staffed by the same incompetant clerics that "assisted" you in your battles here. Their prices are insane.
+
+### SD2:34
+Suddenly, the Nasties show their true color - yellow!
+
+### SD2:35
+Battered, blind, suffering from numerous other afflictions and curses, your party can endure no more. As another wave of shadow elves prepare to attack, you lapse into unconsciousness ...
+
+### SD2:36
+With unbridled cowardice, the Nasties scatter and vanish deep into the Madwood.
+
+### SD2:38
+El trunko es muy lock-o!
+
+### SD2:39
+¡Nada, amigo!
+
+### SD2:40
+You have successfully detected a trap!
+
+### SD2:41
+Don't you think you should check for a trap first?
+
+### SD2:42
+Twin iron barbs, cleverly hidden beneath the hasp of the lock, spring out at your eyes!
+
+### SD2:43
+The lock opens!
+
+### SD2:44
+You have successfully disabled the trap!
+
+### SD2:45
+You can't tell if there's a trap or not.
+
+### SD2:46
+The trunk is locked.
+
+### SD2:47
+No dice, champ!
+
+### SD2:48
+This chest is protected by a powerful curse. Sadly, you have just activated it!
+
+### SD2:49
+The rabid Nasty you just released from the chest shows no sign of gratitude.
+
+### SD2:50
+Inside this cozy little cottage lives a withered, creepy old shadow elf.  Something about the look in his eyes makes your skin crawl. "Greetings, adventurers!" he sneers. "My name is Zhark the Slaver. Won't you please come in?"
+
+### SD2:51
+Approach him
+
+### SD2:52
+Run away
+
+### SD2:53
+After making a series of new-age gesticulations at you, the vile shadow elf fires off a volley of malicious spells!
+
+### SD2:54
+"Weaklings!" Zhark spits contemptuously. "Creatures such as you don't deserve your freedom! Admit it, you know I'm right!"
+
+### SD2:55
+Reeling from Zhark's attack, you are barely aware of your surroundings. A series of powerful curses have crippled your party.
+
+### SD2:56
+Agree
+
+### SD2:57
+Disagree
+
+### SD2:58
+"Then you shall have an opportunity to fight for your freedom." With a gesture, Zhark teleports your party to a distant island in the east.
+
+### SD2:59
+A moment before Zhark bites the dust, the old crab manages to croak out a summoning spell, and teleports himself to safety!
+
+### SD2:60
+Your weapon buries itself in the zombie's squishy body!
+
+### SD2:61
+You return to consciousness (at least some of you do) with a splitting headache. You are in chains.
+
+### SD2:62
+"Not bad," Zhark's voice echoes in your brain. "You defeated six very tough pugilists. Let's see how you fare against some armed opponents!"
+
+### SD2:63
+The last of the shadow elves launch their attack. Zhark has summoned two giant zombies to aid in the task of destroying you.
+
+### SD2:64
+It would appear that your entire party has been defeated.                                                           Do not lose heart.                                          Bywater was not built in a day.
+
+### SD2:65
+Surrender
+
+### SD2:66
+Fight
+
+### SD2:67
+And the hits just keep on coming!
+
+### SD2:68
+"Still standing, are we?" There is now a trace of respect in Zhark's voice. "It's good to see slaves with such a strong spirit. To show my magnanimity, I will let you select one of your party to be healed."
+
+### SD2:69
+Oh no, not monks!
+
+### SD2:70
+Once the clerics have carried off their next patient, Zhark appears before you. You see a faint trace of admiration on his face. Then his expression quickly reverts to a mask of contempt.
+
+### SD2:71
+"I will fetch an extraordinary price when I  sell you. Of course, I already have more ducats than I'll ever need." As he walks away, you see he has dropped something on the ground.
+
+### SD2:72
+Great ... a withered twig.
+
+### SD2:73
+"You have done an old elf's heart glad," beams Zhark. "Of course, to win your freedom, you will have to defeat me as well." With a wave of his hand, he conjures up two hideous zombies.
+
+### SD2:74
+"Get to work, ya slackers!" he shouts at you. "You gotta finish that barricade before nightfall if you know what's good for you!" You would dearly like to pop this guy, but you know this is not the proper place or time.
+
+### SD2:75
+The overseer orders you over toward a motley group of creatures who are building a high wall nearby. You see a ten foot tall gargoyle who is doing most of the heavy lifting. Like many of the slaves, she is blind.
+
+### SD2:76
+Enough. You grab a nearby brick and are about to bean this loser when suddenly a horde of sea monsters scramble out of the river and attack!
+
+### SD2:77
+She is also clearly exhausted, and moving slowly. The overseer curses at her and hits her with his whip.
+
+### SD2:78
+"Dead ones don't count," Zhark adds quickly.
+
+### SD2:79
+Shadow elf clerics take the one you chose to a nearby temple for healing.  The rest of you are not so fortunate.
+
+### SD2:80
+Shadow elf clerics return your friend. They don't seem to have done any healing at all.  "Okay, who's next?" they ask. "--Sorry, we don't do dead ones."
+
+### SD2:81
+Well, well, well ...         a well.
+
+### SD2:82
+Here, in the center of the town of Manifest,  you are placed on the block and sold to the highest bidder.
+
+### SD2:83
+"Sold!"
+
+### SD2:84
+The overseer has decided that this is not the wisest time to beat the slaves.
+
+### SD2:85
+As you leave, the shopkeeper asks you, "Hey do me a favor? Take out the trash." He hands you a wastebasket stuffed with gems!
+
+### SD2:86
+Shadow elf clerics return your friend. You wonder if they actually know any healing spells.  "Okay, who's next?" they ask. "--Remember, we don't do dead ones."
+
+### SD2:87
+Many of the slaves seem to have slipped away in the confusion. You can too, but you realize that if you don't stay and finish this barricade, many innocent people will die. What do you do?
+
+### SD2:88
+Build barricade
+
+### SD2:89
+Escape
+
+### SD2:90
+As you work side-by-side with Gara, the blind gargoyle, she tells you her story. "My village family was invaded by Zhark seven moons ago. Our men fought valiantly, but his magic was too powerful. Many died that night.
+
+### SD2:91
+"Who in my family is dead or alive, I don't know. Today, all slaves are Gara's family." She pauses as she lifts a huge stone and forces it deep into the ground to use as a cornerstone.  "We have all slept the same nightmare.
+
+### SD2:92
+"But Gara is strong, yes?" she bares her hideous fangs in a grin. "Gara shall not be a slave forever. The dark elves will pay for their crimes. You will see."
+
+### SD2:93
+Since no one else is still standing, and Zhark is nowhere to be seen, you may safely assume that you have emerged victorious.
+
+### SD2:94
+"Lady Dawn is the one who thinks she owns us." Gara continues in a low growl. "But no slave's ever seen this Lady Dawn. I think she will pay very much, when Gara goes to meet her."
+
+### SD2:95
+Gara pauses. You realize she is sniffing the air. "More crabs," she says anxiously.
+
+### SD2:96
+For a moment the shock of what she has done has left Gara speechless. Then she cries out, "We cannot wait any longer. All slaves must rise now! Revolt now!" Several of the others cheer and throw the stones and mortar into the river.
+
+### SD2:97
+"There is no turning back. If you are with us, adventurers, you will join us at Lady Dawn's house." Gara and the other renegades run off.
+
+### SD2:98
+All this noise has awoken the overseer from his nap! "Aren't you done with this barricade yet?" he snarls. "These monsters will kill us all!" Which leads you to wonder, why is such an important job being left to a handful of slaves?
+
+### SD2:99
+There is little time to ponder. The overseer hits Gara with the whip again, and this time she is ready for him. You are helpless to intervene as she picks him up off the ground and hurls him over the barricade!
+
+### SD2:100
+This is the overseer's cabin. Aside from a few damaged whips and some well-worn copies of Playtroll Magazine, there is nothing of interest here.
+
+### SD2:101
+The gate is locked.
+
+### SD2:102
+What a beautiful carpet.
+
+### SD2:103
+Throw the lever?
+
+### SD2:104
+How do you get yourself into these things?
+
+### SD2:105
+Interesting idea. But this isn't jail.
+
+### SD2:106
+Are you sure you want to poke around in here? It doesn't look very hygienic.
+
+### SD2:107
+An inscription on the wall reads                       THEY LIVED WITHOUT BLEMISH                              MAY THEIR REST BE DEEP AND LUXURIOUS
+
+### SD2:108
+Most of the sarcophagi are sealed with a magical bond that you cannot break. This one, however looks like something a skillful rogue might be able to open. Do you want to try?
+
+### SD2:109
+There is most certainly some powerful magic here.
+
+### SD2:110
+You are not strong enough to destroy this magic.
+
+### SD2:111
+We regret to inform you that you have triggered a trap. A blast of magical energy erupts from the sarcophagus!
+
+### SD2:112
+The sarcophagus opens!
+
+### SD2:113
+Inside is a perfectly preserved body dressed in a magnificent suit of armor. He clutches a staff in his right hand. Take the staff?
+
+### SD2:114
+As you reach for the staff, the creature in the sarcophagus roars with rage!
+
+### SD2:115
+Sarcophagi all around you fly open. Your desecration shall not go unpunished!
+
+### SD2:116
+While you battle, more sarcophagi are opening!
+
+### SD2:117
+An extensive library of medical texts, many centering on the dwarven wasting disease. All the books are well worn, with extensive comments written in the margins.
+
+### SD2:118
+"I think they may know the truth about me.  Uno told me they can no longer keep the sea creatures from entering into the bay. Is it just my fevered imagination, or is this a deliberate plot to destroy me?
+
+### SD2:119
+"I have asked that the slaves erect a temporary barricade, but I fear it may be too late. Only a skilled engineer can build a permanent wall to keep us safe, but so far Lucky has not answered my letters.
+
+### SD2:120
+"Yesterday I informed the butler that his services were no longer needed. He has always regarded me with contempt, and I have never felt I could trust him. It became almost impossible to hide my symptoms from him. Now I am completely alone.
+
+### SD2:121
+"How can I trust any of them? They must hate me. If the situation were reversed, and I was forced to serve them, would I not grow to resent and hate them as well?
+
+### SD2:122
+Enzymes in the frog's blood attack your nervous system!
+
+### SD2:123
+Here on the wall you see a portrait of a beautiful dancer. On the frame is a plaque reading "My Beloved."
+
+### SD2:124
+It must be the maid's day off.
+
+### SD2:125
+You give it your best try, but the picture frame is bonded firmly to the stone wall. You will need some special tools to remove the picture.
+
+### SD2:126
+You have successfully removed the picture. You have also broken the polished wood frame and left a huge crater in the wall. Oh, and there's broken glass everywhere.
+
+### SD2:127
+You are certain there is no trap on this lock.
+
+### SD2:128
+You almost opened the lock. Came very very close to success, in fact. But failed.
+
+### SD2:129
+Your lockpicking skills have met their match. In all fairness, this is a tough lock to pick.
+
+### SD2:130
+You hold the picture in front of the statue's face.
+
+### SD2:131
+Time passes. Nothing happens.
+
+### SD2:132
+An inscription on the base of the statue reads WHEN I AGAIN SEE THE FACE OF THE ONE I LOVED, I SHALL RETURN.
+
+### SD2:133
+To your stunned amazement,                     NOTHING HAPPENS!
+
+### SD2:134
+Your wizard eye tells you that this indeed is a living creature imprisoned by enchantment.
+
+### SD2:135
+The statue turns to flesh!
+
+### SD2:136
+A very handsome elf steps down off the stone platform and stands in your midst.    "Ed The Vain at your service," he says in a ringing heroic voice. "Uh, does anyone have a bottle of wine?"
+
+### SD2:137
+Ed The Vain chugs down the entire bottle. "Thank you kindly!" he says warmly. "I haven't had food or drink in seven thousand years. You wouldn't have any food, would you?"
+
+### SD2:138
+Ed The Vain is clearly disappointed. "Still, I am in your debt, good people. Speaking of me, I was a great adventurer in my day. If you will have me, I would like to fight by your side." Do you accept Ed The Vain into your party?
+
+### SD2:139
+Ed The Vain walks off in search of a tavern.
+
+### SD2:140
+Ed The Vain has eaten all your iron rations! "Thank you kindly!" he says again. "Speaking of me, I was a great adventurer in my day. If you will have me, I would like to fight by your side." Do you accept Ed The Vain into your party?
+
+### SD2:141
+"Hey! Some of you are blind!" Ed The Vain exclaims. "I'm an expert at healing blindness." He splashes a potion into your eyes, healing you instantly.
+
+### SD2:142
+Ed tells you his story. "I once owned the estate now held by Lady Dawn. I sought to marry into the ruling family of Manifest, and to increase my standing in the community, I hired a man to sculpt a huge statue of me to stand in the town square.
+
+### SD2:143
+"It turns out this man had similar ambitions and sought to ruin me by magical means. He asked me to pose for the statue, then cast an enchantment on me.  ... Say! You don't think my egotism put me in a position to be taken advantage of, do you?"
+
+### SD2:144
+This skeleton's got some valuable accessories.
+
+### SD2:145
+Your adventurer's intuition tells you, you ought to be moving on ...
+
+### SD2:146
+Hey, this grid looks a little loose. Do you want to try to get it open?
+
+### SD2:147
+yes, yes, YES!
+
+### SD2:148
+The grid opens, revealing a narrow tunnel. Do you want to climb down into it?
+
+### SD2:149
+No, I'll stay here & die
+
+### SD2:150
+The note says                                                                 DO NOT, UNDER ANY CIRCUMSTANCES,                      PULL THIS LEVER - THIS MEANS YOU!                       by order of the Manifest Public Water Authority
+
+### SD2:151
+Now that you have deactivated the wall of fire, the public water supply pours down into the tunnel, enters the room you just left, and sloshes back out.
+
+### SD2:152
+While you ponder over what you have just done to the public water supply, the water splashes up against the iron flame jets, causing a massive explosion.
+
+### SD2:153
+Struggling to remain standing, Lady Dawn stares you directly in the eyes. "I can only assume you're here to kill me," she says in a hoarse whisper. "Though it barely seems necessary. As you can see, I have not been in excellent health lately."
+
+### SD2:154
+"I have been served by slaves all my life, but only recently have I realized the cruelty of this situation. Perhaps the weak should not be expected to care for the strong.  It seems so obvious now that my life has become such a struggle."
+
+### SD2:155
+"I do not seek your pity, but perhaps you will grant me an opportunity to perform some good before I die. I have studied extensively the medical lore of clerics throughout the Realmz. I know how to cure the maladies that you suffer from.
+
+### SD2:156
+"Will you permit me to remove your curses and heal your afflictions?"
+
+### SD2:157
+At that moment, Gara and scores of angry slaves pour into the room.  "Death to Lady Dawn! Death to the slavers!" they chant.  The confusion in the room is contagious. You try to shout for order, but you can barely hear yourself over the screaming mob.
+
+### SD2:158
+Lady Dawn pulls an amulet from around her neck and throws it down upon the floor. There is a burst of smoke and a number of magical guardians appear around her.  Thirty enchanted scimitars slice their way toward you.
+
+### SD2:159
+No
+
+### SD2:160
+Yes
+
+### SD2:161
+You inch your way through a narrow duct and emerge in a room blazing with fire.
+
+### SD2:162
+Lady Dawn places her hands on one of you and begins the ceremony of healing...
+
+### SD2:163
+You have found an underground tunnel. After journeying a great distance, you emerge in a squalid quarter of Manifest town.
+
+### SD2:164
+A glance around you confirms that most of the rebel slaves have joined Lady Dawn in death. Gara approaches you slowly. She covers her hand with blood from one of her battle wounds, then extends her hand toward you.
+
+### SD2:165
+You recognize this offer to intermingle blood as a traditional pact of friendship. Gara is formally asking to join your party. Do you accept her?
+
+### SD2:166
+You reach out and shake Gara's hand with your own bloody mitts. "Family now," says Gara.
+
+### SD2:167
+Apparently this battle has done serious structural damage to this side of the house. You might wish to high-tail it out of here.
+
+### SD2:168
+You enter a very dark basement. It is so dank and humid down here that your torches are immediately worthless, and you decide to drop them.
+
+### SD2:169
+You see some very nasty rats ahead! Do you wish to attack?
+
+### SD2:170
+More rats swarm out of the waters!
+
+### SD2:171
+An unearthly light shines in this cavern. You suspect a major battle is ahead.
+
+### SD2:172
+Unaccustomed to the bright light, it takes a moment to realize that you are staring eye-to-eye with an enormous rat. You are horrified to see it is standing upright. You are even more horrified when the creature speaks!
+
+### SD2:173
+"Prepare to die," the monster hisses.  A pair of glowing daggers gleam in its paws. Then you feel a swarm of smaller rats at your ankles and the battle begins.
+
+### SD2:174
+Finally, you see a glint of sunshine ahead!
+
+### SD2:175
+The gate slams shut behind you!
+
+### SD2:176
+On top of the walls all around you appear a squadron of archers. They stare down at you as they string their bows. The elfin commander calls down to you, "State your business!"
+
+### SD2:177
+"We have no king!" replies the commander.
+
+### SD2:178
+"There is no adventure to be had in this city!" replies the commander.
+
+### SD2:179
+This strikes the commander as so funny, he falls out of the parapet and lands at your feet, breaking his neck in the fall.  You eagerly strip him of his weapons and armor.
+
+### SD2:180
+The archers are so incensed by the sight of you stripping their commander's body of all his belongings, they open fire on you!
+
+### SD2:181
+The commander is a bit surprised by your frank reply. Before he can respond, a messenger rushes up to him, shouting, "The water supply has been poisoned! All the people are dying!" The army rushes off in all directions, leaving you to yourself.
+
+### SD2:182
+The walls come tumbling down!
+
+### SD2:183
+There's something very strange about these walls ... they radiate an aura almost as if they're alive.
+
+### SD2:184
+Don't you want to try to disarm the trap first?
+
+### SD2:185
+You have triggered a trap!
+
+### SD2:186
+Ed the Vain doesn't live here any more.
+
+### SD2:187
+This is the most poorly-kept temple you've ever been in. A grubby cleric in a greasy robe offers his sadistic services.
+
+### SD2:188
+Dawn on a small island off the coast of Manifest. There is a big ugly guy with a whip glowering at you.
+
+### SD2:189
+Who?
+
+### SD2:190
+You turn to leave this sorry place. "Hey, ain't yous gonna make a contribution?" the cleric grunts, shaking a collection plate at you. "We could use some dough to fix up this dump!"
+
+### SD2:191
+What would you like to contribute?
+
+### SD2:192
+"That's ALL?" the cleric growls. "Usually we get a gem or two, at least." You get the distinctive feeling that you're being shaken down by this dirtbag.  Furious, you tweak his little red tomato nose.
+
+### SD2:193
+The cleric drops his collection plate and picks up his quarter staff. Blurting an evil incantation, he casts a summoning spell that goes horribly wrong.
+
+### SD2:194
+You wonder if the coffins contain former merchandise or former customers.
+
+### SD2:195
+"The Blazing Squid Coffee House"
+
+### SD2:196
+"What'll it be?"
+
+### SD2:197
+Smoooooooooth!
+
+### SD2:198
+This packs a major caffeine rush!
+
+### SD2:199
+Wow! This one packs a punch!
+
+### SD2:200
+"I can tell you folks are connoisseurs," the bartender says quietly. "Would you be interested in some of our more ... potent beverages?"
+
+### SD2:201
+"Welcome back," the bartender greets you with a wink.
+
+### SD2:202
+This shadow elf's so huge, he must have some orcan blood.  "Burly Limbsnapper," he growls by way of introduction. "Wanna arm wrestle?"
+
+### SD2:203
+"How much will you wager against this?" he asks,  gesturing toward his weapon. You are awed when you recognize it is the fabled Death's Head Axe!
+
+### SD2:204
+"Hello. I am a vampire monk. I'm a virtual steal at 200 gems." Since this guy's pretty obviously an orc with false fangs, you decide to pass on him.
+
+### SD2:205
+"You insult me!" Limbsnapper bellows. "This axe is worth more than 300 gems and you know it! We'll arm wrestle for 400 gems, or I'll pop your skulls off and drink your spinal fluid! Agreed?"
+
+### SD2:206
+Who will arm wrestle this gorilla?
+
+### SD2:207
+Your monk makes mincemeat of him!
+
+### SD2:208
+Limbsnapper is a sore loser in more ways than one. His right arm useless, he picks up the Death's Head Axe in his left and nearly cleaves your monk in two!
+
+### SD2:209
+You sit down across from Limbsnapper. The moment your palm meets his, you know that something's not on the level here.
+
+### SD2:210
+It's the gloves he's wearing ... some insidious magic is draining your life force!
+
+### SD2:211
+Desperately you try to break free from his grip, but you haven't the strength ...
+
+### SD2:212
+It's actually a relief when he slams your arm down onto the table!
+
+### SD2:213
+You're several hundred gems lighter and you can't feel anything in your right arm. "Care for two out of three?" Limbsnapper laughs at you.
+
+### SD2:214
+The First National Bank Of Manifest. We offer unlimited storage in a safe deposit box. For a nominal fee, of course. Would you like to set up an account?
+
+### SD2:215
+Zeb's Pawn Shop - a fair price for everything.
+
+### SD2:216
+You enter the local War*Mart.
+
+### SD2:217
+The sign outside says Pugilist's Guild. Enter?
+
+### SD2:218
+"Care to box a few rounds? You might win yourself some gold."
+
+### SD2:219
+"Enter the ring, and good luck to you!"
+
+### SD2:220
+"Congratulations! Here's your prize!"
+
+### SD2:221
+A sign on the door simply reads "Hobb's."
+
+### SD2:222
+Stones fall from the ceiling! The more agile members of your party are able to dodge out of harm's way.
+
+### SD2:223
+Slaves-R-Us
+
+### SD2:224
+"What do you want?" says the little clerk sitting at this desk. "Can't you tell I'm very busy?" He puts away his deck of cards and sighs deeply. "I suppose you want to buy a slave. Okay, follow me." He walks off briskly.
+
+### SD2:225
+"Okay, pick out whatever one you like." He swiftly returns to his card game.
+
+### SD2:226
+A sign on the door says "No vampires." Enter?
+
+### SD2:227
+A bolt of energy blasts out the door and kills your vampire!
+
+### SD2:228
+The Manifest Guard is looking for new recruits. Do you want to sign up?
+
+### SD2:229
+"Okay, you're assigned to help us put down the slave revolt in Goblintown."
+
+### SD2:230
+"Nice work but, uh, the budget's pretty tight this year so we're going to have to downsize you. Here's your pension."
+
+### SD2:231
+You enter the No-Name Pub.
+
+### SD2:232
+As you lop off this arm of the hydra, two more grow back in its place!
+
+### SD2:233
+Two philosophers are debating each other. "The pub has no name," says one. "Don't be an idiot, Kierkegaard," says the other, "the pub is called the No-Name Pub! That's a name!"
+
+### SD2:234
+"Your foolishness is most distressing, Groucho," says Kierkegaard. "No-Name Pub is not a name, it is simply an artifice employed by the proprietor to indicate that the pub has no name!"
+
+### SD2:235
+The waiter shows you to a table and presents you with the menu:
+
+### SD2:236
+"Excellent choice," mumbles the waiter. In minutes, he returns with an enormous serving dish piled high. As you are about to dig in, the waiter stops you. "Always remember," he cautions. "Spear the meatballs first."
+
+### SD2:237
+"I'm dreadfully sorry," says the waiter. "Spam parfait is only served on Wednesdays." When you tell him it *is* Wednesday, he snaps, "Spam parfait is never served on *this* Wednesday!"
+
+### SD2:238
+As you spear the first meatball, your fork turns and pokes you in the hand!
+
+### SD2:239
+The waiter is by your side in an instant. "I'm terribly sorry about that. I should have warned you, it's the nature of the beast." He gives you each a pair of steel gloves. "No fork can penetrate this magic steel," the waiter reassures you.
+
+### SD2:240
+If you weren't so hungry, you'd probably walk out of this place right now. But the food is delicious. Your fork occasionally attempts to skewer you, but it cannot penetrate the magic gloves.
+
+### SD2:241
+You notice that every time you eat a forkful of spaghetti, there seems to be twice as much spaghetti left on your plate. This is a  pretty strange pub, you conclude. At the next table, Kierkegaard and Groucho are quarrelling with the waiter.
+
+### SD2:242
+"I shall file a complaint against this establishment!" shrieks Kierkegaard. "The local ordinances specify that all public houses *must* offer  alternative meals to their westward-bound patrons! I want my spam parfait!"
+
+### SD2:243
+"Alas, my friend, you cannot file a complaint," interrupts Groucho. "The complaint form requires you to fill in the name of the establishment, and this pub has no name."
+
+### SD2:244
+"Of course it has a name! The No-Name Pub! You said so yourself!" Kierkegaard whines. "I regret to say, your prior argument has convinced me," Groucho counters, "No-Name Pub is not a name." ... You turn back to your meal.
+
+### SD2:245
+As you devour the last meatball on your plate, all the remaining spaghetti vanishes!
+
+### SD2:246
+A large poster on the wall reads THIS ESTABLISHMENT, IN COMPLIANCE WITH CIVIC ORDINANCE 14(C), PROVIDES ALTERNATIVES TO HYDRA MEAT FOR ALL WESTWARD-BOUND TRAVELERS.
+
+### SD2:247
+A large billboard reads WELCOME TO FIVE CORNERS, HOME OF THE MOUTHWATERING HYDRA.
+
+### SD2:248
+A sign reads THANK YOU FOR VISITING FIVE CORNERS, HOME OF THE MOUTHWATERING HYDRA. THOSE WHO HAVE PARTAKEN OF HYDRA IN THE LAST 20 YEARS ARE ADVISED TO TAKE CAUTION.
+
+### SD2:249
+This is the Five Corners town hall. A frantic debate is taking place over the need to label packages of hydra meat. "There are many visitors to our town who are woefully ignorant of the consequences of a high hydra diet!" exclaims one official.
+
+### SD2:250
+You enter the Five Corners health food store. Many nutritious foods are available.
+
+### SD2:251
+He gestures at your party. "I'll wager that this pack of thugs - er, tourists - have no idea what may await them if they choose to travel the west road!"
+
+### SD2:252
+"What are you gonna do, Biff? Starve the hydras?" asks a withered gnome in the corner. "Everybody's gotta eat. We gotta eat. Hydras gotta eat. Ever try to chow down on an emaciated hydra? It's not very mouthwatering, believe me!"
+
+### SD2:253
+"You have no moral fiber, Mr. Nudibranch!" shouts a dwarven lady. "Also, you have no concept of the importance of repeat customers." ... it looks like this is going to go on all day. You decide to see if something more interesting is afoot elsewhere.
+
+### SD2:254
+You enter the Five Corners inn.
+
+### SD2:255
+What a ritzy place! Luxurious carpeting, a fountain bubbling in the lobby, even indoor heating! You brace your wallet for the worst.
+
+### SD2:256
+The lady at the front desk confirms your worst fears ... rooms cost 1 gem per year! You try to explain that you only plan to stay for a night or two, but she briskly replies, "Rules is rules."
+
+### SD2:257
+"Local ordinances prohibit us from renting a room for less than a year. Actually, if you're smart you'll become permanent residents." You tell her you're adventurers, and adventurers never become permanent residents of anywhere.
+
+### SD2:258
+"I shan't argue with you," she replies snottily. "However, it's only fair to warn you that the hydra has a very precise sense of smell. They can tell what you had for breakfast ... twenty years ago. Now, would you like to rent a room?"
+
+### SD2:259
+The lady gives you a dazzling smile. "You're smarter than you look," she says admiringly. "Here's your key. Your room is number three."
+
+### SD2:260
+This place has some pretty heavily-armed bellboys.
+
+### SD2:261
+Room 3. The door is locked.
+
+### SD2:262
+Room 2. The door is locked.
+
+### SD2:263
+Room 1. The door is locked.
+
+### SD2:264
+The door opens.
+
+### SD2:265
+"Back off, you!" snarls the guard.
+
+### SD2:266
+Lock the door?
+
+### SD2:267
+"You'll never take me alive!" screams the furfoot, leaping for your throat.
+
+### SD2:268
+They stop talking and look at you. Apparently they don't like people eavesdropping on their private conversation. You tip your helmets and move on.
+
+### SD2:269
+A very clean, small, drab little room.
+
+### SD2:270
+The guard eyes you suspiciously.
+
+### SD2:271
+"Hey, what are you up to there?" hollers one of the guards.  You stammer out a hasty - and not very credible - excuse for your attempted roguery. "If any of us see you pull a stunt like that again, you'll find yourself in the county jail, understand?"
+
+### SD2:272
+Your key won't open this lock.
+
+### SD2:273
+The door is locked. (It *is* a prison cell, after all.)
+
+### SD2:274
+"Hey, what are you up to there?" hollers one of the guards.  "That's it - you're under arrest!" Before you know it you are surrounded by scores of guards. They escort you to a tiny cell in the county jail.
+
+### SD2:275
+"There they are! Halt!" hollers someone from behind.
+
+### SD2:276
+You can store many of your items in this roomy trunk (just hit the Go Shop button).
+
+### SD2:277
+You might be able to squeeze out this tiny window if you drop some of your heavier items.
+
+### SD2:278
+You still weigh far too much to get through the window. Drop some of your bulkier items.
+
+### SD2:279
+You're almost slim enough to fit through the window. Drop more stuff.
+
+### SD2:280
+You wriggle out through the window. There is a slippery narrow ledge overlooking some treetops.
+
+### SD2:281
+Whoops! You descend into the treetops below.
+
+### SD2:282
+The trunk is unlocked. Open it?
+
+### SD2:283
+The occupant of this room enters. He is most displeased to see you rummaging through his personal belongings.
+
+### SD2:284
+Your party floats approximately 1/10 centimeter above the floor.
+
+### SD2:285
+The ledge here looks much sturdier than it actually is.
+
+### SD2:286
+Passing hunters see you hovering in midair and mistake you for giant geese.
+
+### SD2:287
+There's quite a chill in the air. You sneeze, propelling the entire party several feet north.
+
+### SD2:288
+You have successfully triggered a trap!
+
+### SD2:289
+The party takes flight ...
+
+### SD2:290
+A note in the trunk reads "While you're here, I'm robbing everything in your room. Have a nice day."
+
+### SD2:291
+All that's left in the trunk is a note that says, "See? I told you."
+
+### SD2:292
+"My only defense now is grandfather's infernal amulet. I wonder if I shall have the courage to use it when the time comes."
+
+### SD2:293
+The Nasty snatches one of your best weapons and throws it deep into the trees!
+
+### SD2:294
+A horde of angry goblin slaves have broken into the armory and are preparing for battle. Your small group is easily surrounded.
+
+### SD2:295
+Looks like this one made a break for it.
+
+### SD2:296
+A beastman, chained to the wall, roars in misery. He is drenched in sweat and rolls his eyes feverishly.
+
+### SD2:297
+For the most part, dragons do not make especially reliable slaves, as they are surly and will often spend their time trying to kill you.
+
+### SD2:298
+This cell has been covered from ceiling to floor with magical runes. The goblin shaman imprisoned within is glowing with infernal energy. "Dare ye not touch the Shaman Supreme!" he shouts menacingly. He stands perfectly still, awaiting your reaction.
+
+### SD2:299
+The occupants of this cell have been here so long they died ... but that won't stop them from attacking you.
+
+### SD2:300
+"Ye gods! Is there nowhere I can do my work in peace?" The clerk snatches up his cards and storms off.
+
+### SD2:301
+Somehow these slaves doesn't seem to say "Take me home."
+
+### SD2:302
+Attention shoppers: today only, one dozen shantiles at a special discounted price!
+
+### SD2:303
+A cult of powerful goblin healers live here. Enter?
+
+### SD2:304
+One of the goblins bars your way in. "Are you friends of our people?" he asks.
+
+### SD2:305
+His expression softens when he sees there is a goblin in your party. "Welcome," he says politely in his native tongue.
+
+### SD2:306
+His expression softens a bit when he sees there is a hobgoblin in your party.
+
+### SD2:307
+"You! You are the ones that killed our Shaman Supreme!" The goblins grab their spears to attack you.
+
+### SD2:308
+"You! You are the ones that killed our brave men in our struggle against the slave masters!"
+
+### SD2:309
+His expression softens when he sees there is a goblin in your party. "Leave quickly, or one of the others will surely recognize you as the killer of the Shaman Supreme." You leave, cursing the day you killed their shaman.
+
+### SD2:310
+His expression softens when he sees there is a hobgoblin in your party. "Leave quickly! Or one of the others will surely recognize you." You leave, cursing the day you volunteered for the Manifest Guard.
+
+### SD2:311
+His expression softens when he sees there is a goblin in your party. "Keep your faces covered, hopefully the healers will not recognize you."
+
+### SD2:312
+The guards here are not the type who shout, "Halt, who goes there?" or somesuch rubbish. They prefer the hands-on approach.
+
+### SD2:313
+One of the dark elves here recognize you as former members of the Guard. "Hey, you can't go in this way," he warns you. "Our orders are to kill on sight!" Do you leave?
+
+### SD2:314
+You are astonished to see a sign hanging outside this house that reads "Authentic Haxstones." Especially when you see the useless lump that the shopkeeper is trying to unload!
+
+### SD2:315
+Suit yourselves.
+
+### SD2:316
+The sign here reads KOBOLD FUNHOUSE.
+
+### SD2:317
+The Shaman Supreme is pleased to see you have not attacked him. "Your prudence shall be greatly rewarded, my children," he says softly.
+
+### SD2:318
+Your jaw drops when you see the undead monstrosity inside this cell. In the moment it takes you to lift your weapons, it is upon you.
+
+### SD2:319
+A gang of kobold funseekers are warming themselves by a brazier. The instant you walk in the room, they draw swords and attack you.
+
+### SD2:320
+A few kobold are standing nearby. Do you wish to attack them?
+
+### SD2:321
+A dying kobold lies on the ground, gasping helplessly.  With his dying breath, he groans, "D-d-don't drink the water."
+
+### SD2:322
+You have reached the dreaded ROOM WITH NOTHING IN IT!
+
+### SD2:323
+Tiny holes in the floor blast fire at you!
+
+### SD2:324
+The recruiter stops when he sees the Goblin Shaman is with your party. "Hit the road. Your kind isn't welcome here."
+
+### SD2:325
+The goblins are overjoyed to see their Shaman Supreme! "These people rescued me from the slave pens," the Shaman tells them. "You are to give them anything they wish." He turns to you, "Take this and remember me when you use it."
+
+### SD2:326
+The goblin healers are practically falling over each other to offer you their services.
+
+### SD2:327
+The goblin healers are pleased to see you again and gladly offer their services.
+
+### SD2:328
+Here you find the throne room of the witch Ceithir. She is surrounded by several ice dragons, who are gliding toward you with murderous intent.
+
+### SD2:329
+The Shaman Supreme looks very relieved. You wonder how long he has been locked in this cell. You can practically count his ribs. If you leave him here, he'll probably die of starvation. Do you let him join your party?
+
+### SD2:330
+You enter the modest throne room of the witch Drei. No one seems to be here.
+
+### SD2:331
+You enter the disgusting throne room of the witch Drei. She is entertaining herself by torturing some of her children. "Welcome to my humble home," she purrs. "It's a pity you have to go so soon."
+
+### SD2:332
+You're somewhat disoriented by all this teleporting, but you assume you are either in the basement or the subbasement. What really matters is you're in water up to your waists and you're not alone!
+
+### SD2:333
+This water smells so bad, even the rats don't come in here!
+
+### SD2:334
+You enter the modest throne room of the witch Drei. Deja vu seems to be here.
+
+### SD2:335
+Walking through this polluted stream causes everyone in your party to contract the same disease that killed Lady Dawn.
+
+### SD2:336
+This gate is locked. As you consider what to do next, a tiny window opens in the gate and a pair of red eyeballs glint out at you. A heavily accented voice asks, "Password?"
+
+### SD2:337
+The gate swings open, and a swarm of creatures attack!
+
+### SD2:338
+A huge heap of skulls, ribcages, and miscellaneous bones are piled up to the ceiling. A moment before you turn your head, you see that some of these skeletons are wearing some pretty nice armor. There is also a glint of gems here and there.
+
+### SD2:339
+Do you wish to rummage around in this heap of bones in search of treasure?
+
+### SD2:340
+Sometimes a little greed is a good thing ...
+
+### SD2:341
+... but not this time. Moving the bones around has disturbed some creatures deep within.
+
+### SD2:342
+An enormous nest filled with eggs. You shiver to think of the size of the hatchlings. Hopefully you'll be nowhere nearby when they hatch.
+
+### SD2:343
+Uh ... do you hear what I hear?
+
+### SD2:344
+More vrack chicks hatch!
+
+### SD2:345
+"Don't tell me you're leaving already!" gasps Deux, the witch who owns this castle. "You simply must give me your thoughts on my artwork." She gestures grandly toward the room you just left. "I call it Death And Birth."
+
+### SD2:346
+"-although I may have to come up with another title for it, now that you've killed most of the living creatures in my gallery. You've also killed most of the dead ones, come to think of it."
+
+### SD2:347
+"Normally I don't collaborate, but I must say your instinct for irony is positively vibrant. Killing those chicks the instant they're born - how delightfully perverse!"
+
+### SD2:348
+"I see a long partnership ahead of us! Our contributions to this world will be so fantastic, so brilliant, no one in the Realmz will be worthy of experiencing our art! How could they be? Those horrid gnomes, those shiftless dwarves - I HATE THEM ALL!"
+
+### SD2:349
+You suspect this lady is not coloring with all 64 crayons. "Let us make them suffer. Yes, let us make them ALL suffer! We shall not create ANY artwork! Let them all toil on in ignorance, totally unaware of the great gift we have denied them today!"
+
+### SD2:350
+"We shall NOT create together! Rather we shall DESTROY!" -- With that, your demented hostess blasts you with white-hot flames from her outstretched hands!
+
+### SD2:351
+Before you can regroup, Deux summons a group of dragons to defend her!
+
+### SD2:352
+You find a scroll that Deux was carrying.
+
+### SD2:353
+More skeletons climb out of the heap of bones and attack!
+
+### SD2:354
+"Looks like you've come full circle," says a voice nearby, where no one is standing. "Toxic Hun Eerie Druid."
+
+### SD2:355
+"That's what you get if you mix up the names of the four witches," laughs Uno. "I love to play word games. That's how I found out the name of my pa's sword. If a dark elf lives in the Madwood too long, he winds up with drow's sap."
+
+### SD2:356
+"Well, that's the best hint you'll get out of me, and it's not very good. Maybe you'll have better luck at Head Pond." She waves her hand and black stones arise from the ring of fire surrounding you.
+
+### SD2:357
+The black stones rise high in the air. Then, one by one, they turn into dragons.
+
+### SD2:358
+A dark elf slaver is moving a family of chained goblins to the market. Slavery is big business in this town, an unquestioned part of the social fabric. What shocks you is how many of the slaves are dark elves, especially the elderly and handicapped.
+
+### SD2:359
+It's not unusual for dark elves to enslave their own family members, if they are deemed useful. Many of the weak are simply killed outright.
+
+### SD2:360
+As much as you might like to free this particular family of goblins, they probably wouldn't get very far before being recaptured. The military presence around Manifest is intense.
+
+### SD2:361
+A heavily-armed squadron of the Manifest Guard are lining up. You hear their captain telling his men of a slave uprising on Lady Dawn's estate. You shudder at the thought of this army facing down a handful of people armed with sticks and darts.
+
+### SD2:362
+Just as they are preparing to move out, the captain's horse falls down dead. Many of the other horses are looking very weak and the stablemaster rushes to examine them. In the ensuing confusion, the commander in chief falls into the watering trough.
+
+### SD2:363
+Furiously, the commander struggles his way out of the watering trough. His lieutenant fishes his cap out of the water. Without warning, the commander passes out. Total bedlam ensues as medics are called for and explanations demanded.
+
+### SD2:364
+A group of gnolls are lined up to apply for a job as an overseer for a wealthy townsman. All of them are carrying impressive-looking whips and cracking them to show their professional acumen.
+
+### SD2:365
+In this little house a dwarven mapmaker offers maps for sale.
+
+### SD2:366
+The dwarf looks surprised. "You don't want that map, folks. No one in their right minds visit the Madwood." When you assure him that you want to buy the map, he stammers, "All sold out."
+
+### SD2:367
+One of the more reckless gnolls hits you as you walk past!
+
+### SD2:368
+The gnolls chortle merrily as you get up and brush the dirt from your cloaks. You're not entirely sure which one of them hit you, but you don't want to let this insult go unchallenged.
+
+### SD2:369
+Your shrill insistence on an apology strikes the gnolls as hilarious.  They slap each other's backs and snort gleefully.
+
+### SD2:370
+Dismayed at the ease with which you defeated one of their buddies, all the other gnolls attack you!
+
+### SD2:371
+As soon as you turn your back, one of the gnolls gives you a parting blow!
+
+### SD2:372
+While most of the gnolls' belongings aren't worth picking up, there is one very nice whip that catches your attention.
+
+### SD2:373
+There is a dead elf lying on the ground in front of the well.
+
+### SD2:374
+There are five dead people lying on the ground in front of the well.
+
+### SD2:375
+There are twenty dead people lying on the ground in front of the well.
+
+### SD2:376
+This is the humble home of the mayor of Manifest. Would you like to pay him a visit?
+
+### SD2:377
+Sorry, the mayor is marching in the Hobgoblin Awareness Day parade. Come back another time.
+
+### SD2:378
+Sorry, the Mayor is at a fundraising event at the Pugilist's Guild. Come back another time.
+
+### SD2:379
+Sorry, the Mayor is cutting the ribbon on a new facility for the Water Authority. Come back another time.
+
+### SD2:380
+Sorry, the Mayor is holding a press conference in the Kobold Funhouse today. Come back another time.
+
+### SD2:381
+Sorry, the Mayor is attending the Slave Gelding festival today. Come back another time.
+
+### SD2:382
+You meet a traveling merchant. "Good people, would you like to purchase some very rare and valuable items ... cheap?"
+
+### SD2:383
+The door has locked behind you.
+
+### SD2:384
+This chest is empty.
+
+### SD2:385
+This trunk has nothing in it.
+
+### SD2:386
+There's nothing but dust in this box.
+
+### SD2:387
+The stuff here looks valuable, but it's all fake.
+
+### SD2:388
+Nothing worth taking here.
+
+### SD2:389
+Concealed under the lid of this box are a batch of poison darts, which magically take flight.
+
+### SD2:390
+The door locks behind you and vanishes.
+
+### SD2:391
+The gate flies open. There is no one inside.
+
+### SD2:392
+Here, buried under several layers of paste jewelry, cursed potions, broken daggers, and related effluvia, hidden under a false bottom beneath a sign that says BEWARE OF THE TIGER, you find a map!
+
+### SD2:393
+Not a chance of getting out this way. There's no trace of a door, let alone a lock to pick.
+
+### SD2:394
+A glowing portal opens in the side of the wall. You step forward, and your world dematerializes around you. For a minute, you wonder if you are dead. Then you feel your bodies reassemble in another part of the Realmz.
+
+### SD2:395
+Something's wrong. Nothing is happening. In a panic, you check the map again.
+
+### SD2:396
+Isn't that sweet?
+
+### SD2:397
+An assortment of swamp creatures attack!
+
+### SD2:398
+An almost imperceptible voice whispers, "Who sent you to me?"
+
+### SD2:399
+A louder, clearer voice repeats, "Who sent you to me?"
+
+### SD2:400
+"Uno?" the unseen voice repeats. "We used to play anagrams together. That was before she turned me into a mangy swamp puddle. Is it the password that you seek? The one that gets you through the long gate?"
+
+### SD2:401
+The Manifest Guard arrive to restore order.
+
+### SD2:402
+The First National Bank Of Manifest.
+
+### SD2:403
+You emerge from a cleverly-concealed passage into the sunlight.
+
+### SD2:404
+In response to the bell you just rang, the mess hall begins to fill up with hungry guards.
+
+### SD2:405
+You almost launched an all-out attack on an old mirror. This appears to be a storage area for odd bits of furniture.
+
+### SD2:406
+This must be what's keeping it so cool in here.
+
+### SD2:407
+You find a map!
+
+### SD2:408
+A lake of burning coal stretches as far as you can see. Inexplicably, it's quite cool in here.
+
+### SD2:409
+You enter the Four Monks Crab House.
+
+### SD2:410
+Ed the Vain orders himself five bottles of wine and every dish on the menu. When the food comes, he complains, "This is overcooked!" and hurls the platter of crabs against the wall.
+
+### SD2:411
+From the kitchen, four monks rush out with rage in their eyes. Ed the Vain heaps a multitude of caustic insults upon the monks, their restaurant and their parentage.  Several orc brigands at a nearby table blush in response to Ed's colorful vocabulary.
+
+### SD2:412
+Attempting to calm the turmoil somewhat, you reach for your purse. The monks mistakenly think you are going for your sword, and they attack in unison.
+
+### SD2:413
+Ummm...
+
+### SD2:414
+That meal you ate at the Four Monks is causing you some serious intestinal problems.
+
+### SD2:415
+Pretty shabby eats, frankly.
+
+### SD2:416
+This building has been closed by order of the health department.
+
+### SD2:417
+It takes a moment to realize there is a lizard man standing guard in this cave. He hails you in a language you've never heard before.
+
+### SD2:418
+The lizard man is pleasantly surprised to discover you can speak his language. "You are welcome to enter our garden," he says, "but only if you are willing to obey our rules. In our garden, no one is permitted to be stronger than Kearney."
+
+### SD2:419
+"Are you willing to don the required garment?"
+
+### SD2:420
+All members of your party must don the Robe of Weakness if you intend to go any further!
+
+### SD2:421
+In each of these caves, small gatherings of lizardmen huddle. Most are wearing robes similar to yours. Some of the larger and stronger ones wear heavy chains.
+
+### SD2:422
+You hear lizardman voices coming from behind these trees. Silently you creep through the underbrush, peering in to discover a group of youngsters standing in a clearing.
+
+### SD2:423
+As you watch, the youngsters remove their restrictive robes and dance rapturously through the swamp grass. Their grace is unmatched by anything you've seen throughout the Realmz.
+
+### SD2:424
+They effortlessly perform acrobatic acts that leave you wondering if they are immune to gravity. Finally you can't resist crying out in ecstatic admiration.
+
+### SD2:425
+Inside this considerably larger and more luxurious cave, sits the wizard Kearney. You immediately get a bad feeling from this gaunt lizardman. He stares at you with suspicion - obviously the feeling is mutual.
+
+### SD2:426
+"You shall be permitted to stay here a brief while longer. Then you must go. Do not remove the robes you wear, or you shall be sent away immediately. Leave my cave now. I must rest." The strongest creature in this community begins to snore.
+
+### SD2:427
+The lizardmen freeze in their tracks. "Please, you must tell no one of this," one of them begs you, as the others quickly don their robes. "If the Master finds out we shall all be banished!"
+
+### SD2:428
+The guard pokes you with his spear.
+
+### SD2:429
+You succeed in charming the guard, but he still doesn't understand anything you tell him to do. He gazes admiringly at you until the spell fades.
+
+### SD2:430
+Even the lizard man in your party cannot comprehend this language.
+
+### SD2:431
+Suddenly, he is cut down by a thunderbolt! You whirl to see Kearney standing behind you. "Banishment is too good for you!" he shrieks at the dancers. He turns to his guards. "Remove your robes and cleanse this area."
+
+### SD2:432
+The dancers are heavily outnumbered. In an act of defiance, they grab sticks from the ground to defend themselves. Kearney is infuriated by this, and conjures up beasts to punish them.
+
+### SD2:433
+With a gesture, Kearney conjures up more beasts!
+
+### SD2:434
+Upon the death of Kearney, the lizardman guards cheer! They have no reason to continue fighting you. Unfortunately, Kearney was able to conjure up a final batch of beasts.
+
+### SD2:435
+The good news spreads through the entire community of lizardmen. They cheer you and the courageous dancers who opposed their oppressive leader. A bonfire is built and the lizardmen toss their hated robes into the flames.
+
+### SD2:436
+Kearney's corpse is lifted up and thrown into the bonfire. Thanks to you the lizardmen are free. In gratitude, they shower you with leaves and fragrant swamp grass. One of the guards, who only moments ago was trying to cut your throat, now embraces you.
+
+### SD2:437
+"Please accept these small tokens of our eternal gratitude." He spreads before you a glittering array of treasure!
+
+### SD2:438
+The lizardmen lift you up onto their sturdy shoulders and parade you around their garden. After a festival of song, dance, drink and an insect-snatching contest, they bid you a fond farewell.
+
+### SD2:439
+"These robes will keep your powers in check while you are in our garden. Please remove your armor and put them on." He steps back into the passageway to let you enter.
+
+### SD2:440
+A voice hisses, "You have violated our law! Begone!"
+
+### SD2:441
+WELCOME TO THE MADWOOD LEPER COLONY.
+
+### SD2:442
+"We were banished to this island by King Richard the Mosquito-Hearted, for practicing our religious beliefs. There is a clan of bears living in the cave outside. Every night they come out and terrorize us."
+
+### SD2:443
+"Will you go into the cave and kill the bears for us? We shall reward you generously if you do."
+
+### SD2:444
+"Thank you, oh thank you! They are in the cave to the west."
+
+### SD2:445
+The old man and woman weep, gnash their teeth, pull their hair and rend their garments. They plead with you to reconsider.
+
+### SD2:446
+They look at each other. "We don't remember. But it must be a long, long time."
+
+### SD2:447
+"King Richard rules the kingdom of Hax and all its environs. He is a despot of the worst stripe, a friend of evil in all its nefarious forms. Some say he is not a man, but an anti'id in disguise."
+
+### SD2:448
+"We are of a sect derived from the Berthune cult. We worship truth, beauty and nature in all its forms."
+
+### SD2:449
+"A tiny handful. You could easily defeat them, with all your strength and magic powers. But for us they are a terrible threat."
+
+### SD2:450
+Here you find the remains of a party of adventurers. One of them, clutching a massive wound in his belly, is still alive. "Those dwarves weren't Berthunes," he mutters. Then he stops breathing. Your attempts to revive him are fruitless.
+
+### SD2:451
+A tiny altar stands here, and a shrine containing a statuette of a slimy pink creature all too familiar to you. Take the statuette?
+
+### SD2:452
+You stumble in on a ceremony of chanting cabalists. Their ogre bodyguards attack without mercy.
+
+### SD2:453
+An aura of evil hangs in the air. Somewhere you hear the voices of chanting women.
+
+### SD2:454
+A squadron of ogres are standing guard over a cabalist chapel. When you enter, they attack.
+
+### SD2:455
+You walk in on a huge congregation of anti'ids deep in prayer.  Their leader is about to sacrifice a huge beast at the front of the room. Instead he sets it free to attack you.
+
+### SD2:456
+You've barged in on another dark ritual. Cabalists here are chanting around a golden statue of an anti'id.  While an army of ogres fight to keep you at bay, the cabal continues its chanting.
+
+### SD2:457
+Angrily you storm into the cabin of Canterbury and Chamomile.  You search the one-room interior, but they are nowhere to be found. Your frustration is almost unbearable.
+
+### SD2:458
+Who were these treacherous little creatures? Did they intentionally seal you inside the cave? Were they really banished by an unjust king, or were they in league with the anti'id worshippers?
+
+### SD2:459
+There are literally mountains of keys in this room! Some smaller than your thumbnail, others the size of wheelbarrow. You wade into the keys in search of - what else? - adventure.
+
+### SD2:460
+Suddenly a gnome pops his head up from underneath the heap of keys! "I thought I heard somebody come in," he exclaims.
+
+### SD2:461
+"Feel free to look around. People come from all over to marvel at my vast collection of keys. Why, just last week, there was a delegation of minotaurs who came in looking for something to steal. And the month before that, a whole bunch of snakes ...
+
+### SD2:462
+The gnome pops his head up in front of you. "Oh, there you are. Did you need my help with anything?"
+
+### SD2:463
+"--Now where's that lock?" he asks himself, diving back under the keys.
+
+### SD2:464
+The river narrows here. You can see many sharp turns and protruding rocks ahead. The current is much too powerful for you to proceed with any degree of control.
+
+### SD2:465
+The golden anti'id statue glows brighter than a fireball. From out of the flood of golden light steps a golden anti'id!
+
+### SD2:466
+You spot some unsavory characters ahead! Do you attack?
+
+### SD2:467
+You have found the secret room where the sacrificial beasts are kept.
+
+### SD2:468
+Also in this room you find a large collection of magic potions!
+
+### SD2:469
+A decidedly unfriendly voice says, "You are not welcome here." It takes you a moment to realize it's the tree talking to you!
+
+### SD2:470
+You slip on a sheer surface of shimmering shale and slide south.
+
+### SD2:471
+This house is locked up tight. From behind the curtains you see a man peering out at you.  He is wearing a green helmet with golden horns.
+
+### SD2:472
+"Well, you've come to the right place ... assuming that this is the place you want to be. I am called the Keysmith. I have keys that will open any lock in the Realmz. Think on that, my friends. My only problem is, which key opens which lock?"
+
+### SD2:473
+"My organizational skills are not exactly top-drawer, you see. I used to have an apprentice, but he went insane after working here a week. Aha!" The Keysmith pulls a big padlock out from under the keys. "... now where was the key for this?"
+
+### SD2:474
+"No matter. I have a skeleton key here. Somewhere. Very valuable commodity. Priceless, in fact. Many have come here and begged me to sell them my skeleton key. I sent them all away. Nothing could persuade me to part with my skeleton key. Unless ..."
+
+### SD2:475
+"Unless I could find someone to help me get this place organized. Confidentially, it's getting a little confusing around here."                  - Do you volunteer to become the Keysmith's apprentice?
+
+### SD2:476
+"Thank you for volunteering, my friends, but frankly you're not the type," says the Keysmith sadly, "what with your weapons and such. If you were to go insane I suspect my lifespan may be abruptly shortened.
+
+### SD2:477
+"Pardon me, I have some business to attend to on the first floor. I'll be back before you can say Jack Robinstovanovitch Von Sturmunddrang ... or before the next solstice." The Keysmith again burrows down beneath his keys.
+
+### SD2:478
+A boy is standing here, throwing rocks over the wall. When he sees you, he runs around the corner.
+
+### SD2:479
+A bright light streams up from this hole.
+
+### SD2:480
+You are surprised when you see the statue that the anti'ids were praying to.
+
+### SD2:481
+From here you can see the boy peering out at you from the corner ahead.
+
+### SD2:482
+A batch of iron spikes have been driven into the east wall. They are spaced so precisely, they almost look like some kind of decorative pattern. On closer inspection, you realize the boy may have used these spikes to climb over the wall.
+
+### SD2:483
+Do you want to climb the wall?
+
+### SD2:484
+The elusive boy is here, frantically trying to climb over the wall. When you tell him you mean him no harm, he approaches you cautiously. "I was only trying to get some stones out of the way," he says. "My rock garden is almost complete."
+
+### SD2:485
+"My name's Spike. I've run out of things to do here. May I travel with you? I'd like to try being a squire." You explain to him how dangerous the life of an adventurer can be, but Spike is not discouraged. "I can take care of myself. Look!"
+
+### SD2:486
+Spike sketches a small circle on the wall, then walks twenty paces ahead. With his back to the wall, he flips an iron spike over his shoulder.
+
+### SD2:487
+The iron spike buries itself into the wall, right in the center of the target! "You won't regret having me around," Spike assures you. "I don't snore and I'm very organized." Do you let Spike join your party?
+
+### SD2:488
+You turn in amazement to see that your squire has busied himself by driving iron spikes into the Keysmith's wall! He is now neatly hanging up keys on each of the spikes.
+
+### SD2:489
+"My days as a squire are over," he tells you. "It's sloppy work, and people are always trying to kill you. Working here will be much more of a challenge."
+
+### SD2:490
+ "Why didn't I think of hanging my keys on the wall?" the Keysmith says with a broad grin. He reaches into a pouch on a string around his neck and hands you a very valuable key. "A treasure in exchange for a treasure."
+
+### SD2:491
+No one in your party is strong enough to kick the door down.
+
+### SD2:492
+Magical energies pulsate from your fingertips. They flicker and coalesce as they spiral around the lock in the door. The air vibrates with arcane electricity. Then nothing happens.
+
+### SD2:493
+Inside the house, the man in the green helmet sits eating a bowl of soup. He looks up at you as you walk in. After a moment, he says, "I would have opened the door for you. If you waited." He returns to his soup.
+
+### SD2:494
+"You may learn someday that it's not wise to go so fast all the time. But you'll only learn it if you slow down. The tortoise is considered a fool, because he's slow. But if you drop a rock on a rabbit, what good is he?"
+
+### SD2:495
+"My name is Wood. I would like to tell you my story, but you seem to be far too impatient to listen." He takes a drink from a small bottle. "Would you like a slug?"
+
+### SD2:496
+"Then begone, fools. There is nothing for you here."            Only after he has ushered you outside do you realize you dropped your key!
+
+### SD2:497
+You each take a deep drink from the bottle.
+
+### SD2:498
+"Enough talk. Let's go outside," Wood says, leaping to his feet and ushering you out the door, "I still have much to teach you."
+
+### SD2:499
+"Now watch carefully," Wood says as he casts an adrenaline spell on the trees surrounding you. The trees begin to age before your eyes. Their leaves fall and their branches stiffen. As their roots grow deep into the ground, they stop advancing on you.
+
+### SD2:500
+A batch of iron spikes have been driven into the east wall. They are spaced so precisely, they almost look like some kind of decorative pattern.
+
+### SD2:501
+Calamity! As you attempt to maneuver past the rocky shallows, your ship capsizes and all hands are lost.
+
+### SD2:502
+Calamity! As you attempt to maneuver past the rocky shallows, your ship capsizes. The waterworld spell saved your butts. Your party hovers in a magical bubble, bobbing on the water.
+
+### SD2:503
+The magical waterworld bubble fades gently into the sunset, and everyone dies.
+
+### SD2:504
+The magical waterworld bubble fades gently away, depositing you safely on the shore.
+
+### SD2:505
+Wood brings you to the clearing near his house. The willows rustle aggressively, uproot themselves and begin their attack.
+
+### SD2:506
+"Do you understand?" asks Wood. "Every moment is a gift, and we must take the time to unwrap the gift, or we insult the Spirit who gives it."
+
+### SD2:507
+"The time has come for us to part, my friends," Wood tells you. "Your destiny lies ahead, by mine does not. I must talk with the Greenman as soon as possible." Before leaving, Wood tells you how dangerous this bend in the river can be.
+
+### SD2:508
+"Remember, the river cannot drag you to swift ruin upon the rocks, if you proceed slowly." Then he hops off the ship and vanishes into the trees.
+
+### SD2:509
+WELCOME TO THE MADWOOD LEPER COLONY
+
+### SD2:510
+You enter the local hospital. Scores of lepers are huddled inside. It is difficult to tell the living from the dead, and you're eager to get out of the building almost as soon as you've entered.
+
+### SD2:511
+Blocking your exit, however, is an infected leprechaun with a tin cup. "Please donate so that the hospital doesn't have to shut its doors," he begs piteously.
+
+### SD2:512
+Do you donate?
+
+### SD2:513
+Wood asks each of you where you have come from and what you are seeking. You answer him as best you can. "Now I shall tell you my story," Wood begins. "I was once one of the Great Ones Reaching Skyward, what your kind calls trees.
+
+### SD2:514
+"Because most of the Great Ones know the secret of moving slowly, our lives are much longer than yours. Some of us in this forest can recall the days before the elves came to be. Indeed, there is only one still alive that is older than I.
+
+### SD2:515
+"He is called the Greenman, although he is not a man at all. He is the ruling force in this forest, and he is not fond of elves or men or anything that walks on two legs. He has always wanted the forest to be a place for the beasts, and the great ones.
+
+### SD2:516
+"The forest is not evil, nor is it good. But I, and some others in the elder council, became aware of the evil forces slowly encroaching on our borders. We wished to permit all the concealer races to come into the forest, and balance the evil.
+
+### SD2:517
+"The Greenman would not hear of it. One day I taught some passing humans how they could move slowly, so that they would not drown in the rapids. Because of my crime I was condemned to live the rest of my days as a man.
+
+### SD2:518
+"Today, the forest is called the Madwood, and truly it has earned this name. Evil creatures have a strong foothold here, and it will take many lifetimes to balance them out. Only a handful of goodly and neutral people dare to live here.
+
+### SD2:519
+"Now the Greenman is growing old and soon he will die. Several of the Great Ones seek to take his place, and while they quarrel among themselves, the forest may go for centuries before a new leader is agreed on."
+
+### SD2:520
+"By the way, I have a boat concealed in the forest, if you wish to sail the river again." You ask Wood where his boat is hidden, and he replies, "We will come across it, in time."
+
+### SD2:521
+"You cheap gang of slobs!" the leprechaun shrieks. "How dare you come in here and gawk at us, and then turn up your nose when we ask for spare coin?" Other lepers surround you, and you are suddenly in the center of a riot.
+
+### SD2:522
+"Thank you kindly," he giggles and walks off. Almost instantly another leprechaun approaches you and asks for a contribution.
+
+### SD2:523
+While it didn't make sense before, now you can understand Wood's advice clearly. Since the potion you drank prevents you from moving quickly, you also move through space at a slower than usual rate. The rapids simply cannot pull you off course.
+
+### SD2:524
+You pass a newsboy selling papers. Do you want to buy one?
+
+### SD2:525
+The headline reads: TRAVELING BRIGANDS KILL AND ROB HELPLESS LEPERS.
+
+### SD2:526
+The local townsfolk have formed a posse to apprehend the brigands who robbed those poor lepers.  They intend to take you alive, so they can hang you.
+
+### SD2:527
+More people join the posse!
+
+### SD2:528
+You look up to see you are surrounded by a massive force of guards from the neighboring town of Five Corners. Realizing you have no chance of defeating such a large force, you permit them to escort you to the local hoosegow.
+
+### SD2:529
+You are unceremoniously hurled into a tiny cell with a small man in a tattered robe. As your eyes adjust to the light you see he is an orc, the smallest adult orc you've ever seen. "Hallente," he greets you. "Welcome to my humble abode."
+
+### SD2:530
+Introductions are made. "I am named Basil, which means giant in my native tongue. My parents had an unusual sense of humor," he smiles self-consciously. You wonder what this gentle soul could possibly have done to wind up in jail.
+
+### SD2:531
+You collapse to the floor and prepare to do some serious healing. "Please, allow me," your cellmate says. With a touch, he fully heals your party.
+
+### SD2:532
+As if he read your very thoughts, Basil tells you, "I was on my way to Hax,  where I hope to meet with a very powerful cardinal. As I passed through this town, a crowd of lepers surrounded me outside the local hospital, asking for gold."
+
+### SD2:533
+"I began to lay hands on them and heal them.  They became very angry with me, and accused me of taking away their livelihood. At first I thought they were joking. But I've been sentenced to serve ten years."
+
+### SD2:534
+The cell door is locked. You peek through the grated window into a long corridor.
+
+### SD2:535
+Your lockpicker has triggered a cleverly concealed trap. Electric sparks leap from the door!
+
+### SD2:536
+A guard comes and opens the door. "Will you quit whistling, for the love of Baal? I'm trying to get some sleep!" Suddenly he trips over his own feet and bonks his head against the wall. He falls unconscious at your feet.
+
+### SD2:537
+Several heavily-armed guards are walking down the narrow corridor toward you. "Hey you!" one of them shouts. "Got a light?"
+
+### SD2:538
+The guard stops and waits for you to give him something.
+
+### SD2:539
+The guard is puzzled when you hand him a torch. "What are you, some kind of jester?" he snaps.
+
+### SD2:540
+The guard bursts into flames! As his companions drench him with water from a bucket nearby, you hurry down the corridor. Basil wants to stop and heal the guard, but you grab him and pull him along with you.
+
+### SD2:541
+You cast a magical flame, which the guard uses to light his pipe. "Much obliged," he says, then hurries down the corridor to catch up with his friends.
+
+### SD2:542
+Now that the bloodthirsty brigands have been brought to justice, the Five Corners guardsmen are headed back home. They are astonished to see you have escaped from prison, and attack with all their power.
+
+### SD2:543
+Why is there a well here, right by the riverside? As you puzzle over this, you hear the sound of a tree falling on someone who was too preoccupied to hear it.
+
+### SD2:544
+You hear a rustling in the branches. Several willows are waiting in ambush for you. Do you want to attack?
+
+### SD2:545
+Upon the destruction of the mush mound, the surrounding podlings wither and die.
+
+### SD2:546
+What a strange looking bush! It looks almost like ... a green man. --Suddenly you have a very bad feeling about this place. When you turn to make a hasty retreat, you realize you are surrounded by bizarre mushroom creatures!
+
+### SD2:547
+Your movements have attracted the attention of another mush mound.
+
+### SD2:548
+Pretty nifty, eh? You begin to wonder if the waterworld spell will last long enough to get you to dry land.
+
+### SD2:549
+You land safely on shore, just as the bubble pops.
+
+### SD2:550
+"Wait!" cries Wood. "Don't approach that one! She has never forgiven your kind for destroying one of her dearest friends. If you approach her, every tree nearby will turn on you and I will not be able to keep them at bay."
+
+### SD2:551
+Something strange happens. The oak door, displeased by your treatment, slams open with such force that you are knocked over the treetops! You land about a mile away.
+
+### SD2:552
+For no particular reason, you find yourself rummaging through the scrolls you recently purchased. Perhaps one of them could be of use ...
+
+### SD2:553
+You can't think of any more questions to ask. You wander outside and look at the cave.
+
+### SD2:554
+The rapids make it difficult to steer the bubble properly. After resting on a cluster of rocks, you are ready to try again.
+
+### SD2:555
+You enter a shop called The Scrollcase of Lequtus. You suspect the clerk behind the counter is a brownie. It's hard to tell, because he's invisible.
+
+### SD2:556
+You rest briefly under this little tree. Zounds, you mutter to yourself. There must be a way to break through and get to that boat!
+
+### SD2:557
+Wood isn't being very helpful. "I once met a pixie enchanter," he mentions lazily. "He knew a spell that could split solid wood into splinters. I wonder what became of him? ... ah, yes! I recall one of the elders turned him into a dandelion ..."
+
+### SD2:558
+"Wait a minute! What are you guys doing out of your cell?"
+
+### SD2:559
+You may continue on your way.
+
+### SD2:560
+Incorrect password.
+
+### SD2:561
+Don't lose that password. Send it off in a letter to yourself. Tattoo it backwards to your forehead, so you'll see it whenever you look in the mirror. Or if you forget, you can always email me and ask me for it again.
+
+### SD2:562
+You find a beautiful stone mansion, obviously dwarven work. There is no doorknob on the front door, or even a lock to pick. You see a note lying on the doormat.
+
+### SD2:563
+Alas, your struggles are for naught!
+
+### SD2:564
+There is no lock to pick.
+
+### SD2:565
+You see nothing magical here.
+
+### SD2:566
+Along with the letter is a very nice piece of jewelry!
+
+### SD2:567
+You walk into a room stocked ceiling to floor with healing potions! You decide no one would mind if you take a few.
+
+### SD2:568
+Before entering this stately mansion, you see a note on the doormat. Do you want to pick it up?
+
+### SD2:569
+Would you like to go inside?
+
+### SD2:570
+There's the boat!
+
+### SD2:571
+This is what is called a bad idea. The river is very deep, and the rapids are deadly. Even with the waterworld spell, you'd probably die.
+
+### SD2:572
+You fly gracefully into the air ...
+
+### SD2:573
+... and fall flat on your faces!
+
+### SD2:574
+... and land safely on the other side!
+
+### SD2:575
+The tree in your way bursts into thousands of tiny splinters!
+
+### SD2:576
+A very busy dwarf is hammering away at the floor tiles. "How did you get past all the snakes?" he asks in wonderment. "I haven't been able to get outside for weeks!" Then he takes a close look at you.
+
+### SD2:577
+"Hey, you're wearing Haxstones! Are you from Hax?" You tell the dwarf that you are trying to get to Hax, and he replies, "I can show you around the town once you get there. I built a lot of that place myself! ... Uh, need a guide?"
+
+### SD2:578
+"Okay, suit yourselves. Don't slam the door on the way out!" the dwarf returns to his work.
+
+### SD2:579
+The dwarf is so overjoyed he does a cartwheel! "This is great, I'm finally going to go home again!" He embraces each of you saying, "Lucky the Builder, at your service!"
+
+### SD2:580
+"You'll never take me alive!" the dwarf yells, pushing past you and running to the door. "I'm never going back to Manifest! I built this place with lots of hiding spots, so don't bother looking for me!"
+
+### SD2:581
+Lucky tells you his story. "I was doing some repair work on a tunnel I built around the Madwood, when I had the misfortune of encountering Zhark the Slaver. The dark elves have had me patching up their weird old mansions ever since."
+
+### SD2:582
+"When they gave me my own house, I dug a secret passage that led outside the city. I made a break for it and I've been holed up here ever since. Between the snakes and the dogcows, I didn't expect to ever get out."
+
+### SD2:583
+"When I was working in Zhark's mansion, I found out he has a map of a magic portal that teleports him to the Madwood. If we could get that map, we'd be on our way to Hax no problem."
+
+### SD2:584
+Lucky is amazed when you show him the map. "What are we waiting for? Let's get out of this stinking swamp!"
+
+### SD2:585
+I hope you've enjoyed playing this free sample of the game.
+
+### SD2:586
+Not yet.
+
+### SD2:587
+You bet!
+
+### SD2:588
+See the document named Read Me for more details.
+
+### SD2:589
+You may play the free portion of the game as long as you like.  There's quite a lot to explore back there. Let's see ...
+
+### SD2:590
+... there's at least one *major* area you haven't found yet, which you can play for free! Happy hunting!
+
+### SD2:591
+... you've played through most of the major areas in the free portion of the game.  Hax was designed with multiple story branches, and many of the riddles can be solved in more than one way. So don't be surprised if things unfold differently next time.
+
+### SD2:592
+I hope you've enjoyed playing this free sample of the game.
+
+### SD2:593
+The Greenman seems to have made his escape while you battled his minions.
+
+### SD2:594
+"Halt! Go no further, ye bloodthirsty mildew- encrusted scabs of a constipated hippopotamus!" cries a man as he rushes out of a nearby building to do battle with you. He takes you totally by surprise as his sword slices through your party!
+
+### SD2:595
+What horrific magic is this? The man fights on, even in death!
+
+### SD2:596
+Bardic warriors rush out of the buildings, spewing sarcasm, wielding wit and lobbing barbed bon mots. Their captain approaches you imperiously. "Normally, I ask strangers to state their business. But not in the case of born liars such as yourselves!"
+
+### SD2:597
+"Your intentions here are all too clear. You seek to carry off our womenfolk!" The warriors batter you with insults. "Swine!" "Halfling cavedwellers!" "Shiftless smelly old discount prostitutes!" "Barristers!" "Purveyors of rancid bologna!"
+
+### SD2:598
+"Worst of all," the captain continues, "You intend to slay our elderly and enslave our children! Don't dare deny it! Your perverted designs are exposed to the light of day, you sweaty heap of dragon droppings!" "Cricket eaters!" "Sugarplums!"
+
+### SD2:599
+Here, buried under mountains of toys and heaps of candy, you find the children of the village. "Can we go out and play?" one of them asks you. "Pleeeeease?"
+
+### SD2:600
+"You unkempt hounds!" cries one of the bards. "Did your mothers sleep with a warthog?"
+
+### SD2:601
+"Troll drool!" sneers one of the bards. "You are more clumsy than a decapitated shantile in a hobbit burrow!"
+
+### SD2:602
+"Verily you are a worthy foe," says a bard, "--were I a blind amputee! Tell me, poltroon, are you self-taught or were you born this way?"
+
+### SD2:603
+"Don't even consider retreat, wretch!" yells a bard. "Stand and fight, as if you were a true warrior!"
+
+### SD2:604
+"You dogs will have to fight if you wish to vanquish the likes of me!" quips a bard. "I've had more challenge carving up a pumpkin than I'm getting from you!"
+
+### SD2:605
+Joyfully the children run out into the sunshine.
+
+### SD2:606
+Oh, come on! Let the children go play!
+
+### SD2:607
+You slam the door on the children, leaving them stuck inside (maybe their parents were right when they called you bloodthirsty mildew-encrusted scabs of a constipated hippopotamus).
+
+### SD2:608
+Here, the bardic womenfolk and their elderly are kept under lock and key. They thank you for releasing them, and sing your praises.
+
+### SD2:609
+"I think the madness that permeates this forest has infected our men," one of the ladies tells you. "They had never been so bitter and overprotective before we came here. We had hoped to build the perfect community, living in harmony with nature."
+
+### SD2:610
+"... What a terrible failure it has been! Now we must leave this place. Evil is rampant here, and we have seen enough death." She sadly turns away to gather her belongings.
+
+### SD2:611
+You watch as the people make their preparations to leave. A very old gentleman approaches you. "I don't wish you to think ill of the bards. We are not evil by nature, but sometimes our passions get the better of us." He hands you a small gift.
+
+### SD2:612
+"This was my home for quite a while," Lucky tells you. "I have a map in here that should be useful. It's the only way to the camp where my construction workers are rebuilding the passage to Hax."
+
+### SD2:613
+You come upon the remains of a party of adventurers. Most of their equipment is shattered and worthless, but a few items are intact.
+
+### SD2:614
+You have found the home of a very unfriendly shantile. He lobs a number of heavy boulders at you.
+
+### SD2:615
+The entrance to this cave is guarded by a number of dark ogres.  They attack with extreme prejudice.
+
+### SD2:616
+Here in the back of the cave you come upon a gang of dark ogres attacking the Greenman. As you watch, the Greenman fells them with powerful blows. But the ogres have injured him badly - and continue hacking away at him with their battleaxes.
+
+### SD2:617
+Very quickly, the Greenman kills all but one of the ogres. Something tells you that once he finishes the last one, he'll be coming for you.
+
+### SD2:618
+The Greenman splits into a batch of smaller creatures!
+
+### SD2:619
+"Finally," a voice behind you says softly, "the reign of the Greenman has ended." You whirl about to see Wood standing in the shadows.
+
+### SD2:620
+"I had hoped it would never come to this," Wood says to you. "The Greenman was not an evil creature. The very concept of good and evil was alien to him. I always knew his evil allies would eventually turn on him. They want his crown, of course."
+
+### SD2:621
+"There is very powerful magic in that crown, but do not put it on your head under any circumstances - unless you would like to be metamorphosed into a willow. From now on, many evil creatures will be drawn to you so they may possess the crown."
+
+### SD2:622
+You ask Wood if he wants to take the crown and become the new ruler of the Madwood. "Only a tyrant crowns himself," Wood retorts. "The crown must be brought to the elder council, in the southwest quarter. They will hold it until a new leader is chosen."
+
+### SD2:623
+You find a beautiful stone mansion, obviously dwarven work. There is no doorknob on the front door, or even a lock to pick. You see a note lying on the doormat. Lucky walks over and picks up the note. Unobtrusively, you read it over his shoulder.
+
+### SD2:624
+Lucky grabs a large jewel enclosed with the note. As he reaches to put it into his pocket, he fumbles it and it bounces into the nearby waters. "Easy come, easy go," he quips.
+
+### SD2:625
+"As I recall, there was a secret passage through the trees to the north, somewhere."
+
+### SD2:626
+As you come around this corner, a gang of small demons ambush you. They wield sharp tridents dripping with acid.
+
+### SD2:627
+Somehow Wood has gotten separated from you during the melee. You will have to locate the council of elders yourself, hopefully before you are all slain. You consider briefly the possibility of dropping the crown, and proceeding on your voyage to Hax.
+
+### SD2:628
+It would certainly make your journey easier. But it's likely the crown would fall into the wrong hands if you left it up to fate.
+
+### SD2:629
+A tiny fish pops his head out of the water. "Are you the individuals who are searching for the elder council?" he asks.
+
+### SD2:630
+A tiny fish pops his head out of the water. "I see you are carrying the Greenman's crown. The rumors must be true that he is dead. Do you plan to bring the crown to the elder council?" he asks.
+
+### SD2:631
+The fish is surprised by your response. "In that case, I know of a very wealthy individual who would like to purchase that crown you have. You'll find him if you keep walking south. He's looking for you, so he might find you first." He splashes away.
+
+### SD2:632
+"If you go south, you'll be certain to find a very wealthy individual who's interested in the crown. You should talk to him before you hand it over to the elders." He splashes away.
+
+### SD2:633
+"There you are!" says a voice high above you. You look up to see a very large giant. "Posthumous has been looking for you everywhere. Let us hurry to his castle! He has a very attractive offer he wishes to make to you!"
+
+### SD2:634
+Do you want to follow the giant to Posthumous' castle?
+
+### SD2:635
+After a brief walk, the giant escorts you to the center of a spiral of steel walls. He loudly speaks a command in a language unknown to you, and a gate opens in the wall.
+
+### SD2:636
+The giant is clearly disappointed. "Please, good people, let me escort you to His Majesty's castle. Posthumous has important business to discuss with you regarding the Greenman's crown!"
+
+### SD2:637
+Now, do you want to follow the giant to Posthumous' castle?
+
+### SD2:638
+"You insult me," says the giant coldly. "Now I challenge any one of you to fight me! I shall defeat any two of you at the same time! Still not sure? Fine, pick three of your best fighters to battle me!"
+
+### SD2:639
+The giant attacks with fierce speed, taking all of you by surprise!
+
+### SD2:640
+You have slain the giant ... but you suspect there will be others.
+
+### SD2:641
+"Welcome to my humble cottage," hisses Posthumous. "I'm so glad you were able to drop in. Please don't be alarmed by my appearance, I have spent many a year on this plane of existence ... and several others. Won't you dine with me?"
+
+### SD2:642
+He gestures toward a long table piled high with tantalizing food and drink. The names of each member of your party are carved in the inlaid wood of the ornate chairs, and their favorite meal is set on the table. Do you accept Posthumous' hospitality?
+
+### SD2:643
+You eat until you are stuffed! Every mouthful is a sensory delight, and somehow, in the candlelight, Posthumous doesn't look so repulsive after all.
+
+### SD2:644
+"As you wish. I want to speak with you about the future of this beautiful forest, which has been my home for several centuries."
+
+### SD2:645
+"My operatives tell me that you are responsible for the death of the Greenman, and if this is so, the elder council will not let you leave the Madwood alive. Even if you hand the crown over to them, they will probably execute you, for safety's sake."
+
+### SD2:646
+"Now, to business," says Posthumous. "I want to speak with you about the future of this beautiful forest, which has been my home for several centuries."
+
+### SD2:647
+"And, as you are no doubt aware, there are many evil creatures who make their home in the Madwood and would gladly kill you to seize the crown for themselves. I speak not only of the dark elf slaver ...
+
+### SD2:648
+"... but also of the underground cabal who serve the mind slayers, the cacodaemon mutants commonly known as the Nasties, those horrible leprechauns to the north and many others."
+
+### SD2:649
+"If you will give me the crown, I shall provide you with a number of priceless weapons and adventurers' accoutrements. Here is a sample of the quality  items I can obtain for you."
+
+### SD2:650
+"Also, I will send an escort of my best nether giants to see you safely out of the Madwood. Plus, shall we say, 500 gems for your trouble? Think hard on my offer before you respond, good people. I doubt you will find a better solution to your problem."
+
+### SD2:651
+In this hut lives an ancient hobgoblin shanahy. "Sit by the fire," he says in a voice like spiked honey, "and I shall tell you a story." Do you follow his instruction?
+
+### SD2:652
+"You may be inclined against trusting a creature as ... different from yourselves as I. There's no denying I am a very evil entity. However, due to an encounter with a certain paladin some decades back, I cannot deal with you in my accustomed manner."
+
+### SD2:653
+"That cursed paladin bound me with a number of oaths that directly prevent me from using force to acquire the artifacts I need to survive. So you have no reason to fear me, or to accept my offer, unless I can persuade you otherwise."
+
+### SD2:654
+"You may not have realized how hazardous your situation has become. On the other hand, I seek to offer you an alternative to such a perilous future."
+
+### SD2:655
+Do you give the crown to Posthumous?
+
+### SD2:656
+Gleefully, Posthumous takes the Greenman's crown and places it on his head. His misshapen body glows an unearthly shade of green as powerful magic surges through him. Reaching skyward, he utters an incantation that opens a portal to the Abyss.
+
+### SD2:657
+Suddenly, the air is thick with unclean spirits. Demons emerge from every shadow. They are armed for battle. At Posthumous' command, they march forth to destroy every living creature in the Realmz. The end of time has arrived, thanks to you.
+
+### SD2:658
+Posthumous laughs in your face as a swarm of banshees encircle you and drain your life force. You die in great agony, and in the afterlife you are treated with unprecedented scorn.
+
+### SD2:659
+"I am not in the habit of taking no for an answer," snaps Posthumous. "Do you wish to die at the hands of my giants, or will you reconsider?"
+
+### SD2:660
+Before you can reply, you hear the voice of Wood say, "You will never have the crown, vile one!" Wood is accompanied by a large grove of willows and sundry flora. You steel yourselves for another massive battle.
+
+### SD2:661
+As the last of the nether giants bite the dust, you feel the room getting blurry and fall backwards into the branches of a nearby willow.
+
+### SD2:662
+The next morning, you awaken in the grove of the elder council. You feel much better than you deserve to right now. Someone, or some thing, has tended to your wounds during the night.
+
+### SD2:663
+Would you like to give the Greenman's crown to the elders?
+
+### SD2:664
+"You have made history in this forest today," Wood tells you. "The willows saw you refuse the bribe Posthumous offered you, and now they see you are freely giving the Greenman's crown to its rightful owners."
+
+### SD2:665
+"Your actions will force them to examine their prejudice against all peoples. Whoever our next ruler is, he (or she) will not follow the Greenman's inclination to trust evil creatures and mistrust the good."
+
+### SD2:666
+"Again, our paths must diverge," says Wood. "The elder council has asked me to assist in choosing a new ruler. I feel greatly privileged to have fought by your side. Farewell."
+
+### SD2:667
+You have made history in this forest today. The willows know you refused Posthumous' bribe, and now they see you are freely giving the Greenman's crown to its rightful owners.
+
+### SD2:668
+Your actions will force them to examine their prejudice against all peoples. Whoever their next ruler is, he (or she) will not follow the Greenman's inclination to trust evil creatures and mistrust the good.
+
+### SD2:669
+"What in the name of Lord Voltan happened to my construction workers?" cries Lucky. "We'll never get this tunnel fixed without their help!" You peer down into one of the large holes in the ground, and suddenly feel a flash of fear.
+
+### SD2:670
+Lucky has picked up a little pink statuette laying in the rubble. Before you can stop him, he accidentally triggers the spell hidden within it. A rainbow of anti'ids appear from out of nowhere. They are hungry, and seek fresh brains to feed upon.
+
+### SD2:671
+Deep in these holes lurk a batch of colorful anti'ids. When they see you, they emerge for lunch.
+
+### SD2:672
+At the entrance to this cave, a gang of highwaymen jump you.
+
+### SD2:673
+Several highwaymen surround Lucky. You try to keep your party together, but you are outflanked and outnumbered.
+
+### SD2:674
+The highwaymen have kidnapped Lucky!
+
+### SD2:675
+In the back of this cave you find an interesting weapon.
+
+### SD2:676
+Nothing inside this cave. Oh, wait, there is one thing ...
+
+### SD2:677
+Are you sure you want to look in this cave?
+
+### SD2:678
+The cave is empty.
+
+### SD2:679
+All you find in here is some poison ivy.
+
+### SD2:680
+A family of minotaur expatriates call this cave home.
+
+### SD2:681
+After dispensing with the minotaurs, you uncover major booty!
+
+### SD2:682
+This cave has collapsed in on itself. Perhaps with a month or two of digging, you can see if the cave goes any deeper.
+
+### SD2:683
+"Let's come back here after we visit the construction camp," says Lucky. "We might be able to dig up something interesting."
+
+### SD2:684
+You move some rocks out of the way. You estimate that at this rate, working every day without taking a break, you'll be done in about eight thousand years. Perhaps you may want to rethink your strategy?
+
+### SD2:685
+This is the gravedigger's shed. Here, amongst the shovels and other tools, you find an amazing, diamond-encrusted spade.
+
+### SD2:686
+You move a sizeable amount of dirt.
+
+### SD2:687
+You have uncovered the tunnel to Hax!
+
+### SD2:688
+You wander in darkness for a very long time. Not as long as forty days and forty nights, maybe more along the lines of thirty days and fifteen nights, and a handful of afternoons. Finally you emerge into the sunlight.
+
+### SD2:689
+The winged snake does no damage to your person, but it totally destroys a piece of your armor!
+
+### SD2:690
+Surprisingly, it takes less time to get back to the Madwood than it took you to get to Hax in the first place. Perhaps there is a slight decline which quickens your step. Some of the greatest minds have attempted to explain this phenomenon, and failed.
+
+### SD2:691
+In this cave lives a beast from out of your worst nightmares! A creature more destructive than any you have met in the Realmz! Be afraid. Be very afraid. You have entered the lair of the armor eater!
+
+### SD2:692
+Oh no, another armor eater!
+
+### SD2:693
+A delightful mountain stream bubbles up inside this cave. Would you like to take a drink of the water?
+
+### SD2:694
+Who will drink?
+
+### SD2:695
+In this cave a batch of orcs struggle against a batch of Nasties. Would you like to help them?
+
+### SD2:696
+An unlikely assortment of evil creatures have gathered in this cave. When you enter, they turn and attack you.
+
+### SD2:697
+You have found the tunnel back to Hax.
+
+### SD2:698
+Welcome to the town dump.
+
+### SD2:699
+You enter the guard tower. Several friendly guards are here. Almost no one ever gets to Hax from this direction (or indeed, any direction) so the guards have plenty of spare time. Would you like to play a game of bloody knuckles?
+
+### SD2:700
+You win!
+
+### SD2:701
+You lose!
+
+### SD2:702
+The guards encourage you to play again. Do you want to continue playing bloody knuckles?
+
+### SD2:703
+This is the temple of Ampeter-Watt. Healing and banking services are available. They also have lots and lots of Haxstones.
+
+### SD2:704
+A fast-talking elf lives here. "Want to buy a boat?" he asks. "It's a steal for one gem."
+
+### SD2:705
+"She's right outside," the elf says happily. "Bon voyage!"
+
+### SD2:706
+Hax University. Tonight, Professor Harcourt Smalldome lectures on "Revolutionary New Uses For Haxstones."
+
+### SD2:707
+A newsboy passes by, hawking the Hax Herald Hourly. Do you want to buy a paper for one gold piece?
+
+### SD2:708
+The headline reads, "Master Architect Kidnapped." There's also a fascinating story on a man who bit a dog, and some colorful pie charts.
+
+### SD2:709
+You enter "The Sharper Mage" - a high-end magic shoppe.
+
+### SD2:710
+This is the Hax Army Surplus Store.
+
+### SD2:711
+Sorry. The ice skating rink is closed until further notice.
+
+### SD2:712
+Oops! You just walked in on a support group for the Adult Children of Mothers Who Love Drunk Driving Too Much.
+
+### SD2:713
+The graveyard. This town once had a terrible problem with undead corpses digging themselves up and wandering about in search of people to eat. But don't worry. They now have the problem relatively under control.
+
+### SD2:714
+Just beside a freshly dug grave you see a horrific apparition. A giant spectre, white as a sheet, is flapping in the wind. On closer inspection, you notice that the spectre actually is a sheet.
+
+### SD2:715
+The furfoot assassin who runs this shop specializes in ninja gear.
+
+### SD2:716
+A kobold funhouse has just opened in Hax! Do you want to go in?
+
+### SD2:717
+What are you, nuts?
+
+### SD2:718
+A trap door opens in the floor and you fall!
+
+### SD2:719
+A friendly guard with heavily bandaged hands invites you to play a game of bloody knuckles.  When you decline, he asks, "How 'bout bloody noses? Bloody knees? Bloody ..." Other guards gently lead him away.
+
+### SD2:720
+This block is filled with summer cottages for nomadic orcs. This time of year it is totally abandoned.
+
+### SD2:721
+One hardy orc keeps his shop open year 'round.
+
+### SD2:722
+Whatever this place is, it gives you the creeps. It's colder inside than it is in the street, and for some reason all the windows are covered over. A clammy pale guy sits at a desk. "Welcome to the Mercenaries Guild," he says in a hoarse voice.
+
+### SD2:723
+"Are you interested in hiring one of our operatives? Most of them are in the soldier of fortune 500." He stares at you expressionlessly. "That was a joke," he adds.
+
+### SD2:724
+"Never mind. Here's a list of who's available."
+
+### SD2:725
+Babe joins your party.
+
+### SD2:726
+Penelope joins your party.
+
+### SD2:727
+Bela joins your party.
+
+### SD2:728
+Screwtape joins your party.
+
+### SD2:729
+You return to the mercenary guild. The clammy guy shows you the list of available operatives.
+
+### SD2:730
+King Richard's castle. The castle guards have snuck away to the bloody knuckles invitational, so you enter unannounced.
+
+### SD2:731
+"Good morning. Would you be so kind as to read this note for me? I've misplaced my eyeglasses." King Richard briskly hands you a note.
+
+### SD2:732
+King Richard is struck speechless, then recovers. "Lucky? Kidnapped? 5,000 jewels? Tree stump? Dwarf Town? Mosquito Heart?"
+
+### SD2:733
+While deciding which of his questions to answer first, you realize none of them are really questions. "Go!" commands the king. "We will not bargain with kidnappers! Find the varlets! Root them out! Rescue Lucky! Return him to me, and I will reward you!"
+
+### SD2:734
+You turn to go. "Wait!" King Richard calls. "First, go to the armory! You may take anything you need to help you on your mission! Now go! - No, wait! Do you promise to come back with Lucky? You won't just take everything and sell it, will you?"
+
+### SD2:735
+"Don't answer that! I don't want to know! Just bring Lucky back! Now go!" You are almost out the door this time when the king screams, "WAIT! You need directions to get to Dwarf Town! Go south! Then east! Then north! Then east! Then south! Here's a map!"
+
+### SD2:736
+It's pretty dumb to go snooping in that chest with King Richard standing right next to you, isn't it?
+
+### SD2:737
+The town armory.
+
+### SD2:738
+Major Vorpalplate, the supply officer, greets you. "They told me you'd be coming," he says, while gingerly rubbing salve on his knuckles. "Please only take what you need. The town's going broke from you adventurers taking everything and selling it."
+
+### SD2:739
+"It's very easy to find - what am I saying, it's very easy to get lost! But you won't do that! Promise me you won't do that! - no, no need for promises between you and I, after all these years! ... Have we met? I'm King Richard, imperial ruler of Hax."
+
+### SD2:740
+"But this is hardly a time for protocol! Go, I implore you, GO!" You wait a minute to make sure that he doesn't call you back again, then you leave.
+
+### SD2:741
+Haxstones are literally falling out of this cliffside!
+
+### SD2:742
+Thank you for visiting the town of Hax. Bathers please note - the Acid Sea is approximately 75% acid this time of year. Races with sensitivity to chemical damage should take necessary precautions.
+
+### SD2:743
+The bathhouse. To your astonishment, crowds of kobolds are frolicking about, diving into the Acid Sea, and basking on the ice flows in deck chairs.
+
+### SD2:744
+A blast of freezing wind hits you!
+
+### SD2:745
+A cloud of corrosive vapor wafts past!
+
+### SD2:746
+You meet a dwarven cleric on the street.
+
+### SD2:747
+"You must be Cardinal Fang!" Basil says happily. "I'm Basil and these are my very good friends. I never could have got here without their help." The Cardinal greets you cordially, "We are indebted to you. Our expedition is in sore need of an empath."
+
+### SD2:748
+He smiles and walks into a church.
+
+### SD2:749
+You remember that Basil was planning to meet a cardinal in Hax, so you introduce yourselves to the cleric. "I am Cardinal Fang," he replies. "I was hoping Basil would join the expedition I'm leading to find the body of Zhark the Paladin."
+
+### SD2:750
+You tell the Cardinal of Basil's untimely end. "What a tragedy! We shall light a candle for his soul. - Well, it's been a pleasure meeting you, but I must continue my preparations for the expedition. Good day."
+
+### SD2:751
+"ZHARK?" you bark. "Yes, Zhark lived about a century ago. He built countless monasteries throughout the Realmz dedicated to the study of Olo. Legend says he was last seen in this area, but his remains were never recovered."
+
+### SD2:752
+"Well, it's been a pleasure meeting you, but I must continue my preparations for the expedition. Good day." Cardinal Fang smiles at you and walks into a church.
+
+### SD2:753
+"You see, I'm leading an expedition to find the body of Zhark the Paladin."
+
+### SD2:754
+"We certainly could use some brave adventurers to accompany us. Would you be interested in joining the expedition?"
+
+### SD2:755
+Basil bids you farewell. You go your separate ways.
+
+### SD2:756
+"Excellent! You shall meet us by the well, to the south of town. Be sure to dress warmly! It is very chilly out there." Cardinal Fang bids you adieu and walks into a church.
+
+### SD2:757
+Cardinal Fang and a team of crusaders on horseback are waiting for you. "Let us explore the lands to the east, my friends!"
+
+### SD2:758
+Dwarf Town Shop.
+
+### SD2:759
+You enter Dwarf Town. The dwarves of Dwarf Town have a deep-seated mistrust of any form of magic. Sorcerors and their ilk are tolerated here, but not for long.
+
+### SD2:760
+Dwarf Town guards, seeing that you are accompanied by some magic users, take you aside. "Listen here, you people. We dwarves of Dwarf Town have a deep-seated mistrust of any form of magic. Sorcerors and their ilk are tolerated here, but not for long."
+
+### SD2:761
+You tell the guards that you already know this. "Aha! Telepathic, eh?" one of the guards accuses you. "Tell us, what business do you magicians have in Dwarf Town?"
+
+### SD2:762
+"Pshaw! You'll find no magical paladin corpses in this town! Hunt around all you like, but we've got our eyes on you!" The guards return to their posts.
+
+### SD2:763
+"Pshaw! It's not much warmer in town than it is out there! Go get yourself a bowl of broth at the Dwarf Town Inn." The guards return to their posts.
+
+### SD2:764
+"Lucky's been kidnapped? Again? Pshaw! Can someone tell me why he's called Lucky?" One of the other guards says, "Be sure to report the kidnapping to the Dwarf Town Mounties. They'll want to investigate this." The guards return to their posts.
+
+### SD2:765
+"Pshaw! There's nothing here to spend your money on. Have a look in the Dwarf Town Shop, you'll see what I mean." The guards return to their posts.
+
+### SD2:766
+Dwarf Town Temple, dedicated to the goddess Lackluster.
+
+### SD2:767
+Dwarf Town Inn (aren't these names great?) You can eat here, but only dwarves with no magical abilities or items are welcome to sleep in the inn. A waiter brings you the menu.
+
+### SD2:768
+"Good choice," says the waiter. In a moment he returns with the weakest broth you've ever tasted. It's hot, but with only the slightest of taste.
+
+### SD2:769
+What do you want to do now?
+
+### SD2:770
+You are the only people here.
+
+### SD2:771
+"I think you've had enough," says the waiter.
+
+### SD2:772
+As soon as you start in on the furnishings, the town guards enter and attack.
+
+### SD2:773
+The Dwarf Town Mounted Police Headquarters. Would you like to report the disappearance of Lucky?
+
+### SD2:774
+When Lucky dies, any hope of a trade route to Hax dies with him. You have failed big time. While you are distracted, your foes deal you several mortal blows.
+
+### SD2:775
+King Richard is not taking visitors. He is in mourning for the death of his master builder, Lucky the Dwarf.
+
+### SD2:776
+"Lucky's been kidnapped? Again? Pshaw! Can someone tell me why he's called Lucky? -- Okay, we'll send out some officers to search for him."
+
+### SD2:777
+When you approach this tree stump, a massive force of highwaymen swarm in from out of nowhere. "Where's the jewels?" demands one of them. "They got no jewels!" bellows another, "Slay 'em! Slay 'em to death!"
+
+### SD2:778
+A troop of Dwarf Town Mounties, in search of Lucky, ride to your rescue!
+
+### SD2:779
+In this cave, ice dragons guard a massive treasure trove.
+
+### SD2:780
+It feels as if you have just walked into a tomb! The air is dank and chilly, and it's very hard to see in any direction.
+
+### SD2:781
+Here you stumble across the bodies of many highwaymen. They look like the men who kidnapped Lucky. Their corpses have been stripped of anything valuable.
+
+### SD2:782
+A voice hisses at you, "Wizard's eye, I pluck you out!"
+
+### SD2:783
+You hear a scuttling noise to the north and west of you.
+
+### SD2:784
+You find treasure ...
+
+### SD2:785
+... and trouble!
+
+### SD2:786
+Passing through this arch somehow interferes with your compass!
+
+### SD2:787
+A sarcophagus of shining gold lies on a raised platform in the center of this room. The letters Z H A R K are engraved into the gold. Apparently you have found the tomb of Zhark the Paladin!
+
+### SD2:788
+Cardinal Fang is overjoyed! "This house will become a sacred pilgrimage to all who worship the all-seeing Olo! We must make many preparations to venerate and consecrate the site. And as I promised, you will be amply rewarded!"
+
+### SD2:789
+"It will take us several days to perform the necessary rituals. Would you see to it that the rest of the building is, er, purified of any unclean influences?" You assure the Cardinal that you'll handle everything.
+
+### SD2:790
+Basil will stay behind to assist Cardinal Fang with the rituals.
+
+### SD2:791
+A massive oak chest lies in the far corner of this room.
+
+### SD2:792
+Open the chest?
+
+### SD2:793
+Giant wooly behemoths!
+
+### SD2:794
+Some enchantment causes the bones of the dead creature to rise and continue fighting!
+
+### SD2:795
+You are totally surprised by a pride of sabertooth tigers!
+
+### SD2:796
+A pile of gems are lying on the floor!
+
+### SD2:797
+As you enter this room, you see something move behind a column.
+
+### SD2:798
+Two Hemerood demons are standing here. When they see you, they conjure up a multitude of beasts to destroy you!
+
+### SD2:799
+Posthumous shrugs out of his rich purple cloak and vanishes. "I discard this body like a worn rag. But we shall meet again, adventurers. You may rely on it!"
+
+### SD2:800
+On the body of one of the demons you find a map. There is a very troubling message written in the lower margin.
+
+### SD2:801
+One of the highwaymen sits up! "What do you want? I was having a great time in the next world!" When you tell him you want to know where Lucky is, he tells you, "I don't know. We brought the dwarf to this abandoned house ...
+
+### SD2:802
+"- only it's not as abandoned here as we thought. Sorry, I think your pal fell into the hands of some real evil characters." With that he plunges a dagger into his heart and collapses. "No more ... interruptions, okay?" he says with his dying breath.
+
+### SD2:803
+Is the wind chillier than usual on this spot, or is there an aura of powerful evil here?
+
+### SD2:804
+The sky darkens. The wisps of caustic vapor sweep over you, as the wild south wind howls. Beneath the frozen surface of the ice, you feel the earth tremble under your feet.
+
+### SD2:805
+The corpse of Posthumous bursts out of the icy ground! "What a fine day to reap revenge!" he shrieks. "What a fine day to paint the earth red!" From out of nowhere a host of evil warriors appear, ready to do their master's dirty work.
+
+### SD2:806
+Sit
+
+### SD2:807
+Leave
+
+### SD2:808
+"A brief while ago, a great man came to this place to build a monastery. He brought with him his wife, his infant son and a host of laborers to realize his dream. After a year of hard work, the monastery was finished."
+
+### SD2:809
+"The great man was very pleased. He was not a young man, and looked forward to spending the rest of his years training novitiates and enjoying his family. But the  fates overruled his modest plans. For these were the days of the Necronomicon."
+
+### SD2:810
+"Great evil invaded the Realmz as the towers of doom appeared. And the man had to leave to do battle with a monster from the Abyss. The fight went on for several moons. Both the man and the monster were very powerful, and both thirsted for victory."
+
+### SD2:811
+"But slowly the monster began to gain the upper hand, and pressed his advantage until the man had no hope of surviving. But before he was destroyed, the man asked the monster, 'Are you the slave of Force?' The monster laughed at him. 'Certainly not!'
+
+### SD2:812
+"'Then if you are not the slave of Force,' said the man, 'do you forswear him?' 'I have no need of Force,' swore the monster, 'for I have my wits and I have my magic. I am no slave!' And as he spoke those words, he slew the man."
+
+### SD2:813
+"Soon the monster realized the man had tricked him. Now he could no longer use force on this plane of existence. The monster lived on, but there was little evil he could accomplish in the Realmz."
+
+### SD2:814
+You come upon the belongings of what must have been a mighty crusader!
+
+### SD2:815
+Cardinal Fang is relatively certain that these items belonged to Zhark the Paladin.  "It is only fitting that you use these holy items in our quest to find Zhark's body."
+
+### SD2:816
+You see a small figure kneeling in the snow. When you get closer, you see he is Zhark the Slaver! Zhark is deep in prayer. "Father," he cries out in a loud voice, "I am not worthy of this task! You could not destroy this monster, what hope have I?"
+
+### SD2:817
+"I have searched this wilderness countless times, and still I cannot find your magnificent armor, or your sacred sword. I am weak - the lust for gold has ruled my life. I dedicated myself to serving the Manifest nobility. I am a slave trader!"
+
+### SD2:818
+"Now all of Manifest is consumed with disease. It is only by the hand of Olo that I escaped alive. My world is in ashes." He is silent a long time. Then Zhark says, "Let Olo's will be done. I will fight the monster, and I will destroy him or die trying."
+
+### SD2:819
+A large cloud of burning fog passes between you and Zhark. When it passes, he is gone.
+
+### SD2:820
+Zhark whirls and sees your party. He plucks the Sword of the Paladins from your hand and runs off into the frozen wilderness.
+
+### SD2:821
+Zhark the Slaver hurls himself into the fray! With the sword of the paladins raised high over his head, he charges the unholy hoard of demons!
+
+### SD2:822
+Cardinal Fang and his men arrive to do battle!
+
+### SD2:823
+After the last of the demons have been defeated, you find the body of Lucky the Builder at the bottom of the massive hole left by Posthumous.
+
+### SD2:824
+Lucky springs back to life!
+
+### SD2:825
+"Am I glad to see you!" Lucky beams. "I thought I was done for.  -- I *was* done for, actually!" Ecstatic over his resurrection, Lucky does another cartwheel.
+
+### SD2:826
+King Richard warmly welcomes Lucky. Lucky answers, "My Grace, these adventurers are responsible for my escape from the dark elves of Manifest!" The King regards you as if for the first time. "Can they build a bridge?" he asks.
+
+### SD2:827
+Many preparations must be made to fix the tunnel and construct a bridge spanning the Acid Sea. Lucky bids you farewell. You have made a trade route to Hax finally possible. Bards will sing songs about you and a statue of you will be placed in the park.
+
+### SD2:828
+King Richard is overjoyed to see Lucky is safe! He opens a chest and presents you with fabulous treasure!
+
+### SD2:829
+You have reached the conclusion of this scenario. You are welcome to continue on your wanderings, rooting out stray treasure and battling random beasties, as long as you wish. Better yet, start the game over again and be amazed at how different it is!
+
+### SD2:830
+You hear a noise that chills your bones to the marrow!
+
+### SD2:831
+Do you wish to jump in the hole?
+
+### SD2:832
+You land in the most well-constructed escape tunnel you've ever seen.
+
+### SD2:833
+One of the overseer's men has set the hounds loose!
+
+### SD2:835
+A dwarven maid is seated on the doorstep of this house, weeping inconsolably.
+
+### SD2:836
+You can't. She's inconsolable.
+
+### SD2:837
+She is too busy crying to answer you.
+
+### SD2:838
+You search through the rubble but you find only one thing left of Lucky's construction crew.
+
+### SD2:839
+The maiden thanks you shyly. "Forgive me for making a spectacle of myself. My name is Countess Deidre, I'm assistant to His Majesty King Richard." When you ask Deidre why she is crying, she answers, "I just learned that the man I love was kidnapped!"
+
+### SD2:840
+The maiden stops crying. Of course, there's no way to communicate with her now.
+
+### SD2:841
+"I opened the ransom note myself. Part of my job is to handle King Richard's correspondence. Sadly, Mister Lucky barely knows I'm alive. Now I fear I'll never see him again!" When you tell her that you rescued Lucky from slavery, she gasps!
+
+### SD2:842
+"You rescued him? And then you let him get abducted, right from under your noses?" While you fumble for an excuse, Countess Deidre sets the hounds on you!
+
+### SD2:843
+"Uh oh!" says Lucky. "This part of the tunnel was destroyed as well! Let's keep going east until we find the entrance again!"
+
+### SD2:844
+King Richard is not accepting visitors today.
+
+### SD2:845
+Sorry, only one mercenary at a time!
+
+### SD2:846
+You have permanently increased your stamina!
+
+### SD2:847
+You have just discovered your favorite food. Hydra is the most delectable meat in the Realmz, more savory than shantile cutlet and less filling than dragon's head pie. Let the gourmets quibble over truffles ... hydra is it!
+
+### SD2:848
+You call out after the boy, but he runs away from you.
+
+### SD2:849
+A journal on the desk is open. The page reads: "Whatever terrible illness the new maid had, has led to her death. She died in the kitchen, and no one had the nerve to go in and collect her body. Finally I sent for one of the Manifest Guard.
+
+### SD2:850
+"He went into the kitchen, but he never came back out. I've been feeling so tired all morning, and I must get some sleep." On the next page, the diary continues: "It has been weeks since I have been well enough to take pen in hand and write.
+
+### SD2:851
+"Deidre!" cries Lucky in surprise. "I thought I'd never see you again!" The Countess Deidre turns from her hounds to see Lucky. They hesitate just a moment before they embrace. "Someday you'll have to tell me why you're named Lucky," she says shyly.
+
+### SD2:852
+"My lady, I have plenty of luck!" he replies. "Most of it's bad, and the rest is worse." "But  now you will stay here in Hax and begin work on your bridge, won't you, sir?" Lucky shifts uneasily, "In time, yes, but first the tunnel must be repaired ...
+
+### SD2:853
+"... and I can't very well leave my friends here and shut myself away in this town!" Countess Deidre looks as if she might sic her hounds on you again. "Farewell, then," she says to Lucky.
+
+### SD2:854
+As you leave, Lucky says to you, "Isn't she the loveliest dwarf you've ever seen? I promised myself if I ever saw her again I would-" his voice catches and then he falls silent."Who am I kidding? She's a countess. I'm a carpenter. Let's get out of here."
+
+### SD2:855
+Wood's cottage is empty. Even the soup is gone.
+
+### SD2:856
+This basement is becoming as unstable as the house!
+
+### SD2:857
+A supporting beam has collapsed here, and your passage is blocked by tons of fallen stone. Your first instinct is to dig, but this might further weaken the nearby supports and bring the whole house down on you. If only you had the help of an expert ...
+
+### SD2:858
+... Now what was the name of that builder in Manifest? Happy? Lucky? ...
+
+### SD2:859
+"Well, I'll be a poached pig bladder!" exclaims Lucky. "This building's not going to hold up much longer! Help me move some of these stones out of the way..." With Lucky's expertise, you are able to safely clear a passage through the rubble.
+
+### SD2:860
+In spite of your low expectations, that tasted really bad.
+
+### SD2:861
+The Cardinal is about to leave you when he notices the book you are carrying. "The Tome of Shalizar! This is a sign from Holy Olo! Although you are unbelievers, Olo has blessed you with untold powers. You might be indispensable allies on my expedition."
+
+### SD2:862
+"So be it," says the Cardinal curtly. Without another word to you, he crosses the street and walks into a church.
+
+### SD2:863
+"Allow me to explain a subtlety which might have escaped you," snaps Posthumous. "Though I can't force you to part with that crown you've stolen, nothing prevents me from squashing you simply because of my general contempt for living creatures!"
+
+### SD2:864
+"Let's not go this way," says Spike. "There are some real tough characters ahead and I don't think we have enough bandages for all of you."
+
+### SD2:865
+The headline reads, "Search For Master Architect Intensifies." There's also a fascinating story on a man who bit a dog, and some colorful pie charts.
+
+### SD2:866
+Welcome to Greedy's Used Sloops! Greedy sits outside his ramshackle shack, squinting up at you like a moray who's just smelled lunch. "Any o' these beauties can be yours for only 100 gems!" croaks Greedy.
+
+### SD2:867
+"And I'm having a special sale today - ye can buy two sloops fer the price of three! Har har har!" Do you wish to pay 100 gems for one of Greedy's sloops?
+
+### SD2:868
+"Well?" asks King Richard. "Do you expect to find Lucky here in my castle? Begone, dolts!"
+
+### SD2:869
+"We're going the wrong way," complains Lucky. "The construction camp is west of here!"
+
+### SD2:870
+You have found the region of the cursed caves. Legend has it that a powerful zombie king put a curse on these caves that make them different every time you enter them.
+
+### SD2:871
+Spreading its translucent wings to the sunlight, the rainbow dragon focuses beams of colored light into fearsome shapes. As the shapes take form, you find yourselves confronted by a small army of dragons.
+
+### SD2:872
+Not far away, you see that the dwarf has fallen afoul of some venomous snakes!
+
+### SD2:873
+"You saved my life!" says the dwarf. You quickly explain to him that you mean him no harm, you are seeking the town of Hax. "Hax? I can show you around town once you get there. I built a lot of that place myself! Uh, need a guide?"
+
+### SD2:874
+How strange ... a house here in the middle of nowhere.
+
+### SD2:875
+Everything inside this house appears to be recently finished. The rooms are spacious, unfurnished, but all the floors have detailed ornamentation. Great care has been taken to maximize the available light by placing glass skylights in the corridors.
+
+### SD2:876
+In fact, this is probably the nicest house you've been in since you arrived in Manifest. -- But where is everyone?
+
+### SD2:877
+Did you hear that? There must be someone in this house. You hurry on in the direction you think you heard the noise coming from.
+
+### SD2:878
+A strange tapping sound carries down the corridors. The house, as well built as it is, feels more than a little creepy without any furniture or people in it.
+
+### SD2:879
+You remember the wise words you once heard from a drunken Rothian giant. "Sometimes, in order to solve a problem, you have to look very carefully at all the details in front of you. And sometimes, not."
+
+### SD2:880
+"Just kidding!" laughs King Richard. "Wow! You should have seen the look on your faces! Here's your *real* treasure!"
+
+### SD2:881
+Just as you are saying your goodbyes to Lucky, a guard comes charging into the room. "Mind slayers!" he shrieks. "Hundreds of them!" Your blood runs cold at the thought of hundreds of anti'ids attacking the town.
+
+### SD2:882
+King Richard reaches for his sword. "I never should have exiled those cabalists. I should have listened to the Countess and had them executed!" Without another word, the King, Lucky and the guard hurry outside.
+
+### SD2:883
+The southeast gate is mobbed with anti'ids! King Richard's guards fight bravely, but they are taking heavy casualties. You look about for the King and Lucky, but they are nowhere to be seen. Adrenaline pumping, you leap into battle.
+
+### SD2:884
+Some of Countess Deidre's finest hounds leap to the attack!
+
+### SD2:885
+More guards come to fight by your side!
+
+### SD2:886
+A motley assortment from the local mercenaries guild joins in the attack!
+
+### SD2:887
+Above the cries of the wounded and dying, you hear the din of fierce battle at the north gate! "Hurry!" shouts one of the guards. "We need reinforcements NOW!"
+
+### SD2:888
+A movement on the horizon catches your eye. It looks like a man running south, away from the city! A deserter? He looks like ... it couldn't be, King Richard?
+
+### SD2:889
+Do you really want to go rooting around in the King's private trunk, at a time like this?
+
+### SD2:890
+Alas! Whatever happened to honor? Decency? Self respect? Valor? ...
+
+### SD2:891
+This trunk, too? You want to rob this trunk too?
+
+### SD2:893
+A detail of armed men are hurrying south. "Mind slayers!" shouts one of the guards. "They're breaking in at the southeast gate!"
+
+### SD2:894
+Horrors! A stream of anti'ids are emerging from the tunnel and are overwhelming the gates! A column of the multicolored monstrosities detach from the main army and proceed west.
+
+### SD2:895
+But you have no time to consider the anti'ids' strategy, as you narrowly miss being skewered by a bolt of magical lightning!
+
+### SD2:896
+The battle turns even more bizarre as the residents of the Hax graveyard shuffle forward to defend their city!
+
+### SD2:897
+As you scrape the gelatinous skins of countless anti'ids from your weapons, you see another figure hurrying north toward the tunnel. It looks like Lucky is deserting the city as well! Do you want to pursue him?
+
+### SD2:898
+Lucky hurries into the dark tunnel, and you follow in close pursuit.
+
+### SD2:899
+Before you can ask him what he's up to, two figures emerge from the shadows. It is Canterbury and Chamomile, leading an army of anti'ids!
+
+### SD2:900
+The stone pillar shatters, and the roof caves in!
+
+### SD2:901
+More of the anti'id army are coming every moment!
+
+### SD2:902
+You narrowly avoid being buried in falling stones as the tunnel support collapses, destroying the rest of the anti'id army. The threat of the anti'ids is over.  -or is it? On Canterbury's body, you find a map.
+
+### SD2:903
+At first you think this hut is abandoned, but then you find an old dwarf and his wife huddled in a corner. "Please help us," they plead, "I am Canterbury and this is my wife Chamomile."
+
+### SD2:904
+Return to Hax?
+
+### SD2:905
+A detail of armed men are hurrying east. "Mind slayers!" shouts one of the guards. "They're breaking in at the southeast gate!"
+
+### SD2:906
+A detail of armed men are hurrying north. "Mind slayers!" shouts one of the guards. "They're breaking in at the north gate!"
+
+### SD2:907
+Not a single guard is at the gate. Countess Deidre, carrying an armload of magic items from the Sharper Mage shop, is attempting to hold off another swarm of anti'ids. Some kobolds, fresh from their swim, have grabbed their swords and are attacking.
+
+### SD2:908
+King Richard has attempted a desperate gambit. Alone and on foot, he has lured a pack of green dragons toward the battle.
+
+### SD2:909
+Lucky is huddled in the shadows, hammering on something. "Good, it's you!" he whispers when he sees you. "Hold that torch steady while I fix this thing."
+
+### SD2:910
+You have found an underground tunnel. After journeying a great distance, you emerge into a narrow valley filled with boulders.
+
+### SD2:911
+Your lockpicking skills fail you. The trunk remains locked.
+
+### SD2:912
+The walls of this room are filled with hideous carvings of an anti'id army overwhelming the various races of the Realmz. You are reminded of a similar room you found in a fortress in sunken Waterford.
+
+### SD2:913
+It is rumored that a vast army of anti'ids almost destroyed all the creatures in the Realmz, until the gods created humans. Some say that humans defeated anti'ids by virtue of their advanced psychic powers.
+
+### SD2:914
+... Others say human brains made the anti'ids sick. In any case, it seems you have stumbled upon a plot to magically create -or summon- new breeds of anti'ids. But for what purpose? Another, more invincible, army?
+
+### SD2:915
+As you look at the images of carnage before you, you get the distinct feeling that you are way out of your league this time.
+
+### SD2:916
+You search the bodies of the dead adventurers and find an interesting item.
+
+### SD2:917
+You return to Zhark's hut. The tiny structure is abandoned, but you sense powerful magic inside. Do you enter?
+
+### SD2:918
+A magic portal stands open. Inside you can see the valley where you first entered Manifest. Do you want to step into the portal?
+
+### SD2:919
+You are about to leave when you hear a noise from a nearby willow. A small black bird is trapped in the high branches, flapping frantically in an attempt to free herself.
+
+### SD2:920
+Who will climb?
+
+### SD2:921
+You successfully climb the tree and gently snatch the bird.
+
+### SD2:922
+You climb the tree and almost reach the bird before plummeting down to earth.
+
+### SD2:923
+This would be a lot easier if you had a rope! Do you want to try again?
+
+### SD2:924
+Do you climb the tree to help the bird?
+
+### SD2:925
+Your pixie has no difficulty flying up to the bird, but cannot free it from the branches. Pick someone else in your party for this task.
+
+### SD2:926
+Then, from out of nowhere, you hear a voice whisper, "Psst! Want to buy a cat?"
+
+### SD2:927
+"Okay. Throw 25 gems into the well," says the voice.                                                                                  Do you want to throw 25 gems into the well?
+
+### SD2:928
+"Very good," says the voice. "Now go away."
+
+### SD2:929
+Sitting on the prow of your ship is a beautiful white cat with a black face and blue eyes! The cat springs right toward you!
+
+### SD2:930
+Purring contentedly, the magical cat curls up in your arms and goes to sleep.
+
+### SD2:931
+"Go away," says the voice. "You already have a cat."
+
+### SD2:932
+You clear a narrow passageway with the help of your trusty spade of diamonds.
+
+### SD2:933
+The passage back to the Madwood is blocked with fallen stone.
+
+### SD2:934
+You clear a narrow passageway and proceed to the Madwood.
+
+### SD2:935
+Finally you have found a use for that bottle of Vaporous Form you've been lugging around since you left Bywater so many years ago! You turn to vapor and drift through the solid rock.
+
+### SD2:936
+After the defeat of the anti'ids, the people of Hax have a celebration in your honor. Local clerics have succeeded in resurrecting some of the brave souls who died in the battle.
+
+### SD2:937
+You are happy to see Lucky and Countess Deidre sitting together and talking. Lucky has finally worked up enough nerve to present her with the ring he has been carrying. Even in this frozen land, there is a chance of spring.
+
+### SD2:938
+King Richard dies a horrible death!
+
+### SD2:939
+King Richard, sadly, has breathed his last. All attempts to revive him have failed. He will will be buried tomorrow in the vault at the Cathedral of Olo Triumphant.
+
+### SD2:940
+It was the King's dying wish that you be given his magnificent suit of armor.
+
+### SD2:941
+King Richard has rewarded you for your bravery by giving you a magnificent suit of armor.
+
+### SD2:942
+Countess Deidre presents you with your choice of her finest hounds.
+
+### SD2:943
+Lucky looks at you, thinks a moment, and gives you a pat on the back. "Thanks, adventurers," he says with a bit of remorse at seeing you go. "I don't have any treasure for you, but I consider myself lucky I met you."
+
+### SD2:944
+Within this secret passage, you find a secret door that lets you approach the next castle.
+
+### SD2:945
+This palatial residence must be Lady Dawn's home.
+
+### SD2:946
+The sounds of feasting sea creatures leave little doubt to the overseer's fate.
+
+### SD2:948
+Limbsnapper's eyes narrow, his nostrils dilate and his upper lip twitches. "Did you say no to me? I hate it when people say no to me." He proceeds to give you a demonstration of his emotional inner landscape.
+
+### SD2:949
+"Back so soon?" chortles Limbsnapper. "How much will you wager against my axe?"
+
+### SD2:950
+An array of barracks lie ahead. You might be in for a very difficult battle if you continue in this direction.
+
+### SD2:951
+"You have done an old elf's heart glad," beams Zhark. "Of course, to win your freedom, you will have to defeat me as well." With a wave of his hand, he conjures up three hideous zombies. They, and the remaining shadow elves in the area, attack.
+
+### SD2:952
+Only an idiot would go back into that room again.
+
+### SD2:953
+For a moment, you are disoriented. Then you become confused. There's more to that secret passage than meets the eye.
+
+### SD2:954
+The hobgoblin is quiet for a long time. Then he asks you, "Have you ever seen the Eye of the Gods? It might be very useful for adventurers." He dangles an interesting stone in front of you.
+
+### SD2:955
+Abruptly, your host douses the fire. "Now go," he says softly. "May the wind be always at your back - unless you're trying to sleep."
+
+### SD2:956
+It's hard to be certain, but you think you see a faint ray of sunlight directly ahead of you.
+
+### SD2:957
+The demon lies broken and bleeding on the floor. "Where is he?" you demand. "Where's Lucky?" -- "Who, the ugly little dwarf?" the demon replies hoarsely. "We buried him in the snow. But don't worry," it giggles, "he's still alive!"
+
+### SD2:958
+"His soul will be used to resurrect the zombie king. And his flesh may be of use to the king too, if he wants a snack." The demon coughs up some horrible organ from its body. "I'm going back home now," it croaks. "I'll see you in my dreams."
+
+### SD2:959
+The infernal creature dies with a obscene gagging sound.
+
+### SD2:960
+A dwarven cleric stands beneath this tree, staring out at the frozen lake.
+
+### SD2:961
+He smiles at you, just as he did before.  Since he appears to be deep in thought, you decide not to bother him.
+
+### SD2:962
+Since he appears to be deep in thought, you decide not to bother him.
+
+### SD2:963
+In a hollow opening in this tree you find a huge supply of blank parchment.
+
+### SD2:964
+This pit is swarming with Nasties! Eyes rolling, mouths foaming, twin stingers atop their heads dripping potent venom, claws flashing with sparks and fireballs, they hurry to embrace you.
+
+### SD2:965
+The noise of a babbling brook makes it impossible for you to rest here.
+
+### SD2:966
+The gates here have rusted off their hinges long ago. You see a desolate old house surrounded by snowdrifts. Various symbols and inscriptions praising Olo have been partially chiseled away. If this was once a holy place, it is now a desecrated ruin.
+
+### SD2:967
+The stone the shanahy sold you begins to glow! Gradually the creepy old house begins to flood with light, radically changing your perspective.
+
+### SD2:968
+You find yourself in the midst of a swamp, near a steep cliffside of moss-covered rocks. As you struggle to get your bearings, a gang of dark elves approach and give you a special welcome.
+
+### SD2:969
+At first, it looks like the blind gargoyle has died, then you realize she is still breathing.
+
+### SD2:971
+"Back for more?" Burly Limbsnapper snorts at you. "I hope you brought more gems this time!"
+
+### SD2:972
+The streets of Manifest seem unusually quiet today. Where is everyone?
+
+### SD2:973
+As you come around the corner you see a small squadron of shadow elves plastering handbills over every building. You draw closer to see what the handbills say ...
+
+### SD2:974
+You overhear two elven slaves weeding a nearby garden.  "I declare the poor lad's only half his regular weight! Whatever this fever is, it's something fierce."
+
+### SD2:975
+The Blazing Squid Coffee House is closed.
+
+### SD2:976
+Manifest has become a ghost town. Corpses litter the streets and every building is boarded up.
+
+### SD2:977
+The Mayor's office is boarded up.
+
+### SD2:978
+In spite of the quarantine, the dwarven mapmaker is open for business.
+
+### SD2:979
+A mob of looters have surrounded War*Mart! Amid the broken glass and infected elves are several items worth picking up.
+
+### SD2:980
+When you enter the Authentic Haxstone shop, you see the shopkeeper laying dead on the floor.
+
+### SD2:981
+Not surprisingly, kobolds are immune to the disease which is decimating Manifest. So the Kobold Funhouse is open for business.
+
+### SD2:982
+"Okay, we need you to stop the looting outside of the War*Mart."
+
+### SD2:983
+Upon your arrival, the chaos outside War*Mart suddenly focuses directly on you! "Why aren't you guardsmen doing something to help us stay alive?" Someone throws a rock at you, then the whole mob attacks!
+
+### SD2:984
+Amid the broken glass and infected elves you find several plundered items worth picking up.
+
+### SD2:985
+The Manifest Guard does not need any new recruits at this time.
+
+### SD2:986
+Everyone at the Manifest Guard headquarters is dead.
+
+### SD2:987
+The First National Bank of Manifest is on fire! Manifest guardsmen are holding back a crowd of citizens intent on rescuing their valuables from their safe deposit boxes.
+
+### SD2:988
+In desparation, you circle the bank, and discover some interesting goings-on in the back entrance. A Guardsman here is letting some of the crowd enter the burning building. When you approach him, he blocks your path.
+
+### SD2:989
+"No one gets inside ... unless you make it worth my while," the Guardsman leers at you.
+
+### SD2:990
+"Bring me an authentic Haxstone, and I'll let you in."
+
+### SD2:991
+He notices that one of you is carrying the gray Haxstone from the nearby shop. "I want that Haxstone," the Guardsman blurts.
+
+### SD2:992
+Do you give him the Haxstone?
+
+### SD2:993
+"Go on in. "
+
+### SD2:994
+As you enter the burning building, you wonder if it might have been wiser to just let your belongings go up in smoke.
+
+### SD2:995
+You narrowly miss being hit by a burning timber as you enter the bank! Blazing embers scorch your party.
+
+### SD2:996
+As you enter the bank, you are hit by a burning timber!
+
+### SD2:997
+You return to the bank and look for the crooked Guardsman. He is standing exactly where he was a few minutes ago.
+
+### SD2:998
+"Listen, you nitwits," sneers the crooked guardsman, "if you want to get inside you have to get me that Haxstone, understand?"
+
+### SD2:999
+"I'm closin' at midnight," says Zeb, proprietor of Zeb's Pawn Shop. "If I was you I'd clear out all my stuff now."
+
+### SD2:1000
+The orc in your party insists on purchasing a bag of orc rinds from a street peddler.
+
+### SD2:1001
+Basil insists on purchasing a bag of orc rinds from a street peddler. Since the bag is too heavy for him, he asks you to carry it for him.
+
+### SD2:1002
+In the middle of the road you see an emaciated old orc pushing a peddler's cart. "Fresh orc rinds today," she calls to you hopefully. Her voice echoes down the empty street. Will you buy a bag of her orc rinds for 15 gold?
+
+### SD2:1003
+"Not so fast!" he snatches the stone away before you can grasp it. "Such a treasure cannot be had without serious exertion, much perspiring and massive sacrifice." He pauses dramatically.
+
+### SD2:1004
+"You must journey to the town of Hax and there purchase a bag of orc rinds," declares the shanahy. "Then you must bring the orc rinds back to this spot, and present them to me. If you fail in your quest, the Eye of the Gods shall never be yours!"
+
+### SD2:1005
+The hobgoblin sniffs the air. "Does someone here have orc rinds?" he asks delightedly. Without another word, he grabs your bag of orc rinds and begins stuffing his face. "Ecstacy!" he cries out between mouthfuls of the strange grub. "I shall swap you!"
+
+### SD2:1006
+Abruptly, your host douses the fire. "Now go," he says softly. "And always remember this, my children ... don't get the diet orc rinds, they taste like parchment."
+
+### SD2:1007
+You return to the shanahy's hut. He looks up expectantly as you enter.
+
+### SD2:1008
+"No orc rinds?" he says with a sigh. "Clearly you are not worthy of the Eye of the Gods."
+
+### SD2:1009
+The hum and hubbub of the busy town of Manifest prevents you from resting peacefully.
+
+### SD2:1010
+The door won't open.
+
+### SD2:1011
+You try to give the guardsman one of the Haxstones you're carrying. "Any sap can see those aren't real Haxstones!" he retorts.  "They're all shiny! Everyone knows Haxstones are round and gray!"
+
+### SD2:1012
+The dark corridor ends here. You can feel a slight breeze directly above you, but when you look up, there is only darkness.
+
+### SD2:1013
+The corridor ends here. You can feel a slight breeze directly above you. Looking up, you see a narrow hole.
+
+### SD2:1014
+You float gently down into the hole.
+
+### SD2:1015
+You throw the rope up in the air. It falls back down.
+
+### SD2:1016
+The tunnel is much too narrow to attempt an acrobatic act.
+
+### SD2:1017
+Your party sprouts wings and flies up out of the tunnel.
+
+### SD2:1018
+The commander is surprised by your frank reply. Before he can respond, a messenger rushes up, shouting, "The goblins are revolting! We need every man at the barricades in Goblintown immediately!"
+
+### SD2:1019
+Basil silently follows you along the corridor.
+
+### SD2:1020
+The archers rush off in all directions, leaving the gate wide open.
+
+### SD2:1021
+You are dismayed to realize that your allies are nowhere to be seen! They must have still been outside when the gate shut!
+
+### SD2:1022
+You are relieved to see your allies have finally caught up with you.
+
+### SD2:1023
+Zeb's Pawn Shop is closed until further notice.
+
+### SD2:1024
+Slaves-R-Us is closed.
+
+### SD2:1025
+There is no one here except for a few dead bodies on the floor.
+
+### SD2:1026
+The little shop is closed up tight.
+
+### SD2:1027
+The sign on Hobb's door says proudly            "Not Dead Yet? Neither Are We! Open For Business."
+
+### SD2:1028
+"Okay, you flock of yellow-hearted watercress-grazing pixie hairstylists!" snorts the huge elf. "Come back when you've scraped together a little courage!"
+
+### SD2:1029
+Although you are absolutely certain that this cave is the one that leads back to Hax, an annoying enchantment totally derails your sense of direction.
+
+### SD2:1030
+What's this? What's this? A snippet of parchment is protruding from a crevasse you didn't notice before.
+
+### SD2:1031
+Whipping out your Kill Annoying Enchantments scroll, you recite the incantation necessary to permanently remove this annoyance from your life.
+
+### SD2:1032
+Elmo slumbers in a very, very deep sleep. Either that, or he's dead.
+
+### SD2:1033
+That was definitely a threat. You reach for your weapons.
+
+### SD2:1034
+When you put on the Greenman's crown, you experience a painful and horrifying transformation. Most of your sensory organs vanish under a powerful shell that resembles bark.
+
+### SD2:1035
+Your reactions slow considerably as the blood in your veins congeals into thick sap. Horrifying but true ... you are turning into some form of vegetation!
+
+### SD2:1036
+"I see you are carrying the Greenman's crown," the man says after a minute. "Are you planning to return it to its rightful owners, or are you planning to rule the Madwood yourselves?"
+
+### SD2:1037
+Return it
+
+### SD2:1038
+Rule
+
+### SD2:1039
+"Then expect to have many enemies. I shan't oppose you ... nor will I align myself with your cause. Go raise your army and wage your war." A wisp of steam rises from his soup and momentarily obscures your view of him. When the steam clears, he is gone.
+
+### SD2:1040
+The man stares at you for a long time. "At least you didn't give it to Posthumous," he says finally. "But clearly you have a great deal to learn if you hope to survive."
+
+### SD2:1041
+The man stares at you for a long time. "There is little I can do for you at this point," he says finally. "But clearly you have a great deal to learn if you hope to survive."
+
+### SD2:1042
+Oddly, it seems to you that Wood is not moving so slowly any more. "That should ease your chronic impatience," he says with a smile. "It is the bane of creatures such as yourself."
+
+### SD2:1043
+"When your kind first appeared in the Realmz, we called you the concealers," says Wood. "We knew you were different from the beasts for you concealed yourselves in skins and shells of ore. Even now, the Great Ones suspect you hide your true nature."
+
+### SD2:1044
+"Because most of the Great Ones know the secret of moving slowly, our lives are much longer than yours. Some of us in this forest can recall the days before the elves came to be. I am one of these - the Greenman was another.
+
+### SD2:1045
+"Now the Greenman is growing old and soon he will die. Several of the great ones seek to take his place, and while they quarrel among themselves, the forest may go for centuries before a new leader is agreed on."
+
+### SD2:1046
+You take your first look at the map you're carrying.
+
+### SD2:1047
+ Mystified, you tuck the map into the scrollcase with your other maps.
+
+### SD2:1048
+ "Food for thought," say some of the members in your party. "Balderdash!" grumble the others.
+
+### SD2:1049
+The bardic women gather their children and leave the village behind. They carry very few belongings - some scrolls and archery equipment. Bards travel very light, and very quickly. The village is deserted before you even have a chance to look around.
+
+### SD2:1050
+"I must leave you now," Wood tells you. "With the death of the Greenman, I expect there to be much strife among my brethren. If it is the gods' will, our paths shall cross again." Without another word to you, he vanishes into the dense brush.
+
+### SD2:1051
+You have won the battle, but Posthumous and his giants have left their mark on you. You feel yourself losing consciousness ...
+
+### SD2:1052
+"But what am I supposed to do with this crown?" you call after him. But he is gone.
+
+### SD2:1053
+More nether giants have heard the racket and join in the battle!
+
+### SD2:1054
+The bardic women and go over to the next building and let the children out. Some children are crying and talking about the mean people who wouldn't let them play.
+
+### SD2:1055
+The bards leave the village behind. They carry very few belongings - some scrolls and archery equipment. Bards travel very light, and very quickly. The village is deserted before you even have a chance to look around.
+
+### SD2:1056
+"Open that door!" shouts one of the bardic mothers. She pushes past you, giving you each a nasty look.
+
+### SD2:1058
+The next morning, you awaken in a grove of ancient trees. You feel much better than you deserve to right now. Someone, or some thing, has tended to your wounds during the night.
+
+### SD2:1059
+Judging by the sounds and smells that emanate from this open pit, it must be occupied by a large pack of carnivores.
+
+### SD2:1060
+You wander around a while longer, then lose your patience and head for the door.
+
+### SD2:1061
+Spike is overjoyed to see the challenge ahead of him. "Shoo! Stop standing on the merchandise! Go slay yourselves some dragons!" You bid him a fond farewell and head for the door.
+
+### SD2:1062
+You drop in on the Keysmith and Spike to regale them with tales of your exploits, and marvel at the neat, orderly rows of keys hanging on the walls.
+
+### SD2:1063
+As you approach this house, you see in the window a man sitting at a table. He is wearing a green helmet with golden horns. You knock on the door, but there's no answer.
+
+### SD2:1064
+Spike scrambles over the wall and runs off.
+
+### SD2:1065
+The door is unlocked. Do you want to enter the house?
+
+### SD2:1066
+A sign on the door says CLOSED - WILL REOPEN SHORTLY AFTER THE END OF TIME.
+
+### SD2:1067
+The Keysmith pops his head out of the door. "I'm out of here!" he exclaims. "This neighborhood is no place for decent folk! Did you hear about the little boy that was killed?" Before you can answer, he hurries off with a clanking satchel full of keys.
+
+### SD2:1068
+A tiny gnome pops his head out of the door. "I'm out of here!" he exclaims. "This neighborhood is no place for decent folk! Did you hear about the little boy that was killed?" Before you can answer, he hurries off with a clanking satchel full of keys.
+
+### SD2:1069
+Spike busily engages himself in buffing your party's headgear. "You've been in the forest a long time," he observes.
+
+### SD2:1070
+You find an interesting potion lying on the floor.
+
+### SD2:1071
+Most of the bottles on this table have been shattered, but several are still intact.
+
+### SD2:1072
+As you finish off the bears, you hear more growling in the immediate vicinity. Is there no end to the number of bears in this cave?
+
+### SD2:1073
+"Cheer up!" councils the log. "Let me give you a bit of advice, okay? When you get to the fork in the road, DON'T go south, okay? There's a lot fewer Nasties if you take the north road.  South in general is a bad idea around these parts."
+
+### SD2:1074
+Lying in the underbrush is a large book.
+
+### SD2:1075
+How strange, to find a book here in the middle of the forest. A recent cloudburst has soaked the book and made most of it illegible, but there are still a couple of pages you can read.
+
+### SD2:1076
+Which page do you want to read?
+
+### SD2:1077
+Along the shoreline, you come across a slimy heap of rocks, which looks suspiciously like a shantile's lair. You approach cautiously, only to find it is currently empty.
+
+### SD2:1078
+You have bought all the maps this dwarf has to sell.
+
+### SD2:1079
+"You've returned!" the old dwarves croak joyously. "We knew you would not abandon us. Will you go into the cave and kill the bears for us now?"
+
+### DES:1
+A very gifted lad.
+
+### DES:2
+Strongest of the evil dragons.  Few are those that have met with one, and lived!
+
+### DES:3
+If this huckster has a pot of gold, it isn't full yet.
+
+### DES:4
+These dragons are strange mutations of other dragons created by demonic creatures.
+
+### DES:5
+These dragons are a mix of red and green dragons.
+
+### DES:6
+For centuries, learned men have written brilliant philosophies to prove the Rainbow Dragon cannot exist. If only it were so!
+
+### DES:7
+Common in some areas of the Abyss that have a cold climate.  No dragon in the Realmz can match this breed when it comes to having a heart of pure evil.
+
+### DES:8
+Strongest of the good dragons. This race of dragon kind devotes their entire lives  to the destruction of their evil kin.
+
+### DES:9
+One of the weaker races of dragon kind.  A sly mind and a taste for blood make green dragons a force to be feared.
+
+### DES:10
+An odd sight, indeed. Their appearance would be laughable, if they were not so deadly. They favor the occasional orc to dine on.
+
+### DES:11
+Immune to almost everything, these rodents are the bane of exterminators throughout the Realmz.
+
+### DES:12
+An unholy cross between rat and human, these monsters are so indestructable as to approach immortality.
+
+### DES:13
+Formed from a colony of semi-intelligent mosses.
+
+### DES:14
+Incapable of rapid movement, these bizarre creatures spawn lethal podlings.
+
+### DES:15
+Intense rage gives these trees the power to thrash and pummel unsuspecting passersby.
+
+### DES:16
+A magical being summoned by the hand of a mighty wizard.  Once summoned, they will carry out their master's will until destroyed.
+
+### DES:17
+Intense rage gives these trees the power to thrash and pummel unsuspecting passersby.
+
+### DES:18
+Once thought to be extinct, these bizarre monstrosities will mindlessly pummel anything that moves.
+
+### DES:19
+Standing 8 feet tall or more, these large brutes love to bully those weaker than themselves.  They are often employed as troops in mercenary armies.
+
+### DES:20
+Extremely strong for their size, these beasts make excellent warriors.
+
+### DES:21
+Minotaurs have a stout body that would make even an ogre quake with fright.  These powerful creatures love to engage in combat.
+
+### DES:22
+Minotaurs have a stout body that would make even an ogre quake with fright.   These powerful creatures love to engage in combat.
+
+### DES:23
+Common in some areas of the Abyss that have a cold climate.  No dragon in the Realmz can match this breed when it comes to having a heart of pure evil.
+
+### DES:24
+Long ago a tribe of trolls developed the ability to think.  They have since developed a strong tribal society that rivals orcs and goblins.
+
+### DES:25
+Capable of regenerating, these creatures are almost indestructible.
+
+### DES:26
+An evil race of Ogre that has great malice for any surface dwelling race.
+
+### DES:27
+A small, but deadly variety of your everyday troll.
+
+### DES:28
+A strange cross between an ogre and a bear.  These creatures were born of magic long ago.
+
+### DES:29
+Do not get too close!  If it gets you in a bear hug you are doomed for sure.
+
+### DES:30
+Large and heavily armored, with a bony back plate and horns.  Only a fool would back one of these things into a corner.
+
+### DES:31
+A huge animal with tusks as long as most men are tall.  Stand aside!   Do not block the path of a rampaging behemoth.
+
+### DES:32
+A magically animated fossil.
+
+### DES:35
+A disgusting blind creature of the deep.  Four clawed feet, two tentacles and a trunk that resembles an elephant's all combine to make this a creature to avoid.
+
+### DES:36
+A giant boar with a bad attitude.
+
+### DES:37
+This creature's strange metabolism lets it survive in extreme cold temperatures. Avoid its bite if you can.
+
+### DES:38
+These hounds are no one's best friend.
+
+### DES:39
+Woe to the fools that find themselves in lonely company with one of this ilk.
+
+### DES:40
+An empathic midget orc.
+
+### DES:41
+A poisonous bite may be the least of your worries if you meet up with one of these vermin.
+
+### DES:42
+Mentally enslaved to a zombie king, nether giants are not brilliant strategists, but they posess a formidable brawn.
+
+### DES:43
+This creature prefers the taste of steel and leather over human flesh.
+
+### DES:44
+Evil incarnate, these creatures feast on the terror and pain of those they choose as victims.
+
+### DES:45
+A strange race indeed.  Not even the oldest of elven sages know of the origins of this foul race.  Some speculate they are not of this world.
+
+### DES:46
+Beware - the hydra is even more dangerous than he is ugly.
+
+### DES:47
+Invisible as air, the Unseen Charmer can make sworn enemies out of blood brothers.
+
+### DES:48
+The black sheep of the Abyss.  Half demon, half devil.  They are often shunned by full-blooded demons and devils.
+
+### DES:49
+One of the Hemerood.  God-like in power.  This evil race is making its way back to the known Realmz for the first time in 50 millenia.
+
+### DES:50
+Beware - the hydra is even more dangerous than he is ugly.
+
+### DES:51
+A powerful cousin to the modern day mountain lion.
+
+### DES:52
+Large, but stupid.  These reptiles have been known to trample an adult ogre without even slowing down.
+
+### DES:53
+Sporting a nasty bite, these critters are more dangerous than they look.
+
+### DES:54
+A strong family structure allows these giant reptiles to survive in a hostile environment.
+
+### DES:55
+The original king of the jungle.
+
+### DES:56
+The creature's favorite form of attack is to lower its armored head and charge.  Don't stand in front of it when it does.
+
+### DES:57
+Neither fast nor powerful, these nasty reptiles do have one advantage - a poisonous bite.
+
+### DES:58
+A small demon from the nether region.  In large numbers they can be a difficult force to deal with.
+
+### DES:59
+Created eons ago as a punishment by the gods, this foul race is feared by even the most evil and powerful wizards that walk the Realmz.
+
+### DES:60
+Hailing from some unknown plane, these beasts are often summoned by powerful enchanters to do their bidding.
+
+### DES:61
+A founding father of Manifest.
+
+### DES:62
+One of the most powerful magic guardians in the Abyss.
+
+### DES:63
+Centuries of legends have made these knights larger than life.
+
+### DES:64
+Large and brutish.  These simple- minded humanoids survive due to their sheer size.
+
+### DES:65
+Skilled in the ways of magic, stygian witches are known to associate with evil giants.
+
+### DES:66
+Half tiger, half humanoid.  This delightful race relishes all that is good in life.  How ironic that they are only found in the Abyss.
+
+### DES:67
+A larger version of the ordinary troll.  The physical strength of these beasts is near god-like.
+
+### DES:68
+Servant of the netherworld, this giant has been bred for strength and mercilessness.
+
+### DES:69
+An apparition from beyond the grave and extremely evil by nature.  It's good practice to stay clear of these wispy creatures.
+
+### DES:70
+An apparition from beyond the grave.  Neither good nor evil by nature, it is still best to avoid such creatures.
+
+### DES:71
+An animated creature of bones and armor. They can be deadly in large numbers.
+
+### DES:72
+A powerful zombie king.
+
+### DES:73
+Filthy claws and teeth make this creature a deadly menace.  Fear its bite for it can paralize.
+
+### DES:74
+In life, he was a valiant warrior. In death, a cursed pawn of evil.
+
+### DES:75
+Highly skilled in the art of verbal assault.
+
+### DES:76
+Beware! His sword is as sharp as his satire.
+
+### DES:77
+Not as well-preserved as some of the rest of the family, but fairly deadly nonetheless.
+
+### DES:78
+A humanoid raised from the dead to become one of the cursed undead.
+
+### DES:79
+Not exactly the best five gold you ever spent.
+
+### DES:80
+Woe to the fools that find themselves in lonely company with one of this ilk.
+
+### DES:81
+With a hard carapace as tough as steel plating.  This crab is like a knight in armor.
+
+### DES:82
+Large glands in the pincers inject victims with a powerful chemical that bursts into flame when it comes in contact with air.
+
+### DES:83
+A common orc who claims to have some skill with weapons.
+
+### DES:84
+Caustic venom makes this little guy especially nasty.
+
+### DES:85
+The enchantment that created this monster is apparent upon its death.
+
+### DES:86
+A warrior of great skill and strength.
+
+### DES:87
+Half man.  Half fish.  All bad temper.
+
+### DES:88
+A mountainous man-fish.
+
+### DES:89
+Strong and capable with arms.
+
+### DES:90
+Lots of trouble. Lots of bubble.
+
+### DES:91
+Formed from a colony of semi-intelligent mosses.
+
+### DES:92
+Incapable of rapid movement, these bizarre creatures spawn lethal podlings.
+
+### DES:93
+A hardy warrior trained for combat.
+
+### DES:94
+He's on a mission from Olo.
+
+### DES:95
+Pressed into service to pay off debts, these troops are not much of a match for those skilled with weapons.
+
+### DES:96
+Somewhat skilled with weapons.
+
+### DES:97
+These men are solely paid to keep the troops in line.  They use force if necessary.
+
+### DES:98
+An ancient tree cursed with the form of man.
+
+### DES:99
+An experienced leader with the respect of his troops.  Few will question his orders.
+
+### DES:100
+A master builder.
+
+### DES:101
+These ugly, crazed, diseased, poisionous, cowardly little maniacs wouldn't fight fair even if they knew how to.
+
+### DES:102
+A small, reptilian race.  They are extremely evil and travel in large groups for they are small in stature and are often eaten as food if found alone.
+
+### DES:103
+Abused as youngsters, these ill- tempered men are but common thugs for hire.
+
+### DES:104
+A reprobate with a resume.
+
+### DES:105
+A cold blooded elven killer.
+
+### DES:106
+Elves are commonly not known for their brawn. The caste of pugilists however, are infamous for slugging it out to the death.
+
+### DES:107
+A witch dedicated to enslaving the weak.
+
+### DES:108
+Black belt fanatic.
+
+### DES:109
+A merchant specializing in the sale of living creatures.
+
+### DES:110
+The worms turned up their noses at him, but the Manifest mages gave him a new lease on life.
+
+### DES:111
+A blind gargolye enslaved by the shadow elves.
+
+### DES:112
+A blind gargolye enslaved by the shadow elves.
+
+### DES:118
+Your typical heartless slavedriver.
+
+### DES:119
+The small, thin frame of the Kobold does not give due credit to their actual physical strength, but their speed and agility are their real assets.
+
+### DES:120
+Elmo is a happy-go-lucky magical log.  Don't cross him, you'll live longer.
+
+### DES:121
+Pray you don't meet him.
+
+### DES:122
+An object of worship for the anti'id cult.
+
+### DES:123
+Only slightly less primitive than a caveman.  These humanoids bear a much closer resemblance to animals than to humans.
+
+### DES:124
+A lousy healer. A dangerous foe.
+
+### DES:125
+One of the (rightfully) hated and feared anti'id cult.
+
+### DES:126
+Cardinal of the Holy Church of Olo.
+
+### DES:127
+Bilbo and Frodo would croak if they saw this miscreant on their doorstep.
+
+### DES:128
+Sometimes deadly things come in small packages.
+
+### DES:129
+Large and fierce warriors of above average skill.
+
+### DES:130
+Capable with the bow and prefers to pepper its enemies from afar.
+
+### DES:131
+At the pinnacle of the goblin pecking order.
+
+### DES:132
+Capable of casting clerical spells. This humanoid should be feared.
+
+### DES:133
+The creme de la hobgoblin.
+
+### DES:134
+Slightly larger and more powerful than goblins, these close cousins to true goblins band together in large tribes.
+
+### DES:135
+The small, thin frame of the Kobold does not give due credit to their actual physical strength, but their speed and agility are their real assets.
+
+### DES:136
+Just another big ugly creep.
+
+### DES:137
+Half canine, half bovine, these creatures move at blinding speed and can cause massive damage to their foes.
+
+### DES:138
+A legend in his own mind (he's hungry).
+
+### DES:139
+A legend in his own mind.
+
+### DES:140
+Quicker, smarter and more deadly than your average furfoot.
+
+### DES:141
+A dark elf noblewoman dying from an unknown malady.
+
+### DES:142
+A blind gargolye enslaved by the shadow elves.
+
+### DES:148
+A stone wall.
+
+### DES:149
+Trained to shoot first and never ask questions.
+
+### DES:150
+The spiritual leader of the local goblinfolk.
+
+### DES:151
+Beware - the hydra is even more dangerous than he is ugly.
+
+### DES:152
+Beware - the hydra is even more dangerous than he is ugly.
+
+### DES:153
+Beware - the hydra is even more dangerous than he is ugly.
+
+### DES:154
+Beware - the hydra is even more dangerous than he is ugly.
+
+### DES:155
+The spiritual leader of the local goblinfolk.
+
+### DES:156
+The strong, warm-blooded and brutish Lizard Men travel in small bands. They are excellent warriors as they coordinate well to strike at a victim as a group.
+
+### DES:157
+Thankfully, these creatures are more rare than their pink-skinned cousins. Even the bravest warriors flee at the sight of one.
+
+### DES:158
+These creatures make their homes in ponds and small lakes near uninhabitated areas. If an area they choose is inhabited, it will not be so for long!
+
+### DES:159
+The master of the lizardmen clan.
+
+### DES:160
+Those with the heart of an artist have the mind of a rebel.
+
+### DES:161
+A master of entanglement, the gold anti'id can cripple the most agile of foes.
+
+### DES:162
+May be hazardous to your health.
+
+### DES:163
+A snake of unbelievable size.  Easily  60 feet in length and as large around as a full-grown bull vusk.
+
+### DES:164
+Formed from a colony of semi-intelligent mosses.
+
+### DES:165
+Incapable of rapid movement, these bizarre creatures spawn lethal podlings.
+
+### DES:166
+The ruler of the Madwood.
+
+### DES:167
+A chip off the old block.
+
+### DES:168
+An evil race of Ogre that has great malice for any surface dwelling race.
+
+### DES:169
+She floats like a butterfly, stings like an enraged scorpion on steroids.
+
+### DES:170
+Vampire assassin. Approach with extreme caution.
+
+### DES:171
+Mercenary monk from hell.
+
+### DES:172
+Beating you up is probably the only fun this guy's had in years.
+
+### DES:173
+Doesn't drink, smoke, dance or play bloody knuckles. And boy, is he mad.
+
+### DES:174
+Large, but stupid.  These reptiles have been known to trample an adult ogre without even slowing down.
+
+### DES:175
+A strong family structure allows these giant reptiles to survive in a hostile environment.
+
+### DES:176
+The creature's favorite form of attack is to lower its armored head and charge.  Don't stand in front of it when it does.
+
+### DES:177
+A powerful zombie king.
+
+### DES:178
+A merchant specializing in the sale of living creatures.
+
+### DES:179
+A master builder.
+
+### DES:180
+Native to chemical wastelands, the devil dog is a carrier of contagious diseases.
+
+### DES:181
+He sleeps all night and he works all day.
+
+### DES:182
+Silverback wolves are usually very friendly to humans, dwarves and elves.
+
+### DES:185
+These dragons are a mix of red and green dragons.
+
+### DES:188
+A master builder.
+
+### DES:189
+Supreme ruler of Hax.
+
+### DES:190
+A savvy veteran with respectable stats.
+
+### DES:191
+Native to chemical wastelands, the devil dog is a carrier of contagious diseases.
+
+### DES:192
+Somewhat skilled with weapons.
+
+### DES:193
+This creature's strange metabolism lets it survive in extreme cold temperatures. Avoid its bite if you can.
+
+### DES:194
+Pressed into service to pay off debts, these troops are not much of a match for those skilled with weapons.
+
+### DES:195
+The strong, warm-blooded and brutish Lizard Men travel in small bands. They are excellent warriors as they coordinate well to strike at a victim as a group.
+
+### DES:196
+The small, thin frame of the Kobold does not give due credit to their actual physical strength, but their speed and agility are their real assets.
+
+### DES:197
+If this huckster has a pot of gold, it isn't full yet.
+
+### DES:198
+Pray you don't meet him.
+
+### DES:199
+Black belt fanatic.
+
+### DES:209
+A frozen surprise inside every one of 'em.
+
+### DES:210
+God-like in power.  This evil race is making its way back to the known Realmz for the first time in 50 millenia.
+
+### DES:211
+They always get their dinner.
+
+### DES:212
+These ugly, crazed, diseased, poisonous, cowardly little maniacs wouldn't fight fair even if they knew how to.
+
+### DES:213
+An ancient tree cursed with the form of man.
+
+### DES:214
+An ancient tree cursed with the form of man.
+
+### DES:215
+Elmo is a happy-go-lucky magical log.  Don't cross him, you'll live longer.
+
+### DES:216
+If this huckster has a pot of gold, it isn't full yet.
+
+### DES:217
+His pen is mightier than his sword.
+
+### DES:218
+His pen is mightier than his sword.
+
+### DES:219
+His pen is mightier than his sword.
