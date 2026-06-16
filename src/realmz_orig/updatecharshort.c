@@ -38,8 +38,13 @@ void updatecharshort(short who, short forcebox) {
   EraseRect(&box);
   MyrDrawCString((Ptr)myString);
 
-  box.top = who * 50 + 29;
-  box.bottom = box.top + 15;
+  // The erase box must fully cover the digit glyphs, which extend 12px above
+  // and 5px below the baseline (set below at box.top + 12). A box that was 1px
+  // too short on each edge left pixel remnants above and below when the number
+  // changed (e.g. from healing or resting). The whole thing sits 1px higher than
+  // the original layout so the erase rect doesn't clip the surrounding box graphic.
+  box.top = who * 50 + 27;
+  box.bottom = box.top + 17;
   box.left = 416 + leftshift;
   box.right = box.left + 29;
 
@@ -49,7 +54,7 @@ void updatecharshort(short who, short forcebox) {
     TextSize(12);
 
   MyrNumToString(c[who].stamina, myString);
-  MoveTo((444 - TextWidth(myString, 0, strlen(myString))) + leftshift, box.top + 11);
+  MoveTo((444 - TextWidth(myString, 0, strlen(myString))) + leftshift, box.top + 12);
   EraseRect(&box);
   if (c[who].stamina < c[who].staminamax)
     ForeColor(whiteColor);
@@ -66,7 +71,7 @@ void updatecharshort(short who, short forcebox) {
     if (c[who].spellpoints < c[who].spellpointsmax)
       ForeColor(whiteColor);
     MyrNumToString(c[who].spellpoints, myString);
-    MoveTo((593 - TextWidth(myString, 0, strlen(myString))) + leftshift, box.top + 11);
+    MoveTo((593 - TextWidth(myString, 0, strlen(myString))) + leftshift, box.top + 12);
     EraseRect(&box);
     MyrDrawCString((Ptr)myString);
   }

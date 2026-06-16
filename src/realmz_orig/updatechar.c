@@ -58,19 +58,23 @@ void updatechar(short who, short mode) {
 
   int enable_recomposite = WindowManager_SetEnableRecomposite(0);
 
-  ydist = rect.top + 40;
+  // The stats row (stamina/spell points + their maxes) sits at ydist; it is 1px
+  // higher than the original layout so it lines up with the in-place redraw in
+  // updatecharshort() and so the erase rect there doesn't clip the box graphic.
+  // The name/AC row above stays put (ydist - 21 keeps its original position).
+  ydist = rect.top + 39;
   if (mode)
     updatepictbox(who, 1, 0); /******* no initial box ******/
   ForeColor(yellowColor);
   TextSize(15);
-  MoveTo(420 + leftshift - (leftshift * forcesmallshift), ydist - 22);
+  MoveTo(420 + leftshift - (leftshift * forcesmallshift), ydist - 21);
   MyrDrawCString(c[who].name);
   TextSize(17);
 
   if (c[who].ac > -1)
-    MoveTo(605 + leftshift - (leftshift * forcesmallshift), ydist - 22);
+    MoveTo(605 + leftshift - (leftshift * forcesmallshift), ydist - 21);
   else
-    MoveTo(600 + leftshift - (leftshift * forcesmallshift), ydist - 22);
+    MoveTo(600 + leftshift - (leftshift * forcesmallshift), ydist - 21);
 
   string(c[who].ac);
 
