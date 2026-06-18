@@ -427,6 +427,18 @@ public:
         text_str.c_str());
   }
 
+  // If this is a PICTURE item, draw it but only within `clip`. Used to restore
+  // a dialog's background under a small item without redrawing the whole window.
+  void draw_pict_clipped(CCGrafPort& port, const Rect& clip) const {
+    if (type != ResourceFile::DecodedDialogItem::Type::PICTURE) {
+      return;
+    }
+    auto pict_handle = GetPicture(resource_id);
+    if (pict_handle) {
+      port.draw_decoded_pict_from_handle_clipped(pict_handle, this->rect, clip);
+    }
+  }
+
   void render_in_port(CCGrafPort& port, bool erase_background) const {
     if (erase_background) {
       port.erase_rect(this->rect);
@@ -472,6 +484,10 @@ public:
         auto window = this->owner_window.lock();
         if (window && window->get_focused_item().get() == this &&
             (SDL_GetTicks() / 500) % 2 == 0) {
+          // The caret spans the full (2px-shifted) text height. Re-rendering an
+          // EDIT_TEXT goes through Window::rerender_edit_field, which restores the
+          // PICT background over this same shifted region, so the whole caret is
+          // cleared each blink with no leftover stub.
           int16_t caret_x = shifted.left + port.measure_text(text) + 1;
           Point caret_top = {.h = caret_x, .v = shifted.top};
           Point caret_bottom = {.h = caret_x, .v = shifted.bottom};
@@ -882,6 +898,20 @@ void Window::erase_and_render() {
   }
 
   WindowManager::instance().recomposite_from_window(this->port);
+}
+
+void Window::rerender_edit_field(std::shared_ptr<DialogItem> item) {
+  // Restore the dialog's real background (its PICTs) under the field instead of
+  // leaving a base-pattern fill, then draw the text + caret on top. The text and
+  // caret are drawn 2 pixels above the item rect, so include those 2px in the
+  // restored region (this also repaints any box border the PICT draws there).
+  Rect region = item->rect;
+  region.top -= 2;
+  this->port.erase_rect(region); // base-pattern fallback for any uncovered area
+  for (const auto& s : this->static_items) {
+    s->draw_pict_clipped(this->port, region);
+  }
+  item->render_in_port(this->port, false);
 }
 
 void Window::move(int x, int y) {
@@ -1763,10 +1793,17 @@ void SetDialogItemText(DialogItemHandle item_handle, ConstStr255Param text) {
 
   auto window = item->owner_window.lock();
   if (window) {
-    if (!was_empty) {
-      window->get_port().erase_rect(item->rect);
+    if (item->type == DialogItemType::EDIT_TEXT) {
+      // Restore the PICT background under the field rather than a base-pattern
+      // fill, so changing the text (e.g. the in-game character name) doesn't
+      // leave a mismatched rectangle or stale top pixels of the old text.
+      window->rerender_edit_field(item);
+    } else {
+      if (!was_empty) {
+        window->get_port().erase_rect(item->rect);
+      }
+      item->render_in_port(window->get_port(), true);
     }
-    item->render_in_port(window->get_port(), true);
     WindowManager::instance().recomposite_from_window(window);
   } else {
     wm_log.warning_f("SetDialogItemText({}, \"{}\") cannot re-render window because owner_window is not set", item->str(), str);
@@ -2013,7 +2050,13 @@ void ModalDialog(ModalFilterProcPtr filterProc, short* itemHit) {
         uint64_t blink_state = SDL_GetTicks() / 500;
         if (blink_state != last_blink_state) {
           last_blink_state = blink_state;
-          focused->render_in_port(top_window->get_port(), true);
+          // Restore the PICT background under the field so the blinking caret
+          // re-render doesn't repaint the field with a mismatched base pattern.
+          if (focused->type == DialogItemType::EDIT_TEXT) {
+            top_window->rerender_edit_field(focused);
+          } else {
+            focused->render_in_port(top_window->get_port(), true);
+          }
           WindowManager::instance().recomposite_from_window(top_window);
         }
       }
@@ -2400,7 +2443,11 @@ void TEUpdateUnstyled(const Rect& r, TEHandle te) {
   auto item = DialogItem::get_item_by_handle(unwrap_opaque_handle(reinterpret_cast<Handle>(te)));
   wm_log.debug_f("TEUpdateUnstyled({{x0={}, y0={}, x1={}, y1={}}}, {})", r.left, r.top, r.right, r.bottom, reinterpret_cast<void*>(te));
   auto window = item->owner_window.lock();
-  item->render_in_port(window->get_port(), true);
+  if (item->type == DialogItemType::EDIT_TEXT) {
+    window->rerender_edit_field(item);
+  } else {
+    item->render_in_port(window->get_port(), true);
+  }
   WindowManager::instance().recomposite_from_window(window);
 }
 

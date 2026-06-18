@@ -28,6 +28,19 @@ Makefile
 # Build directories
 build_win/
 build_mac/
+build_linux/
+
+# Downloaded dev packages / caches
+*.deb
+__pycache__/
+
+# Resource backups / runtime-generated prefs
+*.rsrc.bak
+*.rsrc.bak2
+Realmz Preferences.rsrc
+
+# Never upload this music track to GitHub — keep it local only
+Battle Music Nas Ne Dagoniat.mp3
 
 # Other stuff
 divinity.out

@@ -81,7 +81,14 @@ void centerfield(short x, short y) {
         itemRect.bottom = itemRect.top + 32;
         CopyBits(src, dst, &itemRect, &icon, 0, NIL);
 
-      } else if (tempicon > -1) {
+      } else if ((tempicon > -1) && (tempicon < maxloop)) {
+        // Only combatant/body codes (0..maxloop-1) belong here: bq[] is sized
+        // [maxloop] and the drawbody() pass below only iterates that range, and
+        // bodyground() interprets the value as a combatant (monster[code-10] /
+        // c[code]). A field cell can also hold a terrain code up to 999; passing
+        // that through overran bq[] on the stack (a TRUE byte corrupted a saved
+        // register, causing a wild write in showresults) and read monster[] out
+        // of bounds. Such cells are not combatants, so skip them entirely.
         bodyground(tempicon, 1);
         bq[tempicon] = TRUE;
       }

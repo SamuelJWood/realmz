@@ -542,10 +542,21 @@ void UpdateResFile(int16_t refnum) {
 }
 
 Handle GetResource(ResType type, int16_t id) {
-  auto res = rm.get_resource(type, id);
-  if (res != nullptr) {
-    resError = noErr;
-    return res->data_handle;
+  // The classic Mac Toolbox GetResource returns NULL (and sets ResError to
+  // resNotFound) when a resource can't be found; it does not abort. The legacy
+  // C code throughout Realmz relies on that contract — it checks `if (handle)`
+  // after every GetResource/GetCIcon/etc. and degrades gracefully on null.
+  // rm.get_resource(), however, throws std::out_of_range on a missing resource,
+  // which propagates uncatchably through the C frames and terminates the process.
+  // Translate that back into the Toolbox's null-return contract here.
+  try {
+    auto res = rm.get_resource(type, id);
+    if (res != nullptr) {
+      resError = noErr;
+      return res->data_handle;
+    }
+  } catch (const std::out_of_range&) {
+    // fall through to the not-found path below
   }
 
   resError = resNotFound;
@@ -615,7 +626,17 @@ void GetIndString(Str255 out, int16_t res_id, uint16_t index) {
       return;
     }
     auto decoded = ResourceDASM::ResourceFile::decode_STRN(res->source_res);
-    const auto& str = decoded.strs.at(index - 1);
+    std::string str = decoded.strs.at(index - 1);
+#ifndef __APPLE__
+    // On Windows and Linux the Control key stands in for the Mac Command key
+    // (see EventManager's key mapping), so on-screen instructions should tell
+    // the player to use "control", not "command". Mac builds keep the original
+    // "command key" wording. Same length keeps the text layout unchanged.
+    for (size_t pos = 0; (pos = str.find("command key", pos)) != std::string::npos;) {
+      str.replace(pos, 7, "control"); // replace just "command" within "command key"
+      pos += 7;
+    }
+#endif
     if (str.size() > 0xFF) {
       resError = resNotFound;
       out[0] = 0; // This should be impossible; the STR# format has a single-byte size field per string

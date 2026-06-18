@@ -2,6 +2,8 @@
 
 #include <SDL3/SDL_storage.h>
 #include <algorithm>
+#include <cerrno>
+#include <cstring>
 #include <filesystem>
 #include <phosg/Strings.hh>
 
@@ -181,7 +183,16 @@ FILE* mac_fopen(const char* filename, const char* mode) {
   }
 
   fm_log.info_f("Opening file {} (host: {}) with mode {}", filename, host_filename, mode);
-  return fopen(host_filename.c_str(), mode);
+  FILE* f = fopen(host_filename.c_str(), mode);
+  if (!f) {
+    // Callers historically assume this never returns NULL for an existing file and
+    // dereference the result without checking. Log failures (with errno) so a
+    // genuine open failure — e.g. descriptor exhaustion from a leak — is visible
+    // instead of manifesting as a downstream crash.
+    fm_log.info_f("FAILED to open file {} (host: {}) mode {}: errno={} ({})",
+        filename, host_filename, mode, errno, strerror(errno));
+  }
+  return f;
 }
 
 std::vector<std::string> mac_list_directory(const std::string& mac_path) {

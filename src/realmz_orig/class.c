@@ -5,6 +5,26 @@
 // "Data Files/Caste and Race descriptions.txt" via GetDescriptionFromFile.
 
 
+/* The "Click and hold portrait to choose your caste" prompt was removed from
+ * the background art (PICT 211) so it no longer appears on the read-only in-game
+ * View Caste screen. Redraw it at runtime for character generation only,
+ * matching the original position/style (two centered lines of yellow script
+ * text above the Done button). Drawn once per DrawDialog so the letters don't
+ * accumulate (thicken) as castes are selected. */
+static void DrawCastePrompt(void) {
+  TextMode(1);
+  TextFont(font);
+  TextFace(bold);
+  TextSize(12);
+  ForeColor(yellowColor);
+  strcpy((char*)myString, "Click and hold portrait");
+  MoveTo(119 - TextWidth((Ptr)myString, 0, (short)strlen((char*)myString)) / 2, 14);
+  MyrDrawCString((Ptr)myString);
+  strcpy((char*)myString, "to choose your caste.");
+  MoveTo(119 - TextWidth((Ptr)myString, 0, (short)strlen((char*)myString)) / 2, 28);
+  MyrDrawCString((Ptr)myString);
+}
+
 /***************************** Caste ********************************/
 void Caste(short mode) /********** if mode == 1 then view only **********/
 {
@@ -24,6 +44,7 @@ void Caste(short mode) /********** if mode == 1 then view only **********/
   if (!mode) {
     characterl.caste = 1;
     characterl.pictid = 257;
+    DrawCastePrompt();
   }
 
   for (t = 0; t < 30; t++) {
@@ -192,7 +213,12 @@ moveon:
     FlushEvents(everyEvent, 0);
     ModalDialog(0L, &itemHit);
 
-    if ((itemHit == 57) || (itemHit == 74)) {
+    /* Item 57 is the "Click and hold portrait to choose your caste" prompt and
+     * item 74 is the portrait; both open the caste-selection popup. In view-only
+     * mode (mode == 1, reached from the in-game character info screen) caste is
+     * not changeable, so ignore these clicks. Character generation (mode == 0)
+     * is unaffected. */
+    if ((!mode) && ((itemHit == 57) || (itemHit == 74))) {
       short item_count = 0;
       char name_cstr[256];
 

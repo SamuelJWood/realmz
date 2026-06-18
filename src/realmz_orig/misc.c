@@ -280,6 +280,8 @@ void getexp(short level, short casteid, short who) {
 
   if (level > 30)
     level = 30;
+  if (level < 1) /* victory[] is indexed by level-1; guard against an out-of-range read */
+    level = 1;
   value = -(caste.victory[level - 1]);
   if (who == -1)
     characterl.exp = value;
@@ -1644,18 +1646,23 @@ void removeresource(short fromrefnum, ResType res_type, short fromid) {
 void loadprofile(short raceid, short casteid) {
   if (raceid) {
     openrace(); /***************** load in race profile ************/
-    fseek(fp, (raceid - 1) * sizeof races, SEEK_SET);
-    fread(&races, sizeof races, 1, fp);
-    CvtRaceToPc(&races);
-    fclose(fp);
+    if (fp) {     /* MyrFopen can return NULL (e.g. transient open failure or
+                     descriptor exhaustion); reading through a NULL fp crashes. */
+      fseek(fp, (raceid - 1) * sizeof races, SEEK_SET);
+      fread(&races, sizeof races, 1, fp);
+      CvtRaceToPc(&races);
+      fclose(fp);
+    }
   }
 
   if (casteid) {
     opencaste(); /***************** load in caste profile ************/
-    fseek(fp, (casteid - 1) * sizeof caste, SEEK_SET);
-    fread(&caste, sizeof caste, 1, fp);
-    CvtCasteToPc(&caste);
-    fclose(fp);
+    if (fp) {
+      fseek(fp, (casteid - 1) * sizeof caste, SEEK_SET);
+      fread(&caste, sizeof caste, 1, fp);
+      CvtCasteToPc(&caste);
+      fclose(fp);
+    }
   }
 }
 
@@ -1977,7 +1984,7 @@ void updatemain(short center, short who) {
 
         mainrect.top = 321 + downshift;
         mainrect.left = 0;
-        mainrect.bottom = 555;
+        mainrect.bottom = 460 + downshift; // 556 = top 417 + 139, the native height of PICT 203 (was 555, a 1px vertical squish)
         mainrect.right = 308 + leftshift;
         pict(203, mainrect);
       } else {

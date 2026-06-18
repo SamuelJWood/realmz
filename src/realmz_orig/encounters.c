@@ -353,18 +353,29 @@ short encounter2(void) {
   int32_t longvalue, longvalue2, longvalue3;
   short spell, t, knockchance, savedung, temp1, temp2;
   char reply, encsuccess, tag, goodword = TRUE;
+  char hasaction;
   char word[256];
 
   encsuccess = tag = FALSE;
   SetCCursor(sword);
 
+  /* The Action button is only usable when the encounter actually has action
+   * options to pick (one or more group entries) AND a result code to apply.
+   * Otherwise it is shown disabled, like the Speak/Scroll/etc. buttons. */
+  hasaction = FALSE;
+  for (t = 0; t < 8; t++)
+    if (enc2.group[t])
+      hasaction = TRUE;
+  if (!enc2.choiceresult)
+    hasaction = FALSE;
+
   in();
 
   win = GetNewDialog(153, 0L, (WindowPtr)-1L);
-  if (!enc2.canbackout)
-    SizeWindow(GetDialogWindow(win), 300, 50, 0);
-  else
-    SizeWindow(GetDialogWindow(win), 350, 50, 0);
+  /* Always show the Cancel button (the dialog's item 8, beyond x=300). For
+   * player-triggered encounters it backs out; for game-triggered ones it
+   * triggers the default failed encounter response (see itemHit handling). */
+  SizeWindow(GetDialogWindow(win), 350, 50, 0);
 
   MoveWindow(GetDialogWindow(win), GlobalLeft - 1, GlobalTop + 270 + downshift, FALSE);
   ShowWindow(GetDialogWindow(win));
@@ -406,7 +417,7 @@ backup:
   GetDialogItem(win, 5, &itemType, &itemHandle, &itemRect);
   pict(171, itemRect); /**************** action avail ******************/
 
-  if (!enc2.choiceresult) {
+  if (!hasaction) {
     InsetRect(&itemRect, 9, 9);
     ploticon3(0, itemRect);
   }
@@ -442,11 +453,12 @@ tryagain:
   ModalDialog(0L, &itemHit);
   MyrCheckMemory(2);
 
-  if (itemHit == 0) { /* Escape */
+  if (itemHit == 0 || itemHit == 8) { /* Escape key or Cancel button */
     if (enc2.canbackout)
-      goto out;
+      encsuccess = FALSE; /* player-triggered: clean back-out (reply 0) */
     else
-      goto tryagain;
+      encsuccess = 4; /* game-triggered: default failed encounter response */
+    goto out;
   }
 
   GetDialogItem(win, itemHit, &itemType, &itemHandle, &buttonrect);
@@ -1099,7 +1111,7 @@ tryagain:
 
   if (itemHit == 5) /****** Action *****/
   {
-    if (!enc2.choiceresult)
+    if (!hasaction)
       goto nochoice;
     reply = actionpicker();
     updatemain(TRUE, -1);

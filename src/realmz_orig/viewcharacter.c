@@ -10,6 +10,17 @@ void viewcharacter(short view, short mode) {
     sound(647);
   gGeneration = GetNewDialog(138, 0L, (WindowPtr)-1L);
 
+  /* Lower the character-name field (item 67) by 1px so the name sits slightly
+   * lower within its box. This only adjusts this in-game character-info dialog
+   * (138); the name field in the generation dialogs is unaffected. */
+  {
+    Rect nr;
+    GetDialogItem(gGeneration, 67, &itemType, &itemHandle, &nr);
+    nr.top += 1;
+    nr.bottom += 1;
+    WindowManager_SetDialogItemRect(gGeneration, 67, &nr);
+  }
+
 refresh:
 
   SetPortDialogPort(gGeneration);
@@ -21,6 +32,12 @@ refresh:
   DrawDialog(gGeneration);
   BeginUpdate(GetDialogWindow(gGeneration));
   EndUpdate(GetDialogWindow(gGeneration));
+
+  /* The character name (item 67) is an EDIT_TEXT field that auto-grabs focus
+   * and draws a blinking caret. Names are not editable during a game, so clear
+   * the focus to suppress the caret. (Clicking the field is also neutralized in
+   * the event loop below.) */
+  ClearDialogFocus(gGeneration);
 
   gCurrent = gGeneration;
   SetCCursor(sword);
@@ -211,11 +228,10 @@ refresh:
     }
 
     if (itemHit == 67) {
-      changename = TRUE; /******** change character name ********/
-      ForeColor(whiteColor);
-      GetDialogItem(gGeneration, 67, &itemType, &itemHandle, &buttonrect);
-      GetDialogItemText(itemHandle, myString);
-      MyrPascalDiStr(67, myString);
+      /* Names are not editable during a game. Clicking the name field would
+       * normally focus it (drawing a caret) and start the rename flow; instead
+       * just clear the focus so the field stays display-only. */
+      ClearDialogFocus(gGeneration);
     } else if (changename == TRUE) {
 
     changenamenow:

@@ -5,6 +5,26 @@
 // "Data Files/Caste and Race descriptions.txt" via GetDescriptionFromFile.
 
 
+/* The "Click and hold portrait to choose a new race" prompt was removed from
+ * the background art (PICT 209) so it no longer appears on the read-only in-game
+ * View Race screen. Redraw it at runtime for character generation only, matching
+ * the original position/style (two centered lines of yellow script text above
+ * the Done button). Drawn once per DrawDialog so the letters don't accumulate
+ * (thicken) as races are selected. */
+static void DrawRacePrompt(void) {
+  TextMode(1);
+  TextFont(font);
+  TextFace(bold);
+  TextSize(12);
+  ForeColor(yellowColor);
+  strcpy((char*)myString, "Click and hold portrait");
+  MoveTo(119 - TextWidth((Ptr)myString, 0, (short)strlen((char*)myString)) / 2, 14);
+  MyrDrawCString((Ptr)myString);
+  strcpy((char*)myString, "to choose a new race.");
+  MoveTo(119 - TextWidth((Ptr)myString, 0, (short)strlen((char*)myString)) / 2, 28);
+  MyrDrawCString((Ptr)myString);
+}
+
 /***************************** Race ********************************/
 void Race(short mode) {
   char castecan[30][30];
@@ -42,8 +62,10 @@ void Race(short mode) {
   ErasePortRect();
   DrawDialog(gGeneration);
 
-  if (!mode)
+  if (!mode) {
     characterl.race = 1;
+    DrawRacePrompt();
+  }
 
   for (t = 1; t < 30; t++) {
     loadprofile(t, 0); /**************** popup icon values ***************/
@@ -177,10 +199,17 @@ moveon:
       SetPortDialogPort(gGeneration);
       gCurrent = gGeneration;
       DrawDialog(gGeneration);
+      if (!mode)
+        DrawRacePrompt();
       goto update;
     }
 
-    if ((itemHit == 57) || (itemHit == 74)) {
+    /* Item 57 is the "Click and hold portrait to choose your race" prompt and
+     * item 74 is the portrait; both open the race-selection popup. In view-only
+     * mode (mode == 1, reached from the in-game character info screen) race is
+     * not changeable, so ignore these clicks. Character generation (mode == 0)
+     * is unaffected. */
+    if ((!mode) && ((itemHit == 57) || (itemHit == 74))) {
       short item_count = 0;
       char name_cstr[256];
 

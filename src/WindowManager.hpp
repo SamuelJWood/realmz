@@ -74,6 +74,11 @@ public:
   void handle_text_input(const std::string& text, std::shared_ptr<DialogItem> item);
   void delete_char(std::shared_ptr<DialogItem> item);
   void erase_and_render();
+  // Re-render a focused editable text item (its text + blinking caret) while
+  // restoring the dialog's real background (its PICTs) underneath, instead of
+  // filling the field with the base pattern. Avoids the field-sized "shift" and
+  // leftover top pixels that a plain erase produces over a PICT background.
+  void rerender_edit_field(std::shared_ptr<DialogItem> item);
   void move(int hGlobal, int vGlobal);
   void resize(uint16_t w, uint16_t h);
   void show();

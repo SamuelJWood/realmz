@@ -946,7 +946,10 @@ keepmoving:
   BackColor(blackColor);
 
   GetVersStr(1, Appl_Rsrc_Fork_Ref_Num); /*** load in version of Realmz ***/
-  MyrPascalDiStr(3, theString);
+  // Suppress the on-screen version string ("Version 8.0.7") that briefly flashed
+  // on the startup background. theString is still loaded above because it is
+  // reused later (e.g. the About box via ParamText).
+  MyrPascalDiStr(3, (StringPtr) "\p");
 
   TextSize(32);
   TextFont(font);
@@ -1283,6 +1286,17 @@ void MainLoop(void) {
 
 /******************************** main  ************************/
 int main(int argc, char* argvp[]) {
+  // Make stderr unbuffered so log lines (and any final libc++abi "terminating
+  // due to uncaught exception" message) are flushed immediately. When stderr is
+  // redirected to a file or pipe it is otherwise fully buffered, and an abort()
+  // or crash discards the last buffered block — losing exactly the lines that
+  // identify the failure.
+  setvbuf(stderr, NULL, _IONBF, 0);
+
+  // Print a faulting address + backtrace on a hard crash (see CrashHandler.cpp).
+  extern void InstallCrashHandler(void);
+  InstallCrashHandler();
+
   ToolBoxInit();
 
   SetPortDialogPort(background);

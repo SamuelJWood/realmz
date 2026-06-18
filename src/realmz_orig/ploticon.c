@@ -156,10 +156,10 @@ void plotportrait(short tempid, Rect where, short class, short who) {
   iconhand = NIL;
   iconhand = GetCIcon(tempid);
 
-  if ((**iconhand).iconBMap.bounds.bottom == 44)
-    InsetRect(&where, -6, -6);
-
   if (iconhand) {
+    if ((**iconhand).iconBMap.bounds.bottom == 44)
+      InsetRect(&where, -6, -6);
+
     PlotCIcon(&where, iconhand);
     DisposeCIcon(iconhand);
   }

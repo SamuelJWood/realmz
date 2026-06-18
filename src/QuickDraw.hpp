@@ -63,6 +63,10 @@ public:
   void draw_ga11_data(const void* pixels, int w, int h, const Rect& rect);
   void draw_rgba8888_data(const void* pixels, int w, int h, const Rect& rect);
   void draw_decoded_pict_from_handle(PicHandle pict, const Rect& rect);
+  // Draws the PICT into `dest` but only within the `clip` rectangle. Used to
+  // restore a dialog's real background underneath a small item (e.g. an editable
+  // text field) without redrawing the whole window.
+  void draw_decoded_pict_from_handle_clipped(PicHandle pict, const Rect& dest, const Rect& clip);
   bool draw_text(const std::string& text, const Rect& dispRect);
   // Draws the specified text when the display bounds are unknown. Updates the port's pen location
   // after the draw to be immediately to the right of the drawn text.

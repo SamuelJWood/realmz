@@ -46,7 +46,12 @@ newenemy:
   for (tt = loopy; tt < 2; tt++) {
     for (t = loopx; t < 2; t++) {
       temp = abs(field[fieldx + monx + t][fieldy + mony + tt]);
-      if (temp < maxloop) {
+      /* A field cell only denotes a combatant when it holds a valid code:
+         a character (0..charnum, party arrays are sized [6]) or a monster
+         (>= 10, including allies). Codes 6..9 are an unused gap; a terrain /
+         "underneath" value that happens to fall there must NOT be treated as a
+         character, or c[temp] reads out of bounds (crash in attack2/showresults). */
+      if ((temp < maxloop) && ((temp <= charnum) || (temp >= 10))) {
         bad = FALSE;
         if (q[up] < 9) {
           if (temp < 9) {

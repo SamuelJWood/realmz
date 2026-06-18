@@ -163,12 +163,16 @@ wayback:
     if (!describe)
       describe = GetNewDialog(169 + (1000 * screensize), 0L, (WindowPtr)-1L);
     SetPortDialogPort(describe);
+    /* The description text sits in an EDIT_TEXT item that would otherwise grab
+     * focus and draw a blinking yellow caret. This is a read-only display, so
+     * clear the focus to suppress the caret. */
+    ClearDialogFocus(describe);
     TextFont(defaultfont);
     BackPixPat(base);
     ForeColor(yellowColor);
     GetIndString(myString, -(1000 * (tempcaste + 1) + castlevel), castnum + 1);
     GetDialogItem(describe, 2, &itemType, &itemHandle, &itemRect);
-    MoveWindow(GetDialogWindow(describe), GlobalLeft + -1, GlobalTop + 321 + downshift, FALSE);
+    MoveWindow(GetDialogWindow(describe), GlobalLeft + 0, GlobalTop + 321 + downshift, FALSE);
     ShowWindow(GetDialogWindow(describe));
     ErasePortRect();
     DrawDialog(describe);

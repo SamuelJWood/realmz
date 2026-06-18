@@ -55,14 +55,17 @@ void showresults(short tar, short special, short from) {
       center(tar);
 
     if (tar > 9) {
-      temp = monster[tar - 10].iconid;
-      if (monster[tar - 10].lr == 1)
-        temp += 308;
-      iconhand = GetCIcon(temp);
-      size = monster[tar - 10].size;
+      if (tar - 10 < maxmon) { /* monster[] is sized [maxmon]; reject bogus codes */
+        temp = monster[tar - 10].iconid;
+        if (monster[tar - 10].lr == 1)
+          temp += 308;
+        iconhand = GetCIcon(temp);
+        size = monster[tar - 10].size;
+      }
     } else {
       size = 0;
-      iconhand = GetCIcon(c[tar].iconid);
+      if (tar >= 0 && tar < 6) /* c[] is sized [6] (party 0..5) */
+        iconhand = GetCIcon(c[tar].iconid);
     }
 
     if ((size == 2) || (size == 0)) {

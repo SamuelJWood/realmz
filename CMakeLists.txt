@@ -73,6 +73,7 @@ endif()
 # Executable definition
 set(REALMZ_EXECUTABLE_SRC src/realmz_orig/main.c)
 set(SOURCES
+    src/CrashHandler.cpp
     src/realmz_orig/Display.c
     src/realmz_orig/GWorldInit.c
     src/realmz_orig/GetVersStr.c
@@ -320,6 +321,9 @@ target_include_directories(realmz_lib PUBLIC ${SDL3_INCLUDE_DIRS} src src/realmz
 
 if(WIN32)
   target_compile_definitions(realmz_lib PUBLIC PHOSG_WINDOWS=1)
+  # Emit debug info so crash-handler backtrace offsets can be symbolized offline
+  # (llvm-symbolizer/addr2line). Kept alongside -O3; affects only symbol tables.
+  target_compile_options(realmz_lib PUBLIC -g)
 endif()
 
 target_link_libraries(realmz_lib

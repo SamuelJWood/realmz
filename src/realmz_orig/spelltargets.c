@@ -89,12 +89,16 @@ passout:
     for (t = 0; t < nummon; t++)
       if (monster[t].stamina > 0)
         track[t + 10] = TRUE;
-  } else {
+  } else if (spellsize >= 1 && spellsize <= 18) { /* spellarea is [18][7][7] */
 
     for (tt = 0; tt < 7; tt++) {
       for (t = 0; t < 7; t++) {
+        short fx = t + startx;
+        short fy = tt + starty;
+        if (fx < 0 || fx >= 90 || fy < 0 || fy >= 90) /* field is [90][90] */
+          continue;
         if (spellarea[spellsize - 1][tt][t]) {
-          temp = abs(field[t + startx][tt + starty]);
+          temp = abs(field[fx][fy]);
 
           if (((temp < maxloop) && (who == -1)) || (temp == who)) {
             if (spellinfo.spellclass != 9) {

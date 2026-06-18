@@ -160,6 +160,48 @@ void CCGrafPort::draw_decoded_pict_from_handle(PicHandle pict, const Rect& rect)
   this->draw_rgba8888_data(r.getv(r.remaining()), w, h, rect);
 }
 
+void CCGrafPort::draw_decoded_pict_from_handle_clipped(PicHandle pict, const Rect& dest, const Rect& clip) {
+  auto r = read_from_handle(reinterpret_cast<Handle>(pict));
+  const auto& header = r.get<DecodedPICTHeader>();
+  if (header.version_opcode != 0x0011 || header.version_arg != 0x03FF || header.data_opcode != 0xFFFF) {
+    throw std::runtime_error("Attempted to render a non-decoded PICT");
+  }
+  int sw = header.bounds.right - header.bounds.left;
+  int sh = header.bounds.bottom - header.bounds.top;
+  if (r.remaining() != phosg::ImageRGBA8888N::data_size(sw, sh)) {
+    throw std::runtime_error(std::format("Decoded PICT data size is incorrect (expected 0x{:X}; received 0x{:X})", phosg::ImageRGBA8888N::data_size(sw, sh), r.remaining()));
+  }
+
+  // Intersect the destination with the clip rectangle.
+  Rect ix;
+  ix.left = std::max(dest.left, clip.left);
+  ix.top = std::max(dest.top, clip.top);
+  ix.right = std::min(dest.right, clip.right);
+  ix.bottom = std::min(dest.bottom, clip.bottom);
+  if (ix.right <= ix.left || ix.bottom <= ix.top) {
+    return;
+  }
+
+  int dw = dest.right - dest.left;
+  int dh = dest.bottom - dest.top;
+  if (dw <= 0 || dh <= 0) {
+    return;
+  }
+
+  // Map the intersection back to source coordinates (the PICT is drawn scaled
+  // from sw×sh into dw×dh; for dialog backgrounds this is 1:1).
+  auto src = phosg::ImageRGBA8888N::from_data_reference(const_cast<void*>(r.getv(r.remaining())), sw, sh);
+  ssize_t sx = (ssize_t)(ix.left - dest.left) * sw / dw;
+  ssize_t sy = (ssize_t)(ix.top - dest.top) * sh / dh;
+  ssize_t sx2 = (ssize_t)(ix.right - dest.left) * sw / dw;
+  ssize_t sy2 = (ssize_t)(ix.bottom - dest.top) * sh / dh;
+  if (sx2 <= sx || sy2 <= sy) {
+    return;
+  }
+  this->data.copy_from_with_blend(src, ix.left, ix.top, ix.right - ix.left, ix.bottom - ix.top,
+      sx, sy, sx2 - sx, sy2 - sy, phosg::ResizeMode::NEAREST_NEIGHBOR);
+}
+
 phosg::ImageRGBA8888N image_for_sdl_surface(SDL_Surface* surface) {
   if (surface->format != SDL_PIXELFORMAT_ARGB8888) {
     throw std::runtime_error(std::format("SDL surface must be 32-bit ARGB (instead, it is 0x{:08X})", static_cast<uint32_t>(surface->format)));
