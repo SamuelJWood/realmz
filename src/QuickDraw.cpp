@@ -229,13 +229,22 @@ bool CCGrafPort::draw_text_ttf(TTF_Font* font, const std::string& processed_text
     return false;
   } else {
     auto img = image_for_sdl_surface(text_surface.get());
-    // This is annoying, but it seems there isn't a better way to do it... if the rendered text height exceeds the
-    // target rect, we trim off some of the top rows to center it vertically. This isn't exactly correct (some text
-    // appears to be off by 1 or 2 pixels sometimes) but it will do for now. There aren't good metrics provided by
-    // SDL_ttf for this (ascent/height don't match the actual amount we need to trim) so we have to do this instead.
     bool has_newlines = (processed_text.find('\n') != std::string::npos);
-    size_t y_offset = (!has_newlines && img.get_height() > h) ? ((img.get_height() - h) / 2) : 0;
-    data.copy_from_with_blend(img, rect.left, rect.top, w, h, 0, y_offset);
+    if (!has_newlines && img.get_height() > h) {
+      // A single line that is taller than its destination rect. Previously we
+      // trimmed the source to the rect height and copied only those rows, which
+      // clipped the top and bottom of the glyphs (e.g. the foot of the "L" in
+      // the "Loading......Please wait." startup message was cut off). Instead,
+      // draw the full glyph height centered on the rect and let it overflow
+      // slightly above and below. copy_from_with_blend bounds-checks every
+      // pixel against the destination surface, so any overflow past an edge is
+      // safely skipped. (Multi-line text is left untouched and still fits.)
+      ssize_t over = static_cast<ssize_t>(img.get_height()) - static_cast<ssize_t>(h);
+      ssize_t dst_y = static_cast<ssize_t>(rect.top) - over / 2;
+      data.copy_from_with_blend(img, rect.left, dst_y, w, static_cast<ssize_t>(img.get_height()), 0, 0);
+    } else {
+      data.copy_from_with_blend(img, rect.left, rect.top, w, h, 0, 0);
+    }
     return true;
   }
 }
