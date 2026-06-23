@@ -27,13 +27,13 @@ Then, it all abated, leaving you hanging a thousand feet above the jagged mounta
 picked you up and gently set you on the ground.
 
 ### SD2:7
-Trial by Fire (version 2.0) is, I hope, very much improved from version 1.0. Since there is little incentive to register otherwise (code breaking is easy).
+(Registration check).
 
 ### SD2:8
-I am appealing to everyone's sense of honor and fair play.  Plus, if this one is good, the only way to get my next scenario is to have this one registered.
+(Registration check).
 
 ### SD2:9
-You hear a deep wooden flute playing an eiree, haunting song somewhere west of you.  The valley that opens before you seems filled with fruit trees and birds.  Also west of you, you can see an odd shape inside one of the trees.
+You hear a deep wooden flute playing an eerie, haunting song somewhere west of you.  The valley that opens before you seems filled with fruit trees and birds.  Also west of you, you can see an odd shape inside one of the trees.
 
 ### SD2:10
 As you draw closer, you see the music and the odd house in the trees are connected.  A beautiful woman sits on a branch jutting from a window.  She is playing a large flute and staring at the clouds overhead.
@@ -51,7 +51,7 @@ A branch snaps under someone's foot and the woman nearly falls from her perch wi
 "I could have sworn your clothing was in the fashion of... no, I guess I have been away a long time.  Things have probably changed over the last seven hundred years."  She looks wistfully to the west and then back to you.
 
 ### SD2:15
-"Please, do come up and join me for a bit of tea.  I suppose you do have some questions."  She lowers a rope ladder down to you and dissappears inside.  Do you go up?
+"Please, do come up and join me for a bit of tea.  I suppose you do have some questions."  She lowers a rope ladder down to you and disappears inside.  Do you go up?
 
 ### SD2:16
 As you turn to go, ignoring the woman's offer of hospitality she calls to you.  "I am afraid I must insist," her melodic voice sings.  Suddenly your surroundings change.
@@ -60,7 +60,7 @@ As you turn to go, ignoring the woman's offer of hospitality she calls to you.  
 "Welcome to my humble home."
 
 ### SD2:18
-"I guess the Oobleck is a bit overwhelming.  It was when the Queen bannished me here centuries ago.  I guess the Queen didn't send you to free me... it's just a dream I've held onto.  The last dream I have left really.
+"I guess the Oobleck is a bit overwhelming.  It was when the Queen banished me here centuries ago.  I guess the Queen didn't send you to free me... it's just a dream I've held onto.  The last dream I have left really.
 
 ### SD2:19
 "Well, no matter.  My name is Elsa.  At one time it was Princess Elsa, last of the immortal house of Waterford."  She laughs bitterly at her own words.  "Immortal, hah!  Just a way of cursing those the gods hate."  She walks over to the fire and warms
@@ -72,13 +72,13 @@ herself against some chill.  Sitting in the chair she continues.  "As for where 
 "Please, come sit by the fire.  I'm afraid my blood is a little thin today." She indicates a spot on the floor between the two chairs.
 
 ### SD2:22
-"That's better.  Now, where was I?  Oh yes, the Oobleck.  We have been cursed to live here for centuries.  I was bannished here by my step-mother when her own daughter was born.  Since then my powers have grown." She waits for you to join her.
+"That's better.  Now, where was I?  Oh yes, the Oobleck.  We have been cursed to live here for centuries.  I was banished here by my step-mother when her own daughter was born.  Since then my powers have grown." She waits for you to join her.
 
 ### SD2:23
 "You poor dears... of course I will help you."
 
 ### SD2:24
-"I only have a few things to trade or sell, but I can always do with fresh supplies or money.  I get to the regualr markets so rarely."
+"I only have a few things to trade or sell, but I can always do with fresh supplies or money.  I get to the regular markets so rarely."
 
 ### SD2:25
 "If you are going to be rude, I'm afraid I must ask you to leave."  Her hand barely twitches as you find the world around you swirl.
@@ -90,13 +90,13 @@ You can't tell where you have landed.
 "Back when I first got here there were only a few people here, not to include the dragons or Damarias.  I guess you'd say he was the first one sent here.  It is best to avoid him at all cost," she says with a shudder.
 
 ### SD2:28
-"Over time there has gotten to be quite a few folks.  Mostly evil lots, but the Oobleck melows most of them to a dull darkness.  A few people who were, shall I say, too good for the real world.  My friend Dex is one of those.
+"Over time there has gotten to be quite a few folks.  Mostly evil lots, but the Oobleck mellows most of them to a dull darkness.  A few people who were, shall I say, too good for the real world.  My friend Dex is one of those.
 
 ### SD2:29
 "He never did evil in all of his life."  She gets a dazed look on her face staring into the fire for several minutes.  Abruptly she smiles at you.  "Where are my manners.  You may stay here and rest if you like.  My home is quite safe.
 
 ### SD2:30
-"Or, if you prefer, there is a magic boat to the West.  That is, if you can get through the gate.  It will take you safely about the water... give or take a battle or two.  To the west and a bit north is a villiage of fairly decent folks.
+"Or, if you prefer, there is a magic boat to the West.  That is, if you can get through the gate.  It will take you safely about the water... give or take a battle or two.  To the west and a bit north is a village of fairly decent folks.
 
 ### SD2:31
 "Barbaric, but nice enough.  And, south of there somewhere is Sludgeton.  If you're into fighting and drinking and other vile activities, I suggest you head there."  She rises and goes over to her books and begins to read.
@@ -123,7 +123,7 @@ Before Dex knows what is happening, Elsa has caught him up in her arms and is ki
 "Shut up and kiss me you idiot," Elsa demands.  After several minutes of shuffling your shoes, the two become aware again that you are with them.  Elsa blushes a little.  "Oh my friends, you have given me back my life.
 
 ### SD2:39
-"And maybe my hope.  I see in Dex's eyes that he thinks there truely is hope to be free of this place.  May I come with you on this quest?"
+"And maybe my hope.  I see in Dex's eyes that he thinks there truly is hope to be free of this place.  May I come with you on this quest?"
 
 ### SD2:40
 "Oh Dex... I can hardly believe... Let me get my stuff together and I'll be with you."  Two hours later, Elsa has joined your group.
@@ -156,7 +156,7 @@ Elsa throws her head back and laughs,  "Fools!  I am immortal!"
 Dex laughs.  "Death!  I spit on death!"
 
 ### SD2:50
-"Hey!" Elsa shouts.  "Those are my private things.  Do not touch them." Her glare is meaningful and meanacing.  Do you touch anyway?
+"Hey!" Elsa shouts.  "Those are my private things.  Do not touch them." Her glare is meaningful and menacing.  Do you touch anyway?
 
 ### SD2:51
 "That's it!  I am not a person of great patients anyway... defend yourself!"
@@ -234,7 +234,7 @@ To your surprise, a mouth on the boat's mast speaks.  "Welcome aboard, mates.  J
 The ship's mouth hollers, "Avast!  Somethin's trying to punch a hole in me hull!  Need more power!  Drop another gem in me mouth or we're done for!"  Do you do it?
 
 ### SD2:76
-"Then we is done for mates.  Plugs your nose and swim!"  The boat errupts with water and splinters and sinks.  As it does, thousands of teeth and claws begin tearing into you.  With water suddenly filling your mouth you cannot cast spells.
+"Then we is done for mates.  Plugs your nose and swim!"  The boat erupts with water and splinters and sinks.  As it does, thousands of teeth and claws begin tearing into you.  With water suddenly filling your mouth you cannot cast spells.
 
 ### SD2:77
 And within seconds you realize you are going to die.  From nowhere, however, a hand takes you and throws you onto a hard, dry surface.  "Pump the water from der lungs Pete... I'lls get us ashore."
@@ -294,7 +294,7 @@ The overwhelming pain that fills your lungs dissipates and you are able to wait 
 The last vestiges of air and life flee from you.
 
 ### SD2:96
-You have called on the great one in your time of need and he has heard you.  For a second the waters pull back from you then dissappear completely.
+You have called on the great one in your time of need and he has heard you.  For a second the waters pull back from you then disappear completely.
 
 ### SD2:97
 This hole, lined with clay, seems to drop forever.  Does someone wish to jump into it?
@@ -315,16 +315,16 @@ The dragon's real hoard!
 Alone this great egg is as large as a ogre's head.  It's surface is like the surface of water on a white cloudy day, but thread-like tendrils of blue lightening dance over its surface.
 
 ### SD2:103
-Inside, through the translucent shell, you can see a small dragon child writhing and fighing against the confinement.  Through the shell it seems to look hard at you and your minds fill with the words, "Touch the shell!"
+Inside, through the translucent shell, you can see a small dragon child writhing and fighting against the confinement.  Through the shell it seems to look hard at you and your minds fill with the words, "Touch the shell!"
 
 ### SD2:104
 Does someone touch it?
 
 ### SD2:105
-The gentle lightening turns violent and arcs through your flesh.  The smell of burning skin and hair begins to permiate the air.  Do you hold on?
+The gentle lightening turns violent and arcs through your flesh.  The smell of burning skin and hair begins to permeate the air.  Do you hold on?
 
 ### SD2:106
-The pain is incredible and eats away at your sanity.  As another mere second passes your heart skips a beat.  The smell of burning flesh filles the air.  Do you hold on?
+The pain is incredible and eats away at your sanity.  As another mere second passes your heart skips a beat.  The smell of burning flesh fills the air.  Do you hold on?
 
 ### SD2:107
 The shell bursts apart, embedding your skin with shimmering bits of dragon shell.  Though the pain is incredible, you feel somehow sturdier.
@@ -333,7 +333,7 @@ The shell bursts apart, embedding your skin with shimmering bits of dragon shell
 The tiny dragon's body shivers amidst the shards of broken shell.  It seems to shimmer with a million different colors and look pleadingly at you.  Will someone touch it?
 
 ### SD2:109
-As you touch it, the dragon child nuzzles up closely and wraps it's full length around your arm.  For a moment you feel life begin to drain from you, but it instantly returns as the dragon child unfulrs its tiny, rainbow wings.
+As you touch it, the dragon child nuzzles up closely and wraps it's full length around your arm.  For a moment you feel life begin to drain from you, but it instantly returns as the dragon child unfurls its tiny, rainbow wings.
 
 ### SD2:110
 [Note: the dragon child must be worn like an item.  It is not an NPC.]
@@ -360,13 +360,13 @@ The wall to the south shimmers slightly.  Would someone like to investigate?
 As you look harder at the wall it melts away before your eyes.  Apparently it was just an illusion.
 
 ### SD2:118
-This odd device seems so anchient that it can't possibly function, but the moment it is touched your whole group is transported away.
+This odd device seems so ancient that it can't possibly function, but the moment it is touched your whole group is transported away.
 
 ### SD2:119
 The small hut is covered in hides which glow slightly even against the sunlight.  There are thousands of markings on the hides which spell out incredibly powerful wardings.  You are unable to draw any closer due to their power.
 
 ### SD2:120
-A small man, maybe a dwarf without a beard or a fat elf, steps to the doorway.  "I thought you would come," he says with a smile.  "I have forseen it."  He silently blows smoke rings into the air for several minutes before speaking.
+A small man, maybe a dwarf without a beard or a fat elf, steps to the doorway.  "I thought you would come," he says with a smile.  "I have foreseen it."  He silently blows smoke rings into the air for several minutes before speaking.
 
 ### SD2:121
 "You should forgive me... I didn't quite know what to expect.  You will have to do, I guess.  You must wait for a boat to rise from the deep where no boat waits.  Travel east until the mountain spews you out."  He closes his eyes.
@@ -420,13 +420,13 @@ Dex's house looks empty and cold.
 An old well, almost hidden in weeds and overgrown with ivy, rests comfortably here in the middle of nowhere.
 
 ### SD2:138
-The instant you do so, a brilliant light flashes up from the well.  A magnificient being hovers three feet above the well and looks down on you with a frown.  "Not even here may I find rest," it moans in a hollow voice.  "Know ye this: I am
+The instant you do so, a brilliant light flashes up from the well.  A magnificent being hovers three feet above the well and looks down on you with a frown.  "Not even here may I find rest," it moans in a hollow voice.  "Know ye this: I am
 
 ### SD2:139
 "a djinni and must grant wishes until I am free.  My powers are few, but what would you wish of me?"
 
 ### SD2:140
-"Your wisdom is great to know what all living things want.  But alas," he sighs, "it is not the way of the djinn.  I am a slave forever."  He stares into the sky for an instant before continuing.  "But I am greatful for the thought.  Here,
+"Your wisdom is great to know what all living things want.  But alas," he sighs, "it is not the way of the djinn.  I am a slave forever."  He stares into the sky for an instant before continuing.  "But I am grateful for the thought.  Here,
 
 ### SD2:141
 "I have a gift I can give you."  He holds out one hand and in it is a ring.  "I grant to you the power to summon me to your side in battle.  Touch the ring and speak 'Kalypso,' for that is my name."  He looks you each in the eyes before fading away.
@@ -435,16 +435,16 @@ The instant you do so, a brilliant light flashes up from the well.  A magnificie
 "Your wish is my wish!" the being shouts.  Raising his hands high into the air gold begins to fall.
 
 ### SD2:143
-As it continues to fall you are pummelled to death.
+As it continues to fall you are pummeled to death.
 
 ### SD2:144
-"A truely great weapon!" he bellows as he pulls a sword from the air.  It looks absolutely magnificient, but it appears he intends to use it before he gives it to you.
+"A truly great weapon!" he bellows as he pulls a sword from the air.  It looks absolutely magnificent, but it appears he intends to use it before he gives it to you.
 
 ### SD2:145
 "To heal... you must be injured!" he roars with laughter.  Pain rips through you.
 
 ### SD2:146
-Sixty beautiful men and women rush from the shrine as your boat lands.  They strew the path with rose petals as a rather large man in heavy blue robes approaches you.  "Greetings travellers, and welcome to the shrine of Te!"
+Sixty beautiful men and women rush from the shrine as your boat lands.  They strew the path with rose petals as a rather large man in heavy blue robes approaches you.  "Greetings travelers, and welcome to the shrine of Te!"
 
 ### SD2:147
 "We have little to offer but our healing skills, but perhaps you would like to partake in these?"
@@ -468,7 +468,7 @@ Cheryl's Magic
 Neil's Weapon Shop
 
 ### SD2:154
-The old man who tends the graves looks up from his chess game and smiles.  To your surprise his "opponant" moves a piece and captures the caretaker's queen.  "Too busy to talk folks, got a game goin' here."
+The old man who tends the graves looks up from his chess game and smiles.  To your surprise his "opponent" moves a piece and captures the caretaker's queen.  "Too busy to talk folks, got a game goin' here."
 
 ### SD2:155
 The old caretaker looks up at you from behind a book he's reading on his porch and smiles.  "Nothin' like a good book.  Feel free to look 'round folks.  I'm busy here."
@@ -513,13 +513,13 @@ A shifty looking man grins at you from this boat.  "Lookin' for fast transportat
 The man takes your money and leaves quickly just as a crew of me come down to the boat.  "Hey," one calls over to you.  "What you doin' with our boat."  The men look about to call on the authorities.  Do you leave the boat?
 
 ### SD2:169
-The men call the town gaurds to remove you from their boat.
+The men call the town guards to remove you from their boat.
 
 ### SD2:170
 "Wait, wait... don't be so hasty.  How about 5 gems?"  Do you agree?
 
 ### SD2:171
-The shifty character runs off just as a dozen sailors return to their boat.  "Hey, get off our boat.  Don't make us call the town gaurds"  Do you leave?
+The shifty character runs off just as a dozen sailors return to their boat.  "Hey, get off our boat.  Don't make us call the town guards."  Do you leave?
 
 ### SD2:172
 The sailors chuckle a bit about the trick someone played on you but do tell you that the old man to the west has been looking for a buyer for his boat.
@@ -531,16 +531,16 @@ The man looks about to lower his price one more time, but suddenly a group of sa
 In seconds you help to capture the creep and the sailors thank you profusely.  "If you're looking for a good craft, the old man with the ship at the west end is looking for a buyer."  You thank them and move on.
 
 ### SD2:175
-The gaurd house.  Visitors are NOT welcome.  A burly man yells at you, "Get yer hides out of here.  Your kind ain't welcome!"  He pulls his sword as though hoping you would choose to fight.  Do you?
+The guard house.  Visitors are NOT welcome.  A burly man yells at you, "Get yer hides out of here.  Your kind ain't welcome!"  He pulls his sword as though hoping you would choose to fight.  Do you?
 
 ### SD2:176
-Gaurds swarm in from around town to join the fight.
+Guards swarm in from around town to join the fight.
 
 ### SD2:177
 More enemies arrive.
 
 ### SD2:178
-Two rather oversized men sit on the steps of this building smoking pipes and watching smokerings rise into the sky.  "Ya don't wanna go any further folks.  Nothin' south but the town garbage."
+Two rather oversized men sit on the steps of this building smoking pipes and watching smoke-rings rise into the sky.  "Ya don't wanna go any further folks.  Nothin' south but the town garbage."
 
 ### SD2:179
 The two men spoke the truth.  Mountains of garbage and refuse fill this valley giving it a most peculiar stench.
@@ -573,7 +573,7 @@ She brings your drinks instantly.  Do you wish to tip her a gold?
 She thanks you and pockets the coin.
 
 ### SD2:189
-As you dring a few swollows the thought of a tip crosses what's left of your mind.  Do you tip the lady?
+As you drink a few swallows the thought of a tip crosses what's left of your mind.  Do you tip the lady?
 
 ### SD2:190
 The woman smiles at you as you hand her a little gold.  "You're a might inebriated, friends.  How about you go up to my room and sleep it off?"
@@ -582,7 +582,7 @@ The woman smiles at you as you hand her a little gold.  "You're a might inebriat
 You go up and instantly fall into sleep.
 
 ### SD2:192
-She shruggs and walks away as the world around you begins to tilt.
+She shrugs and walks away as the world around you begins to tilt.
 
 ### SD2:193
 You fall to the floor in a stupor as a dozen pink elephants (that look very big and mean) attack.
@@ -645,7 +645,7 @@ The doors to this mansion hang slightly ajar, just enough for the musty, molderi
 As you approach this strange device it begins to hum slightly.  The moment you are within touching range of it...
 
 ### SD2:213
-A faint voice speaks from somewher inside, "Mortal flesh must unlock the gate.  Four keys... four keeeeeeysssss..." The voice trails off.
+A faint voice speaks from somewhere inside, "Mortal flesh must unlock the gate.  Four keys... four keeeeeeysssss..." The voice trails off.
 
 ### SD2:214
 At the mouth of this cave is a figurine in silver the shape of a faerie.  In her soft, demure voice, the figurine says, "Ye may not pass me until ye have touched the southern key."
@@ -654,7 +654,7 @@ At the mouth of this cave is a figurine in silver the shape of a faerie.  In her
 An ugly stone gargoyle blocks the entrance to this cave saying, "To the north is the first you see.  You cannot pass until you touch that key."
 
 ### SD2:216
-A steel serpant will not let you pass.  "East is the key to my entrance way.  Go east first is all I can say."
+A steel serpent will not let you pass.  "East is the key to my entrance way.  Go east first is all I can say."
 
 ### SD2:217
 In the sand you can see the figure of a key.  Will someone touch it?
@@ -663,10 +663,10 @@ In the sand you can see the figure of a key.  Will someone touch it?
 Here in the sand you see the figure of a key.  Will someone touch it?
 
 ### SD2:219
-Hundreds of writing tenacles whip out from the hole.  As you watch a small mouse is caught by one tenacle and turns instantly to dust.  At the lowest point of the pit you see the figure of a key.  Will someone go in to touch it?
+Hundreds of writing tentacles whip out from the hole.  As you watch a small mouse is caught by one tentacle and turns instantly to dust.  At the lowest point of the pit you see the figure of a key.  Will someone go in to touch it?
 
 ### SD2:220
-As you dive and touch the mark thousands of the tenacles wrap around your body, but instead of bringing death you are filled with greater life than ever!
+As you dive and touch the mark thousands of the tentacles wrap around your body, but instead of bringing death you are filled with greater life than ever!
 
 ### SD2:221
 Again you see the figure of a key traced in the sand.  Will someone touch it?
@@ -675,7 +675,7 @@ Again you see the figure of a key traced in the sand.  Will someone touch it?
 As you draw near once again to the device it speaks.  "At last!  Press your hands to the portal and come to me!"  Do you do it?
 
 ### SD2:223
-With a sickening lurch you are pulled through the portal to stand before an awsome being.
+With a sickening lurch you are pulled through the portal to stand before an awesome being.
 
 ### SD2:224
 "You have brought me the dragon child." The creature looks you over carefully.  "I will ask you to place the dragon child on the alter and offer its blood to free us all."  Do you slay the dragon child?
@@ -690,7 +690,7 @@ Your heart turns to pure evil as you bring the knife down into the dragon child'
 In the next heart beat, the dragon child looks you in the eyes...
 
 ### SD2:228
-...and speaks one word.  Your blood congeles, your breath stills, and...
+...and speaks one word.  Your blood congeals, your breath stills, and...
 
 ### SD2:229
 ...you die.
@@ -729,7 +729,7 @@ A great being waits for you to try and cross the bridge.  As you do so you can s
 A few more death clerics rise from the sand.
 
 ### SD2:241
-Far in the distance you see a horrible woman-demond raise a crystal over her head.  As the sunlight catches the crystal a ray of light fills the narrow canyon striking you all with terrible intensity.
+Far in the distance you see a horrible woman-demon raise a crystal over her head.  As the sunlight catches the crystal a ray of light fills the narrow canyon striking you all with terrible intensity.
 
 ### SD2:242
 A voice speaks from the sands, "You're on your own after this."  Suddenly the woman's gem shatters.
@@ -771,7 +771,7 @@ He appears to be a young, vital man.  "I just wish I could be free of this coffi
 "Not actually do it."  After several dizzying minutes he comes to a stop and looks at you.  "Please, leave this place at once and never return.  I shall seal the house as a fitting tomb for Amanda so that no one will ever accidentally free her."
 
 ### SD2:255
-"You fools!" the man shouts.  He calms almost instantly.  "Nevermind.  You'll just become her next victems and I'll be forced to wait here for another hundred or so years." He closes the casket lid and locks it from inside.
+"You fools!" the man shouts.  He calms almost instantly.  "Nevermind.  You'll just become her next victims and I'll be forced to wait here for another hundred or so years." He closes the casket lid and locks it from inside.
 
 ### SD2:256
 A sign on the door reads "Ex-husbands."
@@ -792,7 +792,7 @@ This one has a very fine ring on his boney finger.
 The casket simply reads, "Beloved Husband XVI."
 
 ### SD2:262
-This casket reads, "Beloved Husband XV."  You can hear scraping sounds comeing from inside.  Do you open the casket?
+This casket reads, "Beloved Husband XV."  You can hear scraping sounds coming from inside.  Do you open the casket?
 
 ### SD2:263
 The insides are filled with dozens of small rats and mice devouring what's left of the corpse.  They scatter at the sight of you through a hole in the side of the coffin.  You see a pair of scrolls they did not harm inside.
@@ -801,16 +801,16 @@ The insides are filled with dozens of small rats and mice devouring what's left 
 The inscription at the foot of the statue reads, "Dumarias, The Devourer."
 
 ### SD2:265
-A beautiful and ornate mirror adorns the center of this room drawing all atention to it.  As you stand before it, however, you sense that something is odd.  Suddenly you realize that you are not reflected in the mirror.
+A beautiful and ornate mirror adorns the center of this room drawing all attention to it.  As you stand before it, however, you sense that something is odd.  Suddenly you realize that you are not reflected in the mirror.
 
 ### SD2:266
 As this dawns on you a woman steps into view on the other side, sees you, and rushes forward.  "Ah, I have visitors.  Please, do make yourselves welcome.  I so rarely have the honor since my jailing."  She smiles warmly at you.
 
 ### SD2:267
-"I would love to stay and talk, but I find it tedious.  If I could be freed to that side of the mirror, we might have a pleasnat time.  I could even give you great powers which are mine to freely give... but I am trapped here until someone
+"I would love to stay and talk, but I find it tedious.  If I could be freed to that side of the mirror, we might have a pleasant time.  I could even give you great powers which are mine to freely give... but I am trapped here until someone...
 
 ### SD2:268
-"speaks my name."  She begins to walk away.  Turning back she looks hard at you.  "You look like bright people.  I am forbidden by this cursed mirror to tell you my name, but there are others in this house that know it.  Do not believe all
+"speaks my name."  She begins to walk away.  Turning back she looks hard at you.  "You look like bright people.  I am forbidden by this cursed mirror to tell you my name, but there are others in this house that know it.  Do not believe all...
 
 ### SD2:269
 "they say, for many are bitter... but mine is the only name which may be spoken in this place.  If you could find my name and release me I would reward you greatly."
@@ -825,13 +825,13 @@ As this dawns on you a woman steps into view on the other side, sees you, and ru
 "Bless me!" she shouts.
 
 ### SD2:273
-She suddenly appears on your side of the mirror.  Taking a rock from the floor she smashes it into the mirror, shattering it.  "And now," she says, her eyes begining to glow red.  "Now you must be rewarded."
+She suddenly appears on your side of the mirror.  Taking a rock from the floor she smashes it into the mirror, shattering it.  "And now," she says, her eyes beginning to glow red.  "Now you must be rewarded."
 
 ### SD2:274
-Each of the statues show various men with daggars plunged through their skulls.  It really is not a pleasant sight.
+Each of the statues show various men with daggers plunged through their skulls.  It really is not a pleasant sight.
 
 ### SD2:275
-The gates yawn open like some great mouth waiting to be fed.  Above the gate are two giagantic blue eyes carved from stone.  The eyes seem to follow you with deep malevolence.
+The gates yawn open like some great mouth waiting to be fed.  Above the gate are two gigantic blue eyes carved from stone.  The eyes seem to follow you with deep malevolence.
 
 ### SD2:276
 The thought strikes you that the eyes are watching so that only dragons may pass.  With a little magic you are able to fool the eyes.
@@ -870,7 +870,7 @@ A group of bandits, murderers, and brigands has made this their home.  They don'
 The Hill Giant seems to be taking no chances.
 
 ### SD2:289
-The Giant Wizard has a few friends to help deal with your intrustion into their valley.
+The Giant Wizard has a few friends to help deal with your intrusion into their valley.
 
 ### SD2:290
 As you look more closely at these hills you find a stash of gems.
@@ -888,7 +888,7 @@ You spot some fiends before they spot you.  Do you wish to attack?
 [Copyright© 1998, Dusty L. Johnson, all rights reserved.  Dedicated to Cheryl.]
 
 ### SD2:295
-Register.
+(Registration check)
 
 ### SD2:296
 "Hey folks... you lookin' to hire a strong arm?"
@@ -903,7 +903,7 @@ The man stands to his full height, a little over seven feet tall, and says, "Loo
 The half drunken orc looks at you and lets his head drop back to the table.
 
 ### SD2:300
-The massive gates are etched with ancient runes that tell of one named Damarias.  At the foundation of the world he was bannished to this place, the Oobleck, by all of the gods both good and evil.  This gate marks his prison.
+The massive gates are etched with ancient runes that tell of one named Damarias.  At the foundation of the world he was banished to this place, the Oobleck, by all of the gods both good and evil.  This gate marks his prison.
 
 ### SD2:301
 It further tells that one day the gods would send power to the Oobleck, the Dragon Child, and by its power Damarias would be released from the Oobleck.  The gates may only be opened by the one who holds the dragon child.
@@ -915,7 +915,7 @@ The runes on the gate melt away and the gates open.  Before you can do anything,
 As you watch, it looks as though the corpse is melting away.  To your horror a new fiend rises from Damarias' limp form.
 
 ### SD2:304
-As the skin of the old Damarias sluffs off, the new creature touches the skin and it explodes.
+As the skin of the old Damarias sloughs off, the new creature touches the skin and it explodes.
 
 ### SD2:305
 With a quick snap of its jaws, the new creature devours the old skin.  The battle begins again!
@@ -924,7 +924,7 @@ With a quick snap of its jaws, the new creature devours the old skin.  The battl
 Again the metamorphosis brings terror to your weakening hearts.
 
 ### SD2:307
-Instead of a hiddeous fiend this time, you find yourselves face to face with the mythical unicorn.  "Oh brave people!" it declares.  "Were it not for your persistance and valor I would remain forever in my prison."
+Instead of a hideous fiend this time, you find yourselves face to face with the mythical unicorn.  "Oh brave people!" it declares.  "Were it not for your persistence and valor I would remain forever in my prison."
 
 ### SD2:308
 It looks around at the ravages of the battle, then to the Dragon Child.  "Little one, you are free.  I will forever name you blessed."  The Dragon Child grows to ten times the size of an adult dragon, smiles, and flies off.
@@ -945,7 +945,7 @@ The note reads, "Thank you for your help.  Take this castle as a small token of 
 A meal fit for kings and queens is lain out on the table.  The food is fresh and warm.  You sit down and eat it quickly (the first good meal you've had since becoming an adventurer.)  The plates vanish, the table cleans itself, and fresh plates of
 
 ### SD2:314
-desert are set out for you.  As you finish those off, they too are cleared.  All the conviniences of magic life.
+desert are set out for you.  As you finish those off, they too are cleared.  All the conveniences of magic life.
 
 ### SD2:315
 A beautiful statue of a river nymph.  The plaque on the base reads, "Healing."  Do you touch her outstretched hand?
@@ -1056,7 +1056,7 @@ Large and deadly.  Their saliva contains a strange chemical.  Those that do not 
 Hey, dragons need pets too.
 
 ### DES:24
-Built tought.
+Built tough.
 
 ### DES:26
 The djinni can be very bad to fight.  Did we mention their powers?
@@ -1065,7 +1065,7 @@ The djinni can be very bad to fight.  Did we mention their powers?
 Do not get too close!
 
 ### DES:32
-Mythic in their origens, these beings are not only intelligent but know vast magic lore.
+Mythic in their origins, these beings are not only intelligent but know vast magic lore.
 
 ### DES:33
 A poisonous bite may be the least of your worries if you meet up with one of these vermin.
@@ -1215,22 +1215,22 @@ The black sheep of the Abyss.  Half demon, half devil.  They are often shunned b
 A mutated mushman, fungoids are extremely rare..... and deadly.
 
 ### DES:197
-Hailing from the frozen planes of the Abyss, these malevelent creatures are immune to cold based spells.  They also have a nasty bite.
+Hailing from the frozen planes of the Abyss, these malevolent creatures are immune to cold based spells.  They also have a nasty bite.
 
 ### DES:198
-These beasts are no more than slaves to the evil eys.  They serve as hands for those that have none.  They are imensly strong.
+These beasts are no more than slaves to the evil eys.  They serve as hands for those that have none.  They are immensely strong.
 
 ### DES:199
 Weak in mind and body, these demons are lightning quick.  They are cowards in battle and will surrender or run easily.
 
 ### DES:200
-Incredibly strong, these demons rule over whole races of lesser ilk.  They prefer to pummle their enemies with bare hands and magic.
+Incredibly strong, these demons rule over whole races of lesser ilk.  They prefer to pummel their enemies with bare hands and magic.
 
 ### DES:201
 Existing on both the material plane and the astral plane simultaneously.  They can inflict massive chemical damage.
 
 ### DES:202
-Nomally happy to stand around and chew cud.  These creatures can be dangerous if they stampede.
+Normally happy to stand around and chew cud.  These creatures can be dangerous if they stampede.
 
 ### DES:211
 These vermin carry a deadly disease.  They breed so rapidly there are always plenty to take the place of those that perish.

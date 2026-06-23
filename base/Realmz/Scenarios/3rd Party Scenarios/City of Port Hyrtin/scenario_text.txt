@@ -39,37 +39,37 @@ Do you want to pull the lever?
 This room is empty.
 
 ### SD2:11
-This room is rocked. What do you want to do?
+This room is locked. What do you want to do?
 
 ### SD2:12
-A woman inside the room opened the lock. "Who are you? Are you Edward's Friend?" She asks.
+A woman inside the room opens the lock. "Who are you? Are you Edward's friend?" she asks.
 
 ### SD2:13
-"Oh, come on in." She invites you.
+"Oh, come on in." She invites you in.
 
 ### SD2:14
 "Okay, but please do not disturb me. Thank you." You have to step back.
 
 ### SD2:15
-Woman is sitting here. She is beautiful, but looks sad quite a bit. What do you want to do?
+Woman is sitting here. She is beautiful, but looks quite sad. What do you want to do?
 
 ### SD2:16
-"My name is Rachel, a 24-level human battle mage. I came here to search for my boyfriend Edward. He has gone to the Death Valley but hasn't come back yet. I want to go there, but the road is closed for some reason."
+"My name is Rachel (24-level human battle mage). I came here to search for my boyfriend, Edward. He has gone to the Valley of Death but hasn't come back yet. I want to go there, but the road is closed for some reason."
 
 ### SD2:17
-Hey! What are you doing here? No! Begone!!"
+"Hey! What are you doing here? No! Begone!!"
 
 ### SD2:18
-Town guards come in to save this beautiful woman.
+Town guards come in to save the beautiful woman.
 
 ### SD2:19
-"Edward!" Rachel ruches into his arms. Edward embraces and kisses her. Now, finally Rachel and Edward can meet again.
+"Edward!" Rachel rushes into his arms. Edward embraces and kisses her. Now, finally Rachel and Edward can be together again.
 
 ### SD2:20
-"What's happened on you, Edward?" she asks. Edward answers, "I was stoned by a monster and kept into a castle in Death Valley. But thanks to these adventurers, I can finally meet you again..."
+"What happened to you, Edward?" she asks. Edward answers, "I was attacked by a monster and imprisoned in a castle in the Valley of Death. But thanks to these adventurers, I can finally see you again..."
 
 ### SD2:21
-"Thank you, adventurers." Rachel and Edward thanks you. "Oh, I found a beautiful stone on the way to Port Hyrtin. I give it to you.
+"Thank you, adventurers." Rachel and Edward thank you. "Oh, I almost forgot. I found a beautiful stone on the way to Port Hyrtin. Keep it, as a token of our gratitude."
 
 ### SD2:22
 Congratulations! You got one of the four Froststones!
@@ -81,34 +81,34 @@ It is Port Hyrtin Central Temple. Price is a little bit high.
 It is General Shop of Port Hyrtin. You can see that Port Hyrtin's price level is pretty high.
 
 ### SD2:37
-Hello, folks! Please enter Password #1 to get through here.
+(Registration check.)
 
 ### SD2:38
-Hello, brave players! You have to enter the password here too. Please enter Password #2 to get through this gate.
+(Registration check.)
 
 ### SD2:39
-Hello again, everyone! You have to enter the password here too. Please enter Password #3 to get through here.
+(Registration check.)
 
 ### SD2:40
-The water is too cold. Your heart is stunned and you died.
+The water is too cold. Your hearts stop!
 
 ### SD2:41
-Your attempt has failed and you get damages from it.
+Your attempt has failed and you take damage.
 
 ### SD2:42
 The guard here won't be threatened even with your sword.
 
 ### SD2:43
-Thank you for registering my scenario. Please keep going.
+(Registration check.)
 
 ### SD2:46
-This cave seems to be closed. Here is dead end. You might have to go back.
+This cave seems to end here. It looks like you have no choice but to go back.
 
 ### SD2:47
-Strong thermal wind comes from the Death Valley. You are blown by the wind easily.
+Strong and hot wind comes from the Valley of Death. It blows you about.
 
 ### SD2:50
-With the death of White Wyvern, the battle field turns to ice.
+With the death of the White Wyvern, the battle field turns to ice.
 
 ### SD2:51
 Queen Harpy Blasts Foul Magic!
@@ -120,13 +120,13 @@ Dark Master Explodes!
 Magical forces go off along with Dark Master's death.
 
 ### SD2:54
-As Medusa dies, she turns to stone and has your weapon stuck.
+As Medusa dies, she turns to stone and your weapon gets stuck.
 
 ### SD2:55
-After Mellia got beat, she explodes with her strong magical power.
+When Mellia dealt a killing blow, she explodes!
 
 ### SD2:56
-After the explosion, Queen Mellia revealed her true figure!!
+After the explosion, Queen Mellia reveals her true figure!!
 
 ### SD2:57
 Queen Mellia explodes!
@@ -144,25 +144,25 @@ Finally Mellia's soul disappears. It explodes.
 With her magic, Quelinne's body splits!
 
 ### SD2:62
-You have defeated the true figure of Quelinne. The others were just mirage. They disappear.
+You have defeated the true figure of Quelinne. The others were just a mirage. They disappear.
 
 ### SD2:63
-Queen Mellia has the power to create Golems. She does.
+Queen Mellia has the power to create Golems. She does!
 
 ### SD2:64
-You have defeated the true figure of Grackle. Others are just illusion.
+You have defeated the true figure of Grackle. The others were just an illusion.
 
 ### SD2:65
-Grackles have power to summon Green Dragons during the battle. They do.
+Grackles have the power to summon Green Dragons during the battle. They do!
 
 ### SD2:80
 This is the entrance.
 
 ### SD2:81
-This is exit only.
+This is the exit.
 
 ### SD2:82
-As you search the bookshelf, you found a book. It seems to be magical.
+As you search the bookshelf, you find a book. It seems to be magical.
 
 ### SD2:83
 "Thank you very much, sir."
@@ -171,133 +171,133 @@ As you search the bookshelf, you found a book. It seems to be magical.
 "Off limits!"
 
 ### SD2:85
-This is study room.
+This is the study room.
 
 ### SD2:86
-Librarian is standing behind his desk. What would you do?
+The librarian is standing behind his desk. What would you do?
 
 ### SD2:87
-"Hey! How dare can you do such a thing at the library? Get out of here and never come back!!"
+"Hey! You can't do that in a library! Get out of here and never come back!!"
 
 ### SD2:88
-The library does not want to let you enter any longer.
+You are no longer allowed to enter the library.
 
 ### SD2:89
-Here is the city of Port Hyrtin. Thanks to strong King's Army, inside the city is kept in peace whereas monsters are increasing in the surrounding area.
+This is the city of Port Hyrtin. Thanks to the strength of the King's Army, the city is largely peaceful. The same cannot be said for the surrounding area, which is plagued by an increasing number of monsters.
 
 ### SD2:90
-Old South Road starts from the city, in front of the North Coast Inn and ends at Castle of Arrim, oasis city in the Death Valley.
+The Old South Road starts from the city, in front of the North Coast Inn and ends at the Castle of Arrim, an oasis city in the Valley of Death.
 
 ### SD2:91
-Ancient Temple was located at that place for more than 1,000 years. Rumor says it connects Realmz and the Dark Valley. The gate is cursed, so you need a power of the Great Wizard to open the gate. I don't know where he is.
+An ancient temple was located at that place for more than 1,000 years. Rumor says it connects Realmz and the Dark Valley. The gate is cursed, so you would need the power of the Great Wizard to open the gate. I don't know where he is.
 
 ### SD2:92
-Alexander is legendary sword in this region. But I don't know where it is and who uses it today.
+"Alexander" is a sword of legends. Is it real? Who knows.
 
 ### SD2:100
 This is North Coast Inn. Do you want to enter?
 
 ### SD2:101
-This is city library. Do you want to enter?
+This is the city library. Do you want to enter?
 
 ### SD2:102
-The guards say the King does not want to meet anybody until the Princess comes back.
+The guards say the King will see no visitors until the Princess returns.
 
 ### SD2:103
-"I told you... Princess! Princess comes back!!" The guards now let you pass.
+The guards let you pass.
 
 ### SD2:104
-This is inner gate of the castle.
+This is the inner gate of the castle.
 
 ### SD2:105
-This is outer gate of the castle. Now you can enter and exit as you like.
+This is the outer gate of the castle. Now you can enter and exit as you like.
 
 ### SD2:106
 This is the Castle of King Hyrtin.
 
 ### SD2:107
-"Hello, sirs. This is storage for Port Hyrtin troop. Here you can take our weapon right now, but just once." The guard greets you.
+"Hello, sirs. This is a storage area for Port Hyrtin's army. Feel free to take any weapon that suits you." The guard gestures to the racks of weapons.
 
 ### SD2:108
-"Hello, sirs. This is storage for Port Hyrtin troop. Here you can take our armor right now, but just once." The guard greets you.
+"Hello, sirs. This is a storage area for Port Hyrtin's army. Take any armor you like." The guard gestures to piles of armor and helms.
 
 ### SD2:109
-"Hello, adventurers. Please look around for your leisure." Blacksmith greets you. Price is a little bit cheap for a shop in Port Hyrtin.
+"Hello, adventurers. Please look around," the blacksmith greets you. The prices are not bad..
 
 ### SD2:110
-"Hello, adventurers." The Blacksmith greets you as usual. But he looks so sad.
+"Hello, adventurers." The blacksmith greets you as usual. He wipes tears from his eyes.
 
 ### SD2:111
-"What's happened?" you ask. "Harpies came from the West and took my tools. I can't make my sword any longer..." Blacksmith cries.
+"What happened?" you ask. "Harpies," the blacksmith replies. "They came from the west and took off with my tools. I'm nothing without my tools!" the blacksmith buries his face in his hands.
 
 ### SD2:112
-"Really? Would you retrieve my tools? Thank you so much... Wait! those harpies dropped this map. I hope it'll help you."
+"Really? Would you get my tools back from those beasts? Thank you so much... Wait! Those harpies dropped something during the commotion. I thought it might be a map of some sort. Maybe it'll help you find them."
 
 ### SD2:113
-"I know! But I couldn't do anything against them! I'm not an adventurer like you! They were too much for me." The Blacksmith shuts the door.
+"I know! But I couldn't do anything against them! I'm not a fighter! There were too many of them." The Blacksmith shuts the door.
 
 ### SD2:114
-"Oh, fantastic! you've really retrieved my tools! Thank you very, very much."
+"Oh, fantastic! You've really retrieved my tools! Thank you very, very much."
 
 ### SD2:115
-"By the way, your sword... is it that Alexander? Wonderful!! Give me your sword, and I'll make a magnificent sword. That might be the best thing I can do for you."
+"Your sword... is that Alexander? Wonderful!! Give me your sword, and I'll make it even better!"
 
 ### SD2:116
-"I've done. This is the best sword I've ever made... Arctic Alexander."
+"I'm done. This is the best sword I've ever made... 'Arctic Alexander.'"
 
 ### SD2:117
-"Thank you, but my tool does not come back in this way."
+"Thank you, but my tools aren't back."
 
 ### SD2:118
-It is seemed that the Blacksmith does not want to see you anymore.
+It is seems that the blacksmith does not want to see you anymore.
 
 ### SD2:119
-"Hello, adventurers. Thank you for retrieving my tools at that time." The Blacksmith greets you. He offers reduced the price for you.
+"Hello, adventurers. Thank you again for getting my tools back," the blacksmith greets you with a smile. He offers you reduced prices.
 
 ### SD2:121
-"I can't thank you enough." King is really appreciated. "Thanks to my troops, City of Port Hyrtin is kept in peace. However," King continues, "Monsters are increasing in surrounding area."
+"I can't thank you enough." The king is really appreciative. "Thanks to my troops, peace is kept in the City of Port Hyrtin. However," the king continues, "Monsters are increasing in the outlying areas."
 
 ### SD2:122
-"In a village south of Port Hyrtin, where Old South Road is closed, Red Dragon menace is unceasing. In the further south, trolls are threatening a village. In the death valley, evil spiders keep scaring the citizens..."
+"In a village south of Port Hyrtin, where the Old South Road is in disrepair, the red dragon menace is unceasing. Further south, trolls are threatening a village. In the Valley of Death, evil spiders threaten anyone who approaches."
 
 ### SD2:123
-"Would you defeat all sources of evil?
+"Would you free this land from the evil that menaces it?"
 
 ### SD2:124
 "Thank you so much again. Here's my reward for returning Emma. Take it and good luck."
 
 ### SD2:125
-It is the port.
+This is the port.
 
 ### SD2:126
 Then, pirates come to you and talk. "This port is our territory. Pay 20 gems, and we'll let you pass." Do you pay?
 
 ### SD2:127
-"No pay, huh? Okay, just will take money with your lives!" Pirates rush you.
+"Not paying, huh? Okay, we'll just take the gold off your dead bodies!" The pirates rush you.
 
 ### SD2:128
-"Thank you so much. But you gotta pay also when you returned. Ha ha ha..."
+"Thank you so much. And you gotta pay again when you come back. Ha ha ha..."
 
 ### SD2:129
-This is "Serpent Isle." As its name shows, serpents attack you.
+This is "Serpent Isle." Its namesake attacks you.
 
 ### SD2:130
-After the battle, you found broaches on the island.
+After the battle, you find broaches on the island.
 
 ### SD2:131
 "Hello, sirs. This is a waterfront tavern for travelers like you. What would you like to do?"
 
 ### SD2:132
-"Okay, do it as you like."
+"Okay, as you like."
 
 ### SD2:133
 What would you like?
 
 ### SD2:134
-It's tasty
+It's tasty.
 
 ### SD2:135
-What a delicious food!
+What delicious food!
 
 ### SD2:136
 Mmm... yummy.
@@ -306,46 +306,46 @@ Mmm... yummy.
 Cheers!
 
 ### SD2:138
-"Oh, you are from Bywater!? Fantastic! Port Hyrtin is a peaceful city like Bywater, but surrounding villages and towns are deteriorating."
+"Oh, you are from Bywater!? Fantastic! Port Hyrtin is a peaceful city like Bywater, but the surrounding villages and towns are deteriorating."
 
 ### SD2:139
-"I'm sorry, but no money, no serve."
+"I'm sorry, but no gold, no service."
 
 ### SD2:140
-"Arrim is an oasis city in the Death Valley. It is known for fine ale."
+"Arrim is an oasis city in the Valley of Death. It is known for its fine ale."
 
 ### SD2:141
-"Emma is the name of beautiful princess of this Port Hyrtin. I don't know what's happened on her, but rumor says she is taken to the Ancient Temple."
+"Emma is the name of the beautiful princess of Port Hyrtin. I don't know what's happened on her, but rumor says she is taken to the ancient temple."
 
 ### SD2:142
-"I heard bunch of serpents are living in an island near the North Coast. Isn't it terrific?"
+"I heard bunch of serpents are living on an island near the North Coast. Isn't that nice?"
 
 ### SD2:143
-"I'm from Lowdin, but I'm stucked in Port Hyrtin because the Old South Road is closed. I heard the villagers are looking for mighty warriors to resolve Red Dragon Menace in the village of Arcton."
+"I'm from Lowdin, but I'm stuck in Port Hyrtin because the Old South Road is closed. I heard the villagers in Arcton are looking for mercenaries to help them deal with some red dragons."
 
 ### SD2:144
-"The king hasn't appear in front of us since the princess was kidnapped. Who on earth kidnapped such an innocent Princess? I hope someone will find her."
+"The king hasn't been seen in public since the princess was kidnapped. Who on earth would do such a horrible thing? I hope she is found soon."
 
 ### SD2:145
-"Have you heard about the Sunken Ship?" A man asks you.
+"Have you heard about the sunken ship?" A man asks you.
 
 ### SD2:146
 "Okay, if you say so."
 
 ### SD2:147
-"The Sunken Ship is sunk in the North Ocean. I heard it has a lot of treasures. Would you take the treasures from the ship and give them to me?"
+"The sunken ship is sunk in the North Ocean. I heard it went down with a lot of treasure in its hold. Would you take the treasure from the ship and give it to me?"
 
 ### SD2:148
-"Really? Good luck. Here are the map and key." He hands you the map and key.
+"Really? Good luck. Here is the map and key." He hands you the map and key.
 
 ### SD2:149
 "Fantastic! You've really done it!! Here's your reward."
 
 ### SD2:150
-This is shop of magical stuff and maps. What would you like to do?
+This is a shop of magical things and maps. What would you like to do?
 
 ### SD2:151
-"Okay, what would you like?" Shop Master asks. Price is outrageous.
+"Okay, what would you like?" the shopkeeper asks. The prices are outrageous.
 
 ### SD2:152
 "I see. What kind of map do you want?"
@@ -357,37 +357,37 @@ This is shop of magical stuff and maps. What would you like to do?
 "Thank you very much. What else do you want to buy?"
 
 ### SD2:155
-This is the King's private chamber. You have to go back.
+This is the king's private chamber. You have to go back.
 
 ### SD2:156
-"It is said a great wizard has fought against Greckles but lost and kept in the Western mountain."
+"It is said a great wizard fought against Greckles and lost. They say he's kept as a prisoner in the Western mountains."
 
 ### SD2:169
-Here seems to be the center of the forest, but you can't find anything special.
+This seems to be the center of the forest, but you can't find anything special.
 
 ### SD2:170
-You reach the center of the forest. There, finally you have found the Queen Harpy. She must have stolen Blacksmith's Tools.
+You reach the center of the forest. Finally you find the Queen Harpy. She must have stolen the blacksmith's tools.
 
 ### SD2:171
-After the battle, you found Blacksmith's Tools.
+After the battle, you find the blacksmith's tools in a large burlap sack.
 
 ### SD2:200
-Magical flame covers the way. You have to go back.
+Magical flame covers the path. You have no choice but to turn back.
 
 ### SD2:201
-Suddenly, Arctic Alexander starts to blow cold wind and magical flame disappears. You can pass here now.
+Suddenly, the sword, Arctic Alexander, springs to life and blows a cold wind over the magical flame, extinguishing it. You can continue on this path.
 
 ### SD2:202
-The voice comes from somewhere. "Choose the right way, or you'll die."
+The voice comes from somewhere. "Choose right, or die."
 
 ### SD2:203
-"Fools! I told you to choose the right way! You shall die!!"
+"Fools! I told you to choose right! You shall die!!"
 
 ### SD2:204
-These stairs are one-way
+These stairs are one-way.
 
 ### SD2:205
-Here's a pit. Ouch.
+You fall in a pit. Ouch!
 
 ### SD2:206
 This seems to have been a large prayer room.
@@ -396,46 +396,46 @@ This seems to have been a large prayer room.
 Entering this room, you have finally found Princess Emma...with the Dark Master!
 
 ### SD2:208
-Congratulations! You have saved Princess Emma now.
+Congratulations! You have saved Princess Emma!.
 
 ### SD2:209
-Dark Master has been used that legendary Alexander during the combat. Now it is yours.
+The Dark Master was wielding the legendary sword, "Alexander," during combat. Now it is yours.
 
 ### SD2:210
-You can see the portal at the center of this room.
+You can see a portal at the center of this room.
 
 ### SD2:211
-Suddenly, Dark Master appears from the portal, with Dark Knights.
+Suddenly, the Dark Master appears from the portal, with Dark Knights.
 
 ### SD2:212
-"Did you think I died at that time? Fools! Just I've let you collect Froststones and get that Arctic Alexander. Now, here will be your grave... and the sword will be mine again! BEGONE!! GO TO HELL!!!"
+"Did you think I died? Fools! I've let you collect Froststones and create 'Arctic Alexander' for me. Now, this place will be your grave... and the sword will return to its rightful owner!"
 
 ### SD2:213
-Here is the portal. Do you want to enter?
+This is a portal. Do you want to enter?
 
 ### SD2:220
-"Old South Road is currently closed here for some reasons. We are very sorry"
+"The Old South Road is currently closed."
 
 ### SD2:221
-"Are you those adventurers who returned Princess Emma?"
+"Are you those adventurers who rescued Princess Emma?"
 
 ### SD2:222
-These days, Red Dragons made a horde upstream of Lake Arcton and continue to threaten us. That's why we have closed the Old South Road... Would you defeat the Dragons, please?
+"Red dragons have made a nest upstream of Lake Arcton and continue to threaten us. We've been forced to close the Old South Road... You look strong - do you think you could get rid of those dragons for us?
 
 ### SD2:223
-"Really? Thank you so much and good luck. Here's the map."
+"Really? Good luck! Here, take this map. It might come in handy."
 
 ### SD2:224
-This is the passage to Lake Arcton
+This is the passage to Lake Arcton.
 
 ### SD2:225
-Lake Arcton is so beautiful. Where on earth is the Red Dragon Horde?
+Lake Arcton is so beautiful. Where could the red dragon nest be?
 
 ### SD2:226
-There is waterfall. It is nearly 600 feet high. Looks so beautiful. What do you want to do?
+There's a waterfall here. It is nearly 600 feet high. What do you want to do?
 
 ### SD2:227
-You have reached the upstream of the waterfall.
+You have reached the top of the waterfall.
 
 ### SD2:228
 Your attempt failed, and you died.
@@ -444,61 +444,61 @@ Your attempt failed, and you died.
 This is the edge of the waterfall. You have to go back.
 
 ### SD2:230
-This villager has died. The corpse is burned seriously. Probably it is because of Dragon breath.
+A severely burned corpse. Probably a victim of a dragon attack.
 
 ### SD2:231
-This is the source of the river. Water is quite clean, as far as you can't believe horrible dragons live here.
+This is the source of the river. The water is quite clean.
 
 ### SD2:232
-Then, you see four Gold Dragons are fighting with LOTS of Red Dragons. You have to help.
+You catch sight of four gold dragons fighting LOTS of red dragons. You feel compelled to help.
 
 ### SD2:233
-You have defeated red dragons, but gold dragons are wounded and lying here. What do you do?
+You have defeated the red dragons, but the gold dragons are wounded and will die without your help. What do you do?
 
 ### SD2:234
-Gold dragons have died.
+The gold dragons have died.
 
 ### SD2:235
-With your generous healing, Gold Dragons have recovered. For the reward, they give you a magical stone.
+With your help, the gold dragons have recovered. They give you a magical stone as a gesture of thanks.
 
 ### SD2:236
-Congratulations! You have got one of the four Froststones!
+Congratulations! You have received one of the four Froststones!
 
 ### SD2:237
-Also, they offer to take you down to the valley. You ride the Gold Dragons on the back.
+The gold dragons fly you back down to the valley.
 
 ### SD2:238
 There is very high waterfall. What would you like to do?
 
 ### SD2:239
-This is a village shop, but it seems to be closed. Probably because of Red Dragon menace.
+This is a village shop, but it seems to be closed. Probably because of the red dragon menace.
 
 ### SD2:240
-The village shop is now open. "Thank you for defeating Red Dragons." The shop keeper greets you. This shop has a lot of good leather goods and magical scrolls.
+The village shop is now open. The shopkeeper smiles and welcomes you in, saying, "Welcome, welcome, dragon slayers!" This shop specializes in leather goods and magical scrolls.
 
 ### SD2:249
-You can find a trap door here. Do you step inside?
+You find a trap door here. Do you step inside?
 
 ### SD2:250
-You have stepped inside the sunken ship. It looks so old, but not so terribly broken.
+You have stepped inside the sunken ship. It looks old, but not as broken as you had expected.
 
 ### SD2:251
 This seems to have been the control room. You can see two levers.
 
 ### SD2:252
-This is a trap. Ouch.
+It's a trap! Ouch.
 
 ### SD2:253
-You got treasures.
+You got treasure!
 
 ### SD2:254
-This appears to have been the captain's room. Looks so gorgeous.
+This appears to have been the captain's room.
 
 ### SD2:255
 Suddenly, undead monsters appear!
 
 ### SD2:256
-Inside the secret room, you found treasures.
+Inside the secret room, you found treasure.
 
 ### SD2:257
 It is a seaman's room.
@@ -507,13 +507,13 @@ It is a seaman's room.
 This is storage. You can see LOTS of food and wine.
 
 ### SD2:259
-You found a trap door under the wine bottle. Do you want to open it?
+You found a trap door under the wine bottles. Do you want to open it?
 
 ### SD2:260
 This seems to be the treasure room.
 
 ### SD2:261
-Congratulations! You found treasure chest.
+Congratulations! You found a treasure chest.
 
 ### SD2:262
 Just after you have taken the treasure chest, phantoms attack.
@@ -522,16 +522,16 @@ Just after you have taken the treasure chest, phantoms attack.
 You found a door behind the treasure chest. Do you open it?
 
 ### SD2:264
-Due to your swimming ability, you could get out of the sunken ship with the treasure chest.
+Making use of your expert swimming ability, you swim out of the sunken ship with the treasure chest.
 
 ### SD2:265
-Treasure chest is so heavy. You can't swim well with the chest so that you sink into the deep ocean. You can never come back...
+The treasure chest is so heavy. You can't swim well while carrying it. You find yourself sinking into the ocean. You'll never make it back...
 
 ### SD2:266
-Inside this shack, you found some potions.
+Inside this shack, you find some potions.
 
 ### SD2:267
-Suddenly, Dragon Lizards attack!
+Suddenly, dragon lizards attack!
 
 ### SD2:268
 Inside this building you have found a ladder. Do you want to take the ladder up?
@@ -540,79 +540,79 @@ Inside this building you have found a ladder. Do you want to take the ladder up?
 Do you want to take the ladder down?
 
 ### SD2:270
-You can see Port Hyrtin Army is fighting against large troop of goblins. Do you want to join?
+You can see the Port Hyrtin Army is fighting against a large group of goblins. Do you want to join the battle?
 
 ### SD2:271
-This is the entrance of the village of Drenn. The gate is guarded by two Iron Golems.
+This is the entrance of the village of Drenn. The gate is guarded by two iron golems.
 
 ### SD2:272
-After defeating Golems, you can enter the village of Drenn.
+After defeating the golems, you can enter the village of Drenn.
 
 ### SD2:273
-The elder comes from the inside. "You  might be very mighty to beat our Iron Golems." I really appreciate that such powerful adventurers come to this village."
+A village elder approaches. "You must be very strong to defeat our sentries. We won't hold it against you that you've destroyed our iron golems. They weren't much use against the trolls anyway."
 
 ### SD2:274
-"We set those Golems to save the village from the trolls. Yet, they continue to threaten us. They take our possessions and even lives all the time... The other day, they took my precious bible. Would you retrieve it?"
+"The trolls have been stealing and killing anyway... The other day, they took a certain religious tome - we would be in your debt if you could return it. What do you say?"
 
 ### SD2:275
-"Thank you. I really appreciate your offering. Here is the map."
+"Thank you." The old man hands you a map, saying, "You'll find the trolls here. Good luck."
 
 ### SD2:276
-"Please, please help our village..."
+"Please, please, help our village..."
 
 ### SD2:277
-"Wonderful! You have really done it!! This bible is the treasure for the entire village, as well as me myself. Thank you very, very much. Just for you I'll offer free heeling here, for ever and ever.
+"Wonderful! You have really done it!! This tome is our village's most prized possession. Thank you very, very much. For your service to our village, we will offer you free heeling here, whenever you are in need."
 
 ### SD2:278
-Bunch of trolls are waiting inside. Do you want to enter?
+A bunch of trolls are waiting inside. Do you want to enter?
 
 ### SD2:279
-You have stepped into the cave. There, as you thought, trolls have already been waiting.
+You step into the cave. The trolls attack.
 
 ### SD2:280
-You have beat the guarding armies of trolls. You can proceed now, but what are waiting for you?
+You have beaten the trolls here and can proceed. But what is waiting ahead?
 
 ### SD2:281
-Drenn villagers are fighting against Huge Trolls. Do you want to help?
+Drenn villagers are fighting against huge trolls. Do you want to help?
 
 ### SD2:282
 The villagers thank for your help, and give you gold, gems, and a sword.
 
 ### SD2:283
-The passage becomes narrower here. You can here strange voice coming from farther in the cave. The echo makes the voice more scary.
+The passage becomes narrower here. You can hear a deep voice coming from farther in the cave.
 
 ### SD2:284
-King Troll is standing here. As it notices you, before you start your movement, the King and his armies attack.
+The leader of the trolls is giving a speech to his soldiers. He wastes no time in directing them to attack you.
 
 ### SD2:285
-You have defeated the King Troll. Behind his throne, you can see the treasure chest.
+You have defeated the leader of the trolls. Behind his throne, you can see a treasure chest.
 
 ### SD2:286
 This treasure chest is locked. What do you want to do?
 
 ### SD2:287
-Inside the treasure chest, you have found the Bible.
+Inside the treasure chest, you find a religious tome of some kind.
 
 ### SD2:300
-Inside the shack you can see nine levers. But how such levers work?
+Inside the shack you see nine levers. But what do they do?
 
 ### SD2:301
-You can't see what it caused
+You can't see what it caused.
 
 ### SD2:302
-Nothing seems to happen
+Nothing seems to happen.
 
 ### SD2:303
 Something might have happened, but you can't see it.
 
 ### SD2:304
-You have triggered the trap!
+You have triggered a trap!
 
 ### SD2:305
 You got a magical broach with gold and gems!
 
 ### SD2:306
-This shack explodes!
+The shack explodes!
 
 ### SD2:307
 Magical ink falls onto you!
@@ -627,64 +627,64 @@ Inside this shack you find a ladder. Do you want to take the ladder up?
 Do you want to take the ladder down?
 
 ### SD2:311
-You have reached Top of the World castle. Located on the summit of high mountain, even above the clouds, this castle is really "Top of the World." Because of elevation and threat, it is quite chilly.
+You have reached the Castle at the Top of the World. Located on the summit of a high mountain, far above the clouds, this castle is really at the "Top of the World." Because of the elevation, it is quite chilly.
 
 ### SD2:312
-Inside the secret cave you find a small shack. There seems to be nobody, but you might be able to rest here.
+Inside the secret cave you find a small shack. No one seems to be around. You might be able to rest here.
 
 ### SD2:313
 As you attempt to get through the gate, a dozen of Anti'ids attack.
 
 ### SD2:314
-You have defeated Anti'ids. You can see another cave ahead. Here seems to be a shoulder of this mountain.
+You have defeated Anti'ids. You can see another cave ahead.
 
 ### SD2:315
-Here cave becomes quite larger as if it were a room. Many, many bats are on the "roof", but they show no sign of movement. At the center of this lake you can see a treasure chest. Everything looks so quiet here.
+The cave opens up into a wide cavern. Uncountable bats are on the ceiling, apparently sleeping. At the center of this chamber, you see a closed wooden chest.
 
 ### SD2:316
-This treasure chest is not even locked. Do you open it?
+The chest is not locked. Do you open it?
 
 ### SD2:317
-Inside the chest you find Bracers.
+Inside the chest you find bracers.
 
 ### SD2:318
-As you have taken the Bracers from the chest, the bats begin to move suddenly, and attack you!
+As soon as you take the bracers from the chest, the bats wake up and swoop down to attack.
 
 ### SD2:319
-After the battle, there are no bats in this room at all.
+All of the bats have perished.
 
 ### SD2:320
-The iron wall stands in front of you and shut your way. The cave seems to be dead end here.
+The iron wall stands in front of you and blocks your way. The cave seems to be a dead end.
 
 ### SD2:321
-The iron wall shuts your way. What would you like to do?
+The iron wall blocks your way. What would you like to do?
 
 ### SD2:322
-With the spell you have made a hole under the wall. Going through the hole you reach the other side of the wall.
+You have made a hole under the wall with your spell. Going through the hole you reach the other side of the wall.
 
 ### SD2:323
 Ouch!
 
 ### SD2:324
-Wall is made of iron. It does not work and gets broken.
+The wall is made of iron. It doesn't budge.
 
 ### SD2:325
-Three giants are guarding this iron gate. They attack as they notice you.
+Three giants are guarding this iron gate. They notice you and attack!
 
 ### SD2:326
-Now you can pass the gate.
+Now you can pass through.
 
 ### SD2:327
-This is the cave to Top of the World Castle. Do you want to Enter?
+This is a cave leading to the Castle at the Top of the World. Do you want to enter?
 
 ### SD2:328
-This is Top of the World castle. Do you want to step inside?
+This is the Castle at the Top of the World. Do you want to step inside?
 
 ### SD2:329
-As you step inside the castle, the entrance door turns into solid wall!
+As you step inside the castle, the door turns into a solid wall behind you!
 
 ### SD2:330
-Quelinne - the Queen of Top of the World castle - has already been waiting there. One, two, three, four, five, six... six Queens? No, it's impossible... yet, there are actually six bodies... at least you can see six.
+Quelinne - the Queen of the Castle at the Top of the World - is waiting for you. One, two, three, four, five, six... six Queens? No, it's impossible!
 
 ### SD2:331
 All six bodies of Queen Quelinne attack!
@@ -693,40 +693,40 @@ All six bodies of Queen Quelinne attack!
 Queen Quelinne has gone. But you wonder how you can get out of the castle.
 
 ### SD2:333
-Just behind the Queen's throne, you have found the secret passage. This might be "the other" exit.
+Just behind the Queen's throne, you have found a secret passage. This might be an alternative exit.
 
 ### SD2:334
-This room has a small pool. Just on the pool side, You have found a magical stone.
+This room has a small pool. There's a magical stone beside the pool.
 
 ### SD2:335
 Congratulations! You have found one of the four Froststones!!
 
 ### SD2:336
-You hear strange voice coming from somewhere. "Enter the pool, and you can get down to the surface. Do not get drown."
+You hear a strange voice coming from nowhere and everywhere. "Enter the pool and swim. You will either drown or escape."
 
 ### SD2:337
 Do you want to enter the pool?
 
 ### SD2:338
-This pool goes deep, deep underground, and reaches to the surface. Thanks to your swimming ability, you can reach the surface with the stream.
+This pool runs deep, deep, through the mountain, and merges with a stream in the lowlands.
 
 ### SD2:339
-This pool is filled with water. You get drawn in a deep, deep pool for sure.
+You drown in the deep water, unable to hold your breaths long enough.
 
 ### SD2:340
-These stairs have led to Queen's private storage. The stairs do not work anymore.
+These stairs lead to the Queen's private storage. The stairs are protected by a magic force field that won't let you pass.
 
 ### SD2:341
 These stairs are cursed. You can't take them up.
 
 ### SD2:342
-Strange magical force doesn't allow you to go this way.
+A strange magical force doesn't allow you to go this way.
 
 ### SD2:343
-Going through the secret passage you returned to the surface... just behind town of Salina
+Going through the secret passage you return to the surface... just behind the town of Salina.
 
 ### SD2:350
-This road connects towns of Salina and Lowdin. Merchants are pulling their wagons. Do you want to look around one of them?
+This road connects the towns of Salina and Lowdin. Merchants are pulling their wagons. Do you want to browse their wares?
 
 ### SD2:351
 This merchant sells fine weapons.
@@ -738,7 +738,7 @@ This merchant sells high-quality armors.
 This merchant sells magical stuff.
 
 ### SD2:354
-This is town of Salina.
+This is the town of Salina.
 
 ### SD2:355
 This is the town hall of Salina. What do you want to ask about?
@@ -747,19 +747,19 @@ This is the town hall of Salina. What do you want to ask about?
 "Please, come later."
 
 ### SD2:357
-"White Wyvern is one of the most mysterious creatures in Realmz... and it is said it has a Froststone."
+"The White Wyvern is one of the most mysterious creatures in Realmz... and it is said to have a Froststone."
 
 ### SD2:358
-"Rumor says it currently lives in an icy cave beyond the Great Lake. The only way to get there is by ship. Besides, its entrance is covered by ice. Here is the map."
+"Rumor has it that the White Wyvern lives in an icy cave beyond the Great Lake. The only way to get there is by ship. I'll give you a map of the area."
 
 ### SD2:359
-"Top of the World Castle stand at the top of that mountain. To get there you have to get through huge underground cave. Here is the map for entrance cave."
+"The Castle at the Top of the World is built at the summit of that mountain. To get there you have to go through a huge underground cave. Here is a map showing the entrance."
 
 ### SD2:360
-"Rumor says the Queen of the castle has one of the Froststones, but I don't know if it is true."
+"According to rumor, there's a wicked Queen of the castle, and that she has one of the Froststones."
 
 ### SD2:361
-"You know, good Gold Dragons have one. And rumor says White Wyvern and Queen of Top of the World castle have one each. But when it comes to 'the Fourth' one, I don't know, I can't even guess who has it. I'm very sorry."
+"The Gold Dragons are said to have one. The White Wyvern and the Queen of the Castle at the Top of the World have one each, according to rumor. As for any others, I have no idea."
 
 ### SD2:362
 The entrance of this cave is covered by ice.
@@ -768,22 +768,22 @@ The entrance of this cave is covered by ice.
 The entrance is covered by ice. What do you want to do?
 
 ### SD2:364
-The ice having covered the entrance has just melted. You can enter the cave now.
+The ice that was blocking the entrance has melted. You can enter the cave now.
 
 ### SD2:365
-You have found a secret cave. Beyond underground lake, you can see a treasure chest.
+You have found a secret cave. Beyond an underground lake, you can see a treasure chest.
 
 ### SD2:366
-As you approach the treasure chest, the monsters attack.
+As you approach the treasure chest, monsters attack.
 
 ### SD2:367
 This chest is not even locked. Do you open it?
 
 ### SD2:368
-There is some portions in the chest.
+There are some rations in the chest.
 
 ### SD2:369
-Also, you have found a map.
+And a map!
 
 ### SD2:370
 This cave is filled with water. The stream is so quick that you can't pass here.
@@ -792,40 +792,40 @@ This cave is filled with water. The stream is so quick that you can't pass here.
 The cave is filled with water. What do you want to do?
 
 ### SD2:372
-The stream coming from the cave is too quick. You are moved to the downstream.
+The stream coming from the cave is too quick. You are pushed downstream.
 
 ### SD2:373
-There is a bridge on the underground lake. Beyond the bridge you can see a shining stone.
+There is a bridge over the underground lake. Beyond the bridge you can see a shining stone.
 
 ### SD2:374
-As you proceed to the middle of the bridge, White Wyvern appeared with Frost Dragons and Serpents. they attack "alien" of this cave.
+As you cross the bridge, the White Wyvern appears with frost dragons and serpents. They attack the intruders!
 
 ### SD2:375
-As you have thought, this shining stone is Froststone. You take it.
+As you thought, this shining stone is a Froststone. You take it.
 
 ### SD2:376
-Congratulations! You have got one of the four Froststones!!
+Congratulations! You have found one of the four Froststones!!
 
 ### SD2:377
-You step inside this mantra. Next second, you are teleported to the surface.
+You step inside the mandala. In the next second, you are teleported to the surface.
 
 ### SD2:400
 This gate is closed.
 
 ### SD2:401
-"Warning! Beyond here it is the Kingdom of Kobolds. No other races are permitted. We may kill you if you invade." Do you still want to enter?
+"Warning! Beyond this point is the Kingdom of the Kobolds. No other races permitted." Do you still want to enter?
 
 ### SD2:402
-Kobolds rush from the forest to you!
+Kobolds rush from the forest!
 
 ### SD2:403
-This is town tavern. "Hello, adventurers." The master greets you. "What would you like to do?"
+This is town tavern. "Hello, adventurers." The master greets you. "What would you like?"
 
 ### SD2:404
-The bartender says "this is fine Ale from oasis city Arrim."
+The bartender says, "This is fine ale from the oasis city of Arrim."
 
 ### SD2:405
-You taste the Ale.
+You taste the ale.
 
 ### SD2:406
 Mmm...
@@ -834,34 +834,34 @@ Mmm...
 Yummy!
 
 ### SD2:408
-No money, no Ale. Sorry."
+"Sorry folks. No money, no ale."
 
 ### SD2:409
-"Do you remember that Dabbler headed to the Death Valley? I heard he has not come back from there yet. I think he was turned to stone by the Ropers living in the castle."
+"Do you remember that Dabbler who said he was going to the Valley of Death? He should've been back by now. Probably turned to stone by the Ropers. Poor fellow."
 
 ### SD2:410
-"What's his name?" You asked to the man. He answers, "his name was...oh, it was Edward. He said he came from outside this region."
+"What was his name?" You ask the man. He answers, "Edward. He wasn't originally from around these parts."
 
 ### SD2:411
-Oh, are you going to head Death Valley? Watch out and take care. Oh, why don't you bring this map? It shows the direction to the Death Valley." He gives you a map.
+"Oh, are you going to head to the Valley of Death? Watch out and take care. You might need this." He gives you a map.
 
 ### SD2:412
-Oh, you are coming from Port Hyrtin. Fantastic. So, to which direction are you heading, adventurers?"
+"Oh, you are coming from Port Hyrtin. Fantastic. So, to which direction are you heading, adventurers?"
 
 ### SD2:413
-Town of Salina is located west of this Lowdin. Facing to the Great Lake, it is REALLY beautiful town. I give you a map.
+"The town of Salina is located west of here. Facing the Great Lake, it is a REALLY beautiful town. I'll give you a map."
 
 ### SD2:414
-"If you are searching Froststones," the Master added, "the officers of town hall might know something about those stones. Ask them if you are looking for the Froststones."
+"If you are searching Froststones," the Master adds, "the officers at the town hall might know something about those stones."
 
 ### SD2:415
-Southeast is that Death Valley. About the middle of the valley there is an oasis city Arrim. There you can get very fine Ale, but watch out for the bats in the cave and scorpions on the way to get there. Here is the map of Arrim.
+"The Valley of Death is to the southwest. Near the middle of the valley there is an oasis city, Arrim. There you can get very fine ale, but be careful of scorpions. I don't recommend entering any caves in the area. Here is a map to Arrim."
 
 ### SD2:416
-There is Kobold Kingdom in the northwest of Lowdin. Watch out, they are quick and brutal.
+"There is a kobold kingdom in the northwest of Lowdin. Watch out, they are quick and brutal."
 
 ### SD2:417
-Suddenly, Two men approach to you. Both say they are going to hunt Kobold King's Head, but separately.
+Suddenly, two men approach to you. Both say they are going to hunt the kobold king, but separately.
 
 ### SD2:418
 Which do you want to talk to?
@@ -870,70 +870,70 @@ Which do you want to talk to?
 Okay, what else do you want to do?
 
 ### SD2:420
-"Good! Those kobolds attack our merchants and rob the stuff from them. We have to exterminate those Kobolds once and for ever. If you join us and return with the King's head, we will give you 5,000 g.p. Fine?"
+"Good! Those kobolds rob and attack our merchants. We have to exterminate those pests now and forever. If you join us and return with the king's head, we will give you 5,000 g.p. What do you say?"
 
 ### SD2:421
-"Good! Good! Here is the map of our headquarter. Please return there if you have really done it. Thank you for joining us."
+"Good! Good! Here is the map to our headquarters. Return there with the head. Thank you for joining us."
 
 ### SD2:422
-"Thank you for believing me. I am Birlaute, a goblin fighter from village of Drenn. They live in the forest behind the mountain surrounding Drenn, so they are the source of threat. Would you help me?"
+"Thank you for believing me. I am Birlaute, a goblin fighter from the village of Drenn. They live in the forest behind the mountains surrounding Drenn, and constantly threaten my home. Will you help me?"
 
 ### SD2:423
-"Fantastic! Let's go!... Oh, I might have to tell you where my house is. Here is the map."
+"Fantastic! Meet me here, at my house." He hands you a map.
 
 ### SD2:424
 "Let's go!"
 
 ### SD2:425
-"This is not the place adventurers step in. Get out of here."
+"This is not a place for adventurers. Get out of here."
 
 ### SD2:426
-"We hope your success. Take care and good luck."
+"We hope you succeed. Take care and good luck."
 
 ### SD2:427
-"Wonderful! you have really done it! This is the reward. We really appreciate your achievement."
+"Wonderful! you have really done it! Here is your reward. We really appreciate your achievement."
 
 ### SD2:428
-This is Kobold King's Treehouse.
+This is the kobold king's treehouse.
 
 ### SD2:429
-The king appears from inside the treehouse. "How dare you come here and hurt us? Kill them! Kill them all!!"
+The king appears from inside the treehouse. "How dare you come here and cause us harm? Kill them! Kill them all!!"
 
 ### SD2:430
-"No way! YOU GUYS HURT US." The Forest Knight Commanders rebut. "You guys attack our merchants and steal our stuff. Forest Knights! Avenge our merchants!" Kobold-Forest Knight war begins.
+"Cause you harm? YOU'VE BEEN KILLING OUR MERCHANTS!" The Forest Knight Commander rebuts. "Forest Knights! Avenge our merchants!" Kobold-Forest Knight war begins.
 
 ### SD2:431
-After large battle, you take Kobold King's head.
+After a long battle, you take the kobold king's head.
 
 ### SD2:432
-Merchants are attacked by Kobolds. Do you want to save them?
+Merchants are being attacked by kobolds. Do you want to save them?
 
 ### SD2:433
-Kobolds attacked the merchants without your disturbance. They killed the merchants and deprived their stuff of their wagons.
+The kobolds attack the merchants without your interference. They kill the merchants and steal their wagons.
 
 ### SD2:434
-"Thank you for saving us from Kobolds. They do this all the time. I wish someone exterminate them.
+"Thank you for saving us from the kobolds. They do this all the time. I wish someone would exterminate them."
 
 ### SD2:435
-This is a large house. It seems to be closed.
+This is a large house. The doors are closed.
 
 ### SD2:436
-As you knocked on the door Birlaute's wife came on. You gave the Kobold King's Head and said Birlaute has fought well. Then his wife knew his death, and shut the door.
+You knock on the door. Birlaute's wife answers. You give her the kobold king's head and tell her that Birlaute fought well. His wife nods, holding back tears upon realizing that her husband is dead. She thanks you, and shuts the door.
 
 ### SD2:437
-As you knocked on the door, Birlaute's wife came on.
+You knock on the door. Birlaute's wife answers.
 
 ### SD2:438
-"Honey, I've done it." Birlaute showed Kobold King's head to his wife proudly. Then, all the villagers came to the house and started to hail him.
+"Honey, I've done it." Birlaute shows the kobold king's head to his wife proudly. Then, all the villagers come to the house and clap and cheer for Birlaute.
 
 ### SD2:439
-Birlaute's wife thanks you. "I really appreciate Kobold King's gone... and my husband comes back alive..." She continues, "but I'm sorry, we have nothing to reward you..."
+Birlaute's wife thanks you. "I'm really happy that the kobold king is gone... and my husband came back alive..." She continues, "but I'm sorry, we have nothing to offer you as a reward..."
 
 ### SD2:440
-"Wait! The other day I found strange leaf under the buckeye tree behind this house. It seems to be magical, but I don't know how to use it. Probably it suits mighty adventurers like you. I give it to you.
+"Wait! The other day I found a strange leaf under the buckeye tree behind our house. It seems to be magical, but I haven't the slightest idea about how to use it. Please take it as a token of our gratitude."
 
 ### SD2:441
-"So, you are searching for Froststones... but I'm sorry I don't know anything about them. But people in Lowdin or Salina may be able to provide you some good news. I hope you will make it." The Birlaute couples see you out.
+"So, you are searching for Froststones... but I'm sorry - I don't know anything about them. But people in Lowdin or Salina may have some information. I hope you find what you're looking for." The Birlaute couple see you out.
 
 ### SD2:442
 Goblin Fighter
@@ -942,31 +942,31 @@ Goblin Fighter
 Forest Knight
 
 ### SD2:450
-The Old South Road going down, down, and down from Lowdin to the Death Valley. The road continues to underground cave.
+The Old South Road goes down, down, and down from Lowdin to the Valley of Death. The road continues to a cave entrance.
 
 ### SD2:451
-After you have passed long underground tunnel, finally you get to the Death Valley. It is extremely hot and dry. Due to this weather, the Death Valley is below sea level.
+After you have passed through a long underground tunnel, you finally arrive in the Valley of Death. It is extremely hot and dry.
 
 ### SD2:452
-You get the "plain" area of the Death Valley. It is ultimately HOT. What on earth lives in such a place?
+You get the "plain" area of the Valley of Death. It is ridiculously HOT. What on earth lives in such a place?
 
 ### SD2:453
-Here you can see some plants. You might even see oasis is ahead.
+Here you can see some plants. You might even see an oasis ahead.
 
 ### SD2:454
-This is oasis city of Arrim. The gate says "Welcome to Arrim - where the road ends.
+This is the oasis city of Arrim. The gate says "Welcome to Arrim - where the road ends."
 
 ### SD2:455
-"Hello, travelers. This is famous Arrim Ale shop. Why don't you have one?" The shop master greets you.
+"Hello, travelers. This is the world-famous Arrim Ale shop. Care for a drink?" The shop master greets you.
 
 ### SD2:456
-"Hi! This is Yorozuya shop. What would you like to do today?"
+"Hi! This is the Yorozuya shop. What would you like?"
 
 ### SD2:457
-"Fine. What do you want to buy/sell?"
+"Fine. What do you want to buy or sell?"
 
 ### SD2:458
-"Okay. You have to pay 20% of item price to recharge your magic."
+"Okay. You have to pay 20% of the item price to recharge your magic."
 
 ### SD2:459
 "Sure."
@@ -975,16 +975,16 @@ This is oasis city of Arrim. The gate says "Welcome to Arrim - where the road en
 "I see. What information do you want?"
 
 ### SD2:461
-"Edward? Oh, that dabbler visited Arrim, and he said he wanted to go to the deepest part. He was searching for present for his girlfriend, but I did not have it. I haven't met him since then."
+"Edward? Oh, that dabbler passed through here. He said he wanted to go deeper into the valley. He was searching for something. I haven't seen him since then."
 
 ### SD2:462
-"Deepest part?" You ask. He answers, "Yes. If you get down the cliff north of Arrim, you can get the deepest part. But the cliff is too steep, so nobody can go down, unless thermal sandstorm comes. Rumor says monster lives there."
+"Deeper?" you ask. He answers, "Yes. If could climb down the cliff north of Arrim, you'd arrive in the deepest part. But it's too steep. Unless a sandstorm decides to pick you up and set you down gently at the bottom!"
 
 ### SD2:463
-Froststones? I Haven't see them. I don't even know it. I'm very sorry."
+Froststones? I don't know anything about them. I'm very sorry."
 
 ### SD2:464
-Arrim Ale is finest Ale of this region. You can get one at yonder Ale shop."
+Arrim ale is the finest ale in this region. You can get some at yonder ale shop."
 
 ### SD2:465
 "What else do you want to ask me?"
@@ -996,7 +996,7 @@ Arrim Ale is finest Ale of this region. You can get one at yonder Ale shop."
 You can see the castle of Lord Arrim in front of you. Do you want to enter?
 
 ### SD2:468
-Monolith says the Old South Road ends here.
+The monolith says the Old South Road ends here.
 
 ### SD2:469
 Arrim guards are here. "Beyond this point it's very dangerous. Go back, or you'll get killed by the spiders."
@@ -1005,157 +1005,157 @@ Arrim guards are here. "Beyond this point it's very dangerous. Go back, or you'l
 The Lord Arrim talks to you. "So, you are from Port Hyrtin. Welcome to Arrim."
 
 ### SD2:471
-"These days, spiders have been the source of our threat. They sometimes come to Arrim and poison, paralyze, or even kill our citizens. Would you terminate them from this oasis?
+"These days, spiders are our primary threat. They sometimes come to Arrim and poison, paralyze, or even kill our citizens. Would you terminate them from this oasis?
 
 ### SD2:472
-"Good! Good! This is the map. Take care and good luck." The Lord sees you out.
+"Good! Good! This is the map of where the spiders are. Take care and good luck." The Lord sees you out.
 
 ### SD2:473
-"Okay, if it is your answer. Never mind."
+"I see. If that is your answer, so be it," he shrugs.
 
 ### SD2:474
-Arrim guards are standing here. "Take care, Bunch of spiders are living in the forest."
+Arrim guards are standing here. "Take care, a bunch of spiders are living in the forest."
 
 ### SD2:475
 The guards tell you they will relay your progress to Lord Arrim.
 
 ### SD2:476
-Water is precious in desert. If a river comes from outside the desert and always filled with water, it provides livable environment not only for humans, but also for spiders.
+Water is precious in the desert. If a river flows from outside the desert, it provides a livable environment not only for humans, but also for spiders.
 
 ### SD2:477
-Widow of the Web died. They are exterminated from the Death Valley by invading human society. It might be the rule of nature in Death Valley.
+The Widow of the Web is dead. They have been exterminated from the Valley of Death by the encroaching human society.
 
 ### SD2:478
-You are now invited into the castle.
+You are invited into the castle.
 
 ### SD2:479
 "Welcome back, mighty adventurers!" The Lord thanks you. All of the guards in the castle hail you.
 
 ### SD2:480
-"Now our citizens are safe. Thank you so much. Well... oh, it might be good for your reward. Please take it." The Lord passes you a cane.
+"Now our citizens are safe. Thank you so much. I offer you this as a reward for your service. Please take it." The Lord passes you a cane.
 
 ### SD2:481
-Here you can see the deepest part of the Death Valley. Because the cliff is too steep, and sandy terrain does not allow anybody to dig a tunnel, the road ends here.
+Here you can see the deepest part of the Valley of Death. The road ends here, at a steep cliff.
 
 ### SD2:482
-The cliff is too steep to let you go to the deepest part. What would you like to do?
+The cliff is too steep to descend. What would you like to do?
 
 ### SD2:483
-You raise the Cane of Sandstorm. Suddenly, thermal wind sends you to the deepest party of the Death Valley!
+You raise the Cane of Sandstorm. Suddenly, the hot desert wind picks you up and sends you over the edge of the cliff! The swirling winds gently ease your fall until you find yourself standing in the deepest part of the Valley of Death.
 
 ### SD2:484
-Now you can see why it is called Death Valley. No plants are growing. It is the world with... sand, rocks, and corpses of previous adventurers. It is ultimately hot and dry. It is hell.
+Now you can see why it is called the Valley of Death. No plants are growing. It is a world with... sand, rocks, and corpses of previous adventurers. It is extremely hot and dry. It is hell.
 
 ### SD2:485
-It is hot and dry like the hell. This heat gives you slight damages repeatedly.
+It is hot and dry like hell. This heat hurts.
 
 ### SD2:486
-Even in the place like here, some reptiles are living.
+Even in places like this, some reptiles are living.
 
 ### SD2:487
-Gate of this castle is guarded by the spiders. They attack you.
+The gate of this castle is guarded by spiders. They attack you.
 
 ### SD2:488
-Having defeated Guardian spiders, now you can enter the castle.
+Having defeated the guardian spiders, you can now enter the castle.
 
 ### SD2:489
-Holsam sits down his throne. As you step inside, he turns to you.
+Holsam sits on his throne. As you step inside, he turns to you.
 
 ### SD2:490
-"I'm really admired that you have come here. But don' t you know my hobby? It is to collect statues of brave warriors. My sweet ropers, come on! TURN THIS MIGHTY PARTY TO STATUES!!"
+"I really admire the tenacity you've demonstrated by making it here in one piece. But don' t you know my hobby? It is to collect statues of brave warriors. My sweet ropers, come on! TURN THIS MIGHTY PARTY TO STONE!!"
 
 ### SD2:491
-Holsam has died. It might be the time he himself becomes a statue, but probably he can't be it forever. Just his flesh will remain in this castle in lonely, lifeless valley.
+Holsam has died.
 
 ### SD2:492
 This is Holsam's statue room.
 
 ### SD2:493
-Beyond the secret passage, you find a secret statue room. Unlike other statues, this shining statue is kept independently. Probably it has been Holsam's favorite.
+You find a secret room. It contains a shining statue.
 
 ### SD2:494
-This statue is so beautiful. It really looks brave and mighty.
+It radiates strength.
 
 ### SD2:495
-You can see a beautiful statue. What do you want to do?
+You can see a shining statue. What do you want to do?
 
 ### SD2:496
-As you cast the spell, the beautiful statue has gone. Instead, a brave warrior is standing in front of you.
+As you cast the spell, cracks appear in the statue. Flakes of stone fall to the ground. Suddenly the statue takes a step forward. The warrior, who had been trapped in the stone, breaks free and shakes off the pieces still clinging to his hair and armor.
 
 ### SD2:497
-"Oh, I'm back! Thanks for your help. I really appreciate it." The warrior thanks you.
+"Free at last! I can breathe again!" The warrior thanks you.
 
 ### SD2:498
-"My name is Edward, a 28-level Dabbler. I came here for some reasons, but I has been stoned by Holsam until now. But thanks to you, I'm finally recovered my flesh body!"
+"My name is Edward, a Dabbler (Level 28). I was turned to stone by Holsam and his minions. But thanks to you, I'm finally free!"
 
 ### SD2:499
-"What? You've defeated that Holsam!? Fantastic! I'm really confident with my strength, but you are mightier for sure. Can I join you for a while?"
+"What? You've defeated Holsam!? Great! Do you mind if I join you? There is something to be said about safety in numbers in a place like this."
 
 ### SD2:500
-"Really? Thank you. I'll never forget your help. And now I'll help you as well as I can."
+"Really? Thank you. I'll never forget your help. And now I'll have a chance to help you, if I can."
 
 ### SD2:501
-"Okay, you might be even stronger than I, so it's quite natural. Thanks for your help." He leaves you.
+"Okay, thanks for your help. I'll see if I can find my way out of here." And with that, he leaves.
 
 ### SD2:502
 The statue is completely broken and will never recover its original shape.
 
 ### SD2:503
-Thermal wind brought you back to the city of Arrim.
+A hot wind whirls around you, lifting you up and bringing you back to Arrim.
 
 ### SD2:530
-"Hello, good adventurers. Have you heard something about a girl named Carla?"
+"Hello, good adventurers. Have you heard anything about a girl named Carla?"
 
 ### SD2:531
-"Really? Please bring her back as soon as possible."
+"Really? Please tell her to come back home as soon as possible."
 
 ### SD2:532
-"I see. It's quite natural. Carla is my daughter, but has not come back from her magic practice. I really worry about her."
+"I see. Carla is my daughter, but has not come back from practicing magic. I'm really worried about her."
 
 ### SD2:533
-"Carla! Where have you been!? I have worried about you." The girl's father embraced her.
+"Carla! Where have you been!? I have been so worried about you." The girl's father embraced her.
 
 ### SD2:534
-"Sorry, Dad. When I was practicing my magic, Those notorious thieves approached me and tried to take my money and to kill me... but thanks to these adventurers, I could get home safely."
+"Sorry, Dad. When I was out practicing my magic, I was jumped by a bunch of thieves. They would have killed me, I'm sure, had it not been for these kind adventurers."
 
 ### SD2:535
-"I can't thank you enough, good adventurers." Carla's father thanked you. "But I'm sorry I don't have so much money to reward you... Wait! Why don't you take this shield? This will help you for sure." He hand you a beautiful shield.
+"I can't thank you enough, good adventurers." Carla's father thanks you. "But I'm sorry I don't have any money to reward you with... Wait! Why don't you take this shield? This will surely be of help to you." He hand you a beautiful shield.
 
 ### SD2:536
 "Thank you so much. Good luck."
 
 ### SD2:549
-Two dozens of Hellhounds are living in this room. They attack you for food.
+Two dozen Hellhounds are living in this room. They're very hungry.
 
 ### SD2:550
-This room is guarded by Stone Ropers. As they notice you, they attack.
+This room is guarded by Stone Ropers. They attack without hesitation.
 
 ### SD2:551
-More Ropers come on.
+More Ropers pour in.
 
 ### SD2:552
-Some Ropers are remaining in this room. They attack.
+Some Ropers remain in this room. They attack.
 
 ### SD2:553
-You have defeated all the Ropers in this room. It is said they are placed to guard magical treasures or very important places. Here must not be an exception.
+You have defeated all the Ropers in this room. It is said they are placed to guard magical treasures or very important places. This is probably not an exception.
 
 ### SD2:554
-You have found a secret room. There is a crystal in the center of this room. You feel strong magical force.
+You have discovered a secret room. There is a crystal in the center of this room. You feel a strong magical force.
 
 ### SD2:555
-As you touch the crystal, strange magic force surrounds you.
+As you touch the crystal, a strange magic force surrounds you.
 
 ### SD2:556
-The next moment, you found scrolls on the floor!
+The next moment, you find scrolls on the floor!
 
 ### SD2:557
-The crystal has appeared to be magical, but you can't see any visible result.
+The crystal appeared to be magical, but you can't see any visible result.
 
 ### SD2:558
 This room is occupied by monsters. They attack.
 
 ### SD2:559
-After the battle, You find a magnificent gauntlets!
+After the battle, You find magnificent gauntlets!
 
 ### SD2:560
 After the battle, you found a magnificent shield!
@@ -1173,28 +1173,28 @@ After the battle, you found a magnificent blade weapon!
 After the battle, you found a magnificent armor!
 
 ### SD2:565
-Here you can see the passage is covered with magical flame. You can pass here thanks to Arctic Alexander, yet the flame gives you slight damages.
+Here you can see the passage is covered with magical flames. You can pass here thanks to Arctic Alexander, yet the flame does cause some damage.
 
 ### SD2:566
-Magical flame gives you slight damages.
+Magical flame spouts out of the walls.
 
 ### SD2:567
 An illusionary wall!
 
 ### SD2:568
-It gets darker here. Even though you can't see anything, you feel very dark magic is working here.
+It's very dark here. You have an uneasy feeling that black magic is at work.
 
 ### SD2:569
-This is the castle of Queen Mellia. You can sense very strong evil magic. Do you really want to enter?
+This is the castle of Queen Mellia. You sense a strong, and evil, magic all around. Do you really want to enter?
 
 ### SD2:570
-Here you can see lights slightly.
+Here you can see a modicum of light.
 
 ### SD2:571
-"I'm really admired brave warriors like you come here... You have defeated many, many monsters and our friends, including Dark Master twice..."
+"I really admire that brave warriors like you are able to come here... You have defeated many, many monsters and our friends, including the Dark Master, twice..."
 
 ### SD2:572
-"But it is really unhappy for you that you still have to beat me. I, Gaurson, am the General of the Queen Mellia's Army and the mightiest fighter in the world... I will send you to the hell soon. It is your end, Adventurers. Ha ha ha ha ha ha......"
+"But it is quite unfortunate that you will have to die in battle today. I, Gaurson, am the General of Queen Mellia's Army and the mightiest fighter in the world. I will send you to the pit. Come, Adventurers, look fate in the eye! Ha ha ha ha ha ha......"
 
 ### SD2:573
 "BEGONE!!!"
@@ -1203,19 +1203,19 @@ Here you can see lights slightly.
 You have defeated General Gaurson. On the opposite side of the bridge you can see a dark castle.
 
 ### SD2:575
-This is stream of poison. Those who fail DRVs. chemical will be affected by poison.
+This is a stream of poison. Those who fail DRVs. chemical will be affected by poison.
 
 ### SD2:576
 This lake is poisonous. You will be affected by poison if you fail DRVs. chemical.
 
 ### SD2:577
-You can't see what it has caused.
+You can't see what it did.
 
 ### SD2:578
-This lever is stoned and no use now.
+This lever has been turned to stone and is of no use now.
 
 ### SD2:579
-Something might have happened when you have pulled the lever, but you can't see it.
+Something might have happened when you pulled the lever, but you can't see it.
 
 ### SD2:580
 These stairs are one way.
@@ -1224,46 +1224,46 @@ These stairs are one way.
 Beyond the door it is Queen Mellia's room. Are you ready?
 
 ### SD2:582
-You bust into Queen Mellia's Room. The Queen has already been standing in the center of the room.
+You burst into Queen Mellia's Room. The Queen is standing in the center of the room, waiting for you.
 
 ### SD2:583
-"Welcome, brave adventurers." Queen Mellia greets you. "I didn't think you would do well to come here. I'm really surprised and pleased."
+"Welcome, brave adventurers." Queen Mellia greets you. "I didn't think you would make it this far. I'm really surprised and pleased."
 
 ### SD2:584
-"Yet, I'm Mellia. I'm the Queen of the World. Magic and power... everything I do is my justice. Whole the world should hail me. With my power and magic," Mellia continues, "I make the whole world follow me..."
+"Yet, I'm Mellia. I'm the Queen of the World. I have attained power beyond your reckoning. The whole world will bow before me. With my power and magic," Mellia continues, "I will make the whole world follow me..."
 
 ### SD2:585
-"And I'll destroy everything that disturbs me... LIKE YOU!!!"
+"And I'll destroy every obstacle, no matter how insignificant... LIKE YOU!!!"
 
 ### SD2:586
 "Ahhhhhhhhhhhh......" Queen Mellia disappears.
 
 ### SD2:587
-Congratulations! You have defeated Mellia, the source of evil things. You have succeeded to save the Realmz!
+Congratulations! You have defeated Mellia, the source of evil in this land.
 
 ### SD2:588
-And you found Mellia's crown on the floor.
+And find Mellia's crown on the floor.
 
 ### SD2:589
-Suddenly you hear a voice from somewhere. "Hurry up. This castle starts to collapse soon. Take Mellia's crown to the Ancient Temple in order to destroy the Dark World. Hurry up!"
+Suddenly you hear a voice from somewhere. "Hurry up! This castle will collapse soon. Take Mellia's crown to the Ancient Temple in order to destroy the Dark World. Hurry up!"
 
 ### SD2:590
-"Fools! Do you think you an escape from me? Ha ha ha ha ha ha... Die!" As you try to flee from the battle, Mellia casts a death spell and you die.
+"Fools! Do you think you can escape from me? Ha ha ha ha ha ha... Die!" As you try to flee from the battle, Mellia casts a death spell and you die.
 
 ### SD2:591
-Mellia's castle has collapsed and turned to just a chunk of bricks. "Hurry up, take the crown to the Ancient Temple" that voice continues.
+Mellia's castle has collapsed into a pile of rubble. "Hurry up, take the crown to the Ancient Temple!" the voice continues.
 
 ### SD2:592
 You can see lava under the Ancient Temple. What do you want to do?
 
 ### SD2:593
-You throw Mellia's crown into lava. It melts down, and disappears.
+You throw Mellia's crown into the lava. It melts down, and disappears.
 
 ### SD2:594
-Soon after that, you hear big explosion sound. The Dark World is breaking down!!
+Soon after that, you hear a big explosion. The Dark World is breaking down!!
 
 ### SD2:595
-You dive into melting lava. You will melt in the lava for sure.
+You dive into the lava and instantly evaporate!
 
 ### SD2:596
 The Dark World is collapsing. It is too dangerous to take the stairs up. You must go back.
@@ -1272,88 +1272,88 @@ The Dark World is collapsing. It is too dangerous to take the stairs up. You mus
 There is a portal. What do you want to do?
 
 ### SD2:598
-After you have broken the portal, you understand you can't come back to Realmz and it is too late.
+After you break the portal, you realize that you will never be able to return to the Realmz.
 
 ### SD2:599
-You are surrounded by strange magical force. You lose your consciousness for a while.
+You are surrounded by a strange magical force. You lose your consciousness for a while.
 
 ### SD2:600
-You wake up. Where is this? Forest? Where is the Ancient Temple?
+You wake up. Where is this? A forest? Where is the Ancient Temple?
 
 ### SD2:601
-Soon, a villager comes to you and talks to you. You ask. "Where is this?" The villager answers. "This was the forest of the Ancient Temple. But it broke down two days ago."
+Soon, a villager comes to you and talks. You ask. "Where is this?" The villager answers. "This was the forest of the Ancient Temple. But it collapsed two days ago."
 
 ### SD2:602
-You have understood you have come back to the Realmz, and the Dark World has disappeared. You set out the forest to report it to the King.
+You understand that you have come back to the Realmz, and the Dark World has disappeared. You set out to report to the King.
 
 ### SD2:603
-Ancient Temple has broken down.
+The Ancient Temple has collapsed.
 
 ### SD2:620
-"Hello adventurers, this is a tavern of the port. We are sorry we are closed until further notice."
+"Hello adventurers, this is the port tavern, but we're closed until further notice."
 
 ### SD2:621
-"Hello adventurers, this is a tavern of the port. Due to the pirates we have been closed, but thanks to you, we are now open again. Thank you so much."
+"Hello adventurers, this is the port tavern. Due to pirate attacks, we were closed, but thanks to you, we are now open again. Thank you so much."
 
 ### SD2:630
-As you search around this tomb, you found a trap door. Do you want to take it?
+As you search around this tomb, you find a trap door. Do you want to go down?
 
 ### SD2:631
-A light comes from the surface, but you can't fin any way to come back to the surface.
+Light comes from the surface, but you can't find any way to get there.
 
 ### SD2:632
-You have got down underneath the tomb. It is very stinky with odor from the corpses.
+You are now underneath the tomb. It is stinks with the odor of decomposing corpses.
 
 ### SD2:633
-Here you can hear some voices of monsters, but can't see any figures.
+You hear growls and grunts, but can't see anything.
 
 ### SD2:634
-As you might have thought, there are LOTS of mummies here. They notice you and attack!
+As you might have expected, there are LOTS of mummies here. They notice you and attack!
 
 ### SD2:635
 There is a large hole on the ground. Do you want to investigate?
 
 ### SD2:636
-Inside the hole, you found a shining armor.
+Inside the hole, you find shining armor.
 
 ### SD2:637
-Then, you sense something strange on the back. Next moment, four large undead creatures attack you from behind!
+Then, you sense something behind you. In the next moment, four large undead creatures attack you from behind!
 
 ### SD2:638
-You have defeated those Reaper Knights. What a nasty surprise.
+You have defeated the reaper knights. What a nasty surprise!
 
 ### SD2:639
-You found a ladder behind the cliff. Do you want to take the ladder up?
+You find a ladder behind the cliff. Do you want to take the ladder up?
 
 ### SD2:640
 Taking the ladder, you have come back to the surface.
 
 ### SD2:650
-"Oh, our mighty heroes come back!" "Hail the heroes!" Citizens of Port Hyrtin welcomes you with a big parade.
+"Oh, our mighty heroes come back!" "Hail the heroes!" Citizens of Port Hyrtin welcome you with a big parade.
 
 ### SD2:651
-"The king welcomes you, too. "Thank you for destroying all the evil. Now this city, and whole this kingdom has recovered its peace and harmony. I can't thank you enough..."
+The king welcomes you, too. "Thank you for destroying all the evil that threatened us. Now this city, and the whole kingdom has recovered its peace and harmony. I can't thank you enough..."
 
 ### SD2:652
-"I really hope you stay here. If you do so, I will let one of you live in the castle and take my throne... you to the King and Emma to the Queen... and the rest will be the Generals of our Army... Is it fine?"
+"I really hope you stay here. If you do so, I will let one of you live in the castle and take my throne... you will be King and Emma your Queen... and the rest will be the Generals of our Army... How does it sound?"
 
 ### SD2:653
-You answer. "Thank you for your offering, but we have to go somewhere else. Port Hyrtin regained its peace, but the evil is still existing in other places. As adventurers, we have to terminate those evil things there."
+You answer. "Thank you for your offer, but we can't stay. Port Hyrtin has regained its peace, but evil still exists in the Realmz. We will not rest until all those evil things have been destroyed."
 
 ### SD2:654
-"And we are adventurers simply because we love adventure. We love to travel across the field, the forest, and the cavern, rather than to live in a castle. We love to travel around the villages, towns, and cities all through the Realmz."
+"And besides, we are adventurers. A life not on the road is no life at all. We prefer the field, the forest, and the cavern to the confines of a castle."
 
 ### SD2:655
-"Okay, probably that's your way." King said. "Oh, please let me give you a reward then. What do you want?"
+"Alright, alright. I'm sure the people of Port Hyrtin will be disappointed, but I understand," the king says. "Please let me give you some kind of a reward then. What do you want?"
 
 ### SD2:656
 "Fine. Here you are."
 
 ### SD2:660
-The river leads inside the cave. Do you want to enter?
+The river leads inside a cave. Do you want to enter?
 
 ### SD2:661
-You walk along the river and enter the cave. From where this water is coming?
+You walk along the river and enter the cave. Where is this water coming from?
 
 ### SD2:662
 There is an underground lake. This lake seems to be the source of the water.
@@ -1362,37 +1362,37 @@ There is an underground lake. This lake seems to be the source of the water.
 What do you want to do on the lakeshore?
 
 ### SD2:664
-Take a rest
+Take a rest.
 
 ### SD2:665
-Drink the water
+Drink the water.
 
 ### SD2:666
-As you drink the water, you are healed a little bit.
+As you drink the water, you feel your wounds healing.
 
 ### SD2:667
 Do you want to drink more water?
 
 ### SD2:668
-You take too much water at one time. You have slight diarrhea.
+You drink too much water at one time. You feel nauseous.
 
 ### SD2:669
-You can see the forest of mushrooms here, and some are moving towards you!
+There is a forest of mushrooms here, and some are moving towards you!
 
 ### SD2:670
-Here is the kingdom of mushrooms. They regard you as the invaders and attack you!
+This is the kingdom of mushrooms. They regard you as invaders and attack!
 
 ### SD2:671
-At the end of this long tunnel, Grackles have been waiting for you with Green Dragons. They attack you as they notice you.
+At the end of this long tunnel, Grackle is waiting for you with green dragons. They attack immediately.
 
 ### SD2:672
-You have defeated Grackles, as well as all the Green Dragons they summoned. Where is the Great Wizard kept anyway?
+You have defeated Grackle, as well as all the green dragons they summoned. Where is the Great Wizard kept anyway?
 
 ### SD2:673
-Here you can see a little bit dim light.
+There is a dim light here.
 
 ### SD2:674
-In the center of this small open area, You found a wounded wizard.
+In the center of this small open area, you find a wounded wizard.
 
 ### SD2:675
 This wizard is seriously wounded. What do you want to do?
@@ -1401,103 +1401,103 @@ This wizard is seriously wounded. What do you want to do?
 The wizard's wound is too large. Your healing is not enough.
 
 ### SD2:677
-With your generous healing, the wizard regained his consciousness. "Thank you, good adventurers. I got wounded in battles against Grackles and kept here."
+With your generous healing, the wizard has regained consciousness. "Thank you, good adventurers. I was wounded in battle against Grackle. They captured me and kept me here."
 
 ### SD2:678
-"Ancient Temple? Are you serious? It is sealed lest Dark Masters appears in the Realmz. Why do you want to go there?"
+"Ancient Temple? Are you serious? It is sealed lest the Dark Master appear in the Realmz. Why do you want to go there?"
 
 ### SD2:679
-You explain what has happened on Princess Emma of Kingdom of Hyrtin. "I see. Now I shall help you." The wizard joins you.
+You explain what has happened to Princess Emma of Port Hyrtin. "I see. I shall help you." The wizard joins you.
 
 ### SD2:680
-The gate of Ancient Temple is shut with strong curse.
+The gate of the Ancient Temple is shut with a strong curse.
 
 ### SD2:681
-At the gate of the Ancient Temple, the wizard chanted the spell. You can't understand what he is speaking.
+At the gate of the Ancient Temple, the wizard chants a spell. You can't understand what he is saying.
 
 ### SD2:682
-The next moment, the wall having surrounded the temple disappears with big sound of collapse! Now you can approach to the temple.
+In the next moment, the wall surrounding the temple collapses! Now you can approach.
 
 ### SD2:683
-"Now I have done. Thank you for saving me. Good luck." The wizard saw you out.
+"I have done what I can. Thank you for saving me, and good luck!" The wizard bids you farewell.
 
 ### SD2:684
-"They say Green Dragons are living with an evil enchanter just upstream of the river. It is so scary, isn't it?"
+"They say green dragons are living with an evil enchanter just upstream from here. Scary, isn't it?"
 
 ### SD2:685
 "Yes, I know the story of a battle between a great wizard and an evil enchanter. Well... the enchanter's name was Grackle, I think."
 
 ### SD2:686
-Trap! A pit appeared and you fell down to the lava pool. You died.
+Trap! The ground beneath you disappears and you fall into a pool of lava.
 
 ### SD2:690
-You wake up at the suite room of the North Coast Inn. Late in yesterday you arrived at Port Hyrtin, and took a room at this Inn. As you have heard, Port Hyrtin appears to be a quite peaceful city. What's happening here?
+You wake up in the suite room of the North Coast Inn. You arrived at Port Hyrtin late in the evening last night, and took a room at this inn. At first glance, Port Hyrtin appears to be a peaceful city, but something doesn't seem quite right.
 
 ### SD2:691
-Welcome to the City of Port Hyrtin. You can look around the city and surrounding area for free, but you have resister when you go farther South and complete the scenario.
+(Registration check.)
 
 ### SD2:692
-Please read City of Port Hyrtin Info for further information. Thank you.
+(Registration check.)
 
 ### SD2:693
-"Hi, adventurers. Take special care when you are out of the city." The guard greets you.
+"Hi, adventurers. Take special care when you venture outside of the city." The guard greets you.
 
 ### SD2:694
 This is graveyard.
 
 ### SD2:695
-A couple is making love in this room. Seems you must leave.
+This room is occupied. You apologize and leave.
 
 ### SD2:696
 This is your room.
 
 ### SD2:698
-This road is planned to connect the Easternmost frontier village of Easmore and the city of Port Hyrtin. It is under construction.
+This road will connect the Easternmost frontier village of Easmore and the city of Port Hyrtin. It is under construction.
 
 ### SD2:699
-Like that you have saved the city of Port Hyrtin, and will set out for another adventure. Mellia was a very tough enemy, but you have made it...
+And so you have saved the city of Port Hyrtin. Mellia was a very tough enemy, but you did it. What adventures await you next?
 
 ### SD2:700
-Thank you for saving Port Hyrtin and the Realmz. Thank you for playing City of Port Hyrtin scenario and registering it. See you later. - Ryota Yashima, the author.
+Thank you for saving Port Hyrtin and the Realmz and thank you for playing the City of Port Hyrtin scenario. See you later. - Ryota Yashima, the author.
 
 ### SD2:701
-You noticed a girl is attacked by several thieves. Do you want to charge them and save her?
+You notice a girl being attacked by a group of thieves. Do you want to charge them and save her?
 
 ### SD2:702
-The girl was not so good at fighting. She was killed by the thieves. After that, thieves took all of her money and equipment. Thieves have gone, and only the girl's dead body was there.
+The girl puts up a fight, but she is no match for the thieves. They quickly kill her and take her money.
 
 ### SD2:703
-You rushed the thieves as brave adventurers, in order to save a girl.
+You rush the thieves in order to save the girl.
 
 ### SD2:704
-You are successful in saving a girl. "Thank you, good adventurers. I'm Carla. While I was practicing my magic, they surrounded me and started to attack me without any notice. Thank you so much."
+You are successful in saving the girl. "Thank you, strangers! My name is Carla. While I was focusing on practicing my magic, they surrounded me! If you hadn't shown up... Thank you so much."
 
 ### SD2:705
-As you told the man his daughter's death, he said nothing to you and shut the door. Seems he does not want to see you anymore.
+After you tell the man about his daughter's death, he says nothing to you and shuts the door.
 
 ### SD2:706
-You found some strange shining creatures. Do you want to rush them?
+You find some strange shining creatures. Do you want to rush them?
 
 ### SD2:707
-You have picked fight against a dozen of Mithril Slimes.
+You have picked a fight against a dozen mithril slimes.
 
 ### SD2:708
-After the battle, you have found some magical scrolls.
+After the battle, you find some magical scrolls.
 
 ### SD2:709
-A Gold Dragon is fighting against evil dragons. Do you want to help the good dragon?
+A gold dragon is fighting against evil dragons. Do you want to help the good dragon?
 
 ### SD2:710
-You have chosen to help the Gold Dragon to defeat a dozen of Emerald Dragons.
+You have chosen to help the gold dragon to defeat a dozen emerald dragons.
 
 ### SD2:711
-After the battle, the gold Dragon was severely wounded. "Thank you, good adventurers. I'm Latlis and was an enchanter, but changed my shape to defeat those evil dragons. Now I'm done..." It was her last word.
+The gold dragon was severely wounded during the battle. "Thank you, good adventurers. I'm Latlis and I was an enchanter, but changed my shape to defeat those evil dragons. But now I'm done for..." She closes her eyes for the last time.
 
 ### SD2:712
-As you search around the corpse of Latlis, you found some nice stuff.
+Latlis was carrying some things which may come in handy.
 
 ### SD2:713
-You found some huge snakes over there. Do you want to attack them?
+There are some huge snakes over there. Do you want to attack them?
 
 ### SD2:714
 I hope you know what you are doing!
@@ -1506,79 +1506,79 @@ I hope you know what you are doing!
 After the battle, you can see nothing but corpses of snakes.
 
 ### SD2:716
-You noticed Port Hyrtin Army is fighting against armored giants. Do you want to join them and beat those giants?
+You notice the Port Hyrtin Army is fighting against armored giants. Do you want to join them and beat those giants?
 
 ### SD2:717
-You joined the troop of Port Hyrtin Army in the combat against Stygian Trolls.
+You join the soldiers of the Port Hyrtin Army in a fight against stygian trolls.
 
 ### SD2:718
-The Army is wounded after the battle. "Thank you, brave adventurers. Thanks to you, we won again! Port Hyrtin never falls to anybody!!"
+Many soldiers are wounded after the battle, but it was a victory. "Thank you, brave adventurers. Thanks to you, we won again! Port Hyrtin will never fall!!"
 
 ### SD2:719
-You felt some sense of strong curse. The next moment, Phantom Knights started their movement against you without any notice!
+You suddenly have a feeling of dread. In the next moment, phantom knights charge you without any notice!
 
 ### SD2:720
-Phantom Knights have been disappeared. What a surprise.
+The phantom knights have been disappeared. What a surprise.
 
 ### SD2:721
-As you search around in the forest you found a fine crossbow with gold stash.
+As you search around the forest you find a fine crossbow and a stash of gold.
 
 ### SD2:722
-"Watch out when you walk in the forest," the owner of this house told you, "There are lots of monsters that use arrows and bows in the forest."
+"Watch out when you walk through the forest," the owner of this house tells you, "If you're not careful, you might get hit by an arrow."
 
 ### SD2:723
-"I heard good elven archer was killed by a bunch of dark elves in the forest once upon a time, but..."
+"I heard a good elven archer was killed by a bunch of dark elves in the forest once upon a time, but..."
 
 ### SD2:724
-"He had a great crossbow, and his spirit is still alive in the crossbow." The owner saw you out.
+"He had a great crossbow, and his spirit is still alive in the crossbow." The owner sees you out.
 
 ### SD2:725
-You found a troop of Port Hyrtin Armies are fighting against Dark Elves. Do you want to help them?
+You find a battalion of the Port Hyrtin Army is fighting against dark elves. Do you want to help them?
 
 ### SD2:726
-You have joined the battle over Dark Elven Master and his troops.
+You have joined the battle against the dark elven master and his troops.
 
 ### SD2:727
-"Thank you, good adventurers. Those guys are future fear, so that we decided to defeat them. See you later." The troop of Port Hyrtin Army thanked you and left.
+"Thank you, good adventurers. Those dark elves posed a threat to the city." The troop of Port Hyrtin Army thanks you and departs.
 
 ### SD2:728
-You found a trap door in the forest. Do you want to get down to the underground via the trap door?
+You find a trap door in the forest. Do you want to go down?
 
 ### SD2:729
-Do you want to get down to the underground via the trap door?
+Do you want to go underground via the trap door?
 
 ### SD2:730
-Do you want to come back to the surface?
+Do you want to go back to the surface?
 
 ### SD2:731
-This is old campfire. Who else on earth did come to such a cave?
+This is an old campfire. Who else was wandering around this cave?
 
 ### SD2:732
 Alas, this corpse is severely burnt.
 
 ### SD2:733
-You feel it is rather hot. There must be the source of heat near here.
+It's getting rather hot. There must be a source of heat near here.
 
 ### SD2:734
-Five Dragons are living in this small cavern. As the dragons notice you, they cast their breath on you!
+Five dragons are living in this small cavern. They blow fire in your direction!
 
 ### SD2:735
-And started to move!!
+And move to attack!!
 
 ### SD2:736
-You have defeated all the dragons living here. All you can see is dragons' corpses. You have avenged those adventurers burnt.
+You have defeated all the dragons living here. All you can see is dragons' corpses. You have avenged those burnt adventurers.
 
 ### SD2:737
-Inside the secret cave, you found some treasures!
+Inside the secret cave, you find treasure!
 
 ### SD2:738
-Along with potions and money, you found a magnificent fiery sword!!
+Along with potions and money, you find a magnificent fiery sword!!
 
 ### DES:1
 Though they are not difficult to kill, take care.  Their bite is deadly.
 
 ### DES:2
-Large, slow, stupid.  Put it all together, and you have a four- footed eating machine with sharp teeth.
+Large, slow, stupid.  Put it all together, and you have a four-footed eating machine with sharp teeth.
 
 ### DES:3
 Large and heavily armored with a bony back plate and horns.  Only a fool would back one of these things into a corner.
@@ -1602,19 +1602,19 @@ Belonging to the arachnid family, these large critters pack a paralyzing sting.
 Despite its stamina, this reptile is the most deadly among its kind.
 
 ### DES:10
-Fire Lizard. This mighty reptile looks nothing but an ordinary lizard. Apperance can be deceiving.
+Fire Lizard. This mighty reptile looks like nothing but an ordinary lizard. Appearances can be deceiving.
 
 ### DES:11
-Watch out for this kind of reptiles! Both its bite and craw has deadly poison.
+Watch out for this kind of reptile! Both its bite and claw has deadly poison.
 
 ### DES:12
 Created from nonliving parts and given life through arcane magic. They will serve their creator until destroyed.
 
 ### DES:13
-Golem created from woman's corpse. Wizards made her use magic and weapon to complement her physical weakness compared to male Golems.
+Golems created from female corpses. Their creators gave them the power to use magic and weapons to make up for their physical weakness.
 
 ### DES:14
-These creatures' dirty lookings are not just messy. They inflict virus with damages.
+These creatures' are not only filthy looking, they infect their enemies with each blow.
 
 ### DES:15
 Giant version of the troll. Bigger might be better even in troll society.
@@ -1623,7 +1623,7 @@ Giant version of the troll. Bigger might be better even in troll society.
 King of the troll clan. His extraordinary physical strength gave him the throne in the troll society.
 
 ### DES:17
-Not a true dragon.  Named after there ilk for it is the only beast known that can rival them in brute strength.
+Not a true dragon.  Named after their ilk for it is the only beast known that can rival them in brute strength.
 
 ### DES:18
 Often used to guard magical treasure or some important location. Watch out for its sting, for it can turn you to stone.
@@ -1632,7 +1632,7 @@ Often used to guard magical treasure or some important location. Watch out for i
 Half man, half fish. All bad temper.
 
 ### DES:21
-Avoid this insect as well as possible. She not only paralyze, but charm what she touches with her sting.
+Avoid this insect as much as possible. She not only paralyzes her victims, but also charms whatever she touches with her stinger.
 
 ### DES:22
 A paralyzing sting makes this large insect quite deadly.
@@ -1647,7 +1647,7 @@ A strange cross between a hyena and a tiger.  Nobody knows if it was spawned fro
 Big Bear.
 
 ### DES:26
-Sickly in appearance, these foul creatures blend into their  surroundings and pounce on the unsuspecting.
+Sickly in appearance, these foul creatures blend into their surroundings and pounce on the unsuspecting.
 
 ### DES:27
 A truly fearsome arachnid.  Avoid contact with this eight legged monstrosity, if at all possible.
@@ -1668,13 +1668,13 @@ Though they look fierce, they are not as deadly as one might think.
 Be careful not to fall victim to a bite from one of these.  Their bite has been known to cause paralysis.
 
 ### DES:33
-With huge body, poisonous bite, and frost and acid breath, it threats the peace of the ocean.
+With a huge body, poisonous bite, cold and acidic breath, it threatens the peace of the ocean.
 
 ### DES:35
 Larger Mush-Man.
 
 ### DES:37
-Golems made from the iron chunk. They are really powerful, but slow.
+Golems made from chunks of iron. They are really powerful, but slow.
 
 ### DES:38
 Strongest of the evil dragons.  Few  have met with one AND LIVED!
@@ -1710,7 +1710,7 @@ Snakes with extraordinary quickness and deadly poison.
 A hardy warrior trained for combat among the trees.
 
 ### DES:50
-A true leader of men.  Trusted with  keeping the troops in line.
+A true leader of men.  Trusted with keeping the troops in line.
 
 ### DES:51
 Evil knight in the dark world.
@@ -1719,22 +1719,22 @@ Evil knight in the dark world.
 Standing 8 feet tall or more, these large brutes love to bully those weaker than themselves. They are often employed as troops in mercenary armies.
 
 ### DES:53
-Though they are physically weaker than ordinary ogre, they can be mightier, for they can cast low-level sorcerer spells and have better magic resistance.
+Though they are physically weaker than ordinary ogres, they can be mightier, for they can cast low-level sorcerer spells and have better magic resistance.
 
 ### DES:54
-A mighty Dabbler and Rachel's boyfriend. He has long been stoned.
+A mighty Dabbler and Rachel's boyfriend. He had gone missing after traveling to the Valley of Death.
 
 ### DES:55
 A mighty, wise, and beautiful Battle Mage.
 
 ### DES:58
-Mellia, the Queen of the darkness. She herself has been the source of every evil creatures, including Dark Masters.
+Mellia, the Queen of the darkness. She herself is the source of all of the evil creatures in the land, including the Dark Master.
 
 ### DES:59
 Though not native to the Abyss, they populate large regions of that foul area.
 
 ### DES:60
-Undead version of Hell Bat. Watch out for their draining experience and frost spell.
+Undead version of a Hell Bat. They drain the memories and experience of their victims. They also are capable of casting a frost spell.
 
 ### DES:61
 Large, quick, and ferocious animals.
@@ -1755,10 +1755,10 @@ A powerful creature of the undead.  These creatures drain your life force.
 The most powerful creature of its kind. Rumor says it was made from the corpse of the lord.
 
 ### DES:67
-Extremely magical creature. It sparks its gigantic magical power all the time.
+Extremely magical creature.
 
 ### DES:68
-Foul creature indeed. Its confusing  gaze scares you for sure, as well as its paralyzing bite.
+A foul creature indeed. Its otherworldly gaze and paralyzing bite strike fear into its victims.
 
 ### DES:69
 Queen Mellia's true figure.
@@ -1770,13 +1770,13 @@ Queen Mellia's soul.
 Gaurson, mighty General of Mellia's Army.
 
 ### DES:72
-Huge Poison Slime.
+Huge poisonous slime.
 
 ### DES:73
 Though it looks weak, watch out for this kind of creatures. It has deadly poison.
 
 ### DES:74
-A strange race indeed. Not even the oldest of elven sages know of the oragins of this foul race. Some speculate they are not of this world.
+A strange race indeed. Not even the oldest of elven sages know of the origins of this foul race. Some speculate they are not of this world.
 
 ### DES:75
 Completely mindless.  They are used as shock troops and as food by other demons.
@@ -1791,10 +1791,10 @@ A creature of the undead.  Their bite can produce paralysis.
 Resembling ghouls, these vile creatures often live among them.  They are much more powerful than ghouls.
 
 ### DES:79
-In life, a formerly valiant warrior. In death, he is now a cursed pawn of evil.
+In life, a valiant warrior. In death, he is now a cursed pawn of evil.
 
 ### DES:82
-Quick and invisible, this undead creatures love to terrorize human.
+Quick and invisible, these undead creatures love to terrorize humans.
 
 ### DES:83
 This ugly creature from the abyss turns anything to stone with her gaze. Don't look at her eyes when she gazes you.
@@ -1806,7 +1806,7 @@ Slightly larger and more powerful than goblins, these close cousins to true gobl
 Large and fierce warriors of above average skill.
 
 ### DES:86
-Best of hob goblins, in terms of physical strength and art in combat.
+Best of the hob goblins, in terms of physical strength and art in combat.
 
 ### DES:87
 A hob goblin skilled in the use of a bow.
@@ -1815,7 +1815,7 @@ A hob goblin skilled in the use of a bow.
 Capable of casting clerical spells. This humanoid should be feared.
 
 ### DES:89
-High priest in the society of hob goblin. Avoid this kind of humanoid if you can.
+High priest in the society of hob goblins. Avoid this kind of humanoid if you can.
 
 ### DES:91
 A common orc who claims to have some skill with weapons.
@@ -1830,7 +1830,7 @@ A warrior of great skill and strength.
 The priest of a tribe of orcs.
 
 ### DES:95
-A brave but somewhat unskilled troop.
+A brave but somewhat unskilled trooper.
 
 ### DES:96
 A conscript with little to look forward to in the civilian world.  For this reason they often reenlist to become corporals.
@@ -1848,13 +1848,13 @@ Skilled in the ways of combat and leadership.  An up and coming officer.
 The mightiest warrior of Port Hyrtin. He is really respected.
 
 ### DES:101
-Quick, but not deadly. They move by a large pack and surprise in the forest all the time.
+Quick, but not deadly. They move in large packs and engage in surprise attacks in the forest.
 
 ### DES:102
-King of Kobold clan in the forest. He has much stamina.
+The king of the kobold clan in the forest.
 
 ### DES:103
-Abused as a youngster.  These ill- tempered men are common thugs for hire.
+Abused as a youngster.  These ill-tempered men are common thugs for hire.
 
 ### DES:104
 Pickpocket, cutpurse, burglar.  By any name, a thief is a thief.
@@ -1872,16 +1872,16 @@ Guardian Giant of Top of the World Castle. Watch out for its flame breath.
 Guardian Giant of Top of the World Castle. It gives very large damage even in a single blow if it hits.
 
 ### DES:109
-Queen of Top of the World Castle.
+The Queen of the Castle at the Top of the World.
 
 ### DES:110
-Queen of Top of the World Castle.
+The Queen of the Castle at the Top of the World.
 
 ### DES:111
-Those merchants go back and forth between Lowdin and Salina pulling their wagons.
+These merchants go back and forth between Lowdin and Salina pulling their wagons.
 
 ### DES:112
-Dark Warlock living in the Death Valley. Don't pick spell combat against him.
+Dark Warlock living in the Valley of Death. Don't try to defeat him with spells.
 
 ### DES:113
 Purely evil dog. It is said its breath burns every creatures standing in front of it.
@@ -1899,16 +1899,16 @@ Little is known about the greckle for they are solitary creatures that dabble in
 Great Wizard.
 
 ### DES:119
-A beautiful girl with some talent in using magics.
+A beautiful girl with some talent in using magic.
 
 ### DES:120
-Adept as a thief and as an assassin. Watch out for those nasty guys.
+Adept as a thief and as an assassin. Watch out for these nasty guys.
 
 ### DES:121
 Armored by Mithril coating, this kind of slime has extraordinary quickness and defensive ability.
 
 ### DES:122
-An enchanter who morphes a gold dragon in order to defeat evil dragons.
+An enchanter who morphed into a gold dragon in order to defeat evil dragons.
 
 ### DES:123
 Born of pure evil. These beautiful, deadly creatures love to inhabit murky forests.
@@ -1944,22 +1944,22 @@ The black sheep of the Abyss.  Half demon, half devil.  They are often shunned b
 A mutated mushman, fungoids are extremely rare..... and deadly.
 
 ### DES:197
-Hailing from the frozen planes of the Abyss, these malevelent creatures are immune to cold based spells.  They also have a nasty bite.
+Hailing from the frozen planes of the Abyss, these malevolent creatures are immune to cold based spells.  They also have a nasty bite.
 
 ### DES:198
-These beasts are no more than slaves to the evil eys.  They serve as hands for those that have none.  They are imensly strong.
+These beasts are no more than slaves to the evil eys.  They serve as hands for those that have none.  They are immensely strong.
 
 ### DES:199
 Weak in mind and body, these demons are lightning quick.  They are cowards in battle and will surrender or run easily.
 
 ### DES:200
-Incredibly strong, these demons rule over whole races of lesser ilk.  They prefer to pummle their enemies with bare hands and magic.
+Incredibly strong, these demons rule over whole races of lesser ilk.  They prefer to pummel their enemies with bare hands and magic.
 
 ### DES:201
 Existing on both the material plane and the astral plane simultaneously.  They can inflict massive chemical damage.
 
 ### DES:202
-Nomally happy to stand around and chew cud.  These creatures can be dangerous if they stampede.
+Normally happy to stand around and chew cud.  These creatures can be dangerous if they stampede.
 
 ### DES:211
 These vermin carry a deadly disease.  They breed so rapidly there are always plenty to take the place of those that perish.

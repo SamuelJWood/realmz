@@ -12,13 +12,13 @@ Do Not Use
 Nothing seems to happen.
 
 ### SD2:2
-"What a miserable little town" you think to yourself, as you step out of the tavern.  This is clearly not a place of high adventure.  What ever impelled you to make the journey into the mountains?
+"What a miserable little town," you think to yourself, as you step out of the tavern.  This is clearly not a place of high adventure.  What ever impelled you to make the journey into the mountains?
 
 ### SD2:3
 A boisterous group of men brush by you as they leave the tavern.  You could just about die of boredom.  There must be somewhere interesting you can go from here ...
 
 ### SD2:4
-As you wander through the miserable little village, you suddenly notice that the Ring of Araman, the only profits from your last adventure, is missing!  Your eyes fall suspiciously on everyone around you.  They all look pathetically average and innocent.
+As you wander through the miserable little village, you suddenly notice that the Ring of Araman, the only profit from your last adventure, is missing!  Your eyes fall suspiciously on everyone around you.  They all look pathetically average and innocent.
 
 ### SD2:5
 Wonderful, you think.  Now you're stuck in this little rathole until you can get your ring back!
@@ -30,7 +30,7 @@ You copy down a map of the 'town' from a worn and beaten sign.
 You come to a smithy.  Stepping inside, you find only the most meager selection of weapons and armor.  Not much use for them here, you suppose.
 
 ### SD2:8
-You come to the town tavern.  The layer of dust on the tables inside indicate that this isn't exactly a noisy place.  The barkeep eyes you suspiciously as he polishes a glass with a dirty rag.  "Can I get you anything?"
+You come to the town tavern.  The layer of dust on the tables inside indicates that this isn't exactly a bustling place.  The barkeep eyes you suspiciously as he polishes a glass with a dirty rag.  "Can I get you anything?"
 
 ### SD2:9
 You come to the east gate of town, and find it unmanned, yet heavily locked.  A lonely, empty watch tower peers over the wall, but it looks so near to collapse, you wouldn't dare risk entering it.  So much for this way out of town.
@@ -51,10 +51,10 @@ You slip the barkeep a piece of gold.  He pockets it.  "Thanks, I'm glad you lik
 He shrugs at you.  "Don't know nothin' about no rings.  Talk to the major if you're worried it got stolen."
 
 ### SD2:15
-The barkeep nods at you.  "Haven't had a traveller from or through that gate in many a year.  The major closed it off when too many unsavory characters started coming through.  Used to keep a watch on it too.  Could never figure out why.
+The barkeep nods at you.  "Haven't had a traveler from or through that gate in many a year.  The major closed it off when too many unsavory characters started coming through.  Used to keep a watch on it too.  Could never figure out why."
 
 ### SD2:16
-He stopped soon enough, once almost all his soldiers got requisitioned away from him.  Couldn't police, watch and fill out all his damned forms with what he had left.  No big loss, I say."
+He stopped soon enough, once almost all his soldiers got requisitioned away from him.  Couldn't police, watch, and fill out all his damned forms with what he had left.  No big loss, I say."
 
 ### SD2:17
 You come to the pass back down to the grasslands ... well ... there must be somewhere around here you can find adventure ... and there is the matter of your missing ring ...
@@ -63,13 +63,13 @@ You come to the pass back down to the grasslands ... well ... there must be some
 You reach the southern limits of the village.  Maybe it wouldn't be such a good idea to wander out into the wilderness with no clues as to where your ring might be.  It's certainly not out there.
 
 ### SD2:19
-You come to the barracks of the royal army.  It's in a state of sorry disrepair.  You knock on the door.  An old officer with greying hair answers.  "Major Halen at your service.  What's the problem citizens?"  He falls into a fit of coughing.
+You come to the barracks of the royal army.  It's in a state of sorry disrepair.  You knock on the door.  An old officer with graying hair answers.  "Major Halen at your service.  What's the problem citizens?"  He falls into a fit of coughing.
 
 ### SD2:20
 He shakes his head. "I'm sorry, I haven't heard anything about it.  I'm sure it wasn't our citizens.  I'll let you know if someone turns it in."  You nod doubtfully.
 
 ### SD2:21
-"There's trouble at the east gate? What?!"  You explain there's no trouble, you were just asking.  He looks noticably relieved.  "Oh.  I used to have men to keep on the gate, for defense, but they're all gone now ... everyone's gone now." He turns away.
+"There's trouble at the east gate? What?!"  You explain there's no trouble, you were just asking.  He looks noticeably relieved.  "Oh.  I used to have men to keep on the gate, for defense, but they're all gone now ... everyone's gone now." He turns away.
 
 ### SD2:22
 "Eh? What?  I can't hear you!"
@@ -132,7 +132,7 @@ You poke around some rotted sacks.  Suddenly, from behind you comes a great nois
  ... Only to see a pair of birds chasing each other around the rafters.  You curse and sheath your blades.
 
 ### SD2:42
-As you pass an abandoned mill, you notice a crack of light eminating from an upper story window.
+As you pass an abandoned mill, you notice a crack of light emanating from an upper story window.
 
 ### SD2:44
 You knock at the door again, but get no answer.  It seems you really offended the mill owner.
@@ -159,10 +159,10 @@ He looks confused. "What?  Sorry, I don't know anything about your ring.  I'd be
 He nods. "Good day."
 
 ### SD2:52
-You knock loudly on the door, but recieve no answer.
+You knock loudly on the door, but receive no answer.
 
 ### SD2:53
-You approach a wide swath of well-tilled fields.  You see some workers in the fields, as well as an occasional patrol of mounted soliders.  In the distance, past the fields, you spy sturdy walls, and the peak of an occasional building.
+You approach a wide swath of well-tilled fields.  You see some workers in the fields, as well as an occasional patrol of mounted soldiers.  In the distance, past the fields, you spy sturdy walls, and the peak of an occasional building.
 
 ### SD2:54
 A mounted patrol spots your war-like appearance and rides over to you.
@@ -273,7 +273,7 @@ You find a trap!
 You don't notice anything special.
 
 ### SD2:90
-You successfuly disarmed the trap.
+You successfully disarmed the trap.
 
 ### SD2:91
 While fiddling with the chest, a small needle pops out and strikes you in the hand.  It burns like acid!
@@ -282,7 +282,7 @@ While fiddling with the chest, a small needle pops out and strikes you in the ha
 You notice no effect.
 
 ### SD2:93
-You come to a graveyard in a large clearing in the forest.  At the center stands a grim monument to the local diety of death and decay.  Altogether a gloomy place.
+You come to a graveyard in a large clearing in the forest.  At the center stands a grim monument to the local deity of death and decay.  Altogether a gloomy place.
 
 ### SD2:94
 You come to a graveyard in a large clearing in the forest.  The grim monument to the god of death and decay seems to glow with an eerie light.  Do you want to approach?
@@ -330,13 +330,13 @@ You see a man chasing a chicken around a small coop.
 Drying clothes hang from from the side of the house.
 
 ### SD2:109
-A woman busily repairs the thaching on her roof.
+A woman busily repairs the thatching on her roof.
 
 ### SD2:110
 An old couple sits on their porch, silent and staring.
 
 ### SD2:111
-Hidden behind a rock outcropping, you find a narrow tunnel.  A slightly moist breeze seems to eminate from it.
+Hidden behind a rock outcropping, you find a narrow tunnel.  A slightly moist breeze seems to emanate from it.
 
 ### SD2:112
 You notice peculiar scorch marks on the ground near the entrance to the tunnel.
@@ -363,7 +363,7 @@ Before you can even closely inspect your surroundings, a young, unarmed goblin r
 PUT STUFF HERE (XAP 27)
 
 ### SD2:120
-Travelling over the plains, you notice a small group of wagons being assaulted by bandits.  Do you ride to the wagon's help?
+Traveling over the plains, you notice a small group of wagons being assaulted by bandits.  Do you ride to the wagon's help?
 
 ### SD2:121
 You boldly enter the fray.
@@ -384,13 +384,13 @@ The little goblin nods and runs to the main building.  After a few minutes, a la
 The King begins to speak. "Welcome.  We have not have had visitors in many a year, not since the last ... invasion.  Normally we would not be so welcoming considering our past histories, but things have changed recently."
 
 ### SD2:127
-"A dark cloud has fallen on the mountains to the west.  All the scouts we sent to investigate this perpetual gloom have disappeard.  We fear a great evil has come to surface.  You adventurers are known for dealing with little problems like this."
+"A dark cloud has fallen on the mountains to the west.  All the scouts we sent to investigate this perpetual gloom have disappeared.  We fear a great evil has come to surface.  You adventurers are known for dealing with little problems like this."
 
 ### SD2:128
 "I would like to make a proposal.  Investigate this cloud, and if it is perilous, destroy it.  I think we can make proper payment."  He signals to his guards.  Two of them come up and draw their swords.  They both glow with magical power.
 
 ### SD2:129
-"Perform your task sucessfully, and these shall be yours."  He motions to his guards again, who sheath their swords.  "This discussion is complete.  Return if you are successful."
+"Perform your task successfully, and these shall be yours."  He motions to his guards again, who sheath their swords.  "This discussion is complete.  Return if you are successful."
 
 ### SD2:130
 You step into a large central structure.  The King motions for you to come closer.  He is surrounded by a small group of extremely large warriors.
@@ -411,7 +411,7 @@ You step closer for a better look, when suddenly a giant larva of some foul beas
 You notice a small group of bandits ahead of you.  Do you want to ambush them?
 
 ### SD2:136
-You enter a wide-open cavern, covered in lush green moss.  A dim phosphorecent glow hovers around everything.  You hear the sound of quietly running water nearby.
+You enter a wide-open cavern, covered in lush green moss.  A dim phosphorescent glow hovers around everything.  You hear the sound of quietly running water nearby.
 
 ### SD2:137
 You hack your way through the dense spiderwebs.
@@ -453,7 +453,7 @@ You clamber back out of the pit.
 You find yourself staring at a cave wall.  Must be a dead end.
 
 ### SD2:150
-The tunnel suddenly stops.  Signs show that it may have formerly travelled further, but a recent collapse has closed it off.
+The tunnel suddenly stops.  Signs show that it may have formerly traveled further, but a recent collapse has closed it off.
 
 ### SD2:151
 A skeletal hand sticks out from under a rock, a grim reminder of the dangers of cave exploring.
@@ -525,7 +525,7 @@ More demons issue forth from the gate!
 The water from this well smells putrid and rank.  You decide not to investigate any further.
 
 ### SD2:174
-This ramshackle old farmhouse has been thorougly looted.  All that is left are scraps of wood and cloth housing bird's nests.
+This ramshackle old farmhouse has been thoroughly looted.  All that is left are scraps of wood and cloth housing bird's nests.
 
 ### SD2:175
 You make your way back into the tavern, and angrily demand your ring from the bartender.  He shrugs at you.  "Sorry, hasn't turned up.  Talk to the major if you have a problem."  You leave, frustrated.
@@ -582,7 +582,7 @@ You barge into a storeroom, full of foodstuffs and other uninteresting items.
 The guard growls at you. "Hey, you can't go in there.  You think this is some open house?"
 
 ### SD2:193
-You peek into a weapon's storeroom, but before you get to exercize any larcenous impulses, a guard notices you.  "Don't be poking around, or you might end up in the dungeon, eh?" He looks like he would very much enjoy putting you there personally.
+You peek into a weapon's storeroom, but before you get to exercise any larcenous impulses, a guard notices you.  "Don't be poking around, or you might end up in the dungeon, eh?" He looks like he would very much enjoy putting you there personally.
 
 ### SD2:194
 The guard looks at you.  "You ain't guards.  You don't belong in the guardroom.  Scram."
@@ -606,7 +606,7 @@ Before you get a step into the passage a guard behind you lays a heavy hand on y
 You knock on the chamberlain's door.  An old man appears at the doorway.  "You're who the captain sent?  Well, I guess you'll do.  There have been a string of robberies and attacks in our province lately.  Normally this would be an army issue."
 
 ### SD2:201
-He continues, "However, there is evidence pointing to involvement of some member of the royal family.  You must keep things quiet."  He waits for your acknowledgement, then continues in a quieter tone of voice.
+He continues, "However, there is evidence pointing to involvement of some member of the royal family.  You must keep things quiet."  He waits for your acknowledgment, then continues in a quieter tone of voice.
 
 ### SD2:202
 "There is a ship coming in soon. We think that a package of stolen goods will be smuggled out on it. I want you to board this ship and search it. I don't know exactly when it will arrive, so I suggest you find a good hiding spot and watch from there."
@@ -624,7 +624,7 @@ You hurry over to the boat and quickly run up the gangplank and demand to search
 Having slain the sailors, you start to search around the boat.  While looking into one of the holds, you come across several rather dangerous-looking men arguing over some package.  They hear your entrance, and put aside their differences to stop you.
 
 ### SD2:207
-You take this opportunity to check the package before you return it to the chamberlain.  Inside it you find a small chest of gold coins, valueable necklaces, a magical dagger, and your ring!
+You take this opportunity to check the package before you return it to the chamberlain.  Inside it you find a small chest of gold coins, valuable necklaces, a magical dagger, and your ring!
 
 ### SD2:208
 Congratulations! You made it through this (very) short adventure.
@@ -774,7 +774,7 @@ The creature's favorite form of attack is to lower its armored head and charge. 
 These minor demons live their lives as servants to those more powerful than themselves.
 
 ### DES:64
-Large and fierce, this race of half bear, half man is feared thoughout the land.
+Large and fierce, this race of half bear, half man is feared throughout the land.
 
 ### DES:72
 Yellow mold.  Capable of inflicting a strong chemical burn.
@@ -885,10 +885,10 @@ Large and fierce warriors of above average skill.
 A hob goblin skilled in the use of a bow.
 
 ### DES:134
-These magical creatures escaped from a wizards lab and multiplied.
+These magical creatures escaped from a wizard's lab and multiplied.
 
 ### DES:135
-These magical creatures escaped from a wizards lab and multiplied.
+These magical creatures escaped from a wizard's lab and multiplied.
 
 ### DES:189
 Loners in the world of the Abyss.  They are among the rarest of demons.  It is rumored that only a few clans of these demons still survive.
@@ -912,22 +912,22 @@ The black sheep of the Abyss.  Half demon, half devil.  They are often shunned b
 A mutated mushman, fungoids are extremely rare..... and deadly.
 
 ### DES:197
-Hailing from the frozen planes of the Abyss, these malevelent creatures are immune to cold based spells.  They also have a nasty bite.
+Hailing from the frozen planes of the Abyss, these malevolent creatures are immune to cold based spells.  They also have a nasty bite.
 
 ### DES:198
-These beasts are no more than slaves to the evil eys.  They serve as hands for those that have none.  They are imensly strong.
+These beasts are no more than slaves to the evil eys.  They serve as hands for those that have none.  They are immensely strong.
 
 ### DES:199
 Weak in mind and body, these demons are lightning quick.  They are cowards in battle and will surrender or run easily.
 
 ### DES:200
-Incredibly strong, these demons rule over whole races of lesser ilk.  They prefer to pummle their enemies with bare hands and magic.
+Incredibly strong, these demons rule over whole races of lesser ilk.  They prefer to pummel their enemies with bare hands and magic.
 
 ### DES:201
 Existing on both the material plane and the astral plane simultaneously.  They can inflict massive chemical damage.
 
 ### DES:202
-Nomally happy to stand around and chew cud.  These creatures can be dangerous if they stampede.
+Normally happy to stand around and chew cud.  These creatures can be dangerous if they stampede.
 
 ### DES:211
 These vermin carry a deadly disease.  They breed so rapidly there are always plenty to take the place of those that perish.

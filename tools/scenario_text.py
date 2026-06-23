@@ -54,6 +54,34 @@ def read_entries(path, record_size, max_text_len):
     return entries
 
 
+def read_raw(path, record_size, max_text_len):
+    """Return list of bytes (the raw text area of each record)."""
+    with open(path, "rb") as f:
+        data = f.read()
+    raws = []
+    for i in range(len(data) // record_size):
+        chunk = data[i * record_size:(i + 1) * record_size]
+        length = min(chunk[0], max_text_len)
+        raws.append(bytes(chunk[1:1 + length]))
+    return raws
+
+
+def is_binary_record(raw):
+    """
+    True if a record's raw content looks like binary data rather than Mac Roman
+    text. Some scenarios stash digitized sound (PCM sample) data in unused
+    story/description string slots; the game never reads it as text, but a naive
+    round-trip through the .txt file mangles it. We detect it by the high
+    fraction of control bytes (audio crosses zero) or high bytes (full 0-255
+    range), neither of which occurs in real English text.
+    """
+    if not raw:
+        return False
+    ctrl = sum(1 for b in raw if b < 32 and b not in (9, 10, 13))
+    high = sum(1 for b in raw if b >= 128)
+    return ctrl / len(raw) > 0.10 or high / len(raw) > 0.40
+
+
 def write_entries(path, updates, record_size, max_text_len):
     """
     Apply {index: new_text} updates to the binary file in-place.
@@ -104,15 +132,21 @@ def cmd_extract(scenario_dir, output_path):
             continue
 
         entries = read_entries(filepath, record_size, max_len)
+        raws = read_raw(filepath, record_size, max_len)
         written = 0
+        skipped_binary = 0
         for i, text in enumerate(entries):
             if not text.strip():
                 continue  # omit blank entries
+            if is_binary_record(raws[i]):
+                skipped_binary += 1
+                continue  # omit embedded binary (e.g. sound) data, not real text
             lines.append(f"### {tag}:{i}")
             lines.append(text)
             lines.append("")  # blank separator
             written += 1
-        print(f"  {filename}: {written} non-empty entries out of {len(entries)}")
+        note = f" (skipped {skipped_binary} binary)" if skipped_binary else ""
+        print(f"  {filename}: {written} non-empty entries out of {len(entries)}{note}")
         total += written
 
     with open(output_path, "w", encoding="utf-8", newline="\n") as f:
@@ -168,19 +202,26 @@ def cmd_inject(input_path, scenario_dir):
 
         # Compare to detect actual changes
         current = read_entries(filepath, record_size, max_len)
+        raws = read_raw(filepath, record_size, max_len)
         updates = {}
+        guarded = 0
         for idx, new_text in by_tag[tag].items():
             if idx >= len(current):
                 print(f"  WARNING: {tag}:{idx} out of range ({len(current)} entries), skipping", file=sys.stderr)
+                continue
+            if is_binary_record(raws[idx]):
+                # Never overwrite embedded binary (e.g. sound) data; the text
+                # parsed from the .txt would be a mangled round-trip of it.
+                guarded += 1
                 continue
             if current[idx] != new_text:
                 updates[idx] = new_text
 
         if updates:
             write_entries(filepath, updates, record_size, max_len)
-            print(f"  {filename}: updated {len(updates)} entries")
-        else:
-            print(f"  {filename}: no changes")
+        note = f" ({guarded} binary entries protected)" if guarded else ""
+        print(f"  {filename}: updated {len(updates)} entries{note}" if updates
+              else f"  {filename}: no changes{note}")
 
 
 # ---------------------------------------------------------------------------

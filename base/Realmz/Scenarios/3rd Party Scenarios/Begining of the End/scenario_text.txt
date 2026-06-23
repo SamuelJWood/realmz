@@ -12,16 +12,16 @@ Do Not Use
 You start to your feet, head pounding and heart racing. Just a few minutes ago you were riding through the forest intent on the deer you had slated for your dinner, and now, as you look around, you find yourself in a strange place, surrounded by mages .
 
 ### SD2:2
-The first of them speaks in a strange toungue.  Seeing your confusion he waveshis hand and mutters a word.  You start for your weapons in aprehension only to find them missing.  The mage speaks again, this time you can understand him.
+The first of them speaks in a strange tongue.  Seeing your confusion he waves his hand and mutters a word.  You start for your weapons in apprehension only to find them missing.  The mage speaks again, this time you can understand him.
 
 ### SD2:3
 "Good people, forgive our imposition please.  My name is Carlo, head of the mages guild.  Our goddess has revealed that a great evil will soon come upon our land and that only the chosen Six could save us from it.  We do not know what this evil will be,
 
 ### SD2:4
-only that it may mean the end of us all."   Carlo pauses for a momentand looks at you uncertainly.  "I cannot speak more to you now, enter the temple yonder and we will speak further."
+only that it may mean the end of us all."   Carlo pauses for a moment and looks at you uncertainly.  "I cannot speak more to you now, enter the temple yonder and we will speak further."
 
 ### SD2:5
-The shopkeeper welcomes you warmly and informs you that Carlo has instructed him personaly to make sure your stay is pleasant and that you have everything you need.  Hanging throughout the shop are all different kinds of armor, and you get 40% off.
+The shopkeeper welcomes you warmly and informs you that Carlo has instructed him personally to make sure your stay is pleasant and that you have everything you need.  Hanging throughout the shop are all different kinds of armor, and you get 40% off.
 
 ### SD2:6
 You peer into the darkness of what seems to be a magic shop.  Wisps of smoke curl from sticks of incense and climb towards the roof.  You hear a voice coming from the rear of the shop.  "For you, good people, a special destiny, and a special price."
@@ -30,25 +30,25 @@ You peer into the darkness of what seems to be a magic shop.  Wisps of smoke cur
 You enter a temple, healing magic flows through your body as a mage dressed in the guild robes offers you his humble services.
 
 ### SD2:8
-You peer into the hole below you curiosly, you are suddenly startled by a peculiar stinging in your legs and find yourself covered in swarming ants!
+You peer into the hole below you curiously, you are suddenly startled by a peculiar stinging in your legs and find yourself covered in swarming ants!
 
 ### SD2:9
 You look through the pass ahead into a mist covered valley.  Strange shapes can be seen moving through them...
 
 ### SD2:10
-A grave is being dug here for a small child who died of a strange illness previosly unknown in this region.  Her mother says that she contracted the disease while  playing near the mouth of the river just outside of town.
+A grave is being dug here for a small child who died of a strange illness previously unknown in this region.  Her mother says that she contracted the disease while  playing near the mouth of the river just outside of town.
 
 ### SD2:11
-A small hut sits desolate near a beautifull mauntain lake.  A search of the house reveals nothing, but the boat left on the dock yonder calls for your attention.
+A small hut sits desolate near a beautiful mountain lake.  A search of the house reveals nothing, but the boat left on the dock yonder calls for your attention.
 
 ### SD2:12
-You hear a strange splashing noise and look around in suprise.  Water Fiends attack you!
+You hear a strange splashing noise and look around in surprise.  Water Fiends attack you!
 
 ### SD2:13
-You wander into the middle of what appears to be a vilage populated by civilised Goblins.  You can think of only on other example of such a thing happening, but that was in a far, far away place.
+You wander into the middle of what appears to be a village populated by civilized Goblins.  You can think of only one other example of such a thing happening, but that was in a far, far away place.
 
 ### SD2:14
-You enter the largest of the buildings, obviosly the home of the Chief.  He welcomes you into his house graciously and invites you to sit down.
+You enter the largest of the buildings, obviously the home of the Chief.  He welcomes you into his house graciously and invites you to sit down.
 
 ### SD2:15
 He orders refreshment and you converse, he is eager to learn more about the outside world and requests that you bring him any books you find in your journeys so that he may add to his already extensive library.
@@ -57,16 +57,16 @@ He orders refreshment and you converse, he is eager to learn more about the outs
 Judging from the expensive decorations in his home you do not doubt that he is capable of living up to his promise.
 
 ### SD2:17
-One Tomb sticks out from the others, it is larger and has not been touched by mold and decay.  A slight sheen tells your experianced eye that it is protected by magic.
+One Tomb sticks out from the others, it is larger and has not been touched by mold and decay.  A slight sheen tells your experienced eye that it is protected by magic.
 
 ### SD2:18
-The gate gaurds recognize you as the men Carlo told them to expect.  They eye you uneasily and let you through.
+The gate guards recognize you as the men Carlo told them to expect.  They eye you uneasily and let you through.
 
 ### SD2:19
 You find the bones of a long dead warrior priest among the rocks.  His gear will be worth a pretty penny once you get it cleaned up.
 
 ### SD2:20
-You enter an unusualy well stocked shop, the prices are almost outrageous as the items for sale.
+You enter an unusually well stocked shop, the prices are almost as outrageous as the items for sale.
 
 ### SD2:21
 You are attacked by Goblins, they defend their territory ferociously.
@@ -78,7 +78,7 @@ You are attacked by Bandits!
 You hear a strange rustling among the bushes, mush men!
 
 ### SD2:24
-The beast that slaid the priest intends to feast on you as well!
+The beast that slew the priest intends to feast on you as well!
 
 ### SD2:25
 You may continue on your way.
@@ -90,7 +90,7 @@ A closer inspection of the river bank reveals a stairway leading down.
 Cave Demons attack you!
 
 ### SD2:28
-The passage apears to dead end into a small room here.
+The passage appears to be a dead end, ending in this small room.
 
 ### SD2:29
 May the Gods protect you from the creature you find yourself facing, if they do not flee themselves!
@@ -129,10 +129,10 @@ Water creatures attack you!
 You enter a Blacksmiths shop, many fine blades are on display and the prices are rather reasonable.
 
 ### SD2:41
-You enter a fine tavern.  The patrons are well dressed and well manered and a small sign above the bar says "No Smoking."  The barkeep is a burly man who obviously commands respect.
+You enter a fine tavern.  The patrons are well dressed and well mannered and a small sign above the bar says "No Smoking."  The barkeep is a burly man who obviously commands respect.
 
 ### SD2:42
-A young girl walks up to you and leans over, showing a bit more of her cleavage than is strictly apropriate.
+A young girl walks up to you and leans over, showing a bit more of her cleavage than is strictly appropriate.
 
 ### SD2:43
 Good Stuff!  Well worth the money!
@@ -144,16 +144,16 @@ Somehow you feel slightly drained...
 A smooth relaxed feeling flows through your body.
 
 ### SD2:46
-You spend a rather, shall we say "pleasant," night with the young woman.  Morning, however, leaves you feeling a bit  disoriented.
+You spend a rather, shall we say "pleasant," night with the young woman.  Morning, however, leaves you feeling a bit disoriented.
 
 ### SD2:47
-A large creature stands up from the middle of the group, He stands over 7' tall and is heavily armoured.  His features are reminiscant of a Drow Elf and he has wings draped over his shoulders and hooked in the front, like a cloak.
+A large creature stands up from the middle of the group, He stands over 7' tall and is heavily armored.  His features are reminiscent of a Drow Elf and he has wings draped over his shoulders and hooked in the front, like a cloak.
 
 ### SD2:48
 When he speaks his voice is a low growl.  "What do you want?"  His voice contains obvious annoyance.
 
 ### SD2:49
-The creature nods and invites you to sit with him.  His name is Gryckyn and he has been organizing a group of adventurers to work together.  So far there are 5 others, all are heavily armed and armoured.
+The creature nods and invites you to sit with him.  His name is Gryckyn and he has been organizing a group of adventurers to work together.  So far there are 5 others, all are heavily armed and armored.
 
 ### SD2:50
 After a few rounds of whiskey Gry reveals that he has 6 slots left open and is impressed by your group.  He invites you join his party, judging from the type of warrior that he seems to be attracting this could prove rather profitable.  Do you join?
@@ -162,25 +162,25 @@ After a few rounds of whiskey Gry reveals that he has 6 slots left open and is i
 Gryckyn nods to you and picks up his gear.    You set out to pick up the others.
 
 ### SD2:52
-You feel strangly energized...
+You feel strangely energized...
 
 ### SD2:53
-A member of the royal gaurd spies your desecration as you remove the first shovelfull.  "Die scum!" he screams as he rushes you.  His comrades follow him
+A member of the royal guard spies your desecration as you remove the first shovelful.  "Die scum!" he screams as he rushes you.  His comrades follow him.
 
 ### SD2:54
 The Chief thanks you profusely and makes good on his promise to reward you.
 
 ### SD2:55
-You speak with the Chief at length about your travels.  He is most impresed with your accomplishments but urges you to continue your search for books.
+You speak with the Chief at length about your travels.  He is most impressed with your accomplishments but urges you to continue your search for books.
 
 ### SD2:56
-The creatures eyes narrow and his hand goes to what looks like a very short staff with a ball at the end.  He speaks very slowly and his eyes glow slightly red.  "My name is Gryckyn, my mother was of the ShadowRock Gargoyle clan and my father
+The creatures eyes narrow and his hand goes to what looks like a very short staff with a ball at the end.  He speaks very slowly and his eyes glow slightly red.  "My name is Gryckyn, my mother was of the ShadowRock Gargoyle clan and my father...
 
 ### SD2:57
 was a Drow elf.   Now, what do you want?"  His voice is rather tense and you sense that now is not a good time to joke around.
 
 ### SD2:58
-Mercenaries...hmmm...   The creature turns to a female dressed in the colors of the assassins guild with a very pale face.  "We don't need any mercs, do we?"   She smiles very slightly showing fangs and waves her hand.
+Mercenaries...hmmm...  The creature turns to a female dressed in the colors of the assassins guild with a very pale face.  "We don't need any mercs, do we?"   She smiles very slightly showing fangs and waves her hand.
 
 ### SD2:59
 Before you can reach your weapons they attack! The bartender watches curiously doing nothing.
@@ -189,13 +189,13 @@ Before you can reach your weapons they attack! The bartender watches curiously d
 Once the entire party is assembled you set off in search of adventure.
 
 ### SD2:61
-You enter the town hall and take a moment to look around.  Groups of villagers stand around discussing recent events, what they mean, and possible solutions to the questions raised.  They seem to be unusualy informed about local events and they obviously
+You enter the town hall and take a moment to look around.  Groups of villagers stand around discussing recent events, what they mean, and possible solutions to the questions raised.  They seem to be unusually informed about local events and they obviously
 
 ### SD2:62
-take them seriously.  When Carlo had told you there was no king you had not believed him.  You begin to reconsider your position as it becomes apparent that inteligent informed people such as these need no rulers.
+take them seriously.  When Carlo had told you there was no king you had not believed him.  You begin to reconsider your position as it becomes apparent that intelligent informed people such as these need no rulers.
 
 ### SD2:63
-Two large stone gargoyles gaurd the doorway to the castle.  They seem to glow slightly as if they were barely restrained from burting forth.  One of them, a female, has a strained look on her face, as if she was in pain.
+Two large stone gargoyles guard the doorway to the castle.  They seem to glow slightly as if they were barely restrained from bursting forth.  One of them, a female, has a strained look on her face, as if she was in pain.
 
 ### SD2:64
 Gryckyn, seeing the Gargoyle imprisoned by magic, stops dead in his tracks.   His body stiffens as his voice resounds through the hall.  "Who is responsible for this!"  Instantly the hall falls silent and every eye is fixed on your party.
@@ -216,10 +216,10 @@ You discover what appears to be a small lever near the base of the wall.  Depres
 You enter the city council room.  It is currently not in use.
 
 ### SD2:70
-The body on the floor here is obviously a fresh kill.  You get the definate sense that Gryckyn has been here recently.  It occurs to you that it might be a good idea to leave soon before the castle gaurds find you.
+The body on the floor here is obviously a fresh kill.  You get the definite sense that Gryckyn has been here recently.  It occurs to you that it might be a good idea to leave soon before the castle guards find you.
 
 ### SD2:71
-You find a few magical items here that could definately prove usefull.
+You find a few magical items here that could definitely prove useful.
 
 ### SD2:72
 You pause to look down at one of the gravestones.  It is covered from top to bottom with an intricately carved battle scene.  Suddenly the ground caves in below you and you fall into darkness.
@@ -228,7 +228,7 @@ You pause to look down at one of the gravestones.  It is covered from top to bot
 The undead assault you!
 
 ### SD2:74
-Arrayed before you is a force of Demons and undead unparraleled in your experiance.  A huge demon Lord commands them.
+Arrayed before you is a force of Demons and undead unparalleled in your experience.  A huge demon Lord commands them.
 
 ### SD2:75
 I hope you have made your peace with your Gods, You are about to meet them.
@@ -2271,7 +2271,7 @@ The creature's favorite form of attack is to lower its armored head and charge. 
 These minor demons live their lives as servants to those more powerful than themselves.
 
 ### DES:64
-Large and fierce, this race of half bear, half man is feared thoughout the land.
+Large and fierce, this race of half bear, half man is feared throughout the land.
 
 ### DES:65
 A powerful creature of the undead.  These creatures drain your life force.
@@ -2388,7 +2388,7 @@ Large and fierce warriors of above average skill.
 A Goblin skilled in the use of a bow.
 
 ### DES:138
-A vampire assasin skilled in the arts of death.
+A vampire assassin skilled in the arts of death.
 
 ### DES:139
 A Cathoon marksman of supreme skill.
@@ -2457,22 +2457,22 @@ The black sheep of the Abyss.  Half demon, half devil.  They are often shunned b
 A mutated mushman, fungoids are extremely rare..... and deadly.
 
 ### DES:197
-Hailing from the frozen planes of the Abyss, these malevelent creatures are immune to cold based spells.  They also have a nasty bite.
+Hailing from the frozen planes of the Abyss, these malevolent creatures are immune to cold based spells.  They also have a nasty bite.
 
 ### DES:198
-These beasts are no more than slaves to the evil eys.  They serve as hands for those that have none.  They are imensly strong.
+These beasts are no more than slaves to the evil eys.  They serve as hands for those that have none.  They are immensely strong.
 
 ### DES:199
 Weak in mind and body, these demons are lightning quick.  They are cowards in battle and will surrender or run easily.
 
 ### DES:200
-Incredibly strong, these demons rule over whole races of lesser ilk.  They prefer to pummle their enemies with bare hands and magic.
+Incredibly strong, these demons rule over whole races of lesser ilk.  They prefer to pummel their enemies with bare hands and magic.
 
 ### DES:201
 Existing on both the material plane and the astral plane simultaneously.  They can inflict massive chemical damage.
 
 ### DES:202
-Nomally happy to stand around and chew cud.  These creatures can be dangerous if they stampede.
+Normally happy to stand around and chew cud.  These creatures can be dangerous if they stampede.
 
 ### DES:211
 These vermin carry a deadly disease.  They breed so rapidly there are always plenty to take the place of those that perish.

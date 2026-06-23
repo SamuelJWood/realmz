@@ -24,7 +24,7 @@ How long have you been trudging through this blasted forest anyhow? Must be a da
 - Four, at the absolute max. Hard to tell, it's so dark in here, you can't tell day from night. The locals don't call this forest the Madwood for nothing. Surely, the town of Hax can't be too much further along ... can it?
 
 ### SD2:6
-Copyright ©1999 by John Rawlins. Please send your criticisms, witticisms, nitpicks and bug reports to ..
+Copyright ©1999 by John Rawlins.
 
 ### SD2:7
 Glory be! A road!
@@ -105,7 +105,7 @@ You can't think of any more questions to ask the old dwarves. They look at you e
 The old dwarf, Canterbury, looks up in surprise when you return. "Why didn't you go into the cave? Surely you're not afraid of a few mangy bears?" You assure him of your fearlessness and walk back outside.
 
 ### SD2:33
-A dilapidated temple juts out of the swampy ground. It is staffed by the same incompetant clerics that "assisted" you in your battles here. Their prices are insane.
+A dilapidated temple juts out of the swampy ground. It is staffed by the same incompetent clerics that "assisted" you in your battles here. Their prices are insane.
 
 ### SD2:34
 Suddenly, the Nasties show their true color - yellow!
@@ -609,7 +609,7 @@ Wow! This one packs a punch!
 "Welcome back," the bartender greets you with a wink.
 
 ### SD2:202
-This shadow elf's so huge, he must have some orcan blood.  "Burly Limbsnapper," he growls by way of introduction. "Wanna arm wrestle?"
+This shadow elf's so huge, he must have some orish blood.  "Burly Limbsnapper," he growls by way of introduction. "Wanna arm wrestle?"
 
 ### SD2:203
 "How much will you wager against this?" he asks,  gesturing toward his weapon. You are awed when you recognize it is the fabled Death's Head Axe!
@@ -726,7 +726,7 @@ The waiter is by your side in an instant. "I'm terribly sorry about that. I shou
 If you weren't so hungry, you'd probably walk out of this place right now. But the food is delicious. Your fork occasionally attempts to skewer you, but it cannot penetrate the magic gloves.
 
 ### SD2:241
-You notice that every time you eat a forkful of spaghetti, there seems to be twice as much spaghetti left on your plate. This is a  pretty strange pub, you conclude. At the next table, Kierkegaard and Groucho are quarrelling with the waiter.
+You notice that every time you eat a forkful of spaghetti, there seems to be twice as much spaghetti left on your plate. This is a  pretty strange pub, you conclude. At the next table, Kierkegaard and Groucho are quarreling with the waiter.
 
 ### SD2:242
 "I shall file a complaint against this establishment!" shrieks Kierkegaard. "The local ordinances specify that all public houses *must* offer  alternative meals to their westward-bound patrons! I want my spam parfait!"
@@ -1950,7 +1950,7 @@ You eat until you are stuffed! Every mouthful is a sensory delight, and somehow,
 "... but also of the underground cabal who serve the mind slayers, the cacodaemon mutants commonly known as the Nasties, those horrible leprechauns to the north and many others."
 
 ### SD2:649
-"If you will give me the crown, I shall provide you with a number of priceless weapons and adventurers' accoutrements. Here is a sample of the quality  items I can obtain for you."
+"If you will give me the crown, I shall provide you with a number of priceless weapons and adventurers' accouterments. Here is a sample of the quality  items I can obtain for you."
 
 ### SD2:650
 "Also, I will send an escort of my best nether giants to see you safely out of the Madwood. Plus, shall we say, 500 gems for your trouble? Think hard on my offer before you respond, good people. I doubt you will find a better solution to your problem."
@@ -2061,7 +2061,7 @@ You move some rocks out of the way. You estimate that at this rate, working ever
 This is the gravedigger's shed. Here, amongst the shovels and other tools, you find an amazing, diamond-encrusted spade.
 
 ### SD2:686
-You move a sizeable amount of dirt.
+You move a sizable amount of dirt.
 
 ### SD2:687
 You have uncovered the tunnel to Hax!
@@ -3006,7 +3006,7 @@ In the middle of the road you see an emaciated old orc pushing a peddler's cart.
 "You must journey to the town of Hax and there purchase a bag of orc rinds," declares the shanahy. "Then you must bring the orc rinds back to this spot, and present them to me. If you fail in your quest, the Eye of the Gods shall never be yours!"
 
 ### SD2:1005
-The hobgoblin sniffs the air. "Does someone here have orc rinds?" he asks delightedly. Without another word, he grabs your bag of orc rinds and begins stuffing his face. "Ecstacy!" he cries out between mouthfuls of the strange grub. "I shall swap you!"
+The hobgoblin sniffs the air. "Does someone here have orc rinds?" he asks delightedly. Without another word, he grabs your bag of orc rinds and begins stuffing his face. "Ecstasy!" he cries out between mouthfuls of the strange grub. "I shall swap you!"
 
 ### SD2:1006
 Abruptly, your host douses the fire. "Now go," he says softly. "And always remember this, my children ... don't get the diet orc rinds, they taste like parchment."
@@ -3261,7 +3261,7 @@ An odd sight, indeed. Their appearance would be laughable, if they were not so d
 Immune to almost everything, these rodents are the bane of exterminators throughout the Realmz.
 
 ### DES:12
-An unholy cross between rat and human, these monsters are so indestructable as to approach immortality.
+An unholy cross between rat and human, these monsters are so indestructible as to approach immortality.
 
 ### DES:13
 Formed from a colony of semi-intelligent mosses.
@@ -3339,13 +3339,13 @@ These hounds are no one's best friend.
 Woe to the fools that find themselves in lonely company with one of this ilk.
 
 ### DES:40
-An empathic midget orc.
+An empathetic midget orc.
 
 ### DES:41
 A poisonous bite may be the least of your worries if you meet up with one of these vermin.
 
 ### DES:42
-Mentally enslaved to a zombie king, nether giants are not brilliant strategists, but they posess a formidable brawn.
+Mentally enslaved to a zombie king, nether giants are not brilliant strategists, but they possess a formidable brawn.
 
 ### DES:43
 This creature prefers the taste of steel and leather over human flesh.
@@ -3366,7 +3366,7 @@ Invisible as air, the Unseen Charmer can make sworn enemies out of blood brother
 The black sheep of the Abyss.  Half demon, half devil.  They are often shunned by full-blooded demons and devils.
 
 ### DES:49
-One of the Hemerood.  God-like in power.  This evil race is making its way back to the known Realmz for the first time in 50 millenia.
+One of the Hemerood.  God-like in power.  This evil race is making its way back to the known Realmz for the first time in 50 millennia.
 
 ### DES:50
 Beware - the hydra is even more dangerous than he is ugly.
@@ -3438,7 +3438,7 @@ An animated creature of bones and armor. They can be deadly in large numbers.
 A powerful zombie king.
 
 ### DES:73
-Filthy claws and teeth make this creature a deadly menace.  Fear its bite for it can paralize.
+Filthy claws and teeth make this creature a deadly menace.  Fear its bite for it can paralyze.
 
 ### DES:74
 In life, he was a valiant warrior. In death, a cursed pawn of evil.
@@ -3522,7 +3522,7 @@ An experienced leader with the respect of his troops.  Few will question his ord
 A master builder.
 
 ### DES:101
-These ugly, crazed, diseased, poisionous, cowardly little maniacs wouldn't fight fair even if they knew how to.
+These ugly, crazed, diseased, poisonous, cowardly little maniacs wouldn't fight fair even if they knew how to.
 
 ### DES:102
 A small, reptilian race.  They are extremely evil and travel in large groups for they are small in stature and are often eaten as food if found alone.
@@ -3552,10 +3552,10 @@ A merchant specializing in the sale of living creatures.
 The worms turned up their noses at him, but the Manifest mages gave him a new lease on life.
 
 ### DES:111
-A blind gargolye enslaved by the shadow elves.
+A blind gargoyle enslaved by the shadow elves.
 
 ### DES:112
-A blind gargolye enslaved by the shadow elves.
+A blind gargoyle enslaved by the shadow elves.
 
 ### DES:118
 Your typical heartless slavedriver.
@@ -3663,7 +3663,7 @@ The strong, warm-blooded and brutish Lizard Men travel in small bands. They are 
 Thankfully, these creatures are more rare than their pink-skinned cousins. Even the bravest warriors flee at the sight of one.
 
 ### DES:158
-These creatures make their homes in ponds and small lakes near uninhabitated areas. If an area they choose is inhabited, it will not be so for long!
+These creatures make their homes in ponds and small lakes near uninhabited areas. If an area they choose is inhabited, it will not be so for long!
 
 ### DES:159
 The master of the lizardmen clan.
@@ -3780,7 +3780,7 @@ Black belt fanatic.
 A frozen surprise inside every one of 'em.
 
 ### DES:210
-God-like in power.  This evil race is making its way back to the known Realmz for the first time in 50 millenia.
+God-like in power.  This evil race is making its way back to the known Realmz for the first time in 50 millennia.
 
 ### DES:211
 They always get their dinner.

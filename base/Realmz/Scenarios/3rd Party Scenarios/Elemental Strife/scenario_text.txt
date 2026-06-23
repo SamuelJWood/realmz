@@ -30,13 +30,13 @@ A beautiful place to behold, a young elf gracefully attends your needs in this s
 A gleam comes into his eye.  "Don't get me wrong.  I love the thrill of battle, but sacking Crosswald didn't really appeal to me.  So I'm retired now.  There's not much I can do alone what with the goings on outside the city walls."
 
 ### SD2:8
-"My name is Sala.  I used to fight for the Order of the Flame, but things really got out of hand there.  They just got too hyped up on battle and began drestoying everything.  Including the followers of the other elements.  Shameful."
+"My name is Sala.  I used to fight for the Order of the Flame, but things really got out of hand there.  They just got too hyped up on battle and began destroying everything.  Including the followers of the other elements.  Shameful."
 
 ### SD2:9
 "Shop and, well, that's about it.  These walls are sturdy, but unfortunately they also keep me in and as well as the monsters out.  Care to spar a little?"  He looks so eager that you can't help but play along.  Who will spar?
 
 ### SD2:10
-Suprisingly, this old man is tougher than he looks.  He catches you offguard with a sucker punch, and you fall to the floor.  "Don't worry, I tried that move on Thyrr once and he didn't block it either."
+Surprisingly, this old man is tougher than he looks.  He catches you off guard with a sucker punch, and you fall to the floor.  "Don't worry, I tried that move on Thyrr once and he didn't block it either."
 
 ### SD2:11
 "Oh, I envy you.  Here're the keys, I don't need 'em.  If I were a little younger and a little bolder, I'd come right along with you."  He sags.  "But maybe I'll be needed here..."  He smiles, wishes you luck and hands you the keys.
@@ -78,7 +78,7 @@ You see an awful and strange sight in this clearing.  A young elfin lad lays fac
 As you move in to investigate, a volley of arrows surprise you from the trees.  Green Elves attack.
 
 ### SD2:24
-You search the body and the only items of worth are the boy's hat and the arrow itself (the arrow seems undamaged and readiates strongly of magic.)
+You search the body and the only items of worth are the boy's hat and the arrow itself (the arrow seems undamaged and radiates strongly of magic.)
 
 ### SD2:25
 You find an opening in the mountain covered with branches.  Moving them aside you notice  small carved statues on either side of the tunnel.  They resemble small, muscular men.
@@ -99,19 +99,19 @@ In this area the floor is very soft.  You quickly sink and hope to survive someh
 Green Elves emerge stealthily from the surrounding woods and descend upon your unsuspecting party.
 
 ### SD2:31
-As you walk through Crosswald you notice a travelling merchant with a large sack slung over his shoulder.  He sees you and approaches.
+As you walk through Crosswald you notice a traveling merchant with a large sack slung over his shoulder.  He sees you and approaches.
 
 ### SD2:32
-"Not from around here, eh?"  On closer inspection, you wish this poor wrtech had kept his distance.  "The strong silent type, then.  No matter." He remembers his state.  "I'm sure you've seen worse than me on your travels.  My name is Todd Silverbeard."
+"Not from around here, eh?"  On closer inspection, you wish this poor wretch had kept his distance.  "The strong silent type, then.  No matter." He remembers his state.  "I'm sure you've seen worse than me on your travels.  My name is Todd Silverbeard."
 
 ### SD2:33
-You pause to hear his story.  "I was once mayor of Crosswald when it was unified.  Back then, I was free to roam in the doamin of each of the elements.  The followers of each came here to trade in peace.  Now, but one shop is left from each element.
+You pause to hear his story.  "I was once mayor of Crosswald when it was unified.  Back then, I was free to roam in the domain of each of the elements.  The followers of each came here to trade in peace.  Now, but one shop is left from each element.
 
 ### SD2:34
 "The Elemental Lords took the city away from me because each wanted their share.  Strange how it happened so suddenly.  There was no explanation,  just battle cries and walls springing up.  It's still too risky to leave the neutral zone of Crosswald.
 
 ### SD2:35
-"So I carry my few possesions with me.  All I can say to you is watch your step.  Alliances are fickle among the elements, and battles more so.  If only the Elemental Lords could be convinced to meet together and talk out their differences...
+"So I carry my few possessions with me.  All I can say to you is watch your step.  Alliances are fickle among the elements, and battles more so.  If only the Elemental Lords could be convinced to meet together and talk out their differences...
 
 ### SD2:36
 "Things could be as they once were.  I sent out a messenger to the fire domain a while back.  I hope he's Ok.  Maybe you could go see the elemental lords.  Ask them to meet together to end this awful war."  You agree.
@@ -276,7 +276,7 @@ These wells serve as an outpost for the Servants of Water.  Assuming you to be m
 You see a patrol of the Order of the Flame coming.  Do you wish to engage?
 
 ### SD2:90
-In this vast wasteland of scrub and parched fields, you come upon a desicated corpse.  There is nothing left but but bones and some personal items.
+In this vast wasteland of scrub and parched fields, you come upon a desiccated corpse.  There is nothing left but but bones and some personal items.
 
 ### SD2:91
 Taking up the letter you read it.  "O Gracious Lord of Fire, in your Firey Grandeur, hear this plea from Mayor Silverbeard.  Let us talk before the whole of the realm is laid to waste!  I implore you, not for my sake, but yours!
@@ -285,16 +285,16 @@ Taking up the letter you read it.  "O Gracious Lord of Fire, in your Firey Grand
 "Something out there is seeking to destroy us all.  The flag so sacred to the order was not taken by the Servants of Water.  I have searched myself personally.  If you do not believe, they have permitted a search party by your own choosing.
 
 ### SD2:93
-"I sincerely hope that you investigate this matter fully as not to persicute wrongly.  Your friend in battle, Todd Silverbeard."  You think that the mayor would like to find out about that fact the messanger appears not to have made it.
+"I sincerely hope that you investigate this matter fully as not to persecute wrongly.  Your friend in battle, Todd Silverbeard."  You think that the mayor would like to find out about that fact the messenger appears not to have made it.
 
 ### SD2:94
-This creautre of the plant world summons one of its allies to aid it in battle.
+This creature of the plant world summons one of its allies to aid it in battle.
 
 ### SD2:95
 You hand him the orders written in his own pen.  He looks confused and his eyebrows raise.  "How did you get this?!"  You tell him you found it on a skeleton northwest of the town.
 
 ### SD2:96
-"I had hoped this would prevent the mess we're in now..."  he pauses stroking his grey beard.  "Perhaps you could tell the Lord of Fire that the Servants of Water do not possess his flag?  Here's my signet to prove I sent you.  Good luck."  He sighs.
+"I had hoped this would prevent the mess we're in now..."  he pauses stroking his gray beard.  "Perhaps you could tell the Lord of Fire that the Servants of Water do not possess his flag?  Here's my signet to prove I sent you.  Good luck."  He sighs.
 
 ### SD2:97
 The creature makes a loud screeching noise and a few of its comrades appear.
@@ -306,13 +306,13 @@ A beast from the fires of hell appears.  "Do you wish to battle with me in order
 Having defeated a formidable guard in the Order of the Flame, you prove your worth and are transported to the domain of fire.
 
 ### SD2:100
-You are consumed by a magical flame.  Amazingly enough you are not burned, but when the flame dies down, you find youself in a new world.
+You are consumed by a magical flame.  Amazingly enough you are not burned, but when the flame dies down, you find yourself in a new world.
 
 ### SD2:101
 A beautiful strip of land jutting out into the water.  It's a pity you don't have a boat to sail in.
 
 ### SD2:102
-The water is clear and refreshing.  You feel envigorated!
+The water is clear and refreshing.  You feel invigorated!
 
 ### SD2:103
 You set the boat in the water and it begins to drift away as a breeze catches it.  You curse to see such a beautiful toy get washed away.
@@ -330,7 +330,7 @@ Sensing you magical gloves, it contorts and grows longer extending up far into t
 When you climb back down, you are no longer in the same place.  Crosswald is far, far away now.
 
 ### SD2:108
-Finding your way out of this maze, you find yourself in a huge undergound cavern.  You presume this is the domain of earth.
+Finding your way out of this maze, you find yourself in a huge underground cavern.  You presume this is the domain of earth.
 
 ### SD2:109
 You wander back into the maze to the surface.
@@ -348,7 +348,7 @@ You climb back up this tree making sure not to damage those precious gloves.
 A guard bars you way.  "Sorry only members of the Inner Circle are allowed in here."  You decide the scores of guards in the mountain pass ahead are quite convincing.
 
 ### SD2:114
-You approach one of the few reamaining houses in this ruined fortification.  You can only guess what destruction has caused this desolation.  You see a lone figure slouching in the doorway.  He straightens and draws his weapon as you approach.
+You approach one of the few remaining houses in this ruined fortification.  You can only guess what destruction has caused this desolation.  You see a lone figure slouching in the doorway.  He straightens and draws his weapon as you approach.
 
 ### SD2:115
 "What treachery is this?  Does the Lord send assassins to kill me in my hour of shame?  They shall pay with their blood!"  He charges and the party scatters.  Outnumbered, he looks scared.
@@ -363,10 +363,10 @@ What do you do?
 "Ah!  Adventurers!  It's been so long since we've had any of those here."  He gestures to his surroundings.  "You must wonder why I live in this awful place.  It used to be a glorious fort.  I was a member of the Inner Circle once...
 
 ### SD2:119
-"My Brightblade proved it.  Only four in existance, and they are the only way to become a most respected member of the Inner Circle.  Why do you think there is so much strife here?  Ah, but we all love the thrill of battle.
+"My Brightblade proved it.  Only four in existence, and they are the only way to become a most respected member of the Inner Circle.  Why do you think there is so much strife here?  Ah, but we all love the thrill of battle.
 
 ### SD2:120
-"I'm keen on getting another `blade, but my company was killed in the seige.  I should have been killed, but escaped, my honor damaged.  But I don't care!  I can redeem it with another `blade.
+"I'm keen on getting another `blade, but my company was killed in the siege.  I should have been killed, but escaped, my honor damaged.  But I don't care!  I can redeem it with another `blade.
 
 ### SD2:121
 "I'm coming with you for adventure.  And maybe with my expertise and your ability, we can rule part of this realm!"  He extends his hand.  "Slayde Brightblade is the name.  Glad to have you aboard."  You smirk as he joins your party.
@@ -399,7 +399,7 @@ He squints at you thoughtfully.  "Keep you nose clean."
 "I'd be careful if I were you.  We don't like outsiders around here."
 
 ### SD2:131
-"Watch your step, becuase we're watching it too."  They turn and leave.
+"Watch your step, because we're watching it too."  They turn and leave.
 
 ### SD2:132
 Knowing of your association with Slayde, the patrol attacks.
@@ -411,13 +411,13 @@ This gate is strangely unguarded.
 With a Brightblade in your hand,  you are surprised it was so easy to take.  Or at least, you thought it was.  Soldiers are summoned from the void activated by a magical rune beneath your feet.
 
 ### SD2:135
-"Truely an honor to meet such fine warriors!"  They back away bowing.
+"Truly an honor to meet such fine warriors!"  They back away bowing.
 
 ### SD2:136
 "All hail a member of the Inner Circle!"  The company shouts and cheers for you.
 
 ### SD2:137
-"I respectfully ask to gaze upon such a wondorous `blade."  You unsheath the weapon to gasps of awe from the soldiers.
+"I respectfully ask to gaze upon such a wondrous `blade."  You unsheathe the weapon to gasps of awe from the soldiers.
 
 ### SD2:138
 "Have you seen the Lord of Flame, O Lord of the Inner Circle?"  You decide to leave him in suspense by not answering.
@@ -432,7 +432,7 @@ A chest so large as unlike you have ever seen in your travels.
 The chest refuses your command.
 
 ### SD2:142
-To your utter astonishment, one of the keys on the ring fits the lock!  Inside the chest is a treaure most valuable.  Sala must have given away this key by mistake.  He also must have been a Lord of the Inner Circle.  Go figure.
+To your utter astonishment, one of the keys on the ring fits the lock!  Inside the chest is a treasure most valuable.  Sala must have given away this key by mistake.  He also must have been a Lord of the Inner Circle.  Go figure.
 
 ### SD2:143
 The lock on this mammoth chest pops open reveals quite a hoard inside.
@@ -444,7 +444,7 @@ A patrol of the manor spots you.  They attack, knowing of your association with 
 Seeing that you already have his coveted `blade, Slayde attacks!
 
 ### SD2:146
-The guards eye you suspeciously. "State you business."  What do you say?
+The guards eye you suspiciously. "State you business."  What do you say?
 
 ### SD2:147
 He checks a register against the false name you gave him.  "Sorry, no appointment by that name.  Maybe it was a clerical error."
@@ -513,7 +513,7 @@ It appears that the pantry has been extended by digging.  You also notice a stra
 You come upon the source of the smell.  Or rather, it comes upon you.
 
 ### SD2:169
-Looking through a small crack in the wall, you spy the Lord of the manor drinking with his friends.  You also notice one of the panels on the opposite wall looks suspeciously false.  There ought to be a way in there.
+Looking through a small crack in the wall, you spy the Lord of the manor drinking with his friends.  You also notice one of the panels on the opposite wall looks suspiciously false.  There ought to be a way in there.
 
 ### SD2:170
 Seeing their Lord go down, some of his followers panic.
@@ -525,10 +525,10 @@ You approach the throne room.  You see the Lord carousing with his fellow soldie
 "What can I do for you fine bunch of soldiers?"  You are impressed by his implied respect for you.
 
 ### SD2:173
-"You've got to have one of these."  He pats his hilt.  "A Birghtblade is your ticket to him.  Me?  I've never been.  No reason really.  I've got all I need right here!"
+"You've got to have one of these."  He pats his hilt.  "A Brightblade is your ticket to him.  Me?  I've never been.  No reason really.  I've got all I need right here!"
 
 ### SD2:174
-"By the looks of your equipment, your fee would be out of my reach.  Perhaps one of the other memebers of the Inner Circle would hire you."
+"By the looks of your equipment, your fee would be out of my reach.  Perhaps one of the other members of the Inner Circle would hire you."
 
 ### SD2:175
 "Sorry.  Nobody touches my Brightblade except in battle.  And those that do don't live to tell about it."  He is deathly serious.  You realize you have said something out of the ordinary.
@@ -642,7 +642,7 @@ A local merchant has weapons from many regions of this domain, but the prices ar
 Rivaled only by the camp to the south, the guards at the gate gladly let a band of harmless adventurers through.
 
 ### SD2:212
-You enter a large, enclosed arena.  A man feeds creautres in cages that line the walls.  He turns to you.  "Pit you skills against the evils of the desert one-on-one, squire?  250 gold if you win."
+You enter a large, enclosed arena.  A man feeds creatures in cages that line the walls.  He turns to you.  "Pit you skills against the evils of the desert one-on-one, squire?  250 gold if you win."
 
 ### SD2:213
 Who will fight?
@@ -657,7 +657,7 @@ A shop with many amazing items, yet dazzlingly overpriced.
 A guard bars your way.  "Sorry, nobody sees the Lord without an appointment."  You ask how to get one.  "See the clerk inside."
 
 ### SD2:217
-A recuiter stands in front of a large barracks.  He asks passerbys if they wish to join the local service.  Do you join?
+A recruiter stands in front of a large barracks.  He asks passersby if they wish to join the local service.  Do you join?
 
 ### SD2:218
 "Glad to have you aboard.  Here's your stuff."  He hands you some equipment.  "Remember, anytime this camp needs your services you must come and fight.  Every successful battle, you will receive compensation.  Here's your signing bonus."
@@ -672,7 +672,7 @@ You honor your agreement to the local Lord and fight for the defense of this for
 You enter a most forbidding castle.  This must be the abode the the Lord of Flame.
 
 ### SD2:222
-A messenger runs up to you bearing a sack of gold.  "I am releived to have found you.  Here is the taxes from the camp."  He hands you the gold and hurries off.
+A messenger runs up to you bearing a sack of gold.  "I am relieved to have found you.  Here is the taxes from the camp."  He hands you the gold and hurries off.
 
 ### SD2:223
 A large structure.  You wonder by the sizable spots of blood on the floor what giant beasts might await you.
@@ -681,7 +681,7 @@ A large structure.  You wonder by the sizable spots of blood on the floor what g
 This appears to be some sort of waiting room.  You remark several nervous looking demons, seated.
 
 ### SD2:225
-Standing in a large pool of blood, you grow aware that a large demon is shouting at you.  "All new recuits must wait OUTSIDE!"  The response is automatic.  He snorts in surprise.  "Who are you?"
+Standing in a large pool of blood, you grow aware that a large demon is shouting at you.  "All new recruits must wait OUTSIDE!"  The response is automatic.  He snorts in surprise.  "Who are you?"
 
 ### SD2:226
 "Then surely you won't mind a test of you battle strength."  He motions for several demons to attack.
@@ -711,10 +711,10 @@ You take a step, and as your boot begins to burn the gem given to you by the mag
 The sight of some wicked experiments indeed, you are amazed finding yourself feeling sorry for a bunch of demons.
 
 ### SD2:235
-You peer down into a hole.  Warm fumes waft up.  This is eaither where the new recruits come from, or go when defeated.
+You peer down into a hole.  Warm fumes waft up.  This is either where the new recruits come from, or go when defeated.
 
 ### SD2:236
-An amzaing array of weapons of unkown origin.  You would gladly add them to your collection, but they are much too big and you would be at a loss as to how to use them.
+An amazing array of weapons of unknown origin.  You would gladly add them to your collection, but they are much too big and you would be at a loss as to how to use them.
 
 ### SD2:237
 Even high powered demons need to eat.   This is their pantry.
@@ -762,7 +762,7 @@ You see a striking figure.  A naked female form made entirely of fire, speaks.  
 "I invented the game of the Brightblade for their entertainment.  I see you have won that.  None of them have ever come to see me in person.  So you are here.  I am impressed at that.
 
 ### SD2:252
-"So now you are here."  The flames smoulder around her as she senses your discomfort.  "What do you ask of me, the Lord of Flame?"
+"So now you are here."  The flames smolder around her as she senses your discomfort.  "What do you ask of me, the Lord of Flame?"
 
 ### SD2:253
 She smiles.  "Alas, it is a shame to have to kill you for your arrogance.  You proved quite industrious in your quest to see me.  I might have helped you, but your pride leaves me no choice."
@@ -774,7 +774,7 @@ She smiles.  "Alas, it is a shame to have to kill you for your arrogance.  You p
 "No matter.  You made it this far, and you are entitled to a reward.  Each one of those chests over there contains a treasure of great value.  Pick the chest and it is yours."  She smiles at you.
 
 ### SD2:256
-"And I wish you luck in all of your adventures."  Her flame instensifies, then fades, leaving no trace behind.
+"And I wish you luck in all of your adventures."  Her flame intensifies, then fades, leaving no trace behind.
 
 ### SD2:257
 "Wise warriors you are indeed that you try to avoid the use of your great skill."  You can't decide if you are blushing or if it is merely the heat.  "I will enlighten you on the story of the Order.
@@ -789,13 +789,13 @@ She smiles.  "Alas, it is a shame to have to kill you for your arrogance.  You p
 "Why would they want our flag?  It turns out there was some kind of power ritual they were doing required it, and they destroyed it.  Now they claim they never had it!  Ha!  Needless to say, we set them straight.  We increased our forces and
 
 ### SD2:261
-"mounted an attack.  Eventaully, other elements got involved and the wall was erected."  She sighs.  "It all got out of hand so quickly.  Battle thrills me, but sport is better.  I haven't been able to arrange any dialogue between other elemental lords.
+"mounted an attack.  Eventually, other elements got involved and the wall was erected."  She sighs.  "It all got out of hand so quickly.  Battle thrills me, but sport is better.  I haven't been able to arrange any dialogue between other elemental lords.
 
 ### SD2:262
 "I will watch you from afar.  If I see an opportunity from your exploits to talk with the other Lords, I will contact you at that time.  In the mean time, take your pick of the three chests over there.  You've earned it."
 
 ### SD2:263
-You show her the signet from Silverbeard as proof.  "Silverbeard said that the Servants of Water never had the banner?  He did the serach himself?"  Seeing a being so powerful being stunned is priceless.
+You show her the signet from Silverbeard as proof.  "Silverbeard said that the Servants of Water never had the banner?  He did the search himself?"  Seeing a being so powerful being stunned is priceless.
 
 ### SD2:264
 "Such news indeed.  It is as if my blood ran cool."  Quite a statement!  "I must at once get to the bottom of this.  As reward help yourself to one of the three chests in the corner.  Farewell, friends!"  She vanishes in a flash of fire.
@@ -816,10 +816,10 @@ The guard looks surprised to see you, and more so when you show him your Brightb
 The cell is unlocked.
 
 ### SD2:270
-The passage widens and you find yourserlf in am immense undergournd cavern.
+The passage widens and you find yourself in am immense underground cavern.
 
 ### SD2:271
-The rogue in your party warns that these passages look as if they were desinged to mislead adventurers and conceal traps.
+The rogue in your party warns that these passages look as if they were designed to mislead adventurers and conceal traps.
 
 ### SD2:272
 While the integrity of the passage looks good, rocks from the walls tumble all about you.
@@ -840,7 +840,7 @@ At the end of this passageway, you notice an extremely foul odor.  Passing your 
 Searching his putrid body, you find some items and a map.
 
 ### SD2:278
-Unforunately, what killed this dwarf finds you while you search his body.
+Unfortunately, what killed this dwarf finds you while you search his body.
 
 ### SD2:279
 You come upon a strange creature running around in circles.  It is obviously lost, and when it looks at you, your heart goes out to it.  Feed it?
@@ -852,10 +852,10 @@ The creature immediately takes a liking to you, and decides that it would be bet
 You approach a massive copper door heavily encrusted with jewels and expertly carved.  You begin to wonder if the whole cavern itself isn't man made.
 
 ### SD2:282
-On closer inspection, this hole looks bigger than suspected.  Leaning closer, you lose you fotting and fall in.  You find yourself sliding down a chute of mud, and arrive somehwere else.
+On closer inspection, this hole looks bigger than suspected.  Leaning closer, you lose you footing and fall in.  You find yourself sliding down a chute of mud, and arrive somewhere else.
 
 ### SD2:283
-A sign on the door says 'Tunnel Excavations'.  When you enter a dwarven clerk eyes you suspeciously.  "Can you work with a pick?"  He looks you up and down.  "Hmm, don't know if I can offer you a job in the tunnels..."
+A sign on the door says 'Tunnel Excavations'.  When you enter a dwarven clerk eyes you suspiciously.  "Can you work with a pick?"  He looks you up and down.  "Hmm, don't know if I can offer you a job in the tunnels..."
 
 ### SD2:284
 You are about to protest.  "Well, go rout out some snails we've got causing us trouble up in tunnel A4.  You do that and I can pay you.  Go to the map shop to get the right map."  He returns to his work.
@@ -894,10 +894,10 @@ A very strange door indeed.  It is extremely sturdy, but the lock seems to be on
 This particular nest sits apart from the others.  The worms that dwell behind this wall use it for a dump, though things they cannot use you certainly can.
 
 ### SD2:296
-An abandoned house with slime covered walls.  The walls are slowely being decomposed by the slime.  The creatures that did this must be fearsome!
+An abandoned house with slime covered walls.  The walls are slowly being decomposed by the slime.  The creatures that did this must be fearsome!
 
 ### SD2:297
-The central den of snails, you see a bakers dozen lined up, oozing.  Sensing your peaceful nature they speak.  By some virtue of their magical nature, you understand them as they try to commmunicate.
+The central den of snails, you see a bakers dozen lined up, oozing.  Sensing your peaceful nature they speak.  By some virtue of their magical nature, you understand them as they try to communicate.
 
 ### SD2:298
 "Why kill?  Why Dwarves us kill?  Why Worms us kill?  We harm Not.  Need space for homes.  You tell Dwarves."  They abruptly stop and you think it would be better if you went back and conveyed this to the Dwarves.
@@ -912,16 +912,16 @@ This particular patch of mushrooms radiates of magic.  Pick some?
 You pick some mushrooms, storing them in some of your wine to preserve them.  Their magic seeps into the wine.
 
 ### SD2:302
-You see a young boy sheltered among the ruins.  As you approach he shrinks back, terrified by the lizards that now inhabit his villiage.
+You see a young boy sheltered among the ruins.  As you approach he shrinks back, terrified by the lizards that now inhabit his village.
 
 ### SD2:303
-As you approach, his tension subsides.  "You've got to help us!!  Nobody knows that our villiage has been destroyed!!  Tell the Crystal Emperor!!"  He hands you a map.  "This will help you see him.
+As you approach, his tension subsides.  "You've got to help us!!  Nobody knows that our village has been destroyed!!  Tell the Crystal Emperor!!"  He hands you a map.  "This will help you see him.
 
 ### SD2:304
 "Remember: many of the walls are false in his castle."  Sensing danger the boy quickly scurries back among the rubble to live as he has for what looks like many months.
 
 ### SD2:305
-You are amazed at how many of these foul lizads inhabit this once clean town.  Searching the one house still standing, you see a creature in the corner of the room, hissing.
+You are amazed at how many of these foul lizards inhabit this once clean town.  Searching the one house still standing, you see a creature in the corner of the room, hissing.
 
 ### SD2:306
 It is not hissing at you but at the lizards behind you!
@@ -933,7 +933,7 @@ The creature, seeing that you dislike the lizards as much as you, joins your par
 You come upon a small hut among scores of graves.  An extremely old dwarf rubs sweat off his brow as he leans on his shovel.  He looks up at you, shrugs and continues to dig.
 
 ### SD2:309
-You approach to question him about the whereabouts of the Crystal Lord.  He digs as he talks.  "Ah!  Our glorious leader!  Nearly indestructable he is.  He wears armor made of gems so thick no sword can penetrate.
+You approach to question him about the whereabouts of the Crystal Lord.  He digs as he talks.  "Ah!  Our glorious leader!  Nearly indestructible he is.  He wears armor made of gems so thick no sword can penetrate.
 
 ### SD2:310
 "Nobody sees him much as he prefers to stay deep underground.  If you can survive the labyrinth he has constructed, it is said, anyone can see him.  Good luck though."  He spits.  "I'd help you myself,
@@ -966,16 +966,16 @@ Decline
 "Good.  You won't regret it.  Return here for your reward once it is delivered."
 
 ### SD2:320
-"You surface folk are not a bad bunch after all."  The She-Tiger cheftain says.  They hold a large feast in your honor, and afterwards they present you with a fine spear, much like the ones they use.
+"You surface folk are not a bad bunch after all."  The She-Tiger chieftain says.  They hold a large feast in your honor, and afterwards they present you with a fine spear, much like the ones they use.
 
 ### SD2:321
-"Now you know too much.  Now, I'm afriad, we'll have to kill you."  They surround you and attack.
+"Now you know too much.  Now, I'm afraid, we'll have to kill you."  They surround you and attack.
 
 ### SD2:322
 A man peers out from behind a curtain.  He waves then disappears.  You wave back.  Quickly, dwarves issue out of the house and escort you inside.  "Do you have the package?"  You are unaware that you just made a secret sign.
 
 ### SD2:323
-"Glorious!"  A dwarf slaps you on the back amically.  "The revolution may proceed!"  The pack is quickly opened and inside are several scrolls.  They seem to have forgotten about you entirely.
+"Glorious!"  A dwarf slaps you on the back amicably.  "The revolution may proceed!"  The pack is quickly opened and inside are several scrolls.  They seem to have forgotten about you entirely.
 
 ### SD2:324
 You get up to leave, and a dwarf asks you if you wish to accompany them on their mission.  You tell them you are just a courier and know nothing of dwarven politics.  They look surprised, but seeing you to be safely oblivious, tell you their plan.
@@ -993,7 +993,7 @@ You get up to leave, and a dwarf asks you if you wish to accompany them on their
 There is no answer.
 
 ### SD2:329
-The door opens and they lead you down a long passageway.  "Good luck brother."  You are dazzled by winding passages.  They are amzingly beautiful.
+The door opens and they lead you down a long passageway.  "Good luck brother."  You are dazzled by winding passages.  They are amazingly beautiful.
 
 ### SD2:330
 A large door in a very thick wall.  It opens easily.  How eerie.
@@ -1020,7 +1020,7 @@ A local healer has set up shop here.  Dwarven clerics are hard to come by, which
 "Now off with you until you're done!"
 
 ### SD2:338
-You have tirggered a tripwire!
+You have triggered a tripwire!
 
 ### SD2:339
 A small portion of the tunnel collapses around you.
@@ -1062,7 +1062,7 @@ You can tell from the dust that lines this unused secret passage that it would b
 You have awakened an otherwise peacefully napping dragon.  It stretches, ready for breakfast.
 
 ### SD2:352
-In the middle of this passageway you see a strange sight.  Giant snails struggle for control of a passageway while mound makers continue to dig.  You are drawn into the meelee.
+In the middle of this passageway you see a strange sight.  Giant snails struggle for control of a passageway while mound makers continue to dig.  You are drawn into the melee.
 
 ### SD2:353
 A stench comes from around the corner that makes you gag.
@@ -1077,7 +1077,7 @@ Antmen dig their way into this tunnel, looking for something to eat.  They've fo
 A few cave tigers wander in a pack.  They look lost - and hungry.
 
 ### SD2:357
-A strange goat-like smell eminates from this direction.
+A strange goat-like smell emanates from this direction.
 
 ### SD2:358
 You stumble upon a bunch of crabs being trained by a shepherd.  They attack.
@@ -1095,7 +1095,7 @@ Some crab shepherds sit carving on their flutes.  They stop seeing good fodder f
 You are now convinced this is an illusion and hope that if you will not be stuck forever in this passageway.
 
 ### SD2:363
-Finally, you reach a large room.  No doubt the Crstal Emperor is close at hand, but where?  So many doors up ahead...
+Finally, you reach a large room.  No doubt the Crystal Emperor is close at hand, but where?  So many doors up ahead...
 
 ### SD2:364
 Even the Crystal Emperor needs storage space.  You find little of use.
@@ -1116,10 +1116,10 @@ As you search through the many rooms, you get the feeling that the Crystal Emper
 Behold!!  The Crystal Emperor!!  Even in the dim torchlight, his glimmering is blinding.  He speaks in a metallic tone.  "So.  You have found me, surface dwellers.  Have you come to atone for the follies of others?"
 
 ### SD2:370
-You look puzzled so he continues.  "I see you know not of the treachery of Fire.  We were comissioned to aid them in making impliments of war.  For what, we knew not.  They brought us wood, and we made spears.
+You look puzzled so he continues.  "I see you know not of the treachery of Fire.  We were commissioned to aid them in making implements of war.  For what, we knew not.  They brought us wood, and we made spears.
 
 ### SD2:371
-"Then, without provocation the Green Elves collpased some of our glorious caverns.  They said we killed their trees.  Ha!  It must have been the Order of the Flame, but they wouldn't listen."  He listens to your proposal of an elemental summit.
+"Then, without provocation the Green Elves collapsed some of our glorious caverns.  They said we killed their trees.  Ha!  It must have been the Order of the Flame, but they wouldn't listen."  He listens to your proposal of an elemental summit.
 
 ### SD2:372
 "Silverbeard is wise in summoning the leaders.  I agree to come since I did no wrong."  He pauses thoughtfully, glinting in the torchlight.  A horn appears in his hand.  "Take this.  When it is time for us to meet, blow it.
@@ -1128,7 +1128,7 @@ You look puzzled so he continues.  "I see you know not of the treachery of Fire.
 "All of the Lords will hear it and come meet.  Hopefully, we can work out some kind of agreement."  He sighs, looking tired.  "Now let me give you a token of gratitude for doing this arduous task of visiting each elemental lord."
 
 ### SD2:374
-He gives you a horn and some special jewel encrusted items, before wisking you back to the underworld.
+He gives you a horn and some special jewel encrusted items, before whisking you back to the underworld.
 
 ### SD2:375
 In this dense wood, you have a growing fear that most anything could attack you unaware.  Your fear is realized.  These are the largest Krise you have ever seen
@@ -1137,10 +1137,10 @@ In this dense wood, you have a growing fear that most anything could attack you 
 Wandering through the wood, you hear a strange sound from above.  Looking up you see a large shape descend.
 
 ### SD2:377
-A femal gryphon, half eagle - half woman, stands regally before you.  "You seem lost around here."  You nod.  "What are you doing here?"  You tell her of your desire to meet the leader of this domain.
+A female gryphon, half eagle - half woman, stands regally before you.  "You seem lost around here."  You nod.  "What are you doing here?"  You tell her of your desire to meet the leader of this domain.
 
 ### SD2:378
-"You mean the Wisp?  Good luck.  Its castle lies beyond the reach of any creatures without wings."  She pauses, smiling.  "I see your moneybags are quite overwieghted.
+"You mean the Wisp?  Good luck.  Its castle lies beyond the reach of any creatures without wings."  She pauses, smiling.  "I see your moneybags are quite heavy."
 
 ### SD2:379
 "For a fee of 300 gems I would be willing to ferry you to the castle.  If you wish it, meet me at my home with the payment."  She hands you a map and is gone in the blink of an eye.
@@ -1152,10 +1152,10 @@ You see a large wild cat stuck in some underbrush.  It thrashes about wildly, ge
 Once free, the large cat is obviously grateful and rubs up against your legs purring loudly.  You are worried it is just toying you, but it seems content to come along with you on your travels.
 
 ### SD2:382
-It looks as if this beast could be a great asset as you watch it carfeully stalk a small bird, climb a tree, kill it, and eat it all in one motion.  You begin to feel sorry for your adversaries...
+It looks as if this beast could be a great asset as you watch it carefully stalk a small bird, climb a tree, kill it, and eat it all in one motion.  You begin to feel sorry for your adversaries...
 
 ### SD2:383
-You find it extremely peacful in this grove and think it would be a fine place for a picnic lunch and a rest in the sun.
+You find it extremely peaceful in this grove and think it would be a fine place for a picnic lunch and a rest in the sun.
 
 ### SD2:384
 This shop has an amazing array of missile weapons!
@@ -1170,7 +1170,7 @@ A small shack, but a sense of magic comes from inside.  The selection is impress
 Here a crude dummy of an orc rests.  It is pock marked and has arrows sticking out of it.  This must be where the young ones learn how to shoot.
 
 ### SD2:388
-Entering this little hut you see an extremely tiny elf string a bow roughly twice the hieght of himself.  "Can I help you?"   You ask him what he does for a living.
+Entering this little hut you see an extremely tiny elf string a bow roughly twice the height of himself.  "Can I help you?"   You ask him what he does for a living.
 
 ### SD2:389
 "You're obviously not from around here."  He extends a graceful hand.  "Lorla the Fletcher.  I sell bows and bow accessories at my shop on the other side of the shooting range.  This is my workshop.
@@ -1185,19 +1185,19 @@ Entering this little hut you see an extremely tiny elf string a bow roughly twic
 A sign reads, "Lorla's Hunting Shop"  An amazing array of bows, arrows and quivers.
 
 ### SD2:393
-You see apprecntices busy at work making all kinds of magical arrows.
+You see apprentices busy at work making all kinds of magical arrows.
 
 ### SD2:394
 There is a stir as the workers realize you were the group sent to recover some dragon scales.  They quickly resume work.
 
 ### SD2:395
-Seeing you with the scales, one of the apprecntices quickly runs from the shack and returns with Lorla.  "Great Wisp!!"  He eagerly takes the scales from you and begins work.
+Seeing you with the scales, one of the apprentices quickly runs from the shack and returns with Lorla.  "Great Wisp!!"  He eagerly takes the scales from you and begins work.
 
 ### SD2:396
 Hours pass and you grow weary while Lorla's concentration never fades.  You are on the verge of leaving when he rises triumphantly.  "Finished!"  He holds up six arrows to the sunlight.  They are glorious to behold.
 
 ### SD2:397
-"And for you wonderful deed, I give you half of this incredible trasure."  He hands you three arrows and he bows deeply.  "Thank you again.  Let me offer you a discount at my shop also.  Thank you again."
+"And for you wonderful deed, I give you half of this incredible treasure."  He hands you three arrows and he bows deeply.  "Thank you again.  Let me offer you a discount at my shop also.  Thank you again."
 
 ### SD2:398
 Dragon scales lie strewn everywhere.  Scales of many colors, but you do not see any green ones.  Strange.
@@ -1212,7 +1212,7 @@ After the battle you notice green dragon scales littering the area.  You take so
 An alchemist lives in this little shack.  You knock, and a man sitting at a table waves you in without turning.  "Yes?"  he asks without turning.    You don't answer quickly, not knowing what to say.
 
 ### SD2:402
-"Well, if you've got nothing better to do, go fetch me some mandrake root for my research.  It growns only in the graveyard to the far north.  Bring some back and I'll give you some money."
+"Well, if you've got nothing better to do, go fetch me some mandrake root for my research.  It grows only in the graveyard to the far north.  Bring some back and I'll give you some money."
 
 ### SD2:403
 The alchemist is delighted.  "I can take as much as you can find."  He hands you a sack filled with gems.
@@ -1224,10 +1224,10 @@ Walking through the graves you notice a plant that resembles a human hand growin
 Cleaning your swords of the foul gore, you pick the root and put it in your pack.  Perhaps it will come in handy sometime.
 
 ### SD2:406
-A quiet clearing.  You feel safe and take a well desereved rest.
+A quiet clearing.  You feel safe and take a well deserved rest.
 
 ### SD2:407
-Seems the memebers of this town have gone hunting.  Look through their homes?
+Seems the members of this town have gone hunting.  Look through their homes?
 
 ### SD2:408
 You find a large store of food and some battle worn weapons.  You also find the hunting party as they return from the forest.  They do not appear happy.
@@ -1236,25 +1236,25 @@ You find a large store of food and some battle worn weapons.  You also find the 
 A lonely hut stands in the middle of nowhere.  You see a Gryphon perched upon the top.  "Ready to go?  Remember, it's a one way ticket for 300 gems."
 
 ### SD2:410
-You climb up onto the Gyrphon's back and begin to fly.  What a thrill!  She sets you down on the floating island.  "I haven't seen the Wisp in a while.  I guess I'll accompany you into the castle if you don't mind."
+You climb up onto the Gryphon's back and begin to fly.  What a thrill!  She sets you down on the floating island.  "I haven't seen the Wisp in a while.  I guess I'll accompany you into the castle if you don't mind."
 
 ### SD2:411
-You enter an amzaing castle.  Built inverted, each story gets bigger as it goes up.  Some force of magic keeps the castle from tipping.
+You enter an amazing castle.  Built inverted, each story gets bigger as it goes up.  Some force of magic keeps the castle from tipping.
 
 ### SD2:412
 "Sorry.  No dough, no go."
 
 ### SD2:413
-As you lower yourself down the ladder, it crumbles and breaks.  You find yourself in a small treaure room with no exits.  There are guards for the treasure, however.
+As you lower yourself down the ladder, it crumbles and breaks.  You find yourself in a small treasure room with no exits.  There are guards for the treasure, however.
 
 ### SD2:414
-Having dispatched the annoying lizards, you divy up the treasure.  You noticed a strange yellow cloak with arcane markings sewn into the lining.
+Having dispatched the annoying lizards, you divvy up the treasure.  You noticed a strange yellow cloak with arcane markings sewn into the lining.
 
 ### SD2:415
 There is a small window in the ceiling here.  If only there was some way to get up there...
 
 ### SD2:416
-Thinking of the cloak you have just aquired, as you go to put it on, it feels lighter than air.  Putting it on, you notice you now have the ability to fly!!  The rest of the part clammers onto the cloak wearer and you fly through the window.
+Thinking of the cloak you have just acquired, as you go to put it on, it feels lighter than air.  Putting it on, you notice you now have the ability to fly!!  The rest of the party clings to the cloak wearer and you fly through the window.
 
 ### SD2:417
 Chills play up and down your spine as you approach what you think to be the dwelling place of the Wisp, the leader of the Green Elves.
@@ -1269,7 +1269,7 @@ As you approach, you see a strange sight.  Spheres of different shades of blue f
 "We must meet on neutral ground.  Only then will I come.  Crosswald will suffice."  It seems oblivious to the hardship you endured to come here.  "Thank you for your effort."  The voice ends.
 
 ### SD2:421
-You see gold and treasure strewn about the room, but closer inspection revealrs it to be merely worthless decoration.  What use do wisps have for material goods?
+You see gold and treasure strewn about the room, but closer inspection reveals it to be merely worthless decoration.  What use do wisps have for material goods?
 
 ### SD2:422
 Frustrated with the bland reply you press forward.  "I sense that you are not happy.  There is no place for un happiness in this castle.  Be gone."  You open you mouth to protest but before you can utter a word, you are outside.
@@ -1281,7 +1281,7 @@ This castle seems eerily empty.
 You fail to come up with a solution.
 
 ### SD2:425
-A simple fisherman's hut lies at the end of this road.  As you approach the house a man stands in the doorway and waves.  "Visitors!  Come on in!  Melfest's the name."  He offers you some pickled fish.  You don't refues his hospitality.
+A simple fisherman's hut lies at the end of this road.  As you approach the house a man stands in the doorway and waves.  "Visitors!  Come on in!  Melfest's the name."  He offers you some pickled fish.  You don't refuse his hospitality.
 
 ### SD2:426
 "What can I do for you?"  You tell him that you seek the leader of this domain for a special meeting.  He is silent for a moment.  "You seek the Enlightened One?  Wow.  You look as if your spirit isn't ready...
@@ -1293,7 +1293,7 @@ A simple fisherman's hut lies at the end of this road.  As you approach the hous
 A salty dog of a pirate leans on the porch.  "Maps." he calls every now and then.  You approach him about a map to the shrines.  "Certainly. "  His expression changes.  "May the Enlightened One smile on you.  No charge."
 
 ### SD2:429
-He pulls out a small map and points out to you that the shrines are south, northwest and northeast of the cnetral island.  "May it smile on you."  He repeats.
+He pulls out a small map and points out to you that the shrines are south, northwest and northeast of the central island.  "May it smile on you."  He repeats.
 
 ### SD2:430
 You approach the well, and read the sign over the top of it.  'Shrine' it reads.  'If you are ready to begin the test, toss in a coin.' Do you do so?
@@ -1317,7 +1317,7 @@ A sign above the well reads 'Shrine.'  Do you wish to meditate here?
 The letters on the sign change.  'Which force is the strongest?'
 
 ### SD2:437
-The letters re-form themselves.  'Who rules your desinty?'
+The letters re-form themselves.  'Who rules your destiny?'
 
 ### SD2:438
 'Your ritual is incomplete.  Repeat it as necessary until you gain understanding.'  The letters fade.
@@ -1326,7 +1326,7 @@ The letters re-form themselves.  'Who rules your desinty?'
 The letters form themselves differently.  'Congratulations.  The Enlightened One will now see you.  Proceed to the castle in the sea within the sea.'
 
 ### SD2:440
-You see a great many people milling around out front of this enourmous temple.  They seem to be chanting something, but you can't quite make it out.  Going inside, you see a man at a table with a sack of coins.  He seems to be selling them.
+You see a great many people milling around out front of this enormous temple.  They seem to be chanting something, but you can't quite make it out.  Going inside, you see a man at a table with a sack of coins.  He seems to be selling them.
 
 ### SD2:441
 An old lighthouse, still functioning, with a real lighthouse keeper sitting up top working the light in long sweeping motions.  You are glad you became an adventurer to stay out of that kind of sedentary work...
@@ -1344,10 +1344,10 @@ A house apart from the others.  There seems to be nobody at home.  Though when y
 He goes on not noticing your reaction.  "Fine.  I resign myself to this life of knowledge.  Which Question would you like an answer too?"
 
 ### SD2:446
-"The answer is with magic.  Only with magic do you gain understanding.  And with undersatnding, enlightenment.  Nothing is gained by physical means."  He leaves and will talk to you no more.
+"The answer is with magic.  Only with magic do you gain understanding.  And with understanding, enlightenment.  Nothing is gained by physical means."  He leaves and will talk to you no more.
 
 ### SD2:447
-"Who is the ultimate judge of all things?  Not some spirirtual leader, but only you, yourself, can guide your path."  He sighs and walks back inside his home.  You get the feeling he does this often.
+"Who is the ultimate judge of all things?  Not some spiritual leader, but only you, yourself, can guide your path."  He sighs and walks back inside his home.  You get the feeling he does this often.
 
 ### SD2:448
 He seems surprised.  "You must not be very bright.  Just got to the temple up the street and get some meditation tokens.  Find the first shrine and begin."  He leaves, disgusted.
@@ -1368,13 +1368,13 @@ A sign on the door reads 'Research Library'.
 A sign says 'If you remove a book, return it within a fortnight, or pay the penalty.'  You wonder what that penalty could be.
 
 ### SD2:454
-You find an intersting tome!
+You find an interesting tome!
 
 ### SD2:455
 This magical text will take some work to decipher.
 
 ### SD2:456
-An ordinary text entitled "Ritual History."  It begins "To receive enlightenement, one must be ready.  The only sure way of showing readiness is to complete the Ritual.  Each of the three well shrines must be visited.
+An ordinary text entitled "Ritual History."  It begins "To receive enlightenment, one must be ready.  The only sure way of showing readiness is to complete the Ritual.  Each of the three well shrines must be visited.
 
 ### SD2:457
 "They must be visited in the proper order, and each answer must be answered properly.  The first well must be given a gift of meditation tokens to show the seriousness of the pilgrim.  Only this way may the Enlightened One contact you."
@@ -1389,7 +1389,7 @@ This book is entitled "War History" by a scholar named J. A. Kenoussah.  It read
 "Air then collapsed some of the Earth's caverns, and yet again we were blamed.  We had no choice but to defend ourselves with our magic.  Hopefully a dialogue can begin someday, and this can be worked out.
 
 ### SD2:461
-"Until then, ouy greatest magical scholars must prepare for war, and our land has paid the price from failed experiments and summonings..."
+"Until then, our greatest magical scholars must prepare for war, and our land has paid the price from failed experiments and summonings..."
 
 ### SD2:462
 A book entitled "The Holy Teachings" draws you eye.  It radiates strongly of magic.  Inside, however nothing is written.  How strange indeed!
@@ -1410,16 +1410,16 @@ You don't answer but wait for him to finish.  "Go south and destroy the pentagra
 "Thank you for your great help."  This little town holds a small celebration in your honor.  "This war has been horrible for everyone.  Take this as a token of our thanks."  The leader of this little town gives you a small sack.
 
 ### SD2:468
-"Your work will not be forgotten here."  After the celebration, the townseople quickly set about rebuilding the settlement.
+"Your work will not be forgotten here."  After the celebration, the townspeople quickly set about rebuilding the settlement.
 
 ### SD2:469
-As you approach the pentagram, you notie creatures closing in around you.  Sensing that you wish to tamper with their portal from the abyss, they attack!
+As you approach the pentagram, you notice creatures closing in around you.  Sensing that you wish to tamper with their portal from the abyss, they attack!
 
 ### SD2:470
 Having dispatched that nasty bunch of creatures, you quickly disperse the components of the pentagram.  They won't bother you anymore.
 
 ### SD2:471
-Not much to see on this lonly island.  You do notice that there is fresh grass under the water.  You guess that this island was once above water in the not so distant pass.  What happened?
+Not much to see on this lonely island.  You do notice that there is fresh grass under the water.  You guess that this island was once above water in the not so distant pass.  What happened?
 
 ### SD2:472
 "We had to flood our original town as it was overrun with monsters.  Please, help us!"
@@ -1428,7 +1428,7 @@ Not much to see on this lonly island.  You do notice that there is fresh grass u
 This is a strange scene.  Ships, crewless, lie drifting around.  You hope not to meet the creatures that did this and set sail full speed ahead.  It is too late.
 
 ### SD2:474
-The bodies of these amzing creatures sink into the deep wihtout a trace.  You hope that you will never have to deal with them again.
+The bodies of these amazing creatures sink into the deep without a trace.  You hope that you will never have to deal with them again.
 
 ### SD2:475
 Mountains jut out from beneath the sea, and it looks as if the centers have been blasted out.  A lone tree grows at its center.
@@ -1491,10 +1491,10 @@ You play on.
 As the last strains of your call echo through the air, the ground shakes.  You quickly clamber down the tower to avoid falling from it.
 
 ### SD2:495
-From the four corners of Crosswald you watch in amazment as the leader of each elemental force strides forth.  You also notice Mayor Silverbeard looking much more handsome in a new statesman's suit.
+From the four corners of Crosswald you watch in amazement as the leader of each elemental force strides forth.  You also notice Mayor Silverbeard looking much more handsome in a new statesman's suit.
 
 ### SD2:496
-It is an amazing assortment of creasutes.  A queen clothed in nothing but fire.  A warrior with dazzlingly gem encrusted armor.  A sphere of solid airial energy.  A dragon, who you are certain, is the Enlightened One in physical form.
+It is an amazing assortment of creatures.  A queen clothed in nothing but fire.  A warrior with dazzlingly gem encrusted armor.  A sphere of solid aerial energy.  A dragon, who you are certain, is the Enlightened One in physical form.
 
 ### SD2:497
 They all acknowledge your presence, but are not at ease being near their arch-enemies.  Silverbeard is the first to speak.  "Let us sort this all out.  Please, sit and relax.  All will have their turn.  So how did this all start?"
@@ -1503,19 +1503,19 @@ They all acknowledge your presence, but are not at ease being near their arch-en
 The Lord of Flame speaks.  "Our flag was stolen by the Servants of Water."  The Enlightened One responds evenly.  "How do you know?"  There is a tense pause.  Then defiantly, "The Chromatic Dragon showed me in her magical orb."
 
 ### SD2:499
-The Crystal Emperor gasps.  The Wisp glows brightly.  It speaks.  "The Chromatic Dragon told us that the Mud Dwarves descrated out groves!"  The Lord of Flame responds.  "We were told those trees would not be missed."
+The Crystal Emperor gasps.  The Wisp glows brightly.  It speaks.  "The Chromatic Dragon told us that the Mud Dwarves desecrated our groves!"  The Lord of Flame responds.  "We were told those trees would not be missed."
 
 ### SD2:500
 Discoveries continue in a like fashion.  Silverbeard stops the discussion.  "Let's put this all out on the table.  You were all advised by this same Chromatic Dragon to do ill unto another.  Dazzled by tricks of sorcery.
 
 ### SD2:501
-"They must have been powerful magic to fool the likes of you."  He strokes his long beard.  "But why would this creature hate the world so?"  The memebers of the meeting are embarassed in their hastiness.  They all apologize.
+"They must have been powerful magic to fool the likes of you."  He strokes his long beard.  "But why would this creature hate the world so?"  The members of the meeting are embarrassed in their hastiness.  They all apologize.
 
 ### SD2:502
 Silverbeard smiles at you.  "And it is you we have to thank for this reconciliation.  There seems to be only one thing left to do.  To hunt down the Chromatic Dragon."  A cheer goes up at that suggestion.
 
 ### SD2:503
-The elemental lords suggest that you begin the search, but only after great feasting in your honor.  There is jollity at the suggestiong that strife is over.  You relax into the idea of a long rest.
+The elemental lords suggest that you begin the search, but only after great feasting in your honor.  There is jollity at the suggestion that strife is over.  You relax into the idea of a long rest.
 
 ### SD2:504
 The earth shakes.  The Chromatic Dragon appears!  "I've been waiting for this a long time.  All of the leaders in one place.  Now they will be dispatched at once by my minions."
@@ -1527,7 +1527,7 @@ The elemental lords move to attack.  Four dragons from the four elements materia
 The elemental leaders heal themselves and look grave.  Silverbeard speaks.  "I guess this adventure must continue, as we search for the Chromatic Dragon.  For now, Crosswald and the elemental domains are safe.  Congratulations!"
 
 ### SD2:507
-A huge colossus stand, stradling the mountains.  He speaks.  "I AM THE GREAT PROMETHEUS, CREATOR OF THIS WORLD!"  You look up, shielding your eyes from the hot desert sun.
+A huge colossus stand, straddling the mountains.  He speaks.  "I AM THE GREAT PROMETHEUS, CREATOR OF THIS WORLD!"  You look up, shielding your eyes from the hot desert sun.
 
 ### SD2:508
 "I DEMAND TO BE APPEASED. YOU MUST PRAY TO ME IN ORDER TO PASS THIS POINT.
@@ -1575,13 +1575,13 @@ Prevalent in the Domain of Air, these bees not only sting, but shock their victi
 A menace to adventurers, this breed of dragon has electricity based attacks.
 
 ### DES:14
-This giant union of female Wood Elf and serpant is formidable.  Her posion bite and shocking spines pose a threat to anyone.
+This giant union of female Wood Elf and serpent is formidable.  Her poison bite and shocking spines pose a threat to anyone.
 
 ### DES:15
-With attacks ranging from posion to paralysis, this malefic plant can regenerate quickly.  Its limbs, creeping vines, also tangle its prey.
+With attacks ranging from poison to paralysis, this malefic plant can regenerate quickly.  Its limbs, creeping vines, also tangle its prey.
 
 ### DES:16
-Half man, half serpant, this beast attacks with its magic and with its poisonous tail.
+Half man, half serpent, this beast attacks with its magic and with its poisonous tail.
 
 ### DES:17
 Not a demon in the true sense, but this creature matches any fiery fiend in its wickedness.
@@ -1617,7 +1617,7 @@ A man of the Order of the Flame  trained with the heavy battle axe.
 A Flame Lord on horseback, these speedy adversaries not only attack with their sabres, but with their mighty steeds as well.
 
 ### DES:28
-Travelling in packs, these hordes make up the bulk of an Order army.
+Traveling in packs, these hordes make up the bulk of an Order army.
 
 ### DES:29
 A magic user hired by the Order of the Flame to aid its troops in battle.  Trained in spells of fire, these magicians cast a mighty fireball!
@@ -1653,7 +1653,7 @@ Another personal guard to the Lord of Fire.  This warrior sends pulses of flame 
 A pet of the demons, this giant insect has a fire in its belly that lets it shoot out flaming bolts at its foes.
 
 ### DES:40
-Leaders of small dwarf clans, these giant dwaves (by dwarven standards) are massive in muscle if not in stature.
+Leaders of small dwarf clans, these giant dwarves (by dwarven standards) are massive in muscle if not in stature.
 
 ### DES:41
 A lesser guard of the Mud Dwarf caverns, their axes are sturdy enough to carve through rock.
@@ -1671,28 +1671,28 @@ Ordinary men captured by the mud dwarves put to work in the caverns.   They are 
 An animated mud dwarf specially prepared for battle.  They can fight without the control of a Conjurer.
 
 ### DES:46
-An animated Mud Dwarf mostly used for tunnelling, but can be used for battle if pressed.
+An animated Mud Dwarf mostly used for tunneling, but can be used for battle if pressed.
 
 ### DES:47
-Plentiful in undergound passages, they have been (somewhat) trained by the Mud Dwarves.
+Plentiful in underground passages, they have been (somewhat) trained by the Mud Dwarves.
 
 ### DES:49
 Extremely slow moving, these creatures would be easy to dispatch if they couldn't shoot their spores to kill and obtain their food.
 
 ### DES:50
-Ubiquitous in the Domain of Earth, they scavage anything and everything.
+Ubiquitous in the Domain of Earth, they scavenge anything and everything.
 
 ### DES:51
 An earthworm with a magically endowed hide that allows it to walk and claw.
 
 ### DES:52
-These creatures labor endlessly for the mud dwarves, buildign their caverns and tunnels.  They are used for battle when needed.
+These creatures labor endlessly for the mud dwarves, building their caverns and tunnels.  They are used for battle when needed.
 
 ### DES:53
 Normally peaceful, these incredible specimens will attack only if cornered.
 
 ### DES:54
-Distant relatives of the sabre toothed variety, this breed has devloped a poision bite to defend itself.
+Distant relatives of the saber toothed variety, this breed has developed a poisonous bite to defend itself.
 
 ### DES:55
 A member of the mud dwarf undead that refused to be dominated.  It helps them only as master.
@@ -1701,7 +1701,7 @@ A member of the mud dwarf undead that refused to be dominated.  It helps them on
 Its powerful mandibles make this beast a force to be reckoned with.
 
 ### DES:57
-Poisonous crabs that dwell undergound, often found in herds with their charming masters.
+Poisonous crabs that dwell underground, often found in herds with their charming masters.
 
 ### DES:58
 A Pan of the underworld, this earthy fellow plays his pipes to charm his crabs and his foes.
@@ -1713,7 +1713,7 @@ A cave dwelling dragon friendly to mud dwarves and other earth based creatures.
 A well developed mind sets this warrior apart.  His sword may be a dagger, but his spells are large indeed.
 
 ### DES:61
-More enlightened than the Water Gnome, these diminuitive warriors spend their time cultivating magic, not brawn.
+More enlightened than the Water Gnome, these diminutive warriors spend their time cultivating magic, not brawn.
 
 ### DES:62
 These poisonous water snakes get their name from their ability to ride on waves and attack its victim unawares.
@@ -1731,7 +1731,7 @@ Undead from the sea animated to protect the waterways of the winding river.
 Major guardians of the Winding River, they use mostly cold based magic to do their damage.
 
 ### DES:67
-Magically ednowed water.  It flows frighteningly fast, and is disorienting and rather fearsome with its freezing touch.
+Magically endowed water.  It flows frighteningly fast, and is disorienting and rather fearsome with its freezing touch.
 
 ### DES:68
 Son of Puddle.
@@ -1746,7 +1746,7 @@ One of the few non-magical dwellers in the domain of water, they protect sacred 
 A distant relative of the ice dragon and much more evil.
 
 ### DES:72
-Why would the Servants of Water need a giant, sword weilding goliath?
+Why would the Servants of Water need a giant, sword wielding goliath?
 
 ### DES:73
 A menace to all those that travel the high seas, pirate and decent merchant alike.  Their hide is thin, but their body is huge making them a force to be reckoned with.
@@ -1776,7 +1776,7 @@ A personal guard of the Lord of Fire.
 A magical slave driver of lesser demons.  The force of his attacks come not with damage but their ability to confuse the attacked.
 
 ### DES:82
-Second in line only to the Lord of Fire, he wares no armor save a veil of smouldering heat.
+Second in line only to the Lord of Fire, he wares no armor save a veil of smoldering heat.
 
 ### DES:83
 Hers alone is the power of fire to command.  Woe be to the foolish person that meets her in battle.
@@ -1818,7 +1818,7 @@ This sphere of energy leads the Wood Elves, and packs a magical punch.
 The leader of the Mud Dwarves, his armor is made of solid gems.
 
 ### DES:99
-His greedy nature will not allow him to pass up anoppurtunity for a `blade.
+His greedy nature will not allow him to pass up an opportunity for a blade.
 
 ### DES:100
 The Enlightened One takes the form of an ice dragon to fight.
@@ -1866,22 +1866,22 @@ The black sheep of the Abyss.  Half demon, half devil.  They are often shunned b
 A mutated mushman, fungoids are extremely rare..... and deadly.
 
 ### DES:197
-Hailing from the frozen planes of the Abyss, these malevelent creatures are immune to cold based spells.  They also have a nasty bite.
+Hailing from the frozen planes of the Abyss, these malevolent creatures are immune to cold based spells.  They also have a nasty bite.
 
 ### DES:198
-These beasts are no more than slaves to the evil eys.  They serve as hands for those that have none.  They are imensly strong.
+These beasts are no more than slaves to the evil eys.  They serve as hands for those that have none.  They are immensely strong.
 
 ### DES:199
 Weak in mind and body, these demons are lightning quick.  They are cowards in battle and will surrender or run easily.
 
 ### DES:200
-Incredibly strong, these demons rule over whole races of lesser ilk.  They prefer to pummle their enemies with bare hands and magic.
+Incredibly strong, these demons rule over whole races of lesser ilk.  They prefer to pummel their enemies with bare hands and magic.
 
 ### DES:201
 Existing on both the material plane and the astral plane simultaneously.  They can inflict massive chemical damage.
 
 ### DES:202
-Nomally happy to stand around and chew cud.  These creatures can be dangerous if they stampede.
+Normally happy to stand around and chew cud.  These creatures can be dangerous if they stampede.
 
 ### DES:211
 These vermin carry a deadly disease.  They breed so rapidly there are always plenty to take the place of those that perish.

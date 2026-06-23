@@ -45,7 +45,7 @@ You visit the town shaman, who offers to provide some of his magical services in
 You knock at the door, but receive no answer.
 
 ### SD2:13
-You knock at the door of Hallin tower, domicile for the skilled workers of the town.  The residents agree to bater their goods.
+You knock at the door of Hallin tower, domicile for the skilled workers of the town.  The residents agree to barter their goods.
 
 ### SD2:14
 This is the Golan tower, home to the most skilled and valuable members of the community.  With the appropriate wheedling, the most fantastic goods can be obtained here.
@@ -63,7 +63,7 @@ You take the time to visit the chief's home.  You wait at the door for a minute 
 You enter the main room under the eyes of the elders of the town.  The eldest speaks to you, "Greetings, warriors. You are among our finest and most skilled tribe members. We are going to take you into our confidence. A grave matter has arisen."
 
 ### SD2:19
-"Hal'ar has informed us that the town springs are running low.  He can provide for some short term solutions with his magic, but the situation cannot be maintained indefinetly. We ask you to assist him in the search any way you can."
+"Hal'ar has informed us that the town springs are running low.  He can provide for some short term solutions with his magic, but the situation cannot be maintained indefinitely. We ask you to assist him in the search any way you can."
 
 ### SD2:21
 You visit the chief's home.  A servant greets you, but hesitates when you ask to speak to the elders. "I don't think they want to see you until you've completed your quest. They're all very anxious. Trust me, come back later." He smiles apologetically.
@@ -78,7 +78,7 @@ You knock at the shaman's door, and explain that the elders requested you assist
 You come upon a shimmering spring in the midst of a small crevasse.  As you approach to take a sample of the water, it begins to take shape!
 
 ### SD2:25
-Having slain the water demon, you notice with regret that the spring has dissappeared.  Only dust is left.
+Having slain the water demon, you notice with regret that the spring has disappeared.  Only dust is left.
 
 ### SD2:26
 The shaman greets the news of the demon with regret. "I apologize that I could not warn you of this. Still, this is a serious situation. I can detect no other sources of water. Please bring this news to the elders. I will join you shortly."
@@ -144,13 +144,13 @@ At the back of a dark cave, you find a narrow passage that leads steeply down in
 Climbing through the narrow passage, you make your way back up to the barren desert.
 
 ### SD2:47
-You are surprised to find the remains of a road in the cavern. Despite the quality construction, the ravages of earthquakes and water have destroyed most of it. This small section seems to have surived, however. The question remains: who built it?
+You are surprised to find the remains of a road in the cavern. Despite the quality construction, the ravages of earthquakes and water have destroyed most of it. This small section seems to have survived, however. The question remains: who built it?
 
 ### SD2:48
 The cavern before you sports a luxuriant growth of moss and mushrooms.  Quiet echos of dripping water are all that meet your ears.
 
 ### SD2:49
-Travelling through a narrow defile, you come out into an open area in the mountains.  You see scattered groups of tents and pens.  You seem to have stumbled upon a Cathoon raider camp.
+Traveling through a narrow defile, you come out into an open area in the mountains.  You see scattered groups of tents and pens.  You seem to have stumbled upon a Cathoon raider camp.
 
 ### SD2:50
 What do you want to do?
@@ -177,7 +177,7 @@ You successfully open the chest, revealing a glittering pile of treasure.
 That appears to have no effect.
 
 ### SD2:58
-This small crude hut is the only permanent building in sight.  You cautiously enter, expecting an ambush, but find only a sparsely furnished room.  You search thorougly, but can't seem to find anything of interest.
+This small crude hut is the only permanent building in sight.  You cautiously enter, expecting an ambush, but find only a sparsely furnished room.  You search thoroughly, but can't seem to find anything of interest.
 
 ### SD2:59
 Coming from the lush mushroom growth, the starkness of this cavern is unnerving.  The ground immediately before you seems scorched, but you see no immediate reason as to how it got to that state.
@@ -189,7 +189,7 @@ You come across a small circle of campfire stones.  There is a small pile of dri
 As you poke around the fire, you hear a noise.  Laying your hands on your weapons and glancing about fearfully, you see a small, pale goblinoid come out of the shadows.  He looks half afraid and half hopeful.
 
 ### SD2:62
-"Greetings" he begins haltingly. "You are the first real people I've talked with in months. I was travelling in a small party of adventurers when we were ambushed by those mushroom men you have met by now.  I was knocked unconcious and left for dead."
+"Greetings" he begins haltingly. "You are the first real people I've talked with in months. I was traveling in a small party of adventurers when we were ambushed by those mushroom men you have met by now.  I was knocked unconscious and left for dead."
 
 ### SD2:63
 "When I came to, I tried to make a quiet escape, but went in the wrong direction. I became trapped in this small cave by the mushroom men. I frightened them at first with fire, so they leave me alone. I have been living off mushrooms and fish."
@@ -258,7 +258,7 @@ Fragrant flowers bloom here, getting life from a small pool that drips down the 
 Giant rocks stand sentry at a mammoth cave opening. Rather, what used to be a mammoth cave opening. Earthquakes and desert winds have caused a complete blockage of the passageway. You'll have to find a different way.
 
 ### SD2:85
-The path turns extremely steep here. Travelling this way regularly would be most inconvenient.
+The path turns extremely steep here. Traveling this way regularly would be most inconvenient.
 
 ### SD2:86
 High atop a mountain, you find a pile of brush and collected sticks.  It almost looks like a nest, you think.
@@ -276,7 +276,7 @@ Formerly an access point to the outside, a nearby river seems to have overflowed
 You enter a temporary holding room, filled with rotting bags and barrels. The rug once used to impress visitors now nearly completely disintegrates at your step.
 
 ### SD2:91
-These broad stairways, once easy access points to the tunnels, are both completlely choked with rubble.
+These broad stairways, once easy access points to the tunnels, are both completely choked with rubble.
 
 ### SD2:92
 You poke at the sacks, but they were long emptied by rats and other scavengers.
@@ -288,7 +288,7 @@ Long rotted leather goods fill these barrels.
 You optimistically search the crates, but uncover only rusted-together old tools.
 
 ### SD2:95
-This chest appears to be someone's personal goods, or at least it was.  Abandonded long ago, all you find are fragile scraps of cloth and a few rusty weapons.
+This chest appears to be someone's personal goods, or at least it was.  Abandoned long ago, all you find are fragile scraps of cloth and a few rusty weapons.
 
 ### SD2:96
 This solidly built chest seems to have fared better than the other items in the room.  You break off the rusty old lock and peer eagerly inside, but find only empty glass vials and old alchemical tools.
@@ -318,7 +318,7 @@ This spartan little room has seen better times; one of the beds is entirely crus
 You approach the ruined barrels leaking fluid in the corner, but the horrid stench that still remains makes you back away. Some things are better left unexplored.
 
 ### SD2:105
-The main staircase up into the structure did not fare well. Completlely covered by giant stone slabs fallen from above, it looks like you'll have to find some other way out.
+The main staircase up into the structure did not fare well. Completely covered by giant stone slabs fallen from above, it looks like you'll have to find some other way out.
 
 ### SD2:106
 This small storeroom is filled with mundane goods, damaged by water and the ravages of time. Hardly an undamaged container remains.
@@ -330,19 +330,19 @@ The wall here has collapsed, leaving a crawl space. You take the utmost care in 
 The door has been reinforced with piles of rubble, making it quite immovable without considerable effort.
 
 ### SD2:109
-A sparsely furnished room, suitable for small groups of people to stay in for perhaps a night or two. The thought occurs to you that this might prove as a good stop-over point for travelling families, should a move be necessary.
+A sparsely furnished room, suitable for small groups of people to stay in for perhaps a night or two. The thought occurs to you that this might prove as a good stop-over point for traveling families, should a move be necessary.
 
 ### SD2:110
 This room has been fully ruined, only the shattered remains of a bed left.
 
 ### SD2:111
-This large room is occupied by two tables, perhaps once a communal eating or gathering area. The tables are still in useable shape, although little else is. A noxious whiff of air wafts to you from a leaking barrel in the corner.
+This large room is occupied by two tables, perhaps once a communal eating or gathering area. The tables are still in usable shape, although little else is. A noxious whiff of air wafts to you from a leaking barrel in the corner.
 
 ### SD2:112
-This room is quite small; by your judgement, the furniture is slightly nicer than in the surrounding rooms, but not much. Perhaps a room for passing minor officials.
+This room is quite small; by your judgment, the furniture is slightly nicer than in the surrounding rooms, but not much. Perhaps a room for passing minor officials.
 
 ### SD2:113
-This side of the building was harder hit by the damages of time and the elements, perhaps because of it's proximity to water. This large boarding room is useable, but only barely.
+This side of the building was harder hit by the damages of time and the elements, perhaps because of it's proximity to water. This large boarding room is usable, but only barely.
 
 ### SD2:114
 This room was hit hard. Ironically, the ruined furniture is the nicest you've seen yet.
@@ -351,22 +351,22 @@ This room was hit hard. Ironically, the ruined furniture is the nicest you've se
 A gigantic crack runs through the mirror, and the top quarter lays in shards on the floor.
 
 ### SD2:116
-A crushed skeleton sits under a pile of rubble, the sorrid story of it's circumstances untold. You watch carefully for any sign of undead activity, but it remains resolutely still. You move on, slightly disappointed.
+A crushed skeleton sits under a pile of rubble, the sordid story of it's circumstances untold. You watch carefully for any sign of undead activity, but it remains resolutely still. You move on, slightly disappointed.
 
 ### SD2:117
-A hole in the floor opens into the cavern below; a useable access point, with a ladder or rope.
+A hole in the floor opens into the cavern below; a usable access point, with a ladder or rope.
 
 ### SD2:118
 You return to the passage at the back of the ruined fortress. Do you want to go inside?
 
 ### SD2:119
-In a small niche in the cave wall, you find evidence of a former campsite.  You search around, and discover it's much older than it looks; dirt-covered skeletons lay around the ring of stones in a haphazard manner.  You wonder what could have occured.
+In a small niche in the cave wall, you find evidence of a former campsite.  You search around, and discover it's much older than it looks; dirt-covered skeletons lay around the ring of stones in a haphazard manner.  You wonder what could have occurred.
 
 ### SD2:120
 While pondering these thoughts, you notice a reflection from your light.  Carefully digging it up, you discover a sword, still in good condition.  You presume it's a magical sword, considering how long it survived here.
 
 ### SD2:121
-This particular section of cavern appears highly unstable.  Sizeable rocks lay strewn about on the ground, and the walls definetly have an unnatural shape.
+This particular section of cavern appears highly unstable.  Sizable rocks lay strewn about on the ground, and the walls definitely have an unnatural shape.
 
 ### SD2:122
 Holding your breath so as not to disturb the ancient timbers, you step inside the decrepit guardhouse.  You carefully poke around for something of interest, but fail to uncover anything.
@@ -378,13 +378,13 @@ This little remnant of a brick road is all that remains of the great passage thi
 You notice a luxuriant growth of moss in this area, leading you to wonder what could be causing it. You proceed a little more cautiously.
 
 ### SD2:125
-As you step into the open cavern, you are struck with a sight of stunning beauty.  Captured in your light are shimmering colums of water-covered stone that reflect your light in a dazzling display.
+As you step into the open cavern, you are struck with a sight of stunning beauty.  Captured in your light are shimmering columns of water-covered stone that reflect your light in a dazzling display.
 
 ### SD2:126
 The Cabalist in your party steps up. "Stop.  This looks like a divine place of Tsewa, goddess of the stars. I must perform the proper ritual, or she will become angry."  Do you allow the ritual?
 
 ### SD2:127
-After a series of chantings and the lighting of the proper incense, the Cabalist turns around. "All done. Thank you for allowing me this."
+After a series of chants and the lighting of the proper incense, the Cabalist turns around. "All done. Thank you for allowing me this."
 
 ### SD2:128
 Looking at the cavern one last time, you are mesmerized by the beauty of it all, and become lost in thought for a short period of time.  When you snap back into reality, you feel strangely refreshed.
@@ -411,13 +411,13 @@ You carefully enter the abandoned structure, and look for anything interesting. 
 It looks like it was written in a very archaic form of your language.  Some of the characters and words mystify you, but you get the gist of the paper: it's some sort of record sheet, recording quantities of goods and dates next to them.
 
 ### SD2:136
-The remains of the road seem to lead to this point:  a very dark and winding tunnel leading into the side of the cave wall.  You venture in a little, and are satisfied with it's saftey, if not it's ease of use.
+The remains of the road seem to lead to this point:  a very dark and winding tunnel leading into the side of the cave wall.  You venture in a little, and are satisfied with its safety, if not its ease of use.
 
 ### SD2:137
-The tunnel ends very abrubtly in a dead-end here.
+The tunnel ends very abruptly in a dead-end here.
 
 ### SD2:138
-You are astonished at the lushness on this side of the mountains.  The ground is full of growth and life.  Even the rocky soil leading up to the mountains have scattered bushes and other growths.  The sound of the rushing river behind you is most unsual.
+You are astonished at the lushness on this side of the mountains.  The ground is full of growth and life.  Even the rocky soil leading up to the mountains have scattered bushes and other growths.  The sound of the rushing river behind you is most unusual.
 
 ### SD2:139
 You press on with all the more urgency and curiosity, hopeful of making a new home here for yourselves.
@@ -441,7 +441,7 @@ You wait around for a while before he comes rushing back out. "Come in, come in,
 Time has taken it's toll. In the short while you were away, the council is one person fewer, while the remaining look more like weak old men than great and wise elders. After a moment, the shaman hurries in and takes his seat.  You begin your story.
 
 ### SD2:146
-After you are finished, you notice a vitality back in everyone's eyes. One of the elders speaks. "This is wonderful news. We shall prepapre for the move immediately. Thank you, good citizens. You are truly the saviours of our tribe."
+After you are finished, you notice a vitality back in everyone's eyes. One of the elders speaks. "This is wonderful news. We shall prepare for the move immediately. Thank you, good citizens. You are truly the saviors of our tribe."
 
 ### SD2:147
 "Unfortunately, we shall need all our resources for the coming move, and therefore are in no position to reward you, yet. Please, we do not wish to be ungrateful, but you will have to forestall your reward until we are at our new home."
@@ -609,7 +609,7 @@ The creature's favorite form of attack is to lower its armored head and charge. 
 These minor demons live their lives as servants to those more powerful than themselves.
 
 ### DES:64
-Large and fierce, this race of half bear, half man is feared thoughout the land.
+Large and fierce, this race of half bear, half man is feared throughout the land.
 
 ### DES:65
 A powerful creature of the undead.  These creatures drain your life force.
@@ -639,10 +639,10 @@ A humanoid raised from the dead to become one of the cursed undead.
 These ferocious, pack-oriented dragons fortunately lack much of the cleverness and magical ability of their relatives.
 
 ### DES:80
-These winged desert warriors frequently plague travellers that stray too far from home.
+These winged desert warriors frequently plague travelers that stray too far from home.
 
 ### DES:81
-Always a significant problem for travellers in the mountain regions, these beasts like to prey upon human flesh.
+Always a significant problem for travelers in the mountain regions, these beasts like to prey upon human flesh.
 
 ### DES:82
 Winged terrors, these beasts are known to visit death on those who pass by their high aeries.
@@ -786,22 +786,22 @@ The black sheep of the Abyss.  Half demon, half devil.  They are often shunned b
 A mutated mushman, fungoids are extremely rare..... and deadly.
 
 ### DES:197
-Hailing from the frozen planes of the Abyss, these malevelent creatures are immune to cold based spells.  They also have a nasty bite.
+Hailing from the frozen planes of the Abyss, these malevolent creatures are immune to cold based spells.  They also have a nasty bite.
 
 ### DES:198
-These beasts are no more than slaves to the evil eys.  They serve as hands for those that have none.  They are imensly strong.
+These beasts are no more than slaves to the evil eys.  They serve as hands for those that have none.  They are immensely strong.
 
 ### DES:199
 Weak in mind and body, these demons are lightning quick.  They are cowards in battle and will surrender or run easily.
 
 ### DES:200
-Incredibly strong, these demons rule over whole races of lesser ilk.  They prefer to pummle their enemies with bare hands and magic.
+Incredibly strong, these demons rule over whole races of lesser ilk.  They prefer to pummel their enemies with bare hands and magic.
 
 ### DES:201
 Existing on both the material plane and the astral plane simultaneously.  They can inflict massive chemical damage.
 
 ### DES:202
-Nomally happy to stand around and chew cud.  These creatures can be dangerous if they stampede.
+Normally happy to stand around and chew cud.  These creatures can be dangerous if they stampede.
 
 ### DES:211
 These vermin carry a deadly disease.  They breed so rapidly there are always plenty to take the place of those that perish.
