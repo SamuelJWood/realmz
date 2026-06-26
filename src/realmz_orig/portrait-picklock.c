@@ -285,7 +285,7 @@ short picklock(short who, short type) {
   ErasePortRect();
   ForeColor(yellowColor);
   SizeWindow(GetDialogWindow(gGeneration), 215, 35 + 35 * tumblers, FALSE);
-  MoveWindow(GetDialogWindow(gGeneration), GlobalLeft + 35, GlobalTop + 5, FALSE);
+  MoveWindow(GetDialogWindow(gGeneration), (800 - 215) / 2, (600 - (35 + 35 * tumblers)) / 2, FALSE);
   ShowWindow(GetDialogWindow(gGeneration));
   DrawDialog(gGeneration);
   GetDialogItem(gGeneration, 1, &itemType, &itemHandle, &temprect);

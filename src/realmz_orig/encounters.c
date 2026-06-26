@@ -22,7 +22,7 @@ short thiefenc(void) {
   fclose(fp);
 
   templewindow = GetNewDialog(162, 0L, (WindowPtr)-1L);
-  MoveWindow(GetDialogWindow(templewindow), GlobalLeft + 7 + (leftshift / 2), GlobalTop + 7 + (downshift / 2), FALSE);
+  MoveWindow(GetDialogWindow(templewindow), GlobalLeft + 7 + (leftshift / 2), GlobalTop + 7 + (downshift / 2) + 30, FALSE);
   ShowWindow(GetDialogWindow(templewindow));
   SetPortDialogPort(templewindow);
   gCurrent = templewindow;
