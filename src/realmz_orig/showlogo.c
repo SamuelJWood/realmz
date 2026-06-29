@@ -24,13 +24,18 @@ void showlogo(short howlong) {
 
   logowin = GetNewDialog(175, NIL, (WindowPtr)-1L);
   MoveWindow(GetDialogWindow(logowin), GlobalLeft + 1 + (leftshift / 2), GlobalTop + 1 + (downshift / 2), FALSE);
-#ifdef PC
+
+  /* Paint the full-screen backdrop solid black behind the logo. This was
+   * historically guarded by #ifdef PC, but PC is not defined in this build, so
+   * the backdrop went unpainted: SizeWindow() above grows WIND 132 from its
+   * 555px resource height to the full screen height, and those added bottom
+   * rows were left transparent, letting the game show through (~45px) below the
+   * logo on quit. Erasing the whole window rect covers the full screen. */
   SetPort(mat2);
   BackColor(blackColor);
   EraseRect(&qd.thePort->portRect);
-
   SetPort(logowin);
-#endif
+
   DrawDialog(logowin);
 
   baserect.top = baserect.left = 0;
