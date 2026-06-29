@@ -103,12 +103,49 @@ short DoQuitRealmz(void) {
   return (1);
 }
 
+/* Auto-journal helpers (used by the Maps/Notes -> Journal command below).
+ * The Journal shows seen messages in the order they appeared, numbered
+ * sequentially from 1; `view` is that 1-based note number. The text is read
+ * from the scenario string file by the recorded index, so only messages the
+ * party has actually seen are ever shown. */
+static void showjournalnote(FILE* journalfp, short view) {
+  if ((view >= 1) && (view <= notecount)) {
+    GetIndString(myString, 3, 1);
+    fseek(journalfp, noteorder[view - 1] * sizeof myString, SEEK_SET);
+    fread(myString, sizeof myString, 1, journalfp);
+    MyrPascalDiStr(2, myString);
+    DialogNum(6, view);
+  } else {
+    /* Empty journal: blank body and note number 0 (never an arbitrary page). */
+    MyrCDiStr(2, (StringPtr) "");
+    DialogNum(6, 0);
+  }
+}
+
+/* Left/Right arrow keys page to the previous/next note, mirroring the
+ * on-screen arrow buttons (items 4 and 5). */
+static Boolean journal_filter(DialogPtr dlg, EventRecord* ev, short* hit) {
+  (void)dlg;
+  if (ev->what == keyDown) {
+    uint8_t vkey = (uint8_t)((ev->message >> 8) & 0xFF);
+    if (vkey == 0x7B) {
+      *hit = 4;
+      return TRUE;
+    } /* Left  -> previous note */
+    if (vkey == 0x7C) {
+      *hit = 5;
+      return TRUE;
+    } /* Right -> next note     */
+  }
+  return FALSE;
+}
+
 /***************************** HandleMenuChoice ********************************/
 short HandleMenuChoice(void) {
   CCrsrHandle edit;
   FILE* fp = NULL;
   int32_t noteid;
-  short notenum, orignoteid, temp, accNumber, tempdx, tempdy, priorindex;
+  short notenum, orignoteid, temp, accNumber, tempdx, tempdy;
   short temppartyx, temppartyy, templevel, tempdunglevel, tempdung, tempx, tempy;
   Rect mainrect;
 
@@ -408,7 +445,7 @@ short HandleMenuChoice(void) {
 
     case 129: /************** file menu **************/
       switch (theItem) {
-        case 6: /*********** quit realmz ***********/
+        case 8: /*********** quit realmz ***********/
           if (DoQuitRealmz())
             ExitToShell();
           break;
@@ -781,6 +818,9 @@ short HandleMenuChoice(void) {
           return (0);
       } else /***** journal *****/
       {
+        short jview; /* 1-based number of the note currently shown */
+        Rect jpb;
+
         SetCCursor(sword);
         if (!reducesound)
           sound(647);
@@ -790,78 +830,64 @@ short HandleMenuChoice(void) {
         gCurrent = info2;
         ForeColor(yellowColor);
         BackPixPat(base);
-        GetDialogItem(info2, 2, &itemType, &itemHandle, &itemRect);
-        MoveWindow(GetDialogWindow(info2), GlobalLeft - 1, GlobalTop + 321, FALSE);
+
+        /* The note body and the note-number field are display-only: the player
+         * cannot edit journaled text or type an arbitrary note number. */
+        WindowManager_SetItemEditable(info2, 2, FALSE);
+        WindowManager_SetItemEditable(info2, 6, FALSE);
+
+        /* Center the Journal over the main overland view (window-local
+         * 0,0..(320+leftshift),(320+downshift)). */
+        GetPortBounds((CGrafPtr)GetDialogWindow(info2), &jpb);
+        MoveWindow(GetDialogWindow(info2),
+                   GlobalLeft + ((320 + leftshift) - (jpb.right - jpb.left)) / 2,
+                   GlobalTop + ((320 + downshift) - (jpb.bottom - jpb.top)) / 2,
+                   FALSE);
         ShowWindow(GetDialogWindow(info2));
         ErasePortRect();
 
-        GetIndString(myString, 3, 1);
         getfilename("Data SD2");
         if ((fp = MyrFopen(filename, "r")) == NULL) {
           flashmessage((StringPtr) "Could not open the Journal File.  Sorry.", 50, 50, 120, 5000);
           goto blownotes2;
-        } else {
-          fseek(fp, abs(journalindex2) * sizeof myString, SEEK_SET);
-          fread(myString, sizeof myString, 1, fp);
-          MyrPascalDiStr(2, myString);
-          DialogNum(6, journalindex2 + 1);
         }
 
-      backup:
+        /* Open on the most recent note so the player can page back through the
+         * log. An empty journal shows a blank page numbered 0. */
+        jview = notecount;
+        showjournalnote(fp, jview);
 
         itemHit = 0;
-
-        while ((itemHit != 1) && (itemHit != 3)) {
+        for (;;) {
+          short newview = jview;
           FlushEvents(everyEvent, 0);
-          ModalDialog(0L, &itemHit);
+          ModalDialog(journal_filter, &itemHit);
+
+          if ((itemHit == 1) || (itemHit == 3) || (itemHit == 0))
+            break; /* OK / Done / Escape close the Journal */
+
+          if (itemHit == 4)
+            newview = jview - 1; /* previous note (left arrow)  */
+          else if (itemHit == 5)
+            newview = jview + 1; /* next note (right arrow)     */
+          else
+            continue;
+
           GetDialogItem(info2, itemHit, &itemType, &itemHandle, &itemRect);
+          ploticon3(135, itemRect);
 
-          if (itemHit == 6) /****** enter note number to go to *****/
-          {
-            if (notes[GetDialogNum(6) - 1]) {
-              journalindex2 = GetDialogNum(6) - 1;
-              goto update;
-            } else
-              goto backup;
-          }
-
-          if ((itemHit == 4) || (itemHit == 5)) {
-            ploticon3(135, itemRect);
-            priorindex = journalindex2;
-            do {
-              journalindex2++;
-              if (itemHit == 4)
-                journalindex2 -= 2;
-            } while ((!notes[journalindex2]) && (journalindex2 > -1) && (journalindex2 < 3000));
-          }
-
-        update:
-
-          if (journalindex2 < 1)
-            journalindex2 = 1;
-          if (journalindex2 > 5999)
-            journalindex2 = 5999; //** fantasoft v7.1
-
-          if ((journalindex2 == 1) || (journalindex2 == 5999)) //** fantasoft v7.1
-          {
-            journalindex2 = priorindex;
-            sound(147);
-          } else if ((itemHit == 4) || (itemHit == 5))
+          if ((newview < 1) || (newview > notecount)) {
+            sound(147); /* bump at the first/last note */
+          } else {
+            jview = newview;
             sound(141);
-
-          GetIndString(myString, 3, 1);
-          fseek(fp, abs(journalindex2) * sizeof myString, SEEK_SET);
-          fread(myString, sizeof myString, 1, fp);
-          MyrPascalDiStr(2, myString);
-          DialogNum(6, journalindex2 + 1);
-
-          if ((itemHit == 4) || (itemHit == 5)) {
-            GetDialogItem(info2, itemHit, &itemType, &itemHandle, &itemRect);
-            ploticon3(136, itemRect);
+            showjournalnote(fp, jview);
           }
+
+          GetDialogItem(info2, itemHit, &itemType, &itemHandle, &itemRect);
+          ploticon3(136, itemRect);
         }
         goto blownotes;
-        temp = temp;
       }
 
       break;

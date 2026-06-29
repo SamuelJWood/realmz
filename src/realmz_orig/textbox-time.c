@@ -113,8 +113,16 @@ void textbox(short class, short index, short click, short different, Rect newrec
           continue;
         if ((class == -1) && (((gTheEvent.message & charCodeMask) == 'n') || (autonote))) /**** n key = take note ***/
         {
-          notes[abs(index)] = TRUE;
-          journalindex2 = abs(index);
+          short nidx = abs(index);
+          /* Append this message to the auto-journal in the order it was seen,
+           * de-duplicating by string index (a message already journaled keeps
+           * its original note number). The Journal numbers entries from this
+           * ordered list, so it never reveals unseen text. */
+          if ((nidx > 0) && (nidx < 3000) && (!notes[nidx])) {
+            notes[nidx] = TRUE;
+            if (notecount < 3000)
+              noteorder[notecount++] = nidx;
+          }
           if (!autonote)
             flashmessage((StringPtr) "Note Taken.", 30, 355, 20, 145);
         }

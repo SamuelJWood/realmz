@@ -52,6 +52,12 @@ void setupnewgame(void) {
   }
   map[0] = TRUE;
   journalindex2 = 1; /**** reset journal to 0 notes *****/
+  /* Clear the auto-journal for a fresh game. notes[] was historically left
+   * untouched here, so entries from a previous game could leak into a new
+   * one's Journal; clear both the seen-set and the ordered list. */
+  notecount = 0;
+  for (t = 0; t < 3000; t++)
+    notes[t] = FALSE;
   loaddark(0);
 
   updatemapmenu();

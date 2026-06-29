@@ -164,6 +164,13 @@ char lastdeltax, lastdeltay;
 PixPatHandle gHilite, gNeutral, gShadow, base, light, dark, whitepat;
 Boolean notes[3000] = {0};
 int32_t myrmagic_notes = MYRMAGIC;
+/* Auto-journal: ordered (chronological) list of the string indices that have
+ * been shown in the main text box, plus the count of entries. The Journal
+ * numbers notes sequentially (1..notecount) from this list, so it never shows
+ * unseen text or blank pages, and survives saves/loads unchanged. */
+short noteorder[3000] = {0};
+int32_t myrmagic_noteorder = MYRMAGIC;
+short notecount = 0;
 short bufftrash[100] = {0}; /**** used to keep the edgest from running over ****/
 int32_t myrmagic_bufftrash = MYRMAGIC;
 Boolean site[90][90] = {0};
@@ -530,6 +537,8 @@ void MyrCheckMemory(short mode) {
   if (myrmagic_collidecheck != MYRMAGIC)
     AcamErreur("Data corrupted");
   if (myrmagic_notes != MYRMAGIC)
+    AcamErreur("Data corrupted");
+  if (myrmagic_noteorder != MYRMAGIC)
     AcamErreur("Data corrupted");
   if (myrmagic_site != MYRMAGIC)
     AcamErreur("Data corrupted");

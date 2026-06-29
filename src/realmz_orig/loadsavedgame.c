@@ -400,6 +400,36 @@ short load(void) {
 
   fclose(fp);
 
+  /******************** auto-journal ********************/
+  /* Restore the ordered list of seen-message string indices. If this save has
+   * no Journal file (saved before auto-journaling stored order), fall back to
+   * rebuilding the list from the loaded notes[] set in ascending index order so
+   * those saves still show a populated, non-blank Journal. */
+  notecount = 0;
+  strcpy((StringPtr)filename, (StringPtr)hold);
+  strcat((StringPtr)filename, "Journal");
+  if ((fp = MyrFopen(filename, "rb")) != NULL) {
+    short jcount = 0, jtemp = 0;
+    if (fread(&jcount, sizeof jcount, 1, fp) == 1) {
+      CvtShortToPc(&jcount);
+      if (jcount < 0)
+        jcount = 0;
+      if (jcount > 3000)
+        jcount = 3000;
+      while ((notecount < jcount) && (fread(&jtemp, sizeof jtemp, 1, fp) == 1)) {
+        CvtShortToPc(&jtemp);
+        if ((jtemp > 0) && (jtemp < 3000))
+          noteorder[notecount++] = jtemp;
+      }
+    }
+    fclose(fp);
+  } else {
+    for (n = 0; n < 3000; n++) {
+      if (notes[n] && (notecount < 3000))
+        noteorder[notecount++] = n;
+    }
+  }
+
 #if !winversion /******* corrects for old style mac format ****/
   for (t = 0; t <= charnum; t++) {
     characterl = c[t];

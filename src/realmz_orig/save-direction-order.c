@@ -474,6 +474,25 @@ void save(short mode) {
 
   setfileinfo("save", filename);
 
+  /******************** auto-journal ********************/
+  /* The ordered list of seen-message string indices is stored in its own file
+   * (the fixed-size "Data I1" can't grow), so the Journal survives save/load
+   * unchanged with its sequential note numbering intact. */
+  strcpy((StringPtr)filename, (StringPtr)hold);
+  strcat((StringPtr)filename, "Journal");
+  if ((fp = MyrFopen(filename, "w+b")) != NULL) {
+    short jtemp = notecount;
+    CvtShortToPc(&jtemp);
+    fwrite(&jtemp, sizeof jtemp, 1, fp);
+    for (n = 0; n < notecount; n++) {
+      jtemp = noteorder[n];
+      CvtShortToPc(&jtemp);
+      fwrite(&jtemp, sizeof jtemp, 1, fp);
+    }
+    fclose(fp);
+    setfileinfo("save", filename);
+  }
+
   strcpy((StringPtr)filename, (StringPtr)hold); /******* dung ** dungeons ** dungeon  door data *************/
   strcat((StringPtr)filename, "Data B1");
   if ((op = MyrFopen(filename, "w+b")) == NULL)

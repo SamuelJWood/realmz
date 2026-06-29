@@ -113,6 +113,8 @@ extern short musictoggle[20];
 extern int32_t musicpostionsave[20];
 extern PixPatHandle gHilite, gNeutral, gShadow, base, light, dark, whitepat;
 extern Boolean notes[3000];
+extern short noteorder[3000];
+extern short notecount;
 extern CGrafPtr savedPort;
 extern GDHandle savedDevice, curGDev, testdevice;
 extern short bufftrash[100]; /**** used to keep the edgest from running over ****/
