@@ -88,6 +88,11 @@ short actionpicker(void) {
       reply = FALSE;
       goto out;
     } else {
+      /* Only items 9-16 are the eight option buttons. Ignore anything else
+       * (e.g. a Return keypress reported as item 1), and ignore options that
+       * have no text, since those aren't real choices. */
+      if ((itemHit < 9) || (itemHit > 16) || (!buffer[itemHit - 9][0]))
+        goto over;
       GetDialogItem(gGeneration, itemHit - 8, &itemType, &itemHandle, &itemRect);
       itemRect.top += 2;
       itemRect.left += 2;

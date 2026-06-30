@@ -366,6 +366,62 @@ int CCGrafPort::measure_text(const std::string& text) {
   }
 }
 
+int CCGrafPort::text_line_height() {
+  auto font = load_font(this->txFont);
+  if (std::holds_alternative<TTF_Font*>(font)) {
+    auto tt_font = std::get<TTF_Font*>(font);
+    TTF_SetFontSize(tt_font, this->txSize);
+    return TTF_GetFontHeight(tt_font);
+  } else if (std::holds_alternative<ResourceDASM::BitmapFontRenderer>(font)) {
+    auto& bm_font = std::get<ResourceDASM::BitmapFontRenderer>(font);
+    return static_cast<int>(bm_font.pixel_dimensions_for_text("Ag").second);
+  }
+  return 0;
+}
+
+Rect CCGrafPort::caret_rect_for_text(const std::string& text, const Rect& rect) {
+  const std::string processed = replace_param_text(text);
+  int avail = rect.right - rect.left;
+  if (avail < 1) {
+    avail = 1;
+  }
+  const int lh = this->text_line_height();
+
+  // Greedily word-wrap to the field width the same way draw_text renders the
+  // field, tracking the content of the last line and how many lines there are.
+  int num_lines = 1;
+  std::string line;
+  size_t i = 0;
+  while (i < processed.size()) {
+    size_t sp = processed.find(' ', i);
+    std::string token = (sp == std::string::npos)
+        ? processed.substr(i)
+        : processed.substr(i, sp - i + 1); // keep the trailing space with the word
+    i += token.size();
+
+    if (!line.empty() && this->measure_text(line + token) > avail) {
+      num_lines++;
+      line = token;
+    } else {
+      line += token;
+    }
+
+    // Hard-break a single token that is itself wider than the whole field.
+    while (this->measure_text(line) > avail && line.size() > 1) {
+      size_t fit = line.size() - 1;
+      while (fit > 1 && this->measure_text(line.substr(0, fit)) > avail) {
+        fit--;
+      }
+      num_lines++;
+      line = line.substr(fit);
+    }
+  }
+
+  const int16_t caret_x = static_cast<int16_t>(rect.left + this->measure_text(line) + 1);
+  const int16_t caret_top = static_cast<int16_t>(rect.top + (num_lines - 1) * lh);
+  return Rect{caret_top, caret_x, static_cast<int16_t>(caret_top + lh), caret_x};
+}
+
 void CCGrafPort::draw_rect(const Rect& r) {
   this->data.write_rect(r.left, r.top, r.right - r.left, r.bottom - r.top, rgba8888_for_rgb_color(this->rgbFgColor));
 }

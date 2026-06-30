@@ -1,6 +1,21 @@
 #include "prototypes.h"
 #include "variables.h"
 
+/* Special (thief) dialog key handling: Esc acts as the Done button (item 5),
+ * and the left/right arrow keys step through the party the same as the on-screen
+ * previous/next character buttons (items 3 and 4). */
+static Boolean thiefenc_filter(DialogPtr dlg, EventRecord* ev, short* hit) {
+  (void)dlg;
+  if (ev->what == keyDown) {
+    uint8_t ch = (uint8_t)(ev->message & 0xFF);
+    uint8_t vkey = (uint8_t)((ev->message >> 8) & 0xFF);
+    if (ch == 0x1B) { *hit = 5; return TRUE; }   /* Esc   -> Done          */
+    if (vkey == 0x7B) { *hit = 3; return TRUE; } /* Left  -> prev character */
+    if (vkey == 0x7C) { *hit = 4; return TRUE; } /* Right -> next character */
+  }
+  return FALSE;
+}
+
 /******************* thiefenc **********************/
 short thiefenc(void) {
   FILE* fp = NULL;
@@ -100,7 +115,7 @@ update2:
   ForeColor(yellowColor);
   for (;;) {
     FlushEvents(everyEvent, 0);
-    ModalDialog(0L, &itemHit);
+    ModalDialog(thiefenc_filter, &itemHit);
     GetDialogItem(templewindow, itemHit, &itemType, &itemHandle, &buttonrect);
 
     if ((itemHit > 7) && (itemHit < 16) && (c[charselectnew].spec[itemHit - 3] > 0) && (thief.type[itemHit - 8])) {
@@ -346,12 +361,30 @@ over:
     return (0);
 }
 
+/* Complex encounter dialog key shortcuts: S = Spells (item 2), L = Scroll
+ * (item 3), I = Items (item 4). The item handlers below already guard against
+ * options that aren't available (the "nochoice" path), so an unavailable button
+ * just plays the rejection sound. */
+static Boolean encounter2_filter(DialogPtr dlg, EventRecord* ev, short* hit) {
+  (void)dlg;
+  if (ev->what == keyDown) {
+    uint8_t ch = (uint8_t)(ev->message & 0xFF);
+    switch (tolower(ch)) {
+      case 's': *hit = 2; return TRUE; /* Spells */
+      case 'l': *hit = 3; return TRUE; /* Scroll */
+      case 'i': *hit = 4; return TRUE; /* Items  */
+    }
+  }
+  return FALSE;
+}
+
 /**************** encounter2 *** Complex ****************************/
 short encounter2(void) {
   FILE* fp = NULL;
   DialogRef win;
   int32_t longvalue, longvalue2, longvalue3;
   short spell, t, knockchance, savedung, temp1, temp2;
+  short pressedItem;
   char reply, encsuccess, tag, goodword = TRUE;
   char hasaction;
   char word[256];
@@ -383,6 +416,9 @@ short encounter2(void) {
   BackPixPat(base);
   ErasePortRect();
   FlushEvents(everyEvent, 0);
+
+  /* Lock out all menus except Preferences while the encounter is open. */
+  DisableGameMenus();
 
 backup:
   SelectWindow(GetDialogWindow(win));
@@ -450,7 +486,7 @@ tryagain:
   SelectWindow(GetDialogWindow(win));
   SetPortDialogPort(win);
   FlushEvents(everyEvent, 0);
-  ModalDialog(0L, &itemHit);
+  ModalDialog(encounter2_filter, &itemHit);
   MyrCheckMemory(2);
 
   if (itemHit == 0 || itemHit == 8) { /* Escape key or Cancel button */
@@ -461,6 +497,12 @@ tryagain:
     goto out;
   }
 
+  /* Remember which encounter button was pressed: the sub-dialogs invoked below
+   * (getword, thiefenc, getscroll, actionpicker, ...) run their own ModalDialog
+   * loops on the SAME global itemHit, so it no longer holds this value by the
+   * time we reach redrawbutton. Use the saved copy there to repaint the correct
+   * button back to its normal (un-pressed) state. */
+  pressedItem = itemHit;
   GetDialogItem(win, itemHit, &itemType, &itemHandle, &buttonrect);
   ploticon3(129, buttonrect);
 
@@ -473,7 +515,7 @@ tryagain:
 
     if (!strlen(gotword)) {
       centerpict();
-      goto backup;
+      goto redrawbutton;
     }
 
     PtoCstr((StringPtr)gotword);
@@ -612,8 +654,10 @@ tryagain:
 
     if (!strcmp(gotword, (StringPtr) "change land")) /**** check for change land word ****/
     {
-      if (indung)
+      if (indung) {
+        EnableGameMenus();
         return (NIL);
+      }
 
       saveland(landlevel);
 
@@ -1001,7 +1045,10 @@ tryagain:
             thief.type[6] = TRUE;
           }
 
-          if (Rand(100) < thief.sound[2] * powerlevel) {
+          /* *** CHANGED FROM ORIGINAL IMPLEMENTATION ***
+           * Open Lock uses thief.sound[1]; thief.sound[2] is Destroy Trap.
+           */
+          if (Rand(100) < knockchance) {
             thief.type[9] = FALSE; /*** success ***/
 
             sound(thief.sounds[6]);
@@ -1052,11 +1099,11 @@ tryagain:
         inspell = FALSE;
         goto tryspell;
       } else
-        goto backup;
+        goto redrawbutton;
     } else {
     nochoice:
       sound(6000);
-      goto backup;
+      goto redrawbutton;
     }
   }
 
@@ -1103,7 +1150,7 @@ tryagain:
     reply = thiefenc();
 
     if (!reply)
-      goto backup;
+      goto redrawbutton;
     else
       encsuccess = reply;
     goto out;
@@ -1116,7 +1163,7 @@ tryagain:
     reply = actionpicker();
     updatemain(TRUE, -1);
     if (!reply)
-      goto backup;
+      goto redrawbutton;
     temp = 0;
     encsuccess = TRUE;
 
@@ -1141,7 +1188,38 @@ tryagain:
       encsuccess = 4; /***** default fail *****/
     goto out;
   }
+
+redrawbutton:
+  /* A sub-window (Scroll/Action/Special/Speak) was cancelled, or an
+   * unavailable button was clicked. The compositing window manager already
+   * revealed the encounter window intact, so instead of redrawing the whole
+   * dialog (which made every button flash), just repaint the single button
+   * that was pressed to clear its pressed-state overlay. */
+  SetPortDialogPort(win);
+  gCurrent = win;
+  {
+    short bpict = 0, unavail = 0;
+    switch (pressedItem) {
+      case 2: bpict = 162; unavail = !enc2.spellid[0]; break;
+      case 3: bpict = 151; unavail = (!checkfortype(-1, 13, FALSE)) || (!enc2.spellid[0]); break;
+      case 4: bpict = 172; unavail = !enc2.itemid[0]; break;
+      case 5: bpict = 171; unavail = !hasaction; break;
+      case 6: bpict = 201; unavail = !enc2.thief; break;
+      case 7: bpict = 143; unavail = !enc2.wordresult; break;
+    }
+    if (bpict) {
+      GetDialogItem(win, pressedItem, &itemType, &itemHandle, &itemRect);
+      pict(bpict, itemRect);
+      if (unavail) {
+        InsetRect(&itemRect, 9, 9);
+        ploticon3(0, itemRect);
+      }
+    }
+  }
+  goto tryagain;
+
 out:
+  EnableGameMenus();
   SetCCursor(sword);
   DisposeDialog(win);
   updatefat(1, 0, 0);

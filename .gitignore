@@ -22,6 +22,12 @@ Makefile
 .vscode
 *.code-workspace
 
+# Language-server (clangd) local artifacts: machine-specific DB symlink and config,
+# plus clangd's on-disk index cache.
+/compile_commands.json
+/.clangd
+/.cache/
+
 # Finder files
 .DS_Store
 

@@ -53,6 +53,9 @@ OSErr FSMakeFSSpec(int16_t vRefNum, int32_t dirID, ConstStr255Param fileName, FS
 OSErr FindFolder(int16_t vRefNum, OSType folderType, Boolean createFolder, int16_t* foundVRefNum, int32_t* foundDirID);
 
 FILE* mac_fopen(const char* filename, const char* mode);
+// Declared here (not just in files.h) so the C++ definition in FileManager.cpp
+// gets C linkage and resolves when called from the C code (e.g. MyrRemove).
+void mac_remove(const char* filename);
 
 #ifdef __cplusplus
 } // extern "C"

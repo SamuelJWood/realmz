@@ -137,6 +137,8 @@ void makescroll(void);
 void fastplotmap(short id, Rect destrect);
 void showmap(short mapnumber);
 void MenuInit(void);
+void DisableGameMenus(void);
+void EnableGameMenus(void);
 short doreg5(void);
 short doreg4(void);
 short regscen(void);

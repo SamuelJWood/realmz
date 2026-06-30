@@ -17,7 +17,7 @@ void getword(void) {
   TextSize(18);
   ForeColor(yellowColor);
 
-  MoveWindow(GetDialogWindow(win), GlobalLeft + 30, GlobalTop + 110, FALSE);
+  MoveWindow(GetDialogWindow(win), GlobalLeft + 100, GlobalTop + 157, FALSE);
   ShowWindow(GetDialogWindow(win));
   ErasePortRect();
 
@@ -25,7 +25,15 @@ void getword(void) {
     FlushEvents(everyEvent, 0);
     ModalDialog(0L, &itemHit);
 
-    if (itemHit == 4) {
+    if (itemHit == 0) { /* Escape: close as if nothing had been entered */
+      gotword[0] = 0;
+      DisposeDialog(win);
+      SetCCursor(sword);
+      return;
+    }
+
+    /* itemHit 4 = Done button; itemHit 1 = Return/Enter (same as Done). */
+    if ((itemHit == 4) || (itemHit == 1)) {
       GetDialogItem(win, 4, &itemType, &itemHandle, &buttonrect);
       ploticon3(129, buttonrect);
       GetDialogItem(win, 2, &itemType, &itemHandle, &itemRect);

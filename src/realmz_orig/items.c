@@ -18,6 +18,7 @@ short items(void) {
   Boolean equip, play, ident;
   Rect r;
 
+  SetMenuTitleCStr(copy, "Items");
   SetMenuBar(copywright);
   DrawMenuBar();
 

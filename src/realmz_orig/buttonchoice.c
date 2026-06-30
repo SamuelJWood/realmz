@@ -346,7 +346,9 @@ short buttonchoice(short skipin) {
         incamp = TRUE;
         deltax = deltay = inshop = intemple = templeavail = shopavail = currentshop = 0;
         moveparty(0);
-        ploticon3(130, r);
+        /* Keep the Camp button pressed while entering camp; updatecontrols()
+         * below maintains the depressed state for the duration of camp mode. */
+        ploticon3(129, r);
         timeclick(3, FALSE);
         timeclick(2, TRUE);
         if (revertgame)
@@ -468,13 +470,20 @@ moveon:
         saveland(landlevel);
       else
         saveland(dunglevel);
-      ploticon3(130, r);
+      /* Leave the button depressed (drawn above) while the encounter it opens
+       * is on screen. The toolbar is redrawn (raising the button again) once
+       * newland returns and the complex encounter has closed. */
       deltax = deltay = 0;
       seemless = needdungeonupdate = TRUE;
       reply = newland(0L, 0L, 1, temp, 0);
       seemless = FALSE;
       if (reply == -1)
         goto godooritem; /******** activate door item *****/
+      /* The complex encounter (if any) has now closed. Refresh the toolbar so
+       * the Encounter button is redrawn in its normal, un-pressed state (and so
+       * any shop/temple availability the encounter changed is reflected). The
+       * main loop doesn't otherwise repaint after a reply of 0. */
+      updatecontrols();
       return (0);
     }
   }

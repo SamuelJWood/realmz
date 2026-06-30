@@ -156,6 +156,7 @@ void booty(short mode) {
   if (make)
     sound(20); /***** booty sound ****/
 
+  SetMenuTitleCStr(copy, "Treasure");
   SetMenuBar(copywright);
   DrawMenuBar();
 

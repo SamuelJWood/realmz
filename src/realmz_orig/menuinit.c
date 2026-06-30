@@ -17,6 +17,12 @@ void MenuInit(void) {
     AppendMenuCStr(copy, "");
     SetItemStyle(copy, 1, 1);
 
+    /* This menu is only ever a banner (the copyright line, and the
+     * "Items"/"Shop"/"Trade"/"Treasure" labels on those screens). Disable it so
+     * it reads as a label and can't be pulled down. */
+    DisableItem(copy, 0);
+    DisableItem(emptyMenu, 0);
+
     static const int16_t copywright_ids[] = {138, 133};
     copywright = Realmz_NewMBarFromMenus(copywright_ids, 2);
     SetMenuBar(copywright);
@@ -30,7 +36,7 @@ void MenuInit(void) {
   AppendMenuCStr(gApple, "Assault on Giant Mountain");
   AppendMenuCStr(gApple, "Destroy the Necronomicon");
   AppendMenuCStr(gApple, "Castle in the Clouds");
-  AppendMenuCStr(gApple, "Grilochs Revenge");
+  AppendMenuCStr(gApple, "Griloch's Revenge");
   AppendMenuCStr(gApple, "White Dragon");
   AppendMenuCStr(gApple, "Mithril Vault");
   AppendMenuCStr(gApple, "Twin Sands of Time");
@@ -53,8 +59,11 @@ void MenuInit(void) {
   SetMenuItemKey(gFile, 4, 'F');
   DisableItem(gFile, 4);
   AppendMenuCStr(gFile, "-");
+  AppendMenuCStr(gFile, "Open Realmz Manual");
+  SetMenuItemOpensPdf(gFile, 6, ":Manuals:Realmz Manual.pdf");
+  AppendMenuCStr(gFile, "-");
   AppendMenuCStr(gFile, "Quit");
-  SetMenuItemKey(gFile, 6, 'Q');
+  SetMenuItemKey(gFile, 8, 'Q');
 
   // --- Adventure menu (130) ---
   gGame = NewMenu(130, "\pAdventure");
@@ -242,6 +251,59 @@ void MenuInit(void) {
     CheckItem(gGame, currentscenario, 1);
   }
 
+}
+
+/**************************** modal menu locking *************/
+/* While a modal window is open (a complex encounter, the Spells dialog, or the
+ * save/load dialogs) every menu-bar menu except Preferences is disabled, then
+ * restored to its previous state afterward. Preferences stays enabled so the
+ * player can still adjust sound/music/speed.
+ *
+ * These locks may nest: a complex encounter disables the menus, and then its
+ * Spells option opens the Spells dialog which also calls DisableGameMenus. A
+ * depth counter ensures the menus stay disabled until the outermost modal
+ * releases them, and that the original enabled state is only captured/restored
+ * once (by the outermost lock). */
+static short gModalMenusDepth = 0;
+static Boolean gSavedMenuEnabled[6];
+
+static void modalmenus(MenuHandle menus[6]) {
+  menus[0] = gFile;
+  menus[1] = gGame;
+  menus[2] = gParty;
+  menus[3] = gBeast;
+  menus[4] = gNPC;
+  menus[5] = gScenario;
+}
+
+void DisableGameMenus(void) {
+  MenuHandle menus[6];
+  short i;
+  if (gModalMenusDepth++ > 0)
+    return; /* already locked by an outer modal; just track nesting depth */
+  modalmenus(menus);
+  for (i = 0; i < 6; i++) {
+    gSavedMenuEnabled[i] = IsItemEnabled(menus[i], 0);
+    DisableItem(menus[i], 0);
+  }
+  DrawMenuBar();
+}
+
+void EnableGameMenus(void) {
+  MenuHandle menus[6];
+  short i;
+  if (gModalMenusDepth == 0)
+    return; /* not locked */
+  if (--gModalMenusDepth > 0)
+    return; /* still locked by an outer modal */
+  modalmenus(menus);
+  for (i = 0; i < 6; i++) {
+    if (gSavedMenuEnabled[i])
+      EnableItem(menus[i], 0);
+    else
+      DisableItem(menus[i], 0);
+  }
+  DrawMenuBar();
 }
 
 /**************************** updatemonstermenu *************/

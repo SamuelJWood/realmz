@@ -256,7 +256,12 @@ short MyrRemove(char* nomMac) {
   CvtPathMacToPc(nomMac, nom);
   return (remove(nom));
 #else
-  return (remove(nomMac));
+  /* Route through the FileManager (mirrors MyrFopen -> mac_fopen above) so the
+   * Mac-style path is translated to the real host path. Calling remove() on the
+   * raw ":Character Files:Name" path silently failed, which is why erasing a
+   * character left its file on disk. */
+  mac_remove(nomMac);
+  return (0);
 #endif
 }
 

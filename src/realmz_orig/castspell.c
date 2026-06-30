@@ -62,6 +62,11 @@ selectagain:
   ShowWindow(GetDialogWindow(spellwindow));
   ErasePortRect();
   DrawDialog(spellwindow);
+
+  /* Lock out all menus except Preferences while the Spells dialog is open, the
+   * same way a complex encounter does. Released at the out: label below. (If an
+   * encounter is already open, this just nests; see DisableGameMenus.) */
+  DisableGameMenus();
 wayback:
 
   int enable_recomposite = WindowManager_SetEnableRecomposite(0);
@@ -199,6 +204,21 @@ back:
     DoCorrectBugMADRepeat();
 #endif
     MyrCheckMemory(2);
+
+    /* Menu-bar selections arrive as a mouseDown with both coordinates negative
+     * (see push_menu_event). The game menus are disabled while this dialog is
+     * open, so only the still-enabled Preferences menu and its Sound/Music/Speed
+     * submenus can get here; route them through the normal handler so they keep
+     * working (and updating their checkmarks), matching the complex encounter. */
+    if (gTheEvent.what == mouseDown && gTheEvent.where.v < 0 && gTheEvent.where.h < 0) {
+      short menu_id = -gTheEvent.where.v;
+      short menu_item = -gTheEvent.where.h;
+      if (menu_id == 137 || menu_id == 135 || menu_id == 147 || menu_id == 134) {
+        menuChoice = ((int32_t)menu_id << 16) | (menu_item & 0xFFFF);
+        HandleMenuChoice();
+      }
+      continue;
+    }
 
     if (gTheEvent.what == keyDown)
       goto dokey;
@@ -703,6 +723,7 @@ cast:
 
 out:
 
+  EnableGameMenus();
   DisposeDialog(spellwindow);
   out();
 

@@ -291,6 +291,16 @@ void EnableItem(MenuHandle theMenu, uint16_t item) {
   mm.sync();
 }
 
+Boolean IsItemEnabled(MenuHandle theMenu, uint16_t item) {
+  auto menu = mm.get_menu(theMenu);
+  if (item == 0) {
+    return menu->enabled;
+  } else if (item <= menu->items.size()) {
+    return menu->items[item - 1].enabled;
+  }
+  return false;
+}
+
 void CheckItem(MenuHandle theMenu, uint16_t item, Boolean checked) {
   auto menu = mm.get_menu(theMenu);
   if (item > menu->items.size()) {
@@ -438,6 +448,34 @@ static std::shared_ptr<phosg::ImageRGBA8888N> load_scenario_splash_icon(const st
   return nullptr;
 }
 
+// Loads a PNG file from a host path into a menu icon image, or nullptr on failure.
+static std::shared_ptr<phosg::ImageRGBA8888N> load_png_icon(const std::string& png_host) {
+  SDL_Surface* surf = IMG_Load(png_host.c_str());
+  if (!surf) {
+    mm_log.warning_f("Failed to load PNG '{}': {}", png_host, SDL_GetError());
+    return nullptr;
+  }
+
+  SDL_Surface* rgba = SDL_ConvertSurface(surf, SDL_PIXELFORMAT_ARGB8888);
+  SDL_DestroySurface(surf);
+  if (!rgba) {
+    mm_log.warning_f("Failed to convert PNG surface: {}", SDL_GetError());
+    return nullptr;
+  }
+
+  int w = rgba->w, h = rgba->h;
+  auto img = std::make_shared<phosg::ImageRGBA8888N>(w, h);
+  for (int y = 0; y < h; y++) {
+    const uint32_t* row = reinterpret_cast<const uint32_t*>(
+        static_cast<const uint8_t*>(rgba->pixels) + y * rgba->pitch);
+    for (int x = 0; x < w; x++) {
+      img->write(x, y, phosg::rgba8888_for_argb8888(row[x]));
+    }
+  }
+  SDL_DestroySurface(rgba);
+  return img;
+}
+
 void SetItemIconFromScenarioPng(MenuHandle theMenu, int16_t item, const char* scenario_name) {
   auto menu = mm.get_menu(theMenu);
   if (item < 1 || item > static_cast<int16_t>(menu->items.size())) {
@@ -477,33 +515,30 @@ void SetItemIconFromScenarioPng(MenuHandle theMenu, int16_t item, const char* sc
     return;
   }
 
-  SDL_Surface* surf = IMG_Load(png_host.c_str());
-  if (!surf) {
-    mm_log.warning_f("Failed to load PNG '{}': {}", png_host, SDL_GetError());
-    menu_item.icon_image = nullptr;
+  menu_item.icon_image = load_png_icon(png_host);
+}
+
+// Configures a menu item so that clicking anywhere on it opens the given PDF (a
+// Mac-style path under the data root, e.g. ":Manuals:Realmz Manual.pdf") in the
+// OS default viewer, with the shared manual icon shown on the left. Unlike the
+// scenario "PDF" buttons, there is no separate click target — the whole item acts
+// as the open-PDF control, so it is never dispatched to the engine.
+void SetMenuItemOpensPdf(MenuHandle theMenu, int16_t item, const char* mac_pdf_path) {
+  auto menu = mm.get_menu(theMenu);
+  if (item < 1 || item > static_cast<int16_t>(menu->items.size())) {
     return;
   }
+  auto& menu_item = menu->items.at(item - 1);
 
-  SDL_Surface* rgba = SDL_ConvertSurface(surf, SDL_PIXELFORMAT_ARGB8888);
-  SDL_DestroySurface(surf);
-  if (!rgba) {
-    mm_log.warning_f("Failed to convert PNG surface: {}", SDL_GetError());
-    menu_item.icon_image = nullptr;
-    return;
+  menu_item.pdf_path = host_filename_for_mac_filename(mac_pdf_path, false);
+  menu_item.opens_pdf_on_click = true;
+
+  std::string icon_host = host_filename_for_mac_filename(":Data Files:manual_icon.png", false);
+  if (std::filesystem::is_regular_file(icon_host)) {
+    menu_item.icon_image = load_png_icon(icon_host);
+  } else {
+    mm_log.warning_f("Manual icon not found at '{}'", icon_host);
   }
-
-  int w = rgba->w, h = rgba->h;
-  auto img = std::make_shared<phosg::ImageRGBA8888N>(w, h);
-  for (int y = 0; y < h; y++) {
-    const uint32_t* row = reinterpret_cast<const uint32_t*>(
-        static_cast<const uint8_t*>(rgba->pixels) + y * rgba->pitch);
-    for (int x = 0; x < w; x++) {
-      img->write(x, y, phosg::rgba8888_for_argb8888(row[x]));
-    }
-  }
-  SDL_DestroySurface(rgba);
-
-  menu_item.icon_image = std::move(img);
 }
 
 void AppendMenu(MenuHandle menu, ConstStr255Param data) {
@@ -563,6 +598,14 @@ MenuHandle Realmz_NewMenu(int16_t menuID, ConstStr255Param menuTitle) {
   return handle;
 }
 
+void SetMenuTitleCStr(MenuHandle theMenu, const char* title) {
+  auto menu = mm.get_menu(theMenu);
+  menu->title = std::string(title);
+  // Re-sync so the SDL menu bar rebuilds its cached title layout (the new title
+  // almost certainly has a different width than the old one).
+  mm.sync();
+}
+
 void SetMenuItemIsHeader(MenuHandle theMenu, int16_t item) {
   auto menu = mm.get_menu(theMenu);
   if (item < 1 || item > static_cast<int16_t>(menu->items.size())) return;
@@ -577,6 +620,16 @@ void SetItemMark(MenuHandle theMenu, int16_t item, int16_t markChar) {
     return;
   }
   menu->items.at(item - 1).checked = (markChar != 0);
+  mm.sync();
+}
+
+void SetItemDiamond(MenuHandle theMenu, int16_t item, int16_t filled) {
+  auto menu = mm.get_menu(theMenu);
+  if (item < 1 || item > static_cast<int16_t>(menu->items.size())) {
+    return;
+  }
+  menu->items.at(item - 1).mark_glyph =
+      filled ? Menu::Item::MARK_FILLED_DIAMOND : Menu::Item::MARK_HOLLOW_DIAMOND;
   mm.sync();
 }
 
@@ -899,7 +952,7 @@ int PopulateScenarioMenu(MenuHandle theMenu) {
       "Assault on Giant Mountain",
       "Destroy the Necronomicon",
       "Castle in the Clouds",
-      "Grilochs Revenge",
+      "Griloch's Revenge",
       "White Dragon",
       "Mithril Vault",
       "Twin Sands of Time",

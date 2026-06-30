@@ -73,6 +73,14 @@ public:
   void draw_text(const std::string& text);
   // Returns the rendered width of the given text, in pixels
   int measure_text(const std::string& text);
+  // Returns the height of a single line of text in the current font, in pixels.
+  int text_line_height();
+  // Computes the insertion-point caret for `text` typed into an editable field
+  // whose interior is `rect`. The text is word-wrapped to the field width the
+  // same way draw_text renders it, so the caret follows onto the next line
+  // rather than running off the right edge. The result is a one-line-tall
+  // vertical line (left == right) positioned just past the last character.
+  Rect caret_rect_for_text(const std::string& text, const Rect& rect);
   void draw_rect(const Rect& dispRect);
   void draw_oval(const Rect& dispRect);
   void draw_line(const Point& start, const Point& end); // Does not affect pnLoc

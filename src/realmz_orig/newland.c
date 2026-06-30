@@ -27,7 +27,7 @@ static Boolean reg_encounter_suppressed(short prompt) {
       {"Assault on Giant Mountain", {349, 729, 0}},
       {"City of Bywater", {565, 566, 0}},
       {"Destroy the Necronomicon", {858, 1108, 0}},
-      {"Grilochs Revenge", {413, 0}},
+      {"Griloch's Revenge", {413, 0}},
       {"Half Truth", {167, 2009, 0}},
       {"Mithril Vault", {1199, 0}},
       {"Twin Sands of Time", {343, 0}},

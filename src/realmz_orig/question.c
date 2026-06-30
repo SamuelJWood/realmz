@@ -32,7 +32,37 @@ short question(short stringnum) {
   GetIndString(myString, 135, stringnum);
   ParamText(myString, (StringPtr) "", (StringPtr) "", (StringPtr) "");
 
-  MoveWindow(GetDialogWindow(question), GlobalLeft + 384 + leftshift, GlobalTop + 182 + downshift, FALSE);
+  /* Position depends on which prompt this is (index into STR# 135):
+   *   #3  "Do you wish to erase this character forever?" and
+   *   #13 "...party is dangerously under-leveled..." — both shown on the
+   *       party-setup screen; place them together over the character list.
+   *   #2  "Do you wish to keep this character?" and
+   *   #17 "You still have spell selection points. Finish anyway?" — keep their
+   *       existing (legacy) fixed position.
+   *   everything else — "Do you wish to save the game before quitting?" (#1) and
+   *       the various in-game prompts — center over the main gameplay map area
+   *       (lookrect). */
+  {
+    short qx, qy;
+    if (stringnum == 3 || stringnum == 13) {
+      qx = GlobalLeft + 262 + leftshift; /* erase legacy 384 - 99 - 23 */
+      qy = GlobalTop - 27 + downshift;   /* erase legacy 182 - 125 - 84 */
+    } else if (stringnum == 2 || stringnum == 17) {
+      qx = GlobalLeft + 384 + leftshift;
+      qy = GlobalTop + 182 + downshift;
+    } else {
+      /* The map (lookrect) spans (0,0)-(320+leftshift, 320+downshift) inside the
+       * game window, which sits at (GlobalLeft+1+leftshift/2, GlobalTop+1+downshift/2),
+       * so its center in global coords is (GlobalLeft+161+leftshift,
+       * GlobalTop+161+downshift). Nudged 80 left / 49 up (161->81, 161->112) and
+       * offset by half the dialog's size to center it. */
+      Rect pb;
+      GetPortBounds((CGrafPtr)GetDialogWindow(question), &pb);
+      qx = GlobalLeft + 81 + leftshift - (pb.right - pb.left) / 2;
+      qy = GlobalTop + 112 + downshift - (pb.bottom - pb.top) / 2;
+    }
+    MoveWindow(GetDialogWindow(question), qx, qy, FALSE);
+  }
   ShowWindow(GetDialogWindow(question));
   ErasePortRect();
 

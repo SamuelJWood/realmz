@@ -38,6 +38,14 @@ short fileprep(short mode) {
     sound(10004);
   gStop = FALSE;
 
+  /* Lock out all menus except Preferences while this window is open. */
+  DisableGameMenus();
+
+  /* The description is only editable in the Save window (mode 0); in the Load
+   * window (mode 1) it is shown read-only. */
+  if (mode != 0)
+    WindowManager_SetItemEditable(savewindow, 41, FALSE);
+
   GetDialogItem(savewindow, 3, &itemType, &itemHandle, &itemRect);
   pict(185 + mode, itemRect);
   GetDialogItem(savewindow, lastgame, &itemType, &itemHandle, &itemRect);
@@ -221,6 +229,9 @@ cancel:
     sound(3000);
 
   DisposeDialog(savewindow);
+
+  /* Restore the menus to their pre-window state. */
+  EnableGameMenus();
 
   if (FrontWindow() == GetDialogWindow(background)) {
     SetPortDialogPort(background);

@@ -28,6 +28,9 @@ set(PROJECT_COPYRIGHT "Realmz Copyright 1994 by Tim Phillips")
 set(CMAKE_C_STANDARD 90)
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
+# Emit compile_commands.json so language servers (clangd) use the real compiler
+# flags, include paths, and language standards instead of guessed defaults.
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CMAKE_XCODE_ATTRIBUTE_DEBUG_INFORMATION_FORMAT "dwarf")
 # TODO(martin): We should eventually get everything to built without warnings and enable these flags.
 # if (MSVC)
@@ -365,7 +368,7 @@ set(SCENARIO_NAMES
     "Castle in the Clouds"
     "City of Bywater"
     "Destroy the Necronomicon"
-    "Grilochs Revenge"
+    "Griloch's Revenge"
     "Half Truth"
     "Mithril Vault"
     "Prelude to Pestilence"

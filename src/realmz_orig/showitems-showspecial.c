@@ -27,6 +27,9 @@ void Showitems(short mode) {
 
   inshop = TRUE;
 
+  /* This screen serves both the Shop and the Trade buttons; cr == -1 means a
+   * shop is open, otherwise the party is trading between two characters. */
+  SetMenuTitleCStr(copy, (cr == -1) ? "Shop" : "Trade");
   SetMenuBar(copywright);
   DrawMenuBar();
 

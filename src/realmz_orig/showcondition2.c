@@ -31,6 +31,12 @@ void showcondition2(short who, short type) {
           index++;
           GetIndString(myString, 133, t + 1);
           AppendMenu(popup, myString);
+          /* Hollow diamond for temporary (counts down), filled for permanent,
+           * matching the character Conditions menu. */
+          if (monster[who].condition[t] > 0)
+            SetItemDiamond(popup, index, 0);
+          else
+            SetItemDiamond(popup, index, 1);
         }
       }
       break;

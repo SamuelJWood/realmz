@@ -1,6 +1,19 @@
 #include "prototypes.h"
 #include "variables.h"
 
+/* Bestiary / Allies monster-info navigation: the Left and Right arrow keys step
+ * to the previous/next monster, mirroring the on-screen prev (item 2) and next
+ * (item 3) buttons. Only used in the browsable view (mode == 1). */
+static Boolean beast_filter(DialogPtr dlg, EventRecord* ev, short* hit) {
+  (void)dlg;
+  if (ev->what == keyDown) {
+    uint8_t vkey = (uint8_t)((ev->message >> 8) & 0xFF);
+    if (vkey == 0x7B) { *hit = 2; return TRUE; } /* Left  -> previous */
+    if (vkey == 0x7C) { *hit = 3; return TRUE; } /* Right -> next     */
+  }
+  return FALSE;
+}
+
 /***************************** beast ********************************/
 void beast(short who, short mode, short specific) {
   FILE* fp;
@@ -217,7 +230,7 @@ backup:
 
   for (;;) {
     FlushEvents(everyEvent, 0);
-    ModalDialog(0L, &itemHit);
+    ModalDialog(mode == 1 ? beast_filter : (ModalFilterProcPtr)0L, &itemHit);
     GetDialogItem(gGeneration, itemHit, &itemType, &itemHandle, &buttonrect);
     if (mode != 1)
       goto out;

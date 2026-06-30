@@ -53,6 +53,33 @@ static void draw_frect_outline(SDL_Renderer* r, float x, float y, float w, float
   SDL_RenderRect(r, &fr);
 }
 
+// Draws a diamond (rotated square) centered at (cx, cy) with the given radius
+// (tip-to-center distance, in pixels). filled = solid diamond (permanent
+// conditions); otherwise a 1px outline (temporary). The menu font has no diamond
+// glyph, so we render it geometrically.
+//
+// Drawn row-by-row on integer pixels so it's symmetric and crisp: at vertical
+// offset dy the diamond spans cx-(R-|dy|) .. cx+(R-|dy|), tapering to a single
+// pixel at the top and bottom tips. The filled form fills each row; the outline
+// form plots just the two edge pixels per row (which meet at all four tips).
+static void draw_diamond(SDL_Renderer* r, int cx, int cy, int radius, bool filled, SDL_Color c) {
+  SDL_SetRenderDrawBlendMode(r, SDL_BLENDMODE_NONE);
+  set_draw_color(r, c);
+  for (int dy = -radius; dy <= radius; dy++) {
+    int hw = radius - (dy < 0 ? -dy : dy); // half-width of this row
+    int y = cy + dy;
+    if (filled || hw == 0) {
+      SDL_FRect row{(float)(cx - hw), (float)y, (float)(2 * hw + 1), 1.0f};
+      SDL_RenderFillRect(r, &row);
+    } else {
+      SDL_FRect lp{(float)(cx - hw), (float)y, 1.0f, 1.0f};
+      SDL_FRect rp{(float)(cx + hw), (float)y, 1.0f, 1.0f};
+      SDL_RenderFillRect(r, &lp);
+      SDL_RenderFillRect(r, &rp);
+    }
+  }
+}
+
 static constexpr SDL_Color COLOR_PDF_OPEN   = {0x6E, 0x6E, 0xCC, 0xFF}; // "opening" fill (clicked)
 static constexpr SDL_Color COLOR_PDF_BDR    = {0xC8, 0xC8, 0xD2, 0xFF}; // hover outline
 
@@ -403,7 +430,7 @@ int SDLMenuBar::hit_test_dropdown_pdf(float px, float py, int win_w, int win_h) 
   for (int i = 0; i < (int)menu->items.size(); i++) {
     const auto& it = menu->items[i];
     float item_h = is_separator(it) ? (float)SEP_H : (float)item_height(it);
-    if (!is_separator(it) && !it.pdf_path.empty()) {
+    if (!is_separator(it) && !it.pdf_path.empty() && !it.opens_pdf_on_click) {
       SDL_FRect br = pdf_button_rect(dx, (int)dw, iy, item_h);
       if (px >= br.x && px < br.x + br.w && py >= br.y && py < br.y + br.h) {
         return i;
@@ -642,10 +669,29 @@ int SDLMenuBar::draw_panel(
     if (item.icon_image) {
       SDL_Texture* tex = this->get_icon_texture(r, item.icon_image.get());
       if (tex) {
-        float icon_y = iy + (item_h_f - (float)SDLMenuBar::ICON_SIZE) / 2.0f;
-        SDL_FRect icon_dst{panel_x + 4, icon_y, (float)SDLMenuBar::ICON_SIZE, (float)SDLMenuBar::ICON_SIZE};
+        // Draw the icon at its native pixel size (preserving aspect ratio),
+        // downscaling only if it exceeds the ICON_SIZE box. This keeps non-square
+        // icons like the 32x22 manual icon undistorted, while square scenario
+        // icons still fill the 32x32 box.
+        float iw = (float)item.icon_image->get_width();
+        float ih = (float)item.icon_image->get_height();
+        float scale = std::min(1.0f, std::min((float)SDLMenuBar::ICON_SIZE / iw,
+                                              (float)SDLMenuBar::ICON_SIZE / ih));
+        float dw = iw * scale, dh = ih * scale;
+        float icon_x = panel_x + 4 + ((float)SDLMenuBar::ICON_SIZE - dw) / 2.0f;
+        float icon_y = iy + (item_h_f - dh) / 2.0f;
+        SDL_FRect icon_dst{icon_x, icon_y, dw, dh};
         SDL_RenderTexture(r, tex, nullptr, &icon_dst);
       }
+    }
+
+    // Diamond mark (Conditions menu): drawn in the left mark column. Filled for
+    // permanent conditions, hollow for temporary ones. Use the item's text color
+    // so it stays visible on both the normal and hovered backgrounds.
+    if (item.mark_glyph != Menu::Item::MARK_NONE) {
+      int cx = (int)(panel_x + SDLMenuBar::ITEM_LPAD / 2.0f);
+      int cy = (int)(iy + item_h_f / 2.0f);
+      draw_diamond(r, cx, cy, 5, item.mark_glyph == Menu::Item::MARK_FILLED_DIAMOND, text_col);
     }
 
     int text_lpad = item.icon_image ? SDLMenuBar::ICON_ITEM_LPAD : SDLMenuBar::ITEM_LPAD;
@@ -653,7 +699,7 @@ int SDLMenuBar::draw_panel(
 
     if (is_submenu(item)) {
       this->draw_text(r, "\xe2\x96\xb6", (int)panel_x + panel_w - 14, text_y, text_col);
-    } else if (!item.pdf_path.empty()) {
+    } else if (!item.pdf_path.empty() && !item.opens_pdf_on_click) {
       // Manual-icon button in the shortcut column: a rectangle appears on hover,
       // and fills with the "opening" color while its PDF is being launched.
       SDL_FRect box = pdf_button_rect(panel_x, panel_w, iy, item_h_f);
@@ -1262,6 +1308,13 @@ void SDLMenuBar::dispatch_item(int menu_idx, int item_idx) {
   if (item_idx < 0 || item_idx >= (int)menu->items.size()) return;
   const auto& item = menu->items[item_idx];
   if (!item.enabled || is_separator(item)) return;
+  // Items flagged opens_pdf_on_click act entirely in the UI layer: the whole row
+  // launches its PDF in the OS viewer and nothing is dispatched to the engine.
+  if (item.opens_pdf_on_click && !item.pdf_path.empty()) {
+    smb_log.info_f("Opening PDF for menu {} item {} ({})", menu->menu_id, item_idx + 1, item.name);
+    open_pdf_file(item.pdf_path);
+    return;
+  }
   smb_log.info_f("Dispatching menu {} item {} ({})", menu->menu_id, item_idx + 1, item.name);
   PushMenuEvent(menu->menu_id, (int16_t)(item_idx + 1));
 }

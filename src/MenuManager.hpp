@@ -11,6 +11,7 @@ struct Menu {
     std::string description;
     std::string shortcut_text; // freeform label shown in the shortcut column (e.g. "F11")
     std::string pdf_path;      // host path to an associated PDF; if set, a "PDF" button shows in the shortcut column
+    bool opens_pdf_on_click = false; // if true, clicking anywhere on the item opens pdf_path (no right-side "PDF" button)
     uint8_t icon_number = 0;
     char key_equivalent = 0;
     char mark_character = 0; // In MacRoman; use decode_mac_roman if needed
@@ -18,6 +19,10 @@ struct Menu {
     bool enabled = true;
     bool checked = false;
     bool is_header = false; // Non-clickable, non-hoverable; inverted colors in popup
+    // Diamond mark drawn in the left mark column (used by the Conditions menu to
+    // flag permanent vs. temporary conditions). Independent of `checked`.
+    enum MarkGlyph : uint8_t { MARK_NONE = 0, MARK_FILLED_DIAMOND, MARK_HOLLOW_DIAMOND };
+    uint8_t mark_glyph = MARK_NONE;
     std::shared_ptr<phosg::ImageRGBA8888N> icon_image;
 
     Item() = default;

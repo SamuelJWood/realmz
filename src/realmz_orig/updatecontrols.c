@@ -84,6 +84,13 @@ void updatecontrols(void) {
         HideControl(rest);
         ShowControl(shopbut);
         pict(180, controlrect);
+        /* When this button is acting as the "Encounter" trigger (no shop or
+         * temple available) and a complex encounter window is currently open,
+         * keep it shown in its depressed state. encountflag is cleared once the
+         * encounter closes for any reason, so the button reverts to normal on
+         * the next redraw. */
+        if (encountflag == 2)
+          ploticon3(129, controlrect);
       }
     }
 
@@ -102,5 +109,16 @@ void updatecontrols(void) {
       ShowControl(overviewbut);
       pict(195, controlrect);
     }
+
+    /* Show the Camp button depressed for the whole time the party is camped,
+     * and raised again once camp mode is exited (for any reason). Both overlays
+     * (icons 129 pressed / 130 raised) have a transparent center, so the camp
+     * icon drawn by the toolbar background shows through; drawing the raised
+     * overlay when not camped clears any leftover pressed state. */
+    GetControlBounds(campbut, &controlrect);
+    if (incamp)
+      ploticon3(129, controlrect);
+    else
+      ploticon3(130, controlrect);
   }
 }

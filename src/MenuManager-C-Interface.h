@@ -28,6 +28,8 @@ void SetMenuItemText(MenuHandle theMenu, uint16_t item, ConstStr255Param itemStr
 int32_t MenuSelect(Point startPt);
 void DisableItem(MenuHandle theMenu, uint16_t item);
 void EnableItem(MenuHandle theMenu, uint16_t item);
+// Returns whether the given menu (item 0) or menu item is currently enabled.
+Boolean IsItemEnabled(MenuHandle theMenu, uint16_t item);
 void CheckItem(MenuHandle theMenu, uint16_t item, Boolean checked);
 int32_t PopUpMenuSelect(MenuHandle menu, int16_t top, int16_t left, int16_t popUpItem);
 void AppendMenu(MenuHandle menu, ConstStr255Param data);
@@ -35,15 +37,24 @@ void AppendMenuCStr(MenuHandle menu, const char* data);
 int16_t CountMItems(MenuHandle theMenu);
 int32_t MenuKey(int16_t ch);
 MenuHandle NewMenu(int16_t menuID, ConstStr255Param menuTitle);
+// Replaces the title text shown for a menu in the menu bar (e.g. the copyright
+// banner menu becomes "Items"/"Shop"/"Trade"/"Treasure" on those screens).
+void SetMenuTitleCStr(MenuHandle theMenu, const char* title);
 void InsertMenuItem(MenuHandle theMenu, ConstStr255Param itemString, int16_t afterItem);
 void InsertSubmenuItem(MenuHandle theMenu, ConstStr255Param title, int16_t subMenuID, int16_t afterItem);
 void SetItemIcon(MenuHandle theMenu, int16_t item, int16_t iconIndex);
 void SetItemIconByCicnId(MenuHandle theMenu, int16_t item, int16_t cicnId);
 void SetItemIconFromScenarioPng(MenuHandle theMenu, int16_t item, const char* scenario_name);
+// Makes the whole item open the given PDF (Mac-style path, e.g. ":Manuals:Foo.pdf")
+// in the OS default viewer, with the shared manual icon shown on the left.
+void SetMenuItemOpensPdf(MenuHandle theMenu, int16_t item, const char* mac_pdf_path);
 // Clears items ≥5 from theMenu, scans :Scenarios: for subdirectories, and appends
 // each as a disabled menu item.  Returns the number of scenarios added.
 int PopulateScenarioMenu(MenuHandle theMenu);
 void SetItemMark(MenuHandle theMenu, int16_t item, int16_t markChar);
+// Draws a diamond in the item's left mark column: filled (permanent) or hollow
+// (temporary). Used by the Conditions menu. Independent of SetItemMark/CheckItem.
+void SetItemDiamond(MenuHandle theMenu, int16_t item, int16_t filled);
 // Marks item as a non-clickable, non-hoverable header with inverted colors.
 void SetMenuItemIsHeader(MenuHandle theMenu, int16_t item);
 void GetItemMark(MenuHandle theMenu, int16_t item, int16_t* markChar);

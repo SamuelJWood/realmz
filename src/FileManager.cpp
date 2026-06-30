@@ -226,9 +226,24 @@ std::vector<std::string> mac_list_directory(const std::string& mac_path) {
 }
 
 void mac_remove(const char* filename) {
+  // Remove the file from both the user data folder and the bundled/base folder,
+  // so it is gone from the merged view that mac_fopen and mac_list_directory
+  // present (user files layered over bundled ones). Deleting only the user copy
+  // would let a bundled file of the same name reappear — e.g. erasing one of the
+  // sample characters that ship in the app's Character Files folder. The
+  // error_code overload makes a missing file a no-op rather than throwing.
+  std::error_code ec;
   std::string user_filename = userdata_filename_for_mac_filename(filename);
-  fm_log.info_f("Removing file {} (host: {})", filename, user_filename);
-  std::filesystem::remove(user_filename);
+  bool removed_user = std::filesystem::remove(user_filename, ec);
+
+  std::string host_filename = host_filename_for_mac_filename(filename, false);
+  bool removed_host = false;
+  if (!host_filename.empty() && host_filename != user_filename) {
+    removed_host = std::filesystem::remove(host_filename, ec);
+  }
+
+  fm_log.info_f("Removing file {} (user: {} [removed={}], host: {} [removed={}])",
+      filename, user_filename, removed_user, host_filename, removed_host);
 }
 
 std::unique_ptr<FILE, void (*)(FILE*)> mac_fopen_unique(const std::string& mac_path, const std::string& mode) {

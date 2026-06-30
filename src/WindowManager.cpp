@@ -30,6 +30,14 @@
 
 using ResourceDASM::ResourceFile;
 
+// Realmz menu dispatch (defined in the C game code). Used by ModalDialog to let
+// the Preferences menu (and its Sound/Music/Speed submenus) take effect while a
+// modal dialog — e.g. a complex encounter — is blocking the main event loop.
+extern "C" {
+extern int32_t menuChoice;
+short HandleMenuChoice(void);
+}
+
 // Enable these to save an image named debug*.bmp every time the main window or dialog items are recomposited
 static constexpr bool ENABLE_RECOMPOSITE_DEBUG = false;
 static constexpr bool ENABLE_DIALOG_RECOMPOSITE_DEBUG = false;
@@ -273,6 +281,9 @@ public:
   int16_t resource_id; // From item definition (generally used for controls)
   Rect rect;
   bool enabled;
+  // Whether an EDIT_TEXT field accepts focus/typing. Cleared to make a field
+  // read-only (e.g. the description shown in the Load window).
+  bool editable{true};
   std::shared_ptr<Control> control; // May be null
 
   static std::unordered_map<size_t, std::weak_ptr<DialogItem>> all_items;
@@ -484,13 +495,14 @@ public:
         auto window = this->owner_window.lock();
         if (window && window->get_focused_item().get() == this &&
             (SDL_GetTicks() / 500) % 2 == 0) {
-          // The caret spans the full (2px-shifted) text height. Re-rendering an
+          // The caret is one text-line tall and follows the wrapped text onto
+          // the next line instead of running off the right edge. Re-rendering an
           // EDIT_TEXT goes through Window::rerender_edit_field, which restores the
-          // PICT background over this same shifted region, so the whole caret is
-          // cleared each blink with no leftover stub.
-          int16_t caret_x = shifted.left + port.measure_text(text) + 1;
-          Point caret_top = {.h = caret_x, .v = shifted.top};
-          Point caret_bottom = {.h = caret_x, .v = shifted.bottom};
+          // PICT background over the whole field region, so the caret is cleared
+          // each blink with no leftover stub regardless of which line it's on.
+          Rect caret = port.caret_rect_for_text(text, shifted);
+          Point caret_top = {.h = caret.left, .v = caret.top};
+          Point caret_bottom = {.h = caret.left, .v = caret.bottom};
           port.draw_line(caret_top, caret_bottom);
         }
         break;
@@ -806,8 +818,8 @@ Window::Window(
   }
 
   for (auto di : this->dialog_items) {
-    // Set the focused text field to be the first EDIT_TEXT item encountered
-    if (!focused_item && di->type == DialogItemType::EDIT_TEXT) {
+    // Set the focused text field to be the first editable EDIT_TEXT item
+    if (!focused_item && di->type == DialogItemType::EDIT_TEXT && di->editable) {
       focused_item = di;
     }
 
@@ -864,16 +876,26 @@ void Window::set_focused_item(std::shared_ptr<DialogItem> item) {
 void Window::handle_text_input(const std::string& text, std::shared_ptr<DialogItem> item) {
   this->log.debug_f("Window::handle_text_input(\"{}\", {})", text, item->str());
   item->append_text(text);
-  // Re-render the full dialog so the PICT background is restored beneath the text
-  // before drawing. Without this, erase_rect fills with PixPat and the font's
-  // baseline serif pixels appear as visible dots on the dark textured background.
-  this->erase_and_render();
+  // Re-render only the edit field (restoring the PICT background beneath it)
+  // rather than erasing and redrawing the whole window. A full redraw only
+  // repaints DITL items, which wipes graphics the game draws imperatively over
+  // the dialog (e.g. the green "Save" picture in fileprep). This matches the
+  // path used by the blinking caret and SetDialogItemText.
+  this->rerender_edit_field(item);
+  WindowManager::instance().recomposite_from_window(this->port);
 }
 
 void Window::delete_char(std::shared_ptr<DialogItem> item) {
   this->log.debug_f("Window::delete_char({})", item->str());
   item->delete_char();
-  this->erase_and_render();
+  // Re-render only the edit field (see handle_text_input) so deleting text
+  // doesn't wipe game-drawn graphics like fileprep's green "Save" picture.
+  if (item->type == DialogItemType::EDIT_TEXT) {
+    this->rerender_edit_field(item);
+    WindowManager::instance().recomposite_from_window(this->port);
+  } else {
+    this->erase_and_render();
+  }
 }
 
 void Window::erase_and_render() {
@@ -1776,6 +1798,22 @@ void WindowManager_SetDialogItemRect(DialogPtr dialog, short item_id, const Rect
   }
 }
 
+void WindowManager_SetItemEditable(DialogPtr dialog, short item_id, Boolean editable) {
+  auto window = WindowManager::instance().window_for_port(reinterpret_cast<WindowPtr>(dialog));
+  auto& items = window->get_dialog_items();
+  try {
+    auto item = items.at(item_id - 1);
+    item->editable = editable;
+    // Drop focus from a field we just made read-only so it stops blinking a
+    // caret and stops receiving typed characters.
+    if (!editable && window->get_focused_item() == item) {
+      window->set_focused_item(nullptr);
+    }
+  } catch (const std::out_of_range&) {
+    wm_log.warning_f("WindowManager_SetItemEditable: invalid item_id {}", item_id);
+  }
+}
+
 void GetDialogItemText(DialogItemHandle item_handle, Str255 text) {
   size_t handle = unwrap_opaque_handle(item_handle);
   auto item = DialogItem::get_item_by_handle(handle);
@@ -1942,7 +1980,7 @@ Boolean DialogSelect(const EventRecord* ev, DialogPtr* dialog, short* item_hit) 
         *item_hit = item->item_id;
 
         // Currently, only editable text fields can be focused on, for text input
-        if (item->type == DialogItemType::EDIT_TEXT) {
+        if (item->type == DialogItemType::EDIT_TEXT && item->editable) {
           window->set_focused_item(item);
           WindowManager::instance().on_dialog_item_focus_changed();
         }
@@ -2064,13 +2102,28 @@ void ModalDialog(ModalFilterProcPtr filterProc, short* itemHit) {
     }
 
     // Menu events are encoded as mouseDown with both coordinates negative
-    // (see EventManager::push_menu_event). Handle them here so that shortcuts
-    // like F11 / Alt+Enter (fullscreen toggle) remain responsive in modal dialogs.
+    // (see EventManager::push_menu_event). Handle them here so that the
+    // Preferences menu — Toggle Fullscreen, the Sound/Music/Speed submenus, and
+    // Faster Spell Resolution — stays usable (and updates its checkmarks) while
+    // a modal dialog such as a complex encounter is blocking the main loop.
+    //
+    // Only the menus left enabled during a modal dialog can produce these events
+    // (the SDL menu bar won't dispatch from a disabled menu/item), and we route
+    // exactly the preferences-related menus so a stray game-menu shortcut can't
+    // re-enter heavy handlers (load/new game, etc.) from inside the modal loop.
     if (e.what == mouseDown && e.where.v < 0 && e.where.h < 0) {
       int16_t menu_id = static_cast<int16_t>(-e.where.v);
       int16_t menu_item = static_cast<int16_t>(-e.where.h);
-      if (menu_id == 137 && menu_item == 1) {
-        WindowManager_ToggleFullscreen();
+      switch (menu_id) {
+        case 137: // Preferences (Toggle Fullscreen, Faster Spell Resolution)
+        case 135: // Sound FX volume
+        case 147: // Music volume
+        case 134: // Speed
+          menuChoice = (static_cast<int32_t>(menu_id) << 16) | (menu_item & 0xFFFF);
+          HandleMenuChoice();
+          break;
+        default:
+          break;
       }
       continue;
     }

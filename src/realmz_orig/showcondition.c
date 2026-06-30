@@ -45,19 +45,30 @@ short showcondition(short start, short stop, short type, short showonly, short w
     }
 
     switch (type) {
-      case 0: /***** condition *****/
+      case 0: /***** condition *****/ {
+        Boolean anycondition = FALSE;
         for (t = 0; t < 40; t++) {
           if (c[tt].condition[t]) {
+            anycondition = TRUE;
             index++;
             GetIndString(myString, 133, t + 1);
             AppendMenu(popup, myString);
+            /* Positive conditions count down over time (temporary); negative
+             * ones persist (permanent). Mark them with hollow vs. filled
+             * diamonds, matching the manual's convention. */
             if (c[tt].condition[t] > 0)
-              SetItemMark(popup, index, -41);
+              SetItemDiamond(popup, index, 0); /* temporary -> hollow diamond */
             else
-              SetItemMark(popup, index, 19);
+              SetItemDiamond(popup, index, 1); /* permanent -> filled diamond */
           }
         }
+        if (!anycondition) {
+          /* No active conditions: show a plain "None" entry (no diamond). */
+          index++;
+          MyrAppendMenu(popup, (Ptr) "None");
+        }
         break;
+      }
 
       case 1: /****** items *****/
         for (t = 0; t < 30; t++) {
