@@ -125,3 +125,46 @@ cd build_win && cpack -G ZIP
 ```
 
 The resulting `.zip` file in `build_win/` contains everything needed to run Realmz on Windows — no installer required.
+
+# Releases (GitHub Actions)
+
+The `.github/workflows/release.yml` workflow builds all three platforms in CI:
+
+| Platform | Artifact     | How it's built                                            |
+| -------- | ------------ | --------------------------------------------------------- |
+| Windows  | `.zip`       | Cross-compiled from Ubuntu with llvm-mingw (CPack `ZIP`)  |
+| Linux    | `.AppImage`  | Native build packaged with `linuxdeploy`                  |
+| macOS    | `.dmg`       | Native universal (x86_64 + arm64) build (CPack `Bundle`)  |
+
+To cut a release, push a version tag:
+
+```bash
+git tag v1.0.0
+git push origin v1.0.0
+```
+
+The workflow builds all three artifacts and publishes them to a GitHub Release
+for that tag. You can also trigger it manually from the **Actions** tab ("Run
+workflow"), in which case the artifacts are uploaded to the workflow run instead
+of a Release.
+
+## Saved games and characters
+
+User data (saved games, characters, preferences) is stored in a per-OS folder:
+
+| Platform | Location                              |
+| -------- | ------------------------------------- |
+| Windows  | `%AppData%\Realmz`                    |
+| Linux    | `~/.local/share/Realmz`               |
+| macOS    | `~/Library/Application Support/Realmz` |
+
+## Opening the unsigned macOS build
+
+The `.dmg` is **not** code-signed or notarized (the project has no Apple
+Developer account), so Gatekeeper will block it on first launch. To run it,
+drag `Realmz.app` to `/Applications`, then either right-click the app and choose
+**Open** (and confirm), or clear the quarantine flag from a terminal:
+
+```bash
+xattr -dr com.apple.quarantine /Applications/Realmz.app
+```

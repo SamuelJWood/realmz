@@ -1,0 +1,279 @@
+name: Release builds
+
+# Builds release artifacts for all three platforms:
+#   - Windows : .zip   (cross-compiled from Ubuntu with llvm-mingw)
+#   - Linux   : .AppImage
+#   - macOS   : .dmg   (universal x86_64 + arm64, unsigned)
+#
+# Triggers:
+#   - Pushing a version tag (e.g. `v1.2.0`) builds all three and publishes a
+#     GitHub Release with the artifacts attached.
+#   - Manual "Run workflow" (workflow_dispatch) builds all three and uploads them
+#     as workflow artifacts (no Release is created).
+#
+# The macOS build is unsigned (no Apple Developer account). See the README for
+# how end users open an unsigned/quarantined build.
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+permissions:
+  contents: write # needed by the release job to create a GitHub Release
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  # Pinned dependency versions. Keep these in sync with the README build docs.
+  LLVM_MINGW: llvm-mingw-20260505-ucrt-ubuntu-22.04-x86_64
+  PHOSG_COMMIT: b2e0c12edb7e274a5e20c460f44eee44f49f57ef
+  RESOURCE_DASM_COMMIT: 27f64c89a5fed855e68c2a5e97b6c6c389d8eb19
+
+jobs:
+  # ---------------------------------------------------------------------------
+  # Windows .zip — cross-compiled from Ubuntu using llvm-mingw (mirrors the
+  # "Building for Windows from WSL2" flow documented in the README).
+  # ---------------------------------------------------------------------------
+  windows:
+    name: Windows (.zip)
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Install build tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y cmake make git wget xz-utils
+
+      - name: Install llvm-mingw toolchain
+        run: |
+          wget -q "https://github.com/mstorsjo/llvm-mingw/releases/download/20260505/${LLVM_MINGW}.tar.xz"
+          tar xf "${LLVM_MINGW}.tar.xz"
+          sudo mv "${LLVM_MINGW}" /opt/llvm-mingw
+          echo "/opt/llvm-mingw/bin" >> "$GITHUB_PATH"
+
+      - name: Build zlib (mingw)
+        run: |
+          git clone --depth 1 https://github.com/madler/zlib.git
+          cmake -S zlib -B zlib/build \
+            -DCMAKE_TOOLCHAIN_FILE="$GITHUB_WORKSPACE/cmake/TC-mingw.cmake" \
+            -DCMAKE_INSTALL_PREFIX="$HOME/mingw-install" \
+            -DCMAKE_BUILD_TYPE=Release
+          cmake --build zlib/build --parallel "$(nproc)"
+          cmake --install zlib/build
+
+      - name: Build phosg (mingw)
+        run: |
+          git clone https://github.com/fuzziqersoftware/phosg.git
+          git -C phosg checkout "$PHOSG_COMMIT"
+          cmake -S phosg -B phosg/build \
+            -DCMAKE_TOOLCHAIN_FILE="$GITHUB_WORKSPACE/cmake/TC-mingw.cmake" \
+            -DCMAKE_INSTALL_PREFIX="$HOME/mingw-install" \
+            -DCMAKE_BUILD_TYPE=Release \
+            -DZLIB_LIBRARY="$HOME/mingw-install/lib/libz.dll.a" \
+            -DZLIB_INCLUDE_DIR="$HOME/mingw-install/include"
+          cmake --build phosg/build --parallel "$(nproc)"
+          cmake --install phosg/build
+
+      - name: Build resource_dasm (mingw)
+        run: |
+          git clone https://github.com/fuzziqersoftware/resource_dasm.git
+          git -C resource_dasm checkout "$RESOURCE_DASM_COMMIT"
+          cmake -S resource_dasm -B resource_dasm/build \
+            -DCMAKE_TOOLCHAIN_FILE="$GITHUB_WORKSPACE/cmake/TC-mingw.cmake" \
+            -DCMAKE_INSTALL_PREFIX="$HOME/mingw-install" \
+            -DCMAKE_BUILD_TYPE=Release \
+            -Dphosg_DIR="$HOME/mingw-install/lib/cmake/phosg" \
+            -DZLIB_LIBRARY="$HOME/mingw-install/lib/libz.dll.a" \
+            -DZLIB_INCLUDE_DIR="$HOME/mingw-install/include"
+          cmake --build resource_dasm/build --parallel "$(nproc)"
+          cmake --install resource_dasm/build
+
+      - name: Download SDL_ttf external dependencies
+        run: vendored/SDL_ttf/external/download.sh
+
+      - name: Configure and build
+        run: |
+          cmake --preset Windows
+          cmake --build --preset Windows --parallel "$(nproc)"
+
+      - name: Package (.zip)
+        run: cd build_win && cpack -G ZIP
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: windows-zip
+          path: build_win/*.zip
+          if-no-files-found: error
+
+  # ---------------------------------------------------------------------------
+  # Linux .AppImage — native build using the llvm-mingw Clang targeting
+  # x86_64-linux-gnu (mirrors the "Linux" CMake preset).
+  # ---------------------------------------------------------------------------
+  linux:
+    name: Linux (.AppImage)
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Install build + runtime dev dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y cmake make git wget xz-utils zlib1g-dev \
+            libx11-dev libxext-dev libxrandr-dev libxkbcommon-dev libwayland-dev \
+            libegl-dev libxi-dev libxcursor-dev libxfixes-dev libxrender-dev \
+            libxss-dev libxinerama-dev
+
+      - name: Install llvm-mingw toolchain
+        run: |
+          wget -q "https://github.com/mstorsjo/llvm-mingw/releases/download/20260505/${LLVM_MINGW}.tar.xz"
+          tar xf "${LLVM_MINGW}.tar.xz"
+          sudo mv "${LLVM_MINGW}" /opt/llvm-mingw
+
+      - name: Build phosg (linux)
+        run: |
+          git clone https://github.com/fuzziqersoftware/phosg.git
+          git -C phosg checkout "$PHOSG_COMMIT"
+          cmake -S phosg -B phosg/build \
+            -DCMAKE_C_COMPILER=/opt/llvm-mingw/bin/clang \
+            -DCMAKE_CXX_COMPILER=/opt/llvm-mingw/bin/clang++ \
+            -DCMAKE_C_FLAGS="-target x86_64-linux-gnu" \
+            -DCMAKE_CXX_FLAGS="-target x86_64-linux-gnu" \
+            -DCMAKE_EXE_LINKER_FLAGS="-target x86_64-linux-gnu" \
+            -DCMAKE_SHARED_LINKER_FLAGS="-target x86_64-linux-gnu" \
+            -DCMAKE_INSTALL_PREFIX="$HOME/linux-deps" \
+            -DCMAKE_BUILD_TYPE=Release
+          cmake --build phosg/build --parallel "$(nproc)"
+          cmake --install phosg/build
+
+      - name: Build resource_dasm (linux)
+        run: |
+          git clone https://github.com/fuzziqersoftware/resource_dasm.git
+          git -C resource_dasm checkout "$RESOURCE_DASM_COMMIT"
+          cmake -S resource_dasm -B resource_dasm/build \
+            -DCMAKE_C_COMPILER=/opt/llvm-mingw/bin/clang \
+            -DCMAKE_CXX_COMPILER=/opt/llvm-mingw/bin/clang++ \
+            -DCMAKE_C_FLAGS="-target x86_64-linux-gnu" \
+            -DCMAKE_CXX_FLAGS="-target x86_64-linux-gnu" \
+            -DCMAKE_EXE_LINKER_FLAGS="-target x86_64-linux-gnu" \
+            -DCMAKE_SHARED_LINKER_FLAGS="-target x86_64-linux-gnu" \
+            -DCMAKE_INSTALL_PREFIX="$HOME/linux-deps" \
+            -DCMAKE_BUILD_TYPE=Release \
+            -Dphosg_DIR="$HOME/linux-deps/lib/cmake/phosg"
+          cmake --build resource_dasm/build --parallel "$(nproc)"
+          cmake --install resource_dasm/build
+
+      - name: Download SDL_ttf external dependencies
+        run: vendored/SDL_ttf/external/download.sh
+
+      - name: Configure and build
+        run: |
+          cmake --preset Linux \
+            -Dphosg_DIR="$HOME/linux-deps/lib/cmake/phosg" \
+            -Dresource_file_DIR="$HOME/linux-deps/lib/cmake/resource_file"
+          cmake --build --preset Linux --parallel "$(nproc)"
+
+      - name: Fetch linuxdeploy
+        run: |
+          wget -q -O build_linux/linuxdeploy-x86_64.AppImage \
+            https://github.com/linuxdeploy/linuxdeploy/releases/download/continuous/linuxdeploy-x86_64.AppImage
+          chmod +x build_linux/linuxdeploy-x86_64.AppImage
+
+      - name: Package (.AppImage)
+        env:
+          # GitHub runners have no FUSE; run AppImages by extracting them instead.
+          APPIMAGE_EXTRACT_AND_RUN: "1"
+        run: cmake --build build_linux --target appimage
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: linux-appimage
+          # Scope to the Realmz output so the linuxdeploy tool (also a *.AppImage
+          # living in build_linux/) is not picked up.
+          path: build_linux/Realmz*.AppImage
+          if-no-files-found: error
+
+  # ---------------------------------------------------------------------------
+  # macOS .dmg — native universal (x86_64 + arm64) build, unsigned.
+  # ---------------------------------------------------------------------------
+  macos:
+    name: macOS (.dmg)
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Build phosg (universal)
+        run: |
+          git clone https://github.com/fuzziqersoftware/phosg.git
+          git -C phosg checkout "$PHOSG_COMMIT"
+          cmake -S phosg -B phosg/build \
+            -DCMAKE_INSTALL_PREFIX="$HOME/mac-deps" \
+            -DCMAKE_BUILD_TYPE=Release \
+            -DCMAKE_OSX_ARCHITECTURES="x86_64;arm64" \
+            -DCMAKE_OSX_DEPLOYMENT_TARGET=13.3
+          cmake --build phosg/build --parallel "$(sysctl -n hw.ncpu)"
+          cmake --install phosg/build
+
+      - name: Build resource_dasm (universal)
+        run: |
+          git clone https://github.com/fuzziqersoftware/resource_dasm.git
+          git -C resource_dasm checkout "$RESOURCE_DASM_COMMIT"
+          cmake -S resource_dasm -B resource_dasm/build \
+            -DCMAKE_INSTALL_PREFIX="$HOME/mac-deps" \
+            -DCMAKE_BUILD_TYPE=Release \
+            -DCMAKE_OSX_ARCHITECTURES="x86_64;arm64" \
+            -DCMAKE_OSX_DEPLOYMENT_TARGET=13.3 \
+            -Dphosg_DIR="$HOME/mac-deps/lib/cmake/phosg"
+          cmake --build resource_dasm/build --parallel "$(sysctl -n hw.ncpu)"
+          cmake --install resource_dasm/build
+
+      - name: Download SDL_ttf external dependencies
+        run: vendored/SDL_ttf/external/download.sh
+
+      - name: Configure and build
+        run: |
+          cmake --preset macOS \
+            -DCMAKE_BUILD_TYPE=Release \
+            -Dphosg_DIR="$HOME/mac-deps/lib/cmake/phosg" \
+            -Dresource_file_DIR="$HOME/mac-deps/lib/cmake/resource_file"
+          cmake --build build_mac --parallel "$(sysctl -n hw.ncpu)"
+
+      - name: Package (.dmg)
+        run: cmake --build build_mac --target package
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: macos-dmg
+          path: build_mac/*.dmg
+          if-no-files-found: error
+
+  # ---------------------------------------------------------------------------
+  # Publish a GitHub Release with all three artifacts (tag pushes only).
+  # ---------------------------------------------------------------------------
+  release:
+    name: Publish Release
+    needs: [windows, linux, macos]
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+
+      - name: Publish
+        uses: softprops/action-gh-release@v2
+        with:
+          files: artifacts/**/*
+          generate_release_notes: true
+          fail_on_unmatched_files: true

@@ -6,6 +6,54 @@ short regscen_pc(void);
 short regscen_pc_custom(void);
 extern Boolean tagger;
 
+/* Registration-check encounters to suppress.
+ *
+ * A number of bundled and 3rd-party scenarios contain encounters whose sole
+ * purpose was to verify the scenario's registration code.  Registration has
+ * been removed, so these encounters must never fire.  Each one is identified by
+ * the SD2 story-string index (the encounter's "prompt") it would display,
+ * scoped to its scenario by the scenario folder name.  Both simple and complex
+ * encounters store this index in their "prompt" field (see struct encount /
+ * struct encount2 in structs.h).  scenarioname holds the active scenario path
+ * (e.g. ":Scenarios:City of Bywater:" or
+ * ":Scenarios:3rd Party Scenarios:Dagger of Shine:"), so a folder-name
+ * substring match selects the right block. */
+static Boolean reg_encounter_suppressed(short prompt) {
+  struct regblock {
+    const char* scenario;
+    short prompts[8]; /* zero-terminated */
+  };
+  static const struct regblock blocks[] = {
+      {"Assault on Giant Mountain", {349, 729, 0}},
+      {"City of Bywater", {565, 566, 0}},
+      {"Destroy the Necronomicon", {858, 1108, 0}},
+      {"Grilochs Revenge", {413, 0}},
+      {"Half Truth", {167, 2009, 0}},
+      {"Mithril Vault", {1199, 0}},
+      {"Twin Sands of Time", {343, 0}},
+      {"City of Port Hyrtin", {37, 38, 39, 43, 0}},
+      {"Dagger of Shine", {102, 103, 237, 238, 239, 671, 672, 0}},
+      {"Dead of Night", {765, 934, 0}},
+      {"Dragon of Death", {745, 0}},
+      {"Kalypso's Island", {15, 207, 250, 838, 839, 0}},
+      {"Trial by Fire", {7, 8, 295, 0}},
+  };
+  short p = (prompt < 0) ? (short)-prompt : prompt;
+  size_t i, j;
+
+  if (p == 0)
+    return FALSE;
+
+  for (i = 0; i < sizeof blocks / sizeof blocks[0]; i++) {
+    if (strstr(scenarioname, blocks[i].scenario) == NULL)
+      continue;
+    for (j = 0; blocks[i].prompts[j]; j++)
+      if (blocks[i].prompts[j] == p)
+        return TRUE;
+  }
+  return FALSE;
+}
+
 /******************************* newland ****************************/
 short newland(int32_t x, int32_t y, short mode, short modecode, short data) {
   struct door holddoorforbattle;
@@ -1586,6 +1634,19 @@ startover:
         encid = id;
         enctry = enc.maxtimes;
 
+        /* Obsolete registration-check encounter: behave like a clean back-out
+         * (reply 0) so it never appears. */
+        if (reg_encounter_suppressed(enc.prompt)) {
+          encountflag = 0;
+          centerpict();
+          saveencounter(encountid, 1);
+          if (!mode)
+            door[doornum] = infodoor = holddoor; /**** dont do random door ***/
+          if ((!indung) && (!seemless))
+            moveparty(-1);
+          return (TRUE);
+        }
+
       type1:
 
         sound(20005);
@@ -1653,6 +1714,18 @@ startover:
 
         enctry = enc2.maxtimes;
         enc2id = id;
+
+        /* Obsolete registration-check encounter: behave like a clean back-out
+         * (reply 0) so it never appears. */
+        if (reg_encounter_suppressed(enc2.prompt)) {
+          encountflag = 0;
+          if (!mode)
+            door[doornum] = infodoor = holddoor; /**** dont do random door ***/
+          saveencounter(encountid, 2);
+          if (!indung)
+            moveparty(-1);
+          return (TRUE);
+        }
 
       type2:
 

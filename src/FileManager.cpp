@@ -11,7 +11,14 @@
 
 static phosg::PrefixedLogger fm_log("[FileManager] ");
 
-const static std::string user_basepath = SDL_GetPrefPath("Fantasoft", "Realmz");
+// User data (saved games, characters, preferences) lives in a per-OS app data
+// folder. Passing an empty org makes SDL_GetPrefPath skip the org segment, so the
+// result is exactly:
+//   Windows: %AppData%\Realmz\
+//   Linux:   ~/.local/share/Realmz/   (or $XDG_DATA_HOME/Realmz/)
+//   macOS:   ~/Library/Application Support/Realmz/
+// SDL_GetPrefPath also creates the directory tree and returns a trailing slash.
+const static std::string user_basepath = SDL_GetPrefPath("", "Realmz");
 
 std::string normalize_mac_path(const std::string& mac_path, bool implicitly_local) {
   std::string ret = mac_path;
