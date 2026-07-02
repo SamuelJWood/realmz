@@ -94,6 +94,18 @@ short attack(short chare, short mon) {
 
 moveon:
   att += (50 + character.tohit + 20 * behind);
+  /* *** CHANGED FROM ORIGINAL IMPLEMENTATION ***
+   * Every worn item/armor magic plus is summed into character.damage by wear(), and that
+   * total already raises the damage dealt (damage += character.damage below) and the
+   * character sheet's displayed attack bonus (character.damage * 5 in updatecharinfo), but it
+   * never reached the to-hit roll. The monster path (attack2) and missile path (resolvespell)
+   * both add 5 per point of the weapon plus, so player melee to-hit was the only place a
+   * weapon or worn-item plus was ignored. Add 5 per point of character.damage here so a +N
+   * weapon, helm, or armor contributes to to-hit exactly as the sheet advertises.
+   * character.damage already includes the weapon's plus, so this covers it too; the
+   * penetration weapon (sp1 == 121) still adds its extra 5 * item.damage above for doubling. */
+  att += 5 * character.damage;
+  /* *** END CHANGES *** */
   if (character.condition[COND_TANGLED])
     att -= abs(character.condition[COND_TANGLED]); /*** tangled ***/
   if (character.condition[COND_STRONG])
