@@ -72,13 +72,21 @@ gotcurrent:
  * arrives at. The outermost ring of a region is uniform border terrain, so no
  * reachable content is skipped.
  *
+ * Each axis is handled independently: only an axis whose destination actually
+ * reaches the map boundary "crosses". A diagonal step that only touches (say)
+ * the right edge slides to the right neighbour and keeps its vertical position
+ * (advanced by the step), instead of also snapping to the top and landing in the
+ * wrong place. When both axes cross at once (a true corner) the diagonal
+ * neighbour is used.
+ *
  * Returns TRUE if a region change occurred (in which case deltax/deltay are
  * cleared and the view has been recentred on the new region).
  */
 Boolean tryedgeslide(void) {
   short worldx, worldy, destx, desty, hit;
-  short newlandlevel;
-  Boolean beyond, onedge;
+  short newlandlevel, newworldx, newworldy;
+  Boolean crossx, crossy, inbounds;
+  char savedx, savedy;
 
   if (indung || incombat)
     return (FALSE);
@@ -88,17 +96,18 @@ Boolean tryedgeslide(void) {
   destx = worldx + deltax;
   desty = worldy + deltay;
 
-  beyond = (destx < 0) || (destx > 89) || (desty < 0) || (desty > 89);
-  onedge = ((deltax > 0) && (destx == 89)) || ((deltax < 0) && (destx == 0)) ||
-           ((deltay > 0) && (desty == 89)) || ((deltay < 0) && (desty == 0));
+  /* An axis crosses if its step reaches (onto) or passes (beyond) the boundary. */
+  crossx = ((deltax > 0) && (destx >= 89)) || ((deltax < 0) && (destx <= 0));
+  crossy = ((deltay > 0) && (desty >= 89)) || ((deltay < 0) && (desty <= 0));
 
-  if ((!beyond) && (!onedge))
+  if ((!crossx) && (!crossy))
     return (FALSE);
 
-  /* When merely stepping *onto* an in-bounds boundary tile, defer to normal tile
-   * handling if that tile is a door/secret (id > 999) so edge-placed doors still
-   * work; only plain border terrain triggers a region slide. */
-  if (onedge && (!beyond)) {
+  /* When stepping *onto* an in-bounds boundary tile (as opposed to past the map
+   * entirely), defer to normal tile handling if that tile is a door/secret
+   * (id > 999) so edge-placed doors still work; only plain terrain slides. */
+  inbounds = (destx >= 0) && (destx <= 89) && (desty >= 0) && (desty <= 89);
+  if (inbounds) {
     hit = field[destx][desty];
     MyrBitClrShort(&hit, 1); /**** removes note marker ****/
     MyrBitClrShort(&hit, 2); /**** removes path marker ****/
@@ -113,12 +122,22 @@ Boolean tryedgeslide(void) {
       return (FALSE);
   }
 
+  /* Find the neighbour, stepping only the axes that actually cross. checklayout
+   * reads deltax/deltay, so mask the non-crossing axis for the lookup. */
+  savedx = deltax;
+  savedy = deltay;
+  if (!crossx)
+    deltax = 0;
+  if (!crossy)
+    deltay = 0;
   newlandlevel = checklayout(landlevel);
+  deltax = savedx;
+  deltay = savedy;
+
   if (newlandlevel == -2) {
-    /* No adjacent region. Block a step that would leave the map entirely, but
-     * still allow the party to stand on the outermost tile (there is nowhere to
-     * slide to, so it is not a mere border in this direction). */
-    if (beyond)
+    /* No adjacent region in the crossing direction. Block only a step that would
+     * leave the map entirely; otherwise let the party stand on the edge tile. */
+    if ((destx < 0) || (destx > 89) || (desty < 0) || (desty > 89))
       deltax = deltay = 0;
     return (FALSE);
   }
@@ -126,22 +145,28 @@ Boolean tryedgeslide(void) {
   saveland(landlevel);
   landlevel = newlandlevel;
 
-  /* Enter the new region one tile in from the boundary we crossed, preserving
-   * position along the other axis. */
+  /* Crossing axes land one tile in from the boundary; non-crossing axes keep the
+   * party's intended position (its move applied), preserving latitude/longitude
+   * across the seam. */
+  newworldx = worldx + deltax;
+  newworldy = worldy + deltay;
+  if (crossx)
+    newworldx = (deltax > 0) ? 1 : 88;
+  if (crossy)
+    newworldy = (deltay > 0) ? 1 : 88;
+  if (newworldx < 0)
+    newworldx = 0;
+  else if (newworldx > 89)
+    newworldx = 89;
+  if (newworldy < 0)
+    newworldy = 0;
+  else if (newworldy > 89)
+    newworldy = 89;
+
   lookx = 0;
   looky = 0;
-  if (deltax > 0)
-    partyx = 1;
-  else if (deltax < 0)
-    partyx = 88;
-  else
-    partyx = worldx;
-  if (deltay > 0)
-    partyy = 1;
-  else if (deltay < 0)
-    partyy = 88;
-  else
-    partyy = worldy;
+  partyx = newworldx;
+  partyy = newworldy;
 
   loadland(landlevel, 1);
   centerpict();
