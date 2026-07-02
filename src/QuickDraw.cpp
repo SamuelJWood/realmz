@@ -252,7 +252,31 @@ bool CCGrafPort::draw_text_ttf(TTF_Font* font, const std::string& processed_text
 bool CCGrafPort::draw_text_bitmap(const ResourceDASM::BitmapFontRenderer& renderer, const std::string& text, const Rect& rect) {
   uint32_t color32 = rgba8888_for_rgb_color(this->rgbFgColor);
   std::string wrapped_text = renderer.wrap_text_to_pixel_width(text, rect.right - rect.left);
-  renderer.render_text(data, wrapped_text, rect.left, rect.top, rect.right, rect.bottom, color32);
+
+  // render_text top-anchors the text at y1 and clips any pixel at or below y2
+  // (rect.bottom). When a single line is taller than its destination rect this
+  // clips the bottom of the glyphs (e.g. the descender of the 'g' in "Avenge
+  // his son" on the two-option encounter buttons, whose DITL text rect is only
+  // tall enough for the cap height). Mirror the TTF path: center the line on the
+  // rect and let it overflow above/below instead of clipping. render_text
+  // bounds-checks every pixel against the destination image, so any overflow
+  // past a surface edge is safely skipped. Multi-line (wrapped) text keeps the
+  // original top-anchored, bottom-clipped behavior so text boxes still fit.
+  ssize_t h = rect.bottom - rect.top;
+  bool has_newlines = (wrapped_text.find('\n') != std::string::npos);
+  ssize_t y1 = rect.top;
+  ssize_t y2 = rect.bottom;
+  if (!has_newlines) {
+    auto [tw, th] = renderer.pixel_dimensions_for_text(wrapped_text);
+    (void)tw;
+    if (static_cast<ssize_t>(th) > h) {
+      ssize_t over = static_cast<ssize_t>(th) - h;
+      y1 = rect.top - over / 2;
+      y2 = y1 + static_cast<ssize_t>(th);
+    }
+  }
+
+  renderer.render_text(data, wrapped_text, rect.left, y1, rect.right, y2, color32);
   return true;
 }
 

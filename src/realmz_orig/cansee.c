@@ -53,122 +53,128 @@ short cansee(short fromx, short fromy, short tox, short toy) {
 }
 
 /******************************** cansee2 *******************/
+/* Line-of-sight fog reveal for overhead (non-dungeon) maps.
+ *
+ * The original implementation cast a small, lopsided "fan" of rays whose shape
+ * depended on the party's on-screen column/row (it compared the ray index `t`
+ * against the absolute coordinate `curx`/`cury`), so the revealed area was
+ * asymmetric and shifted whenever the camera was near a map edge. It has been
+ * replaced with recursive shadowcasting: a symmetric, wall-respecting field of
+ * view over eight octants that reveals a clean circular radius and correctly
+ * stops sight at opaque tiles (mapstats[].los == 1). Wizard Eye still reveals
+ * through walls.
+ */
+
+#define LOS_RADIUS 7
+
+/* Does the world tile (wx, wy) block line of sight?  Out-of-bounds blocks. The
+ * tile-decoding mirrors the rest of the renderer: strip the note/path marker
+ * bits, subtract the secret/special 1000s offsets, and clamp overlarge indices
+ * to the base tile before consulting mapstats. */
+static Boolean los_blocks(short wx, short wy) {
+  short hit;
+
+  if (wx < 0 || wx >= 90 || wy < 0 || wy >= 90)
+    return TRUE;
+
+  hit = field[wx][wy];
+  MyrBitClrShort(&hit, 1); //**** removes note marker
+  MyrBitClrShort(&hit, 2); //**** removes path marker
+
+  if (hit > 999) {
+    hit -= 1000;
+    if (hit > 999)
+      hit -= 1000;
+    if (hit > 999)
+      hit -= 1000;
+  }
+  if (hit > 399)
+    hit = basetile[lastpix]; // Myriad
+
+  if (hit > 0 && hit < 402)
+    return (mapstats[hit].los == 1);
+  return FALSE;
+}
+
+static void los_reveal(short wx, short wy) {
+  if (wx >= 0 && wx < 90 && wy >= 0 && wy < 90)
+    site[wx][wy] = TRUE;
+}
+
+/* Recursive shadowcasting for a single octant, transformed into map space by
+ * the (xx, xy, yx, yy) multipliers. `row` is the distance being scanned;
+ * `start`/`end` are the slopes bounding the still-visible wedge. */
+static void los_cast(short px, short py, short wizard, short row, float start, float end, short xx, short xy,
+                     short yx, short yy) {
+  short j, dx, dy, mx, my;
+  float l_slope, r_slope, new_start = 0.0f;
+  Boolean blocked;
+
+  if (start < end)
+    return;
+
+  for (j = row; j <= LOS_RADIUS; j++) {
+    blocked = FALSE;
+    dy = -j;
+    for (dx = -j; dx <= 0; dx++) {
+      l_slope = (dx - 0.5f) / (dy + 0.5f);
+      r_slope = (dx + 0.5f) / (dy - 0.5f);
+
+      if (start < r_slope)
+        continue;
+      else if (end > l_slope)
+        break;
+
+      mx = px + dx * xx + dy * xy;
+      my = py + dx * yx + dy * yy;
+
+      /* Reveal cells within the circular radius. */
+      if (dx * dx + dy * dy <= LOS_RADIUS * LOS_RADIUS)
+        los_reveal(mx, my);
+
+      if (blocked) {
+        if (!wizard && los_blocks(mx, my)) {
+          new_start = r_slope;
+          continue;
+        } else {
+          blocked = FALSE;
+          start = new_start;
+        }
+      } else if (!wizard && los_blocks(mx, my) && j < LOS_RADIUS) {
+        /* An opaque tile mid-scan: recurse for the sub-wedge above it, then
+         * keep scanning the row for the shadow it casts. */
+        blocked = TRUE;
+        los_cast(px, py, wizard, j + 1, start, l_slope, xx, xy, yx, yy);
+        new_start = r_slope;
+      }
+    }
+    if (blocked)
+      break;
+  }
+}
+
+/* Octant transform multipliers: {xx, xy, yx, yy} for each of the 8 octants. */
+static const short los_mult[4][8] = {
+    {1, 0, 0, -1, -1, 0, 0, 1},
+    {0, 1, -1, 0, 0, -1, 1, 0},
+    {0, 1, 1, 0, 0, -1, -1, 0},
+    {1, 0, 0, 1, -1, 0, 0, -1},
+};
+
 short cansee2(int32_t fromx, int32_t fromy) {
-  short t, tt, curx, cury, deltax, deltay, stopx, stopy, hit;
+  short px, py, oct, wizard;
 
-  stopx = -5;
+  /* cansee2 is called with on-screen tile coordinates; convert to world tiles
+   * via the current camera offset so the reveal never depends on scroll pos. */
+  px = lookx + (short)fromx;
+  py = looky + (short)fromy;
 
-  for (deltay = -1; deltay < 2; deltay += 2) {
-    for (t = 0; t < 10; t++) /**** top / bottom section ****/
-    {
-      cury = fromy;
-      curx = fromx;
-      stopx++;
+  wizard = partycondition[PARTY_COND_WIZARD_EYE] ? 1 : 0;
 
-      if (t < 5)
-        deltax = -1;
-      else if (t > 5)
-        deltax = 1;
-      else
-        deltax = 0;
+  los_reveal(px, py); /* the party's own tile is always visible */
 
-      for (tt = 0; tt < 6; tt++) /**** top / bottom section ****/
-      {
-        if (curx == t)
-          deltax = 0;
+  for (oct = 0; oct < 8; oct++)
+    los_cast(px, py, wizard, 1, 1.0f, 0.0f, los_mult[0][oct], los_mult[1][oct], los_mult[2][oct], los_mult[3][oct]);
 
-        if ((lookx + curx > -1) && (lookx + curx < 90) && (looky + cury > -1) && (looky + cury < 90)) {
-          hit = field[lookx + curx][looky + cury];
-
-          MyrBitClrShort(&hit, 1); //**** removes note marker
-          MyrBitClrShort(&hit, 2); //**** removes path marker
-
-          if (hit > 999) {
-            hit -= 1000;
-            if (hit > 999)
-              hit -= 1000;
-            if (hit > 999)
-              hit -= 1000;
-          }
-          if (hit > 399)
-            hit = basetile[lastpix]; // Myriad
-
-          if (!(partycondition[PARTY_COND_WIZARD_EYE]) && (hit > 0)) {
-#if CHECK_ILLEGAL_ACCESS > 0
-            if (hit >= 402 || hit < 0)
-              AcamErreur("cansee2");
-#endif
-            if ((mapstats[hit].los == 1) && (cury != fromy))
-              tt = 10;
-          }
-
-#if CHECK_ILLEGAL_ACCESS > 0
-          if (lookx + curx < 0 || lookx + curx >= 90 || looky + cury < 0 || looky + cury >= 90)
-            AcamErreur("cansee : site overflow");
-
-#endif
-          site[lookx + curx][looky + cury] = TRUE;
-        }
-
-        curx += deltax;
-        cury += deltay;
-      }
-    }
-  }
-
-  for (deltax = -1; deltax < 2; deltax += 2) {
-    stopy = -5;
-
-    for (t = 0; t < 10; t++) /**** right/left section ****/
-    {
-      cury = fromy;
-      curx = fromx;
-      stopy++;
-
-      if (t < 5)
-        deltay = -1;
-      else if (t > 5)
-        deltay = 1;
-      else
-        deltay = 0;
-
-      for (tt = 0; tt < 6; tt++) /**** right/left section ****/
-      {
-        if (cury == t)
-          deltay = 0;
-
-        if ((lookx + curx > -1) && (lookx + curx < 90) && (looky + cury > -1) && (looky + cury < 90)) {
-
-          hit = field[lookx + curx][looky + cury];
-          MyrBitClrShort(&hit, 1); //**** removes note marker
-          MyrBitClrShort(&hit, 2); //**** removes path marker
-
-          if (hit > 999) {
-            hit -= 1000;
-            if (hit > 999)
-              hit -= 1000;
-            if (hit > 999)
-              hit -= 1000;
-          }
-          if (hit > 399)
-            hit = basetile[lastpix]; // Myriad
-
-          if ((!partycondition[PARTY_COND_WIZARD_EYE]) && (hit > 0)) {
-            if ((mapstats[hit].los == 1) && (curx != fromx))
-              tt = 10;
-          }
-#if CHECK_ILLEGAL_ACCESS > 0
-          if (lookx + curx < 0 || lookx + curx >= 90 || looky + cury < 0 || looky + cury >= 90)
-            AcamErreur("cansee : site overflow");
-
-#endif
-          site[lookx + curx][looky + cury] = TRUE;
-        }
-
-        curx += deltax;
-        cury += deltay;
-      }
-    }
-  }
   return (NIL);
 }
