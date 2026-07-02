@@ -58,6 +58,7 @@ short checkforenemy(short code);
 short checkforsecret(short force);
 short checkfortype(short who, short type, short aliveonly);
 short checklayout(int32_t currentlevel);
+Boolean tryedgeslide(void);
 short checkkeypad(short mode);
 void checkmoneypool(void);
 short checkrange(short body, short targetx, short targety);

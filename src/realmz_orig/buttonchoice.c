@@ -61,6 +61,14 @@ short buttonchoice(short skipin) {
               return (0);
           }
 
+          /* Cross into an adjacent region if this step lands on (or past) a map
+           * edge. Done before the tile lookup below so field[] is never indexed
+           * out of bounds, and ends the drag once the region has changed. The
+           * keyboard path already ran this from checkkeypad, so for key moves
+           * this is a no-op (deltas are non-edge or already cleared). */
+          if (tryedgeslide())
+            break;
+
           nosound = FALSE;
           if (deltax == -1)
             boatright = -1;

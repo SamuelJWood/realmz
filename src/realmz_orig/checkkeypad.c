@@ -27,19 +27,20 @@ short checklayout(int32_t currentlevel) {
 
 gotcurrent:
 
-  if (deltax) {
-    if (partyx == 0)
-      levelx--;
-    if (partyx == 9 + (5 * screensize))
-      levelx++;
-  }
+  /* Step to the neighbouring layout cell in the direction of travel. The
+   * original keyed off the party's on-screen column/row being pinned at the
+   * viewport edge; now that a transition can fire as the party steps *onto* the
+   * boundary tile (not only when stepping past it), the party is not yet pinned
+   * to the extreme column/row, so decide purely from the movement delta. */
+  if (deltax > 0)
+    levelx++;
+  else if (deltax < 0)
+    levelx--;
 
-  if (deltay) {
-    if (partyy == 0)
-      levely--;
-    if (partyy == 9 + (3 * screensize))
-      levely++;
-  }
+  if (deltay > 0)
+    levely++;
+  else if (deltay < 0)
+    levely--;
 
   if ((levelx < 0) || (levely < 0) || (levelx > 15) || (levely > 7))
     return (-2); /**************** out of bounds **************/
@@ -54,11 +55,103 @@ gotcurrent:
   }
 }
 
+/***************************** tryedgeslide ***********************
+ * Handle walking between adjacent overworld regions at a map boundary.
+ *
+ * Historically a region change only fired when the party tried to step *past*
+ * the edge of the map (destination world tile < 0 or > 89). Reaching that point
+ * required the party to already be standing on the outermost tile, which is
+ * pinned to the very edge of the viewport. With the mouse there is no tile to
+ * click beyond the party there, so crossing was keyboard-only.
+ *
+ * This fires the transition as the party steps *onto* the boundary tile (the
+ * common case for both mouse and keyboard) as well as past it (keyboard from
+ * the edge). To avoid ever leaving the party pinned on the un-clickable edge
+ * tile of the destination region (which would make the return trip impossible
+ * for the same reason), the party is placed one tile in from the boundary it
+ * arrives at. The outermost ring of a region is uniform border terrain, so no
+ * reachable content is skipped.
+ *
+ * Returns TRUE if a region change occurred (in which case deltax/deltay are
+ * cleared and the view has been recentred on the new region).
+ */
+Boolean tryedgeslide(void) {
+  short worldx, worldy, destx, desty, hit;
+  short newlandlevel;
+  Boolean beyond, onedge;
+
+  if (indung || incombat)
+    return (FALSE);
+
+  worldx = partyx + lookx;
+  worldy = partyy + looky;
+  destx = worldx + deltax;
+  desty = worldy + deltay;
+
+  beyond = (destx < 0) || (destx > 89) || (desty < 0) || (desty > 89);
+  onedge = ((deltax > 0) && (destx == 89)) || ((deltax < 0) && (destx == 0)) ||
+           ((deltay > 0) && (desty == 89)) || ((deltay < 0) && (desty == 0));
+
+  if ((!beyond) && (!onedge))
+    return (FALSE);
+
+  /* When merely stepping *onto* an in-bounds boundary tile, defer to normal tile
+   * handling if that tile is a door/secret (id > 999) so edge-placed doors still
+   * work; only plain border terrain triggers a region slide. */
+  if (onedge && (!beyond)) {
+    hit = field[destx][desty];
+    MyrBitClrShort(&hit, 1); /**** removes note marker ****/
+    MyrBitClrShort(&hit, 2); /**** removes path marker ****/
+    if ((hit > 2999) || (hit < -2999)) {
+      if (hit > 2999)
+        hit -= 3000;
+      else
+        hit += 3000;
+    }
+    hit = abs(hit);
+    if (hit > 999)
+      return (FALSE);
+  }
+
+  newlandlevel = checklayout(landlevel);
+  if (newlandlevel == -2) {
+    /* No adjacent region. Block a step that would leave the map entirely, but
+     * still allow the party to stand on the outermost tile (there is nowhere to
+     * slide to, so it is not a mere border in this direction). */
+    if (beyond)
+      deltax = deltay = 0;
+    return (FALSE);
+  }
+
+  saveland(landlevel);
+  landlevel = newlandlevel;
+
+  /* Enter the new region one tile in from the boundary we crossed, preserving
+   * position along the other axis. */
+  lookx = 0;
+  looky = 0;
+  if (deltax > 0)
+    partyx = 1;
+  else if (deltax < 0)
+    partyx = 88;
+  else
+    partyx = worldx;
+  if (deltay > 0)
+    partyy = 1;
+  else if (deltay < 0)
+    partyy = 88;
+  else
+    partyy = worldy;
+
+  loadland(landlevel, 1);
+  centerpict();
+  deltax = deltay = 0;
+  return (TRUE);
+}
+
 /***************************** checkkeypad *************************/
 short checkkeypad(short mode) {
   char maskKey;
-  Boolean slideland = FALSE;
-  short newlandlevel = -2;
 
   deltax = deltay = whichset = fastspell = 0;
   switch (scanCode) /*** use ***/
@@ -287,52 +380,8 @@ short checkkeypad(short mode) {
       }
     }
 
-    if (!incombat) {
-      if (((partyx + lookx + deltax) < 0) || ((partyx + lookx + deltax) > 89)) {
-        newlandlevel = checklayout(landlevel);
-        if (newlandlevel == -2)
-          deltax = deltay = 0;
-        else
-          slideland = TRUE;
-      }
-
-      if (((partyy + looky + deltay) < 0) || ((partyy + looky + deltay) > 89)) {
-        newlandlevel = checklayout(landlevel);
-        if (newlandlevel == -2)
-          deltax = deltay = 0;
-        else
-          slideland = TRUE;
-      }
-
-      if (slideland == TRUE) {
-        saveland(landlevel);
-        landlevel = newlandlevel;
-
-        if (deltax) {
-          if (partyx == 0) {
-            lookx = 89;
-            partyx = 9 + (5 * screensize);
-          } else if (partyx > 5) {
-            lookx = 0;
-            partyx = 0;
-          }
-        }
-
-        if (deltay) {
-          if (partyy == 0) {
-            looky = 89;
-            partyy = (9 + (2 * screensize));
-          } else if (partyy > 5) {
-            looky = 0;
-            partyy = 0;
-          }
-        }
-
-        loadland(landlevel, 1);
-        centerpict();
-        deltax = deltay = 0;
-      }
-    }
+    if (!incombat)
+      tryedgeslide();
 
     if ((deltax) || (deltay))
       theControl = movelook;
