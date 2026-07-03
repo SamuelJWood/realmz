@@ -1054,7 +1054,16 @@ CIconHandle GetCIcon(uint16_t iconID) {
       static_cast<int16_t>(decoded_cicn.image.get_height()),
       static_cast<int16_t>(decoded_cicn.image.get_width())};
   (*h)->iconPMap.pixelSize = 32;
-  (*h)->iconBMap.bounds = (*h)->iconPMap.bounds;
+  // The monochrome bitmap is optional in a cicn resource; when it's absent,
+  // decode_cicn returns an empty (0x0) bitmap. Size iconBMap from the bitmap
+  // itself rather than the color image, so PlotCIconBitmap doesn't try to blit
+  // color-image-sized data out of an empty buffer. When a bitmap is present,
+  // decode_cicn guarantees its dimensions match the pixmap's.
+  (*h)->iconBMap.bounds = Rect{
+      0,
+      0,
+      static_cast<int16_t>(decoded_cicn.bitmap.get_height()),
+      static_cast<int16_t>(decoded_cicn.bitmap.get_width())};
   return h;
 }
 
@@ -1109,6 +1118,11 @@ OSErr PlotCIconBitmap(const Rect* r, CIconHandle icon) {
   int h = bounds.bottom - bounds.top;
   auto& port = current_port();
   port.log.debug_f("PlotCIconBitmap({{x0={}, y0={}, x1={}, y1={}}}, {:p})", r->left, r->top, r->right, r->bottom, static_cast<void*>(icon));
+  // The cicn may have no monochrome bitmap, in which case there's nothing to
+  // draw. Blitting anyway would read past the empty bitmapData buffer.
+  if (w <= 0 || h <= 0 || GetHandleSize((*icon)->bitmapData) == 0) {
+    return noErr;
+  }
   port.draw_ga11_data(*((*icon)->bitmapData), w, h, *r);
   WindowManager::instance().recomposite_from_window(port);
   return noErr;
