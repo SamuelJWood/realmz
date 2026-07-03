@@ -715,13 +715,20 @@ moveon:
 backup:
 
   PenSize(2, 2);
+  a = 0;
 
   for (;;) {
 
     if (gTheEvent.modifiers & alphaLock)
       warn(21);
 
-    SystemTask();
+    /* *** CHANGED FROM ORIGINAL IMPLEMENTATION ***
+     * Only yield the CPU when the last poll found no event. While events are
+     * queued (for example clicking through items quickly), keep draining them
+     * without the idle delay so clicks are not held up.
+     * *** END CHANGES *** */
+    if (!a)
+      SystemTask();
     a = GetNextEvent(everyEvent, &gTheEvent);
 #ifdef PC // Myriad
     DoCorrectBugMADRepeat();
@@ -1601,10 +1608,15 @@ backup:
                       temprect = icon;
                       InsetRect(&temprect, 10, 10);
 
+                      // Skip the take flourish when another click is already queued,
+                      // so grabbing several items in quick succession stays responsive
+                      // instead of waiting on each animation. The cell repaint below
+                      // still runs, so the item is removed cleanly either way.
+                      Boolean animate = !MouseDownPending();
                       PenMode(2);
                       FrameOval(&oldbox);
                       PenMode(0);
-                      for (t = 0; t < 24; t++) {
+                      for (t = 0; animate && t < 24; t++) {
                         RGBForeColor(&tempcolor);
                         InsetRect(&icon, 1, 1);
                         InsetRect(&temprect, -1, -1);
@@ -1624,6 +1636,94 @@ backup:
                       PenMode(2);
                       FrameOval(&oldbox);
                       PenMode(0);
+
+                      // The sparkle erases itself with XOR ovals, which cancel
+                      // cleanly on the original Mac but not here (FrameOval is
+                      // antialiased), so they leave stray coloured pixels in the
+                      // cell. Repaint the emptied cell and its neighbours from the
+                      // item list to clear any leftovers before showing the result.
+                      {
+                        short bcols = 6 + (3 * screensize);
+                        short srow = downindex - bootyitemindex;
+                        short r0 = srow - 1, r1 = srow + 1, c0 = leftindex - 1, c1 = leftindex + 1;
+                        Rect clearrect;
+                        if (r0 < 0)
+                          r0 = 0;
+                        if (r1 > 6)
+                          r1 = 6;
+                        if (c0 < 0)
+                          c0 = 0;
+                        if (c1 > bcols - 1)
+                          c1 = bcols - 1;
+                        clearrect.left = c0 * 50 + 7;
+                        clearrect.right = (c1 + 1) * 50 + 7;
+                        clearrect.top = r0 * 60 + 10;
+                        clearrect.bottom = (r1 + 1) * 60 + 10;
+                        // The sparkle's growing oval reaches about 14px past the
+                        // cell, which is outside the neighbour tiles at the grid
+                        // edges (the right column leaves fragments in the gap).
+                        // Widen the cleared area to the sparkle's full extent, but
+                        // stop short of the character panel on the right. Neighbour
+                        // icons inside are repainted by the loop below.
+                        {
+                          short sl = leftindex * 50 - 6;
+                          short sr = leftindex * 50 + 70;
+                          short st = srow * 60 + 3;
+                          short sb = srow * 60 + 79;
+                          if (clearrect.left > sl)
+                            clearrect.left = sl;
+                          if (clearrect.right < sr)
+                            clearrect.right = sr;
+                          if (clearrect.top > st)
+                            clearrect.top = st;
+                          if (clearrect.bottom < sb)
+                            clearrect.bottom = sb;
+                          if (clearrect.left < 0)
+                            clearrect.left = 0;
+                          if (clearrect.right > 320 + leftshift)
+                            clearrect.right = 320 + leftshift;
+                        }
+                        BackPixPat(whitepat);
+                        EraseRect(&clearrect);
+                        for (t = r0; t <= r1; t++) {
+                          for (tt = c0; tt <= c1; tt++) {
+                            temp = list[(bootyitemindex + t) * bcols + tt];
+                            if (temp) {
+                              loaditem(temp);
+                              iconhand = NIL;
+                              if ((didfum) && (((bootyitemindex + t) * bcols + tt) < didfum))
+                                iconhand = GetCIcon(lookupicon(item.iconid, TRUE));
+                              else
+                                iconhand = GetCIcon(lookupicon(item.iconid, idtoggle));
+                              if (temp < 0) {
+                                magicrect.top = t * 60 + 17;
+                                magicrect.left = tt * 50 + 8;
+                                magicrect.right = magicrect.left + 48;
+                                magicrect.bottom = magicrect.top + 48;
+                                if (showmagic)
+                                  PlotCIcon(&magicrect, showmagic);
+                              }
+                              icon.top = t * 60 + 25;
+                              icon.left = tt * 50 + 16;
+                              icon.right = icon.left + 32;
+                              icon.bottom = icon.top + 32;
+                              if (iconhand) {
+                                PlotCIcon(&icon, iconhand);
+                                DisposeCIcon(iconhand);
+                              }
+                            }
+                          }
+                        }
+                      }
+
+                      // The repaint above also wiped the XOR hover oval, but the
+                      // hover code still thinks it is drawn. Clear that state so it
+                      // does not later XOR a stray oval back onto this cell: leave
+                      // the oval rects empty and mark this cell as the current one.
+                      SetRect(&box, 0, 0, 0, 0);
+                      SetRect(&oldbox, 0, 0, 0, 0);
+                      oldinc = element;
+
                       sound(6002);
                     } else
                       warn(43);
