@@ -322,11 +322,22 @@ endif()
 target_compile_options(realmz_lib PUBLIC -fpascal-strings)
 target_include_directories(realmz_lib PUBLIC ${SDL3_INCLUDE_DIRS} src src/realmz_orig)
 
+# Windows debugging aids, off by default. Enabling this restores the console/debug window that
+# appears alongside the game (for stdout/stderr log output) and embeds DWARF debug info so
+# crash-handler backtraces can be symbolized offline. Both are disabled for normal builds because
+# the debug info alone inflates Realmz.exe from a few MB to ~50 MB.
+# Re-enable with:  cmake -DREALMZ_DEBUG_CONSOLE=ON ...
+option(REALMZ_DEBUG_CONSOLE "Show the Windows console window and embed debug info for crash symbolication" OFF)
+
 if(WIN32)
   target_compile_definitions(realmz_lib PUBLIC PHOSG_WINDOWS=1)
-  # Emit debug info so crash-handler backtrace offsets can be symbolized offline
-  # (llvm-symbolizer/addr2line). Kept alongside -O3; affects only symbol tables.
-  target_compile_options(realmz_lib PUBLIC -g)
+  if(REALMZ_DEBUG_CONSOLE)
+    # Let the code know the console window should stay visible (see RealmzHideConsoleWindow).
+    target_compile_definitions(realmz_lib PUBLIC REALMZ_DEBUG_CONSOLE=1)
+    # Emit debug info so crash-handler backtrace offsets can be symbolized offline
+    # (llvm-symbolizer/addr2line). Kept alongside -O3; affects only symbol tables.
+    target_compile_options(realmz_lib PUBLIC -g)
+  endif()
 endif()
 
 target_link_libraries(realmz_lib
@@ -348,6 +359,19 @@ add_executable(Realmz
     ${DATA_RESOURCE_FILES}
     $<$<BOOL:${WIN32}>:${WIN_RC_FILE}>
 )
+
+if(WIN32 AND NOT REALMZ_DEBUG_CONSOLE)
+    # The executable stays a console-subsystem app (SDL's entry point and all logging rely on a
+    # valid stdout/stderr), but main() hides the console window at startup, so no debug window is
+    # visible on launch (see RealmzHideConsoleWindow, which resolves ShowWindow dynamically to
+    # avoid linking user32 — its GDI symbols collide with the Mac toolbox). Building with
+    # -DREALMZ_DEBUG_CONSOLE=ON leaves the console window visible for debugging.
+    # Strip DWARF debug info pulled in from the vendored static libraries (SDL_ttf, libxmp,
+    # phosg, etc.). Those sections account for the bulk of the .exe size; the symbol table is
+    # kept so crash backtraces can still name functions. Building with -DREALMZ_DEBUG_CONSOLE=ON
+    # keeps the debug info for offline symbolication.
+    target_link_options(Realmz PRIVATE -Wl,--strip-debug)
+endif()
 
 target_compile_definitions(Realmz PUBLIC REALMZ_COCOA=1)
 target_compile_options(Realmz PUBLIC -fpascal-strings)

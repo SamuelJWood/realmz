@@ -1295,6 +1295,11 @@ void MainLoop(void) {
 
 /******************************** main  ************************/
 int main(int argc, char* argvp[]) {
+  // Hide the Windows console window opened by the console-subsystem build (no-op elsewhere and when
+  // built with -DREALMZ_DEBUG_CONSOLE=ON). Done first so the window disappears as early as possible.
+  extern void RealmzHideConsoleWindow(void);
+  RealmzHideConsoleWindow();
+
   // Make stderr unbuffered so log lines (and any final libc++abi "terminating
   // due to uncaught exception" message) are flushed immediately. When stderr is
   // redirected to a file or pipe it is otherwise fully buffered, and an abort()

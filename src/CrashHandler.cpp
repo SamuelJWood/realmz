@@ -55,8 +55,36 @@ extern "C" void InstallCrashHandler(void) {
   SetUnhandledExceptionFilter(realmz_crash_filter);
 }
 
+// Hide the console window that the console-subsystem build opens on launch. The console stays
+// allocated so stdout/stderr remain valid for logging (the game logs heavily during startup); only
+// the window is hidden. Building with -DREALMZ_DEBUG_CONSOLE=ON makes this a no-op so the console
+// window is visible for debugging. This lives here rather than in main.c because main.c pulls in
+// the classic Mac toolbox headers, whose own ShowWindow(WindowPtr) collides with the Win32 API.
+extern "C" void RealmzHideConsoleWindow(void) {
+#ifndef REALMZ_DEBUG_CONSOLE
+  HWND console = GetConsoleWindow(); // kernel32; safe to call directly
+  if (!console) {
+    return;
+  }
+  // ShowWindow lives in user32, whose import library also defines GDI helpers (OffsetRect, etc.)
+  // that collide with this project's classic Mac toolbox reimplementations. Resolve it at runtime
+  // instead of linking user32 so those symbols never clash.
+  HMODULE user32 = LoadLibraryA("user32.dll");
+  if (!user32) {
+    return;
+  }
+  typedef BOOL(WINAPI * ShowWindowFn)(HWND, int);
+  ShowWindowFn show_window = reinterpret_cast<ShowWindowFn>(GetProcAddress(user32, "ShowWindow"));
+  if (show_window) {
+    show_window(console, SW_HIDE);
+  }
+  // user32.dll stays loaded; it is a core DLL that remains resident for the process lifetime.
+#endif
+}
+
 #else // non-Windows builds rely on AddressSanitizer instead
 
 extern "C" void InstallCrashHandler(void) {}
+extern "C" void RealmzHideConsoleWindow(void) {}
 
 #endif
