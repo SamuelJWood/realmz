@@ -400,6 +400,38 @@ protected:
     }
   }
 
+  // Refresh the keyboard modifier bits (Option/Command/Shift/Control/Caps) from an SDL modifier
+  // mask. This is the single source of truth for translating SDL_Keymod into our modifier_flags,
+  // shared by the key-event handler and the mouse-event handler. Syncing it on mouse events is
+  // important because the OS can swallow a key-up (e.g. Windows intercepts Alt to activate the
+  // window menu), which would otherwise leave a modifier such as Option stuck on and cause the
+  // item-info popup to keep appearing on subsequent clicks after the key was released.
+  void apply_sdl_key_modifiers(uint16_t mod) {
+    this->set_modifier_value(EVMOD_RIGHT_CONTROL_KEY_DOWN, mod & SDL_KMOD_RCTRL);
+    this->set_modifier_value(EVMOD_RIGHT_OPTION_KEY_DOWN, mod & SDL_KMOD_RALT);
+    this->set_modifier_value(EVMOD_RIGHT_SHIFT_KEY_DOWN, mod & SDL_KMOD_RSHIFT);
+#ifdef _WIN32
+    // On Windows the Control key stands in for the Mac Command key (see the Command mapping
+    // below), so it must not also set the Control bit. Doing both would select the
+    // control-character KCHR table and break Command-key shortcuts and typed characters.
+    // (Incorporated from upstream Realmz-Castle/realmz PR #245.)
+    this->set_modifier_value(EVMOD_CONTROL_KEY_DOWN, false);
+#else
+    this->set_modifier_value(EVMOD_CONTROL_KEY_DOWN, mod & SDL_KMOD_LCTRL);
+#endif
+    this->set_modifier_value(EVMOD_OPTION_KEY_DOWN, mod & SDL_KMOD_LALT);
+    this->set_modifier_value(EVMOD_CAPS_LOCK_ENABLED, mod & SDL_KMOD_CAPS);
+    this->set_modifier_value(EVMOD_SHIFT_KEY_DOWN, mod & SDL_KMOD_LSHIFT);
+#ifdef _WIN32
+    // The Windows (Super) key is reserved by the OS for the Start menu and shell shortcuts, so
+    // it cannot reliably act as the Mac Command key. Map the Control key to Command instead.
+    // (Incorporated from upstream Realmz-Castle/realmz PR #245.)
+    this->set_modifier_value(EVMOD_COMMAND_KEY_DOWN, mod & SDL_KMOD_LCTRL);
+#else
+    this->set_modifier_value(EVMOD_COMMAND_KEY_DOWN, mod & SDL_KMOD_GUI);
+#endif
+  }
+
   EventRecord make_null_event() const {
     return {
         .what = nullEvent,
@@ -454,29 +486,7 @@ protected:
         em_log.info_f("{} mod={:04X} key={:08X}",
             (e.type == SDL_EVENT_KEY_UP) ? "SDL_EVENT_KEY_UP" : "SDL_EVENT_KEY_DOWN",
             e.key.mod, e.key.key);
-        this->set_modifier_value(EVMOD_RIGHT_CONTROL_KEY_DOWN, e.key.mod & SDL_KMOD_RCTRL);
-        this->set_modifier_value(EVMOD_RIGHT_OPTION_KEY_DOWN, e.key.mod & SDL_KMOD_RALT);
-        this->set_modifier_value(EVMOD_RIGHT_SHIFT_KEY_DOWN, e.key.mod & SDL_KMOD_RSHIFT);
-#ifdef _WIN32
-        // On Windows the Control key stands in for the Mac Command key (see the Command mapping
-        // below), so it must not also set the Control bit. Doing both would select the
-        // control-character KCHR table and break Command-key shortcuts and typed characters.
-        // (Incorporated from upstream Realmz-Castle/realmz PR #245.)
-        this->set_modifier_value(EVMOD_CONTROL_KEY_DOWN, false);
-#else
-        this->set_modifier_value(EVMOD_CONTROL_KEY_DOWN, e.key.mod & SDL_KMOD_LCTRL);
-#endif
-        this->set_modifier_value(EVMOD_OPTION_KEY_DOWN, e.key.mod & SDL_KMOD_LALT);
-        this->set_modifier_value(EVMOD_CAPS_LOCK_ENABLED, e.key.mod & SDL_KMOD_CAPS);
-        this->set_modifier_value(EVMOD_SHIFT_KEY_DOWN, e.key.mod & SDL_KMOD_LSHIFT);
-#ifdef _WIN32
-        // The Windows (Super) key is reserved by the OS for the Start menu and shell shortcuts, so
-        // it cannot reliably act as the Mac Command key. Map the Control key to Command instead.
-        // (Incorporated from upstream Realmz-Castle/realmz PR #245.)
-        this->set_modifier_value(EVMOD_COMMAND_KEY_DOWN, e.key.mod & SDL_KMOD_LCTRL);
-#else
-        this->set_modifier_value(EVMOD_COMMAND_KEY_DOWN, e.key.mod & SDL_KMOD_GUI);
-#endif
+        this->apply_sdl_key_modifiers(e.key.mod);
 
         if (e.type == SDL_EVENT_KEY_DOWN) {
           auto sym = e.key.key;
@@ -539,6 +549,11 @@ protected:
         em_log.info_f("{} {} {} {:g} {:g}",
             (e.type == SDL_EVENT_MOUSE_BUTTON_UP) ? "SDL_EVENT_MOUSE_BUTTON_UP" : "SDL_EVENT_MOUSE_BUTTON_DOWN",
             e.button.button, e.button.clicks, e.button.x, e.button.y);
+        // Reconcile our tracked keyboard modifiers with SDL's live state before capturing them into
+        // the mouse event. If the OS swallowed a key-up (e.g. Windows intercepting Alt for the
+        // window menu), our tracked state could still show Option/Command/etc. held; syncing here
+        // ensures the click reflects the keys actually down at click time.
+        this->apply_sdl_key_modifiers(static_cast<uint16_t>(SDL_GetModState()));
         if (e.button.button == 1) {
           float lx, ly;
           WindowManager::instance().window_to_logical(e.button.x, e.button.y, lx, ly);

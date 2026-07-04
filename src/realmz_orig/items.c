@@ -473,7 +473,8 @@ backup:
             point = gTheEvent.where;
             GlobalToLocal(&(point));
 
-            if (gTheEvent.modifiers & optionKey) {
+            // A right-click is treated as equivalent to Option+click for bringing up item info.
+            if (gTheEvent.modifiers & (optionKey | rightMouseButton)) {
               itemselectnew = (point.v - 11) / 40;
               itemselectold = itemselectnew;
               theControl = describe;

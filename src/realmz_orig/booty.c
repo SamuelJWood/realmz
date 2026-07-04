@@ -1509,7 +1509,8 @@ backup:
                   if (itemid) {
                     loaditem(itemid);
 
-                    if (gTheEvent.modifiers & optionKey) /**** Getinfo ****/
+                    // A right-click is treated as equivalent to Option+click for item info.
+                    if (gTheEvent.modifiers & (optionKey | rightMouseButton)) /**** Getinfo ****/
                     {
                       BitMapPtr src = GetPortBitMapForCopyBits(GetWindowPort(bootywindow));
                       BitMapPtr dst = GetPortBitMapForCopyBits(gbuff2);

@@ -375,7 +375,8 @@ short choice(short key) {
           moveicon();
           ischar = FALSE;
         } else if ((cr != -1) && (c[cr].items[index - 1].equip)) {
-          if (gTheEvent.modifiers & optionKey)
+          // A right-click acts like Option+click so item info can be shown for equipped items.
+          if (gTheEvent.modifiers & (optionKey | rightMouseButton))
             moveicon();
           else if (!BitAnd(gTheEvent.modifiers, controlKey)) {
             if (!screensize)
@@ -408,7 +409,8 @@ short choice(short key) {
             change(FALSE, TRUE);
           }
         } else if (c[cl].items[index - 1].equip) {
-          if (gTheEvent.modifiers & optionKey)
+          // A right-click acts like Option+click so item info can be shown for equipped items.
+          if (gTheEvent.modifiers & (optionKey | rightMouseButton))
             moveicon();
           else if (!BitAnd(gTheEvent.modifiers, controlKey)) {
             if (!screensize)

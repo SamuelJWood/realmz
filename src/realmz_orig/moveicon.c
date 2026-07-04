@@ -213,7 +213,8 @@ void moveicon(void) {
       prob = TRUE;
   }
 
-  if (gTheEvent.modifiers & optionKey) {
+  // A right-click is treated as equivalent to Option+click for bringing up item info.
+  if (gTheEvent.modifiers & (optionKey | rightMouseButton)) {
     ShowCursor();
     if ((point.h > (320 + (leftshift / 2))) && (cr == -1)) {
       charselectnew = cl;
