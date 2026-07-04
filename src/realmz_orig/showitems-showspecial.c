@@ -696,6 +696,11 @@ backup:
           point = gTheEvent.where;
 
           if (whichWindow == itemswindow) {
+            // Clicking another item re-inspects it only while the info modifier (Option, or a
+            // right-click) is held. A plain click dismisses the inspector instead of switching
+            // to the clicked item, so the panel doesn't appear "stuck" after Option is released.
+            if (!(gTheEvent.modifiers & (optionKey | rightMouseButton)))
+              goto out;
             SetPort(GetWindowPort(itemswindow));
             GlobalToLocal(&point);
             if (point.h < 280) {
@@ -713,6 +718,9 @@ backup:
             } else
               goto out;
           } else if (whichWindow == gshop) {
+            // As above: only re-inspect while the info modifier is held; a plain click dismisses.
+            if (!(gTheEvent.modifiers & (optionKey | rightMouseButton)))
+              goto out;
             SetPort(GetWindowPort(gshop));
             GlobalToLocal(&point);
             if (point.h < 280) {
@@ -728,6 +736,9 @@ backup:
               goto reload;
             }
           } else if (whichWindow == bootywindow) {
+            // As above: only re-inspect while the info modifier is held; a plain click dismisses.
+            if (!(gTheEvent.modifiers & (optionKey | rightMouseButton)))
+              goto out;
             SetPort(GetWindowPort(bootywindow));
             GlobalToLocal(&point);
             leftindex = (point.h - 10) / 50;
