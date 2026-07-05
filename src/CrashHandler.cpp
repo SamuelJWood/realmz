@@ -17,12 +17,17 @@
 #ifdef _WIN32
 #include <windows.h>
 
-static LONG WINAPI realmz_crash_filter(EXCEPTION_POINTERS* info) {
-  void* base = reinterpret_cast<void*>(GetModuleHandleW(nullptr));
-  fprintf(stderr, "\n=== REALMZ CRASH ===\n");
+// Write the crash report to a single stream (stderr or the log file). The
+// offsets printed here (off=0x...) are module-relative and can be symbolized
+// offline against the same Realmz.exe with llvm-symbolizer / addr2line.
+static void write_crash_report(FILE* out, EXCEPTION_POINTERS* info, void* base) {
+  if (!out) {
+    return;
+  }
+  fprintf(out, "\n=== REALMZ CRASH ===\n");
   if (info && info->ExceptionRecord) {
     EXCEPTION_RECORD* er = info->ExceptionRecord;
-    fprintf(stderr, "exception code=0x%08lx faulting_addr=%p imagebase=%p (off=0x%llx)\n",
+    fprintf(out, "exception code=0x%08lx faulting_addr=%p imagebase=%p (off=0x%llx)\n",
         er->ExceptionCode,
         reinterpret_cast<void*>(er->ExceptionAddress),
         base,
@@ -35,19 +40,54 @@ static LONG WINAPI realmz_crash_filter(EXCEPTION_POINTERS* info) {
     if (er->ExceptionCode == EXCEPTION_ACCESS_VIOLATION && er->NumberParameters >= 2) {
       ULONG_PTR op = er->ExceptionInformation[0];
       const char* kind = (op == 1) ? "WRITE" : (op == 8) ? "EXEC" : "READ";
-      fprintf(stderr, "access=%s data_addr=0x%llx\n", kind,
+      fprintf(out, "access=%s data_addr=0x%llx\n", kind,
           static_cast<unsigned long long>(er->ExceptionInformation[1]));
     }
   }
   void* frames[64];
   USHORT n = RtlCaptureStackBackTrace(0, 64, frames, nullptr);
   for (USHORT i = 0; i < n; i++) {
-    fprintf(stderr, "BT %2u %p off=0x%llx\n", i, frames[i],
+    fprintf(out, "BT %2u %p off=0x%llx\n", i, frames[i],
         static_cast<unsigned long long>(
             reinterpret_cast<char*>(frames[i]) - reinterpret_cast<char*>(base)));
   }
-  fprintf(stderr, "=== END CRASH ===\n");
-  fflush(stderr);
+  fprintf(out, "=== END CRASH ===\n");
+  fflush(out);
+}
+
+// Open RealmzCrash.log next to the executable (appending, so repeated crashes
+// accumulate). The console window is hidden in release builds, so the log file
+// is how a crash backtrace reaches the user. Returns nullptr if the path can't
+// be built or the file can't be opened.
+static FILE* open_crash_log(void) {
+  wchar_t path[MAX_PATH];
+  DWORD len = GetModuleFileNameW(nullptr, path, MAX_PATH);
+  if (len == 0 || len >= MAX_PATH) {
+    return _wfopen(L"RealmzCrash.log", L"a"); // fall back to the working directory
+  }
+  // Trim the executable name, keeping the trailing separator.
+  DWORD i = len;
+  while (i > 0 && path[i - 1] != L'\\' && path[i - 1] != L'/') {
+    i--;
+  }
+  path[i] = L'\0';
+  static const wchar_t kName[] = L"RealmzCrash.log";
+  if (i + (sizeof(kName) / sizeof(kName[0])) > MAX_PATH) {
+    return _wfopen(L"RealmzCrash.log", L"a");
+  }
+  wcscat(path, kName);
+  FILE* f = _wfopen(path, L"a");
+  return f ? f : _wfopen(L"RealmzCrash.log", L"a");
+}
+
+static LONG WINAPI realmz_crash_filter(EXCEPTION_POINTERS* info) {
+  void* base = reinterpret_cast<void*>(GetModuleHandleW(nullptr));
+  write_crash_report(stderr, info, base);
+  FILE* log = open_crash_log();
+  if (log) {
+    write_crash_report(log, info, base);
+    fclose(log);
+  }
   return EXCEPTION_EXECUTE_HANDLER; // let the process terminate
 }
 
