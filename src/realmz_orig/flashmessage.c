@@ -75,7 +75,7 @@ void flashmessage(Str255 strc, short x, short y, short duration, short toplay) /
     BackPixPat(base);
     TextFont(defaultfont);
     ForeColor(yellowColor);
-    MoveWindow(GetDialogWindow(flashwindow), x + GlobalLeft + 81, y + GlobalTop - 89, FALSE);
+    MoveWindow(GetDialogWindow(flashwindow), x + GlobalLeft + 81, y + GlobalTop + 11, FALSE);
     ShowWindow(GetDialogWindow(flashwindow));
     ErasePortRect();
     DrawDialog(flashwindow);

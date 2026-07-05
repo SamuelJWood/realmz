@@ -668,17 +668,27 @@ void CCGrafPort::draw_background_ppat(const Rect& rect) {
   // If this port is using the "base" ppat and a large texture is loaded, sample from
   // it at globally-aligned screen coordinates so it never tiles within the 800x600 screen.
   if (g_large_bg_tex && this->bkPixPat == g_large_bg_ppat) {
-    int tw = (int)g_large_bg_tex->get_width();
-    int th = (int)g_large_bg_tex->get_height();
-    int ox = this->portRect.left;
-    int oy = this->portRect.top;
-    for (ssize_t y = ry; y < ry + rh; y++) {
-      for (ssize_t x = rx; x < rx + rw; x++) {
-        this->data.write(x, y, g_large_bg_tex->read(
-            (x + ox) % tw, (y + oy) % th));
+    ssize_t tw = (ssize_t)g_large_bg_tex->get_width();
+    ssize_t th = (ssize_t)g_large_bg_tex->get_height();
+    if (tw > 0 && th > 0) {
+      ssize_t ox = this->portRect.left;
+      ssize_t oy = this->portRect.top;
+      for (ssize_t y = ry; y < ry + rh; y++) {
+        // Euclidean modulo. A window positioned at a negative global coordinate
+        // (portRect.left/top < 0 — e.g. a flash-message dialog nudged above the
+        // play area when GlobalTop is small) makes (y + oy) / (x + ox) negative,
+        // and a signed C '%' would then index the texture out of bounds and read
+        // a wild address. That is the "crash when entering an inn" bug: the inn's
+        // camp message (flashmessage) drew this ppat into a dialog placed at a
+        // negative origin. Wrap into [0, th) / [0, tw) instead.
+        ssize_t sy = ((y + oy) % th + th) % th;
+        for (ssize_t x = rx; x < rx + rw; x++) {
+          ssize_t sx = ((x + ox) % tw + tw) % tw;
+          this->data.write(x, y, g_large_bg_tex->read(sx, sy));
+        }
       }
+      return;
     }
-    return;
   }
 
   PixMapHandle pmap = (*this->bkPixPat)->patMap;
@@ -1054,16 +1064,16 @@ CIconHandle GetCIcon(uint16_t iconID) {
       static_cast<int16_t>(decoded_cicn.image.get_height()),
       static_cast<int16_t>(decoded_cicn.image.get_width())};
   (*h)->iconPMap.pixelSize = 32;
-  // The monochrome bitmap is optional in a cicn resource; when it's absent,
-  // decode_cicn returns an empty (0x0) bitmap. Size iconBMap from the bitmap
-  // itself rather than the color image, so PlotCIconBitmap doesn't try to blit
-  // color-image-sized data out of an empty buffer. When a bitmap is present,
-  // decode_cicn guarantees its dimensions match the pixmap's.
-  (*h)->iconBMap.bounds = Rect{
-      0,
-      0,
-      static_cast<int16_t>(decoded_cicn.bitmap.get_height()),
-      static_cast<int16_t>(decoded_cicn.bitmap.get_width())};
+  // iconBMap.bounds mirrors the color image's dimensions. A lot of game code
+  // (iconpict.c, portrait-picklock.c, ploticon.c, centerpict.c, showabout.c)
+  // reads iconBMap.bounds.bottom/right as a proxy for the icon's native pixel
+  // size (32/44/64) to decide how to inset or size the draw rect, so it must
+  // reflect the actual icon size even when the optional monochrome bitmap is
+  // absent (decode_cicn returns an empty 0x0 bitmap in that case). The crash
+  // that motivated sizing this from the bitmap — PlotCIconBitmap blitting
+  // color-sized GA11 data out of an empty bitmapData buffer — is instead
+  // guarded directly in PlotCIconBitmap via the GetHandleSize() == 0 check.
+  (*h)->iconBMap.bounds = (*h)->iconPMap.bounds;
   return h;
 }
 
