@@ -256,36 +256,44 @@ void updatenpcmenu(void) {
 
   DisableItem(gNPC, 0);
 
-  strcpy(monstername, (StringPtr) " "); // Myriad
-  CtoPstr(monstername); // Myriad
-  for (t = 1; t <= 20; t++) {
-    SetMenuItemText(gNPC, t, (StringPtr)monstername);
-    DisableItem(gNPC, t);
-    SetItemIcon(gNPC, t, 0);
-    /* *** CHANGED FROM ORIGINAL IMPLEMENTATION ***
-     * NOTE(danapplegate): This looks to have been a bug. In this loop, t is used both correctly
-     * as a 1-based index for the menu calls above, and incorrectly as a 0-based index for
-     * direct access into the holdover monster array. This causes a buffer overflow as t reaches
-     * 20 and tries to access one beyond the end of the holdover array of size 20. This probably
-     * caused memory corruption in Realmz originally, but here, address sanitizer catches the
-     * error.
-     */
-    // if (t >= heldover) {
-    if (t >= heldover && t < 20) {
-      holdover[t].name = 0; // Fantasoft v7.1   Clean out any junk that does not belong.
+  /* Clean out any stale ally data past the current count (Fantasoft v7.1). t is
+   * a 0-based index into the size-20 holdover array here; the t < 20 bound keeps
+   * it in range (the original code read one past the end). */
+  for (t = 1; t < 20; t++) {
+    if (t >= heldover) {
+      holdover[t].name = 0;
     }
-    /* *** END CHANGES *** */
   }
 
-  for (t = 1; t <= heldover; t++) {
-    EnableItem(gNPC, 0);
-    EnableItem(gNPC, t);
-    strcpy((StringPtr)monstername, (StringPtr)holdover[t - 1].monname);
+  /* Rebuild the Allies dropdown so its height matches the number of allies
+   * rather than always padding out to 20 blank rows. The menu carries a single
+   * item at rest, so trim back down to one and then grow it as needed. */
+  while (CountMItems(gNPC) > 1) {
+    DeleteMenuItem(gNPC, CountMItems(gNPC));
+  }
+
+  if (heldover < 1) {
+    /* No allies: leave a single disabled "None" item, like any empty menu. */
+    strcpy(monstername, (StringPtr) "None");
     CtoPstr(monstername);
-    SetMenuItemText(gNPC, t, (StringPtr)monstername);
-    if (holdover[t - 1].iconid < 512)
-      SetItemIcon(gNPC, t, holdover[t - 1].iconid);
-    holdover[t - 1].beenattacked = holdover[t - 1].beenattacked = holdover[t - 1].target = 0;
+    SetMenuItemText(gNPC, 1, (StringPtr)monstername);
+    SetItemIcon(gNPC, 1, 0);
+    DisableItem(gNPC, 1);
+  } else {
+    EnableItem(gNPC, 0);
+    for (t = 1; t <= heldover; t++) {
+      if (t > CountMItems(gNPC))
+        AppendMenuCStr(gNPC, "");
+      EnableItem(gNPC, t);
+      strcpy((StringPtr)monstername, (StringPtr)holdover[t - 1].monname);
+      CtoPstr(monstername);
+      SetMenuItemText(gNPC, t, (StringPtr)monstername);
+      if (holdover[t - 1].iconid < 512)
+        SetItemIcon(gNPC, t, holdover[t - 1].iconid);
+      else
+        SetItemIcon(gNPC, t, 0);
+      holdover[t - 1].beenattacked = holdover[t - 1].target = 0;
+    }
   }
   SetMenuBar(myMenuBar);
   InsertMenu(gSound, -1);

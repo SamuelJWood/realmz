@@ -34,6 +34,9 @@ void CheckItem(MenuHandle theMenu, uint16_t item, Boolean checked);
 int32_t PopUpMenuSelect(MenuHandle menu, int16_t top, int16_t left, int16_t popUpItem);
 void AppendMenu(MenuHandle menu, ConstStr255Param data);
 void AppendMenuCStr(MenuHandle menu, const char* data);
+// Removes the 1-based item from the menu (Toolbox DeleteMenuItem). Out-of-range
+// indices are ignored.
+void DeleteMenuItem(MenuHandle theMenu, int16_t item);
 int16_t CountMItems(MenuHandle theMenu);
 int32_t MenuKey(int16_t ch);
 MenuHandle NewMenu(int16_t menuID, ConstStr255Param menuTitle);

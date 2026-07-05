@@ -584,6 +584,15 @@ int16_t CountMItems(MenuHandle theMenu) {
   return m->items.size();
 }
 
+void DeleteMenuItem(MenuHandle theMenu, int16_t item) {
+  auto m = mm.get_menu(theMenu);
+  if (item < 1 || item > static_cast<int16_t>(m->items.size())) {
+    return;
+  }
+  m->items.erase(m->items.begin() + (item - 1));
+  mm.sync();
+}
+
 int32_t MenuKey(int16_t ch) {
   return 0;
 }

@@ -100,11 +100,12 @@ void MenuInit(void) {
   DisableItem(gBeast, 0);
 
   // --- Allies menu (146) ---
+  // Starts as a single disabled "None" item; updatenpcmenu() grows and shrinks
+  // it to match the current allies so the dropdown is never taller than needed.
   gNPC = NewMenu(146, "\pAllies");
-  for (t = 0; t < 20; t++) {
-    AppendMenuCStr(gNPC, "");
-    DisableItem(gNPC, t + 1);
-  }
+  AppendMenuCStr(gNPC, "None");
+  DisableItem(gNPC, 0);
+  DisableItem(gNPC, 1);
 
   // --- Maps/Notes menu (200) ---
   gScenario = NewMenu(200, "\pMaps/Notes");
