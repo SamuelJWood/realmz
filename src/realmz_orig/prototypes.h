@@ -81,6 +81,11 @@ void showcontactinfo(void);
 void showcontact(void);
 short loadcontact(void);
 void delay(short timedelay);
+/* Keep the menu bar responsive (and pause the computer's turn while a menu is
+ * open) during a computer-controlled combat turn. Defined in EventManager.cpp.
+ * allow_heavy: 0 dispatches only Speed/Sound/Music/Preferences selections;
+ * 1 dispatches every pending selection (a safe point, e.g. top of the loop). */
+void RealmzServiceMenuBar(short allow_heavy);
 void destroymonster(short tt);
 void Display(short mode);
 void drawbody(short body, short force, short where);

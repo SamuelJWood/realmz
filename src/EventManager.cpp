@@ -6,6 +6,9 @@ extern "C" void savepref(void);
 
 #include <cstring>
 #include <deque>
+#include <functional>
+#include <utility>
+#include <vector>
 #include <phosg/Strings.hh>
 
 #include "SDLMenuBar.hpp"
@@ -335,6 +338,34 @@ public:
       em_log.debug_f("Dequeued event (what={}, message=0x{:08X}, when=0x{:08X}, where=(h={}, v={}), modifiers=0x{:04X})", name_for_event_type(ev.what), ev.message, ev.when, ev.where.h, ev.where.v, ev.modifiers);
       return ev;
     }
+  }
+
+  // Pump pending host events without dequeuing one. Lets the SDL menu bar
+  // process clicks/keys (and enqueue the resulting synthetic menu events) while
+  // the game is busy in a loop that isn't calling GetNextEvent.
+  void pump_events() {
+    this->enqueue_pending_events(0);
+  }
+
+  // Remove and return every queued synthetic menu-selection event (a mouseDown
+  // with both coordinates negative, see push_menu_event) whose menu id is
+  // accepted by `accept`. Events left in the queue are untouched.
+  std::vector<std::pair<int16_t, int16_t>> take_menu_events(
+      const std::function<bool(int16_t)>& accept) {
+    std::vector<std::pair<int16_t, int16_t>> out;
+    for (auto it = this->event_queue.begin(); it != this->event_queue.end();) {
+      if (it->what == mouseDown && it->where.v < 0 && it->where.h < 0) {
+        int16_t menu_id = static_cast<int16_t>(-it->where.v);
+        int16_t item_id = static_cast<int16_t>(-it->where.h);
+        if (accept(menu_id)) {
+          out.emplace_back(menu_id, item_id);
+          it = this->event_queue.erase(it);
+          continue;
+        }
+      }
+      ++it;
+    }
+    return out;
   }
 
   void push_menu_event(int16_t menu_id, int16_t item_id) {
@@ -714,3 +745,65 @@ void PushMenuEvent(int16_t menu_id, int16_t item_id) {
 void reset_mouse_state() {
   em.reset_mouse_state();
 }
+
+// ── Computer-turn menu servicing ─────────────────────────────────────────────
+// During a computer-controlled combat turn the game busy-runs monster moves and
+// never returns to its normal event loop, so menu-bar clicks and keyboard
+// shortcuts would be missed. RealmzServiceMenuBar keeps the menu bar live during
+// that turn: it pumps host events (so the SDL menu bar can open and record a
+// selection), pauses the caller for as long as a menu is being used, and then
+// dispatches the resulting selection through HandleMenuChoice.
+//
+// The `allow_heavy` argument controls which selections are dispatched here:
+//   0 — only the lightweight adjustments that are safe to run mid-move (Speed,
+//       Sound FX volume, Music volume, Preferences). Anything else is left
+//       queued for the caller to dispatch at a safe point. Called from delay().
+//   1 — dispatch every pending selection. Called from combat.c at the top of the
+//       monster-turn loop, a safe point where "End this Adventure", revert, etc.
+//       can unwind or re-enter the main loop.
+extern "C" {
+extern int32_t menuChoice; // defined in main.c
+short HandleMenuChoice(void);
+
+void RealmzServiceMenuBar(short allow_heavy) {
+  // Guard against re-entry: a dispatched light adjustment (e.g. a volume change
+  // that plays a confirmation sound) can itself call delay(), which would
+  // otherwise recurse back into here.
+  static bool servicing = false;
+  if (servicing) {
+    return;
+  }
+  servicing = true;
+
+  em.pump_events();
+
+  // Pause the caller (the computer's turn) for as long as a menu is open or
+  // keyboard menu navigation is active, keeping the bar animated meanwhile.
+  while (SDLMenuBar::instance().is_menu_active()) {
+    WindowManager::instance().redraw_menu_bar_only();
+    SDL_Delay(8);
+    em.pump_events();
+  }
+
+  auto selections = em.take_menu_events([allow_heavy](int16_t menu_id) -> bool {
+    if (allow_heavy) {
+      return true;
+    }
+    // Menus that only tweak playback settings and always return promptly.
+    return menu_id == 134   // Speed
+        || menu_id == 135   // Sound FX volume
+        || menu_id == 147   // Music volume
+        || menu_id == 137;  // Preferences (fullscreen, hurry spell resolution)
+  });
+
+  // Release the guard before dispatching: a heavy selection such as "End this
+  // Adventure" transfers control to the main loop and never returns, and we must
+  // not leave the flag stuck for the next combat.
+  servicing = false;
+
+  for (const auto& [menu_id, item_id] : selections) {
+    menuChoice = (static_cast<int32_t>(menu_id) << 16) | (item_id & 0xFFFF);
+    HandleMenuChoice();
+  }
+}
+} // extern "C"

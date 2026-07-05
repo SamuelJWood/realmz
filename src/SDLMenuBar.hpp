@@ -49,6 +49,13 @@ public:
   // Returns MENUBAR_HEIGHT in windowed mode, 0 in fullscreen (bar overlaps).
   static int reserved_top_pixels(bool fullscreen);
 
+  // True while the user is actively in a menu: a dropdown is open (mouse) or
+  // keyboard menu navigation is engaged. Used by the combat code to pause a
+  // computer-controlled turn for as long as a menu is being used.
+  bool is_menu_active() const {
+    return this->open_menu_idx >= 0 || this->kbd_focused_idx >= 0;
+  }
+
   // Force the menu bar fully hidden regardless of cursor position. Used during
   // the Fantasoft logo splash (hideMenuBar/showMenuBar) so the bar doesn't
   // reappear over the logo.

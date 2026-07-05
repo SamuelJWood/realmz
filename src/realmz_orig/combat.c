@@ -105,25 +105,20 @@ void combat(short suprise, short mode) {
 
     if (monsterturn) {
       SystemTask();
-      if (Button()) {
-        GetMouse(&gTheEvent.where);
-        LocalToGlobal(&gTheEvent.where);
-        thePart = FindWindow(gTheEvent.where, &whichWindow);
 
-        switch (thePart) {
-          case inMenuBar:
-            switch (thePart) {
-              case inMenuBar:
-                compactheap();
-                menuChoice = MenuSelect(gTheEvent.where);
-                HandleMenuChoice();
-                if (revertgame)
-                  return;
-                break;
-            }
-            break;
-        }
-      }
+      /* Service any menu-bar clicks or keyboard shortcuts made during the
+       * computer's turn. This is a safe point to run the heavier menu actions
+       * (End this Adventure, revert to saved game, etc.) that unwind or
+       * re-enter the main loop; the lightweight Speed/Sound/Music/Preferences
+       * items are handled here too if they weren't already serviced by delay().
+       * RealmzServiceMenuBar also pauses the turn for as long as a menu is
+       * open, so a click stops the action immediately. */
+      compactheap();
+      RealmzServiceMenuBar(1);
+      if (revertgame)
+        return;
+      if (!incombat) /* e.g. the party was lost / adventure ended */
+        return;
 
       didcast = FALSE;
       monster[monsterup].guarding = TRUE;
