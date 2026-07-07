@@ -463,11 +463,20 @@ short HandleMenuChoice(void) {
         case 2: /************ fast revert to previous game ************/
 
           if (!load()) {
-            if (incombat)
-              centerstage(0);
-            else
+            /* Load was cancelled. During combat the exact scene (in-flight
+             * spell frames, floating damage numbers, ...) is still held in the
+             * look window's pixmap behind the now-disposed dialog, and disposing
+             * the dialog already recomposited it back. A logical redraw here
+             * (centerstage/in) would rebuild the scene and lose those transient
+             * overlays, so skip it during combat -- on either the player's or
+             * the computer's turn -- and let combat resume from exactly where it
+             * paused. */
+            if (incombat) {
+              /* preserved scene shows through; nothing to redraw */
+            } else {
               centerpict();
-            in();
+              in();
+            }
           } else {
             revertgame = TRUE;
             goto playsaved;

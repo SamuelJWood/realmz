@@ -757,13 +757,26 @@ void reset_mouse_state() {
 // The `allow_heavy` argument controls which selections are dispatched here:
 //   0 — only the lightweight adjustments that are safe to run mid-move (Speed,
 //       Sound FX volume, Music volume, Preferences). Anything else is left
-//       queued for the caller to dispatch at a safe point. Called from delay().
-//   1 — dispatch every pending selection. Called from combat.c at the top of the
-//       monster-turn loop, a safe point where "End this Adventure", revert, etc.
-//       can unwind or re-enter the main loop.
+//       queued for the caller to dispatch at a safe point.
+//   1 — dispatch every pending selection immediately, including the heavy
+//       actions ("End this Adventure", "Revert to a Previous Game"). Both
+//       delay() and combat.c pass 1 during a computer turn: combat.c arms an
+//       abort point (setjmp) at the top of the monster turn, so a Revert
+//       dispatched from deep inside an animation unwinds cleanly via
+//       RealmzAbortCombatIfReverting() below, and "End this Adventure" re-enters
+//       the main loop and never returns. This lets Ctrl+R / Ctrl+E take effect
+//       the instant they are pressed, mid-move or mid-spell-resolution.
 extern "C" {
 extern int32_t menuChoice; // defined in main.c
 short HandleMenuChoice(void);
+// If the just-dispatched selection reverted the game during a computer turn,
+// longjmp back to combat.c's armed abort point (no-op otherwise). Defined in
+// combat.c.
+void RealmzAbortCombatIfReverting(void);
+// Restore a visible, unlocked OS cursor before popping a modal dialog from a
+// computer turn (the interrupted animation may have left it stale/hidden).
+// Defined in QuickDraw.cpp.
+void RealmzRestoreSystemCursor(void);
 
 void RealmzServiceMenuBar(short allow_heavy) {
   // Guard against re-entry: a dispatched light adjustment (e.g. a volume change
@@ -801,9 +814,21 @@ void RealmzServiceMenuBar(short allow_heavy) {
   // not leave the flag stuck for the next combat.
   servicing = false;
 
+  // A selection here pops a modal dialog (or tears combat down) from deep inside
+  // the computer's animation, where the cursor may have been left stale or
+  // hidden. Reset it to a visible, unlocked state so the dialog is usable and
+  // the cursor survives a subsequent revert/teardown.
+  if (!selections.empty()) {
+    RealmzRestoreSystemCursor();
+  }
+
   for (const auto& [menu_id, item_id] : selections) {
     menuChoice = (static_cast<int32_t>(menu_id) << 16) | (item_id & 0xFFFF);
     HandleMenuChoice();
+    // A Revert during a computer turn returns here with the game already
+    // reloaded; unwind the combat stack now rather than resuming monster code
+    // against the reverted state. ("End this Adventure" never returns here.)
+    RealmzAbortCombatIfReverting();
   }
 }
 } // extern "C"

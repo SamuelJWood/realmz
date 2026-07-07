@@ -1526,6 +1526,28 @@ void ShowCursor(void) {
   }
 }
 
+// Force the OS cursor back to a known-good, visible, unlocked state. Used when a
+// modal dialog (Revert / End Adventure) is popped from deep inside a computer-
+// controlled combat turn: the interrupted animation can leave the cursor in a
+// state the dialog can't recover from on its own -- a still-open HideCursor
+// bracket, a lock left set by the menu bar, or (most often) current_cursor_handle
+// matching what the dialog re-asserts so SetCCursor early-returns and never
+// refreshes the now-stale/orphaned SDL cursor. Reset all of it and apply a plain
+// visible arrow; the dialog's own SetCCursor then repaints its real cursor.
+extern "C" void RealmzRestoreSystemCursor(void) {
+  cursor_hide_level = 0;
+  locked_cursor_handle = nullptr;
+  if (current_cursor_handle && (*current_cursor_handle)->is_orphaned) {
+    DisposeHandleTyped(current_cursor_handle);
+  }
+  current_cursor_handle = nullptr;
+  SDL_Cursor* arrow = SDL_GetDefaultCursor();
+  if (arrow) {
+    SDL_SetCursor(arrow);
+  }
+  SDL_ShowCursor();
+}
+
 static struct {
   std::optional<ResourceDASM::ResourceFile::DecodedColorIconResource> decoded;
   sdl_surface_ptr surface;

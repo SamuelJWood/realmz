@@ -1,7 +1,57 @@
 #include "prototypes.h"
 #include "variables.h"
 
+#include <setjmp.h>
+
 extern Boolean tagger;
+
+/* ── Immediate revert during a computer-controlled turn ──────────────────────
+ * A "Revert to a Previous Game" chosen from deep inside a monster's animation
+ * (dispatched by RealmzServiceMenuBar, reached via delay()) cannot simply
+ * return: load() has already reloaded every global, so running any more monster
+ * code would corrupt state or crash. Instead we longjmp back to the combat
+ * loop's armed abort point, which disposes any transient dialog the interrupted
+ * animation left open and returns from combat(); the existing `revertgame`
+ * checks in newland() unwind the rest and mainscreen() redraws the reverted
+ * world. */
+static jmp_buf realmz_combat_abort_env;
+static Boolean realmz_combat_abort_armed = FALSE;
+
+/* Dispose any transient dialog/window sitting in front of the combat view (e.g.
+ * a flashmessage banner or textbox opened by the animation we interrupted) so
+ * it doesn't linger over the reverted world. Never touches the persistent
+ * combat view (look) or the title/background window. */
+static void RealmzDisposeStrayCombatWindows(void) {
+  WindowPtr w;
+  short guard;
+
+  for (guard = 0; guard < 40; guard++) {
+    w = FrontWindow();
+    if (w == NIL)
+      break;
+    if (w == look)
+      break;
+    if ((background != NIL) && (w == GetDialogWindow(background)))
+      break;
+    DisposeWindow(w);
+  }
+}
+
+/* Called by RealmzServiceMenuBar right after it dispatches a menu selection: if
+ * that selection reverted the game while a combat turn is in progress, unwind
+ * the combat stack immediately instead of resuming the interrupted animation. */
+void RealmzAbortCombatIfReverting(void) {
+  if (revertgame && realmz_combat_abort_armed)
+    longjmp(realmz_combat_abort_env, 1);
+}
+
+/* True while combat() can safely unwind from a nested animation (i.e. inside the
+ * battle loop, with the abort point set). delay() only dispatches the heavy menu
+ * actions -- Revert / End this Adventure -- while this holds, so they are handled
+ * only when a longjmp back to combat() is possible. */
+short RealmzCombatAbortArmed(void) {
+  return realmz_combat_abort_armed;
+}
 
 /****************** combat **************************/
 void combat(short suprise, short mode) {
@@ -12,6 +62,11 @@ void combat(short suprise, short mode) {
   short targetnew, spellloop, targetsleft;
   Rect targetrect;
   Boolean didcast, sliding = FALSE;
+
+  /* Start disarmed: the abort point isn't valid until this battle's loop sets
+   * it (below), so battle setup runs without delay() dispatching a Revert into a
+   * stale longjmp target left over from a previous combat. */
+  realmz_combat_abort_armed = FALSE;
 
   DisableItem(gScenario, 0);
   DisableItem(gParty, 0);
@@ -80,10 +135,28 @@ void combat(short suprise, short mode) {
   }
 
   while (incombat) {
+    /* Arm the abort point for this combat-loop iteration, covering both the
+     * player's and the computer's turn. A "Revert to a Previous Game" or "End
+     * this Adventure" chosen from deep inside any combat animation (via delay()
+     * -> RealmzServiceMenuBar -> RealmzAbortCombatIfReverting) longjmps back
+     * here once the game has been reloaded, so the combat stack unwinds cleanly
+     * instead of running more combat code against the new state. delay() only
+     * dispatches these heavy actions while this point is armed (see
+     * RealmzCombatAbortArmed), so an interrupted attack, spell, or damage
+     * animation pauses and unwinds the instant Ctrl+R / Ctrl+E is used -- on
+     * either side's turn. */
+    if (setjmp(realmz_combat_abort_env)) {
+      realmz_combat_abort_armed = FALSE;
+      RealmzDisposeStrayCombatWindows();
+      return; /* revertgame is TRUE; newland() unwinds the rest */
+    }
+    realmz_combat_abort_armed = TRUE;
+
     music(11); /**** battle music ***/
 
     if (killmon >= numenemy) /**** no enemy left/ won battle ****/
     {
+      realmz_combat_abort_armed = FALSE;
       incombat = 0;
       if (!indung)
         loadland(landlevel, 1);
@@ -115,10 +188,14 @@ void combat(short suprise, short mode) {
        * open, so a click stops the action immediately. */
       compactheap();
       RealmzServiceMenuBar(1);
-      if (revertgame)
+      if (revertgame) {
+        realmz_combat_abort_armed = FALSE;
         return;
-      if (!incombat) /* e.g. the party was lost / adventure ended */
+      }
+      if (!incombat) { /* e.g. the party was lost / adventure ended */
+        realmz_combat_abort_armed = FALSE;
         return;
+      }
 
       didcast = FALSE;
       monster[monsterup].guarding = TRUE;

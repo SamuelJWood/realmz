@@ -84,8 +84,23 @@ void delay(short timedelay);
 /* Keep the menu bar responsive (and pause the computer's turn while a menu is
  * open) during a computer-controlled combat turn. Defined in EventManager.cpp.
  * allow_heavy: 0 dispatches only Speed/Sound/Music/Preferences selections;
- * 1 dispatches every pending selection (a safe point, e.g. top of the loop). */
+ * 1 dispatches every pending selection immediately (End this Adventure / Revert
+ * included), relying on combat.c's armed abort point to unwind a mid-animation
+ * Revert. Both delay() and combat.c pass 1 during a computer turn. */
 void RealmzServiceMenuBar(short allow_heavy);
+/* If a menu selection just reverted the game during a computer-controlled combat
+ * turn, longjmp back to the combat loop's armed abort point so the stack unwinds
+ * before any more monster code runs against the reloaded state (no-op if not
+ * reverting or the abort point isn't armed). Defined in combat.c. */
+void RealmzAbortCombatIfReverting(void);
+/* True while combat()'s abort point is armed (inside the battle loop). delay()
+ * checks this before dispatching the heavy Revert / End menu actions. Defined in
+ * combat.c. */
+short RealmzCombatAbortArmed(void);
+/* Reset the OS cursor to a visible, unlocked, freshly-applied state. Defined in
+ * QuickDraw.cpp; used when a modal dialog is popped mid-animation during a
+ * computer-controlled combat turn. */
+void RealmzRestoreSystemCursor(void);
 void destroymonster(short tt);
 void Display(short mode);
 void drawbody(short body, short force, short where);
