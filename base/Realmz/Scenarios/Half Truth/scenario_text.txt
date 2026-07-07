@@ -117,7 +117,7 @@ Members of the crowd look doubtfully at one another and one by one shrink past y
 The man eyes you warily. 'Greetings strangers, I am Lord Godolphin. Welcome to Carclew. I cannot offer you much but as you can see I certainly require the aid of anyone who will help me. Will you join my war party?'
 
 ### SD2:37
-Join war party?
+Join war party.
 
 ### SD2:38
 Maybe later.
