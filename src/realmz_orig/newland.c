@@ -1502,6 +1502,18 @@ startover:
           pict(203, itemRect);
         }
 
+        /* If the very next door action is a two-choice prompt (case 3), keep this
+         * message on screen through the choice so the player can still read what
+         * they're being asked (e.g. the inn "...Enter?" sign in Half-Truth). The
+         * choice handler erases textrect once the reply is made. */
+        if (abs(id) != 0) {
+          short nt = t + 1;
+          while ((nt < 8) && (infodoor.code[nt] == 0))
+            nt++;
+          if ((nt < 8) && (abs(infodoor.code[nt]) == 3))
+            keepchoicetext = TRUE;
+        }
+
         textbox(-1, abs(id), 0, 0, textrect);
 
         break;

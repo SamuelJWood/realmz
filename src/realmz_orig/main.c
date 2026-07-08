@@ -257,6 +257,7 @@ short defaultfont;
 CIconHandle iconhand, showmagic;
 
 Boolean errorlevel, sorted, seemless, gotegg;
+Boolean keepchoicetext;
 short width, depth, GlobalTop, GlobalLeft;
 short menupos[251], oldvolume;
 

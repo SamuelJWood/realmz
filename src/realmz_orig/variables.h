@@ -201,6 +201,9 @@ extern short defaultfont;
 extern CIconHandle iconhand, showmagic;
 
 extern Boolean errorlevel, sorted, seemless, gotegg;
+/* When set, the next textbox() message is left on screen instead of being erased
+ * on the dismissing click, so a following two-choice prompt keeps its context. */
+extern Boolean keepchoicetext;
 extern short width, depth, GlobalTop, GlobalLeft;
 extern short menupos[251], oldvolume;
 

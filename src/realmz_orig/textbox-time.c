@@ -126,7 +126,14 @@ void textbox(short class, short index, short click, short different, Rect newrec
           if (!autonote)
             flashmessage((StringPtr) "Note Taken.", 30, 355, 20, 145);
         }
-        EraseRect(&userect);
+        /* Normally the message is wiped on the dismissing click. When a two-choice
+         * prompt immediately follows (keepchoicetext), leave the text up so the
+         * player can still read what they're being asked; the caller erases it once
+         * the choice is resolved. */
+        if (keepchoicetext)
+          keepchoicetext = FALSE;
+        else
+          EraseRect(&userect);
         SetCCursor(sword);
         goto out;
       }
