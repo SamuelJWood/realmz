@@ -1296,6 +1296,21 @@ void MainLoop(void) {
 
 /******************************** main  ************************/
 int main(int argc, char* argvp[]) {
+#if defined(_WIN32) && !defined(REALMZ_DEBUG_CONSOLE)
+  // The release build is a GUI-subsystem app with no console, so stdout/stderr are not connected to
+  // anything. The game logs heavily during startup, and writing to a disconnected stream aborts the
+  // process (SIGPIPE) before it ever reaches the main loop. Point both at the null device so those
+  // writes have a valid destination and are silently discarded — no log file is created for normal
+  // runs. Build with -DREALMZ_DEBUG_CONSOLE=ON to keep the console and capture the log to a file
+  // (see below). Done before the setvbuf() below and any logging.
+  freopen("NUL", "w", stdout);
+  freopen("NUL", "w", stderr);
+#elif defined(_WIN32)
+  // Debug build: capture the startup logging to a file next to the executable for later inspection.
+  freopen("RealmzLog.txt", "w", stdout);
+  freopen("RealmzLog.txt", "a", stderr);
+#endif
+
   // Hide the Windows console window opened by the console-subsystem build (no-op elsewhere and when
   // built with -DREALMZ_DEBUG_CONSOLE=ON). Done first so the window disappears as early as possible.
   extern void RealmzHideConsoleWindow(void);

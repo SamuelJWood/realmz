@@ -361,11 +361,14 @@ add_executable(Realmz
 )
 
 if(WIN32 AND NOT REALMZ_DEBUG_CONSOLE)
-    # The executable stays a console-subsystem app (SDL's entry point and all logging rely on a
-    # valid stdout/stderr), but main() hides the console window at startup, so no debug window is
-    # visible on launch (see RealmzHideConsoleWindow, which resolves ShowWindow dynamically to
-    # avoid linking user32 — its GDI symbols collide with the Mac toolbox). Building with
-    # -DREALMZ_DEBUG_CONSOLE=ON leaves the console window visible for debugging.
+    # Build as a GUI-subsystem (windows) app so Windows never allocates a console for the process.
+    # The previous console-subsystem build hid the console window at startup (RealmzHideConsoleWindow),
+    # but the OS creates the console before main() runs, so a console window always flashed briefly on
+    # launch. A GUI-subsystem app has no console at all, eliminating the flash. SDL's header-only
+    # SDL_main.h supplies the WinMain entry point that calls our main(); stdout/stderr writes simply go
+    # nowhere without a console (crash diagnostics are written to RealmzCrash.log, not the console).
+    # Building with -DREALMZ_DEBUG_CONSOLE=ON keeps the console-subsystem build for debugging.
+    target_link_options(Realmz PRIVATE -Wl,--subsystem,windows)
     # Strip DWARF debug info pulled in from the vendored static libraries (SDL_ttf, libxmp,
     # phosg, etc.). Those sections account for the bulk of the .exe size; the symbol table is
     # kept so crash backtraces can still name functions. Building with -DREALMZ_DEBUG_CONSOLE=ON
