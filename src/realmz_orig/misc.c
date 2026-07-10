@@ -1213,8 +1213,18 @@ short savevs(short which, short who) {
       if (temp <= special + spelladjust)
         return (TRUE);
     } else {
-      if ((temp <= monster[who - 10].save[which] + spelladjust) || (monster[who - 10].spellimmune[which]))
+      /* *** CHANGED FROM ORIGINAL IMPLEMENTATION ***
+       * Monster save[] and spellimmune[] use different index bases. spellimmune
+       * has six entries (0:Charm 1:Heat 2:Cold 3:Electrical 4:Chemical 5:Mental),
+       * but save[] has no Charm entry, so save[0]=Heat .. save[5]=DRV. The original
+       * "save[which] || spellimmune[which]" both read out of bounds for which==6
+       * (DRV, from drain attacks) and mis-indexed the save value. Check each array
+       * with its own bounds and offset. */
+      if ((which < 6) && (monster[who - 10].spellimmune[which]))
         return (TRUE);
+      if ((which > 0) && (temp <= monster[who - 10].save[which - 1] + spelladjust))
+        return (TRUE);
+      /* *** END CHANGES *** */
       if ((monster[who - 10].type[1]) && ((which == 5) || (which == 4) || (which == 0)))
         return (TRUE);
     }
