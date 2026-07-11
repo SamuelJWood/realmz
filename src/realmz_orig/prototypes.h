@@ -300,6 +300,7 @@ void Showitems(short mode);
 void showitemstats(short ident);
 void showspecial(void);
 short canuse(short itemid, short raceid, short casteid);
+short ranged_equip_bonus(struct character* ch);
 short showiteminfo(short id, short ident, short charge, short showcurse);
 void showlogo(short howlong);
 void delay2(short timedelay);

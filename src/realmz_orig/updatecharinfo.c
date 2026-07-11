@@ -7,6 +7,7 @@ void updatecharinfo(void) {
 
   GrafPtr oldport;
   short temp, conditionindex = 0;
+  short rangeditembonus = ranged_equip_bonus(&characterl);
   GetPort(&oldport);
   SetPortDialogPort(charstat);
 
@@ -23,20 +24,27 @@ void updatecharinfo(void) {
   DialogNum(9, c[charselectnew].co + c[charselectnew].magco);
   DialogNum(10, c[charselectnew].lu + c[charselectnew].maglu);
 
+  /* Attack bonus, matching attack(): base to-hit + 5 per point of equipped magic
+   * plus (excluding ranged gear, which does not affect melee) + condition effects.
+   * Permanent conditions store negative values, so abs() them. */
   temp = 0;
   if (characterl.condition[COND_STRONG])
     temp += 15; /**** strong ***/
   if (characterl.condition[COND_SLOW])
     temp -= 15; /**** slow ***/
+  if (characterl.condition[COND_CONFUSED])
+    temp -= 10; /**** confused ***/
+  if (characterl.condition[COND_BLIND])
+    temp -= 15; /**** blind ***/
   if (characterl.condition[COND_MAGIC_AURA])
     temp += 5; /**** bless ***/
   if (characterl.condition[COND_CURSED])
     temp -= 5; /**** curse ***/
   if (characterl.condition[COND_TANGLED])
-    temp -= characterl.condition[COND_TANGLED]; /*** tangled ***/
+    temp -= abs(characterl.condition[COND_TANGLED]); /*** tangled ***/
   if (characterl.condition[COND_HINDERED_ATTACKS])
-    temp -= characterl.condition[COND_HINDERED_ATTACKS]; /*** Hinder atk ***/
-  temp += (characterl.damage * 5); /*** Hinder atk ***/
+    temp -= abs(characterl.condition[COND_HINDERED_ATTACKS]); /*** Hinder atk ***/
+  temp += characterl.tohit + 5 * (characterl.damage - rangeditembonus);
   if (temp > 99)
     TextSize(16);
   DialogNum(11, temp); /*** attack bonus ****/
@@ -47,15 +55,23 @@ void updatecharinfo(void) {
     temp += 10; /*** invisible ***/
   if (characterl.condition[COND_SLOW])
     temp -= 15; /*** slow ***/
+  if (characterl.condition[COND_CONFUSED])
+    temp -= 10; /*** confused ***/
+  if (characterl.condition[COND_BLIND])
+    temp -= 15; /*** blind ***/
   if (characterl.condition[COND_MAGIC_AURA])
     temp += 5; /*** bless ***/
   if (characterl.condition[COND_CURSED])
     temp -= 5; /*** curse ***/
+  if (characterl.condition[COND_TANGLED])
+    temp -= abs(characterl.condition[COND_TANGLED]); /*** tangled ***/
   if (characterl.condition[COND_HINDERED_DEFENSE])
-    temp -= characterl.condition[COND_HINDERED_DEFENSE]; /*** hinder defense ***/
+    temp -= abs(characterl.condition[COND_HINDERED_DEFENSE]); /*** hinder defense ***/
   if (characterl.condition[COND_DEFENSE_BONUS])
-    temp += characterl.condition[COND_DEFENSE_BONUS]; /*** defense bonus ***/
+    temp += abs(characterl.condition[COND_DEFENSE_BONUS]); /*** defense bonus ***/
   temp += characterl.ac; /*** Hinder atk ***/
+  if (characterl.condition[COND_SHIELD_FROM_HITS])
+    temp += 2 * abs(characterl.condition[COND_SHIELD_FROM_HITS]); /*** shield from hits ***/
   if (temp > 99)
     TextSize(16);
   DialogNum(12, temp); /*** defense bonus ****/

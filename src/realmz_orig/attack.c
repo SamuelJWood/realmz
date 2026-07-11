@@ -7,12 +7,30 @@
  * types, and conditions. See PRs #191, #192, #194, #195 for details.
  */
 
+/* Sum the magic plus (item.damage) of a character's equipped ranged gear: the
+ * missile weapon (type/slot 15) and quiver (type/slot 10). Melee to-hit and damage
+ * subtract this so a bow or quiver enchant does not boost melee combat, while
+ * non-ranged gear (melee weapon, armor, rings, ...) still counts. Preserves the
+ * global `item`, which loaditem() clobbers. */
+short ranged_equip_bonus(struct character* ch) {
+  struct itemattr saved = item;
+  short bonus = 0, i;
+  for (i = 0; (i < ch->numitems) && (i < 30); i++)
+    if (ch->items[i].equip) {
+      loaditem(ch->items[i].id);
+      if ((abs(item.type) == 10) || (abs(item.type) == 15))
+        bonus += item.damage;
+    }
+  item = saved;
+  return bonus;
+}
+
 /*************** attack (man to other) ********************/
 short attack(short chare, short mon) {
   Boolean kill = 0;
   struct character character;
   struct monster monst;
-  short att, specialdam;
+  short att, specialdam, rangeditembonus;
   short t;
   char addcond, amountcond, whichcond;
   Boolean success;
@@ -39,6 +57,11 @@ short attack(short chare, short mon) {
   }
 
   drawbody(chare, 1, 0); /***** This is to change fancing and highlight player prior to attack **** 0 = look, 1 = buff ******/
+
+  /* Ranged gear (missile weapon + quiver) has its magic plus folded into
+   * character.damage by wear(), like every other equipped item. Compute that
+   * portion so it can be excluded from the melee to-hit and damage below. */
+  rangeditembonus = ranged_equip_bonus(&character);
 
   if (character.armor[2]) {
     loaditem(character.armor[2]);
@@ -68,7 +91,9 @@ short attack(short chare, short mon) {
         }
       }
     }
-    damage += item.damage; /******* magic plus ****/
+    /* The weapon's own magic plus is already included in character.damage (wear()
+     * sums every equipped item's item.damage), which is added to damage below, so
+     * adding item.damage here too would double-count it. */
     if (item.sp1 == 121)
       att += 5 * item.damage; /******* double to hit weapon ****/
 
@@ -96,15 +121,14 @@ moveon:
   att += (50 + character.tohit + 20 * behind);
   /* *** CHANGED FROM ORIGINAL IMPLEMENTATION ***
    * Every worn item/armor magic plus is summed into character.damage by wear(), and that
-   * total already raises the damage dealt (damage += character.damage below) and the
-   * character sheet's displayed attack bonus (character.damage * 5 in updatecharinfo), but it
-   * never reached the to-hit roll. The monster path (attack2) and missile path (resolvespell)
-   * both add 5 per point of the weapon plus, so player melee to-hit was the only place a
-   * weapon or worn-item plus was ignored. Add 5 per point of character.damage here so a +N
-   * weapon, helm, or armor contributes to to-hit exactly as the sheet advertises.
-   * character.damage already includes the weapon's plus, so this covers it too; the
-   * penetration weapon (sp1 == 121) still adds its extra 5 * item.damage above for doubling. */
-  att += 5 * character.damage;
+   * total already raises the damage dealt (damage += character.damage below), but it never
+   * reached the to-hit roll. The monster path (attack2) and missile path (resolvespell) both
+   * add 5 per point of the weapon plus, so player melee to-hit was the only place a weapon or
+   * worn-item plus was ignored. Add 5 per point here so a +N weapon, helm, or armor contributes
+   * to to-hit as the sheet advertises. Ranged gear (missile weapon + quiver) is excluded so a
+   * bow/quiver enchant does not boost melee; the penetration weapon (sp1 == 121) still adds its
+   * extra 5 * item.damage above for doubling. */
+  att += 5 * (character.damage - rangeditembonus);
   /* *** END CHANGES *** */
   if (character.condition[COND_TANGLED])
     att -= abs(character.condition[COND_TANGLED]); /*** tangled ***/
@@ -374,7 +398,7 @@ donefumble:
       }
     }
 
-    damage += character.damage;
+    damage += character.damage - rangeditembonus; /* exclude ranged gear (missile weapon + quiver) from melee */
     damage += character.condition[COND_ATTACK_BONUS]; /***** attack bonus ****/
 
     if (Rand(100) <= character.spec[0]) {
