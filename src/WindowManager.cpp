@@ -284,6 +284,14 @@ public:
   // Whether an EDIT_TEXT field accepts focus/typing. Cleared to make a field
   // read-only (e.g. the description shown in the Load window).
   bool editable{true};
+  // When set, this text item's glyphs are nudged up valign_text_up pixels, and
+  // its erase rectangle is grown valign_erase_top pixels up (top) and
+  // valign_erase_bottom pixels down (bottom), to correct the vertical alignment
+  // of the character-sheet fields (see SetDialogItemVAlignTweak / ShowStats).
+  bool valign_tweak{false};
+  int16_t valign_text_up{0};
+  int16_t valign_erase_top{0};
+  int16_t valign_erase_bottom{0};
   std::shared_ptr<Control> control; // May be null
 
   static std::unordered_map<size_t, std::weak_ptr<DialogItem>> all_items;
@@ -452,7 +460,14 @@ public:
 
   void render_in_port(CCGrafPort& port, bool erase_background) const {
     if (erase_background) {
-      port.erase_rect(this->rect);
+      Rect erase = this->rect;
+      if (this->valign_tweak) {
+        // Grow the cleared area valign_erase_top pixels up (top) and
+        // valign_erase_bottom down (bottom) so it covers the up-nudged glyphs.
+        erase.top -= this->valign_erase_top;
+        erase.bottom += this->valign_erase_bottom;
+      }
+      port.erase_rect(erase);
     }
     switch (type) {
       case ResourceFile::DecodedDialogItem::Type::PICTURE: {
@@ -469,7 +484,14 @@ public:
         wm_log.warning_f("Attempted to draw ICON dialog item, but it's not implemented");
         break;
       case ResourceFile::DecodedDialogItem::Type::TEXT: {
-        if (text.length() > 0 && !port.draw_text(text, this->rect)) {
+        // Nudge the glyphs up valign_text_up pixels (height preserved, so the shift
+        // is exact whether the text is top-anchored or center-overflowed).
+        Rect textrect = this->rect;
+        if (this->valign_tweak) {
+          textrect.top -= this->valign_text_up;
+          textrect.bottom -= this->valign_text_up;
+        }
+        if (text.length() > 0 && !port.draw_text(text, textrect)) {
           wm_log.error_f("Error when rendering text item {}: {}", resource_id, SDL_GetError());
         }
         break;
@@ -1811,6 +1833,22 @@ void WindowManager_SetItemEditable(DialogPtr dialog, short item_id, Boolean edit
     }
   } catch (const std::out_of_range&) {
     wm_log.warning_f("WindowManager_SetItemEditable: invalid item_id {}", item_id);
+  }
+}
+
+// Mark a dialog text item so it renders with the character-sheet vertical
+// alignment tweak (glyphs one pixel higher, erase rect grown up 1 / down 2).
+void SetDialogItemVAlignTweak(DialogPtr dialog, short item_id, short text_up, short erase_top, short erase_bottom) {
+  auto window = WindowManager::instance().window_for_port(reinterpret_cast<WindowPtr>(dialog));
+  auto& items = window->get_dialog_items();
+  try {
+    auto item = items.at(item_id - 1);
+    item->valign_tweak = true;
+    item->valign_text_up = text_up;
+    item->valign_erase_top = erase_top;
+    item->valign_erase_bottom = erase_bottom;
+  } catch (const std::out_of_range&) {
+    wm_log.warning_f("SetDialogItemVAlignTweak called with invalid item_id {} (there are only {} items)", item_id, items.size());
   }
 }
 

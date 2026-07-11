@@ -12,6 +12,48 @@ void ShowStats(short showprestige) {
   SetPortDialogPort(gGeneration);
   BackPixPat(base);
 
+  /* Vertically align the character-sheet value fields. Each row is one dialog item:
+   * {item number, pixels to nudge the glyphs up, pixels to grow the erase rect up
+   * (top), pixels to grow it down (bottom)}. Idempotent, so setting it on every call
+   * is fine. Tuned per field to line up the numbers/text. */
+  {
+    static const struct {
+      short item, textUp, eraseTop, eraseBottom;
+    } valign[] = {
+        {19, 2, 2, 0}, /* Brawn */
+        {20, 2, 2, 0}, /* Knowledge */
+        {21, 2, 2, 0}, /* Judgment */
+        {22, 2, 2, 0}, /* Agility */
+        {23, 2, 2, 0}, /* Vitality */
+        {24, 2, 2, 0}, /* Luck */
+        {25, 1, 2, 1}, /* Attack Bonus */
+        {26, 1, 2, 1}, /* Defense Bonus */
+        {32, 1, 2, 1}, /* Skill */
+        {33, 1, 2, 0}, /* Spell Selection Pts */
+        {34, 1, 1, 0}, /* Missile Adjust */
+        {35, 2, 1, 0}, /* Dodge Missile */
+        {36, 3, 2, 0}, /* Chance to Hit */
+        {46, 1, 2, 0}, /* Caste */
+        {47, 1, 2, 0}, /* Race */
+        {52, 1, 0, 0}, /* Damage */
+        {54, 2, 2, 0}, /* Spell Points (current) */
+        {55, 2, 2, 0}, /* Spell Points (max) */
+        {56, 2, 2, 0}, /* Stamina (current) */
+        {57, 2, 2, 0}, /* Stamina (max) */
+        {58, 2, 2, 0}, /* Armor Rating */
+        {59, 2, 2, 0}, /* Magic Resistance */
+        {64, 2, 2, 0}, /* Gold */
+        {65, 2, 2, 0}, /* Gems */
+        {66, 2, 2, 0}, /* Jewelry */
+        {71, 1, 2, 1}, /* Age */
+        {82, 2, 2, 0}, /* Attacks / Round */
+        {83, 2, 2, 0}, /* Attacks / Round */
+    };
+    short vi;
+    for (vi = 0; vi < (short)(sizeof(valign) / sizeof(valign[0])); vi++)
+      SetDialogItemVAlignTweak(gGeneration, valign[vi].item, valign[vi].textUp, valign[vi].eraseTop, valign[vi].eraseBottom);
+  }
+
   if (showprestige) /*********** calculate and show prestige points **********/
   {
     TextFont(defaultfont);
@@ -137,12 +179,13 @@ void ShowStats(short showprestige) {
   /* NOTE(fuzziqersoftware): The original code used "\245\245\245\245" for the
    * case when the character has no spell selection points. On Classic Mac OS
    * this would be four bullet characters, but for better portability, we
-   * replace it with four dashes instead.
+   * replace it with dashes instead. Three, not four: four is wide enough to wrap
+   * to a second line in this field.
    */
   if (characterl.spellpointsmax)
     DialogNum(33, getnumspells(characterl.spellcastertype, characterl.caste, characterl.level));
   else
-    MyrCDiStr(33, (StringPtr) "----");
+    MyrCDiStr(33, (StringPtr) "---");
 
   TextFont(font);
   CtoPstr(characterl.name);

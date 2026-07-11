@@ -81,6 +81,7 @@ WindowPtr WindowManager_CreateNewWindow(int16_t res_id, bool is_dialog, WindowPt
 void WindowManager_DrawDialog(WindowPtr theWindow);
 void WindowManager_DisposeWindow(WindowPtr theWindow);
 void GetDialogItem(DialogPtr theDialog, int16_t itemNo, int16_t* itemType, Handle* item, Rect* box);
+void SetDialogItemVAlignTweak(DialogPtr theDialog, int16_t itemNo, int16_t textUp, int16_t eraseTop, int16_t eraseBottom);
 void WindowManager_SetDialogItemRect(DialogPtr dialog, short item_id, const Rect* box);
 // Makes an EDIT_TEXT dialog item read-only (editable=false) or editable again.
 void WindowManager_SetItemEditable(DialogPtr dialog, short item_id, Boolean editable);
