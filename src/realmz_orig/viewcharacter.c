@@ -72,6 +72,8 @@ refresh:
   for (;;) {
     FlushEvents(everyEvent, 0);
     ModalDialog(0L, &itemHit);
+    if (itemHit == 0) /* Esc: close the sheet, same as the Done button (item 72) */
+      itemHit = 72;
     GetDialogItem(gGeneration, itemHit, &itemType, &itemHandle, &buttonrect);
 
     if ((changename) && (itemHit != 67))
