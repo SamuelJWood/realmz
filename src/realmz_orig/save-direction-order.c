@@ -706,6 +706,26 @@ short seeshop(short mode) {
 
         case (mouseDown):
 
+          // A synthetic menu-selection event (a mouseDown with both coordinates
+          // negative, pushed by EventManager::push_menu_event) carries a Preferences
+          // menu choice such as Toggle Fullscreen. Route it to HandleMenuChoice so the
+          // fullscreen shortcuts (F11, Ctrl+Enter, ...) and the Sound/Music/Speed menus
+          // stay usable while the Trade/Shop screen owns the event loop. Mirrors ModalDialog.
+          if (gTheEvent.where.v < 0 && gTheEvent.where.h < 0) {
+            int16_t synth_menu_id = -gTheEvent.where.v;
+            int16_t synth_menu_item = -gTheEvent.where.h;
+            switch (synth_menu_id) {
+              case 137: // Preferences (Toggle Fullscreen, Faster Spell Resolution)
+              case 135: // Sound FX volume
+              case 147: // Music volume
+              case 134: // Speed
+                menuChoice = ((int32_t)synth_menu_id << 16) | (synth_menu_item & 0xFFFF);
+                HandleMenuChoice();
+                break;
+            }
+            break;
+          }
+
           thePart = FindWindow(gTheEvent.where, &whichWindow);
           switch (thePart) {
             case inMenuBar:

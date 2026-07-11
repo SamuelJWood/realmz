@@ -1,6 +1,29 @@
 #include "prototypes.h"
 #include "variables.h"
 
+/* Number of item rows visible in the Items list at once (see the incr + 11
+ * scroll guards below and updateitems, which redraws rows 0..10). */
+#define ITEMS_VISIBLE_ROWS 11
+
+/* Keep the Items-list scrollbar (far right of the white item list) in sync with
+ * the current scroll offset `incr` and the character's item count. Reads the
+ * control's current state first so it only repaints when something actually
+ * changed (SetControlValue/SetControlMaximum always redraw). */
+static void SyncItemsScrollbar(ControlHandle sb) {
+  short maxincr = c[charselectnew].numitems - ITEMS_VISIBLE_ROWS;
+  if (maxincr < 0)
+    maxincr = 0;
+  short val = incr;
+  if (val > maxincr)
+    val = maxincr;
+  if (val < 0)
+    val = 0;
+  if (GetControlMaximum(sb) != maxincr)
+    SetControlMaximum(sb, maxincr);
+  if (GetControlValue(sb) != val)
+    SetControlValue(sb, val);
+}
+
 /****************** items ************************************/
 short items(void) {
   Boolean updatelist = FALSE;
@@ -12,6 +35,7 @@ short items(void) {
   char itemselectold, loop;
   WindowPtr whichWindow;
   ControlHandle tempdummy, castident, describe, join, split, identify, done, pick, trade, checkcontrol, uparrow, down, drop, charinfo, use;
+  ControlHandle itemsvert;
   Rect checkrect, shadebox, box2, box4, charbox;
   char first = -1;
   char backvalue = 0;
@@ -154,6 +178,24 @@ short items(void) {
   GetControlBounds(split, &r);
   MoveControl(split, r.left + leftshift, r.top);
 
+  /* Vertical scrollbar for the item list. Placed at the far right of the white
+   * item list: its right edge sits at the list's right edge (284 + leftshift, where
+   * the grey info box begins), spanning the list height. Created with NewControl at
+   * the exact bounds (proc id 16 = scrollBarProc, the same scrollbar appearance the
+   * Trade/Shop screen uses). Using NewControl rather than GetNewControl(129) avoids
+   * the control first being drawn at the CNTL resource's shop position, which left a
+   * second "ghost" scrollbar behind. updateitems and the scroll ScrollRects are kept
+   * clear of its column so it is never overdrawn. */
+  {
+    Rect sbr;
+    sbr.top = 0;
+    sbr.bottom = 460;
+    sbr.right = 284 + leftshift;
+    sbr.left = sbr.right - 16;
+    itemsvert = NewControl(itemswindow, &sbr, (StringPtr) "", 1, 0, 0, 0, 16, 0);
+  }
+  SyncItemsScrollbar(itemsvert);
+
 backup:
 
   int enable_recomposite = WindowManager_SetEnableRecomposite(0);
@@ -240,6 +282,11 @@ backup:
     itemused = doit = FALSE;
     SetPort(GetWindowPort(itemswindow));
 
+    /* Keep the scrollbar thumb/range matching the list after any change to the
+     * scroll offset or item count (wheel, arrow buttons, drops, character switch,
+     * etc.). Only repaints when something actually changed. */
+    SyncItemsScrollbar(itemsvert);
+
     if (gTheEvent.modifiers & alphaLock)
       warn(21);
 
@@ -320,7 +367,7 @@ backup:
           box.top = 10;
           box.bottom = 458;
           box.left = 10;
-          box.right = 284 + leftshift;
+          box.right = 268 + leftshift; /* stop at the scrollbar's left edge */
           EraseRect(&box3);
           TextSize(15);
           for (t = 0; t < 4; t++)
@@ -335,7 +382,7 @@ backup:
           box.top = 0;
           box.bottom = 450;
           box.left = 10;
-          box.right = 284 + leftshift;
+          box.right = 268 + leftshift; /* stop at the scrollbar's left edge */
           EraseRect(&box3);
           TextSize(15);
           for (t = 0; t < 4; t++)
@@ -453,6 +500,26 @@ backup:
 
       case (mouseDown):
 
+        // A synthetic menu-selection event (a mouseDown with both coordinates
+        // negative, pushed by EventManager::push_menu_event) carries a Preferences
+        // menu choice such as Toggle Fullscreen. Route it to HandleMenuChoice so the
+        // fullscreen shortcuts (F11, Ctrl+Enter, ...) and the Sound/Music/Speed menus
+        // stay usable while the Items screen owns the event loop. Mirrors ModalDialog.
+        if (gTheEvent.where.v < 0 && gTheEvent.where.h < 0) {
+          int16_t synth_menu_id = -gTheEvent.where.v;
+          int16_t synth_menu_item = -gTheEvent.where.h;
+          switch (synth_menu_id) {
+            case 137: // Preferences (Toggle Fullscreen, Faster Spell Resolution)
+            case 135: // Sound FX volume
+            case 147: // Music volume
+            case 134: // Speed
+              menuChoice = ((int32_t)synth_menu_id << 16) | (synth_menu_item & 0xFFFF);
+              HandleMenuChoice();
+              break;
+          }
+          goto tryagain;
+        }
+
         thePart = FindWindow(gTheEvent.where, &whichWindow);
 
         switch (thePart) {
@@ -504,6 +571,50 @@ backup:
             }
 
             thePart = FindControl(point, itemswindow, &theControl);
+
+            // Click on the item-list scrollbar. TrackControl only reports which
+            // part was hit (this build has no live thumb drag), so translate the
+            // part into a change to the scroll offset `incr` and redraw the list;
+            // the loop-top SyncItemsScrollbar then moves the thumb to match.
+            if (theControl == itemsvert) {
+              short part = TrackControl(itemsvert, point, 0L);
+              short maxincr = c[charselectnew].numitems - ITEMS_VISIBLE_ROWS;
+              if (maxincr < 0)
+                maxincr = 0;
+              short newincr = incr;
+              switch (part) {
+                case kControlUpButtonPart:
+                  newincr = incr - 1;
+                  break;
+                case kControlDownButtonPart:
+                  newincr = incr + 1;
+                  break;
+                case kControlPageUpPart:
+                  newincr = incr - ITEMS_VISIBLE_ROWS;
+                  break;
+                case kControlPageDownPart:
+                  newincr = incr + ITEMS_VISIBLE_ROWS;
+                  break;
+                default:
+                  break;
+              }
+              if (newincr < 0)
+                newincr = 0;
+              if (newincr > maxincr)
+                newincr = maxincr;
+              if (newincr != incr) {
+                incr = newincr;
+                theControl = tempdummy;
+                updateitems(0, 10);
+                EraseRect(&box3);
+                box3.top = 11 + itemselectnew * 40;
+                box3.bottom = box3.top + 40;
+                DrawPicture(marker, &box3);
+                if (screensize)
+                  quickinfo(charselectnew, itemselectnew + incr, c[charselectnew].items[itemselectnew + incr].id, 0);
+              }
+              goto tryagain;
+            }
             break;
 
           default:
@@ -838,7 +949,7 @@ backup:
           box.top = 10;
           box.bottom = 458;
           box.left = 10;
-          box.right = 284 + leftshift;
+          box.right = 268 + leftshift; /* stop at the scrollbar's left edge (avoid scrolling it) */
           EraseRect(&box3);
           TextSize(15);
           do {
@@ -880,7 +991,7 @@ backup:
           box.top = 0;
           box.bottom = 450;
           box.left = 10;
-          box.right = 284 + leftshift;
+          box.right = 268 + leftshift; /* stop at the scrollbar's left edge (avoid scrolling it) */
           EraseRect(&box3);
           TextSize(15);
           do {

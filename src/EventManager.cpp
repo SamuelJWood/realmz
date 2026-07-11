@@ -529,6 +529,7 @@ protected:
           if ((sym == SDLK_F11 && !ctrl && !alt && !shift && !gui) ||
               (sym == SDLK_F && ctrl && !alt && !gui) ||
               (sym == SDLK_RETURN && alt && !ctrl && !gui) ||
+              ((sym == SDLK_RETURN || sym == SDLK_KP_ENTER) && ctrl && !alt && !gui) ||
               (sym == SDLK_F && gui && !ctrl)) {
             this->push_menu_event(137, 1);
             break;

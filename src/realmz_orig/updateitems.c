@@ -33,7 +33,7 @@ void updateitems(short top, short bottom) {
       showcharge2(characterl.items[t + incr].charge, lg);
     } else {
       icon.left = 10;
-      icon.right = 284 + leftshift;
+      icon.right = 268 + leftshift; /* stop at the scrollbar's left edge (see items.c) */
       EraseRect(&icon);
       icon.right = 42;
     }
