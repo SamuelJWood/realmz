@@ -1596,7 +1596,7 @@ void combatchoice(void) {
           goto forceflee;
         }
 
-        if (question3((StringPtr) "Embrace Cowardice", (StringPtr) "Stay and Fight") == 2) /**** ask if they want to flee battle ****/
+        if (question3((StringPtr) "Embrace Cowardice", (StringPtr) "Stay and Fight", FALSE) == 2) /**** ask if they want to flee battle ****/
         {
         forceflee:
           bodyground(charup, 0);
@@ -1722,7 +1722,7 @@ void combatchoice(void) {
         if ((poss) || (c[charup].condition[COND_ANIMATED]))
           goto autoswap;
 
-        if (question3((StringPtr) "Swap Positions", (StringPtr) "Attack Friend") == 2) {
+        if (question3((StringPtr) "Swap Positions", (StringPtr) "Attack Friend", TRUE) == 2) {
         autoswap:
 
           canundo = 0;
@@ -1772,7 +1772,7 @@ void combatchoice(void) {
           goto wantstoattack;
       } else if ((!poss) && (!c[charup].condition[COND_ANIMATED])) {
       askem:
-        if (question3((StringPtr) "Attack Your Friend", (StringPtr) "Do Not Attack") == 2) {
+        if (question3((StringPtr) "Attack Your Friend", (StringPtr) "Do Not Attack", FALSE) == 2) {
         wantstoattack:
           if (hit > 10) {
             if (!monster[hit - 10].traiter) {

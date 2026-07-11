@@ -6,6 +6,7 @@ short question(short stringnum) {
   GrafPtr oldport;
   Boolean doin = TRUE;
   DialogRef question, dummy;
+  Boolean wascombat = incombat;
   GetPort(&oldport);
   SetCCursor(ask);
 
@@ -76,15 +77,22 @@ over:
     DoCorrectBugMADRepeat();
 #endif
 
-    /* Handle menu events (e.g. F11 / Alt+Enter fullscreen toggle) that arrive
-     * while this dialog is blocking the main event loop. */
+    /* Keep the whole menu bar working while this prompt blocks the main loop
+     * (fullscreen, load/revert, end adventure, view allies/bestiary, ...). Menu
+     * interactions arrive as a synthetic mouseDown with both coordinates negative.
+     * If the choice tears the game down (revert/load, or the adventure ended),
+     * answer "no" so the caller unwinds. */
     if (gTheEvent.what == mouseDown && gTheEvent.where.v < 0 && gTheEvent.where.h < 0) {
       short menu_id = -gTheEvent.where.v;
       short menu_itm = -gTheEvent.where.h;
-      if (menu_id == 137 && menu_itm == 1) {
-        WindowManager_ToggleFullscreen();
-        CheckItem(prefer, 1, WindowManager_IsFullscreen());
+      menuChoice = ((int32_t)menu_id << 16) | (menu_itm & 0xFFFF);
+      compactheap();
+      HandleMenuChoice();
+      if (revertgame || (wascombat && !incombat)) {
+        itemHit = 2; /* "no" */
+        goto out;
       }
+      SetPortDialogPort(question);
       continue;
     }
 
@@ -134,6 +142,7 @@ short question2(short prompt1, short prompt2) {
   Str255 one, two;
   char onechar = 'y';
   char twochar = 'n';
+  Boolean wascombat = incombat;
 
   DialogRef question, dummy;
 
@@ -199,6 +208,25 @@ short question2(short prompt1, short prompt2) {
     DoCorrectBugMADRepeat();
 #endif
 
+    /* Keep the whole menu bar working while this prompt blocks the main loop
+     * (fullscreen, load/revert, end adventure, view allies/bestiary, ...). Menu
+     * interactions arrive as a synthetic mouseDown with both coordinates negative.
+     * If the choice tears the game down (revert/load, or the adventure ended),
+     * answer "no" so the caller unwinds. */
+    if (gTheEvent.what == mouseDown && gTheEvent.where.v < 0 && gTheEvent.where.h < 0) {
+      short menu_id = -gTheEvent.where.v;
+      short menu_itm = -gTheEvent.where.h;
+      menuChoice = ((int32_t)menu_id << 16) | (menu_itm & 0xFFFF);
+      compactheap();
+      HandleMenuChoice();
+      if (revertgame || (wascombat && !incombat)) {
+        itemHit = 1; /* "no" */
+        goto out;
+      }
+      SetPortDialogPort(question);
+      continue;
+    }
+
     if (IsDialogEvent(&gTheEvent)) {
       if (DialogSelect(&gTheEvent, &dummy, &itemHit))
         goto out;
@@ -236,7 +264,7 @@ out:
 }
 
 /***************************** question3 ********************************/
-short question3(Str255 p1, Str255 p2) {
+short question3(Str255 p1, Str255 p2, Boolean showcancel) {
   FILE* fp = NULL;
   short win = 200;
   GrafPtr oldPort;
@@ -246,6 +274,13 @@ short question3(Str255 p1, Str255 p2) {
   DialogRef question, dummy;
   char prompt1[255];
   char prompt2[255];
+  /* Optional onscreen Cancel button (PICT 144, the stop/hand icon), used by the
+   * combat "Swap Positions / Attack Friend" prompt. Drawn on the combat screen at
+   * the position measured from the top-left of the screen; clicking it is the same
+   * as pressing Esc. The 50x50 region under it is saved so it can be erased on exit. */
+  Rect cancelrect, cancellocal;
+  GWorldPtr cancelsave = NIL;
+  Boolean wascombat = incombat;
 
   /* *** CHANGED FROM ORIGINAL IMPLEMENTATION *** */
   /* Note (danapplegate): Another instance where BlockMove is called with a byteLength
@@ -283,6 +318,21 @@ short question3(Str255 p1, Str255 p2) {
   ShowWindow(GetDialogWindow(question));
   ErasePortRect();
 
+  if (showcancel) {
+    /* Local coords on the combat screen window (whose top-left is at GlobalLeft,
+     * GlobalTop), so the button lands 616 px right / 352 px down from the screen. */
+    SetRect(&cancelrect, 616 - GlobalLeft, 327 - GlobalTop,
+            616 - GlobalLeft + 50, 327 - GlobalTop + 50);
+    SetRect(&cancellocal, 0, 0, 50, 50);
+    SetPort(GetWindowPort(screen));
+    if (!NewGWorld(&cancelsave, 8, &cancellocal, 0L, 0L, 0L)) {
+      CopyBits(GetPortBitMapForCopyBits(GetWindowPort(screen)),
+               GetPortBitMapForCopyBits(cancelsave), &cancelrect, &cancellocal, 0, NIL);
+    }
+    pict(144, cancelrect);
+    SetPortDialogPort(question);
+  }
+
   onechar = tolower(onechar);
   twochar = tolower(twochar);
 
@@ -293,6 +343,33 @@ short question3(Str255 p1, Str255 p2) {
 #ifdef PC // Myriad
     DoCorrectBugMADRepeat();
 #endif
+
+    /* Menu-bar interactions arrive as a synthetic mouseDown with both coordinates
+     * negative (see EventManager::push_menu_event). Keep the whole menu bar working
+     * while this prompt blocks the main loop: fullscreen toggle, load/revert, end
+     * adventure, view allies/bestiary, etc. If the choice tears the game down
+     * (revert/load, or the adventure ended), cancel the prompt so combat unwinds. */
+    if ((gTheEvent.what == mouseDown) && (gTheEvent.where.v < 0) && (gTheEvent.where.h < 0)) {
+      short menu_id = -gTheEvent.where.v;
+      short menu_itm = -gTheEvent.where.h;
+      menuChoice = ((int32_t)menu_id << 16) | (menu_itm & 0xFFFF);
+      compactheap();
+      HandleMenuChoice();
+      if (revertgame || (wascombat && !incombat)) {
+        keyhit = 27; /* treat as Esc/cancel */
+        itemHit = 1;
+        goto out;
+      }
+      if (showcancel && cancelsave) {
+        /* A view dialog (bestiary/allies) redraws the combat screen and wipes the
+         * Cancel button, which was drawn onto that screen. Redraw it. The saved
+         * background under it is unchanged, so no re-save is needed. */
+        SetPort(GetWindowPort(screen));
+        pict(144, cancelrect);
+      }
+      SetPortDialogPort(question);
+      continue;
+    }
 
     keyhit = 0;
     if (gTheEvent.what == keyDown) {
@@ -314,6 +391,17 @@ short question3(Str255 p1, Str255 p2) {
         goto out;
       }
     }
+    if (showcancel && (gTheEvent.what == mouseDown)) {
+      Point cp = gTheEvent.where;
+      SetPort(GetWindowPort(screen));
+      GlobalToLocal(&cp);
+      SetPortDialogPort(question);
+      if (PtInRect(cp, &cancelrect)) {
+        keyhit = 27; /* treat the Cancel button exactly like the Esc key */
+        itemHit = 1;
+        goto out;
+      }
+    }
     if (IsDialogEvent(&gTheEvent)) {
       if (DialogSelect(&gTheEvent, &dummy, &itemHit))
         goto out;
@@ -328,6 +416,13 @@ out:
   GetPortBounds(GetQDGlobalsThePort(), &itemRect);
   // itemRect = qd.thePort->portRect;
   DisposeDialog(question);
+  if (cancelsave) {
+    /* Erase the Cancel button by restoring the pixels saved from under it. */
+    SetPort(GetWindowPort(screen));
+    CopyBits(GetPortBitMapForCopyBits(cancelsave), GetPortBitMapForCopyBits(GetWindowPort(screen)),
+             &cancellocal, &cancelrect, 0, NIL);
+    DisposeGWorld(cancelsave);
+  }
   SetPort(oldPort);
   if (!incombat)
     updatefat(TRUE, 0, FALSE);

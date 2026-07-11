@@ -268,7 +268,7 @@ short openpref(short mode);
 void preference(void);
 short question(short stringnum);
 short question2(short prompt1, short prompt2);
-short question3(Str255 prompt1, Str255 prompt2);
+short question3(Str255 prompt1, Str255 prompt2, Boolean showcancel);
 void Race(short mode);
 void reduce(void);
 short removeitem(short character, short itemnum, short play, short force);

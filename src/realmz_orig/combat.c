@@ -790,7 +790,7 @@ void combat(short suprise, short mode) {
                   if ((c[charup].condition[COND_HELPLESS]) || (c[charup].traiter) || (c[charup].condition[COND_CONFUSED]) || (c[charup].condition[COND_TANGLED]) || (c[charup].condition[COND_SLOW])) { /***** bad condition ****/
                     warn(83);
                     upbutton(TRUE);
-                  } else if (question3((StringPtr) "Embrace Cowardice", (StringPtr) "Stay and Fight") == 2) /**** ask if they want to flee from battle ****/
+                  } else if (question3((StringPtr) "Embrace Cowardice", (StringPtr) "Stay and Fight", FALSE) == 2) /**** ask if they want to flee from battle ****/
                   {
                     bodyground(charup, 0);
                     bodyfield(charup);
