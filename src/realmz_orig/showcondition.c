@@ -115,6 +115,10 @@ short showcondition(short start, short stop, short type, short showonly, short w
         loadprofile(c[who].race, c[who].caste);
         MyrAppendMenu(popup, (Ptr) "This character can use items of type:");
         SetItemIcon(popup, 1, c[who].pictid);
+        /* Make the top item a non-selectable, non-hoverable white header, like the
+         * top item of the Conditions/Items menus (see SetMenuItemIsHeader above). */
+        SetItemStyle(popup, 1, 1);
+        SetMenuItemIsHeader(popup, 1);
         startvalue = 1;
         for (t = 0; t <= 57; t++) {
           GetIndString(myString, 6, t + 1);
@@ -134,8 +138,12 @@ short showcondition(short start, short stop, short type, short showonly, short w
         startvalue = 1;
         gTheEvent.where.v = GlobalTop - 5;
         gTheEvent.where.h = GlobalLeft + 335;
-        MyrAppendMenu(popup, (Ptr) "Characters Who Can Use This Item.");
+        MyrAppendMenu(popup, (Ptr) "Characters who can use this item:");
         SetItemIcon(popup, 1, 379);
+        /* Make the top item a non-selectable, non-hoverable white header, like the
+         * top item of the Conditions/Items menus (see SetMenuItemIsHeader above). */
+        SetItemStyle(popup, 1, 1);
+        SetMenuItemIsHeader(popup, 1);
         for (tt = 0; tt <= charnum; tt++) {
           CtoPstr(c[tt].name);
           AppendMenu(popup, (StringPtr)c[tt].name);

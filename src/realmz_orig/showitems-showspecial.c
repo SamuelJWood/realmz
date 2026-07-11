@@ -673,6 +673,10 @@ backup:
     DoCorrectBugMADRepeat();
 #endif
 
+    // Esc closes the item-info dialog, just like clicking outside an actionable item.
+    if ((gTheEvent.what == keyDown) && ((gTheEvent.message & charCodeMask) == 0x1b))
+      goto out;
+
     if (IsDialogEvent(&gTheEvent)) {
       if (DialogSelect(&gTheEvent, &dummy, &itemHit)) {
         if (itemHit == 2) {
