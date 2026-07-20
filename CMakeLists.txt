@@ -421,6 +421,7 @@ if(APPLE)
     install(DIRECTORY "${CMAKE_SOURCE_DIR}/base/Realmz/Data Files/Sounds" DESTINATION "Data Files")
     install(DIRECTORY "${CMAKE_SOURCE_DIR}/base/Realmz/Scenarios" DESTINATION ".")
     install(DIRECTORY "${CMAKE_SOURCE_DIR}/base/Realmz/Manuals" DESTINATION ".")
+    install(DIRECTORY "${CMAKE_SOURCE_DIR}/base/Realmz/Realmz Music" DESTINATION ".")
     install(FILES ${CHARACTER_DATA_FILES} DESTINATION "Character Files")
 
     # We dynamically link to the SDL* libraries (plus an asan lib that clang links against),
@@ -443,6 +444,7 @@ elseif(WIN32)
     install(DIRECTORY "base/Realmz/Data Files/Sounds" DESTINATION "${CMAKE_INSTALL_BINDIR}/Data Files")
     install(DIRECTORY "base/Realmz/Scenarios" DESTINATION ${CMAKE_INSTALL_BINDIR})
     install(DIRECTORY "base/Realmz/Manuals" DESTINATION ${CMAKE_INSTALL_BINDIR})
+    install(DIRECTORY "base/Realmz/Realmz Music" DESTINATION ${CMAKE_INSTALL_BINDIR})
     install(FILES ${CHARACTER_DATA_FILES} DESTINATION "${CMAKE_INSTALL_BINDIR}/Character Files")
 elseif(UNIX)
     # SDL_GetBasePath() returns the exe's directory, so data files must live alongside the binary.
@@ -452,6 +454,7 @@ elseif(UNIX)
     install(DIRECTORY "base/Realmz/Data Files/Sounds" DESTINATION "${CMAKE_INSTALL_BINDIR}/Data Files")
     install(DIRECTORY "base/Realmz/Scenarios" DESTINATION ${CMAKE_INSTALL_BINDIR})
     install(DIRECTORY "base/Realmz/Manuals" DESTINATION ${CMAKE_INSTALL_BINDIR})
+    install(DIRECTORY "base/Realmz/Realmz Music" DESTINATION ${CMAKE_INSTALL_BINDIR})
     install(FILES ${CHARACTER_DATA_FILES} DESTINATION "${CMAKE_INSTALL_BINDIR}/Character Files")
     install(TARGETS SDL3-shared SDL3_ttf-shared SDL3_image-shared
             DESTINATION ${CMAKE_INSTALL_LIBDIR})
