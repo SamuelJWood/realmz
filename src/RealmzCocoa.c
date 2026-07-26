@@ -178,7 +178,7 @@ void InitRealmzCocoa() {
   // On Classic Mac OS, the system does this automatically when the
   // application is loaded.
   FSSpec spec;
-  FSMakeFSSpec(0, 0, "\p:realmz", &spec);
+  FSMakeFSSpec(0, 0, "\p:Data Files:realmz", &spec);
   if (FSpOpenResFile(&spec, fsRdPerm) < 0) {
     fprintf(stderr, "WARNING: Cannot open the Realmz application resource file\n");
   }

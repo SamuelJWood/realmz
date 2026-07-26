@@ -27,13 +27,13 @@ void init_fonts() {
   // the time WindowManager_Init is called.
 
   // TODO: Is 1602 the correct font ID for Black Chancery?
-  tt_fonts_by_id[BLACK_CHANCERY_FONT_ID] = load_ttf_font(":Black Chancery.ttf", 16);
+  tt_fonts_by_id[BLACK_CHANCERY_FONT_ID] = load_ttf_font(":Data Files:Black Chancery.ttf", 16);
   // Since Geneva itself is still copyrighted, we use the open Inter font instead.
-  auto geneva_font = load_ttf_font(":InterVariable.ttf", 16);
+  auto geneva_font = load_ttf_font(":Data Files:InterVariable.ttf", 16);
   tt_fonts_by_id[GENEVA_FONT_ID] = geneva_font;
   tt_fonts_by_id[ALTERNATIVE_GENEVA_FONT_ID] = geneva_font;
   tt_fonts_by_id[REALMZ_GENEVA_FONT_ID] = geneva_font;
-  tt_fonts_by_id[CHICAGO_FONT_ID] = load_ttf_font(":ChicagoFLF.ttf", 16);
+  tt_fonts_by_id[CHICAGO_FONT_ID] = load_ttf_font(":Data Files:ChicagoFLF.ttf", 16);
 }
 
 // Tries to load a TrueType font first; if it's not available, use a

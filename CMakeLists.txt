@@ -264,14 +264,11 @@ if(WIN32)
     )
 endif()
 
-# Installed in Contents/Resources
+# macOS-only: the app icon lives in the bundle's Contents/Resources. It is not
+# used on Windows (the icon is embedded in Realmz.exe via realmz_icon.rc) or on
+# Linux, so it is not installed on those platforms.
 set(RESOURCE_FILES
-    resources/realmz.rsrc
     bundle/AppIcon.icns
-    "resources/Black Chancery.ttf"
-    "resources/Black Chancery Bold.ttf"
-    "resources/Inter/InterVariable.ttf"
-    "resources/ChicagoFLF.ttf"
 )
 set_source_files_properties(${RESOURCE_FILES} PROPERTIES
     MACOSX_PACKAGE_LOCATION Resources
@@ -304,6 +301,14 @@ set(DATA_RESOURCE_FILES
     "base/Realmz/Data Files/Caste and Race descriptions.txt"
     "base/Realmz/Data Files/Scenario Descriptions.txt"
     "base/Realmz/Data Files/Background Texture.bmp"
+    # The application resource fork and the UI fonts live alongside the other
+    # data files. Loaded at runtime via ":Data Files:..." paths
+    # (see RealmzCocoa.c for realmz.rsrc and Font.cpp for the fonts).
+    resources/realmz.rsrc
+    "resources/Black Chancery.ttf"
+    "resources/Black Chancery Bold.ttf"
+    "resources/Inter/InterVariable.ttf"
+    "resources/ChicagoFLF.ttf"
 )
 set_source_files_properties(${DATA_RESOURCE_FILES} PROPERTIES
     MACOSX_PACKAGE_LOCATION "Resources/Data\ Files"
@@ -421,7 +426,8 @@ if(APPLE)
     install(DIRECTORY "${CMAKE_SOURCE_DIR}/base/Realmz/Data Files/Sounds" DESTINATION "Data Files")
     install(DIRECTORY "${CMAKE_SOURCE_DIR}/base/Realmz/Scenarios" DESTINATION ".")
     install(DIRECTORY "${CMAKE_SOURCE_DIR}/base/Realmz/Manuals" DESTINATION ".")
-    install(DIRECTORY "${CMAKE_SOURCE_DIR}/base/Realmz/Realmz Music" DESTINATION ".")
+    install(DIRECTORY "${CMAKE_SOURCE_DIR}/base/Realmz/Realmz Music" DESTINATION "."
+            PATTERN "Where to find more music files" EXCLUDE)
     install(FILES ${CHARACTER_DATA_FILES} DESTINATION "Character Files")
 
     # We dynamically link to the SDL* libraries (plus an asan lib that clang links against),
@@ -438,23 +444,54 @@ if(APPLE)
         BUILD_WITH_INSTALL_RPATH TRUE
     )
 elseif(WIN32)
-    install(TARGETS Realmz DESTINATION ${CMAKE_INSTALL_BINDIR})
-    install(FILES ${RESOURCE_FILES} DESTINATION ${CMAKE_INSTALL_BINDIR})
-    install(FILES ${DATA_RESOURCE_FILES} DESTINATION "${CMAKE_INSTALL_BINDIR}/Data Files")
-    install(DIRECTORY "base/Realmz/Data Files/Sounds" DESTINATION "${CMAKE_INSTALL_BINDIR}/Data Files")
-    install(DIRECTORY "base/Realmz/Scenarios" DESTINATION ${CMAKE_INSTALL_BINDIR})
-    install(DIRECTORY "base/Realmz/Manuals" DESTINATION ${CMAKE_INSTALL_BINDIR})
-    install(DIRECTORY "base/Realmz/Realmz Music" DESTINATION ${CMAKE_INSTALL_BINDIR})
-    install(FILES ${CHARACTER_DATA_FILES} DESTINATION "${CMAKE_INSTALL_BINDIR}/Character Files")
+    # Everything installs at the package root (no "bin" subfolder) so the zip
+    # extracts to Realmz.exe sitting beside its data folders and DLLs.
+    install(TARGETS Realmz RUNTIME DESTINATION ".")
+    install(FILES ${DATA_RESOURCE_FILES} DESTINATION "Data Files")
+    install(DIRECTORY "base/Realmz/Data Files/Sounds" DESTINATION "Data Files")
+    install(DIRECTORY "base/Realmz/Scenarios" DESTINATION ".")
+    install(DIRECTORY "base/Realmz/Manuals" DESTINATION ".")
+    install(DIRECTORY "base/Realmz/Realmz Music" DESTINATION "."
+            PATTERN "Where to find more music files" EXCLUDE)
+    install(FILES ${CHARACTER_DATA_FILES} DESTINATION "Character Files")
+
+    # Realmz.exe links these dynamically, so the DLLs must ship beside it. (These
+    # installs live here rather than in the UNIX branch below because the mingw
+    # cross-build sets CMAKE_SYSTEM_NAME=Windows, i.e. WIN32 is true, not UNIX.)
+    install(TARGETS SDL3-shared SDL3_ttf-shared SDL3_image-shared
+            RUNTIME DESTINATION ".")
+
+    # zlib is a runtime dependency of SDL3_image; auto-resolution doesn't work for cross-compilation.
+    find_file(libz NAMES libz.dll
+        PATHS $ENV{HOME}/mingw-install/bin $ENV{HOME}/mingw-install/lib
+        NO_CMAKE_FIND_ROOT_PATH REQUIRED)
+    message("Found zlib at ${libz}")
+    install(FILES ${libz} DESTINATION ".")
+
+    # The LLVM MinGW toolchain injects a couple of runtime dependencies that we
+    # have to install alongside the executable.
+    if(CMAKE_CROSSCOMPILING AND CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
+        find_file(libc++ NAMES libc++.dll PATH_SUFFIXES bin REQUIRED)
+        message("Found c++ lib at ${libc++}")
+        find_file(libunwind NAMES libunwind.dll PATH_SUFFIXES bin REQUIRED)
+        message("Found unwind lib at ${libunwind}")
+        if(NOT CMAKE_BUILD_TYPE STREQUAL "Release")
+            find_file(libasan NAMES libclang_rt.asan_dynamic-x86_64.dll PATH_SUFFIXES bin REQUIRED)
+            message("Found asan lib at ${libasan}")
+            install(FILES ${libc++} ${libunwind} ${libasan} DESTINATION ".")
+        else()
+            install(FILES ${libc++} ${libunwind} DESTINATION ".")
+        endif()
+    endif()
 elseif(UNIX)
     # SDL_GetBasePath() returns the exe's directory, so data files must live alongside the binary.
     install(TARGETS Realmz DESTINATION ${CMAKE_INSTALL_BINDIR})
-    install(FILES ${RESOURCE_FILES} DESTINATION ${CMAKE_INSTALL_BINDIR})
     install(FILES ${DATA_RESOURCE_FILES} DESTINATION "${CMAKE_INSTALL_BINDIR}/Data Files")
     install(DIRECTORY "base/Realmz/Data Files/Sounds" DESTINATION "${CMAKE_INSTALL_BINDIR}/Data Files")
     install(DIRECTORY "base/Realmz/Scenarios" DESTINATION ${CMAKE_INSTALL_BINDIR})
     install(DIRECTORY "base/Realmz/Manuals" DESTINATION ${CMAKE_INSTALL_BINDIR})
-    install(DIRECTORY "base/Realmz/Realmz Music" DESTINATION ${CMAKE_INSTALL_BINDIR})
+    install(DIRECTORY "base/Realmz/Realmz Music" DESTINATION ${CMAKE_INSTALL_BINDIR}
+            PATTERN "Where to find more music files" EXCLUDE)
     install(FILES ${CHARACTER_DATA_FILES} DESTINATION "${CMAKE_INSTALL_BINDIR}/Character Files")
     install(TARGETS SDL3-shared SDL3_ttf-shared SDL3_image-shared
             DESTINATION ${CMAKE_INSTALL_LIBDIR})
@@ -513,6 +550,8 @@ set(CPACK_SOURCE_GENERATOR "TGZ")
 if(WIN32)
     set(CPACK_GENERATOR "NSIS;ZIP")
     set(CPACK_NSIS_PACKAGE_NAME "${CMAKE_PROJECT_NAME}")
+    # Put files at the root of the .zip (no "Realmz-<version>-win64/" wrapper dir).
+    set(CPACK_INCLUDE_TOPLEVEL_DIRECTORY OFF)
 elseif(APPLE)
     configure_file(bundle/Info.plist.in Info.plist)
     set(CPACK_GENERATOR "Bundle")
@@ -530,16 +569,22 @@ include(CPack)
 if(UNIX AND NOT APPLE)
     set(LINUXDEPLOY "${CMAKE_BINARY_DIR}/linuxdeploy-x86_64.AppImage"
         CACHE FILEPATH "Path to the linuxdeploy binary")
+    # The release is a single self-contained AppImage: Manuals, Realmz Music, and
+    # all data files are bundled inside, so the one file carries its own exec bit.
+    # Users can optionally drop a "Realmz Music" folder next to the .AppImage to add
+    # extra tracks; music.c scans $APPIMAGE's directory and merges those in.
     add_custom_target(appimage
+        COMMAND ${CMAKE_COMMAND} -E rm -rf AppDir Realmz-x86_64.AppImage
         COMMAND ${CMAKE_COMMAND} -E make_directory AppDir
         COMMAND ${CMAKE_COMMAND} --install .
                 --prefix AppDir/usr
         COMMAND ${CMAKE_COMMAND} -E env
                 "LD_LIBRARY_PATH=AppDir/usr/lib"
+                "OUTPUT=Realmz-x86_64.AppImage"
                 ${LINUXDEPLOY} --appdir AppDir --output appimage
         DEPENDS Realmz
         WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
-        COMMENT "Assembling AppImage (requires linuxdeploy-x86_64.AppImage in build dir)..."
+        COMMENT "Assembling single-file AppImage (Manuals + Realmz Music bundled inside)..."
         VERBATIM
     )
 endif()
