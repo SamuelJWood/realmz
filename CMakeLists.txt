@@ -436,13 +436,12 @@ if(APPLE)
     # be found. By default, LIBRARY artifacts will be installed to Resources/lib in the bundle,
     # so we set the RPATH below to this directory.
     install(IMPORTED_RUNTIME_ARTIFACTS Realmz RUNTIME_DEPENDENCY_SET runtimeDeps)
-    # The SDL* dylibs are built in the build tree, so @rpath can't be resolved at
-    # install time without pointing the resolver at that directory. Exclude the
-    # macOS system libraries (they must not be copied into the bundle).
-    install(RUNTIME_DEPENDENCY_SET runtimeDeps LIBRARY
-        DIRECTORIES "${CMAKE_BINARY_DIR}"
-        PRE_EXCLUDE_REGEXES "^/usr/lib" "^/System/Library"
-        POST_EXCLUDE_REGEXES "^/usr/lib" "^/System/Library")
+    # The SDL* libraries are built in this build tree, so CMake's runtime-dependency
+    # resolver won't bundle them (it deliberately skips build-tree targets and can't
+    # resolve their @rpath install names). Install them directly into Resources/lib,
+    # which is where the executable's rpath (@executable_path/../Resources/lib) looks.
+    install(TARGETS SDL3-shared SDL3_ttf-shared SDL3_image-shared
+        LIBRARY DESTINATION "lib")
 
     # Manually set the rpath to avoid CMake automatically adding hardcoded build machine paths
     set_target_properties(Realmz PROPERTIES
