@@ -67,7 +67,7 @@ selectagain:
    * same way a complex encounter does. Released at the out: label below. (If an
    * encounter is already open, this just nests; see DisableGameMenus.) */
   DisableGameMenus();
-wayback:
+wayback:;
 
   int enable_recomposite = WindowManager_SetEnableRecomposite(0);
 

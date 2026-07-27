@@ -514,29 +514,6 @@ elseif(UNIX)
         SDL3-shared
         SDL3_ttf-shared
         SDL3_image-shared)
-
-    # zlib is a runtime dependency of SDL3_image; auto-resolution doesn't work for cross-compilation.
-    find_file(libz NAMES libz.dll
-        PATHS $ENV{HOME}/mingw-install/bin $ENV{HOME}/mingw-install/lib
-        NO_CMAKE_FIND_ROOT_PATH REQUIRED)
-    message("Found zlib at ${libz}")
-    install(FILES ${libz} DESTINATION ${CMAKE_INSTALL_BINDIR})
-
-    # The LLVM MinGW toolchain injects a couple of runtime dependencies that we have to install
-    # alongside the executable.
-    if(CMAKE_CROSSCOMPILING AND CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
-        find_file(libc++ NAMES libc++.dll PATH_SUFFIXES bin REQUIRED)
-        message("Found c++ lib at ${libc++}")
-        find_file(libunwind NAMES libunwind.dll PATH_SUFFIXES bin REQUIRED)
-        message("Found unwind lib at ${libunwind}")
-        if(NOT CMAKE_BUILD_TYPE STREQUAL "Release")
-            find_file(libasan NAMES libclang_rt.asan_dynamic-x86_64.dll PATH_SUFFIXES bin REQUIRED)
-            message("Found asan lib at ${libasan}")
-            install(FILES ${libc++} ${libunwind} ${libasan} DESTINATION ${CMAKE_INSTALL_BINDIR})
-        else()
-            install(FILES ${libc++} ${libunwind} DESTINATION ${CMAKE_INSTALL_BINDIR})
-        endif()
-    endif()
 endif()
 
 

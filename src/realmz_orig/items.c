@@ -196,7 +196,7 @@ short items(void) {
   }
   SyncItemsScrollbar(itemsvert);
 
-backup:
+backup:;
 
   int enable_recomposite = WindowManager_SetEnableRecomposite(0);
 
