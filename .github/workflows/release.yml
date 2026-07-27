@@ -95,9 +95,6 @@ jobs:
           cmake --build resource_dasm/build --parallel "$(nproc)"
           cmake --install resource_dasm/build
 
-      - name: Download SDL_ttf external dependencies
-        run: vendored/SDL_ttf/external/download.sh
-
       - name: Configure and build
         run: |
           cmake --preset Windows
@@ -118,7 +115,8 @@ jobs:
   # ---------------------------------------------------------------------------
   linux:
     name: Linux (.AppImage)
-    runs-on: ubuntu-22.04
+    # 24.04 ships a libstdc++ new enough for <format> (C++20); 22.04's GCC 11 lacks it.
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
         with:
@@ -170,9 +168,6 @@ jobs:
             -Dphosg_DIR="$HOME/linux-deps/lib/cmake/phosg"
           cmake --build resource_dasm/build --parallel "$(nproc)"
           cmake --install resource_dasm/build
-
-      - name: Download SDL_ttf external dependencies
-        run: vendored/SDL_ttf/external/download.sh
 
       - name: Configure and build
         run: |
@@ -236,9 +231,6 @@ jobs:
             -Dphosg_DIR="$HOME/mac-deps/lib/cmake/phosg"
           cmake --build resource_dasm/build --parallel "$(sysctl -n hw.ncpu)"
           cmake --install resource_dasm/build
-
-      - name: Download SDL_ttf external dependencies
-        run: vendored/SDL_ttf/external/download.sh
 
       - name: Configure and build
         run: |
