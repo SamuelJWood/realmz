@@ -346,11 +346,23 @@ void resolvespell(void) {
           if (special == 28)
             damage = adjdam = duration; /*** disease ***/
 
+          /* *** CHANGED FROM ORIGINAL IMPLEMENTATION ***
+           * A negative duration (e.g. Stun, Statue) means the condition lasts for the rest of
+           * combat. Adding it to a condition that already had rounds left shortened that
+           * condition instead (a target helpless for 3 rounds became helpless for 2), so replace
+           * a positive round count with the permanent value rather than adding to it.
+           */
           if (t > 9) {
-            if (abs(monster[t - 10].condition[special - 1] + duration) < 125) {
+            if (duration < 0) {
+              if (monster[t - 10].condition[special - 1] > -1)
+                monster[t - 10].condition[special - 1] = duration;
+            } else if (abs(monster[t - 10].condition[special - 1] + duration) < 125) {
               if (monster[t - 10].condition[special - 1] > -1)
                 monster[t - 10].condition[special - 1] += duration;
             }
+          } else if (duration < 0) {
+            if (c[t].condition[special - 1] > -1)
+              c[t].condition[special - 1] = duration;
           } else if ((c[t].condition[special - 1] + duration) < 100) {
             if (c[t].condition[special - 1] > -1)
               c[t].condition[special - 1] += duration;
