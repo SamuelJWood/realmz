@@ -78,14 +78,16 @@ void ploticon(short tempid, short showcurse) {
         GetIndString(myString, temp + lg, item.iscurse - temp + 1); // Fantasoft 7.1
     }
 
-    if (!lg)
-      TextFace(outline);
-
     if (initems)
       SetPort(GetWindowPort(itemswindow));
 
     TextSize(16);
-    TextFace(0);
+    /* *** CHANGED FROM ORIGINAL IMPLEMENTATION ***
+     * Unidentified items are meant to show their name in the outline face, but the original set
+     * outline before switching to the items window's port and then cleared the face with
+     * TextFace(0) right before drawing, so it never took effect. Set it on the port being drawn.
+     */
+    TextFace(lg ? 0 : outline);
     PtoCstr(myString);
     MyrDrawCString((Ptr)myString);
   }

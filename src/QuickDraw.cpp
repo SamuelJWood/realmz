@@ -25,6 +25,7 @@
 #include <unordered_map>
 
 #include "FileManager.hpp"
+#include "Font.h"
 #include "Font.hpp"
 #include "MemoryManager.hpp"
 #include "ResourceManager.h"
@@ -218,6 +219,35 @@ phosg::ImageRGBA8888N image_for_sdl_surface(SDL_Surface* surface) {
   return ret;
 }
 
+// QuickDraw's outline text face draws a one-pixel ring around each glyph and leaves the glyph
+// itself hollow, so whatever is already on the port shows through the letters (Realmz uses it for
+// the names of unidentified items). Given text rendered as coverage in the alpha channel of
+// `glyphs`, returns an image one pixel larger on every side containing just that ring in `color`.
+static phosg::ImageRGBA8888N outline_text_image(const phosg::ImageRGBA8888N& glyphs, uint32_t color) {
+  ssize_t w = glyphs.get_width();
+  ssize_t h = glyphs.get_height();
+  auto coverage = [&](ssize_t x, ssize_t y) -> uint32_t {
+    return glyphs.check(x, y) ? phosg::get_a(glyphs.read(x, y)) : 0;
+  };
+
+  phosg::ImageRGBA8888N ret(w + 2, h + 2);
+  for (ssize_t y = -1; y <= h; y++) {
+    for (ssize_t x = -1; x <= w; x++) {
+      uint32_t ring = 0;
+      for (ssize_t dy = -1; dy <= 1; dy++) {
+        for (ssize_t dx = -1; dx <= 1; dx++) {
+          ring = std::max(ring, coverage(x + dx, y + dy));
+        }
+      }
+      uint32_t a = ring * (0xFF - coverage(x, y)) / 0xFF * phosg::get_a(color) / 0xFF;
+      if (a) {
+        ret.write(x + 1, y + 1, phosg::replace_alpha(color, a));
+      }
+    }
+  }
+  return ret;
+}
+
 bool CCGrafPort::draw_text_ttf(TTF_Font* font, const std::string& processed_text, const Rect& rect) {
   size_t w = rect.right - rect.left;
   size_t h = rect.bottom - rect.top;
@@ -229,8 +259,16 @@ bool CCGrafPort::draw_text_ttf(TTF_Font* font, const std::string& processed_text
     return false;
   } else {
     auto img = image_for_sdl_surface(text_surface.get());
+    size_t text_h = img.get_height();
+    // The outlined image is a pixel larger on every side; draw it that much further up and left so
+    // the glyphs themselves stay where the plain text would have been.
+    ssize_t pad = 0;
+    if (this->txFace & outline) {
+      img = outline_text_image(img, rgba8888_for_rgb_color(this->rgbFgColor));
+      pad = 1;
+    }
     bool has_newlines = (processed_text.find('\n') != std::string::npos);
-    if (!has_newlines && img.get_height() > h) {
+    if (!has_newlines && text_h > h) {
       // A single line that is taller than its destination rect. Previously we
       // trimmed the source to the rect height and copied only those rows, which
       // clipped the top and bottom of the glyphs (e.g. the foot of the "L" in
@@ -239,11 +277,11 @@ bool CCGrafPort::draw_text_ttf(TTF_Font* font, const std::string& processed_text
       // slightly above and below. copy_from_with_blend bounds-checks every
       // pixel against the destination surface, so any overflow past an edge is
       // safely skipped. (Multi-line text is left untouched and still fits.)
-      ssize_t over = static_cast<ssize_t>(img.get_height()) - static_cast<ssize_t>(h);
+      ssize_t over = static_cast<ssize_t>(text_h) - static_cast<ssize_t>(h);
       ssize_t dst_y = static_cast<ssize_t>(rect.top) - over / 2;
-      data.copy_from_with_blend(img, rect.left, dst_y, w, static_cast<ssize_t>(img.get_height()), 0, 0);
+      data.copy_from_with_blend(img, rect.left - pad, dst_y - pad, w + 2 * pad, static_cast<ssize_t>(img.get_height()), 0, 0);
     } else {
-      data.copy_from_with_blend(img, rect.left, rect.top, w, h, 0, 0);
+      data.copy_from_with_blend(img, rect.left - pad, rect.top - pad, w + 2 * pad, h + 2 * pad, 0, 0);
     }
     return true;
   }
@@ -276,7 +314,15 @@ bool CCGrafPort::draw_text_bitmap(const ResourceDASM::BitmapFontRenderer& render
     }
   }
 
-  renderer.render_text(data, wrapped_text, rect.left, y1, rect.right, y2, color32);
+  if (this->txFace & outline) {
+    // Render the glyphs on their own, then draw only the ring around them (see outline_text_image).
+    phosg::ImageRGBA8888N glyphs(rect.right - rect.left, y2 - y1);
+    renderer.render_text(glyphs, wrapped_text, 0, 0, glyphs.get_width(), glyphs.get_height(), color32);
+    auto img = outline_text_image(glyphs, color32);
+    data.copy_from_with_blend(img, rect.left - 1, y1 - 1, img.get_width(), img.get_height(), 0, 0);
+  } else {
+    renderer.render_text(data, wrapped_text, rect.left, y1, rect.right, y2, color32);
+  }
   return true;
 }
 
@@ -353,14 +399,22 @@ void CCGrafPort::draw_text(const std::string& text) {
     this->log.debug_f("draw_text(\"{}\") font={} (bitmap) size={} style={} descent={}",
         processed_text, this->txFont, this->txSize, this->txFace, descent);
     auto [text_width, text_height] = bm_font.pixel_dimensions_for_text(processed_text);
-    bm_font.render_text(
-        this->data,
-        text,
-        this->pnLoc.h,
-        this->pnLoc.v - descent,
-        this->pnLoc.h + text_width,
-        this->pnLoc.v + text_height - descent,
-        rgba8888_for_rgb_color(this->rgbFgColor));
+    if (this->txFace & outline) {
+      phosg::ImageRGBA8888N glyphs(text_width, text_height);
+      bm_font.render_text(glyphs, text, 0, 0, text_width, text_height, rgba8888_for_rgb_color(this->rgbFgColor));
+      auto img = outline_text_image(glyphs, rgba8888_for_rgb_color(this->rgbFgColor));
+      this->data.copy_from_with_blend(
+          img, this->pnLoc.h - 1, this->pnLoc.v - descent - 1, img.get_width(), img.get_height(), 0, 0);
+    } else {
+      bm_font.render_text(
+          this->data,
+          text,
+          this->pnLoc.h,
+          this->pnLoc.v - descent,
+          this->pnLoc.h + text_width,
+          this->pnLoc.v + text_height - descent,
+          rgba8888_for_rgb_color(this->rgbFgColor));
+    }
     width = text_width;
   }
 

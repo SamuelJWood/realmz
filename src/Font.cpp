@@ -63,9 +63,15 @@ TTF_Font* get_chicago_font() {
 void set_font_style(TTF_Font* font, int16_t face) {
   TTF_FontStyleFlags styles{TTF_STYLE_NORMAL};
 
-  if (face == bold) {
+  // face is a QuickDraw Style bit set, so test each bit rather than comparing the whole value.
+  // outline is not a TTF style; CCGrafPort draws it by tracing the rendered glyphs.
+  if (face & bold) {
     styles |= TTF_STYLE_BOLD;
-  } else if (face == outline) {
+  }
+  if (face & italic) {
+    styles |= TTF_STYLE_ITALIC;
+  }
+  if (face & underline) {
     styles |= TTF_STYLE_UNDERLINE;
   }
 
