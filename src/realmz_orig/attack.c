@@ -1141,13 +1141,19 @@ trynewweapon:
               showresults(chare, -19, mon); /****** special attack ******/
             break;
 
+          /* *** CHANGED FROM ORIGINAL IMPLEMENTATION ***
+           * Cold, electrical, chemical, and mental damage against a monster target were added to
+           * specialdam before the target's protection halved specdamage, so protection only
+           * reduced the number shown, not the stamina removed. Apply protection first, as the fire
+           * case and all of the party-target cases do.
+           */
           case 12: /**** cold damage ****/
             specdamage = Rand(monst.attacks[attackloop][1]);
             if (savevs(2, chare))
               specdamage /= 2;
-            specialdam += specdamage;
             if (monster[chare - 10].condition[COND_COLD_PROTECTION])
               specdamage /= 2;
+            specialdam += specdamage;
             if (specdamage)
               showresults(chare, -20, mon); /****** special attack ******/
             break;
@@ -1156,9 +1162,9 @@ trynewweapon:
             specdamage = Rand(monst.attacks[attackloop][1]);
             if (savevs(3, chare))
               specdamage /= 2;
-            specialdam += specdamage;
             if (monster[chare - 10].condition[COND_ELECTRICAL_PROTECTION])
               specdamage /= 2;
+            specialdam += specdamage;
             if (specdamage)
               showresults(chare, -21, mon); /****** special attack ******/
             break;
@@ -1167,9 +1173,9 @@ trynewweapon:
             specdamage = Rand(monst.attacks[attackloop][1]);
             if (savevs(4, chare))
               specdamage /= 2;
-            specialdam += specdamage;
             if (monster[chare - 10].condition[COND_CHEMICAL_PROTECTION])
               specdamage /= 2;
+            specialdam += specdamage;
             if (specdamage)
               showresults(chare, -22, mon); /****** special attack ******/
             break;
@@ -1178,9 +1184,9 @@ trynewweapon:
             specdamage = Rand(monst.attacks[attackloop][1]);
             if (savevs(5, chare))
               specdamage /= 2;
-            specialdam += specdamage;
             if (monster[chare - 10].condition[COND_MENTAL_PROTECTION])
               specdamage /= 2;
+            specialdam += specdamage;
             if (specdamage)
               showresults(chare, -23, mon); /****** special attack ******/
             break;
