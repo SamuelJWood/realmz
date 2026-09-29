@@ -301,6 +301,7 @@ set(DATA_RESOURCE_FILES
     "base/Realmz/Data Files/Caste and Race descriptions.txt"
     "base/Realmz/Data Files/Scenario Descriptions.txt"
     "base/Realmz/Data Files/Background Texture.bmp"
+    "base/Realmz/Data Files/manual_icon.png"
     # The application resource fork and the UI fonts live alongside the other
     # data files. Loaded at runtime via ":Data Files:..." paths
     # (see RealmzCocoa.c for realmz.rsrc and Font.cpp for the fonts).
