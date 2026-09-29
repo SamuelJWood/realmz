@@ -139,8 +139,8 @@ The `.github/workflows/release.yml` workflow builds all three platforms in CI:
 To cut a release, push a version tag:
 
 ```bash
-git tag v1.0.0
-git push origin v1.0.0
+git tag v1.1.0
+git push origin v1.1.0
 ```
 
 The workflow builds all three artifacts and publishes them to a GitHub Release

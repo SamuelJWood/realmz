@@ -14,7 +14,7 @@ set(CMAKE_OSX_DEPLOYMENT_TARGET "13.3")
 
 # Project setup
 project(Realmz
-    VERSION 1.0.0
+    VERSION 1.1.0
     DESCRIPTION "Classic turn-based RPG from Fantasoft"
     LANGUAGES C CXX
 )

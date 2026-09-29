@@ -67,6 +67,9 @@ jobs:
             -DCMAKE_BUILD_TYPE=Release
           cmake --build zlib/build --parallel "$(nproc)"
           cmake --install zlib/build
+          # phosg links its command-line tools with -static, which needs libz.a, but zlib's
+          # CMake build names its static library libzs.a.
+          cp "$HOME/mingw-install/lib/libzs.a" "$HOME/mingw-install/lib/libz.a"
 
       - name: Build phosg (mingw)
         run: |
@@ -76,8 +79,8 @@ jobs:
             -DCMAKE_TOOLCHAIN_FILE="$GITHUB_WORKSPACE/cmake/TC-mingw.cmake" \
             -DCMAKE_INSTALL_PREFIX="$HOME/mingw-install" \
             -DCMAKE_BUILD_TYPE=Release \
-            -DZLIB_LIBRARY="$HOME/mingw-install/lib/libz.dll.a" \
-            -DZLIB_INCLUDE_DIR="$HOME/mingw-install/include"
+            -DCMAKE_CXX_FLAGS="-I$HOME/mingw-install/include" \
+            -DCMAKE_EXE_LINKER_FLAGS="-L$HOME/mingw-install/lib"
           cmake --build phosg/build --parallel "$(nproc)"
           cmake --install phosg/build
 
@@ -90,8 +93,8 @@ jobs:
             -DCMAKE_INSTALL_PREFIX="$HOME/mingw-install" \
             -DCMAKE_BUILD_TYPE=Release \
             -Dphosg_DIR="$HOME/mingw-install/lib/cmake/phosg" \
-            -DZLIB_LIBRARY="$HOME/mingw-install/lib/libz.dll.a" \
-            -DZLIB_INCLUDE_DIR="$HOME/mingw-install/include"
+            -DCMAKE_CXX_FLAGS="-I$HOME/mingw-install/include" \
+            -DCMAKE_EXE_LINKER_FLAGS="-L$HOME/mingw-install/lib"
           cmake --build resource_dasm/build --parallel "$(nproc)"
           cmake --install resource_dasm/build
 
@@ -128,7 +131,10 @@ jobs:
           sudo apt-get install -y cmake make git wget xz-utils zlib1g-dev \
             libx11-dev libxext-dev libxrandr-dev libxkbcommon-dev libwayland-dev \
             libegl-dev libxi-dev libxcursor-dev libxfixes-dev libxrender-dev \
-            libxss-dev libxinerama-dev
+            libxss-dev libxinerama-dev libxtst-dev libdecor-0-dev pkg-config \
+            libasound2-dev libpulse-dev libpipewire-0.3-dev libdbus-1-dev
+          # SDL silently disables any audio/video backend whose dev package is missing at
+          # configure time; the build would still succeed but the AppImage would have no sound.
 
       - name: Install llvm-mingw toolchain
         run: |
@@ -173,7 +179,9 @@ jobs:
         run: |
           cmake --preset Linux \
             -Dphosg_DIR="$HOME/linux-deps/lib/cmake/phosg" \
-            -Dresource_file_DIR="$HOME/linux-deps/lib/cmake/resource_file"
+            -Dresource_file_DIR="$HOME/linux-deps/lib/cmake/resource_file" | tee configure.log
+          # Refuse to ship an AppImage that can't play sound (see the dependency note above).
+          grep -E "Audio drivers:.*(pulseaudio|pipewire|alsa)" configure.log
           cmake --build --preset Linux --parallel "$(nproc)"
 
       - name: Fetch linuxdeploy
